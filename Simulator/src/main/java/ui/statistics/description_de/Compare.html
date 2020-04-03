@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Vergleich mit analytischen Modellen</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h3>Erlang-C-Modelle</h3>
+
+<p>
+Mit Hilfe der <a href="https://de.wikipedia.org/wiki/Erlang_C">Erlang-C-Formel</a>
+lassen sich in einfachen Warteschlangenmodellen die relevanten Kenngrößen
+exakt berechnen. "Einfach" bedeutet dabei, dass
+das Modell wie folgt aufgebaut sein muss:
+</p>
+
+<ul>
+  <li>Die Zwischenankunftszeiten sind exponentiell verteilt.</li>
+  <li>Die Bedienzeiten sind exponentiell verteilt.</li>
+  <li>Es existiert eine feste Anzahl von Bedienern.</li>
+</ul>
+
+<p>
+Die klassische Erlang-C-Formel kann Ungeduld der Kunden nicht abbilden,
+sehr wohl jedoch die erweiterte Erlang-C-Formel, so dass außerdem folgende
+Eigenschaft in einem einfachen Modell vorherrschen darf:
+</p>
+
+<ul>
+  <li>Optional sind die Kunden nur begrenzt lange bereit zu warten. Ist dies der Fall,
+  so muss die Wartezeittoleranz durch die Exponentialverteilung beschrieben werden können.</li>
+</ul>
+
+<p>
+Ein entsprechendes Modell wird dann als <b>M/M/c</b> bzw. <b>M/M/c/unendlich+M</b> Modell
+bezeichnet.
+</p>
+
+<h3>Allen-Cunneen-Näherungsformel</h3>
+
+<p>
+Die Allen-Cunneen-Näherungsformel lässt eine Lockerung der im Erlang-C-Modell definierten
+Einschränkungen zu: Statt exponentiell verteilten Zwischenankunfts- und Bedienzeiten
+werden jetzt <b>beliebige Verteilungen</b>, die durch ihren Erwartungswert und ihren
+Variationskoeffizient charakterisiert sind, zugelassen.
+Dafür muss die Exaktheit aufgegeben werden, d.h. selbst bei einem Modell, welches alle Vorgaben
+der Allen-Cunneen-Näherungsformel einhält, muss mit Abweichungen zwischen Näherungsformel-Ergebnis
+und Simulationsrealität gerechnet werden.
+</p>
+  
+</body></html>

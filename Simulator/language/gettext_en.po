@@ -1,0 +1,3330 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-10 12:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Color.000000"
+msgstr "Balck"
+
+msgid "Color.000080"
+msgstr "Navy"
+
+msgid "Color.00008B"
+msgstr "Dark blue"
+
+msgid "Color.0000CD"
+msgstr "Medium blue"
+
+msgid "Color.0000FF"
+msgstr "Blue"
+
+msgid "Color.006400"
+msgstr "Dark green"
+
+msgid "Color.008000"
+msgstr "Gren"
+
+msgid "Color.008080"
+msgstr "Teal"
+
+msgid "Color.008B8B"
+msgstr "Dark cyan"
+
+msgid "Color.00BFFF"
+msgstr "Deep sky blue  "
+
+msgid "Color.00CED1"
+msgstr "Dark turquoise"
+
+msgid "Color.00FA9A"
+msgstr "Medium spring green"
+
+msgid "Color.00FF00"
+msgstr "Lime"
+
+msgid "Color.00FF7F"
+msgstr "Spring green"
+
+msgid "Color.00FFFF"
+msgstr "Cyan"
+
+msgid "Color.191970"
+msgstr "Midnight blue"
+
+msgid "Color.1E90FF"
+msgstr "Dodger blue"
+
+msgid "Color.20B2AA"
+msgstr "Light sea green"
+
+msgid "Color.228B22"
+msgstr "Forest green"
+
+msgid "Color.2E8B57"
+msgstr "Sea green"
+
+msgid "Color.2F4F4F"
+msgstr "Dark slate gray"
+
+msgid "Color.32CD32"
+msgstr "Lime green"
+
+msgid "Color.3CB371"
+msgstr "Medium sea green"
+
+msgid "Color.40E0D0"
+msgstr "Turquoise"
+
+msgid "Color.4169E1"
+msgstr "Royal blue"
+
+msgid "Color.4682B4"
+msgstr "Steel blue"
+
+msgid "Color.483D8B"
+msgstr "Dark slate blue"
+
+msgid "Color.48D1CC"
+msgstr "Medium turquoise"
+
+msgid "Color.4B0082"
+msgstr "Indigo"
+
+msgid "Color.5F9EA0"
+msgstr "Cadet blue"
+
+msgid "Color.6495ED"
+msgstr "Cornflower blue"
+
+msgid "Color.663399"
+msgstr "Rebecca Purpur"
+
+msgid "Color.66CDAA"
+msgstr "Medium aquamarine"
+
+msgid "Color.696969"
+msgstr "dimgray"
+
+msgid "Color.6A5ACD"
+msgstr "Slate blue"
+
+msgid "Color.6B8E23"
+msgstr "Olive drab"
+
+msgid "Color.708090"
+msgstr "Slate gray"
+
+msgid "Color.778899"
+msgstr "Light slate gray"
+
+msgid "Color.7B68EE"
+msgstr "Medium slate blue"
+
+msgid "Color.7CFC00"
+msgstr "Lawn green"
+
+msgid "Color.7FFF00"
+msgstr "Chartreuse"
+
+msgid "Color.7FFFD4"
+msgstr "Aquamarine"
+
+msgid "Color.800080"
+msgstr "Purple"
+
+msgid "Color.808080"
+msgstr "Gray"
+
+msgid "Color.87CEEB"
+msgstr "Sky blue"
+
+msgid "Color.8A2BE2"
+msgstr "Blue violet"
+
+msgid "Color.8B0000"
+msgstr "Dark red"
+
+msgid "Color.8B008B"
+msgstr "Dark magenta"
+
+msgid "Color.8B4513"
+msgstr "Saddle brown"
+
+msgid "Color.8FBC8F"
+msgstr "Dark sea green"
+
+msgid "Color.90EE90"
+msgstr "Light green"
+
+msgid "Color.9370DB"
+msgstr "Medium purple"
+
+msgid "Color.9400D3"
+msgstr "Dark violet"
+
+msgid "Color.98FB98"
+msgstr "Pale green"
+
+msgid "Color.9932CC"
+msgstr "Dark orchid"
+
+msgid "Color.9ACD32"
+msgstr "Yellow green"
+
+msgid "Color.A0522D"
+msgstr "Sienna"
+
+msgid "Color.A52A2A"
+msgstr "Brown"
+
+msgid "Color.A9A9A9"
+msgstr "Dark gray"
+
+msgid "Color.ADD8E6"
+msgstr "Light blue"
+
+msgid "Color.ADFF2F"
+msgstr "Green yellow"
+
+msgid "Color.AFEEEE"
+msgstr "Palet urquoise"
+
+msgid "Color.B0C4DE"
+msgstr "Light steel blue"
+
+msgid "Color.B0E0E6"
+msgstr "Powder blue"
+
+msgid "Color.B22222"
+msgstr "Fire brick"
+
+msgid "Color.B8860B"
+msgstr "Dark GoldenRod"
+
+msgid "Color.BA55D3"
+msgstr "Medium orchid"
+
+msgid "Color.BC8F8F"
+msgstr "Rosy brown"
+
+msgid "Color.BDB76B"
+msgstr "Dark khaki"
+
+msgid "Color.C0C0C0"
+msgstr "Silver"
+
+msgid "Color.C71585"
+msgstr "Medium violet red"
+
+msgid "Color.CD5C5C"
+msgstr "Indian red"
+
+msgid "Color.CD853F"
+msgstr "Peru"
+
+msgid "Color.D2691E"
+msgstr "Chocolate"
+
+msgid "Color.D2B48C"
+msgstr "Tan"
+
+msgid "Color.D3D3D3"
+msgstr "Light gray"
+
+msgid "Color.D8BFD8"
+msgstr "Thistle"
+
+msgid "Color.DA70D6"
+msgstr "Orchid"
+
+msgid "Color.DAA520"
+msgstr "Golden rod"
+
+msgid "Color.DB7093"
+msgstr "Pale violet red"
+
+msgid "Color.DC143C"
+msgstr "Crimson"
+
+msgid "Color.DCDCDC"
+msgstr "Gainsboro"
+
+msgid "Color.DDA0DD"
+msgstr "Plum"
+
+msgid "Color.DEB887"
+msgstr "Burly wood"
+
+msgid "Color.E0FFFF"
+msgstr "Light cyan"
+
+msgid "Color.E6E6FA"
+msgstr "Lavender"
+
+msgid "Color.E9967A"
+msgstr "Dark salmon"
+
+msgid "Color.EE82EE"
+msgstr "Violet"
+
+msgid "Color.EEE8AA"
+msgstr "Pale golden rod"
+
+msgid "Color.F08080"
+msgstr "Light coral"
+
+msgid "Color.F0E68C"
+msgstr "Khaki"
+
+msgid "Color.F0F8FF"
+msgstr "Alice blue"
+
+msgid "Color.F0FFF0"
+msgstr "Honey dew"
+
+msgid "Color.F0FFFF"
+msgstr "Azure"
+
+msgid "Color.F4A460"
+msgstr "Sand brown"
+
+msgid "Color.F5DEB3"
+msgstr "Wheat"
+
+msgid "Color.F5F5DC"
+msgstr "Beige"
+
+msgid "Color.F5F5F5"
+msgstr "White smoke"
+
+msgid "Color.F5FFFA"
+msgstr "Mint cream"
+
+msgid "Color.F8F8FF"
+msgstr "Ghost white"
+
+msgid "Color.FA8072"
+msgstr "Salmon"
+
+msgid "Color.FAEBD7"
+msgstr "Antique white"
+
+msgid "Color.FAF0E6"
+msgstr "Linen"
+
+msgid "Color.FAFAD2"
+msgstr "Light golden rod yellow"
+
+msgid "Color.FDF5E6"
+msgstr "Old lace"
+
+msgid "Color.FF0000"
+msgstr "Red"
+
+msgid "Color.FF00FF"
+msgstr "Magenta"
+
+msgid "Color.FF1493"
+msgstr "Depp pink"
+
+msgid "Color.FF4500"
+msgstr "orange red"
+
+msgid "Color.FF6347"
+msgstr "Tomato"
+
+msgid "Color.FF69B4"
+msgstr "Hot pink"
+
+msgid "Color.FF7F50"
+msgstr "Coral"
+
+msgid "Color.FF8C00"
+msgstr "Dark orange"
+
+msgid "Color.FFA07A"
+msgstr "Light salmon"
+
+msgid "Color.FFA500"
+msgstr "Orange"
+
+msgid "Color.FFB6C1"
+msgstr "Light pink"
+
+msgid "Color.FFC0CB"
+msgstr "Pink"
+
+msgid "Color.FFD700"
+msgstr "Gold"
+
+msgid "Color.FFDAB9"
+msgstr "Peach Puff"
+
+msgid "Color.FFDEAD"
+msgstr "Navajo white"
+
+msgid "Color.FFE4B5"
+msgstr "Moccasin"
+
+msgid "Color.FFE4C4"
+msgstr "Bisque"
+
+msgid "Color.FFE4E1"
+msgstr "Mistyrose"
+
+msgid "Color.FFEBCD"
+msgstr "Blanched almond"
+
+msgid "Color.FFEFD5"
+msgstr "Papaya Whip"
+
+msgid "Color.FFF0F5"
+msgstr "Lavender blush"
+
+msgid "Color.FFF5EE"
+msgstr "Sea sheel"
+
+msgid "Color.FFF8DC"
+msgstr "Cornsilk"
+
+msgid "Color.FFFACD"
+msgstr "Lemon Chiffon"
+
+msgid "Color.FFFAF0"
+msgstr "Floralwhite"
+
+msgid "Color.FFFAFA"
+msgstr "Snow"
+
+msgid "Color.FFFF00"
+msgstr "Yellow"
+
+msgid "Color.FFFFE0"
+msgstr "Light yellow"
+
+msgid "Color.FFFFF0"
+msgstr "Ivory"
+
+msgid "Color.FFFFFA"
+msgstr "Drawing surface"
+
+msgid "Color.FFFFFF"
+msgstr "White"
+
+msgid "CommandLine.Benchmark.Description.Long"
+msgstr ""
+"The command expected zero or one additional parameters.\n"
+"If a parameter is passed, this is either the maximum number of threads\n"
+"to be used, or the file name of the model to be used."
+
+msgid "CommandLine.Benchmark.Description.Short"
+msgstr "Performs a speed test of the computer."
+
+msgid "CommandLine.Benchmark.EventsPerSecond"
+msgstr "Events per second"
+
+msgid "CommandLine.Benchmark.Name1"
+msgstr "Benchmark"
+
+msgid "CommandLine.Benchmark.Name2"
+msgstr "Speedtest"
+
+msgid "CommandLine.Benchmark.NeededCalculationTime"
+msgstr "Needed calulation time"
+
+msgid "CommandLine.Benchmark.SimulaionFailed"
+msgstr "The simulation run was not terminated correctly."
+
+msgid "CommandLine.Benchmark.SimulaionRun"
+msgstr "Simulation run"
+
+msgid "CommandLine.Benchmark.Threads"
+msgstr "Threads"
+
+msgid "CommandLine.Benchmark.UsedModel"
+msgstr "Used simulation model"
+
+msgid "CommandLine.Count.But0"
+msgstr "But no other parameters were passed."
+
+msgid "CommandLine.Count.But1"
+msgstr "But one additional parameter was passed."
+
+msgid "CommandLine.Count.ButN"
+msgstr "But %d additional parameters were passed."
+
+msgid "CommandLine.Count.If"
+msgstr "If as first parameter \"%s\" is passed,"
+
+msgid "CommandLine.Count.Then0"
+msgstr "no further parameters are allowed"
+
+msgid "CommandLine.Count.Then1"
+msgstr "exactly one more parameter has to be entered"
+
+msgid "CommandLine.Count.ThenAtLeast1"
+msgstr "at least one additional parameter has to be entered"
+
+msgid "CommandLine.Count.ThenAtLeastN"
+msgstr "at least %d additional parameters has to be entered"
+
+msgid "CommandLine.Count.ThenMaximum1"
+msgstr "a maximum of one additional parameter can be entered"
+
+msgid "CommandLine.Count.ThenMaximumN"
+msgstr "a maximum of %d additional parameters can be entered"
+
+msgid "CommandLine.Count.ThenN"
+msgstr "exactly %d additional parameters have to be entered"
+
+msgid "CommandLine.Dialog.Command"
+msgstr "Selected command"
+
+msgid "CommandLine.Dialog.ParametersForThisCommand"
+msgstr "Parameters for this command"
+
+msgid "CommandLine.Dialog.Results"
+msgstr "Results"
+
+msgid "CommandLine.Dialog.StopCommand"
+msgstr "Quit"
+
+msgid "CommandLine.Dialog.StopCommand.Hint"
+msgstr "Cancels execution of the current command."
+
+msgid "CommandLine.Dialog.Tab.Description"
+msgstr "Description for the command"
+
+msgid "CommandLine.Dialog.Tab.ParametersAndResults"
+msgstr "Parameters and results"
+
+msgid "CommandLine.Dialog.Title"
+msgstr "Execute command-line command"
+
+msgid "CommandLine.Error.File.InputDoesNotExist"
+msgstr "The input file %s does not exist."
+
+msgid "CommandLine.Error.File.InputNoValidModelFile"
+msgstr "The input file %s is not a valid model file."
+
+msgid "CommandLine.Error.File.OutputAlreadyExist"
+msgstr "The output file %s already exists."
+
+msgid "CommandLine.Error.LoadingModel"
+msgstr "The following error occured while loading the model:"
+
+msgid "CommandLine.Error.PreparationOfModel"
+msgstr "The following error occured while preparating the model"
+
+msgid "CommandLine.Error.UnableToSaveStatistic"
+msgstr "The statistic data could not be saved."
+
+msgid "CommandLine.Help.Error"
+msgstr "There is no command-line command called \"%s\"."
+
+msgid "CommandLine.Help.Help.Long"
+msgstr ""
+"This command expects one or no additional parameters.\n"
+"If a command is enters as additional parameter, the help information for this command is displayed.\n"
+"Otherwise a list with all available commands is displayed."
+
+msgid "CommandLine.Help.Help.Short"
+msgstr "Shows this help."
+
+msgid "CommandLine.Help.Info1"
+msgstr ""
+"General call scheme:\n"
+"<Simulator program file> <Model file>\n"
+"or\n"
+"<Simulator program file> <Statistics file>\n"
+"or\n"
+"<Simulator program file> <command> <parameters>\n"
+"\n"
+"In the first two cases, the specified simulation model or the specified statistics file is\n"
+"loaded into the simulator.\n"
+"\n"
+"<Command> can be one of the following expressions:"
+
+msgid "CommandLine.Help.Info2"
+msgstr ""
+"(If <command> is specified in upper or lower case is not considered.)\n"
+"\n"
+"The additional parameters specified in <parameters> depend on the <command>:"
+
+msgid "CommandLine.Help.Name"
+msgstr "Help"
+
+msgid "CommandLine.Report.Description.Short"
+msgstr "Exports the whole report or a part of it."
+
+msgid "CommandLine.Report.Name"
+msgstr "Report"
+
+msgid "CommandLine.ReportBase.Done"
+msgstr "The report was successfully created."
+
+msgid "CommandLine.ReportBase.Error"
+msgstr "The report could not be created."
+
+msgid "CommandLine.ReportBase.Error.Input"
+msgstr "The input file %s does not exist."
+
+msgid "CommandLine.ReportBase.Error.Output"
+msgstr "The output file %s already exists."
+
+msgid "CommandLine.ReportBase.Help"
+msgstr ""
+"This command expects exactly three additionall parameters:\n"
+"1. \"Inline\", \"SingleFiles\", \"List\", \"Text\", \"PDF\" or a list entry, depending if\n"
+"a) a html report with inline images,\n"
+"b) a html teport with separate images,\n"
+"c) an overview of all available individual documents,\n"
+"d) a docx report\n"
+"e) a pdf report or\n"
+"f) an individual document is to be reported.\n"
+"2. File name of the input file\n"
+"3. File name of the output file"
+
+msgid "CommandLine.ResetConfig.Description.Long"
+msgstr ""
+"Resets the configuration of the simulator.\n"
+"Only the entered license keys will be kept."
+
+msgid "CommandLine.ResetConfig.Description.Short"
+msgstr "Resets the program configuration."
+
+msgid "CommandLine.ResetConfig.Name"
+msgstr "Reset"
+
+msgid "CommandLine.Simulation.Description.Long"
+msgstr ""
+"This command expects exactly two additional parameters:\n"
+"1. Input model file\n"
+"2. Output statistic file\n"
+"The input file has to be existent, the output has to be non existent."
+
+msgid "CommandLine.Simulation.Description.Short"
+msgstr "Start a simulation run."
+
+msgid "CommandLine.Simulation.Done"
+msgstr "The simulation is finished. Needed time: %s ms."
+
+msgid "CommandLine.Simulation.Name"
+msgstr "Simulation"
+
+msgid "CommandLine.Simulation.Status.Long"
+msgstr "Status: Simulating day %d of %d. Estimated remaining time: %s seconds."
+
+msgid "CommandLine.Simulation.Status.Short"
+msgstr "Status: Simulating day %d of %d."
+
+msgid "CommandLine.UnknownCommand"
+msgstr "Unknown command. Run simulator with parameter \"Help\" to get a list of all available commands."
+
+msgid "Compare.DoubleFile.Info"
+msgstr ""
+"For model %s and model %s the same statistic file\n"
+"%s\n"
+"was selected."
+
+msgid "Compare.DoubleFile.Title"
+msgstr "Statistic file selected two times"
+
+msgid "Compare.Error.IdenticalModels.Info"
+msgstr "The kept model and the current model are identical."
+
+msgid "Compare.Error.IdenticalModels.Title"
+msgstr "Models are identical"
+
+msgid "Compare.Error.ModelError.CannotCompare"
+msgstr "The current model cannot be simulated and therefore cannot be compared with the kept model."
+
+msgid "Compare.Error.ModelError.CannotKeep"
+msgstr "The current model cannot be simulated and therefore cannot be kept for comparison with further models."
+
+msgid "Compare.Error.ModelError.Title"
+msgstr "Model is incorrect"
+
+msgid "Compare.Error.NoModelKept.Info"
+msgstr "There is no kept model which the current model could be compared to."
+
+msgid "Compare.Error.NoModelKept.Info2"
+msgstr "There is no kept model to which could be returned."
+
+msgid "Compare.Error.NoModelKept.Title"
+msgstr "No model kept"
+
+msgid "Compare.ErrorAtLeastTwoModels"
+msgstr "You need to select at least two models to be compared."
+
+msgid "Compare.FileDoesNotExist.Info"
+msgstr ""
+"The file selected for the model %s to be compared\n"
+"%s\n"
+"does not exist."
+
+msgid "Compare.FileDoesNotExist.Title"
+msgstr "Statistic file %s does not exist"
+
+msgid "Compare.InvalidStatisticFile.Info"
+msgstr "The selected file %s is not a valid statistic file."
+
+msgid "Compare.InvalidStatisticFile.Title"
+msgstr "Invalid statistic file"
+
+msgid "Compare.Kept.Info"
+msgstr "The current model will be kept for comparison with further models."
+
+msgid "Compare.Kept.Title"
+msgstr "Model kept"
+
+msgid "Compare.LoadStatisticData"
+msgstr "Load statistic data"
+
+msgid "Compare.Models.Base"
+msgstr "Base model"
+
+msgid "Compare.Models.Changed"
+msgstr "Changed model"
+
+msgid "Compare.ReplaceKeptModel.Info"
+msgstr "There is already a model which is kept for comparison. Do you want to replace the kept model by the current model?"
+
+msgid "Compare.ReplaceKeptModel.NoInfo"
+msgstr "The already kept model with stay kept. Nothing will be changed."
+
+msgid "Compare.ReplaceKeptModel.Title"
+msgstr "Replacing the kept model"
+
+msgid "Compare.ReplaceKeptModel.YesInfo"
+msgstr "The kept model will be discarded and replaced by the current model."
+
+msgid "Compare.ReturnConfirm.Info"
+msgstr ""
+"Do you really want to discard the current model and return\n"
+"to the previous kept model?"
+
+msgid "Compare.ReturnConfirm.InfoNo"
+msgstr "Keep current model."
+
+msgid "Compare.ReturnConfirm.InfoYes"
+msgstr "Discard current model and return to previous model."
+
+msgid "Compare.ReturnConfirm.Title"
+msgstr "Return to kept model"
+
+msgid "Compare.SelectStatisticFile"
+msgstr "Select statistic file"
+
+msgid "Compare.SelectStatisticFile.Info"
+msgstr "Select a statistic file to be compared."
+
+msgid "Compare.StatisticFile"
+msgstr "Statistic file"
+
+msgid "Compare.Title"
+msgstr "Compare results"
+
+msgid "Compare.TooFewModels.InfoAtLeastTwo"
+msgstr "Alt least two statistic files have to be selected to be compared."
+
+msgid "Compare.TooFewModels.InfoTwo"
+msgstr "Two statistic files have to be selected to be compared."
+
+msgid "Compare.TooFewModels.Title"
+msgstr "Too few statistic files selected"
+
+msgid "Dialog.Button.Back"
+msgstr "Back"
+
+msgid "Dialog.Button.Cancel"
+msgstr "Cancel"
+
+msgid "Dialog.Button.Close"
+msgstr "Close"
+
+msgid "Dialog.Button.Close.Hint"
+msgstr "Closes the current view"
+
+msgid "Dialog.Button.Copy"
+msgstr "Copy"
+
+msgid "Dialog.Button.Edit"
+msgstr "Edit"
+
+msgid "Dialog.Button.Forward"
+msgstr "Forward"
+
+msgid "Dialog.Button.Help"
+msgstr "Help"
+
+msgid "Dialog.Button.No"
+msgstr "No"
+
+msgid "Dialog.Button.Ok"
+msgstr "Ok"
+
+msgid "Dialog.Button.Paste"
+msgstr "Paste"
+
+msgid "Dialog.Button.PasteDoNotScale"
+msgstr "Paste (and fill with zeros)"
+
+msgid "Dialog.Button.PasteDoNotScale.Tooltip"
+msgstr "By default the data are scaled on pasting. But alternatively the data can be filled with zeros."
+
+msgid "Dialog.Button.Save"
+msgstr "Save"
+
+msgid "Dialog.Button.Yes"
+msgstr "Yes"
+
+msgid "Dialog.Overwrite.Info"
+msgstr ""
+"The file\n"
+"%s\n"
+"already exists.\n"
+"Do you want to overwrite this file?"
+
+msgid "Dialog.Overwrite.No"
+msgstr "Do not overwrite file"
+
+msgid "Dialog.Overwrite.No.Info"
+msgstr "Keeps the already existing file unchanged. The new data will not be saved."
+
+msgid "Dialog.Overwrite.Title"
+msgstr "Overwrite existing file"
+
+msgid "Dialog.Overwrite.Yes"
+msgstr "Overwrite file"
+
+msgid "Dialog.Overwrite.Yes.Info"
+msgstr "Deletes the already existing file and saves the new file under this file name."
+
+msgid "Dialog.SaveNow.Cancel.Info"
+msgstr "Do not execute the current command. All data will remain unchanged."
+
+msgid "Dialog.SaveNow.No"
+msgstr "Do not save"
+
+msgid "Dialog.SaveNow.No.Info"
+msgstr "Discards the current data without saveing them."
+
+msgid "Dialog.SaveNow.Yes"
+msgstr "Save now"
+
+msgid "Dialog.SaveNow.Yes.Info"
+msgstr "Saves the current data before they are discarded."
+
+msgid "Dialog.Title.Alternatives"
+msgstr "Choice"
+
+msgid "Dialog.Title.Confirmation"
+msgstr "Confirmation"
+
+msgid "Dialog.Title.Error"
+msgstr "Error"
+
+msgid "Dialog.Title.Information"
+msgstr "Information"
+
+msgid "Dialog.Title.Warning"
+msgstr "Warning"
+
+msgid "Distribution.AverageSomething"
+msgstr "Average"
+
+msgid "Distribution.Beta"
+msgstr "Beta distribution"
+
+msgid "Distribution.CV"
+msgstr "Coefficient of variation"
+
+msgid "Distribution.Cauchy"
+msgstr "Cauchy distribution"
+
+msgid "Distribution.Chi"
+msgstr "Chi distribution"
+
+msgid "Distribution.ChiQuare"
+msgstr "Chi^2 distribution"
+
+msgid "Distribution.Data"
+msgstr "Empirical data"
+
+msgid "Distribution.DataPoint"
+msgstr "data point"
+
+msgid "Distribution.DataPoints"
+msgstr "data points"
+
+msgid "Distribution.DegreesOfFreedom"
+msgstr "degrees of freedom"
+
+msgid "Distribution.DegreesOfFreedom.Denominator"
+msgstr "Degrees of freedom (Denominator)"
+
+msgid "Distribution.DegreesOfFreedom.Numerator"
+msgstr "Degrees of freedom (Numerator)"
+
+msgid "Distribution.DistJohnsonSU"
+msgstr "Johnson SU distribution"
+
+msgid "Distribution.E"
+msgstr "Expected value"
+
+msgid "Distribution.Erlang"
+msgstr "Erlang distribution"
+
+msgid "Distribution.Exp"
+msgstr "Exponential distribution"
+
+msgid "Distribution.F"
+msgstr "F distribution"
+
+msgid "Distribution.FatigueLife"
+msgstr "Fatigue life distribution"
+
+msgid "Distribution.Frechet"
+msgstr "Frechet distribution"
+
+msgid "Distribution.Gamma"
+msgstr "Gamma distribution"
+
+msgid "Distribution.Gumbel"
+msgstr "Gumbel distribution"
+
+msgid "Distribution.HyperbolicSecant"
+msgstr "Hyperbolic secant distribution"
+
+msgid "Distribution.Infinite"
+msgstr "infinite"
+
+msgid "Distribution.InverseGaussian"
+msgstr "Inverse gaussian distribution"
+
+msgid "Distribution.Laplace"
+msgstr "Laplace distribution"
+
+msgid "Distribution.Location"
+msgstr "Location"
+
+msgid "Distribution.LogLogistic"
+msgstr "Log-logistic distribution"
+
+msgid "Distribution.LogNormal"
+msgstr "Lognormal distribution"
+
+msgid "Distribution.Logistic"
+msgstr "Logistic distribution"
+
+msgid "Distribution.Mean"
+msgstr "Mean"
+
+msgid "Distribution.MostLikely"
+msgstr "Most likely"
+
+msgid "Distribution.Never"
+msgstr "Never"
+
+msgid "Distribution.NoDistribution"
+msgstr "No distribution selected"
+
+msgid "Distribution.Normal"
+msgstr "Normal distribution"
+
+msgid "Distribution.Pareto"
+msgstr "Pareto distribution"
+
+msgid "Distribution.Point"
+msgstr "One point distribution"
+
+msgid "Distribution.Power"
+msgstr "Power distribution"
+
+msgid "Distribution.Range"
+msgstr "range"
+
+msgid "Distribution.Rayleigh"
+msgstr "Rayleigh distribution"
+
+msgid "Distribution.Scale"
+msgstr "Scale"
+
+msgid "Distribution.StdDev"
+msgstr "Standard deviation"
+
+msgid "Distribution.Triangular"
+msgstr "Triangular distribution"
+
+msgid "Distribution.Uniform"
+msgstr "Uniform distribution"
+
+msgid "Distribution.Uniform.End"
+msgstr "End"
+
+msgid "Distribution.Uniform.Start"
+msgstr "Start"
+
+msgid "Distribution.Unknown"
+msgstr "unknown distribution"
+
+msgid "Distribution.Weibull"
+msgstr "Weibull distribution"
+
+msgid "DistributionFitter.BestFitFor"
+msgstr "Best fit for"
+
+msgid "DistributionFitter.ComparedDistributions"
+msgstr "Compared distributions"
+
+msgid "DistributionFitter.ErrorInvalidFormat"
+msgstr "The input value format could not be interpreted."
+
+msgid "DistributionFitter.FitError"
+msgstr "Error"
+
+msgid "DistributionFitter.Mean"
+msgstr "Mean"
+
+msgid "DistributionFitter.MeanSquares"
+msgstr "Mean squared error"
+
+msgid "DistributionFitter.PValue"
+msgstr "P-Value of KS test"
+
+msgid "DistributionFitter.PValueAndersonDarling"
+msgstr "P-Value of Anderson Darling test"
+
+msgid "DistributionFitter.PValueChiSqr"
+msgstr "P-Value of chi² test"
+
+msgid "DistributionFitter.StdDev"
+msgstr "Standard deviation"
+
+msgid "DistributionFitter.ValueCount"
+msgstr "Number of values"
+
+msgid "DistributionFitter.ValueRange"
+msgstr "Range"
+
+msgid "Editor.Arrivals"
+msgstr "Arrivals"
+
+msgid "Editor.Arrivals.ClientsPerArrival"
+msgstr "Clients per arrival (batch arrivals)"
+
+msgid "Editor.Arrivals.InterArrivalTimes"
+msgstr "Inter-arrival times"
+
+msgid "Editor.General"
+msgstr "General"
+
+msgid "Editor.General.CallsToSimulate"
+msgstr "Calls to simulate"
+
+msgid "Editor.General.Description"
+msgstr "Description"
+
+msgid "Editor.General.Name"
+msgstr "Name of the model"
+
+msgid "Editor.Model"
+msgstr "Model"
+
+msgid "Editor.NewerVersion.Info"
+msgstr ""
+"The loaded model was created with the newer version %s of the simulator.\n"
+"The model may contain properties that this version of the simulator can not take into account.\n"
+"If you change the model and then save it, these additional properties will be lost."
+
+msgid "Editor.NewerVersion.Info.Short"
+msgstr ""
+"The model was created with a newer version of the simulator.\n"
+"The model may contain properties that this version of the simulator can not take into account."
+
+msgid "Editor.NewerVersion.Title"
+msgstr "Model file was created with a newer version"
+
+msgid "Editor.PostProcessing"
+msgstr "Post-processing"
+
+msgid "Editor.Retry"
+msgstr "Retry"
+
+msgid "Editor.Retry.RetryDistances"
+msgstr "Retry distances"
+
+msgid "Editor.Retry.RetryProbability"
+msgstr "Retry probability"
+
+msgid "Editor.SaveModel.Error"
+msgstr "An error occured while trying to store the data."
+
+msgid "Editor.Service"
+msgstr "Service"
+
+msgid "Editor.Service.ClientsPerServiceBatch"
+msgstr "Clients per service batch"
+
+msgid "Editor.Service.ForwardingProbability"
+msgstr "Forwarding probability"
+
+msgid "Editor.Service.NumberOfAgents"
+msgstr "Number of agents"
+
+msgid "Editor.Service.ServiceTimes"
+msgstr "Service times"
+
+msgid "Editor.UnknownElements.Info"
+msgstr "The model file contains unknown elements and therefore could not be loaded completely."
+
+msgid "Editor.UnknownElements.Title"
+msgstr "Unknown elements in the model file"
+
+msgid "Editor.WaitingRoomAndWaitingTimeTolerance"
+msgstr "Waiting room and waiting time tolerance"
+
+msgid "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingRoom.Limit"
+msgstr "Limit waiting room size to"
+
+msgid "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingRoom.NoLimit"
+msgstr "No waiting room limitation"
+
+msgid "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.Limit"
+msgstr "Waiting time tolerance of the clients by this distribution"
+
+msgid "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit"
+msgstr "No waiting time tolerance limit."
+
+msgid "Example.ErlangC"
+msgstr "This is a simple queueing model, which can be fully described by the Erlang C formula."
+
+msgid "Example.ExtErlangC"
+msgstr "This is a queueing model with waiting cancellers, which cannot be described completely by the Erlang C formula but by the extended Erlang C formula."
+
+msgid "Example.Forwarding"
+msgstr "Forwarding"
+
+msgid "Example.Model"
+msgstr "Model"
+
+msgid "Example.ModelGeneral"
+msgstr "This is a complex queueing model with retriers, forwarders and distributions other than the exponential distribution, which cannot be described analytically in full."
+
+msgid "Example.ModelWithRetry"
+msgstr "This is a complex queue model with retriers and forwarding, which cannot be described analytically completely."
+
+msgid "FileType.AllSupportedFiles"
+msgstr "All supported file formats"
+
+msgid "FileType.AllTables"
+msgstr "All table files"
+
+msgid "FileType.CSV"
+msgstr "csv files"
+
+msgid "FileType.CSVR"
+msgstr "csv files (for R)"
+
+msgid "FileType.DBF"
+msgstr "dbf databases"
+
+msgid "FileType.DIF"
+msgstr "dif files"
+
+msgid "FileType.Excel"
+msgstr "Excel tables"
+
+msgid "FileType.ExcelOld"
+msgstr "Excel 2003 tables"
+
+msgid "FileType.FileTypeODS"
+msgstr "OpenOffice/LibreOffice tables"
+
+msgid "FileType.FileTypeODT"
+msgstr "OpenOffice/LibreOffice texts"
+
+msgid "FileType.HTML"
+msgstr "html files"
+
+msgid "FileType.HTMLApp"
+msgstr "html app files"
+
+msgid "FileType.HTMLTable"
+msgstr "html file with embedded table"
+
+msgid "FileType.LaTeXTable"
+msgstr "LaTeX tables"
+
+msgid "FileType.PDF"
+msgstr "Portable document files"
+
+msgid "FileType.RTF"
+msgstr "Rich text files"
+
+msgid "FileType.SQLite"
+msgstr "SQLite data bases"
+
+msgid "FileType.SYLK"
+msgstr "Symbolic link files"
+
+msgid "FileType.Text"
+msgstr "Text files"
+
+msgid "FileType.Word"
+msgstr "Word texts"
+
+msgid "FileType.WordImage"
+msgstr "Word text with embedded image"
+
+msgid "FileType.WordTable"
+msgstr "Word text with embedded table"
+
+msgid "FileType.bmp"
+msgstr "bmp files"
+
+msgid "FileType.cs"
+msgstr "Encrypted xml files"
+
+msgid "FileType.gif"
+msgstr "gif files"
+
+msgid "FileType.jpeg"
+msgstr "jpeg files"
+
+msgid "FileType.json"
+msgstr "json files"
+
+msgid "FileType.md"
+msgstr "Markdown files"
+
+msgid "FileType.png"
+msgstr "png files"
+
+msgid "FileType.targz"
+msgstr "GZip Compressed tar files"
+
+msgid "FileType.xml"
+msgstr "xml files"
+
+msgid "FileType.xmz"
+msgstr "Compressed xml files"
+
+msgid "Help.Back.Info"
+msgstr "Goes back to the last shown help page."
+
+msgid "Help.Close.Info"
+msgstr "Closes the help window."
+
+msgid "Help.Content"
+msgstr "Content of this page"
+
+msgid "Help.Content.Info"
+msgstr "Shows a list of the section captions from this help page"
+
+msgid "Help.Forward.Info"
+msgstr "Goes forward to the next help page."
+
+msgid "Help.StartPage"
+msgstr "Start page"
+
+msgid "Help.StartPage.Info"
+msgstr "Shows the start page of the help information."
+
+msgid "InfoDialog.Title"
+msgstr "Program information"
+
+msgid "InfoDialog.Version"
+msgstr "Version"
+
+msgid "InfoDialog.Version.Lower"
+msgstr "version"
+
+msgid "InfoDialog.WrittenBy"
+msgstr "written by"
+
+msgid "JDataLoader.ImportErrorFileError"
+msgstr "The file %s could not be loaded."
+
+msgid "JDataLoader.ImportErrorInvalidData"
+msgstr "The data could not be processed."
+
+msgid "JDataLoader.ImportErrorInvalidValue"
+msgstr "The %th selected value %s is not a valid number."
+
+msgid "JDataLoader.ImportErrorNoArea"
+msgstr "No area to be imported has been selected."
+
+msgid "JDataLoader.ImportErrorTooFewCells"
+msgstr "%s cells has been selected. But at least %s cells has to be selected."
+
+msgid "JDataLoader.ImportErrorTooManyCells"
+msgstr "%s cells has been selected. But no more than %s cells has to be selected."
+
+msgid "JDataLoader.SelectArea"
+msgstr "Please select the area to be imported."
+
+msgid "JDataLoader.Sheet"
+msgstr "Sheet"
+
+msgid "JDataLoader.Title"
+msgstr "Import data"
+
+msgid "JDistributionEditor.Copy.Graphics"
+msgstr "Graphics"
+
+msgid "JDistributionEditor.Copy.Graphics.Info"
+msgstr "Copies the distribution as graphics to the clipboard"
+
+msgid "JDistributionEditor.Copy.Info"
+msgstr "Copies the values of the probability distribution vector or a graphics to the clipboard"
+
+msgid "JDistributionEditor.Copy.Table"
+msgstr "Table"
+
+msgid "JDistributionEditor.CumulativeProbability.Label"
+msgstr "Cumulative probability distribution"
+
+msgid "JDistributionEditor.DataVector"
+msgstr "Probability density vector"
+
+msgid "JDistributionEditor.Density.Label"
+msgstr "Density"
+
+msgid "JDistributionEditor.Edit.Disabled"
+msgstr "Show data"
+
+msgid "JDistributionEditor.Edit.Info"
+msgstr "Shows a dialog for editing the distribution"
+
+msgid "JDistributionEditor.Load"
+msgstr "Load"
+
+msgid "JDistributionEditor.Load.Error"
+msgstr "No distribution could be generated from the given data."
+
+msgid "JDistributionEditor.Load.Info"
+msgstr "Loads the probability distribution vector from a file"
+
+msgid "JDistributionEditor.Load.Title"
+msgstr "Load distribution"
+
+msgid "JDistributionEditor.NoDistribution"
+msgstr "No distribution given"
+
+msgid "JDistributionEditor.Paste.Info"
+msgstr "Loads the probability distribution vector from the clipboard"
+
+msgid "JDistributionEditor.Save"
+msgstr "Save"
+
+msgid "JDistributionEditor.Save.Graphics"
+msgstr "Save graphics"
+
+msgid "JDistributionEditor.Save.Graphics.Info"
+msgstr "Saves the graphics as a file"
+
+msgid "JDistributionEditor.Save.Info"
+msgstr "Stores the values of the probability distribution vector or a graphics to a file"
+
+msgid "JDistributionEditor.Save.Title"
+msgstr "Save distribution"
+
+msgid "JDistributionEditor.Title"
+msgstr "Distribution editor"
+
+msgid "JDistributionEditor.ValueDown"
+msgstr "Reduces the value of the parameter by %s"
+
+msgid "JDistributionEditor.ValueUp"
+msgstr "Increases the value of the parameter by %s"
+
+msgid "JDistributionEditor.Wikipedia.Info"
+msgstr "Opens a browser window with additional information about the selected distribution type"
+
+msgid "JDistributionEditor.Wikipedia.Link"
+msgstr "http://en.wikipedia.org/w/index.php?search="
+
+msgid "LicenseViewer.FileError"
+msgstr "Die Datei %s konnte nicht geladen werden."
+
+msgid "LicenseViewer.Part.Components.SimSystem"
+msgstr "Lizenzen der von Simulationskern genutzten Komponenten"
+
+msgid "LicenseViewer.Part.Components.SimTools"
+msgstr "Lizenzen der von den Simulator-Hilfsmitteln genutzten Komponenten"
+
+msgid "LicenseViewer.Part.Components.Simulator"
+msgstr "Lizenzen der von dem Simulator genutzten Komponenten"
+
+msgid "LicenseViewer.Part.Main"
+msgstr "Programmlizenz"
+
+msgid "LicenseViewer.Title"
+msgstr "Lizenzinformationen"
+
+msgid "LoadCalculator.Agents"
+msgstr "Number of agents"
+
+msgid "LoadCalculator.AllenCunneenInvalidWorkLoad"
+msgstr "invalid work load"
+
+msgid "LoadCalculator.ArrivalBatchSize"
+msgstr "Arrival batch size"
+
+msgid "LoadCalculator.ArrivalRate"
+msgstr "Average inter-arrival time or Arrival rate"
+
+msgid "LoadCalculator.ArrivalRateCV"
+msgstr "Coefficient of variation of arrival rate"
+
+msgid "LoadCalculator.AverageHoldingAndPostProcessingTime"
+msgstr "Average holding and post processing time or service rate"
+
+msgid "LoadCalculator.AverageNumberOfClientsInTheSystem"
+msgstr "Average number of clients in the system"
+
+msgid "LoadCalculator.AverageQueueLength"
+msgstr "Average queue length"
+
+msgid "LoadCalculator.AverageResidenceTime"
+msgstr "Average residence time"
+
+msgid "LoadCalculator.AverageWaitingTime"
+msgstr "Average waiting time"
+
+msgid "LoadCalculator.AverageWaitingTimeTolerance"
+msgstr "Average waiting time tolerance"
+
+msgid "LoadCalculator.BatchSize"
+msgstr "Service batch size"
+
+msgid "LoadCalculator.CancelRate"
+msgstr "Cancel rate"
+
+msgid "LoadCalculator.ErlangCNotCalculateable"
+msgstr "not calculateable (to few agents)"
+
+msgid "LoadCalculator.ExpAssumption"
+msgstr "Assumption: waiting time tolerance is exp distributed"
+
+msgid "LoadCalculator.InvalidInput"
+msgstr "Invalid input."
+
+msgid "LoadCalculator.MinimumNumberOfAgents"
+msgstr "Minimum number of agents: %s"
+
+msgid "LoadCalculator.NumberOfLines"
+msgstr "Number of lines"
+
+msgid "LoadCalculator.OfferedWorkLoad"
+msgstr "Offered work load"
+
+msgid "LoadCalculator.PartOfLoadForTheCallcenter"
+msgstr "Part of the complete load for this call center"
+
+msgid "LoadCalculator.ProbabilityOfBlocking"
+msgstr "Probability of blocking"
+
+msgid "LoadCalculator.Results"
+msgstr "Results"
+
+msgid "LoadCalculator.SystemLoad"
+msgstr "System load"
+
+msgid "LoadCalculator.TUCOnlineCalculator"
+msgstr "Online queue calculator of TU Clausthal"
+
+msgid "LoadCalculator.Tab.AllenCunneen"
+msgstr "Extended Allen-Cunneen approximate formula for queuing systems"
+
+msgid "LoadCalculator.Tab.ErlangB"
+msgstr "Erlang B"
+
+msgid "LoadCalculator.Tab.ErlangB.Link"
+msgstr "http://en.wikipedia.org/wiki/Erlang_(unit)#Erlang_B_formula"
+
+msgid "LoadCalculator.Tab.ErlangB.Link.Info"
+msgstr "Information about Erlang B formula"
+
+msgid "LoadCalculator.Tab.ErlangC"
+msgstr "Erlang C"
+
+msgid "LoadCalculator.Tab.ErlangC.Link"
+msgstr "http://en.wikipedia.org/wiki/Erlang_(unit)#Erlang_C_formula"
+
+msgid "LoadCalculator.Tab.ErlangC.Link.Info"
+msgstr "Information about Erlang C formula"
+
+msgid "LoadCalculator.Tab.ErlangCext"
+msgstr "Erlang C (extended)"
+
+msgid "LoadCalculator.Tab.WaitingTimeTolerance"
+msgstr "Waiting time tolerance"
+
+msgid "LoadCalculator.Tab.WorkLoad"
+msgstr "Work load"
+
+msgid "LoadCalculator.Title"
+msgstr "Queueing calculator"
+
+msgid "LoadCalculator.Units.ClientsPerDay"
+msgstr "Clients per day"
+
+msgid "LoadCalculator.Units.Hours"
+msgstr "Hours"
+
+msgid "LoadCalculator.Units.InPercent"
+msgstr "in percent"
+
+msgid "LoadCalculator.Units.InSeconds"
+msgstr "in seconds"
+
+msgid "LoadCalculator.Units.InterarrivalTime"
+msgstr "Inter-arrival time"
+
+msgid "LoadCalculator.Units.Minutes"
+msgstr "Minutes"
+
+msgid "LoadCalculator.Units.Number"
+msgstr "Count"
+
+msgid "LoadCalculator.Units.Part"
+msgstr "Part"
+
+msgid "LoadCalculator.Units.Rate"
+msgstr "Rate"
+
+msgid "LoadCalculator.Units.Seconds"
+msgstr "Seconds"
+
+msgid "LoadCalculator.Units.Time"
+msgstr "Time"
+
+msgid "LoadCalculator.WaitingTime"
+msgstr "Waiting time"
+
+msgid "LoadCalculator.WorkLoad"
+msgstr "Work load"
+
+msgid "LoadCalculator.WorkingHours"
+msgstr "Working hours"
+
+msgid "LoadCalculator.WorkingRateCV"
+msgstr "Coefficient of variation of working rate"
+
+msgid "LoadCalculator.WorkingTimePerDay"
+msgstr "Working time per day"
+
+msgid "Main.Menu.Extras"
+msgstr "Extras"
+
+msgid "Main.Menu.Extras.CompareModels"
+msgstr "Compare results of different models..."
+
+msgid "Main.Menu.Extras.CompareModels.Mnemonic"
+msgstr "C"
+
+msgid "Main.Menu.Extras.CompareWithKeptModel"
+msgstr "Compare current and kept model"
+
+msgid "Main.Menu.Extras.CompareWithKeptModel.Mnemonic"
+msgstr "E"
+
+msgid "Main.Menu.Extras.ExecuteCommand"
+msgstr "Execute command-line command..."
+
+msgid "Main.Menu.Extras.ExecuteCommand.Mnemonic"
+msgstr "c"
+
+msgid "Main.Menu.Extras.KeepModel"
+msgstr "Keep current model for later comparison"
+
+msgid "Main.Menu.Extras.KeepModel.Mnemonic"
+msgstr "K"
+
+msgid "Main.Menu.Extras.Mnemonic"
+msgstr "X"
+
+msgid "Main.Menu.Extras.QueueingCalculator"
+msgstr "Queueing calculator..."
+
+msgid "Main.Menu.Extras.QueueingCalculator.Mnemonic"
+msgstr "Q"
+
+msgid "Main.Menu.Extras.ReturnToKeptModel"
+msgstr "Return to kept model"
+
+msgid "Main.Menu.Extras.ReturnToKeptModel.Mnemonic"
+msgstr "R"
+
+msgid "Main.Menu.File"
+msgstr "File"
+
+msgid "Main.Menu.File.Load"
+msgstr "Load..."
+
+msgid "Main.Menu.File.Load.Mnemonic"
+msgstr "L"
+
+msgid "Main.Menu.File.LoadStatistics"
+msgstr "Load statistics..."
+
+msgid "Main.Menu.File.LoadStatistics.Mnemonic"
+msgstr "C"
+
+msgid "Main.Menu.File.Mnemonic"
+msgstr "F"
+
+msgid "Main.Menu.File.New"
+msgstr "New"
+
+msgid "Main.Menu.File.Quit"
+msgstr "Quit"
+
+msgid "Main.Menu.File.Quit.Mnemonic"
+msgstr "Q"
+
+msgid "Main.Menu.File.RecentlyUsed"
+msgstr "Recently used"
+
+msgid "Main.Menu.File.RecentlyUsed.Mnemonic"
+msgstr "R"
+
+msgid "Main.Menu.File.Save"
+msgstr "Save"
+
+msgid "Main.Menu.File.Save.Mnemonic"
+msgstr "S"
+
+msgid "Main.Menu.File.SaveAs"
+msgstr "Save as..."
+
+msgid "Main.Menu.File.SaveAs.Mnemonic"
+msgstr "a"
+
+msgid "Main.Menu.File.SaveCopyAs"
+msgstr "Save copy as..."
+
+msgid "Main.Menu.File.SaveCopyAs.Mnemonic"
+msgstr "c"
+
+msgid "Main.Menu.File.SaveStatistics"
+msgstr "Save statistics as..."
+
+msgid "Main.Menu.File.SaveStatistics.Mnemonic"
+msgstr "t"
+
+msgid "Main.Menu.File.Settings"
+msgstr "Settings..."
+
+msgid "Main.Menu.File.Settings.Mnemonic"
+msgstr "G"
+
+msgid "Main.Menu.Help"
+msgstr "Help"
+
+msgid "Main.Menu.Help.Help"
+msgstr "Help"
+
+msgid "Main.Menu.Help.Help.Mnemonic"
+msgstr "H"
+
+msgid "Main.Menu.Help.HelpContent"
+msgstr "Help content"
+
+msgid "Main.Menu.Help.HelpContent.Mnemonic"
+msgstr "C"
+
+msgid "Main.Menu.Help.LicenseInformation"
+msgstr "License information..."
+
+msgid "Main.Menu.Help.LicenseInformation.Mnemonic"
+msgstr "L"
+
+msgid "Main.Menu.Help.Mnemonic"
+msgstr "H"
+
+msgid "Main.Menu.Help.ProgramInformation"
+msgstr "Program information..."
+
+msgid "Main.Menu.Help.ProgramInformation.Mnemonic"
+msgstr "P"
+
+msgid "Main.Menu.RecordSimulation"
+msgstr "Record simulation to log file..."
+
+msgid "Main.Menu.RecordSimulation.LogFile"
+msgstr "Save log file"
+
+msgid "Main.Menu.RecordSimulation.Mnemonic"
+msgstr "L"
+
+msgid "Main.Menu.Simulation"
+msgstr "Simulation"
+
+msgid "Main.Menu.Simulation.Mnemonic"
+msgstr "S"
+
+msgid "Main.Menu.StartSimulation"
+msgstr "Start simulation"
+
+msgid "Main.Menu.StartSimulation.Mnemonic"
+msgstr "S"
+
+msgid "Main.Menu.View"
+msgstr "View"
+
+msgid "Main.Menu.View.Mnemonic"
+msgstr "V"
+
+msgid "Main.Menu.View.ModelEditor"
+msgstr "Model editor"
+
+msgid "Main.Menu.View.ModelEditor.Mnemonic"
+msgstr "E"
+
+msgid "Main.Menu.View.SimulationResults"
+msgstr "Simulation results"
+
+msgid "Main.Menu.View.SimulationResults.Mnemonic"
+msgstr "S"
+
+msgid "Main.Statistic.ErrorSaving"
+msgstr "An error occurred while saving the data."
+
+msgid "Main.Statistic.NoStatisticsAvailable"
+msgstr "There are no statistics data available at this time that could be saved."
+
+msgid "Main.Toolbar.Help"
+msgstr "Help"
+
+msgid "Main.Toolbar.Help.Hint"
+msgstr "Displays the online help for the selected function"
+
+msgid "Main.Toolbar.LoadModel"
+msgstr "Load model"
+
+msgid "Main.Toolbar.LoadModel.Hint"
+msgstr "Loads a simulation model from file"
+
+msgid "Main.Toolbar.LoadStatistics"
+msgstr "Load statistics"
+
+msgid "Main.Toolbar.LoadStatistics.Hint"
+msgstr "Load statistics data from file"
+
+msgid "Main.Toolbar.SaveModel"
+msgstr "Save model"
+
+msgid "Main.Toolbar.SaveModel.Hint"
+msgstr "Save simulation model to file"
+
+msgid "Main.Toolbar.SaveStatistics"
+msgstr "Save statistics"
+
+msgid "Main.Toolbar.SaveStatistics.Hint"
+msgstr "Save statistics data to file"
+
+msgid "Main.Toolbar.ShowEditor"
+msgstr "Model editor"
+
+msgid "Main.Toolbar.ShowEditor.Hint"
+msgstr "Shows the model editor"
+
+msgid "Main.Toolbar.ShowModelForTheseResults"
+msgstr "Model for these results"
+
+msgid "Main.Toolbar.ShowModelForTheseResults.Hint"
+msgstr "Displays the model that belongs to these simulation results"
+
+msgid "Main.Toolbar.ShowModelForTheseResults2"
+msgstr "Show model and statistics data"
+
+msgid "Main.Toolbar.ShowModelForTheseResults2.Hint"
+msgstr "Displays the model and the individual statistics data to one of the simulation results"
+
+msgid "Main.Toolbar.ShowStatistics"
+msgstr "Simulation results"
+
+msgid "Main.Toolbar.ShowStatistics.Hint"
+msgstr "Shows the simulation results"
+
+msgid "Main.Toolbar.StartSimulation"
+msgstr "Start simulation"
+
+msgid "Main.Toolbar.StartSimulation.Hint"
+msgstr "Start simulation of the model"
+
+msgid "MainMenu.Help.Book"
+msgstr "Text book \"Callcenter – Analyse und Management\" (German)"
+
+msgid "MainMenu.Help.Book.Mnemonic"
+msgstr "C"
+
+msgid "Model.XML.BatchArrival"
+msgstr "The value \"%s\" for the arrival batch size is invalid. A positive integer number has to be specified."
+
+msgid "Model.XML.BatchArrival.Error"
+msgstr "The value \"%s\" for the arrival batch size is invalid. A positive integer number has to be specified."
+
+msgid "Model.XML.BatchService"
+msgstr "ModelBatchService"
+
+msgid "Model.XML.BatchService.Error"
+msgstr "The value \"%s\" for the service batch size is invalid. A positive integer number has to be specified."
+
+msgid "Model.XML.ClientCount"
+msgstr "ModelClientsToSimulate"
+
+msgid "Model.XML.ClientCount.Error"
+msgstr "The value \"%s\" for the number of clients to be simulated is invalid. A positive integer number has to be specified."
+
+msgid "Model.XML.Description"
+msgstr "ModelDescription"
+
+msgid "Model.XML.ForwardingProbability"
+msgstr "ModelForwardingProbability"
+
+msgid "Model.XML.ForwardingProbability.Error"
+msgstr "The value \"%s\" for the forwarding probability is invalid. A probability has to be specified."
+
+msgid "Model.XML.InterArrivalTimes"
+msgstr "ModelInterArrivalTimes"
+
+msgid "Model.XML.InterArrivalTimes.Error"
+msgstr "The specified distribution of the inter-arrival times is not valid."
+
+msgid "Model.XML.Name"
+msgstr "ModelName"
+
+msgid "Model.XML.NumberOfAgents"
+msgstr "ModelNumberOfAgents"
+
+msgid "Model.XML.NumberOfAgents.Error"
+msgstr "The value \"%s\" for the number of agents is invalid. A positive integer number has to be specified."
+
+msgid "Model.XML.PostProcessingTimes"
+msgstr "ModelPostProcessingTimes"
+
+msgid "Model.XML.PostProcessingTimes.Error"
+msgstr "The specified distribution of the post-processing times is not valid."
+
+msgid "Model.XML.RetryDistances"
+msgstr "ModelRetryDistances"
+
+msgid "Model.XML.RetryDistances.Error"
+msgstr "The specified distribution of the retry distances is not valid."
+
+msgid "Model.XML.RetryProbability"
+msgstr "ModelRetryProbability"
+
+msgid "Model.XML.RetryProbability.Error"
+msgstr "The value \"%s\" for the retry probability is invalid. A probability has to be specified."
+
+msgid "Model.XML.Root"
+msgstr "Model"
+
+msgid "Model.XML.ServiceTimes"
+msgstr "ModelServiceTimes"
+
+msgid "Model.XML.ServiceTimes.Error"
+msgstr "The specified distribution of the service times is not valid."
+
+msgid "Model.XML.Version"
+msgstr "ModelVersion"
+
+msgid "Model.XML.WaitingRoomSize"
+msgstr "ModelWaitingRoomSize"
+
+msgid "Model.XML.WaitingRoomSize.Error"
+msgstr "The value \"%s\" for the waiting room size is invalid. A positive integer number has to be specified."
+
+msgid "Model.XML.WaitingTimeTolerances"
+msgstr "ModelWaitingTimeTolerances"
+
+msgid "Model.XML.WaitingTimeTolerances.Error"
+msgstr "The specified distribution of the waiting time tolerances is not valid."
+
+msgid "ModelInfo.ArrivalStream.Line1"
+msgstr "Arrival"
+
+msgid "ModelInfo.ArrivalStream.Line2"
+msgstr "stream"
+
+msgid "ModelInfo.Cancel.Line1"
+msgstr "Impatient clients"
+
+msgid "ModelInfo.Cancel.Line2"
+msgstr "give up waiting prematurely"
+
+msgid "ModelInfo.Cancel.Line3"
+msgstr "and possibly start"
+
+msgid "ModelInfo.Cancel.Line4"
+msgstr "a second attempt later"
+
+msgid "ModelInfo.Forwardings"
+msgstr "Forwardings"
+
+msgid "ModelInfo.Operators"
+msgstr "c operators"
+
+msgid "ModelInfo.ServedClients.Line1"
+msgstr "Served clients"
+
+msgid "ModelInfo.ServedClients.Line2"
+msgstr "leaving the system"
+
+msgid "ModelInfo.Title"
+msgstr "Simulated queueing model"
+
+msgid "ModelInfo.WaitingRoomSize"
+msgstr "Waiting room of size K"
+
+msgid "Numbers.Language"
+msgstr "en"
+
+msgid "SettingsDialog.ImageResolution"
+msgstr "Resolution when saving images"
+
+msgid "SettingsDialog.ImageResolution.Invalid.Info"
+msgstr "The size for saving images has to be an interger number between 50 and 5000."
+
+msgid "SettingsDialog.ImageResolution.Invalid.Title"
+msgstr "Invalid image size entered"
+
+msgid "SettingsDialog.Languages"
+msgstr "Program language"
+
+msgid "SettingsDialog.Languages.English"
+msgstr "English"
+
+msgid "SettingsDialog.Languages.German"
+msgstr "German (Deutsch)"
+
+msgid "SettingsDialog.Languages.Info"
+msgstr "The settings will be applied when closing this dialog by Ok."
+
+msgid "SettingsDialog.Tabs.GUI.Graphics"
+msgstr "Graphics"
+
+msgid "SettingsDialog.Tabs.GUI.ProgramStart"
+msgstr "User interface"
+
+msgid "SettingsDialog.Tabs.GUI.Statistics"
+msgstr "Statistics"
+
+msgid "SettingsDialog.Tabs.Statistics.OpenExcel"
+msgstr "Open tables using Excel"
+
+msgid "SettingsDialog.Tabs.Statistics.OpenODS"
+msgstr "Open tables using OpenOffice/LibreOffice"
+
+msgid "SettingsDialog.Tabs.Statistics.OpenODT"
+msgstr "Open texts using OpenOffice/LibreOffice"
+
+msgid "SettingsDialog.Tabs.Statistics.OpenWord"
+msgstr "Open texts using Word"
+
+msgid "SettingsDialog.Title"
+msgstr "Settings"
+
+msgid "SettingsDialog.WindowSizeProgrmStart"
+msgstr "Window size on program start"
+
+msgid "SettingsDialog.WindowSizeProgrmStart.FullScreen"
+msgstr "Full screen"
+
+msgid "SettingsDialog.WindowSizeProgrmStart.LastSize"
+msgstr "Restore last window size"
+
+msgid "SettingsDialog.WindowSizeProgrmStart.Normal"
+msgstr "Default window size"
+
+msgid "Setup.SaveError.Info"
+msgstr ""
+"The configuration could not be saved in the file\n"
+"%s\n"
+"The changed settings will be lost at the end of the program."
+
+msgid "Setup.SaveError.Title"
+msgstr "Configuration could not be saved"
+
+msgid "SimStatistic.Accessibility"
+msgstr "Accessibility"
+
+msgid "SimStatistic.AgentsBusy"
+msgstr "busy agents"
+
+msgid "SimStatistic.AllCallTypes"
+msgstr "Calls (including forwarding and retryer)"
+
+msgid "SimStatistic.BatchService"
+msgstr "Number of clients that are served simultaneously by one agent (batch processing)"
+
+msgid "SimStatistic.BusySignalQuota"
+msgstr "Busy signal quota"
+
+msgid "SimStatistic.CallerType"
+msgstr "Caller type"
+
+msgid "SimStatistic.CancelTime"
+msgstr "Cancel time"
+
+msgid "SimStatistic.CancelTime.lower"
+msgstr "cancel time"
+
+msgid "SimStatistic.CancelationRate"
+msgstr "Cancelation rate"
+
+msgid "SimStatistic.CancelationTimes.Distribution"
+msgstr "Distribution of the cancelation times"
+
+msgid "SimStatistic.ClientsWhoHaveToWait"
+msgstr "Percentage of callers who have to wait"
+
+msgid "SimStatistic.Distribution"
+msgstr "Distribution"
+
+msgid "SimStatistic.ForComparison"
+msgstr "For comparison"
+
+msgid "SimStatistic.ForwardedCalls"
+msgstr "Forwarded calls"
+
+msgid "SimStatistic.ForwardingRate"
+msgstr "Forwarding rate"
+
+msgid "SimStatistic.ForwardingRate.byModel"
+msgstr "Forwarding rate by model"
+
+msgid "SimStatistic.FreshCalls"
+msgstr "Fresh calls"
+
+msgid "SimStatistic.Info.MoreCallerThanFreshCalls"
+msgstr ""
+"Since caller counting only starts after the warm-up phase,\n"
+"i.e. at a time when the queue does not have to be empty,\n"
+"more served callers may appear in the statistics than fresh calls."
+
+msgid "SimStatistic.Longest"
+msgstr "Longest"
+
+msgid "SimStatistic.NumberOfBusyAgents.lower"
+msgstr "number of busy agents"
+
+msgid "SimStatistic.NumberOfBusyAgents.of"
+msgstr "of the number of busy agents"
+
+msgid "SimStatistic.NumberOfCallers"
+msgstr "Number of callers"
+
+msgid "SimStatistic.NumberOfCallers.byModel"
+msgstr "Fresh calls by model"
+
+msgid "SimStatistic.NumberOfCallers.byModel.Info"
+msgstr ""
+"Due to the splitting of the simulation over several CPU cores, the number of\n"
+"actually simulated first callers may be higher than specified."
+
+msgid "SimStatistic.NumberOfIdleAgents.lower"
+msgstr "number of idle agents"
+
+msgid "SimStatistic.NumberOfIdleAgents.of"
+msgstr "of the number of idle agents"
+
+msgid "SimStatistic.Overview"
+msgstr "Overview"
+
+msgid "SimStatistic.PostProcessingTime"
+msgstr "Post processing time"
+
+msgid "SimStatistic.PostProcessingTime.lower"
+msgstr "post processing time"
+
+msgid "SimStatistic.PostProcessingTime.of"
+msgstr "of the post processing time"
+
+msgid "SimStatistic.Queue"
+msgstr "Queue"
+
+msgid "SimStatistic.Queue.Distribution"
+msgstr "Distribution of the queue length"
+
+msgid "SimStatistic.Queue.EmptyPart"
+msgstr "Percentage of time when the queue was empty"
+
+msgid "SimStatistic.Queue.Reject"
+msgstr "Percentage of callers rejected due to waiting room restrictions"
+
+msgid "SimStatistic.Queue.Reject.Info"
+msgstr ""
+"The population for recording the proportion of rejected callers is the\n"
+"number of callers who had to wait. This means that the callers who are\n"
+"served directly without waiting time are not included in this statistics."
+
+msgid "SimStatistic.ResidenceTime"
+msgstr "Residence time"
+
+msgid "SimStatistic.ResidenceTime.lower"
+msgstr "residence time"
+
+msgid "SimStatistic.ResidenceTime.of"
+msgstr "of the residence times"
+
+msgid "SimStatistic.ResidenceTime.successful.lower"
+msgstr "residence time successful calls"
+
+msgid "SimStatistic.RetryRate"
+msgstr "Retry rate"
+
+msgid "SimStatistic.RetryRateByModel"
+msgstr "Retry rate by model"
+
+msgid "SimStatistic.Retryer"
+msgstr "Repeaters"
+
+msgid "SimStatistic.Retrys"
+msgstr "Retrys"
+
+msgid "SimStatistic.Service"
+msgstr "Service"
+
+msgid "SimStatistic.ServiceAndPostProcessingTimes"
+msgstr "Service and post-processing times"
+
+msgid "SimStatistic.ServiceLevel"
+msgstr "Service level"
+
+msgid "SimStatistic.ServiceLevel.20Seconds"
+msgstr "Service level at the 20-second threshold"
+
+msgid "SimStatistic.ServiceTime.lower"
+msgstr "service time"
+
+msgid "SimStatistic.ServiceTime.of"
+msgstr "of the service time"
+
+msgid "SimStatistic.Shortest"
+msgstr "Shortest"
+
+msgid "SimStatistic.SystemData.MultiThreadInfo"
+msgstr ""
+"The lines marked with (*) show the real needed calculation\n"
+"time on one CPU core."
+
+msgid "SimStatistic.SystemData.SimulatedEvents"
+msgstr "Simulated events"
+
+msgid "SimStatistic.SystemData.SimulationTime"
+msgstr "Used calculation time"
+
+msgid "SimStatistic.SystemData.Version"
+msgstr "Used simulator version"
+
+msgid "SimStatistic.WaitingCancelationTimes"
+msgstr "Waiting or cancelation time"
+
+msgid "SimStatistic.WaitingCancelationTimes.Distribution"
+msgstr "Distribution of the waiting and the cancelation times of all clients"
+
+msgid "SimStatistic.WaitingTime"
+msgstr "Waiting time"
+
+msgid "SimStatistic.WaitingTime.lower"
+msgstr "waiting time"
+
+msgid "SimStatistic.WaitingTimes"
+msgstr "Waiting times"
+
+msgid "SimStatistic.WaitingTimes.Distribution"
+msgstr "Distribution of the waiting times"
+
+msgid "SimStatistic.WaitingTimes.Distribution.All"
+msgstr "Distribution of the waiting times of all clients"
+
+msgid "SimStatistic.WaitingTimes.Distribution.Successful"
+msgstr "Distribution of the waiting times of the successful clients"
+
+msgid "SimStatistic.WorkLoad"
+msgstr "Work load"
+
+msgid "SimStatistic.WorkLoad.FullPart"
+msgstr "Full load share"
+
+msgid "SimStatistic.WorkLoad.FullPart.Info"
+msgstr "all agents busy"
+
+msgid "SimStatistic.WorkLoad.IdleAgents"
+msgstr "Agents in idle"
+
+msgid "SimStatistic.WorkLoad.IdlePart"
+msgstr "Idle share"
+
+msgid "SimStatistic.WorkLoad.IdlePart.Info"
+msgstr "no active call"
+
+msgid "SimStatistic.WorkLoad.LoadShares"
+msgstr "Load shares"
+
+msgid "SimStatistic.deMaximale"
+msgstr "Maximum"
+
+msgid "SimStatistic.deMinimale"
+msgstr "Minimum"
+
+msgid "SimStatistic.of"
+msgstr "of"
+
+msgid "SimStatistic.of.Calls"
+msgstr "calls"
+
+msgid "SimStatistic.of.ResidenceTime.successful.lower"
+msgstr "of the residence time of the successful calls"
+
+msgid "SimStatistic.of.ResidenceTimes"
+msgstr "of the residence times"
+
+msgid "SimStatistic.overall"
+msgstr "over all"
+
+msgid "Simulation.Log.Abort"
+msgstr "Abort"
+
+msgid "Simulation.OutOfMemory"
+msgstr "No more memory is available."
+
+msgid "Simulation.Started"
+msgstr "The simulation was started."
+
+msgid "Simulator.Log.CallCancelEvent"
+msgstr "CallCancelEvent"
+
+msgid "Simulator.Log.CallCancelEvent.Info"
+msgstr "Caller cancels waiting after %s."
+
+msgid "Simulator.Log.CallDone1Event"
+msgstr "CallDone1Event"
+
+msgid "Simulator.Log.CallDone1Event.Forwarding"
+msgstr "A client will be forwarded."
+
+msgid "Simulator.Log.CallDone1Event.Info"
+msgstr "Serving of %d clients finished."
+
+msgid "Simulator.Log.CallDone1Event.PostProcessing"
+msgstr "Scheduled post-processing time: %s"
+
+msgid "Simulator.Log.CallDone2Event"
+msgstr "CallDone2Event"
+
+msgid "Simulator.Log.CallDone2Event.Info"
+msgstr "Post-processing time finished."
+
+msgid "Simulator.Log.CallDone2Event.WaitingClient"
+msgstr "A waiting client is assigned to an agent."
+
+msgid "Simulator.Log.CallEvent"
+msgstr "CallEvent"
+
+msgid "Simulator.Log.CallEvent.EndOfWarmUp"
+msgstr "End of warm-up phasis; statistics will be reset."
+
+msgid "Simulator.Log.CallEvent.FreshCall"
+msgstr "Fresh call arrives"
+
+msgid "Simulator.Log.CallEvent.Retryer"
+msgstr "Retryer or forwarded caller arrives"
+
+msgid "Simulator.Log.ScheduleCall"
+msgstr "ScheduleCall"
+
+msgid "Simulator.Log.ScheduleCall.Info"
+msgstr "%s scheduled for %s"
+
+msgid "Simulator.Log.ScheduleCall.Info.New"
+msgstr "New call (batch size %d)"
+
+msgid "Simulator.Log.ScheduleCall.Info.Retry"
+msgstr "Retryer or forwarding"
+
+msgid "Simulator.Log.ScheduleCallCancel"
+msgstr "ScheduleCallCancel"
+
+msgid "Simulator.Log.ScheduleCallCancel.Info"
+msgstr "Waiting cancelation scheduled for %s"
+
+msgid "Simulator.Log.StartTalk"
+msgstr "StartTalk"
+
+msgid "Simulator.Log.StartTalk.Info"
+msgstr "Scheduled end of service time: %s"
+
+msgid "Simulator.Log.StopTestEvent"
+msgstr "StopTestEvent"
+
+msgid "Simulator.Log.StopTestEvent.Info"
+msgstr "Testing if simulation can be terminated."
+
+msgid "Simulator.Log.TestAndScheduleCallRetry"
+msgstr "TestAndScheduleCallRetry"
+
+msgid "Simulator.Log.TestAndScheduleCallRetry.FinalCancelation"
+msgstr "The client gives up and leaves the system permanently."
+
+msgid "Simulator.Log.TestAndScheduleCallRetry.Retry"
+msgstr "The client will start a new call attempt at %s."
+
+msgid "Simulator.Log.TryStartCall"
+msgstr "TryStartCall"
+
+msgid "Simulator.Log.TryStartCall.Info"
+msgstr "Trying to assign %d waiting and %d new callers to %d free agents."
+
+msgid "Simulator.Log.TryStartCall.QueueingClient"
+msgstr "A client is placed in the queue."
+
+msgid "Simulator.Log.TryStartCall.StartNew"
+msgstr "A new caller will be assigned to an agent."
+
+msgid "Simulator.Log.TryStartCall.StartWaiting"
+msgstr "A waiting caller will be assigned to an agent."
+
+msgid "Simulator.Log.TryStartCall.WaitingRoomFull"
+msgstr "Since the waiting room is full, a caller is rejected."
+
+msgid "Statistic.Description.Hide"
+msgstr "Hide description"
+
+msgid "Statistic.Description.Hide.Hint"
+msgstr "Hides the description."
+
+msgid "Statistic.Description.Show"
+msgstr "Show description"
+
+msgid "Statistic.Description.Show.Hint"
+msgstr "Shows additional descriptions for the current statistics page."
+
+msgid "Statistic.NumberOfClientsInSystem"
+msgstr "Number of clients in the system"
+
+msgid "Statistic.NumberOfSeconds"
+msgstr "Number of seconds"
+
+msgid "Statistic.NumberOfWaitingClients"
+msgstr "Number of waiting clients"
+
+msgid "Statistic.NumberOfWorkingAgents"
+msgstr "Number of working agents"
+
+msgid "Statistic.Previous"
+msgstr "Previous"
+
+msgid "Statistic.Previous.Hint"
+msgstr "Compare to previous statistics results"
+
+msgid "Statistic.PreviousRemove"
+msgstr "Remove"
+
+msgid "Statistic.PreviousRemove.Hint"
+msgstr "Remove comparison with previous results"
+
+msgid "Statistic.Quantile"
+msgstr "Quantile"
+
+msgid "Statistic.QueueLength"
+msgstr "Queue length"
+
+msgid "Statistic.QueueLength.lower"
+msgstr "queue length"
+
+msgid "Statistic.QueueLength.of"
+msgstr "of the queue length"
+
+msgid "Statistic.Seconds"
+msgstr "seconds"
+
+msgid "Statistic.Sum"
+msgstr "Sum"
+
+msgid "Statistic.TimeShare"
+msgstr "Time share"
+
+msgid "Statistic.TimeShareInThisState"
+msgstr "Time share in this state"
+
+msgid "Statistic.Tree.Parameter"
+msgstr "Copy parameter for this data to clipboard"
+
+msgid "Statistic.Tree.Parameter.Hint"
+msgstr "Copy parameters to get this data by command line to the clipboard"
+
+msgid "Statistic.Type.Image"
+msgstr "Graphics"
+
+msgid "Statistic.Type.NoData"
+msgstr "no data selected"
+
+msgid "Statistic.Type.Table"
+msgstr "Table"
+
+msgid "Statistic.Type.Text"
+msgstr "Text"
+
+msgid "Statistic.Viewer.Chart.InHours"
+msgstr "in hours"
+
+msgid "Statistic.Viewer.Chart.InMinutes"
+msgstr "in minutes"
+
+msgid "Statistic.Viewer.Chart.InSeconds"
+msgstr "in seconds"
+
+msgid "Statistic.Viewer.Chart.Mode"
+msgstr "Mode"
+
+msgid "Statistic.Viewer.Chart.Number"
+msgstr "Number"
+
+msgid "Statistic.Viewer.Chart.Part"
+msgstr "Part"
+
+msgid "Statistic.Viewer.Chart.Time"
+msgstr "Time"
+
+msgid "Statistic.Viewer.Information"
+msgstr "Information"
+
+msgid "Statistic.Viewer.MailError.Info"
+msgstr ""
+"The e-mail link\n"
+"%s\n"
+"could not be opened."
+
+msgid "Statistic.Viewer.MailError.Title"
+msgstr "No e-mail program defined"
+
+msgid "Statistic.Viewer.NoHTMLApplication.Info"
+msgstr "There is no application registered for direct printing of html files. The report file is now opened in the standard browser. Please start printing manually."
+
+msgid "Statistic.Viewer.NoHTMLApplication.Title"
+msgstr "No application registered for printing html files"
+
+msgid "Statistic.Viewer.NoInternet.Info"
+msgstr ""
+"The specified address\n"
+"%s\n"
+"could not be opened."
+
+msgid "Statistic.Viewer.NoInternet.Title"
+msgstr "No Internet connection available"
+
+msgid "Statistic.Viewer.Report"
+msgstr "Generate report"
+
+msgid "Statistic.Viewer.Report.HTMLApp.Info"
+msgstr "Please select the category to be displayed from the tree structure on the left."
+
+msgid "Statistic.Viewer.Report.HTMLAppTitle"
+msgstr "Statistics"
+
+msgid "Statistic.Viewer.Report.Hint"
+msgstr "Creates a report about a user-defined subset of the results"
+
+msgid "Statistic.Viewer.Report.NoTablesSelected.Info"
+msgstr "No tables have been selected for saving in a workbook."
+
+msgid "Statistic.Viewer.Report.NoTablesSelected.Title"
+msgstr "No data selected for saving"
+
+msgid "Statistic.Viewer.Report.SaveHTMLImages"
+msgstr "Please choose how images should be saved in the report"
+
+msgid "Statistic.Viewer.Report.SaveHTMLImages.Files"
+msgstr "As linked image files (multiple image files next to the html output file)"
+
+msgid "Statistic.Viewer.Report.SaveHTMLImages.Inline"
+msgstr "Directly in the html file (only one output file; cannot be read by Word)"
+
+msgid "Statistic.Viewer.Report.Workbook"
+msgstr "Save workbook"
+
+msgid "Statistic.Viewer.Report.Workbook.Error.Info"
+msgstr ""
+"The workbook could not be saved in the file\n"
+"%s"
+
+msgid "Statistic.Viewer.Report.Workbook.Error.Title"
+msgstr "Error saving workbook"
+
+msgid "Statistic.Viewer.SaveImage"
+msgstr "Save image"
+
+msgid "Statistic.Viewer.SaveImage.Error.Info"
+msgstr "The entered image size is invalid. The image size has to be a positive integer."
+
+msgid "Statistic.Viewer.SaveImage.Error.Title"
+msgstr "The image size has to be a positive integer"
+
+msgid "Statistic.Viewer.SaveImage.Size.Error.Info"
+msgstr ""
+"The image could not be saved in the file\n"
+"%s"
+
+msgid "Statistic.Viewer.SaveImage.Size.Error.Title"
+msgstr "Error saving the graphics"
+
+msgid "Statistic.Viewer.SaveImage.Size.Prompt"
+msgstr "Resolution on saving"
+
+msgid "Statistic.Viewer.SaveImage.Size.Title"
+msgstr "Exporting graphics"
+
+msgid "Statistic.Viewer.SaveTable"
+msgstr "Save table"
+
+msgid "Statistic.Viewer.SaveText"
+msgstr "Save text"
+
+msgid "Statistic.Viewer.SpecialText.Category"
+msgstr "<p>Please select a <b>category</b> in the tree structure so display the corresponding information.</p>"
+
+msgid "Statistic.Viewer.SpecialText.LoadData"
+msgstr "Load statistics from previous simulation run"
+
+msgid "Statistic.Viewer.SpecialText.NoData"
+msgstr ""
+"<p>There are currently no statistics available.</p>\n"
+"<p>Please press the <b>F5 key</b> or select <b>\"Start simulation\"</b> on the \"Model editor\" page.</p>"
+
+msgid "Statistic.Viewer.SpecialText.StartSimulation"
+msgstr "Start simulation now"
+
+msgid "Statistic.Viewer.SpecialText.SubCategory"
+msgstr "<p>Please select a <b>sub category</b> in the tree structure so display the corresponding information.</p>"
+
+msgid "Statistic.Viewer.Toolbar.Copy"
+msgstr "Copy"
+
+msgid "Statistic.Viewer.Toolbar.Copy.Hint"
+msgstr "Copies the results from this page to the clipboard."
+
+msgid "Statistic.Viewer.Toolbar.Excel"
+msgstr "Excel"
+
+msgid "Statistic.Viewer.Toolbar.Excel.Error.Info"
+msgstr "Could not save table."
+
+msgid "Statistic.Viewer.Toolbar.Excel.Error.Title"
+msgstr "Saving failed"
+
+msgid "Statistic.Viewer.Toolbar.Excel.Hint"
+msgstr "Show table in Excel"
+
+msgid "Statistic.Viewer.Toolbar.Excel.Prefix"
+msgstr "CS_Temp"
+
+msgid "Statistic.Viewer.Toolbar.OpenODS"
+msgstr "OpenOffice/LibreOffice"
+
+msgid "Statistic.Viewer.Toolbar.OpenODS.Hint"
+msgstr "Show table in OpenOffice/LibreOffice"
+
+msgid "Statistic.Viewer.Toolbar.OpenODT"
+msgstr "OpenOffice/LibreOffice"
+
+msgid "Statistic.Viewer.Toolbar.OpenODT.Hint"
+msgstr "Show text in OpenOffice/LibreOffice"
+
+msgid "Statistic.Viewer.Toolbar.OpenTable"
+msgstr "Open"
+
+msgid "Statistic.Viewer.Toolbar.OpenTable.Hint"
+msgstr "Open table in external application."
+
+msgid "Statistic.Viewer.Toolbar.OpenText"
+msgstr "Open"
+
+msgid "Statistic.Viewer.Toolbar.OpenText.Hint"
+msgstr "Open text in external application."
+
+msgid "Statistic.Viewer.Toolbar.OpenWord"
+msgstr "Word"
+
+msgid "Statistic.Viewer.Toolbar.OpenWordHint"
+msgstr "Show text in Word"
+
+msgid "Statistic.Viewer.Toolbar.Print"
+msgstr "Print"
+
+msgid "Statistic.Viewer.Toolbar.Print.Hint"
+msgstr "Prints the results from this page"
+
+msgid "Statistic.Viewer.Toolbar.Save"
+msgstr "Save"
+
+msgid "Statistic.Viewer.Toolbar.Save.Hint"
+msgstr "Save the results from this page as a file."
+
+msgid "Statistic.Viewer.Toolbar.SaveTables"
+msgstr "Save tables"
+
+msgid "Statistic.Viewer.Toolbar.SaveTables.Hint"
+msgstr "Save the selected tables in a workbook only."
+
+msgid "Statistic.Viewer.Toolbar.SelectAll"
+msgstr "All"
+
+msgid "Statistic.Viewer.Toolbar.SelectAll.Hint"
+msgstr "Select all entries"
+
+msgid "Statistic.Viewer.Toolbar.SelectNone"
+msgstr "None"
+
+msgid "Statistic.Viewer.Toolbar.SelectNone.Hint"
+msgstr "Unselect all entries"
+
+msgid "Statistic.Viewer.Toolbar.Settings"
+msgstr "Settings"
+
+msgid "Statistic.Viewer.Toolbar.Settings.Hint"
+msgstr "Change settings for the selected statistics page."
+
+msgid "Statistic.Viewer.Toolbar.Zoom"
+msgstr "Default zoom"
+
+msgid "Statistic.Viewer.Toolbar.Zoom.Hint"
+msgstr "Sets the zoom factor so that the entire chart is visible."
+
+msgid "Statistic.Viewer.Tools.HideAll"
+msgstr "Close all categories"
+
+msgid "Statistic.Viewer.Tools.Hint"
+msgstr "Functions for showing and hiding categories"
+
+msgid "Statistic.Viewer.Tools.ShowAll"
+msgstr "Open all categories"
+
+msgid "Statistic.WriteError.Info"
+msgstr ""
+"The file\n"
+"%s\n"
+"could not be created."
+
+msgid "Statistic.WriteError.Title"
+msgstr "Error saving file"
+
+msgid "Statistic.of.QueueLength.lower"
+msgstr "of the queue length"
+
+msgid "Statistics.AnalyticModelCompare"
+msgstr "Comparison with analytical models"
+
+msgid "Statistics.AnalyticModelCompare.AllenCunnen"
+msgstr "Allen-Cunnen approximation formula"
+
+msgid "Statistics.AnalyticModelCompare.Analysis"
+msgstr "Analysis of the model"
+
+msgid "Statistics.AnalyticModelCompare.Analysis.Analytic"
+msgstr "The model can be described completely analytically."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic"
+msgstr "Due to the following properties the model cannot be described completely analytically:"
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchArrival"
+msgstr "Group arrivals are not considered in the analytical models."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchService"
+msgstr "Group service is not considered in the analytical models."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.Forwarding"
+msgstr "Forwardings can only be covered approximately."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.NonExponentialInterArrival"
+msgstr "In the analytical models the inter-arrival times are always assumed to be exponentially distributed."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.NonExponentialService"
+msgstr "In the analytical models the service times are always assumed to be exponentially distributed."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.NonExponentialWaitingTimeTolerances"
+msgstr "In the analytical models the waiting time tolerances are always assumed to be exponentially distributed."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.PostProcessing"
+msgstr "No post-processing times are considered in the analytical models."
+
+msgid "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.Retry"
+msgstr "Retrys cannot be covered by the Erlang-C model."
+
+msgid "Statistics.AnalyticModelCompare.ErlangC"
+msgstr "Erlang-C models"
+
+msgid "Statistics.AnalyticModelCompare.SimulationResults"
+msgstr "Simulation results for comparison"
+
+msgid "Statistics.Average"
+msgstr "Average"
+
+msgid "Statistics.ClientsInSystem"
+msgstr "Clients in system"
+
+msgid "Statistics.ClientsInSystem.EmptyPart"
+msgstr "Percentage of time when the system was empty"
+
+msgid "Statistics.ClientsInSystem.of"
+msgstr "of the clients in system"
+
+msgid "Statistics.Distance"
+msgstr "Distance"
+
+msgid "Statistics.DistributionOfTheInterArrivalTimes"
+msgstr "Distribution of the inter-arrival times"
+
+msgid "Statistics.DistributionOfTheInterLeaveTimes"
+msgstr "Distribution of the inter-leaving times"
+
+msgid "Statistics.DistributionOfThePostProcessTimes"
+msgstr "Distribution of the post-processing times"
+
+msgid "Statistics.DistributionOfTheProcessTimes"
+msgstr "Distribution of the process times"
+
+msgid "Statistics.EmergencyShutDown"
+msgstr "The simulation was terminated prematurely. The statistics results may not be valid therefore."
+
+msgid "Statistics.InterArrivalTime"
+msgstr "Inter-arrival time"
+
+msgid "Statistics.InterArrivalTime.lower"
+msgstr "inter-arrival time"
+
+msgid "Statistics.InterArrivalTimes"
+msgstr "Inter-arrival times"
+
+msgid "Statistics.InterArrivalTimes.Distribution.byModel"
+msgstr "Inter-arrival times distribution by model"
+
+msgid "Statistics.InterLeaveTime.lower"
+msgstr "inter-leave time"
+
+msgid "Statistics.InterLeaveTimes"
+msgstr "Inter-leaving times"
+
+msgid "Statistics.Maximum"
+msgstr "Maximum"
+
+msgid "Statistics.Minimum"
+msgstr "Minimum"
+
+msgid "Statistics.Number.All"
+msgstr "Total number of callers"
+
+msgid "Statistics.Number.Cancelation"
+msgstr "Number of cancelers"
+
+msgid "Statistics.Number.Successful"
+msgstr "Number of successful callers"
+
+msgid "Statistics.NumberOfClientsInServiceProcess.lower"
+msgstr "number of clients in service process"
+
+msgid "Statistics.NumberOfClientsInTheSystem"
+msgstr "Number of clients in the system"
+
+msgid "Statistics.NumberOfClientsInTheSystem.Distribution"
+msgstr "Distribution of the numer of clients in the system"
+
+msgid "Statistics.NumberOfClientsInTheSystem.lower"
+msgstr "number of clients in the system"
+
+msgid "Statistics.Part"
+msgstr "Part"
+
+msgid "Statistics.ProcessTime"
+msgstr "Process time"
+
+msgid "Statistics.ProcessTime.lower"
+msgstr "process time"
+
+msgid "Statistics.ProcessTimes"
+msgstr "Process times"
+
+msgid "Statistics.ResidenceTimes"
+msgstr "Residence times"
+
+msgid "Statistics.ResidenceTimes.Distribution.All"
+msgstr "Distribution of the residence times of all clients"
+
+msgid "Statistics.ResidenceTimes.Distribution.Successful"
+msgstr "Distribution of the residence times of the successful clients"
+
+msgid "Statistics.ResidenceTimes.all"
+msgstr "Residence times over all callers"
+
+msgid "Statistics.ResidenceTimes.all.of"
+msgstr "of the residence times over all callers"
+
+msgid "Statistics.ResidenceTimes.info"
+msgstr ""
+"If a caller is forwarded, he is counted again, i.e. the\n"
+"residence time ends when the call is forwarded and the following possible waiting time and the following service\n"
+"time are recorded as a new call with a new residence time."
+
+msgid "Statistics.ResidenceTimes.info.title"
+msgstr "Note"
+
+msgid "Statistics.ResidenceTimes.notsuccessful"
+msgstr "Residence times of the not successful callers"
+
+msgid "Statistics.ResidenceTimes.notsuccessful.info"
+msgstr ""
+"The residence times of the unsuccessful callers are exactly the cancelation times.\n"
+"Therefore, these times are not listed explicitly here."
+
+msgid "Statistics.ResidenceTimes.successful"
+msgstr "Residence times of the successful callers"
+
+msgid "Statistics.ResidenceTimes.successful.lower"
+msgstr "residence time of a successful caller"
+
+msgid "Statistics.ResultsOverview"
+msgstr "Results overview"
+
+msgid "Statistics.SystemData"
+msgstr "System data"
+
+msgid "Statistics.SystemData.CountedClients"
+msgstr "Clients simulated and counted for statistics"
+
+msgid "Statistics.SystemData.EventsPerSecond"
+msgstr "Events per second"
+
+msgid "Statistics.SystemData.RunDate"
+msgstr "Run date of the simulation"
+
+msgid "Statistics.SystemData.RunOS"
+msgstr "Simulation computer"
+
+msgid "Statistics.SystemData.RunThreads"
+msgstr "Threads"
+
+msgid "Statistics.SystemData.RunUser"
+msgstr "User (simulation run)"
+
+msgid "Statistics.SystemData.TimePerEvent"
+msgstr "Needed calculation time per event"
+
+msgid "Statistics.UtilizationAndFailures.FullUtilization"
+msgstr "Full utilization"
+
+msgid "Statistics.UtilizationAndFailures.Idle"
+msgstr "Idle"
+
+msgid "Statistics.UtilizationAndFailures.PartialUtilization"
+msgstr "Partial utilization"
+
+msgid "Statistics.WaitingTime"
+msgstr "Waiting time"
+
+msgid "Statistics.WaitingTime.lower"
+msgstr "waiting time"
+
+msgid "Statistics.WaitingTime.lower.AnalyticNoCancelation"
+msgstr "without consideration of cancalation"
+
+msgid "Statistics.WaitingTime.lower.AnalyticWithCancelation"
+msgstr "with consideration of cancalation"
+
+msgid "Statistics.WaitingTime.lower.AnalyticWithCancelationAndForwardingApproximation"
+msgstr "cancalation+forwarding approximation"
+
+msgid "Statistics.WaitingTime.lower.all"
+msgstr "over all clients"
+
+msgid "Statistics.WaitingTime.lower.successful"
+msgstr "of the successful clients"
+
+msgid "Statistics.WaitingTimes"
+msgstr "Waiting times"
+
+msgid "Statistics.WaitingTimes.All"
+msgstr "Waiting time over all callers"
+
+msgid "Statistics.WaitingTimes.All.lower"
+msgstr "waiting or cancelation time over all callers"
+
+msgid "Statistics.WaitingTimes.All.of"
+msgstr "of the waiting times of all callers"
+
+msgid "Statistics.WaitingTimes.NotSuccessful"
+msgstr "Cancelation time of the not successful clients"
+
+msgid "Statistics.WaitingTimes.Successful"
+msgstr "Waiting time of the successful clients"
+
+msgid "Statistics.XML.Autocorrelation"
+msgstr "Autocorrelation"
+
+msgid "Statistics.XML.AutocorrelationData.Error"
+msgstr "The \"Autocorrelation\" attribute in the \"%s\" element has to contain the autocorrelation values."
+
+msgid "Statistics.XML.BaseData"
+msgstr "StatisticsSimulation"
+
+msgid "Statistics.XML.BatchCount"
+msgstr "BatchCount"
+
+msgid "Statistics.XML.BatchCount.Error"
+msgstr "The BatchCount attribute in the \"%s\" element has to be a positive integer number but is %s\"."
+
+msgid "Statistics.XML.BatchMeans"
+msgstr "BatchVariance"
+
+msgid "Statistics.XML.BatchMeans.Error"
+msgstr "The BatchVariance attribute in the \"%s\" element has to be a non-negative number but is %s\"."
+
+msgid "Statistics.XML.BatchSize"
+msgstr "BatchSize"
+
+msgid "Statistics.XML.BatchSize.Error"
+msgstr "The BatchSize attribute in the \"%s\" element has to be a positive integer number but is %s\"."
+
+msgid "Statistics.XML.BusyAgents"
+msgstr "StatisticsAgentsBusy"
+
+msgid "Statistics.XML.CV"
+msgstr "CoefficientOfVariation"
+
+msgid "Statistics.XML.CallsNeedToWait"
+msgstr "StatisticsCallsNeedToWait"
+
+msgid "Statistics.XML.Continued"
+msgstr "StatisticsCallsForwarded"
+
+msgid "Statistics.XML.Count"
+msgstr "Count"
+
+msgid "Statistics.XML.Count.Error"
+msgstr "The \"count\" attribute in the \"%s\" element has to be a non-negative integer value but is \"%s\"."
+
+msgid "Statistics.XML.CountSuccess"
+msgstr "CountSuccess"
+
+msgid "Statistics.XML.CountSuccess.Error"
+msgstr "The \"countsuccess\" attribute in the \"%s\" element has to be a non-negative integer value but is \"%s\"."
+
+msgid "Statistics.XML.Denominator"
+msgstr "Denominator"
+
+msgid "Statistics.XML.Denominator.Error"
+msgstr "The denominator attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.Disribution.ElementError"
+msgstr "The distribution specified in element \"%s\" is invalid."
+
+msgid "Statistics.XML.Disribution.StepWide"
+msgstr "StepWide"
+
+msgid "Statistics.XML.Disribution.StepWideError"
+msgstr "The step wide specified in element \"%s\" is invalid."
+
+msgid "Statistics.XML.Distribution"
+msgstr "Distribution"
+
+msgid "Statistics.XML.Distribution.Error"
+msgstr "The \"Distribution\" attribute in the \"%s\" element has to be a probability distribution."
+
+msgid "Statistics.XML.EmergencyShutDown"
+msgstr "StatisticsInternalTermination"
+
+msgid "Statistics.XML.FreeAgents"
+msgstr "StatisticsAgentsIdle"
+
+msgid "Statistics.XML.FreshCalls"
+msgstr "StatisticsFreshCalls"
+
+msgid "Statistics.XML.InterArrivalTimes"
+msgstr "StatisticsInterArrivalTimes"
+
+msgid "Statistics.XML.InterLeaveTimes"
+msgstr "StatisticsInterLeaveTimes"
+
+msgid "Statistics.XML.InternalError"
+msgstr "Internal error"
+
+msgid "Statistics.XML.Maximum"
+msgstr "Maximum"
+
+msgid "Statistics.XML.Maximum.Error"
+msgstr "The \"maximum\" attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.Mean"
+msgstr "Mean"
+
+msgid "Statistics.XML.MeanBatchHalfWide"
+msgstr "MeanConfidenceRadius"
+
+msgid "Statistics.XML.Minimum"
+msgstr "Minimum"
+
+msgid "Statistics.XML.Minimum.Error"
+msgstr "The \"minimum\" attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.Numerator"
+msgstr "Numerator"
+
+msgid "Statistics.XML.Numerator.Error"
+msgstr "The numerator attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.Part"
+msgstr "Part"
+
+msgid "Statistics.XML.PartSuccess"
+msgstr "PartSuccess"
+
+msgid "Statistics.XML.PostProcessingTime"
+msgstr "StatisticsPostProcessingTimes"
+
+msgid "Statistics.XML.Quantil"
+msgstr "Quantil"
+
+msgid "Statistics.XML.QueueLength"
+msgstr "StatisticsQueueLength"
+
+msgid "Statistics.XML.Quotient"
+msgstr "Quotient"
+
+msgid "Statistics.XML.Rejected"
+msgstr "StatisticsCallsRejected"
+
+msgid "Statistics.XML.Retry"
+msgstr "StatisticsCallsRetry"
+
+msgid "Statistics.XML.Root"
+msgstr "Statistics"
+
+msgid "Statistics.XML.RunDate"
+msgstr "StatisticsRunDate"
+
+msgid "Statistics.XML.RunEvents"
+msgstr "StatisticsEvents"
+
+msgid "Statistics.XML.RunEvents.Error"
+msgstr "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\"."
+
+msgid "Statistics.XML.RunOS"
+msgstr "StatisticsSystem"
+
+msgid "Statistics.XML.RunRepeatCount"
+msgstr "StatisticsRepeats"
+
+msgid "Statistics.XML.RunRepeatCount.Error"
+msgstr "The value in the \"%s\" element has to be a positive integer value but is \"%s\"."
+
+msgid "Statistics.XML.RunThreads"
+msgstr "StatisticsThreads"
+
+msgid "Statistics.XML.RunThreads.Error"
+msgstr "The value in the \"%s\" element has to be a positive integer value but is \"%s\"."
+
+msgid "Statistics.XML.RunThreads.NUMA"
+msgstr "NUMAMode"
+
+msgid "Statistics.XML.RunTime"
+msgstr "StatisticsRunTime"
+
+msgid "Statistics.XML.RunTime.Error"
+msgstr "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\"."
+
+msgid "Statistics.XML.RunUser"
+msgstr "StatisticsUser"
+
+msgid "Statistics.XML.ServiceLevel"
+msgstr "StatisticsCallsServiceLevel"
+
+msgid "Statistics.XML.StateTime"
+msgstr "StatisticsStatusTimeStatus"
+
+msgid "Statistics.XML.StateTime.Name"
+msgstr "Name"
+
+msgid "Statistics.XML.StdDev"
+msgstr "StandardDeviation"
+
+msgid "Statistics.XML.Successful"
+msgstr "StatisticsCallsSuccessful"
+
+msgid "Statistics.XML.Sum"
+msgstr "Sum"
+
+msgid "Statistics.XML.Sum.Error"
+msgstr "The \"sum\" attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.Sum2"
+msgstr "Sum2"
+
+msgid "Statistics.XML.Sum2.Error"
+msgstr "The \"sum2\" attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.SystemLength"
+msgstr "StatisticsClientsInSystem"
+
+msgid "Statistics.XML.SystemTimeAll"
+msgstr "StatisticsResidenceTimesAll"
+
+msgid "Statistics.XML.SystemTimeSuccess"
+msgstr "StatisticsResidenceTimesSuccessful"
+
+msgid "Statistics.XML.ThreadRunTimes"
+msgstr "StatisticsThreadRunTimes"
+
+msgid "Statistics.XML.Time"
+msgstr "Time"
+
+msgid "Statistics.XML.Time.Error"
+msgstr "The \"time\" attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.Type"
+msgstr "Type"
+
+msgid "Statistics.XML.Value"
+msgstr "Value"
+
+msgid "Statistics.XML.Value.Error"
+msgstr "The \"value\" attribute in the \"%s\" element has to be a number but is \"%s\""
+
+msgid "Statistics.XML.Values"
+msgstr "ValuesSum"
+
+msgid "Statistics.XML.Values.Error"
+msgstr "The element \"%s\" has to contain a list of numerical values."
+
+msgid "Statistics.XML.ValuesError"
+msgstr "The ValuesSum attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.ValuesSquared"
+msgstr "ValuesSum2"
+
+msgid "Statistics.XML.ValuesSquaredError"
+msgstr "The ValuesSum attribute in the \"%s\" element has to be a non-negative number but is \"%s\"."
+
+msgid "Statistics.XML.WaitingTimesAll"
+msgstr "StatisticsWaitingTimesAll"
+
+msgid "Statistics.XML.WaitingTimesCancel"
+msgstr "StatisticsWaitingTimesCancel"
+
+msgid "Statistics.XML.WaitingTimesSuccess"
+msgstr "StatisticsWaitingTimesSuccessful"
+
+msgid "Statistics.XML.Warning"
+msgstr "StatisticsModelWarning"
+
+msgid "Statistics.XML.WorkingTimes"
+msgstr "StatisticsServiceTimes"
+
+msgid "Table.BoolFalse"
+msgstr "FALSE"
+
+msgid "Table.BoolTrue"
+msgstr "TRUE"
+
+msgid "Table.LoadErrorCellNotInTable"
+msgstr "The cell %s is not inside the table. The table ends at %s."
+
+msgid "Table.LoadErrorCellRangeInvalid"
+msgstr "The range selected by %s and %s has to be either a row or a column."
+
+msgid "Table.LoadErrorCellValueNaN"
+msgstr "The value of the cell %s (\"%s\") is no valid number."
+
+msgid "Table.LoadErrorFirstCellInvalid"
+msgstr "The given start cell \"%s\" is invalid."
+
+msgid "Table.LoadErrorLastCellInvalid"
+msgstr "The given end cell \"%s\" is invalid."
+
+msgid "Table.TableFileTableName"
+msgstr "Data"
+
+msgid "Viewer.Close.Hint"
+msgstr "Closes the model viewer"
+
+msgid "Viewer.LoadModel"
+msgstr "Load model to editor"
+
+msgid "Viewer.LoadModel.Hint"
+msgstr "Loads the model to the model editor"
+
+msgid "Viewer.Title"
+msgstr "View model"
+
+msgid "Wait.Info.Day"
+msgstr "Run time: %s seconds. Estimated remaining time: %s seconds."
+
+msgid "Wait.Info.Start"
+msgstr "The simulation is running."
+
+msgid "Wait.Status.Day"
+msgstr "%s of %s repeats simulated / %sM events / %sK events per second"
+
+msgid "Wait.Status.DayK"
+msgstr "%s of %s repeats simulated / %sK events / %sK events per second"
+
+msgid "Wait.Status.Start"
+msgstr "Simulation started"
+
+msgid "Window.CannotShowModel.Info"
+msgstr "There are no statistics data available for which the model can be displayed."
+
+msgid "Window.CannotShowModel.Title"
+msgstr "No statistics data available"
+
+msgid "Window.Compare.NotAValidStatisticsFile.Info"
+msgstr ""
+"The %sth selected file\n"
+"%s\n"
+"is not a valid statistics file."
+
+msgid "Window.Compare.NotAValidStatisticsFile.Title"
+msgstr "Not a valid statistics file"
+
+msgid "Window.DiscardConfirmation.Info"
+msgstr "The model has been modified since the last save. Do you want to save it now?"
+
+msgid "Window.DiscardConfirmation.Title"
+msgstr "Unsaved model"
+
+msgid "Window.ErrorNoGraphics"
+msgstr "Since no graphical user interface is available, the simulator can only be operate in console mode. Start simulator with  \"Help\" as parameter to get an overview of the available command line commands."
+
+msgid "Window.Help"
+msgstr "Help"
+
+msgid "Window.Info.NoEMailProgram.Title"
+msgstr "No e-mail client defined"
+
+msgid "Window.Info.NoHTMLPrint.Info"
+msgstr "No application is registered for direct printing of html files. Therefore the report file will be opened in the default browser. Please start printing from within the browser."
+
+msgid "Window.Info.NoInternetConnection"
+msgstr "No Internet connection available"
+
+msgid "Window.Info.NoInternetConnection.Address"
+msgstr ""
+"The address\n"
+"%s\n"
+"could not be opened."
+
+msgid "Window.Info.NoInternetConnection.ModelOverview"
+msgstr ""
+"Unable to open the model overview\n"
+"%s."
+
+msgid "Window.LanguageAutomatic"
+msgstr "The program language was set to <b>English</b>. You can change this via <b>File|Preferences</b>."
+
+msgid "Window.Simulation.ErrorInitializatingSimulation"
+msgstr "Error initializing the simulation"
+
+msgid "Window.Simulation.ModelIsFaulty"
+msgstr "Model is invalid"
+
+msgid "Window.UnsavedFile"
+msgstr "unsaved model file"
+
+msgid "XML.EnterPassword"
+msgstr "Plase enter password:"
+
+msgid "XML.ErrorCanceledByUser"
+msgstr "Process canceled by user."
+
+msgid "XML.ErrorClosingFile"
+msgstr "An error occurred while closing file %s."
+
+msgid "XML.ErrorClosingStream"
+msgstr "An error occurred while closing the stream."
+
+msgid "XML.ErrorCreatingZipFile"
+msgstr "An error occured while creating a file within the zip file %s."
+
+msgid "XML.ErrorCreatingZipStream"
+msgstr "An error occured while creating a file within the zip stream."
+
+msgid "XML.ErrorDecryptingFile"
+msgstr "An error occurred while decrypting file %s."
+
+msgid "XML.ErrorEncryptingFile"
+msgstr "An error occurred while encrypting file %s."
+
+msgid "XML.ErrorNoEmbeddedData"
+msgstr "There are no embedded xml data."
+
+msgid "XML.ErrorOpeningFile"
+msgstr "An error occurred while opening the file %s."
+
+msgid "XML.ErrorProcessingFile"
+msgstr "An error occurred while processing file %s."
+
+msgid "XML.ErrorProcessingStream"
+msgstr "An error occurred while processing the stream."
+
+msgid "XML.FileNotFound"
+msgstr ""
+"The selected file\n"
+"%s\n"
+"does not exist."
+
+msgid "XML.InterpreterCouldNotProcessData"
+msgstr "The XML interpreter was not able to process the data."
+
+msgid "XML.InterpreterError"
+msgstr "Unable to initialize the XML interpreter."
+
+msgid "XML.LoadErrorTitle"
+msgstr "Error loading file"
+
+msgid "XML.NoFileSelected"
+msgstr "No file was selected."
+
+msgid "XML.NoInputObjectSelected"
+msgstr "Internal error: No input object has been selected."
+
+msgid "XML.NoOutputObjectSelected"
+msgstr "Internal error: No output object has been selected."
+
+msgid "XML.OutOfMemoryError"
+msgstr ""
+"Due to the memory limitation of the Java VM, the xml file cannot be loaded.\n"
+"Increase the memory limit using the -Xmx parameter."
+
+msgid "XML.RootElementNameError"
+msgstr "The root element of the file to be loaded has to be named \"%s\" but is \"%s\"."
+
+msgid "XML.SaveErrorTitle"
+msgstr "Error saving file"
+
+msgid "XML.UnknownFileFormat"
+msgstr "The file format is unknown respectively is not matching to any of the file formats of this program."
+
+#~ msgid "InfoDialog.Libraries"
+#~ msgstr ""
+#~ "used math library: Apache Commons Math (commons.apache.org/math/)\n"
+#~ "used data export library: Apache POI (poi.apache.org)\n"
+#~ "used SQLite library: SQLite JDBC Driver (bitbucket.org/xerial/sqlite-jdbc)\n"
+#~ "used dbf library: JavaDBF (github.com/albfernandez/javadbf)\n"
+#~ "used pdf library: Apache PDFBox (pdfbox.apache.org)\n"
+#~ "used diagram library: JFreeChart (www.jfree.org/jfreechart)\n"
+#~ "used dialog library: Oxbow (code.google.com/p/oxbow/)\n"
+#~ "used multi language library: Gettext (github.com/jgettext/gettext-commons/releases)\n"
+#~ "used icon collection: famfamfam (www.famfamfam.com)"

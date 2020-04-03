@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modell editor</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>Modell editor</h1>
+
+<p>
+The model editor consists of 7 pages where all parameters of the call center model to be simulated can be set:
+</p>
+
+<h2>Model <img src="../images/Symbol.png"></h2>
+
+<p>
+No settings can be made on this page, only the simulation model shown in the simulator is displayed.
+</p>
+
+<p>
+In the simulation the following properties of a real queueing or call center system can be represented:
+</p>
+
+<ul>
+  <li>Any type for the inter-arrival times distribution</li>
+  <li>Batch arrivals</li>
+  <li>Waiting room limitations</li>
+  <li>Limited waiting time tolerances of the clients</li>
+  <li>Retry probabilities and retry distances of the waiting cancelers</li>
+  <li>Any number of agents</li>
+  <li>Any type for the service times distribution</li>
+  <li>Batch service</li>
+  <li>Forwarding probability after serving a client</li>
+</ul>
+
+<p>
+However, the Mini Callcenter Simulator cannot represent the following
+relevant properties of a real call center system:
+</p>
+
+<ul>
+  <li>Transient phase, i.e. change in arrival rate and number of agents over the day</li>
+  <li>Different client types with different properties</li>
+  <li>Different agent types with different skills</li>
+  <li>Priority rules for client and agents groups</li>
+</ul>
+
+<p>
+The commercial call center simulator is able to represent all of these properties
+and also has much more comprehensive tools for evaluation of simulation runs and
+semi-automatic optimization of call center systems.
+</p>
+
+<h2>General <img src="../images/brick.png"></h2>
+
+<p>
+On the "General" page, you can enter a <b>name</b> and a <b>description</b> for the model.
+These data are not used in the simulation but are stored together with the model and
+together with the statistical results, so that its possible to understand what should
+be investigated with the respective model later.
+</p>
+
+<p>
+The field <b>Calls to simulate</b> can be used to set how many virtual clients are to be considered in the simulation.
+The higher the number, the less the simulation results fluctuate but also the longer the simulation takes.
+Since the simulation is supposed to represent the stationary phase of the queueing system, a warm-upphase is
+inserted before counting the calls and collecting statistical results. The transient phase lasts 10% as long as
+the later actual simulation.
+</p>
+
+<h2>Arrivals <img src="../images/user.png"></h2>
+
+<p>
+On the "Arrivals" page, the field <b>Clients per arrival</b> can be used to specify how many clients will
+arrive per arrival event. If you want to model a call center system where clients arrive individually,
+you can leave this value at 1. Using the <b>inter-arrival times</b> distribution editor, you can define
+the interval between arrivals. If clients arrive in a system without noticing each other's arrivals
+(as is the case in a call center system, for example), the exponential distribution is suitable for
+modeling the inter-arrival times.
+</p>
+
+<h2>Waiting room and waiting time tolerance <img src="../images/door_in.png"></h2>
+
+<p>
+The <b>waiting room limitation</b> can be used to set the maximum number of clients that
+can be in the queue at the same time. Clients who are already being served do not occupy
+any space in the queue, that is, a waiting room limit only refers to waiting clients.
+If a client arrives and no free waiting space is available, the client is rejected and
+immediately leaves the system. He is recorded as a waiting canceller with a waiting time
+of 0 seconds. Just as clients who have given up waiting due to the waiting time limitation,
+a rejected caller can also possibly start another call attempt later.
+</p>
+
+<p>
+If the clients have only have a limited <b> waiting time tolerance</b>, clients stop waiting (and hang up,
+e.g. in the case of a call center) if their individual waiting time tolerance is exceeded. The waiting
+time tolerance is not a constant value for all clients, but is determined individually per client according
+to the waiting time tolerance distribution set in the distribution editor on this page.
+The wait time tolerance distribution can have very different distribution types and
+is usually difficult to determine in practice.
+</p>
+
+<h2>Service <img src="../images/group.png"></h2>
+
+<p>
+On the "Service" page, all parameters relevant to the service process can be set.
+The input field <b>Number of agents</b> can be used to define how many agents work in parallel in the system and serve clients.
+</p>
+
+<p>
+In the call center area, each agent usually processes one client at a time; in the context of more general service systems
+(usually in an industrial environment), however, one operator may be able to process several requests at the same time.
+If an operator should always handle several requests simultaneously, this can be defined by a value greater than 1 in the field
+<b>Clients per service batch</b>. If a value greater than 1 is stored here and a single client arrives in an empty system,
+the operator must wait until enough additional clients have arrived to reach the required service batch size.
+</p>
+
+<p>
+The distribution editor for the <b>service times</b> can be used to define how long the individual service processes should last.
+In practice, log-normal distributions or gamma distributions are often useful for modeling call times.
+</p> 
+
+<p>
+After a conversation, it may be necessary to direct the client to another agent to finalize his request.
+The percentage of served callers to be forwarded after a call can be defined in the input field <b>Forwarding probability</b>.
+</p>
+
+<h2>Post-processing <img src="../images/server_go.png"></h2>
+
+<p>
+On the "Post-processing" page, a distribution can be set for the amount of time an agent
+needs after a conversation with a client before he/she reports as available again.
+</p>
+
+<p>
+The client has already left the system or has already been forwarded when the agent starts the post-processing time.
+This means that the post-processing time cannot be counted as service time for the client. On the other hand, however,
+the agent is still occupied by the work associated to the client during the post-processing time, so that he or she is
+not yet available for new calls during this time. This means that the post-processing time cannot be counted as the
+agent's availability time either.
+</p> 
+
+<h2>Retry <img src="../images/arrow_redo2.png"></h2>
+
+<p>
+A client who was either rejected due to the fact that all waiting places were occupied or who gave up waiting prematurely
+due to an individual waiting time tolerance that was too short, can later start another call attempt.
+Via the input field <b>Retry probability</b> you can define the probability for this.
+</p>
+
+<p>
+If a client decides to make another call attempt later, he will wait a certain amount of time before making the further call attempt.
+Using the distribution editor for defining the <b>Retry distances</b>, you can set the probability distribution according to which
+the individual repeat intervals should be defined.
+</p>
+
+</body>
+</html>

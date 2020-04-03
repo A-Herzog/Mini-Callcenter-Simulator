@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modell-Editor</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>Modell-Editor</h1>
+
+<p>
+Der Modell-Editor umfasst 7 Seiten, über die alle Parameter des zu simulierenden
+Callcenter-Modells eingestellt werden können:
+</p>
+
+<h2>Modell <img src="../images/Symbol.png"></h2>
+
+<p>
+Auf dieser Seite können keinen Einstellungen vorgenommen werden, sondern es wird lediglich das
+im Simulator abgebildete Simulationsmodell dargestellt.
+</p>
+
+<p>
+In der Simulation können folgende Eigenschaften eines realen Warteschlangen bzw. Callcenter-Systems abgebildet
+werden:
+</p>
+
+<ul>
+  <li>Beliebige Verteilung der Zwischenakunftszeiten</li>
+  <li>Gruppenankünfte</li>
+  <li>Warteraumbegrenzungen</li>
+  <li>Begrenzte Wartezeittoleranzen der Kunden</li>
+  <li>Wiederholwahrscheinlichkeiten und Wiederholabstände der Warteabbrecher</li>
+  <li>Eine beliebige Anzahl an Agenten</li>
+  <li>Beliebige Verteilung der Bedienzeiten</li>
+  <li>Gruppenbedienungen</li>
+  <li>Weiterleitungswahrscheinlichkeit nach einer Bedienung</li>
+</ul>
+
+<p>
+Folgende ebenfalls relevante Eigenschaften eines realen Callcenter-Systems kann dieser
+Mini Callcenter Simulator jedoch nicht abbilden:
+</p>
+
+<ul>
+  <li>Transiente Phase, d.h. Veränderung der Ankunftsrate und der Agentenanzahl über den Tag</li>
+  <li>Verschiedene Kundentypen mit verschiedenen Eigenschaften</li>
+  <li>Verschiedene Agententypen mit verschiedenen Skill-Leveln</li>
+  <li>Priorisierungsregeln für bestimmte Kunden- und Agentengruppen</li>
+</ul>
+
+<p>
+Der kommerzielle Callcenter Simulator kann all
+diese Eigenschaften abbilden und besitzt darüber hinaus wesentlich umfangreichere Werzeuge zur
+Auswertung von Simulationsläufen und zur teilautomatischen Optimierung von Callcenter-Systemen.
+</p>
+
+<h2>Allgemeines <img src="../images/brick.png"></h2>
+
+<p>
+Auf der Seite "Allgemeines" können ein <b>Name</b> und eine <b>Beschreibung</b> für das Modell angegeben werden.
+Diese Daten werden in der Simulation nicht weiter verwendet, werden aber zusammen mit dem Modell bzw. zusammen
+mit den Statistikergebnissen gespeichert, so dass später nachvollzogen werden kann, was mit dem jeweiligen
+Modell untersucht werden sollte.
+</p>
+
+<p>
+Über das Feld <b>Zu simulierende Anrufe</b> kann ferner eingestellt werden, wie viele virtuelle Kunden in der
+Simulation betrachtet werden sollen. Je höher die hier eingestellte Anzahl ist, desto weniger schwanken die
+Simulationsergebnisse aber auch desto länger dauert die Simulation. Da in der Simulation die stationäre Phase
+des Warteschlangensystems abgebildet werden soll, wird vor dem Beginn der Zählung der Anrufe und der Erfassung
+der Statistikergebnisse eine Einschwingphase eingefügt. Die Einschwingphase dauert 10% so lange wie die spätere
+eigentliche Simulation. 
+</p>
+
+<h2>Ankünfte <img src="../images/user.png"></h2>
+
+<p>
+Auf der Seite "Ankünfte" kann über das Feld <b>Kunden pro Ankunft</b> festgelegt werden, wie viele Kunden pro
+Ankunftsereignis eintreffen. Soll ein Callcenter-System, in dem die Kunden einzelnen eintreffen, modelliert werden,
+so kann dieser Wert auf 1 belassen werden. Über den <b>Verteilung der Zwischenankunftszeiten</b> Wahrscheinlichkeitseditor
+kann festgelegt werden, in welchem Abstand die Ankünfte stattfinden. Treffen Kunden in einem System ein, ohne ihre
+Ankünfte gegenseitig wahrzunehmen (wie dies z.B. in einem Callcenter-System der Fall ist), so eignet sich zur
+Modellierung der Zwischenankunftszeiten die Exponentialverteilung.
+</p>
+
+<h2>Warteraum und Wartezeittoleranz <img src="../images/door_in.png"></h2>
+
+<p>
+Über die <b>Warteraumbegrenzung</b> kann eingestellt werden, wie viele Kunden sich maximal gleichzeitig in der Warteschlange
+befinden können. Kunden, die bereits bedient werden, belegen keinen Platz in der Warteschlange, d.h. eine Warteraumbegrenzung
+bezieht sich nur auf die wartenden Kunden. Trifft ein Kunde ein und ist kein freier Warteplatz verfügbar, so wird dieser
+abgewiesen und verlässt unmittelbar das System. Er wird als Warteabbrecher mit einer Wartezeit von 0 Sekunden erfasst. Genauso
+wie Kunden, die aufgrund einer zu langen Wartezeit das Warten vorzeitig aufgegeben haben, kann auch solch ein erzwungener
+Warteabbrecher später evtl. einen weiteren Anrufversuch starten.
+</p>
+
+<p>
+Ist eingestellt, dass die Kunden nur eine begrenzte <b>Wartezeittoleranz</b> besitzen und nicht bereit sind, beliebig lange
+zu warten, so brechen die Kunden das Warten ab (und legen z.B. im Falle eines Callcenters auf), wenn ihre individuelle
+Wartezeittoleranz überschritten wurde. Die Wartezeittoleranz ist kein für alle Kunden konstanter Wert, sondern wird individuell
+pro Kunde gemäß der im Verteilungseditor auf dieser Seite eingestellten Wartezeittoleranzverteilung bestimmt. Die
+Wartezeittoleranzverteilung kann sehr verschiedene Verteilungstypen annehmen und ist in der Praxis meist schwer zu erheben.
+</p>
+
+<h2>Bedienungen <img src="../images/group.png"></h2>
+
+<p>
+Auf der Seite "Bedienungen" können alle für den Bedienprozess relevanten Parameter eingestellt werden. Über das Eingabefeld
+<b>Anzahl an Agenten</b> kann festgelegt werden, wie viele Agenten parallel in dem System arbeiten und Kunden bedienen.
+</p>
+
+<p>
+Im Callcenter-Bereich bearbeitet jeder Agent jeweils einen Kunden; im Kontext allgemeinerer Bediensysteme (meist im industriellen Umfeld)
+kann ein Bediener jedoch evtl. mehrere Anfragen gleichzeitig bearbeiten. Wenn ein Bediener stets mehrere Anfragen gleichzeitig
+bedienen soll, so kann dies durch einen Wert größer als 1 im Feld <b>Kunden pro Bedienung</b> festgelegt werden. Ist hier ein Wert
+größer als 1 hinterlegt und trifft ein einzelner Kunde in einem ansonsten leeren System ein, so muss dieser warten, bis genug weitere
+Kunden eingetroffen sind, um die geforderte Bedien-Batch-Größe zu erreichen.
+</p>
+
+<p>
+Über den Verteilungseditor für die <b>Bedienzeitenverteilung</b> kann eingestellt werden, wie lange die einzelnen Bedienprozesse
+dauern sollen. In der Praxis sind hier häufig Log-Normalverteilungen oder Gamma-Verteilungen zur Modellierung von Gesprächszeiten
+sinnvoll.
+</p> 
+
+<p>
+Nach einem Gespräch kann es nötig sein, den Kunden zu einem weiteren Agenten zu leiten, um sein Anliegen abschließend zu
+behandeln. Welcher Anteil der bedienten Anrufer nach einem Gespräch weitergeleitet werden soll, kann über das Eingabefeld
+<b>Weiterleitungswahrscheinlichkeit</b> festgelegt werden.
+</p>
+
+<h2>Nachbearbeitungszeiten <img src="../images/server_go.png"></h2>
+
+<p>
+Auf der Seite "Nachbearbeitungszeiten" kann eine Verteilung für die Zeitdauer, die ein Agent nach einem Gespräch mit einem
+Kunden benötigt, bevor er sich wieder als verfügbar meldet, eingestellt werden.
+</p>
+
+<p>
+Der Kunde hat das System bereits verlassen oder wurde bereits weitergeleitet, wenn der Agent mit der Nachbearbeitung beginnt.
+Das bedeutet, dass die Nachbearbeitungszeit nicht zur Bedienzeit gezählt werden kann. Auf der anderen Seite ist der Agent
+jedoch auch während der Nachbearbeitungszeit noch durch die mit dem Kunden verbundenen Arbeiten belegt, so dass er in dieser
+Zeit noch nicht wieder für neue Anrufe zur Verfügung steht, d.h. die Nachbearbeitungszeit kann auch nicht als Bereitzeit
+des Agenten gezählt werden.
+</p> 
+
+<h2>Wiederholungen <img src="../images/arrow_redo2.png"></h2>
+
+<p>
+Ein Kunde, der entweder aufgrund der Tatsache, dass alle Warteplätze belegt waren, abgewiesen wurde oder aber aufgrund einer zu
+kurzen individuellen Wartezeittoleranz das Warten vorzeitig aufgegeben hat, kann später einen weiteren Anrufversuch starten.
+Über das Eingabefeld <b>Wiederholwahrscheinlichkeit</b> kann festgelegt werden, mit welcher Wahrscheinlichkeit dies auftritt.
+</p>
+
+<p>
+Wenn ein Kunden sich entschließt, später einen weiteren Anrufversuch zu starten, so wartet er eine gewisse Zeit, bis er den
+weiteren Anrufversuch tätigt. Über den Verteilungseditor zur Festlegung der <b>Wiederholabstände</b> lässt sich einstellen,
+gemäß welcher Wahrscheinlichkeitsverteilung die individuellen Wiederholabstände festgelegt werden sollen.
+</p>
+
+</body>
+</html>

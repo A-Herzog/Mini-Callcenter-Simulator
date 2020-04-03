@@ -1,0 +1,4 @@
+Homepage:
+- xsd/dtd-Pfad in start.Main anpassen
+- xsd/dtd-Pfad in ui.help.pages_*.index.html anpassen
+- Simulator/build/XMLdocs/MiniCallcenterSimulator.xsd

@@ -1,0 +1,4 @@
+target/
+language/gettext/
+language/sed/
+MiniCallcenterSimulator.cfg

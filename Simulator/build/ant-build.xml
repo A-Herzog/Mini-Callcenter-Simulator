@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="Release services">
+
+	<property name="Simulator.location" location=".." />
+	<property name="SimTools.location" location="../../SimTools" />
+	<property name="SimSystem.location" location="../../SimSystem" />
+	<property name="BuildTools.location" location="." />
+	<property name="NSIS.location" location="C:\Program Files (x86)\NSIS" />
+	<property name="sed.location" location="../language/sed/bin" />
+	<property name="Release.location" location="../../Release" />
+	
+	<!-- Full simulator build process -->
+	<target name="build" description="Build simulator">
+		<delete file="${Release.location}/MiniCallcenterSimulator.exe" />
+		<delete file="${Release.location}/MiniCallcenterSimulatorSetup.exe" />
+
+		<echo message="Set version in wrapper/installer scripts" />
+		<delete file="${BuildTools.location}/Version.nsi"/>
+		<exec dir="${BuildTools.location}" executable="${sed.location}/sed.exe" output="${BuildTools.location}/Version.nsi">
+			<arg line="-nf &quot;${BuildTools.location}/Version_sed.txt&quot; &quot;${Simulator.location}/src/main/java/ui/MainPanel.java&quot;" />
+		</exec>
+		
+		<echo message="Copy files" />
+		<copy file="${Simulator.location}/target/MiniCallcenterSimulator.jar" todir="${Release.location}"/>
+		<copy todir="${Release.location}/docs">
+			<fileset dir="${BuildTools.location}/xmldocs"/>
+		</copy>
+		<copy file="${Simulator.location}/LICENSE_COMPONENTS.md" tofile="${Release.location}/docs/license_components_simulator.md"/>
+		<copy file="${SimTools.location}/LICENSE_COMPONENTS.md" tofile="${Release.location}/docs/license_components_simtools.md"/>
+		<copy file="${SimSystem.location}/LICENSE_COMPONENTS.md" tofile="${Release.location}/docs/license_components_simsystem.md"/>
+		<copy file="${Simulator.location}/../LICENSE" tofile="${Release.location}/docs/license.txt"/>
+		
+		<copy todir="${Release.location}/libs">
+			<fileset dir="${Simulator.location}/target/libs"/>
+		</copy>
+		<echo file="${Release.location}/libs/LICENSES" append="false">The licenses of the libraries stored in this directory can be found in detail in ../docs/license_components_*.md</echo>
+
+		<echo message="Generate exe wrapper" />
+		<exec executable="${NSIS.location}\makensis.exe" dir="${BuildTools.location}">
+			<arg value="Launcher.nsi" />
+		</exec>
+		<move file="${BuildTools.location}/MiniCallcenterSimulator.exe" tofile="${Release.location}/MiniCallcenterSimulator.exe" />
+
+		<echo message="Generate installer" />
+		<exec executable="${NSIS.location}\makensis.exe" dir="${BuildTools.location}">
+			<arg value="Setup.nsi" />
+		</exec>
+						
+		<echo message="Generate zip package" />
+		<zip destfile="${Release.location}/MiniCallcenterSimulator.zip">
+			<zipfileset dir="${Release.location}" includes="MiniCallcenterSimulator.jar,MiniCallcenterSimulator.exe,docs/**,libs/**"/>
+		</zip>
+		
+		<echo message="Clean up" />
+		<delete file="${Release.location}/MiniCallcenterSimulator.exe" />
+		<delete file="${Release.location}/MiniCallcenterSimulator.jar" />
+		<delete dir="${Release.location}/docs" />
+		<delete dir="${Release.location}/libs" />
+	</target>
+</project>
