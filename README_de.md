@@ -12,9 +12,9 @@ Der Mini Callcenter Simulator dient im Wesentlichen zu Lehrzwecken. Im Mini Call
 
 ## Download
 
-* [Windows-Installer](/releases/latest/download/MiniCallcenterSimulatorSetup.exe)
-* [zip-Datei](/releases/latest/download/MiniCallcenterSimulator.zip) (nutzbar unter Windows, Linux, MacOS, ...)
-* [Quellcode](/releases/latest/) ([Hinweise zum Build-Prozess](BUILD.md))
+* [Windows-Installer](https://github.com/A-Herzog/Mini-Callcenter-Simulator/releases/latest/download/MiniCallcenterSimulatorSetup.exe)
+* [zip-Datei](https://github.com/A-Herzog/Mini-Callcenter-Simulator/releases/latest/download/MiniCallcenterSimulator.zip) (nutzbar unter Windows, Linux, MacOS, ...)
+* [Quellcode](https://github.com/A-Herzog/Mini-Callcenter-Simulator/releases/latest/) ([Hinweise zum Build-Prozess](BUILD.md))
 
 Die Windows-Version kann sowohl mit als auch ohne Admin-Rechte installiert werden. Die zip-Datei-Variante kann auf jeder Plattform ohne Installation verwendet werden.
 
