@@ -22,7 +22,7 @@ import org.apache.commons.math3.distribution.BetaDistribution;
  * <code>BetaDistributionImpl</code> dar, bei der der Träge der Dichte frei wählbar ist
  * und nicht auf das Intervall [0,1] festgelegt ist.
  * @author Alexander Herzog
- * @version 1.1
+ * @version 1.2
  * @see BetaDistribution
  */
 public final class ExtBetaDistributionImpl extends BetaDistribution implements Cloneable {
@@ -81,7 +81,11 @@ public final class ExtBetaDistributionImpl extends BetaDistribution implements C
 
 	@Override
 	public double getNumericalMean() {
-		return getAlpha()/(getAlpha()+getBeta())*(getSupportUpperBound()-getSupportLowerBound())+getSupportUpperBound();
+		final double alpha=getAlpha();
+		final double beta=getBeta();
+		final double a=getSupportLowerBound();
+		final double b=getSupportUpperBound();
+		return alpha/(alpha+beta)*(b-a)+a;
 	}
 
 	@Override
@@ -90,7 +94,7 @@ public final class ExtBetaDistributionImpl extends BetaDistribution implements C
 		final double beta=getBeta();
 		final double a=getSupportLowerBound();
 		final double b=getSupportUpperBound();
-		return Math.sqrt(Math.pow(a-b,2)*alpha*beta/Math.pow(alpha+beta,2)/(1+alpha+beta));
+		return Math.pow(a-b,2)*alpha*beta/Math.pow(alpha+beta,2)/(1+alpha+beta);
 	}
 
 	@Override

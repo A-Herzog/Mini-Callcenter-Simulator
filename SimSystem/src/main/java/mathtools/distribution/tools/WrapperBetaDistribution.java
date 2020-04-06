@@ -74,13 +74,21 @@ public class WrapperBetaDistribution extends AbstractDistributionWrapper {
 	protected double getParameterInt(AbstractRealDistribution distribution, int nr) {
 		if (nr==1) return ((ExtBetaDistributionImpl)distribution).getAlpha();
 		if (nr==2) return ((ExtBetaDistributionImpl)distribution).getBeta();
+		if (nr==3) return ((ExtBetaDistributionImpl)distribution).getSupportLowerBound();
+		if (nr==4) return ((ExtBetaDistributionImpl)distribution).getSupportUpperBound();
 		return 0.0;
 	}
 
 	@Override
 	protected AbstractRealDistribution setParameterInt(AbstractRealDistribution distribution, int nr, double value) {
-		if (nr==1) return new ExtBetaDistributionImpl(((ExtBetaDistributionImpl)distribution).getSupportLowerBound(),((ExtBetaDistributionImpl)distribution).getSupportUpperBound(),value,((ExtBetaDistributionImpl)distribution).getBeta());
-		if (nr==2) return new ExtBetaDistributionImpl(((ExtBetaDistributionImpl)distribution).getSupportLowerBound(),((ExtBetaDistributionImpl)distribution).getSupportUpperBound(),((ExtBetaDistributionImpl)distribution).getAlpha(),value);
+		final double alpha=((ExtBetaDistributionImpl)distribution).getAlpha();
+		final double beta=((ExtBetaDistributionImpl)distribution).getBeta();
+		final double a=((ExtBetaDistributionImpl)distribution).getSupportLowerBound();
+		final double b=((ExtBetaDistributionImpl)distribution).getSupportUpperBound();
+		if (nr==1) return new ExtBetaDistributionImpl(a,b,value,beta);
+		if (nr==2) return new ExtBetaDistributionImpl(a,b,alpha,value);
+		if (nr==3) return new ExtBetaDistributionImpl(value,b,alpha,beta);
+		if (nr==4) return new ExtBetaDistributionImpl(a,value,alpha,beta);
 		return null;
 	}
 

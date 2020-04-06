@@ -68,7 +68,7 @@ import mathtools.distribution.tools.FileDropperData;
  * Zeigt den grafischen Verlauf von Dichte und Verteilungsfunktion einer Verteilung
  * vom Typ <code>AbstractContinuousDistribution</code> an.
  * @author Alexander Herzog
- * @version 1.3
+ * @version 1.5
  * @see AbstractRealDistribution
  */
 public class JDistributionPanel extends JPanel implements JGetImage {
@@ -111,7 +111,7 @@ public class JDistributionPanel extends JPanel implements JGetImage {
 	/** Bezeichner für Dateiformat bmp (im Dateiauswahldialog) */
 	public static String FileTypeBMP="bmp-Dateien";
 	/** Wikipedia-Link für Hilfe zu Verteilungwn */
-	public static String DistributionWikipedia="http://wikipedia.de/go?l=de&e=wikipedia&s=suchen&q=";
+	public static String DistributionWikipedia="https://de.wikipedia.org/wiki/";
 	/** Überschreibwarnung für Grafiken (Text der Meldung) */
 	public static String GraphicsFileOverwriteWarning="Die Datei %s existiert bereits. Soll die Datei jetzt überschrieben werden?";
 	/** Überschreibwarnung für Grafiken (Titel der Meldung) */
