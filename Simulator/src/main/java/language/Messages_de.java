@@ -775,7 +775,7 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1928] = "Statistics.XML.RunTime.Error";
     t[1929] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[1940] = "JDistributionEditor.Wikipedia.Link";
-    t[1941] = "http://wikipedia.de/go?l=de&e=wikipedia&s=suchen&q=";
+    t[1941] = "https://de.wikipedia.org/wiki/";
     t[1944] = "Statistic.Viewer.Toolbar.Excel.Error.Info";
     t[1945] = "Die Tabelle konnte nicht gespeichert werden.";
     t[1946] = "Dialog.Title.Information";

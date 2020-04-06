@@ -775,7 +775,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1928] = "Statistics.XML.RunTime.Error";
     t[1929] = "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[1940] = "JDistributionEditor.Wikipedia.Link";
-    t[1941] = "http://en.wikipedia.org/w/index.php?search=";
+    t[1941] = "https://en.wikipedia.org/wiki/";
     t[1944] = "Statistic.Viewer.Toolbar.Excel.Error.Info";
     t[1945] = "Could not save table.";
     t[1946] = "Dialog.Title.Information";
