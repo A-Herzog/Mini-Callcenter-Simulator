@@ -5,3 +5,5 @@ In many cases, personnel planning is carried out in call centers based on the Er
 The Mini Call Center Simulator simulates a call center and takes into account exactly the above mentioned characteristics. When displaying the results, the simulation results are also compared to the Erlang-C results and it is indicated which properties of the system lead to deviations between simulation and formula results.
 
 The Mini Call Center Simulator is mainly used for teaching purposes. In the Mini Callcenter Simulator different distributions for inter-arrival times, service times, etc. can be entered and the relevant properties "customer impatience" and "repeated tries" are also modeled, but neither different customer groups and skills of the agents nor an arrival rate that changes during the day are modeled. These and many other properties are available in the large call center simulator.
+
+![Screenshot](https://raw.githubusercontent.com/A-Herzog/Mini-Callcenter-Simulator/master/screenshot_en.png)
