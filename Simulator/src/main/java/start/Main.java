@@ -71,8 +71,8 @@ public class Main {
 		if (Messages_Java11.isFixNeeded()) Messages_Java11.setupMissingSwingMessages();
 
 		/* Basiseinstellungen zu den xml-Dateiformaten */
-		XMLTools.homeURL="www.mathematik.tu-clausthal.de";
-		XMLTools.mediaURL="https://"+XMLTools.homeURL+"/fileadmin/AG-StochastischeModelle/simulator/";
+		XMLTools.homeURL="a-herzog.github.io";
+		XMLTools.mediaURL="https://"+XMLTools.homeURL+"/Mini-Callcenter-Simulator/";
 		XMLTools.dtd="MiniCallcenterSimulator.dtd";
 		XMLTools.xsd="MiniCallcenterSimulator.xsd";
 
