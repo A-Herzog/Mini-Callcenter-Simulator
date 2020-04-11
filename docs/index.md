@@ -7,3 +7,18 @@ The Mini Call Center Simulator simulates a call center and takes into account ex
 The Mini Call Center Simulator is mainly used for teaching purposes. In the Mini Callcenter Simulator different distributions for inter-arrival times, service times, etc. can be entered and the relevant properties "customer impatience" and "repeated tries" are also modeled, but neither different customer groups and skills of the agents nor an arrival rate that changes during the day are modeled. These and many other properties are available in the large call center simulator.
 
 ![Screenshot](https://raw.githubusercontent.com/A-Herzog/Mini-Callcenter-Simulator/master/screenshot_en.png)
+
+## Download
+
+* [Windows installer](https://github.com/A-Herzog/Mini-Callcenter-Simulator/releases/latest/download/MiniCallcenterSimulatorSetup.exe)
+* [Zip file](https://github.com/A-Herzog/Mini-Callcenter-Simulator/releases/latest/download/MiniCallcenterSimulator.zip) (for use under Windows, Linux, MacOS, ...)
+* [Source code](https://github.com/A-Herzog/Mini-Callcenter-Simulator/releases/latest/)
+
+The Windows version can be installed with or without admin rights. The zip file version can be used on any platform without installation.
+
+* System requirements: [Java 8 or higher](https://adoptopenjdk.net/ "Download Java from adoptopenjdk.net")
+* License: [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) (for Mini Callcenter Simulator, the used libraries are partly subject to different open source licenses)
+
+## Literature
+
+* [A. Herzog: "Callcenter – Analyse und Management"](https://www.springer.com/de/book/9783658183080) (in German)
