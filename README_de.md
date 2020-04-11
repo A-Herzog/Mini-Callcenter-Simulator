@@ -1,5 +1,9 @@
 # Mini Callcenter Simulator
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/a-herzog/mini-callcenter-simulator)
+![GitHub](https://img.shields.io/github/license/a-herzog/mini-callcenter-simulator)
+![GitHub All Releases](https://img.shields.io/github/downloads/a-herzog/mini-callcenter-simulator/total)
+
 ([English version of this readme.](README_en.md))
 
 Vielfach erfolgt die Personalbedarfsplanung in Callcentern basierend auf der Erlang-C-Formel. In der Erlang-C-Formel bleiben jedoch viele Eigenschaften realer Callcenter Systeme, die maßgeblich für die Leistungsgrößen sind, unberücksichtigt. In der klassischen Formulierung berücksichtigt die Erlang-C-Formel weder Warteabbrecher noch Wiederholer. Es existiert eine erweiterte Variante der Erlang-C-Formel, in die zumindest die Warteabbrecher eingehen. Des Weiteren wird bei der Verwendung der Erlang-C-Formel davon ausgegangen, dass sowohl die Bedienzeiten als auch die Wartezeittoleranzen der Kunden exponentialverteilt sind, was in der Realität ebenfalls äußerst selten der Fall sein dürfte.
