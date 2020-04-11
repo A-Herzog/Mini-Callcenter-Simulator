@@ -1,5 +1,9 @@
 # Mini Callcenter Simulator
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/a-herzog/mini-callcenter-simulator)
+![GitHub](https://img.shields.io/github/license/a-herzog/mini-callcenter-simulator)
+![GitHub All Releases](https://img.shields.io/github/downloads/a-herzog/mini-callcenter-simulator/total)
+
 ([Deutsche Version dieser Readme.](README_de.md))
 
 In many cases, personnel planning is carried out in call centers based on the Erlang-C formula. However, the Erlang-C formula does not take into account many of the characteristics of real call center systems that are important for the performance variables. In the classic formulation, the Erlang C formula does not take into account either wait cancellers or repeaters. There is an extended variant of the Erlang-C formula that includes at least the wait cancellers. In addition, when using the Erlang-C formula, it is assumed that both the service times and the waiting time tolerances of the clients are exponentially distributed.
