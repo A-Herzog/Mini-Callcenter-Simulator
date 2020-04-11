@@ -7,6 +7,7 @@
 	<property name="BuildTools.location" location="." />
 	<property name="NSIS.location" location="C:\Program Files (x86)\NSIS" />
 	<property name="sed.location" location="../language/sed/bin" />
+	<property name="Homepage.location" location="../../docs" />
 	<property name="Release.location" location="../../Release" />
 	
 	<!-- Full simulator build process -->
@@ -23,7 +24,7 @@
 		<echo message="Copy files" />
 		<copy file="${Simulator.location}/target/MiniCallcenterSimulator.jar" todir="${Release.location}"/>
 		<copy todir="${Release.location}/docs">
-			<fileset dir="${BuildTools.location}/xmldocs"/>
+			<fileset dir="${Homepage.location}" includes="*.dtd,*.xsd"/>
 		</copy>
 		<copy file="${Simulator.location}/LICENSE_COMPONENTS.md" tofile="${Release.location}/docs/license_components_simulator.md"/>
 		<copy file="${SimTools.location}/LICENSE_COMPONENTS.md" tofile="${Release.location}/docs/license_components_simtools.md"/>
