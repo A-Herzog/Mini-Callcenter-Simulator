@@ -440,6 +440,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1127] = "gif files";
     t[1128] = "Main.Toolbar.LoadStatistics.Hint";
     t[1129] = "Load statistics data from file";
+    t[1132] = "MainMenu.Help.Homepage";
+    t[1133] = "Homepage";
     t[1134] = "Window.Help";
     t[1135] = "Help";
     t[1138] = "Statistics.ResidenceTimes.successful";
@@ -1292,6 +1294,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3311] = "Spring green";
     t[3312] = "Main.Toolbar.StartSimulation.Hint";
     t[3313] = "Start simulation of the model";
+    t[3314] = "MainMenu.Help.Homepage.Mnemonic";
+    t[3315] = "H";
     t[3316] = "Compare.SelectStatisticFile.Info";
     t[3317] = "Select a statistic file to be compared.";
     t[3318] = "Simulator.Log.ScheduleCall.Info.New";
@@ -2000,12 +2004,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4987] = "a maximum of one additional parameter can be entered";
     t[4992] = "Statistic.Seconds";
     t[4993] = "seconds";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4996] = "Statistics.XML.SystemLength";
     t[4997] = "StatisticsClientsInSystem";
     t[5002] = "Color.FF0000";
     t[5003] = "Red";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5006] = "Statistic.Viewer.Toolbar.Zoom";
     t[5007] = "Default zoom";
     t[5008] = "Color.000000";

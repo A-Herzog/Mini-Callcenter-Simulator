@@ -233,6 +233,7 @@ public class MainPanel extends MainPanelBase {
 		addAction("HelpHelp",e->commandHelpHelp());
 		addAction("HelpContent",e->commandHelpContent());
 		addAction("HelpBook",e->commandHelpBook());
+		addAction("HelpHomepage",e->commandHelpHomepage());
 		addAction("HelpLicense",e->commandHelpLicenseInfo());
 		addAction("HelpInfo",e->commandHelpInfo());
 	}
@@ -354,6 +355,7 @@ public class MainPanel extends MainPanelBase {
 		createMenuItem(menu,Language.tr("Main.Menu.Help.Help"),Images.HELP.getIcon(),Language.tr("Main.Menu.Help.Help.Mnemonic"),KeyEvent.VK_F1,"HelpHelp");
 		createMenuItemShift(menu,Language.tr("Main.Menu.Help.HelpContent"),Images.HELP_CONTENT.getIcon(),Language.tr("Main.Menu.Help.HelpContent.Mnemonic"),KeyEvent.VK_F1,"HelpContent");
 		createMenuItem(menu,Language.tr("MainMenu.Help.Book"),Images.HELP_BOOK.getIcon(),Language.tr("MainMenu.Help.Book.Mnemonic"),"HelpBook");
+		createMenuItem(menu,Language.tr("MainMenu.Help.Homepage"),Images.HELP_HOMEPAGE.getIcon(),Language.tr("MainMenu.Help.Homepage.Mnemonic"),"HelpHomepage");
 		menu.addSeparator();
 		createMenuItem(menu,Language.tr("Main.Menu.Help.LicenseInformation"),Language.tr("Main.Menu.Help.LicenseInformation.Mnemonic"),"HelpLicense");
 		createMenuItemCtrlShift(menu,Language.tr("Main.Menu.Help.ProgramInformation"),Images.GENERAL_INFO.getIcon(),Language.tr("Main.Menu.Help.ProgramInformation.Mnemonic"),KeyEvent.VK_F1,"HelpInfo");
@@ -788,6 +790,14 @@ public class MainPanel extends MainPanelBase {
 			Desktop.getDesktop().browse(new URI("https://www.springer.com/de/book/9783658183080"));
 		} catch (IOException | URISyntaxException e) {
 			MsgBox.error(this,Language.tr("Window.Info.NoInternetConnection"),String.format(Language.tr("Window.Info.NoInternetConnection.Address"),"https://www.springer.com/de/book/9783658183080"));
+		}
+	}
+
+	private void commandHelpHomepage() {
+		try {
+			Desktop.getDesktop().browse(new URI("https://github.com/A-Herzog/Mini-Callcenter-Simulator"));
+		} catch (IOException | URISyntaxException e) {
+			MsgBox.error(this,Language.tr("Window.Info.NoInternetConnection"),String.format(Language.tr("Window.Info.NoInternetConnection.Address"),"https://github.com/A-Herzog/Mini-Callcenter-Simulator"));
 		}
 	}
 

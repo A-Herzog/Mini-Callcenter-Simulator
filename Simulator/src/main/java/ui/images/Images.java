@@ -149,6 +149,9 @@ public enum Images {
 	/** Symbol "Lehrbuch" */
 	HELP_BOOK("book.png"),
 
+	/** Symbol "Homepage" */
+	HELP_HOMEPAGE("world.png"),
+
 	/* Sprache */
 
 	/** Symbol "Sprache - Englisch" */

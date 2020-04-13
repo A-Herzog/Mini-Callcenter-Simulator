@@ -440,6 +440,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1127] = "gif-Dateien";
     t[1128] = "Main.Toolbar.LoadStatistics.Hint";
     t[1129] = "L\u00e4dt die Statistik aus einer Datei";
+    t[1132] = "MainMenu.Help.Homepage";
+    t[1133] = "Homepage";
     t[1134] = "Window.Help";
     t[1135] = "Hilfe";
     t[1138] = "Statistics.ResidenceTimes.successful";
@@ -1292,6 +1294,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3311] = "Fr\u00fchlingsgr\u00fcn";
     t[3312] = "Main.Toolbar.StartSimulation.Hint";
     t[3313] = "Startet einen Simulationslauf";
+    t[3314] = "MainMenu.Help.Homepage.Mnemonic";
+    t[3315] = "H";
     t[3316] = "Compare.SelectStatisticFile.Info";
     t[3317] = "W\u00e4hlt die Statistikdatei aus, die zum Vergleichen der Modelle verwendet werden soll.";
     t[3318] = "Simulator.Log.ScheduleCall.Info.New";
@@ -2000,12 +2004,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4987] = "darf maximal ein weiterer Parameter folgen";
     t[4992] = "Statistic.Seconds";
     t[4993] = "Sekunden";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4996] = "Statistics.XML.SystemLength";
     t[4997] = "StatistikKundenImSystem";
     t[5002] = "Color.FF0000";
     t[5003] = "Rot";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5006] = "Statistic.Viewer.Toolbar.Zoom";
     t[5007] = "Standardzoom";
     t[5008] = "Color.000000";

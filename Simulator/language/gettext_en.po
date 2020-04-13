@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-11 01:39+0200\n"
+"POT-Creation-Date: 2020-04-13 13:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1770,6 +1770,12 @@ msgstr "Text book \"Callcenter – Analyse und Management\" (German)"
 
 msgid "MainMenu.Help.Book.Mnemonic"
 msgstr "C"
+
+msgid "MainMenu.Help.Homepage"
+msgstr "Homepage"
+
+msgid "MainMenu.Help.Homepage.Mnemonic"
+msgstr "H"
 
 msgid "Model.XML.BatchArrival"
 msgstr "The value \"%s\" for the arrival batch size is invalid. A positive integer number has to be specified."
