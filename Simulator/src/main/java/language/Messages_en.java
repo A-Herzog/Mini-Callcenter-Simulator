@@ -1480,6 +1480,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3783] = "Model file was created with a newer version";
     t[3794] = "Statistics.XML.BatchCount";
     t[3795] = "BatchCount";
+    t[3796] = "FileType.SciLabScript";
+    t[3797] = "SciLab script";
     t[3826] = "Statistic.Viewer.Report.NoTablesSelected.Title";
     t[3827] = "No data selected for saving";
     t[3832] = "Color.228B22";
@@ -2002,10 +2004,10 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4981] = "An error occurred while closing file %s.";
     t[4986] = "CommandLine.Count.ThenMaximum1";
     t[4987] = "a maximum of one additional parameter can be entered";
-    t[4992] = "Statistic.Seconds";
-    t[4993] = "seconds";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4992] = "Statistic.Seconds";
+    t[4993] = "seconds";
     t[4996] = "Statistics.XML.SystemLength";
     t[4997] = "StatisticsClientsInSystem";
     t[5002] = "Color.FF0000";

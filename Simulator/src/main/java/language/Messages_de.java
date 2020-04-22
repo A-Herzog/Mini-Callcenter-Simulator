@@ -1480,6 +1480,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3783] = "Modelldatei wurde mit neuerer Version erstellt";
     t[3794] = "Statistics.XML.BatchCount";
     t[3795] = "BatchAnzahl";
+    t[3796] = "FileType.SciLabScript";
+    t[3797] = "SciLab-Skript";
     t[3826] = "Statistic.Viewer.Report.NoTablesSelected.Title";
     t[3827] = "Keine Daten zum Speichern ausgew\u00e4hlt";
     t[3832] = "Color.228B22";
@@ -2002,10 +2004,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4981] = "Es ist ein Fehler beim Schlie\u00dfen der Datei\n%s\naufgetreten.";
     t[4986] = "CommandLine.Count.ThenMaximum1";
     t[4987] = "darf maximal ein weiterer Parameter folgen";
-    t[4992] = "Statistic.Seconds";
-    t[4993] = "Sekunden";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4992] = "Statistic.Seconds";
+    t[4993] = "Sekunden";
     t[4996] = "Statistics.XML.SystemLength";
     t[4997] = "StatistikKundenImSystem";
     t[5002] = "Color.FF0000";
