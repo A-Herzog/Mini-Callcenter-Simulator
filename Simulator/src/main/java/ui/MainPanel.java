@@ -90,6 +90,11 @@ public class MainPanel extends MainPanelBase {
 	public static final String AUTHOR="Alexander Herzog";
 
 	/**
+	 * E-Mail-Adresse des Autors
+	 */
+	public static final String AUTHOR_EMAIL="alexander.herzog@tu-clausthal.de";
+
+	/**
 	 * Programmversion
 	 */
 	public static final String systemVersion="5.6.228";
@@ -233,6 +238,7 @@ public class MainPanel extends MainPanelBase {
 		addAction("HelpHelp",e->commandHelpHelp());
 		addAction("HelpContent",e->commandHelpContent());
 		addAction("HelpBook",e->commandHelpBook());
+		addAction("HelpSupport",e->commandHelpSupport());
 		addAction("HelpHomepage",e->commandHelpHomepage());
 		addAction("HelpLicense",e->commandHelpLicenseInfo());
 		addAction("HelpInfo",e->commandHelpInfo());
@@ -354,7 +360,9 @@ public class MainPanel extends MainPanelBase {
 
 		createMenuItem(menu,Language.tr("Main.Menu.Help.Help"),Images.HELP.getIcon(),Language.tr("Main.Menu.Help.Help.Mnemonic"),KeyEvent.VK_F1,"HelpHelp");
 		createMenuItemShift(menu,Language.tr("Main.Menu.Help.HelpContent"),Images.HELP_CONTENT.getIcon(),Language.tr("Main.Menu.Help.HelpContent.Mnemonic"),KeyEvent.VK_F1,"HelpContent");
+		menu.addSeparator();
 		createMenuItem(menu,Language.tr("MainMenu.Help.Book"),Images.HELP_BOOK.getIcon(),Language.tr("MainMenu.Help.Book.Mnemonic"),"HelpBook");
+		createMenuItem(menu,Language.tr("Main.Menu.Help.Support"),Images.HELP_EMAIL.getIcon(),Language.tr("Main.Menu.Help.Support.Mnemonic"),"HelpSupport");
 		createMenuItem(menu,Language.tr("MainMenu.Help.Homepage"),Images.HELP_HOMEPAGE.getIcon(),Language.tr("MainMenu.Help.Homepage.Mnemonic"),"HelpHomepage");
 		menu.addSeparator();
 		createMenuItem(menu,Language.tr("Main.Menu.Help.LicenseInformation"),Language.tr("Main.Menu.Help.LicenseInformation.Mnemonic"),"HelpLicense");
@@ -791,6 +799,16 @@ public class MainPanel extends MainPanelBase {
 		} catch (IOException | URISyntaxException e) {
 			MsgBox.error(this,Language.tr("Window.Info.NoInternetConnection"),String.format(Language.tr("Window.Info.NoInternetConnection.Address"),"https://www.springer.com/de/book/9783658183080"));
 		}
+	}
+
+
+	private void commandHelpSupport() {
+		try {
+			Desktop.getDesktop().mail(new URI("mailto:"+MainPanel.AUTHOR_EMAIL));
+		} catch (IOException | URISyntaxException e1) {
+			MsgBox.error(getOwnerWindow(),Language.tr("Window.Info.NoEMailProgram.Title"),String.format(Language.tr("Window.Info.NoEMailProgram.Info"),"mailto:"+MainPanel.AUTHOR_EMAIL));
+		}
+		return;
 	}
 
 	private void commandHelpHomepage() {

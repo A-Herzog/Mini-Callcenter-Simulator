@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-22 14:21+0200\n"
+"POT-Creation-Date: 2020-05-01 14:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1663,6 +1663,12 @@ msgstr "Programminfo..."
 msgid "Main.Menu.Help.ProgramInformation.Mnemonic"
 msgstr "P"
 
+msgid "Main.Menu.Help.Support"
+msgstr "Unterstützung & Support"
+
+msgid "Main.Menu.Help.Support.Mnemonic"
+msgstr "U"
+
 msgid "Main.Menu.RecordSimulation"
 msgstr "Simulation in Logdatei aufzeichnen..."
 
@@ -3223,6 +3229,12 @@ msgstr "Da keine grafische Oberfläche zur Verfügung steht, kann der Simulator 
 
 msgid "Window.Help"
 msgstr "Hilfe"
+
+msgid "Window.Info.NoEMailProgram.Info"
+msgstr ""
+"Der angegeben E-Mail-Link\n"
+"%s\n"
+"konnte nicht aufgerufen werden."
 
 msgid "Window.Info.NoEMailProgram.Title"
 msgstr "Kein E-Mail-Programm festgelegt"

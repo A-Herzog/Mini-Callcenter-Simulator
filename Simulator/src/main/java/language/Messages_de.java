@@ -190,6 +190,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[483] = "In den analytischen Modellen werden die Wartezeittoleranzen stets als exponentiell verteilt angenommen.";
     t[484] = "Statistic.Viewer.MailError.Info";
     t[485] = "Der angegeben E-Mail-Link\n%s\nkonnte nicht aufgerufen werden.";
+    t[492] = "Statistic.Viewer.Toolbar.OpenTable";
+    t[493] = "\u00d6ffnen";
     t[500] = "Color.B0E0E6";
     t[501] = "Powder Blau";
     t[510] = "Distribution.Cauchy";
@@ -468,8 +470,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1183] = "Inverse Gau\u00df-Verteilung";
     t[1194] = "Statistic.of.QueueLength.lower";
     t[1195] = "der Warteschlangenl\u00e4nge";
-    t[1202] = "Statistic.Viewer.Toolbar.OpenTable";
-    t[1203] = "\u00d6ffnen";
+    t[1202] = "Main.Menu.Help.Support.Mnemonic";
+    t[1203] = "U";
     t[1208] = "Example.Model";
     t[1209] = "Modell";
     t[1214] = "Statistics.XML.Warning";
@@ -986,6 +988,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2501] = "Warteraum und Wartezeittoleranz";
     t[2502] = "Statistic.Viewer.Toolbar.Print";
     t[2503] = "Drucken";
+    t[2504] = "Window.Info.NoEMailProgram.Info";
+    t[2505] = "Der angegeben E-Mail-Link\n%s\nkonnte nicht aufgerufen werden.";
     t[2506] = "Statistics.XML.WorkingTimes";
     t[2507] = "StatistikBedienzeiten";
     t[2512] = "Distribution.Normal";
@@ -1616,6 +1620,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4107] = "der Verweilzeiten";
     t[4108] = "Distribution.Rayleigh";
     t[4109] = "Rayleigh-Verteilung";
+    t[4114] = "Main.Menu.Help.Support";
+    t[4115] = "Unterst\u00fctzung & Support";
     t[4122] = "Color.FF4500";
     t[4123] = "Orangerot";
     t[4126] = "Dialog.Button.Copy";
@@ -1998,14 +2004,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4963] = "StatistikAnrufeServiceLevel";
     t[4966] = "XML.InterpreterError";
     t[4967] = "Der XML-Interpreter konnte nicht initalisiert werden.";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4972] = "Statistic.Viewer.SpecialText.Category";
     t[4973] = "<p>Bitte w\u00e4hlen Sie in der Baumstruktur eine <b>Kategorie</b> aus, um die entsprechenden Informationen angezeigt zu bekommen.</p>";
     t[4980] = "XML.ErrorClosingFile";
     t[4981] = "Es ist ein Fehler beim Schlie\u00dfen der Datei\n%s\naufgetreten.";
     t[4986] = "CommandLine.Count.ThenMaximum1";
     t[4987] = "darf maximal ein weiterer Parameter folgen";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4992] = "Statistic.Seconds";
     t[4993] = "Sekunden";
     t[4996] = "Statistics.XML.SystemLength";

@@ -149,6 +149,9 @@ public enum Images {
 	/** Symbol "Lehrbuch" */
 	HELP_BOOK("book.png"),
 
+	/** Symbol "E-Mail" */
+	HELP_EMAIL("icon_mail.gif"),
+
 	/** Symbol "Homepage" */
 	HELP_HOMEPAGE("world.png"),
 
