@@ -16,12 +16,18 @@
 package ui;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.io.IOException;
+import java.net.URL;
 
 import javax.swing.Box;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.JTextPane;
 
 import language.Language;
 import mathtools.NumberTools;
@@ -35,7 +41,7 @@ import ui.images.Images;
  * @see EditorPanelBase
  * @author Alexander Herzog
  */
-public class EditorPanel extends EditorPanelBase {
+public final class EditorPanel extends EditorPanelBase {
 	private static final long serialVersionUID = 871808238984135272L;
 
 	/* Allgemeines */
@@ -66,6 +72,10 @@ public class EditorPanel extends EditorPanelBase {
 	private JTextField retryProbability;
 	private JDistributionPanel retryTimeDist;
 
+	/* Info-Panel */
+	private JPanel infoParent;
+	private JTextPane infoPanel;
+
 	/**
 	 * Konstruktor der Klasse
 	 * @param model	Anzuzeigendes Modell
@@ -87,10 +97,12 @@ public class EditorPanel extends EditorPanelBase {
 	protected void buildGUI() {
 		JPanel p;
 
+		/* Modell */
 		p=addTab(Language.tr("Editor.Model"),Images.MODEL_EDITOR_MODEL.getIcon());
 		p.setLayout(new BorderLayout());
 		p.add(new CallcenterModellPanel(EditModel.systemVersion),BorderLayout.CENTER);
 
+		/* Allgemeines */
 		p=addTab(Language.tr("Editor.General"),Images.MODEL_EDITOR_GENERAL.getIcon());
 		name=addInputLine(p,Language.tr("Editor.General.Name"),readOnly);
 		description=addInputArea(p,Language.tr("Editor.General.Description"),readOnly);
@@ -98,12 +110,14 @@ public class EditorPanel extends EditorPanelBase {
 		addCheckInput(callsToSimulate,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(callsToSimulate,true);}});
 		p.add(Box.createVerticalStrut(5));
 
+		/* Ankünfte */
 		p=addTab(Language.tr("Editor.Arrivals"),Images.MODEL_EDITOR_ARRIVALS.getIcon());
 		batchArrival=addInputLine(p,Language.tr("Editor.Arrivals.ClientsPerArrival"),readOnly);
 		addCheckInput(batchArrival,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(batchArrival,true);}});
 		interArrivalTimeDist=addDistribution(p,Language.tr("Editor.Arrivals.InterArrivalTimes"),3600,readOnly);
 		p.add(Box.createVerticalStrut(5));
 
+		/* Warteraum und Wartezeittoleranz */
 		p=addTab(Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance"),Images.MODEL_EDITOR_WAITING.getIcon());
 		waitingRoomSizeSelect=addOptions(p,null,new String[]{Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingRoom.NoLimit"),Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingRoom.Limit")+":"});
 		waitingRoomSize=addInputLine(p,null,readOnly);
@@ -112,6 +126,7 @@ public class EditorPanel extends EditorPanelBase {
 		waitingTimeDist=addDistribution(p,null,3600,readOnly);
 		p.add(Box.createVerticalStrut(5));
 
+		/* Bedienungen */
 		p=addTab(Language.tr("Editor.Service"),Images.MODEL_EDITOR_SERVICE.getIcon());
 		agents=addInputLine(p,Language.tr("Editor.Service.NumberOfAgents"),readOnly);
 		addCheckInput(agents,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(agents,true);}});
@@ -122,14 +137,26 @@ public class EditorPanel extends EditorPanelBase {
 		addCheckInput(callContinueProbability,new Runnable() {@Override public void run() {NumberTools.getProbability(callContinueProbability,true);}});
 		p.add(Box.createVerticalStrut(5));
 
+		/* Nachbearbeitungszeiten */
 		p=addTab(Language.tr("Editor.PostProcessing"),Images.MODEL_EDITOR_POST_PROCESSING.getIcon());
 		postProcessingTimeDist=addDistribution(p,null,3600,readOnly);
 
+		/* Wiederholungen */
 		p=addTab(Language.tr("Editor.Retry"),Images.MODEL_EDITOR_RETRY.getIcon());
 		retryProbability=addInputLine(p,Language.tr("Editor.Retry.RetryProbability"),readOnly);
 		addCheckInput(retryProbability,new Runnable() {@Override public void run() {NumberTools.getProbability(retryProbability,true);}});
 		retryTimeDist=addDistribution(p,Language.tr("Editor.Retry.RetryDistances"),3600,readOnly);
 		p.add(Box.createVerticalStrut(5));
+
+		/* Info-Panel */
+		add(infoParent=new JPanel(new BorderLayout()),BorderLayout.EAST);
+		infoParent.add(new JScrollPane(infoPanel=new JTextPane()),BorderLayout.CENTER);
+		infoParent.setPreferredSize(new Dimension(300,0));
+		infoPanel.setEditable(false);
+		infoParent.setVisible(false);
+		final JTabbedPane tabs=(JTabbedPane)p.getParent();
+		tabs.addChangeListener(e->updateInfoPanelText());
+		updateInfoPanelText();
 	}
 
 	@Override
@@ -202,5 +229,39 @@ public class EditorPanel extends EditorPanelBase {
 		/* Wiederholungen */
 		retryProbability.setText(NumberTools.formatPercent(model.retryProbability));
 		retryTimeDist.setDistribution(model.retryTimeDist);
+	}
+
+	/**
+	 * Zeigt das Info-Panel rechts neben den Tabs an oder blendet es aus.
+	 * @param visible	Info-Panel anzeigen
+	 */
+	public void setInfoPanelVisible(final boolean visible) {
+		infoParent.setVisible(visible);
+	}
+
+	private void updateInfoPanelText() {
+		String page=null;
+
+		switch(getCurrentTabIndex()) {
+		case 0: page="model"; break;
+		case 1: page="general"; break;
+		case 2: page="arrival"; break;
+		case 3: page="waiting"; break;
+		case 4: page="service"; break;
+		case 5: page="postprocessing"; break;
+		case 6: page="retry"; break;
+		}
+
+		URL pageURL=(page==null)?null:getClass().getResource("help/info_"+Language.tr("Numbers.Language")+"/"+page+".html");
+
+		if (pageURL==null) {
+			infoPanel.setText("No page selected.");
+		} else {
+			try {
+				infoPanel.setPage(pageURL);
+			} catch (IOException e1) {
+				infoPanel.setText("Page "+pageURL.toString()+" not found.");
+			}
+		}
 	}
 }

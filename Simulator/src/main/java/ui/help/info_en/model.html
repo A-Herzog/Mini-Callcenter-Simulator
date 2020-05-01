@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Model</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>Model</h1>
+
+<p>
+This page shows the general design of the simulation model:
+</p>
+<ul>
+  <li>Clients arrive and line up in the queue - or are rejected if there is no more room in the queue.</li>
+  <li>Waiting clients may give up waiting if their personal waiting time tolerance is exceeded.</li>
+  <li>Clients who leave the queue without having been served may try again later.</li>
+  <li>If an agent becomes free, the service of the next waiting client is started.</li>
+  <li>After serving a client, an agent may go into an additional post-processing period before reporting as available again.</li>
+  <li>Clients will leave the system after being served or will be referred back to the queue if their request has not been completely clarified.</li> 
+</ul>
+
+<p>
+There are no settings available on this dialog page.
+</p>
+
+</body>
+</html>

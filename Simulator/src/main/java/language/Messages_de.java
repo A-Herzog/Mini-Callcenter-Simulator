@@ -766,6 +766,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1881] = "Simulationsergebnisse";
     t[1882] = "Dialog.Button.Forward";
     t[1883] = "Weiter";
+    t[1886] = "Main.Toolbar.PageInfo.Hint";
+    t[1887] = "Zeigt eine Erkl\u00e4rung zu der aktuellen Seite des Modell-Editors an.";
     t[1888] = "MainMenu.Help.Book.Mnemonic";
     t[1889] = "C";
     t[1892] = "Statistics.WaitingTime.lower.all";
@@ -1376,6 +1378,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3475] = "Der angegebene Wert \"%s\" f\u00fcr die Bedien-Batch-Gr\u00f6\u00dfe ist ung\u00fcltig. Es muss eine positive Ganzzahl angegeben werden.";
     t[3484] = "Main.Menu.File.RecentlyUsed.Mnemonic";
     t[3485] = "Z";
+    t[3500] = "Main.Toolbar.PageInfo";
+    t[3501] = "Erkl\u00e4rung";
     t[3524] = "Compare.ReturnConfirm.Info";
     t[3525] = "Soll das aktuelle Modell wirklich verworfen werden und zu\ndem festgehaltenen Modell zur\u00fcckgekehrt werden?";
     t[3526] = "Model.XML.BatchService";
@@ -2000,12 +2004,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4957] = "Verkehrsangebot";
     t[4960] = "Statistics.UtilizationAndFailures.Idle";
     t[4961] = "Leerlauf";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4962] = "Statistics.XML.ServiceLevel";
     t[4963] = "StatistikAnrufeServiceLevel";
     t[4966] = "XML.InterpreterError";
     t[4967] = "Der XML-Interpreter konnte nicht initalisiert werden.";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4972] = "Statistic.Viewer.SpecialText.Category";
     t[4973] = "<p>Bitte w\u00e4hlen Sie in der Baumstruktur eine <b>Kategorie</b> aus, um die entsprechenden Informationen angezeigt zu bekommen.</p>";
     t[4980] = "XML.ErrorClosingFile";

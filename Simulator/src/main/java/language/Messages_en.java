@@ -766,6 +766,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1881] = "Simulation results";
     t[1882] = "Dialog.Button.Forward";
     t[1883] = "Forward";
+    t[1886] = "Main.Toolbar.PageInfo.Hint";
+    t[1887] = "Displays an explanation of the current page of the model editor.";
     t[1888] = "MainMenu.Help.Book.Mnemonic";
     t[1889] = "C";
     t[1892] = "Statistics.WaitingTime.lower.all";
@@ -1376,6 +1378,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3475] = "The value \"%s\" for the service batch size is invalid. A positive integer number has to be specified.";
     t[3484] = "Main.Menu.File.RecentlyUsed.Mnemonic";
     t[3485] = "R";
+    t[3500] = "Main.Toolbar.PageInfo";
+    t[3501] = "Explanation";
     t[3524] = "Compare.ReturnConfirm.Info";
     t[3525] = "Do you really want to discard the current model and return\nto the previous kept model?";
     t[3526] = "Model.XML.BatchService";
@@ -2000,12 +2004,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4957] = "Offered work load";
     t[4960] = "Statistics.UtilizationAndFailures.Idle";
     t[4961] = "Idle";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4962] = "Statistics.XML.ServiceLevel";
     t[4963] = "StatisticsCallsServiceLevel";
     t[4966] = "XML.InterpreterError";
     t[4967] = "Unable to initialize the XML interpreter.";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4972] = "Statistic.Viewer.SpecialText.Category";
     t[4973] = "<p>Please select a <b>category</b> in the tree structure so display the corresponding information.</p>";
     t[4980] = "XML.ErrorClosingFile";

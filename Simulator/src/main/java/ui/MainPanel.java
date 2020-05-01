@@ -33,6 +33,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import javax.swing.AbstractButton;
+import javax.swing.Box;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JMenu;
@@ -114,6 +115,8 @@ public class MainPanel extends MainPanelBase {
 	private JMenuItem menuFileModelRecentlyUsed;
 	private JMenuItem menuExtrasCompareKept;
 	private JMenuItem menuModelCompareReturn;
+
+	private JButton buttonPageInfo;
 
 	private final SetupData setup;
 	private Runnable reloadWindow;
@@ -242,6 +245,7 @@ public class MainPanel extends MainPanelBase {
 		addAction("HelpHomepage",e->commandHelpHomepage());
 		addAction("HelpLicense",e->commandHelpLicenseInfo());
 		addAction("HelpInfo",e->commandHelpInfo());
+		addAction("HelpPageInfo",e->commandHelpPageInfo());
 	}
 
 	@Override
@@ -277,6 +281,10 @@ public class MainPanel extends MainPanelBase {
 		toolbar.add(button=new JButton("Test"));
 		button.addActionListener(e->{ });
 		 */
+
+		toolbar.add(Box.createHorizontalGlue());
+
+		visibleOnEditorPanel.add(buttonPageInfo=createToolbarButton(toolbar,Language.tr("Main.Toolbar.PageInfo"),Language.tr("Main.Toolbar.PageInfo.Hint"),Images.GENERAL_INFO.getIcon(),"HelpPageInfo"));
 
 		return toolbar;
 	}
@@ -829,6 +837,11 @@ public class MainPanel extends MainPanelBase {
 				Language.tr("InfoDialog.Title"),
 				"<html><b>"+programName+"</b><br>"+Language.tr("InfoDialog.Version")+" "+EditModel.systemVersion+"<br>"+Language.tr("InfoDialog.WrittenBy")+" "+AUTHOR+"</html>"
 				);
+	}
+
+	private void commandHelpPageInfo() {
+		buttonPageInfo.setSelected(!buttonPageInfo.isSelected());
+		editorPanel.setInfoPanelVisible(buttonPageInfo.isSelected());
 	}
 
 	@Override
