@@ -93,6 +93,7 @@ public abstract class StatisticsBase extends XMLData {
 
 	@Override
 	protected void addDataToXML(final Document doc, final Element node, final boolean isPartOfOtherFile, final File file) {
-		for (StatisticsPerformanceIndicator performanceIndicator : performanceIndicators) performanceIndicator.addToXML(doc,node);
+		final StringBuilder sb=new StringBuilder();
+		for (StatisticsPerformanceIndicator performanceIndicator : performanceIndicators) performanceIndicator.addToXML(doc,node,sb);
 	}
 }

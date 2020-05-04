@@ -818,6 +818,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2049] = "Es liegen noch keine Statistikdaten vor, zu denen das zugeh\u00f6rige Modell angezeigt werden k\u00f6nnte.";
     t[2062] = "Statistics.NumberOfClientsInTheSystem.Distribution";
     t[2063] = "Verteilung der Anzahl an Kunden im System";
+    t[2064] = "FileType.LaTeX";
+    t[2065] = "LaTeX-Dateien";
     t[2068] = "JDistributionEditor.Edit.Disabled";
     t[2069] = "Daten anzeigen";
     t[2088] = "Main.Menu.File.SaveStatistics";
@@ -2002,10 +2004,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4955] = "Die Simulation wurde vorzeitig abgebrochen. Die Statistik-Ergebnisse sind daher evtl. nicht valide.";
     t[4956] = "LoadCalculator.OfferedWorkLoad";
     t[4957] = "Verkehrsangebot";
-    t[4960] = "Statistics.UtilizationAndFailures.Idle";
-    t[4961] = "Leerlauf";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4960] = "Statistics.UtilizationAndFailures.Idle";
+    t[4961] = "Leerlauf";
     t[4962] = "Statistics.XML.ServiceLevel";
     t[4963] = "StatistikAnrufeServiceLevel";
     t[4966] = "XML.InterpreterError";
