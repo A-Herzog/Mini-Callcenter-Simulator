@@ -524,6 +524,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1327] = "der Bedienzeit";
     t[1338] = "JDistributionEditor.DataVector";
     t[1339] = "Z\u00e4hldichtenvektor";
+    t[1350] = "Main.Menu.File.ExportQSModel";
+    t[1351] = "Als Warteschlangensimulator-Modell exportieren...";
     t[1352] = "CommandLine.Count.ThenAtLeastN";
     t[1353] = "m\u00fcssen mindestens %d weitere Parameter folgen";
     t[1356] = "Statistics.XML.PostProcessingTime";
@@ -676,6 +678,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1655] = "Jetzt speichern";
     t[1656] = "Main.Menu.RecordSimulation.Mnemonic";
     t[1657] = "L";
+    t[1664] = "QSExport.SelectFile";
+    t[1665] = "Zieldatei f\u00fcr Export ausw\u00e4hlen";
     t[1666] = "Compare.Error.ModelError.CannotKeep";
     t[1667] = "Das aktuelle Modell ist fehlerhaft und kann nicht simuliert werden. Daher kann es nicht f\u00fcr Vergleiche mit sp\u00e4teren Modellen festgehalten werden.";
     t[1668] = "Distribution.Gumbel";
@@ -804,6 +808,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1993] = "Simulation gestartet";
     t[2004] = "Model.XML.BatchArrival";
     t[2005] = "ModellBatchAnkuenfte";
+    t[2008] = "QSExport.xml.ModelElementName";
+    t[2009] = "ModellElementName";
     t[2022] = "LoadCalculator.WorkingRateCV";
     t[2023] = "Variationskoeffizient der Bedienrate";
     t[2024] = "Example.ExtErlangC";
@@ -822,6 +828,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2065] = "LaTeX-Dateien";
     t[2068] = "JDistributionEditor.Edit.Disabled";
     t[2069] = "Daten anzeigen";
+    t[2072] = "Statistic.Viewer.Report.HTMLAppTitle";
+    t[2073] = "Statistik";
     t[2088] = "Main.Menu.File.SaveStatistics";
     t[2089] = "Statistik speichern unter...";
     t[2094] = "Statistic.NumberOfWorkingAgents";
@@ -928,6 +936,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2299] = "Weiterleitungen k\u00f6nnen nur approximativ erfasst werden.";
     t[2304] = "Statistics.InterArrivalTime";
     t[2305] = "Zwischenankunftszeit";
+    t[2306] = "QSExport.Name.CallCenter";
+    t[2307] = "Callcenter";
     t[2314] = "Model.XML.BatchArrival.Error";
     t[2315] = "Der angegebene Wert \"%s\" f\u00fcr die Ankunfts-Batch-Gr\u00f6\u00dfe ist ung\u00fcltig. Es muss eine positive Ganzzahl angegeben werden.";
     t[2318] = "LoadCalculator.AverageQueueLength";
@@ -1050,6 +1060,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2655] = "Ein Kunde wird an die Warteschlange angestellt.";
     t[2668] = "Statistics.NumberOfClientsInTheSystem.lower";
     t[2669] = "Anzahl an Kunden im System";
+    t[2674] = "QSExport.Name.Title";
+    t[2675] = "Callcenter-Modell";
     t[2676] = "Main.Menu.Simulation";
     t[2677] = "Simulation";
     t[2680] = "Statistics.ResultsOverview";
@@ -1214,6 +1226,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3081] = "Auswahl";
     t[3088] = "LoadCalculator.MinimumNumberOfAgents";
     t[3089] = "Mindestens ben\u00f6tigte Agenten: %s";
+    t[3096] = "QSExport.Name.Agents";
+    t[3097] = "Agenten";
     t[3098] = "Statistics.SystemData.RunUser";
     t[3099] = "Anwender (Simulationsdurchf\u00fchrung)";
     t[3110] = "Statistic.Viewer.Toolbar.OpenText";
@@ -1380,6 +1394,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3475] = "Der angegebene Wert \"%s\" f\u00fcr die Bedien-Batch-Gr\u00f6\u00dfe ist ung\u00fcltig. Es muss eine positive Ganzzahl angegeben werden.";
     t[3484] = "Main.Menu.File.RecentlyUsed.Mnemonic";
     t[3485] = "Z";
+    t[3498] = "QSExport.Name.Caller";
+    t[3499] = "Anrufer";
     t[3500] = "Main.Toolbar.PageInfo";
     t[3501] = "Erkl\u00e4rung";
     t[3524] = "Compare.ReturnConfirm.Info";
@@ -1484,8 +1500,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3773] = "Auslastung des Systems";
     t[3778] = "Color.F4A460";
     t[3779] = "Sandbraun";
-    t[3780] = "Statistic.Viewer.Report.HTMLAppTitle";
-    t[3781] = "Statistik";
+    t[3780] = "QSExport.Error.Title";
+    t[3781] = "Export fehlgeschlagen";
     t[3782] = "Editor.NewerVersion.Title";
     t[3783] = "Modelldatei wurde mit neuerer Version erstellt";
     t[3794] = "Statistics.XML.BatchCount";
@@ -1636,12 +1652,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4129] = "Hellgelb";
     t[4134] = "FileType.jpeg";
     t[4135] = "jpeg-Dateien";
+    t[4140] = "QSExport.Name.Exit";
+    t[4141] = "Ausgang";
     t[4142] = "Color.00BFFF";
     t[4143] = "Tiefes Himmelsblau";
     t[4144] = "SettingsDialog.Title";
     t[4145] = "Einstellungen";
     t[4148] = "Statistic.Viewer.Toolbar.SelectNone.Hint";
     t[4149] = "Keine Eintr\u00e4ge ausw\u00e4hlen";
+    t[4152] = "Main.Menu.File.ExportQSModel.Mnemonic";
+    t[4153] = "W";
     t[4156] = "Main.Menu.Extras.KeepModel.Mnemonic";
     t[4157] = "A";
     t[4158] = "Distribution.Unknown";
@@ -1790,6 +1810,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4459] = "Zum Vergleich";
     t[4460] = "Statistic.Viewer.Toolbar.Save.Hint";
     t[4461] = "Speichert die auf dieser Seite angezeigten Ergebnisse in einer Datei.";
+    t[4462] = "QSExport.xml.Model";
+    t[4463] = "Modell";
     t[4464] = "Model.XML.RetryProbability";
     t[4465] = "ModellWiederholwahrscheinlichkeit";
     t[4466] = "Statistics.XML.BatchMeans";
@@ -1820,6 +1842,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4525] = "OpenOffice/LibreOffice-Tabellen";
     t[4526] = "FileType.FileTypeODT";
     t[4527] = "OpenOffice/LibreOffice-Texte";
+    t[4528] = "QSExport.Error.Info";
+    t[4529] = "Das Speichern des Modells in der Datei\n%s\nist fehlgeschlagen.";
     t[4530] = "Color.20B2AA";
     t[4531] = "Helles Seegr\u00fcn";
     t[4534] = "Statistic.Description.Hide";
@@ -1980,6 +2004,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4907] = "Weiterleitungswahrscheinlichkeit";
     t[4918] = "Statistics.XML.RunUser";
     t[4919] = "StatistikNutzer";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4920] = "Color.FFB6C1";
     t[4921] = "Helles Pink";
     t[4924] = "XML.ErrorCreatingZipStream";
@@ -2004,8 +2030,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4955] = "Die Simulation wurde vorzeitig abgebrochen. Die Statistik-Ergebnisse sind daher evtl. nicht valide.";
     t[4956] = "LoadCalculator.OfferedWorkLoad";
     t[4957] = "Verkehrsangebot";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4960] = "Statistics.UtilizationAndFailures.Idle";
     t[4961] = "Leerlauf";
     t[4962] = "Statistics.XML.ServiceLevel";

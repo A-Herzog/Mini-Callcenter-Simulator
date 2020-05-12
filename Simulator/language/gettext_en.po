@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 21:55+0200\n"
+"POT-Creation-Date: 2020-05-10 23:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -583,13 +583,14 @@ msgstr "The output file %s already exists."
 msgid "CommandLine.ReportBase.Help"
 msgstr ""
 "This command expects exactly three additionall parameters:\n"
-"1. \"Inline\", \"SingleFiles\", \"List\", \"Text\", \"PDF\" or a list entry, depending if\n"
+"1. \"Inline\", \"SingleFiles\", \"List\", \"Text\", \"PDF\", \"LaTeX\" or a list entry, depending if\n"
 "a) a html report with inline images,\n"
 "b) a html teport with separate images,\n"
 "c) an overview of all available individual documents,\n"
-"d) a docx report\n"
-"e) a pdf report or\n"
-"f) an individual document is to be reported.\n"
+"d) a docx report,\n"
+"e) a pdf report,\n"
+"f) a LaTeX report or\n"
+"g) an individual document is to be reported.\n"
 "2. File name of the input file\n"
 "3. File name of the output file"
 
@@ -1576,6 +1577,12 @@ msgstr "R"
 msgid "Main.Menu.File"
 msgstr "File"
 
+msgid "Main.Menu.File.ExportQSModel"
+msgstr "Export as Warteschlangensimulator model..."
+
+msgid "Main.Menu.File.ExportQSModel.Mnemonic"
+msgstr "W"
+
 msgid "Main.Menu.File.Load"
 msgstr "Load..."
 
@@ -1917,6 +1924,39 @@ msgstr "Waiting room of size K"
 
 msgid "Numbers.Language"
 msgstr "en"
+
+msgid "QSExport.Error.Info"
+msgstr ""
+"Saving the model in file\n"
+"%s\n"
+"failed."
+
+msgid "QSExport.Error.Title"
+msgstr "Exporting failed"
+
+msgid "QSExport.Name.Agents"
+msgstr "Agents"
+
+msgid "QSExport.Name.CallCenter"
+msgstr "Call center"
+
+msgid "QSExport.Name.Caller"
+msgstr "Caller"
+
+msgid "QSExport.Name.Exit"
+msgstr "Exit"
+
+msgid "QSExport.Name.Title"
+msgstr "Call center model"
+
+msgid "QSExport.SelectFile"
+msgstr "Choose destination file for exporting"
+
+msgid "QSExport.xml.Model"
+msgstr "Model"
+
+msgid "QSExport.xml.ModelElementName"
+msgstr "ModelElementName"
 
 msgid "SettingsDialog.ImageResolution"
 msgstr "Resolution when saving images"
