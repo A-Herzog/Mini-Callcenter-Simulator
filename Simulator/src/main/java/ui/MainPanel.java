@@ -63,6 +63,7 @@ import systemtools.MainPanelBase;
 import systemtools.MsgBox;
 import systemtools.commandline.CommandLineDialog;
 import systemtools.statistics.StatisticsBasePanel;
+import tools.ExportQSModel;
 import tools.SetupData;
 import ui.calculator.QueueingCalculatorDialog;
 import ui.commandline.CommandLineSystem;
@@ -215,6 +216,7 @@ public class MainPanel extends MainPanelBase {
 		addAction("FileSave",e->commandFileModelSave(false));
 		addAction("FileSaveAs",e->commandFileModelSave(true));
 		addAction("FileSaveCopyAs",e->commandFileModelSaveCopyAs());
+		addAction("FileExportQSModel",e->commandFileExportQSModel());
 		addAction("FileStatisticsLoad",e->commandFileStatisticsLoad(null));
 		addAction("FileStatisticsSave",e->commandFileStatisticsSave());
 		addAction("FileSetup",e->commandFileSetup());
@@ -297,6 +299,7 @@ public class MainPanel extends MainPanelBase {
 
 		final JMenuBar menubar=new JMenuBar();
 		JMenu menu,sub;
+		JMenuItem item;
 
 		/* Datei */
 
@@ -319,6 +322,8 @@ public class MainPanel extends MainPanelBase {
 		createMenuItemCtrl(menu,Language.tr("Main.Menu.File.Save"),Images.MODEL_SAVE.getIcon(),Language.tr("Main.Menu.File.Save.Mnemonic"),KeyEvent.VK_S,"FileSave");
 		createMenuItemCtrl(menu,Language.tr("Main.Menu.File.SaveAs"),Language.tr("Main.Menu.File.SaveAs.Mnemonic"),KeyEvent.VK_U,"FileSaveAs");
 		createMenuItem(menu,Language.tr("Main.Menu.File.SaveCopyAs"),Language.tr("Main.Menu.File.SaveCopyAs.Mnemonic"),"FileSaveCopyAs");
+		item=createMenuItem(menu,Language.tr("Main.Menu.File.ExportQSModel"),Images.EXTRAS_QUEUE.getIcon(),Language.tr("Main.Menu.File.ExportQSModel.Mnemonic"),"FileExportQSModel");
+		item.setToolTipText(Language.tr("Main.Menu.File.ExportQSModel.Info"));
 
 		menu.addSeparator();
 
@@ -574,6 +579,16 @@ public class MainPanel extends MainPanelBase {
 			}
 		}
 		return error==null;
+	}
+
+	private void commandFileExportQSModel() {
+		final File file=ExportQSModel.selectFile(this);
+		if (file==null) return;
+
+		final ExportQSModel exporter=new ExportQSModel(editorPanel.getModel());
+		if (!exporter.work(file)) {
+			MsgBox.error(this,Language.tr("QSExport.Error.Title"),String.format(Language.tr("QSExport.Error.Info"),file.toString()));
+		}
 	}
 
 	private boolean commandFileStatisticsLoad(final File file) {

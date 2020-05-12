@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 23:09+0200\n"
+"POT-Creation-Date: 2020-05-12 19:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1580,6 +1580,9 @@ msgstr "File"
 msgid "Main.Menu.File.ExportQSModel"
 msgstr "Export as Warteschlangensimulator model..."
 
+msgid "Main.Menu.File.ExportQSModel.Info"
+msgstr "Warteschlangensimulator is a more complex simulation system. See: https://github.com/A-Herzog/Warteschlangensimulator"
+
 msgid "Main.Menu.File.ExportQSModel.Mnemonic"
 msgstr "W"
 
@@ -1952,11 +1955,212 @@ msgstr "Call center model"
 msgid "QSExport.SelectFile"
 msgstr "Choose destination file for exporting"
 
+msgid "QSExport.xml.Active"
+msgstr "Active"
+
+msgid "QSExport.xml.Color"
+msgstr "ModelElementColor"
+
+msgid "QSExport.xml.Condition"
+msgstr "Condition"
+
+msgid "QSExport.xml.Count"
+msgstr "Count"
+
+msgid "QSExport.xml.Edge"
+msgstr "Edge"
+
+msgid "QSExport.xml.Element.Connection"
+msgstr "ModelElementConnection"
+
+msgid "QSExport.xml.Element.Connection.Element"
+msgstr "Element"
+
+msgid "QSExport.xml.Element.Connection.Element1"
+msgstr "Element1"
+
+msgid "QSExport.xml.Element.Connection.Element2"
+msgstr "Element2"
+
+msgid "QSExport.xml.Element.Connection.In"
+msgstr "In"
+
+msgid "QSExport.xml.Element.Connection.Out"
+msgstr "Out"
+
+msgid "QSExport.xml.Element.Connection.Rate"
+msgstr "Rate"
+
+msgid "QSExport.xml.Element.Connection.Status"
+msgstr "Status"
+
+msgid "QSExport.xml.Element.Connection.Status.WaitingCancelation"
+msgstr "WaitingCancelation"
+
+msgid "QSExport.xml.Element.Counter"
+msgstr "ModelElementCounter"
+
+msgid "QSExport.xml.Element.Counter.Group"
+msgstr "ModelElementCounterGroup"
+
+msgid "QSExport.xml.Element.Decide"
+msgstr "ModelElementDecide"
+
+msgid "QSExport.xml.Element.Decide.Mode"
+msgstr "ModelElementDecideMode"
+
+msgid "QSExport.xml.Element.Decide.Mode.Condition"
+msgstr "Condition"
+
+msgid "QSExport.xml.Element.Decide.Mode.Random"
+msgstr "Random"
+
+msgid "QSExport.xml.Element.Delay"
+msgstr "ModelElementDelay"
+
+msgid "QSExport.xml.Element.Dispose"
+msgstr "ModelElementDispose"
+
+msgid "QSExport.xml.Element.Edge"
+msgstr "ModelElementEdge"
+
+msgid "QSExport.xml.Element.Process"
+msgstr "ModelElementProcessStation"
+
+msgid "QSExport.xml.Element.Source"
+msgstr "ModelElementSource"
+
+msgid "QSExport.xml.Element.Text"
+msgstr "ModelElementText"
+
+msgid "QSExport.xml.Element.Text.FontBold"
+msgstr "bold"
+
+msgid "QSExport.xml.Element.Text.FontSize"
+msgstr "ModelElementFontSize"
+
+msgid "QSExport.xml.Element.Text.Line"
+msgstr "ModelElementTextLine"
+
+msgid "QSExport.xml.Element.Vertex"
+msgstr "ModelElementVertex"
+
+msgid "QSExport.xml.Info.Counter.Cancel"
+msgstr "Cancelation"
+
+msgid "QSExport.xml.Info.Counter.Success"
+msgstr "Success"
+
+msgid "QSExport.xml.Info.Counter.Type"
+msgstr "Type"
+
+msgid "QSExport.xml.Info.Forward"
+msgstr "Forward?"
+
+msgid "QSExport.xml.Info.QueueFull"
+msgstr "Q. full?"
+
+msgid "QSExport.xml.Info.Retry"
+msgstr "Retry?"
+
 msgid "QSExport.xml.Model"
 msgstr "Model"
 
+msgid "QSExport.xml.ModelClients"
+msgstr "ModelClients"
+
+msgid "QSExport.xml.ModelElementBatchData"
+msgstr "ModelElementBatchData"
+
+msgid "QSExport.xml.ModelElementBatchData.Maximum"
+msgstr "Maximum"
+
+msgid "QSExport.xml.ModelElementBatchData.Minimum"
+msgstr "Minimum"
+
+msgid "QSExport.xml.ModelElementBatchData.Size"
+msgstr "Size"
+
+msgid "QSExport.xml.ModelElementDistribution"
+msgstr "ModelElementDistribution"
+
+msgid "QSExport.xml.ModelElementDistribution.Status"
+msgstr "Status"
+
+msgid "QSExport.xml.ModelElementDistribution.Status.ProcessTime"
+msgstr "ProcessTime"
+
 msgid "QSExport.xml.ModelElementName"
 msgstr "ModelElementName"
+
+msgid "QSExport.xml.ModelElementOperators"
+msgstr "ModelElementOperators"
+
+msgid "QSExport.xml.ModelElementOperators.Alternative"
+msgstr "Alternative"
+
+msgid "QSExport.xml.ModelElementOperators.Count"
+msgstr "Count"
+
+msgid "QSExport.xml.ModelElementOperators.Group"
+msgstr "Group"
+
+msgid "QSExport.xml.ModelElementOperatorsPriority"
+msgstr "ModelElementOperatorsPriority"
+
+msgid "QSExport.xml.ModelElements"
+msgstr "ModelElements"
+
+msgid "QSExport.xml.ModelWarmUpPhase"
+msgstr "ModelWarmUpPhase"
+
+msgid "QSExport.xml.ModellElementPrioritaet"
+msgstr "ModelElementPriority"
+
+msgid "QSExport.xml.ModellElementPrioritaet.ClientType"
+msgstr "ClientType"
+
+msgid "QSExport.xml.Name"
+msgstr "Name"
+
+msgid "QSExport.xml.Resource"
+msgstr "Resource"
+
+msgid "QSExport.xml.Resources"
+msgstr "Resources"
+
+msgid "QSExport.xml.SecondaryResourcePriority"
+msgstr "SecondaryPriority"
+
+msgid "QSExport.xml.SecondaryResourcePriority.Random"
+msgstr "Random"
+
+msgid "QSExport.xml.Size"
+msgstr "ModelElementSize"
+
+msgid "QSExport.xml.TimeBase"
+msgstr "TimeBase"
+
+msgid "QSExport.xml.TimeBase.Seconds"
+msgstr "Seconds"
+
+msgid "QSExport.xml.Type"
+msgstr "Type"
+
+msgid "QSExport.xml.Type.CancelationTime"
+msgstr "CancelationTime"
+
+msgid "QSExport.xml.Type.PostProcessingTime"
+msgstr "PostProcessingTime"
+
+msgid "QSExport.xml.Type.ProcessingTime"
+msgstr "ProcessingTime"
+
+msgid "QSExport.xml.Value"
+msgstr "Value"
+
+msgid "QSExport.xml.id"
+msgstr "id"
 
 msgid "SettingsDialog.ImageResolution"
 msgstr "Resolution when saving images"
