@@ -65,6 +65,7 @@ import systemtools.commandline.CommandLineDialog;
 import systemtools.statistics.StatisticsBasePanel;
 import tools.ExportQSModel;
 import tools.SetupData;
+import ui.calculator.CalculatorDialog;
 import ui.calculator.QueueingCalculatorDialog;
 import ui.commandline.CommandLineSystem;
 import ui.compare.ComparePanel;
@@ -236,6 +237,7 @@ public class MainPanel extends MainPanelBase {
 		addAction("ExtrasCompareKeep",e->commandExtrasCompareTwoInit());
 		addAction("ExtrasCompareKept",e->commandExtrasCompareTwoRun(0));
 		addAction("ExtrasCompareReturn",e->commandExtrasCompareReturn());
+		addAction("ExtrasCalculator",e->commandExtrasCalculator(""));
 		addAction("ExtrasQueueingCalculator",e->commandExtrasQueueingCalculator());
 		addAction("ExtrasExecuteCommand",e->commandExtrasExecuteCommand());
 
@@ -364,6 +366,7 @@ public class MainPanel extends MainPanelBase {
 		menuModelCompareReturn=createMenuItem(menu,Language.tr("Main.Menu.Extras.ReturnToKeptModel"),Images.MODEL_COMPARE_GO_BACK.getIcon(),Language.tr("Main.Menu.Extras.ReturnToKeptModel.Mnemonic"),"ExtrasCompareReturn");
 		menuModelCompareReturn.setEnabled(false);
 		menu.addSeparator();
+		createMenuItem(menu,Language.tr("Main.Menu.Extras.Calculator"),Images.EXTRAS_CALCULATOR.getIcon(),Language.tr("Main.Menu.Extras.Calculator.Mnemonic"),"ExtrasCalculator");
 		createMenuItem(menu,Language.tr("Main.Menu.Extras.QueueingCalculator"),Images.EXTRAS_QUEUE.getIcon(),Language.tr("Main.Menu.Extras.QueueingCalculator.Mnemonic"),"ExtrasQueueingCalculator");
 		createMenuItem(menu,Language.tr("Main.Menu.Extras.ExecuteCommand"),Images.EXTRAS_COMMANDLINE.getIcon(),Language.tr("Main.Menu.Extras.ExecuteCommand.Mnemonic"),"ExtrasExecuteCommand");
 
@@ -795,6 +798,11 @@ public class MainPanel extends MainPanelBase {
 		}
 
 		editorPanel.setModel(pinnedModel);
+	}
+
+	private void commandExtrasCalculator(final String initialExpression) {
+		final CalculatorDialog dialog=new CalculatorDialog(this,initialExpression);
+		dialog.setVisible(true);
 	}
 
 	private void commandExtrasQueueingCalculator() {

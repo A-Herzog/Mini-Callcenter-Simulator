@@ -54,6 +54,12 @@ public enum Images {
 	/** Symbol "Dialog-Button 'Abbruch/Zurück'" */
 	MSGBOX_CANCEL("arrow_redo2.png"),
 
+	/** Symbol "Zoom" (allgemein) */
+	ZOOM("zoom.png"),
+
+	/** Symbol "Bearbeiten - Kopieren" */
+	COPY("copy.gif"),
+
 	/* Modell */
 
 	/** Symbol "Modell" */
@@ -67,6 +73,9 @@ public enum Images {
 
 	/** Symbol "Modell - speichern" */
 	MODEL_SAVE("disk.png"),
+
+	/** Symbol "Drucken" */
+	MODEL_PRINT("printer.png"),
 
 	/* Vergleichen */
 
@@ -128,6 +137,18 @@ public enum Images {
 
 	/** Symbol "Kommandozeile" */
 	EXTRAS_COMMANDLINE("application_xp_terminal.png"),
+
+	/** Symbol "Rechner" */
+	EXTRAS_CALCULATOR("calculator.png"),
+
+	/** Symbol "Rechner - Funktionsplotter" */
+	EXTRAS_CALCULATOR_PLOTTER("chart_curve.png"),
+
+	/** Symbol "Rechner - Wahrscheinlichkeitsverteilungen" */
+	EXTRAS_CALCULATOR_DISTRIBUTION("chart_curve.png"),
+
+	/** Symbol "Rechner - Funktionsplotter - Funktion löschen" */
+	EXTRAS_CALCULATOR_PLOTTER_CLEAR("chart_curve_delete.png"),
 
 	/** Symbol "Warteschlangenrechner" */
 	EXTRAS_QUEUE("Symbol.png"),

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-12 19:18+0200\n"
+"POT-Creation-Date: 2020-05-18 12:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,6 +10,63 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "CalculatorDialog.Expression"
+msgstr "Ausdruck"
+
+msgid "CalculatorDialog.Expression.CalcError"
+msgstr "Der angegebene Ausdruck konnte nicht berechnet werden."
+
+msgid "CalculatorDialog.Expression.ParseError"
+msgstr "Der angegebene Ausdruck ist ab Zeichen %d fehlerhaft."
+
+msgid "CalculatorDialog.Plotter.ClearPlot"
+msgstr "Funktion löschen"
+
+msgid "CalculatorDialog.Plotter.SelectColor"
+msgstr "Farbe auswählen"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Copy"
+msgstr "Kopieren"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Copy.Hint"
+msgstr "Kopiert die Darstellung in die Zwischenablage."
+
+msgid "CalculatorDialog.Plotter.Toolbar.Print"
+msgstr "Drucken"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Print.Hint"
+msgstr "Druckt die Darstellung aus."
+
+msgid "CalculatorDialog.Plotter.Toolbar.Save"
+msgstr "Speichern"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Save.Hint"
+msgstr "Speichert die Darstellung in einer Datei."
+
+msgid "CalculatorDialog.Plotter.Toolbar.Zoom"
+msgstr "Standardzoom"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Zoom.Hint"
+msgstr "Stellt den Standardzoomfaktor wieder her."
+
+msgid "CalculatorDialog.Result"
+msgstr "Ergebnis"
+
+msgid "CalculatorDialog.Result.Copy"
+msgstr "Kopiert das aktuelle Ergebnis in die Zwischenablage"
+
+msgid "CalculatorDialog.Tab.Calculator"
+msgstr "Rechner"
+
+msgid "CalculatorDialog.Tab.Distributions"
+msgstr "Wahrscheinlichkeitsverteilungen"
+
+msgid "CalculatorDialog.Tab.Plotter"
+msgstr "Funktionsplotter"
+
+msgid "CalculatorDialog.Title"
+msgstr "Rechner"
 
 msgid "Color.000000"
 msgstr "Schwarz"
@@ -1534,6 +1591,12 @@ msgstr "Betriebszeit pro Tag"
 
 msgid "Main.Menu.Extras"
 msgstr "Extras"
+
+msgid "Main.Menu.Extras.Calculator"
+msgstr "Rechner..."
+
+msgid "Main.Menu.Extras.Calculator.Mnemonic"
+msgstr "R"
 
 msgid "Main.Menu.Extras.CompareModels"
 msgstr "Simulationsergebnisse verschiedener Modelle vergleichen..."
@@ -3613,6 +3676,12 @@ msgstr "Fehler beim Speichern"
 
 msgid "XML.UnknownFileFormat"
 msgstr "Das Dateiformat wurde nicht erkannt bzw. passt zu keinem Dateiformat dieses Programms."
+
+#~ msgid "CalculatorDialog.Expression.BuildExpression"
+#~ msgstr "Ausdruck bearbeiten"
+
+#~ msgid "CalculatorDialog.Plotter.BuildExpression"
+#~ msgstr "Ausdruck bearbeiten"
 
 #~ msgid "InfoDialog.Libraries"
 #~ msgstr ""

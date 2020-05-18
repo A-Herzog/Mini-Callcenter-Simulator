@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-12 19:18+0200\n"
+"POT-Creation-Date: 2020-05-18 12:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,6 +10,63 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "CalculatorDialog.Expression"
+msgstr "Expression"
+
+msgid "CalculatorDialog.Expression.CalcError"
+msgstr "The entered expression could not be calculated."
+
+msgid "CalculatorDialog.Expression.ParseError"
+msgstr "The entered expression is invalid at character %d."
+
+msgid "CalculatorDialog.Plotter.ClearPlot"
+msgstr "Clear plot"
+
+msgid "CalculatorDialog.Plotter.SelectColor"
+msgstr "Select color"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Copy"
+msgstr "Copy"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Copy.Hint"
+msgstr "Copies the graphics to the clipboard."
+
+msgid "CalculatorDialog.Plotter.Toolbar.Print"
+msgstr "Print"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Print.Hint"
+msgstr "Prints the graphics."
+
+msgid "CalculatorDialog.Plotter.Toolbar.Save"
+msgstr "Save"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Save.Hint"
+msgstr "Saves the graphics as a file."
+
+msgid "CalculatorDialog.Plotter.Toolbar.Zoom"
+msgstr "Default zoom"
+
+msgid "CalculatorDialog.Plotter.Toolbar.Zoom.Hint"
+msgstr "Restores the default zoom factor."
+
+msgid "CalculatorDialog.Result"
+msgstr "Result"
+
+msgid "CalculatorDialog.Result.Copy"
+msgstr "Copies the current result to the clipboard"
+
+msgid "CalculatorDialog.Tab.Calculator"
+msgstr "Calculator"
+
+msgid "CalculatorDialog.Tab.Distributions"
+msgstr "Probability distributions"
+
+msgid "CalculatorDialog.Tab.Plotter"
+msgstr "Function plotter"
+
+msgid "CalculatorDialog.Title"
+msgstr "Calculator"
 
 msgid "Color.000000"
 msgstr "Balck"
@@ -1534,6 +1591,12 @@ msgstr "Working time per day"
 
 msgid "Main.Menu.Extras"
 msgstr "Extras"
+
+msgid "Main.Menu.Extras.Calculator"
+msgstr "Calculator..."
+
+msgid "Main.Menu.Extras.Calculator.Mnemonic"
+msgstr "C"
 
 msgid "Main.Menu.Extras.CompareModels"
 msgstr "Compare results of different models..."
@@ -3590,6 +3653,12 @@ msgstr "Error saving file"
 
 msgid "XML.UnknownFileFormat"
 msgstr "The file format is unknown respectively is not matching to any of the file formats of this program."
+
+#~ msgid "CalculatorDialog.Expression.BuildExpression"
+#~ msgstr "Build expression"
+
+#~ msgid "CalculatorDialog.Plotter.BuildExpression"
+#~ msgstr "Build expression"
 
 #~ msgid "InfoDialog.Libraries"
 #~ msgstr ""
