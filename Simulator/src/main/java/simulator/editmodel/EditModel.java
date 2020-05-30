@@ -144,13 +144,13 @@ public class EditModel extends EditModelBase implements Cloneable {
 		name="";
 		description="";
 
-		interArrivalTimeDist=new ExponentialDistribution(60);
+		interArrivalTimeDist=new ExponentialDistribution(null,60);
 		batchArrival=1;
 		waitingTimeDist=new NeverDistributionImpl();
-		workingTimeDist=new ExponentialDistribution(180);
+		workingTimeDist=new ExponentialDistribution(null,180);
 		postProcessingTimeDist=new OnePointDistributionImpl(0);
 		batchWorking=1;
-		retryTimeDist=new ExponentialDistribution(1800);
+		retryTimeDist=new ExponentialDistribution(null,1800);
 		agents=4;
 		callContinueProbability=0;
 		retryProbability=0;
