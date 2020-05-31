@@ -21,13 +21,16 @@ import java.awt.Desktop;
 import java.awt.Point;
 import java.awt.Window;
 import java.awt.event.KeyEvent;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Base64;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -50,6 +53,7 @@ import org.apache.commons.math3.distribution.ExponentialDistribution;
 import org.w3c.dom.Element;
 
 import language.Language;
+import mathtools.Table;
 import mathtools.distribution.LogNormalDistributionImpl;
 import mathtools.distribution.NeverDistributionImpl;
 import mathtools.distribution.swing.CommonVariables;
@@ -213,12 +217,12 @@ public class MainPanel extends MainPanelBase {
 		addAction("FileNew3",e->commandFileModelNew(2));
 		addAction("FileNew4",e->commandFileModelNew(3));
 		addAction("FileNew5",e->commandFileModelNew(4));
-		addAction("FileLoad",e->commandFileModelLoad(null));
+		addAction("FileLoad",e->commandFileModelLoad(null,null));
 		addAction("FileSave",e->commandFileModelSave(false));
 		addAction("FileSaveAs",e->commandFileModelSave(true));
 		addAction("FileSaveCopyAs",e->commandFileModelSaveCopyAs());
 		addAction("FileExportQSModel",e->commandFileExportQSModel());
-		addAction("FileStatisticsLoad",e->commandFileStatisticsLoad(null));
+		addAction("FileStatisticsLoad",e->commandFileStatisticsLoad(null,null));
 		addAction("FileStatisticsSave",e->commandFileStatisticsSave());
 		addAction("FileSetup",e->commandFileSetup());
 		addAction("FileQuit",e->{if (allowQuitProgram()) close();});
@@ -438,6 +442,61 @@ public class MainPanel extends MainPanelBase {
 		return isDiscardModelOk();
 	}
 
+
+	private boolean loadFromStream(final File file, final InputStream stream) {
+		if (!isDiscardModelOk()) return true;
+
+		final XMLTools xml=new XMLTools(stream);
+		final Element root=xml.load();
+		if (root==null) {
+			MsgBox.error(getOwnerWindow(),Language.tr("XML.LoadErrorTitle"),xml.getError());
+			return false;
+		}
+
+		final String name=root.getNodeName();
+
+		for (String test: new EditModel().getRootNodeNames()) if (name.equalsIgnoreCase(test)) {
+			return commandFileModelLoad(root,file);
+		}
+		for (String test: new Statistics().getRootNodeNames()) if (name.equalsIgnoreCase(test)) {
+			return commandFileStatisticsLoad(root,file);
+		}
+
+		MsgBox.error(getOwnerWindow(),Language.tr("XML.LoadErrorTitle"),Language.tr("XML.UnknownFileFormat"));
+		return false;
+	}
+
+	private boolean processBase64ModelData(final File file, final String base64data) {
+		try {
+			final ByteArrayInputStream in=new ByteArrayInputStream(Base64.getDecoder().decode(base64data));
+			return loadFromStream(file,in);
+		} catch (IllegalArgumentException e) {return false;}
+	}
+
+	private boolean tryLoadHTML(final File file) {
+		boolean firstLine=true;
+		boolean modelDataFollow=false;
+
+		final List<String> lines=Table.loadTextLinesFromFile(file);
+		if (lines==null) return false;
+
+		for (String line: lines) {
+			if (firstLine) {
+				if (!line.trim().equalsIgnoreCase("<!doctype html>")) return false;
+			} else {
+				if (modelDataFollow) {
+					if (!line.trim().startsWith("data:application/xml;base64,")) return false;
+					return processBase64ModelData(file,line.trim().substring("data:application/xml;base64,".length()));
+				} else {
+					if (line.trim().equalsIgnoreCase("QSModel")) modelDataFollow=true;
+				}
+			}
+			firstLine=false;
+		}
+
+		return false;
+	}
+
 	@Override
 	public boolean loadAnyFile(final File file, final Component dropComponent, final Point dropPosition, final boolean errorMessageOnFail) {
 		if (file==null) {
@@ -449,6 +508,10 @@ public class MainPanel extends MainPanelBase {
 			return false;
 		}
 
+		/* Modell aus HTML-Datei laden */
+		if (tryLoadHTML(file)) return true;
+
+		/* XML oder json laden */
 		final XMLTools xml=new xml.XMLTools(file);
 		final Element root=xml.load();
 		if (root==null) {
@@ -458,8 +521,8 @@ public class MainPanel extends MainPanelBase {
 
 		final String name=root.getNodeName();
 
-		for (String test: new EditModel().getRootNodeNames()) if (name.equalsIgnoreCase(test)) return commandFileModelLoad(file);
-		for (String test: new Statistics().getRootNodeNames()) if (name.equalsIgnoreCase(test)) return commandFileStatisticsLoad(file);
+		for (String test: new EditModel().getRootNodeNames()) if (name.equalsIgnoreCase(test)) return commandFileModelLoad(root,file);
+		for (String test: new Statistics().getRootNodeNames()) if (name.equalsIgnoreCase(test)) return commandFileStatisticsLoad(root,file);
 
 		if (errorMessageOnFail) MsgBox.error(getOwnerWindow(),Language.tr("XML.LoadErrorTitle"),Language.tr("XML.UnknownFileFormat"));
 
@@ -543,9 +606,14 @@ public class MainPanel extends MainPanelBase {
 		setCurrentPanel(editorPanel);
 	}
 
-	private boolean commandFileModelLoad(final File file) {
+	private boolean commandFileModelLoad(final Element rootOptional, final File file) { // XXX
 		if (!isDiscardModelOk()) return true;
-		final String error=editorPanel.loadModel(file);
+		final String error;
+		if (rootOptional!=null) {
+			error=editorPanel.loadModel(rootOptional,file);
+		} else {
+			error=editorPanel.loadModel(file);
+		}
 		if (error==null) {
 			statisticsPanel.setStatistics(null);
 			for (AbstractButton button: enabledOnStatisticsAvailable) button.setEnabled(false);
@@ -594,8 +662,13 @@ public class MainPanel extends MainPanelBase {
 		}
 	}
 
-	private boolean commandFileStatisticsLoad(final File file) {
-		final String error=statisticsPanel.loadStatistics(file);
+	private boolean commandFileStatisticsLoad(final Element rootOptional, final File file) { // XXX
+		final String error;
+		if (rootOptional!=null) {
+			error=statisticsPanel.loadStatisticsFromXML(rootOptional);
+		} else {
+			error=statisticsPanel.loadStatistics(file);
+		}
 		if (error==null) {
 			for (AbstractButton button: enabledOnStatisticsAvailable) button.setEnabled(true);
 			setCurrentPanel(statisticsPanel);
@@ -871,7 +944,7 @@ public class MainPanel extends MainPanelBase {
 	protected void action(final Object sender) {
 		/* Datei - Letzte Dokumente */
 		final Component[] sub=((JMenu)menuFileModelRecentlyUsed).getMenuComponents();
-		for (int i=0;i<sub.length;i++) if (sender==sub[i]) {commandFileModelLoad(new File(setup.lastFiles[i])); return;}
+		for (int i=0;i<sub.length;i++) if (sender==sub[i]) {commandFileModelLoad(null,new File(setup.lastFiles[i])); return;}
 	}
 
 	/**

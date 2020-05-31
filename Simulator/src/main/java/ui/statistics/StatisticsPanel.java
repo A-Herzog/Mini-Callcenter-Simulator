@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.w3c.dom.Element;
+
 import language.Language;
 import simulator.statistics.Statistics;
 import systemtools.MsgBox;
@@ -48,7 +50,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 	public StatisticsPanel(final int numberOfViewers, final Runnable startSimulation) {
 		super(numberOfViewers,Language.tr("Main.Menu.View.SimulationResults"),Images.STATISTICS_DARK.getURL(),Language.trPrimary("CommandLine.Report.Name"),true);
 		setCallBacks(startSimulation,()->loadStatistics(null),()->Help.topicModal(StatisticsPanel.this,Help.pageStatistics));
-		setStatistics(null);
+		setStatistics((Statistics)null);
 	}
 
 	/**
@@ -121,6 +123,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 	 */
 	public void setStatistics(final Statistics statistics) {
 		this.statistics=new Statistics[]{statistics};
+		super.setStatistics(statistics);
 		updateViewer();
 	}
 
@@ -183,6 +186,21 @@ public class StatisticsPanel extends StatisticsBasePanel {
 
 		Statistics newStatistics=new Statistics();
 		String error=newStatistics.loadFromFile(file);
+		if (error!=null) return error;
+
+		setStatistics(newStatistics);
+
+		return null;
+	}
+
+	/**
+	 * Lädt die Statistikdaten aus einem XML-Element
+	 * @param root	XML-Wurzelelement, aus dem die Statistikdaten geladen werden sollen.
+	 * @return	Gibt im Erfolgsfall <code>null</code> zurück, sonst eine Fehlermeldung.
+	 */
+	public String loadStatisticsFromXML(final Element root) {
+		Statistics newStatistics=new Statistics();
+		String error=newStatistics.loadFromXML(root);
 		if (error!=null) return error;
 
 		setStatistics(newStatistics);
