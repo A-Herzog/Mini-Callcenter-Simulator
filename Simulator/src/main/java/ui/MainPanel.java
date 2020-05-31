@@ -723,6 +723,7 @@ public class MainPanel extends MainPanelBase {
 		final FileFilter txt=new FileNameExtensionFilter(Language.tr("FileType.Text")+" (*.txt)","txt");
 		fc.addChoosableFileFilter(txt);
 		fc.setFileFilter(txt);
+		fc.setAcceptAllFileFilterUsed(false);
 
 		if (fc.showSaveDialog(this)!=JFileChooser.APPROVE_OPTION) return;
 		CommonVariables.initialDirectoryFromJFileChooser(fc);

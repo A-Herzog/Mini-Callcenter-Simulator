@@ -268,6 +268,7 @@ public class ExportQSModel {
 		final FileFilter xml=new FileNameExtensionFilter(XMLTools.fileTypeXML+" (*.xml)","xml");
 		fc.addChoosableFileFilter(xml);
 		fc.setFileFilter(xml);
+		fc.setAcceptAllFileFilterUsed(false);
 
 		if (fc.showSaveDialog(owner)!=JFileChooser.APPROVE_OPTION) return null;
 		CommonVariables.initialDirectoryFromJFileChooser(fc);
