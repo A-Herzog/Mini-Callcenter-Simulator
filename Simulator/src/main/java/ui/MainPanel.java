@@ -251,6 +251,7 @@ public class MainPanel extends MainPanelBase {
 		addAction("HelpBook",e->commandHelpBook());
 		addAction("HelpSupport",e->commandHelpSupport());
 		addAction("HelpHomepage",e->commandHelpHomepage());
+		addAction("HelpErlangScripts",e->commandHelpErlangScripts());
 		addAction("HelpLicense",e->commandHelpLicenseInfo());
 		addAction("HelpInfo",e->commandHelpInfo());
 		addAction("HelpPageInfo",e->commandHelpPageInfo());
@@ -384,6 +385,7 @@ public class MainPanel extends MainPanelBase {
 		createMenuItem(menu,Language.tr("MainMenu.Help.Book"),Images.HELP_BOOK.getIcon(),Language.tr("MainMenu.Help.Book.Mnemonic"),"HelpBook");
 		createMenuItem(menu,Language.tr("Main.Menu.Help.Support"),Images.HELP_EMAIL.getIcon(),Language.tr("Main.Menu.Help.Support.Mnemonic"),"HelpSupport");
 		createMenuItem(menu,Language.tr("MainMenu.Help.Homepage"),Images.HELP_HOMEPAGE.getIcon(),Language.tr("MainMenu.Help.Homepage.Mnemonic"),"HelpHomepage");
+		createMenuItem(menu,Language.tr("MainMenu.Help.ErlangScripts"),Language.tr("MainMenu.Help.ErlangScripts.Mnemonic"),"HelpErlangScripts");
 		menu.addSeparator();
 		createMenuItem(menu,Language.tr("Main.Menu.Help.LicenseInformation"),Language.tr("Main.Menu.Help.LicenseInformation.Mnemonic"),"HelpLicense");
 		createMenuItemCtrlShift(menu,Language.tr("Main.Menu.Help.ProgramInformation"),Images.GENERAL_INFO.getIcon(),Language.tr("Main.Menu.Help.ProgramInformation.Mnemonic"),KeyEvent.VK_F1,"HelpInfo");
@@ -606,7 +608,7 @@ public class MainPanel extends MainPanelBase {
 		setCurrentPanel(editorPanel);
 	}
 
-	private boolean commandFileModelLoad(final Element rootOptional, final File file) { // XXX
+	private boolean commandFileModelLoad(final Element rootOptional, final File file) {
 		if (!isDiscardModelOk()) return true;
 		final String error;
 		if (rootOptional!=null) {
@@ -662,7 +664,7 @@ public class MainPanel extends MainPanelBase {
 		}
 	}
 
-	private boolean commandFileStatisticsLoad(final Element rootOptional, final File file) { // XXX
+	private boolean commandFileStatisticsLoad(final Element rootOptional, final File file) {
 		final String error;
 		if (rootOptional!=null) {
 			error=statisticsPanel.loadStatisticsFromXML(rootOptional);
@@ -921,6 +923,15 @@ public class MainPanel extends MainPanelBase {
 			Desktop.getDesktop().browse(new URI("https://github.com/A-Herzog/Mini-Callcenter-Simulator"));
 		} catch (IOException | URISyntaxException e) {
 			MsgBox.error(this,Language.tr("Window.Info.NoInternetConnection"),String.format(Language.tr("Window.Info.NoInternetConnection.Address"),"https://github.com/A-Herzog/Mini-Callcenter-Simulator"));
+		}
+	}
+
+	private void commandHelpErlangScripts() {
+		final File folder=new File(SetupData.getProgramFolder(),"tools");
+		try {
+			Desktop.getDesktop().open(folder);
+		} catch (Exception e) {
+			MsgBox.error(this,Language.tr("Window.Info.FolderError"),String.format(Language.tr("Window.Info.FolderError.Location"),folder.toString()));
 		}
 	}
 

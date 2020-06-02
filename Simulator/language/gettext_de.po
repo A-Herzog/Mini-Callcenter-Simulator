@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 12:48+0200\n"
+"POT-Creation-Date: 2020-06-02 12:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1862,6 +1862,12 @@ msgstr "Lehrbuch \"Callcenter – Analyse und Management\""
 msgid "MainMenu.Help.Book.Mnemonic"
 msgstr "C"
 
+msgid "MainMenu.Help.ErlangScripts"
+msgstr "Skripte für Erlang-Formeln"
+
+msgid "MainMenu.Help.ErlangScripts.Mnemonic"
+msgstr "E"
+
 msgid "MainMenu.Help.Homepage"
 msgstr "Homepage"
 
@@ -3545,6 +3551,15 @@ msgstr "Da keine grafische Oberfläche zur Verfügung steht, kann der Simulator 
 
 msgid "Window.Help"
 msgstr "Hilfe"
+
+msgid "Window.Info.FolderError"
+msgstr "Ordner anzeigen fehlgeschlagen"
+
+msgid "Window.Info.FolderError.Location"
+msgstr ""
+"Der Inhalt des Ordners\n"
+"%s\n"
+"konnte nicht angezeigt werden."
 
 msgid "Window.Info.NoEMailProgram.Info"
 msgstr ""

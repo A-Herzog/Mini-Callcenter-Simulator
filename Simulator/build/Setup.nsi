@@ -197,6 +197,10 @@ Section "Install" Inst
   
   File /r "..\..\Release\libs\*.jar"
   
+  SetOutPath "$INSTDIR\tools"
+  
+  File "..\..\Release\tools\*.*"
+  
   CreateShortCut "$SMPROGRAMS\${PrgName}.lnk" "$INSTDIR\${PROGEXE}"
   
   !insertmacro MULTIUSER_RegistryAddInstallInfo
@@ -230,6 +234,7 @@ Section "un.Uninstall" uninst
   
   RmDir /r $INSTDIR\docs
   RmDir /r $INSTDIR\libs
+  RmDir /r $INSTDIR\tools
   
   Push "$INSTDIR"
   Call un.isEmptyDir

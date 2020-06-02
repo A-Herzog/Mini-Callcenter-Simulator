@@ -30,6 +30,9 @@
 		<copy file="${SimTools.location}/LICENSE_COMPONENTS.md" tofile="${Release.location}/docs/license_components_simtools.md"/>
 		<copy file="${SimSystem.location}/LICENSE_COMPONENTS.md" tofile="${Release.location}/docs/license_components_simsystem.md"/>
 		<copy file="${Simulator.location}/../LICENSE" tofile="${Release.location}/docs/license.txt"/>
+		<copy todir="${Release.location}/tools">
+			<fileset dir="${BuildTools.location}/ErlangC"/>
+		</copy>
 		
 		<copy todir="${Release.location}/libs">
 			<fileset dir="${Simulator.location}/target/libs"/>
@@ -49,7 +52,7 @@
 						
 		<echo message="Generate zip package" />
 		<zip destfile="${Release.location}/MiniCallcenterSimulator.zip">
-			<zipfileset dir="${Release.location}" includes="MiniCallcenterSimulator.jar,MiniCallcenterSimulator.exe,docs/**,libs/**"/>
+			<zipfileset dir="${Release.location}" includes="MiniCallcenterSimulator.jar,MiniCallcenterSimulator.exe,docs/**,libs/**,tools/**"/>
 		</zip>
 		
 		<echo message="Clean up" />
@@ -57,5 +60,6 @@
 		<delete file="${Release.location}/MiniCallcenterSimulator.jar" />
 		<delete dir="${Release.location}/docs" />
 		<delete dir="${Release.location}/libs" />
+		<delete dir="${Release.location}/tools" />
 	</target>
 </project>

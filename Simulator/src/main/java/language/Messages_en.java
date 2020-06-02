@@ -162,6 +162,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[389] = "Model";
     t[392] = "Window.Info.NoInternetConnection.ModelOverview";
     t[393] = "Unable to open the model overview\n%s.";
+    t[398] = "MainMenu.Help.ErlangScripts.Mnemonic";
+    t[399] = "E";
     t[402] = "JDistributionEditor.Title";
     t[403] = "Distribution editor";
     t[410] = "LoadCalculator.Tab.AllenCunneen";
@@ -556,8 +558,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1345] = "By default the data are scaled on pasting. But alternatively the data can be filled with zeros.";
     t[1346] = "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit";
     t[1347] = "No waiting time tolerance limit.";
-    t[1352] = "Window.Info.NoEMailProgram.Title";
-    t[1353] = "No e-mail client defined";
+    t[1352] = "Window.Info.FolderError.Location";
+    t[1353] = "The folder\n%s\ncould not be opened.";
     t[1358] = "Statistics.SystemData.EventsPerSecond";
     t[1359] = "Events per second";
     t[1366] = "LoadCalculator.Units.Hours";
@@ -660,8 +662,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1619] = "Data";
     t[1620] = "QSExport.Name.Exit";
     t[1621] = "Exit";
-    t[1630] = "SimStatistic.WaitingTimes.Distribution.All";
-    t[1631] = "Distribution of the waiting times of all clients";
+    t[1630] = "MainMenu.Help.ErlangScripts";
+    t[1631] = "Scripts for Erlang formulas";
     t[1636] = "QSExport.xml.Element.Connection.Rate";
     t[1637] = "Rate";
     t[1640] = "Statistics.ResidenceTimes.Distribution.Successful";
@@ -802,6 +804,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1939] = "The input value format could not be interpreted.";
     t[1940] = "FileType.HTMLApp";
     t[1941] = "html app files";
+    t[1950] = "Window.Info.NoEMailProgram.Title";
+    t[1951] = "No e-mail client defined";
     t[1954] = "Color.FFB6C1";
     t[1955] = "Light pink";
     t[1966] = "Distribution.Location";
@@ -1440,6 +1444,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3381] = "Close";
     t[3384] = "Statistics.AnalyticModelCompare";
     t[3385] = "Comparison with analytical models";
+    t[3386] = "SimStatistic.WaitingTimes.Distribution.All";
+    t[3387] = "Distribution of the waiting times of all clients";
     t[3392] = "JDistributionEditor.Density.Label";
     t[3393] = "Density";
     t[3394] = "Statistics.XML.StateTime.Name";
@@ -1720,6 +1726,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4101] = "Invalid input.";
     t[4102] = "Model.XML.Version";
     t[4103] = "ModelVersion";
+    t[4106] = "Window.Info.FolderError";
+    t[4107] = "Browsing folder failed";
     t[4116] = "FileType.WordTable";
     t[4117] = "Word text with embedded table";
     t[4128] = "CommandLine.Dialog.Title";
@@ -1996,6 +2004,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4777] = "at least one additional parameter has to be entered";
     t[4778] = "XML.ErrorProcessingStream";
     t[4779] = "An error occurred while processing the stream.";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4780] = "Compare.TooFewModels.InfoTwo";
     t[4781] = "Two statistic files have to be selected to be compared.";
     t[4784] = "JDistributionEditor.Copy.Graphics";
@@ -2004,8 +2014,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4789] = "Back";
     t[4790] = "SimStatistic.WorkLoad";
     t[4791] = "Work load";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4792] = "JDistributionEditor.Wikipedia.Link";
     t[4793] = "https://en.wikipedia.org/wiki/";
     t[4794] = "Statistics.XML.Value";

@@ -162,6 +162,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[389] = "Modell";
     t[392] = "Window.Info.NoInternetConnection.ModelOverview";
     t[393] = "Die Modell-\u00dcbersicht\n%s\nkonnte nicht aufgerufen werden.";
+    t[398] = "MainMenu.Help.ErlangScripts.Mnemonic";
+    t[399] = "E";
     t[402] = "JDistributionEditor.Title";
     t[403] = "Verteilungseditor";
     t[410] = "LoadCalculator.Tab.AllenCunneen";
@@ -556,8 +558,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1345] = "Normalerweise werden die Daten beim Einf\u00fcgen skaliert. Es k\u00f6nnen aber auch Nullen angef\u00fcgt werden.";
     t[1346] = "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit";
     t[1347] = "Die Kunden sind bereit, beliebig lange zu warten.";
-    t[1352] = "Window.Info.NoEMailProgram.Title";
-    t[1353] = "Kein E-Mail-Programm festgelegt";
+    t[1352] = "Window.Info.FolderError.Location";
+    t[1353] = "Der Inhalt des Ordners\n%s\nkonnte nicht angezeigt werden.";
     t[1358] = "Statistics.SystemData.EventsPerSecond";
     t[1359] = "Ereignisse pro Sekunde";
     t[1366] = "LoadCalculator.Units.Hours";
@@ -660,8 +662,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1619] = "Daten";
     t[1620] = "QSExport.Name.Exit";
     t[1621] = "Ausgang";
-    t[1630] = "SimStatistic.WaitingTimes.Distribution.All";
-    t[1631] = "Verteilung der Wartezeiten \u00fcber alle Kunden";
+    t[1630] = "MainMenu.Help.ErlangScripts";
+    t[1631] = "Skripte f\u00fcr Erlang-Formeln";
     t[1636] = "QSExport.xml.Element.Connection.Rate";
     t[1637] = "Rate";
     t[1640] = "Statistics.ResidenceTimes.Distribution.Successful";
@@ -802,6 +804,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1939] = "Die Eingangswerte konnten nicht interpretiert werden.";
     t[1940] = "FileType.HTMLApp";
     t[1941] = "html-App-Dateien";
+    t[1950] = "Window.Info.NoEMailProgram.Title";
+    t[1951] = "Kein E-Mail-Programm festgelegt";
     t[1954] = "Color.FFB6C1";
     t[1955] = "Helles Pink";
     t[1966] = "Distribution.Location";
@@ -1440,6 +1444,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3381] = "Schlie\u00dfen";
     t[3384] = "Statistics.AnalyticModelCompare";
     t[3385] = "Vergleich mit analytischen Modellen";
+    t[3386] = "SimStatistic.WaitingTimes.Distribution.All";
+    t[3387] = "Verteilung der Wartezeiten \u00fcber alle Kunden";
     t[3392] = "JDistributionEditor.Density.Label";
     t[3393] = "Dichte";
     t[3394] = "Statistics.XML.StateTime.Name";
@@ -1720,6 +1726,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4101] = "Die Eingaben sind ung\u00fcltig.";
     t[4102] = "Model.XML.Version";
     t[4103] = "ModellVersion";
+    t[4106] = "Window.Info.FolderError";
+    t[4107] = "Ordner anzeigen fehlgeschlagen";
     t[4116] = "FileType.WordTable";
     t[4117] = "Word-Text mit eingebetteter Tabelle";
     t[4128] = "CommandLine.Dialog.Title";
@@ -1996,6 +2004,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4777] = "muss mindestens ein weiterer Parameter folgen";
     t[4778] = "XML.ErrorProcessingStream";
     t[4779] = "Es ist ein Fehler beim Verarbeiten des Datenstroms aufgetreten.";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4780] = "Compare.TooFewModels.InfoTwo";
     t[4781] = "Es m\u00fcssen zwei Statistikdateien zum Vergleichen angegeben werden.";
     t[4784] = "JDistributionEditor.Copy.Graphics";
@@ -2004,8 +2014,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4789] = "Zur\u00fcck";
     t[4790] = "SimStatistic.WorkLoad";
     t[4791] = "Auslastung";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4792] = "JDistributionEditor.Wikipedia.Link";
     t[4793] = "https://de.wikipedia.org/wiki/";
     t[4794] = "Statistics.XML.Value";
