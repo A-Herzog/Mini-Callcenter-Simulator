@@ -18,6 +18,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[17] = "Blanched almond";
     t[18] = "Color.AFEEEE";
     t[19] = "Palet urquoise";
+    t[20] = "Simulator.Log.ScheduleCall";
+    t[21] = "ScheduleCall";
     t[28] = "Help.Forward.Info";
     t[29] = "Goes forward to the next help page.";
     t[32] = "Distribution.AverageSomething";
@@ -956,8 +958,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2359] = "Status";
     t[2360] = "Statistics.XML.ServiceLevel";
     t[2361] = "StatisticsCallsServiceLevel";
-    t[2370] = "Simulator.Log.ScheduleCall";
-    t[2371] = "ScheduleCall";
+    t[2370] = "SettingsDialog.Tabs.Simulation";
+    t[2371] = "Simulation";
     t[2382] = "Distribution.DistJohnsonSU";
     t[2383] = "Johnson SU distribution";
     t[2394] = "Editor.NewerVersion.Info";
@@ -2002,10 +2004,10 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4961] = "The entered image size is invalid. The image size has to be a positive integer.";
     t[4966] = "Statistics.XML.InterLeaveTimes";
     t[4967] = "StatisticsInterLeaveTimes";
-    t[4968] = "CalculatorDialog.Expression";
-    t[4969] = "Expression";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4968] = "CalculatorDialog.Expression";
+    t[4969] = "Expression";
     t[4978] = "LoadCalculator.AverageResidenceTime";
     t[4979] = "Average residence time";
     t[4986] = "Main.Menu.File.LoadStatistics";
@@ -2350,6 +2352,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5833] = "Close";
     t[5836] = "SimStatistic.WorkLoad.IdlePart.Info";
     t[5837] = "no active call";
+    t[5840] = "SettingsDialog.Tabs.Simulation.UseMultiCore";
+    t[5841] = "Use all CPU cores";
     t[5846] = "Statistics.XML.RunUser";
     t[5847] = "StatisticsUser";
     t[5850] = "QSExport.xml.Info.Forward";

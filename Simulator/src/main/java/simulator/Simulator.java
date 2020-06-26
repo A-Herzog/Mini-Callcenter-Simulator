@@ -22,6 +22,7 @@ import simulator.editmodel.EditModel;
 import simulator.runmodel.RunModel;
 import simulator.runmodel.SimulationData;
 import simulator.statistics.Statistics;
+import tools.SetupData;
 
 /**
  * Vollständiger Multi-Core-fähiger Simulator
@@ -79,7 +80,7 @@ public class Simulator extends SimulatorBase {
 	 * @param logFile	Wird hier ein Wert ungleich <code>null</code> übergeben, so wird der Lauf in der angegebenen Datei aufgezeichnet; anonsten erfolgt nur die normale Aufzeichnung in der Statistik
 	 */
 	public Simulator(final EditModel editModel, final File logFile) {
-		this(true,editModel,logFile);
+		this(SetupData.getSetup().useMultiCore,editModel,logFile);
 	}
 
 	/**

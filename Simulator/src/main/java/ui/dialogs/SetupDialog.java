@@ -51,7 +51,11 @@ public class SetupDialog extends BaseDialog {
 
 	private final JComboBox<String> languages;
 	private final JComboBox<String> programStartWindow;
+
 	private final JTextField imageSize;
+
+	private final JCheckBox useMultiCore;
+
 	private final JCheckBox openWord;
 	private final JCheckBox openODT;
 	private final JCheckBox openExcel;
@@ -74,6 +78,7 @@ public class SetupDialog extends BaseDialog {
 		JPanel tab, mainarea, p;
 		JLabel label;
 
+		/* Tab "Benutzeroberfläche" */
 		tabs.addTab(Language.tr("SettingsDialog.Tabs.GUI.ProgramStart"),tab=new JPanel(new FlowLayout(FlowLayout.LEFT))); tab.add(mainarea=new JPanel());
 		mainarea.setLayout(new BoxLayout(mainarea,BoxLayout.Y_AXIS));
 
@@ -99,6 +104,7 @@ public class SetupDialog extends BaseDialog {
 				Images.SETUP_WINDOW_SIZE_LAST
 		}));
 
+		/* Tab "Grafik" */
 		tabs.add(Language.tr("SettingsDialog.Tabs.GUI.Graphics"),tab=new JPanel(new FlowLayout(FlowLayout.LEFT))); tab.add(mainarea=new JPanel());
 		mainarea.setLayout(new BoxLayout(mainarea,BoxLayout.Y_AXIS));
 
@@ -112,6 +118,14 @@ public class SetupDialog extends BaseDialog {
 			@Override public void keyPressed(KeyEvent e) {NumberTools.getPositiveLong(imageSize,true);}
 		});
 
+		/* Tab "Simulation" */
+		tabs.add(Language.tr("SettingsDialog.Tabs.Simulation"),tab=new JPanel(new FlowLayout(FlowLayout.LEFT))); tab.add(mainarea=new JPanel());
+		mainarea.setLayout(new BoxLayout(mainarea,BoxLayout.Y_AXIS));
+
+		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
+		p.add(useMultiCore=new JCheckBox(Language.tr("SettingsDialog.Tabs.Simulation.UseMultiCore")));
+
+		/* Tab "Statistik" */
 		tabs.add(Language.tr("SettingsDialog.Tabs.GUI.Statistics"),tab=new JPanel(new FlowLayout(FlowLayout.LEFT))); tab.add(mainarea=new JPanel());
 		mainarea.setLayout(new BoxLayout(mainarea,BoxLayout.Y_AXIS));
 
@@ -131,7 +145,8 @@ public class SetupDialog extends BaseDialog {
 
 		tabs.setIconAt(0,Images.SETUP_PAGE_APPLICATION.getIcon());
 		tabs.setIconAt(1,Images.SETUP_PAGE_IMPORT_EXPORT.getIcon());
-		tabs.setIconAt(2,Images.SETUP_PAGE_STATISTICS.getIcon());
+		tabs.setIconAt(2,Images.SETUP_PAGE_SIMULATION.getIcon());
+		tabs.setIconAt(3,Images.SETUP_PAGE_STATISTICS.getIcon());
 
 		/* Daten in den Dialog laden */
 
@@ -146,6 +161,8 @@ public class SetupDialog extends BaseDialog {
 		}
 
 		imageSize.setText(""+Math.min(5000,Math.max(50,setup.imageSize)));
+
+		useMultiCore.setSelected(setup.useMultiCore);
 
 		openWord.setSelected(setup.openWord);
 		openODT.setSelected(setup.openODT);
@@ -184,6 +201,8 @@ public class SetupDialog extends BaseDialog {
 
 		Long L=NumberTools.getPositiveLong(imageSize,true);
 		if (L!=null) setup.imageSize=(int)((long)L);
+
+		setup.useMultiCore=useMultiCore.isSelected();
 
 		setup.openWord=openWord.isSelected();
 		setup.openODT=openODT.isSelected();

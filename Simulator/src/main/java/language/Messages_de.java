@@ -18,6 +18,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[17] = "Blanched Almond";
     t[18] = "Color.AFEEEE";
     t[19] = "Schwaches Turquoise";
+    t[20] = "Simulator.Log.ScheduleCall";
+    t[21] = "ScheduleCall";
     t[28] = "Help.Forward.Info";
     t[29] = "Weiter zur n\u00e4chsten Hilfeseite.";
     t[32] = "Distribution.AverageSomething";
@@ -956,8 +958,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2359] = "Status";
     t[2360] = "Statistics.XML.ServiceLevel";
     t[2361] = "StatistikAnrufeServiceLevel";
-    t[2370] = "Simulator.Log.ScheduleCall";
-    t[2371] = "ScheduleCall";
+    t[2370] = "SettingsDialog.Tabs.Simulation";
+    t[2371] = "Simulation";
     t[2382] = "Distribution.DistJohnsonSU";
     t[2383] = "Johnson-SU-Verteilung";
     t[2394] = "Editor.NewerVersion.Info";
@@ -2002,10 +2004,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4961] = "Die angegebene Bildgr\u00f6\u00dfe ist ung\u00fcltig. Die Gr\u00f6\u00dfe muss eine nat\u00fcrliche Zahl sein.";
     t[4966] = "Statistics.XML.InterLeaveTimes";
     t[4967] = "StatistikZwischenabgangszeiten";
-    t[4968] = "CalculatorDialog.Expression";
-    t[4969] = "Ausdruck";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4968] = "CalculatorDialog.Expression";
+    t[4969] = "Ausdruck";
     t[4978] = "LoadCalculator.AverageResidenceTime";
     t[4979] = "Mittlere Verweilzeit";
     t[4986] = "Main.Menu.File.LoadStatistics";
@@ -2350,6 +2352,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5833] = "Schlie\u00dfen";
     t[5836] = "SimStatistic.WorkLoad.IdlePart.Info";
     t[5837] = "kein aktives Gespr\u00e4ch";
+    t[5840] = "SettingsDialog.Tabs.Simulation.UseMultiCore";
+    t[5841] = "Alle CPU-Kerne verwenden";
     t[5846] = "Statistics.XML.RunUser";
     t[5847] = "StatistikNutzer";
     t[5850] = "QSExport.xml.Info.Forward";

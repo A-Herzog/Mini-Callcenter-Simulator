@@ -124,6 +124,11 @@ public class SetupData extends SetupBase {
 	public boolean openODS;
 
 	/**
+	 * Alle Rechenkerne für die Simulation verwenden
+	 */
+	public boolean useMultiCore;
+
+	/**
 	 * Letzter Fehler
 	 * (Hier wird die Setup-Datei als Logdatei für solche Ereignisse verwendet.)
 	 */
@@ -155,6 +160,7 @@ public class SetupData extends SetupBase {
 		openODT=false;
 		openExcel=true;
 		openODS=false;
+		useMultiCore=true;
 		lastError=null;
 	}
 
@@ -338,6 +344,10 @@ public class SetupData extends SetupBase {
 				openODS=loadBoolean(e.getAttribute("ods"),true);
 				continue;
 			}
+
+			if (s.equalsIgnoreCase("MultiCore")) {
+				useMultiCore=loadBoolean(e.getTextContent(),true);
+			}
 		}
 
 		lastFiles=addToArray(lastFiles,files);
@@ -387,6 +397,11 @@ public class SetupData extends SetupBase {
 			node.setAttribute("odt",openODT?"1":"0");
 			node.setAttribute("xlsx",openExcel?"1":"0");
 			node.setAttribute("ods",openODS?"1":"0");
+		}
+
+		if (!useMultiCore) {
+			root.appendChild(node=doc.createElement("MultiCore"));
+			node.setTextContent("0");
 		}
 
 		if (lastError!=null && !lastError.isEmpty()) {

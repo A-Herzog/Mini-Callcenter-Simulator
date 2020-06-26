@@ -192,6 +192,9 @@ public enum Images {
 	/** Symbol im Einstellungendialog "Export" */
 	SETUP_PAGE_IMPORT_EXPORT("image.gif"),
 
+	/** Symbol im Einstellungendialog "Simulation" */
+	SETUP_PAGE_SIMULATION("action_go.gif"),
+
 	/** Symbol im Einstellungendialog "Statistik" */
 	SETUP_PAGE_STATISTICS("sum2.png"),
 
