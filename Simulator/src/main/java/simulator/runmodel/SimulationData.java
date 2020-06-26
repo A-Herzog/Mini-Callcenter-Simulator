@@ -249,7 +249,7 @@ public class SimulationData extends SimData {
 		int freeAgents=runData.freeAgents;
 		int busyAgents=runModel.agents-runData.freeAgents;
 		int queueLength=runData.waitingCalls.size();
-		int systemLength=queueLength+busyAgents;
+		int systemLength=queueLength+busyAgents*runModel.batchWorking;
 
 		statistics.freeAgents.set(currentTime,freeAgents);
 		statistics.busyAgents.set(currentTime,busyAgents);
