@@ -568,6 +568,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1375] = "Statistikdatei ausw\u00e4hlen";
     t[1384] = "Model.XML.RetryProbability";
     t[1385] = "ModellWiederholwahrscheinlichkeit";
+    t[1386] = "Editor.Service.QueueMode.FIFO";
+    t[1387] = "Bedienung in Ankunftsreihenfolge (FIFO - First in first out)";
     t[1388] = "Dialog.Overwrite.Yes.Info";
     t[1389] = "L\u00f6scht die bisher unter diesem Namen existierende Datei und speichert die neuen Daten unter diesem Dateinamen.";
     t[1390] = "SettingsDialog.Tabs.Statistics.OpenExcel";
@@ -764,6 +766,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1889] = "Verweilzeiten \u00fcber die nicht-erfolgreichen Anrufer";
     t[1890] = "Dialog.Button.PasteDoNotScale.Tooltip";
     t[1891] = "Normalerweise werden die Daten beim Einf\u00fcgen skaliert. Es k\u00f6nnen aber auch Nullen angef\u00fcgt werden.";
+    t[1892] = "Model.XML.QueueMode";
+    t[1893] = "ModellBedienreihenfolge";
     t[1894] = "JDataLoader.ImportErrorTooFewCells";
     t[1895] = "Es wurden %s Zellen ausgew\u00e4hlt. Es m\u00fcssen jedoch mindestens %s Zellen importiert werden.";
     t[1896] = "Statistic.Viewer.Report.NoTablesSelected.Title";
@@ -1010,6 +1014,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2479] = "unendlich";
     t[2484] = "Distribution.Range";
     t[2485] = "Bereich";
+    t[2488] = "Statistics.SystemData.CountedClients";
+    t[2489] = "Simulierte und f\u00fcr die Statistik gez\u00e4hlte Kunden";
     t[2490] = "Color.FF4500";
     t[2491] = "Orangerot";
     t[2496] = "QSExport.xml.ModelElementBatchData";
@@ -1640,8 +1646,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4027] = "TestAndScheduleCallRetry";
     t[4034] = "Distribution.Gumbel";
     t[4035] = "Gumbel-Verteilung";
-    t[4038] = "Statistics.SystemData.CountedClients";
-    t[4039] = "Simulierte und f\u00fcr die Statistik gez\u00e4hlte Kunden";
+    t[4038] = "Editor.Service.QueueMode.LIFO";
+    t[4039] = "Bedienung in umgekehrter Ankunftsreihenfolge (LIFO - Last in first out)";
     t[4044] = "Color.808080";
     t[4045] = "Grau";
     t[4048] = "Distribution.Mean";
@@ -1816,6 +1822,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4431] = "Mindestens ben\u00f6tigte Agenten: %s";
     t[4434] = "SettingsDialog.WindowSizeProgrmStart.Normal";
     t[4435] = "Standard Fenstergr\u00f6\u00dfe";
+    t[4444] = "Editor.Service.QueueMode";
+    t[4445] = "Bedienreihenfolge";
     t[4448] = "Statistics.XML.Disribution.StepWide";
     t[4449] = "Schrittweite";
     t[4454] = "CommandLine.Dialog.StopCommand.Hint";
@@ -1996,6 +2004,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4923] = "Violett";
     t[4926] = "CommandLine.Error.UnableToSaveStatistic";
     t[4927] = "Die Statistikdaten konnten nicht gespeichert werden.";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4940] = "Statistics.XML.Numerator.Error";
     t[4941] = "Das Zaehler-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[4954] = "Dialog.Button.Forward";
@@ -2004,8 +2014,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4961] = "Die angegebene Bildgr\u00f6\u00dfe ist ung\u00fcltig. Die Gr\u00f6\u00dfe muss eine nat\u00fcrliche Zahl sein.";
     t[4966] = "Statistics.XML.InterLeaveTimes";
     t[4967] = "StatistikZwischenabgangszeiten";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4968] = "CalculatorDialog.Expression";
     t[4969] = "Ausdruck";
     t[4978] = "LoadCalculator.AverageResidenceTime";

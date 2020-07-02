@@ -20,6 +20,7 @@ import language.Language;
 import simcore.SimData;
 import simcore.eventcache.HashMapEventCache;
 import simcore.eventmanager.PriorityQueueEventManager;
+import simulator.editmodel.EditModel;
 import simulator.events.CallCancelEvent;
 import simulator.events.CallDone1Event;
 import simulator.events.CallEvent;
@@ -170,9 +171,8 @@ public class SimulationData extends SimData {
 			for (int i=0;i<runModel.batchWorking;i++) {
 				if (runData.waitingCalls.size()>0) {
 					if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),"  "+Language.tr("Simulator.Log.TryStartCall.StartWaiting"));
-					CallCancelEvent cancelEvent=runData.waitingCalls.poll();
+					final CallCancelEvent cancelEvent=getNextFromQueue();
 					waitingStartTime=cancelEvent.waitingStartTime;
-					eventManager.deleteEvent(cancelEvent,this);
 				} else {
 					if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),"  "+Language.tr("Simulator.Log.TryStartCall.StartNew"));
 					newCalls--;
@@ -306,5 +306,23 @@ public class SimulationData extends SimData {
 	@Override
 	public void catchOutOfMemory(final String text) {
 		doEmergencyShutDown(Language.tr("Simulation.OutOfMemory")+"\n"+text);
+	}
+
+	/**
+	 * Liefert den jeweils nächsten Kunden aus der Warteschlange.
+	 * @return	Nächster zu bedienender Kunde aus der Warteschlange
+	 * @see RunModel#queueMode
+	 */
+	public CallCancelEvent getNextFromQueue() {
+		final CallCancelEvent cancelEvent;
+		if (runModel.queueMode==EditModel.QueueMode.LIFO) {
+			/* LIFO */
+			cancelEvent=runData.waitingCalls.pollLast();
+		} else {
+			/* FIFO */
+			cancelEvent=runData.waitingCalls.poll();
+		}
+		eventManager.deleteEvent(cancelEvent,this);
+		return cancelEvent;
 	}
 }

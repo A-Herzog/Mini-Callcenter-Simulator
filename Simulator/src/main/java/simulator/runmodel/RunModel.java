@@ -68,6 +68,11 @@ public class RunModel {
 	public int batchWorking;
 
 	/**
+	 * Bedienreihenfolge
+	 */
+	public EditModel.QueueMode queueMode;
+
+	/**
 	 * Wiederholabständeverteilung
 	 */
 	public AbstractRealDistribution retryTimeDist;
@@ -133,6 +138,7 @@ public class RunModel {
 		runModel.workingTimeDist=DistributionTools.cloneDistribution(editModel.workingTimeDist);
 		runModel.postProcessingTimeDist=DistributionTools.cloneDistribution(editModel.postProcessingTimeDist);
 		runModel.batchWorking=editModel.batchWorking;
+		runModel.queueMode=editModel.queueMode;
 		runModel.retryTimeDist=DistributionTools.cloneDistribution(editModel.retryTimeDist);
 		runModel.agents=editModel.agents;
 		runModel.callContinueProbability=editModel.callContinueProbability;

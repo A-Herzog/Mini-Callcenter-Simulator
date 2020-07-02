@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 12:36+0200\n"
+"POT-Creation-Date: 2020-07-01 21:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1142,6 +1142,15 @@ msgstr "Forwarding probability"
 msgid "Editor.Service.NumberOfAgents"
 msgstr "Number of agents"
 
+msgid "Editor.Service.QueueMode"
+msgstr "Queueing discipline"
+
+msgid "Editor.Service.QueueMode.FIFO"
+msgstr "Service in order of arrival (FIFO - First in first out)"
+
+msgid "Editor.Service.QueueMode.LIFO"
+msgstr "Service in reversed order of arrival (LIFO - Last in first out)"
+
 msgid "Editor.Service.ServiceTimes"
 msgstr "Service times"
 
@@ -1924,6 +1933,9 @@ msgstr "ModelPostProcessingTimes"
 
 msgid "Model.XML.PostProcessingTimes.Error"
 msgstr "The specified distribution of the post-processing times is not valid."
+
+msgid "Model.XML.QueueMode"
+msgstr "ModelQueueMode"
 
 msgid "Model.XML.RetryDistances"
 msgstr "ModelRetryDistances"

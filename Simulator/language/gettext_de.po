@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 12:36+0200\n"
+"POT-Creation-Date: 2020-07-01 21:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1142,6 +1142,15 @@ msgstr "Weiterleitungswahrscheinlichkeit"
 msgid "Editor.Service.NumberOfAgents"
 msgstr "Anzahl an Agenten"
 
+msgid "Editor.Service.QueueMode"
+msgstr "Bedienreihenfolge"
+
+msgid "Editor.Service.QueueMode.FIFO"
+msgstr "Bedienung in Ankunftsreihenfolge (FIFO - First in first out)"
+
+msgid "Editor.Service.QueueMode.LIFO"
+msgstr "Bedienung in umgekehrter Ankunftsreihenfolge (LIFO - Last in first out)"
+
 msgid "Editor.Service.ServiceTimes"
 msgstr "Bedienzeiten"
 
@@ -1924,6 +1933,9 @@ msgstr "ModellNachbearbeitungszeiten"
 
 msgid "Model.XML.PostProcessingTimes.Error"
 msgstr "Die angegebene Verteilung für die Nachbearbeitungszeiten ist ungültig."
+
+msgid "Model.XML.QueueMode"
+msgstr "ModellBedienreihenfolge"
 
 msgid "Model.XML.RetryDistances"
 msgstr "ModellWiederholabstaende"

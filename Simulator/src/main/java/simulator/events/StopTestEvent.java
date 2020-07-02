@@ -39,8 +39,7 @@ public class StopTestEvent extends Event {
 		if (simData.runData.freeAgents==simData.runModel.agents) {
 			/* Warteschlange leeren, da Agenten frei sind, aber Kunden dennoch nicht bedient werden. */
 			while (simData.runData.waitingCalls.size()>0) {
-				CallCancelEvent cancelEvent=simData.runData.waitingCalls.poll();
-				simData.eventManager.deleteEvent(cancelEvent,simData);
+				final CallCancelEvent cancelEvent=simData.getNextFromQueue();
 				simData.logWaitingTime((double)(time-cancelEvent.waitingStartTime)/1000);
 			}
 		} else {

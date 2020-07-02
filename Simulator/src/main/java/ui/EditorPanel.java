@@ -21,6 +21,8 @@ import java.io.IOException;
 import java.net.URL;
 
 import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
@@ -61,6 +63,7 @@ public final class EditorPanel extends EditorPanelBase {
 
 	/* Bedienungen */
 	private JTextField agents;
+	private JComboBox<String> queueMode;
 	private JTextField batchWorking;
 	private JDistributionPanel workingTimeDist;
 	private JTextField callContinueProbability;
@@ -91,6 +94,36 @@ public final class EditorPanel extends EditorPanelBase {
 	 */
 	public EditorPanel() {
 		super();
+	}
+
+	/**
+	 * Fügt eine Auswahlbox zu einem Panel hinzu
+	 * @param parent	Übergeordnetes Panel
+	 * @param title	Über der Auswahlbox anzuzeigender Titel (wird <code>null</code> übergeben, so wird kein Titel angezeigt)
+	 * @param values	Bezeichner für die Auswahlmöglichkeiten
+	 * @param readOnly	Gibt an, ob die Auswahl in der Auswahlbox geändert werden darf
+	 * @return	Neu eingefügte Auswahlbox
+	 */
+	public static final JComboBox<String> addComboBoxLine(final JPanel parent, final String title, final String[] values, final boolean readOnly) {
+		addLabel(parent,title);
+
+		JPanel p,p2;
+		JComboBox<String> combo;
+
+		parent.add(p=new JPanel(new BorderLayout()));
+		p.add(p2=new JPanel());
+		p2.setLayout(new BoxLayout(p2,BoxLayout.LINE_AXIS));
+		p2.add(Box.createHorizontalStrut(3));
+		p2.add(combo=new JComboBox<>(values),BorderLayout.CENTER);
+		p2.add(Box.createHorizontalStrut(3));
+
+		Dimension maxSize=p.getMaximumSize();
+		maxSize.height=combo.getPreferredSize().height;
+		p.setMaximumSize(maxSize);
+		p.setMinimumSize(maxSize);
+
+		if (readOnly) combo.setEnabled(false);
+		return combo;
 	}
 
 	@Override
@@ -130,6 +163,7 @@ public final class EditorPanel extends EditorPanelBase {
 		p=addTab(Language.tr("Editor.Service"),Images.MODEL_EDITOR_SERVICE.getIcon());
 		agents=addInputLine(p,Language.tr("Editor.Service.NumberOfAgents"),readOnly);
 		addCheckInput(agents,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(agents,true);}});
+		queueMode=addComboBoxLine(p,Language.tr("Editor.Service.QueueMode"),new String[] {Language.tr("Editor.Service.QueueMode.FIFO"),Language.tr("Editor.Service.QueueMode.LIFO")},readOnly);
 		batchWorking=addInputLine(p,Language.tr("Editor.Service.ClientsPerServiceBatch"),readOnly);
 		addCheckInput(batchWorking,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(batchWorking,true);}});
 		workingTimeDist=addDistribution(p,Language.tr("Editor.Service.ServiceTimes"),3600,readOnly);
@@ -182,6 +216,10 @@ public final class EditorPanel extends EditorPanelBase {
 
 		/* Bedienungen */
 		L=NumberTools.getPositiveLong(agents,true); if (L!=null) model.agents=(int)((long)L);
+		switch (queueMode.getSelectedIndex()) {
+		case 0: model.queueMode=EditModel.QueueMode.FIFO; break;
+		case 1: model.queueMode=EditModel.QueueMode.LIFO; break;
+		}
 		L=NumberTools.getPositiveLong(batchWorking,true); if (L!=null) model.batchWorking=(int)((long)L);
 		model.workingTimeDist=workingTimeDist.getDistribution();
 		D=NumberTools.getProbability(callContinueProbability,true); if (D!=null) model.callContinueProbability=D;
@@ -219,6 +257,11 @@ public final class EditorPanel extends EditorPanelBase {
 
 		/* Bedienungen */
 		agents.setText(""+model.agents);
+		switch (model.queueMode) {
+		case FIFO: queueMode.setSelectedIndex(0); break;
+		case LIFO: queueMode.setSelectedIndex(1); break;
+		default: queueMode.setSelectedIndex(0); break;
+		}
 		batchWorking.setText(""+model.batchWorking);
 		workingTimeDist.setDistribution(model.workingTimeDist);
 		callContinueProbability.setText(NumberTools.formatPercent(model.callContinueProbability));

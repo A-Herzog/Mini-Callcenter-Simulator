@@ -11,6 +11,7 @@
 <!ELEMENT ModellBedienzeiten (#PCDATA)>
 <!ELEMENT ModellNachbearbeitungszeiten (#PCDATA)>
 <!ELEMENT ModellBatchBedienungen (#PCDATA)>
+<!ELEMENT ModellBedienreihenfolge (#PCDATA)>
 <!ELEMENT ModellWiederholabstaende (#PCDATA)>
 <!ELEMENT ModellAgentenanzahl (#PCDATA)>
 <!ELEMENT ModellWeiterleitungswahrscheinlichkeit (#PCDATA)>
@@ -221,6 +222,7 @@
 <!ELEMENT ModelServiceTimes (#PCDATA)>
 <!ELEMENT ModelPostProcessingTimes (#PCDATA)>
 <!ELEMENT ModelBatchService (#PCDATA)>
+<!ELEMENT ModelQueueMode (#PCDATA)>
 <!ELEMENT ModelRetryDistances (#PCDATA)>
 <!ELEMENT ModelNumberOfAgents (#PCDATA)>
 <!ELEMENT ModelForwardingProbability (#PCDATA)>

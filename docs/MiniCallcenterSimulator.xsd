@@ -14,6 +14,7 @@
     <xs:element name="ModellBedienzeiten" type="xs:string"/>
 	<xs:element name="ModellNachbearbeitungszeiten" type="xs:string"/>
     <xs:element name="ModellBatchBedienungen" type="xs:string"/>
+	<xs:element name="ModellBedienreihenfolge" type="xs:string"/>
     <xs:element name="ModellWiederholabstaende" type="xs:string"/>
     <xs:element name="ModellAgentenanzahl" type="xs:string"/>
     <xs:element name="ModellWeiterleitungswahrscheinlichkeit" type="xs:string"/>
@@ -250,6 +251,7 @@
     <xs:element name="ModelServiceTimes" type="xs:string"/>
 	<xs:element name="ModelPostProcessingTimes" type="xs:string"/>
     <xs:element name="ModelBatchService" type="xs:string"/>
+	<xs:element name="ModelQueueMode" type="xs:string"/>
     <xs:element name="ModelRetryDistances" type="xs:string"/>
     <xs:element name="ModelNumberOfAgents" type="xs:string"/>
     <xs:element name="ModelForwardingProbability" type="xs:string"/>

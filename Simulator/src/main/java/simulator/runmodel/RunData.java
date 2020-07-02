@@ -16,7 +16,7 @@
 package simulator.runmodel;
 
 import java.util.ArrayDeque;
-import java.util.Queue;
+import java.util.Deque;
 
 import simulator.events.CallCancelEvent;
 
@@ -46,7 +46,7 @@ public class RunData {
 	/**
 	 * Liste der wartenden Anrufer (repräsentiert durch ihre Warteabbruch-Events.
 	 */
-	public final Queue<CallCancelEvent> waitingCalls;
+	public final Deque<CallCancelEvent> waitingCalls;
 
 	/**
 	 * Gibt an, ob sich das System noch in der Einschwingphase befindet.

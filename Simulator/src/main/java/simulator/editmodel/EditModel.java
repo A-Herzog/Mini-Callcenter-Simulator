@@ -41,6 +41,35 @@ import ui.MainPanel;
  */
 public class EditModel extends EditModelBase implements Cloneable {
 	/**
+	 * Bedienrreihenfolge
+	 * @author Alexander Herzog
+	 * @see EditModel#queueMode
+	 */
+	public enum QueueMode {
+		/** Fist in first out - Bedienung in Ankunftsreihenfolge */
+		FIFO("FIFO"),
+		/** Last in first out - Bedienung in umgekehrter Ankunftsreihenfolge */
+		LIFO("LIFO");
+
+		/** Name der Bedienreihenfolge zum Laden/Speichern in xml-Dateien */
+		public final String xmlName;
+
+		QueueMode(final String xmlName) {
+			this.xmlName=xmlName;
+		}
+
+		/**
+		 * Liefert ein {@link QueueMode}-Objekt basierend auf einem xml-Datenfeld-Namen
+		 * @param xmlName	xml-Datenfeld-Namen zu dem das {@link QueueMode}-Objekt gefunden werden soll
+		 * @return	Passender Bedienreihenfolge-Modus oder Fallback-Modus (FIFO), wenn der String zu keinem Modus passt
+		 */
+		public static QueueMode getFromName(final String xmlName) {
+			for (QueueMode queueMode: QueueMode.values()) if (queueMode.xmlName.equalsIgnoreCase(xmlName)) return queueMode;
+			return QueueMode.FIFO;
+		}
+	}
+
+	/**
 	 * Version des Simulators diese wird in die Modell- und die Statistik-Dateien geschrieben, damit der Simulator
 	 * warnen kann, wenn eine Datei, die mit einer späteren Version erstellt wurde, mit einer früheren Version, die
 	 * evtl. nicht alle gespeicherten Eigenschaften darstellen kann, geöffnet wird.
@@ -108,6 +137,12 @@ public class EditModel extends EditModelBase implements Cloneable {
 	public int batchWorking;
 
 	/**
+	 * Bedienreihenfolge
+	 * @see EditModel.QueueMode
+	 */
+	public QueueMode queueMode;
+
+	/**
 	 * Wiederholabständeverteilung
 	 */
 	public AbstractRealDistribution retryTimeDist;
@@ -150,6 +185,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		workingTimeDist=new ExponentialDistribution(null,180);
 		postProcessingTimeDist=new OnePointDistributionImpl(0);
 		batchWorking=1;
+		queueMode=QueueMode.FIFO;
 		retryTimeDist=new ExponentialDistribution(null,1800);
 		agents=4;
 		callContinueProbability=0;
@@ -176,6 +212,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		clone.workingTimeDist=DistributionTools.cloneDistribution(workingTimeDist);
 		clone.postProcessingTimeDist=DistributionTools.cloneDistribution(postProcessingTimeDist);
 		clone.batchWorking=batchWorking;
+		clone.queueMode=queueMode;
 		clone.retryTimeDist=DistributionTools.cloneDistribution(retryTimeDist);
 		clone.agents=agents;
 		clone.callContinueProbability=callContinueProbability;
@@ -204,6 +241,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		if (!DistributionTools.compare(workingTimeDist,otherModel.workingTimeDist)) return false;
 		if (!DistributionTools.compare(postProcessingTimeDist,otherModel.postProcessingTimeDist)) return false;
 		if (batchWorking!=otherModel.batchWorking) return false;
+		if (queueMode!=otherModel.queueMode) return false;
 		if (!DistributionTools.compare(retryTimeDist,otherModel.retryTimeDist)) return false;
 		if (agents!=otherModel.agents) return false;
 		if (callContinueProbability!=otherModel.callContinueProbability) return false;
@@ -234,84 +272,89 @@ public class EditModel extends EditModelBase implements Cloneable {
 		}
 
 		if (Language.trAll("Model.XML.InterArrivalTimes",name)) {
-			AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
+			final AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
 			if (dist==null) return Language.tr("Model.XML.InterArrivalTimes.Error");
 			interArrivalTimeDist=dist;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.BatchArrival",name)) {
-			Integer J=NumberTools.getNotNegativeInteger(text);
+			final Integer J=NumberTools.getNotNegativeInteger(text);
 			if (J==null || J==0) return String.format(Language.tr("Model.XML.BatchArrival.Error"),text);
 			batchArrival=J;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.WaitingTimeTolerances",name)) {
-			AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
+			final AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
 			if (dist==null) return Language.tr("Model.XML.WaitingTimeTolerances.Error");
 			waitingTimeDist=dist;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.ServiceTimes",name)) {
-			AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
+			final AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
 			if (dist==null) return Language.tr("Model.XML.ServiceTimes.Error");
 			workingTimeDist=dist;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.PostProcessingTimes",name)) {
-			AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
+			final AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
 			if (dist==null) return Language.tr("Model.XML.PostProcessingTimes.Error");
 			postProcessingTimeDist=dist;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.BatchService",name)) {
-			Integer J=NumberTools.getNotNegativeInteger(text);
+			final Integer J=NumberTools.getNotNegativeInteger(text);
 			if (J==null || J==0) return String.format(Language.tr("Model.XML.BatchService.Error"),text);
 			batchWorking=J;
 			return null;
 		}
 
+		if (Language.trAll("Model.XML.QueueMode",name)) {
+			queueMode=QueueMode.getFromName(text);
+			return null;
+		}
+
 		if (Language.trAll("Model.XML.RetryDistances",name)) {
-			AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
+			final AbstractRealDistribution dist=DistributionTools.distributionFromString(text,3600);
 			if (dist==null) return Language.tr("Model.XML.RetryDistances.Error");
 			retryTimeDist=dist;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.NumberOfAgents",name)) {
-			Integer J=NumberTools.getNotNegativeInteger(text);
+			final Integer J=NumberTools.getNotNegativeInteger(text);
 			if (J==null || J==0) return String.format(Language.tr("Model.XML.NumberOfAgents.Error"),text);
 			agents=J;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.ForwardingProbability",name)) {
-			Double D=NumberTools.getSystemProbability(text);
+			final Double D=NumberTools.getSystemProbability(text);
 			if (D==null) return String.format(Language.tr("Model.XML.ForwardingProbability.Error"),text);
 			callContinueProbability=D;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.RetryProbability",name)) {
-			Double D=NumberTools.getSystemProbability(text);
+			final Double D=NumberTools.getSystemProbability(text);
 			if (D==null) return String.format(Language.tr("Model.XML.RetryProbability.Error"),text);
 			retryProbability=D;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.ClientCount",name)) {
-			Integer J=NumberTools.getNotNegativeInteger(text);
+			final Integer J=NumberTools.getNotNegativeInteger(text);
 			if (J==null || J==0) return String.format(Language.tr("Model.XML.ClientCount.Error"),text);
 			callsToSimulate=J;
 			return null;
 		}
 
 		if (Language.trAll("Model.XML.WaitingRoomSize",name)) {
-			Integer J=NumberTools.getInteger(text);
+			final Integer J=NumberTools.getInteger(text);
 			if (J==null) return String.format(Language.tr("Model.XML.WaitingRoomSize.Error"),text);
 			waitingRoomSize=J;
 			return null;
@@ -334,6 +377,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		addTextToXML(doc,node,Language.tr("Model.XML.ServiceTimes"),workingTimeDist);
 		addTextToXML(doc,node,Language.tr("Model.XML.PostProcessingTimes"),postProcessingTimeDist);
 		addTextToXML(doc,node,Language.tr("Model.XML.BatchService"),batchWorking);
+		addTextToXML(doc,node,Language.tr("Model.XML.QueueMode"),queueMode.xmlName);
 		addTextToXML(doc,node,Language.tr("Model.XML.RetryDistances"),retryTimeDist);
 		addTextToXML(doc,node,Language.tr("Model.XML.NumberOfAgents"),agents);
 		addTextToXML(doc,node,Language.tr("Model.XML.ForwardingProbability"),callContinueProbability);

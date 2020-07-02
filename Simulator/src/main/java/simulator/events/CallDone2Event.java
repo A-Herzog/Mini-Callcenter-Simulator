@@ -40,10 +40,8 @@ public class CallDone2Event extends Event {
 
 			for (int i=0;i<simData.runModel.batchWorking;i++) {
 				if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallDone2Event"),"  "+Language.tr("Simulator.Log.CallDone2Event.WaitingClient"));
-				CallCancelEvent cancelEvent=simData.runData.waitingCalls.poll();
-				simData.eventManager.deleteEvent(cancelEvent,simData);
-				long waitingStartTime=cancelEvent.waitingStartTime;
-				simData.logWaitingTime((double)(time-waitingStartTime)/1000,((double)workingTime)/1000);
+				final CallCancelEvent cancelEvent=simData.getNextFromQueue();
+				simData.logWaitingTime((double)(time-cancelEvent.waitingStartTime)/1000,((double)workingTime)/1000);
 			}
 
 			simData.startTalk(workingTime);
