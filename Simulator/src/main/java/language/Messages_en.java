@@ -1296,6 +1296,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3259] = "Offered work load";
     t[3260] = "SettingsDialog.Tabs.GUI.ProgramStart";
     t[3261] = "User interface";
+    t[3264] = "Statistics.Details";
+    t[3265] = "details";
     t[3266] = "Simulator.Log.TryStartCall.WaitingRoomFull";
     t[3267] = "Since the waiting room is full, a caller is rejected.";
     t[3268] = "SimStatistic.SystemData.Version";
@@ -2002,10 +2004,10 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4919] = "ModelClients";
     t[4922] = "Color.EE82EE";
     t[4923] = "Violet";
-    t[4926] = "CommandLine.Error.UnableToSaveStatistic";
-    t[4927] = "The statistic data could not be saved.";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4926] = "CommandLine.Error.UnableToSaveStatistic";
+    t[4927] = "The statistic data could not be saved.";
     t[4940] = "Statistics.XML.Numerator.Error";
     t[4941] = "The numerator attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[4954] = "Dialog.Button.Forward";

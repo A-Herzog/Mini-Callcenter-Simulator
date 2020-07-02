@@ -247,7 +247,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		/* Ergebnisübersicht */
 
 		viewer=new ArrayList<>();
-		for(Statistics statistic : statistics) viewer.add(new ViewerText(statistic,ViewerText.Mode.MODE_OVERVIEW));
+		for(Statistics statistic : statistics) viewer.add(new ViewerText(statistic,ViewerText.Mode.MODE_OVERVIEW,mode->modeClick(mode)));
 		root.addChild(new StatisticNode(Language.tr("Statistics.ResultsOverview"),viewer));
 
 		/* Vergleich mit analytischen Modellen */
@@ -441,6 +441,14 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		viewer=new ArrayList<>();
 		for(Statistics statistic : statistics) viewer.add(new ViewerText(statistic,ViewerText.Mode.MODE_SYSTEM_INFO));
 		root.addChild(new StatisticNode(Language.tr("Statistics.SystemData"),viewer));
+	}
+
+	private void modeClick(final ViewerText.Mode mode) {
+		selectNode(node->{
+			if (node.viewer.length<1) return false;
+			if (!(node.viewer[0] instanceof ViewerText)) return false;
+			return ((ViewerText)node.viewer[0]).getMode()==mode;
+		});
 	}
 
 	@Override

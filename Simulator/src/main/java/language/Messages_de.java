@@ -1296,6 +1296,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3259] = "Verkehrsangebot";
     t[3260] = "SettingsDialog.Tabs.GUI.ProgramStart";
     t[3261] = "Benutzeroberfl\u00e4che";
+    t[3264] = "Statistics.Details";
+    t[3265] = "Details";
     t[3266] = "Simulator.Log.TryStartCall.WaitingRoomFull";
     t[3267] = "Da der Warteraum voll ist, wird ein Anrufer abgewiesen.";
     t[3268] = "SimStatistic.SystemData.Version";
@@ -2002,10 +2004,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4919] = "ModellKunden";
     t[4922] = "Color.EE82EE";
     t[4923] = "Violett";
-    t[4926] = "CommandLine.Error.UnableToSaveStatistic";
-    t[4927] = "Die Statistikdaten konnten nicht gespeichert werden.";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4926] = "CommandLine.Error.UnableToSaveStatistic";
+    t[4927] = "Die Statistikdaten konnten nicht gespeichert werden.";
     t[4940] = "Statistics.XML.Numerator.Error";
     t[4941] = "Das Zaehler-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[4954] = "Dialog.Button.Forward";

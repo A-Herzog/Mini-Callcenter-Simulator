@@ -18,6 +18,7 @@ package ui.statistics;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 import org.apache.commons.math3.distribution.ExponentialDistribution;
 
@@ -41,6 +42,7 @@ public class ViewerText extends StatisticViewerText {
 
 	private final Statistics statistics;
 	private final Mode mode;
+	private final Consumer<Mode> modeClick;
 
 	/**
 	 * Wählt die von {@link ViewerText} auszugebende Information aus.
@@ -78,11 +80,27 @@ public class ViewerText extends StatisticViewerText {
 	 * Konstruktor der Klasse
 	 * @param statistics	Statistikobjekt, aus dem die anzuzeigenden Daten entnommen werden sollen
 	 * @param mode	Gibt an, welche Daten genau ausgegeben werden sollen
+	 * @param modeClick	Callback, das aufgerufen wird, wenn ein "Details"-Link angeklickt wurde
+	 * @see Mode
+	 */
+	public ViewerText(final Statistics statistics, final Mode mode, final Consumer<Mode> modeClick) {
+		this.statistics=statistics;
+		this.mode=mode;
+		this.modeClick=modeClick;
+	}
+
+	/**
+	 * Konstruktor der Klasse
+	 * @param statistics	Statistikobjekt, aus dem die anzuzeigenden Daten entnommen werden sollen
+	 * @param mode	Gibt an, welche Daten genau ausgegeben werden sollen
 	 * @see Mode
 	 */
 	public ViewerText(final Statistics statistics, final Mode mode) {
-		this.statistics=statistics;
-		this.mode=mode;
+		this(statistics,mode,null);
+	}
+
+	private void addModeLink(final Mode mode) {
+		addLink(mode.toString(),Language.tr("Statistics.Details"));
 	}
 
 	private void addDescription(final String topic) {
@@ -110,6 +128,7 @@ public class ViewerText extends StatisticViewerText {
 		if (statistics.callRejected.getSuccess()>0) {
 			addLine(Language.tr("SimStatistic.BusySignalQuota")+": "+NumberTools.formatPercent((double)statistics.callRejected.getSuccess()/statistics.callSuccessful.getAll())+" ("+NumberTools.formatLong(statistics.callRejected.getSuccess())+" "+Language.tr("SimStatistic.of")+" "+NumberTools.formatLong(statistics.callSuccessful.getAll())+" "+Language.tr("SimStatistic.of.Calls")+")");
 		}
+		addModeLink(Mode.MODE_CALLER);
 		endParagraph();
 
 		if (statistics.callSuccessful.getAll()>statistics.freshCalls.get()+statistics.callContinued.getSuccess()+statistics.callRetry.getSuccess()) {
@@ -142,6 +161,7 @@ public class ViewerText extends StatisticViewerText {
 			addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("Statistics.WaitingTime.lower")+"/"+Language.tr("SimStatistic.CancelTime.lower")+"/"+Language.tr("SimStatistic.overall")+": Std[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getSD(),3)+" / Std[A]="+NumberTools.formatNumber(statistics.waitingTimeCancel.getSD(),3)+" / "+NumberTools.formatNumber(statistics.waitingTimeAll.getSD(),3));
 			addLine(Language.tr("Distribution.CV")+" "+Language.tr("Statistics.WaitingTime")+"/"+Language.tr("SimStatistic.CancelTime.lower")+": CV[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getCV(),3)+" / "+NumberTools.formatNumber(statistics.waitingTimeAll.getCV(),3));
 		}
+		addModeLink(Mode.MODE_WAITINGTIMES);
 		endParagraph();
 
 		/*
@@ -164,6 +184,7 @@ public class ViewerText extends StatisticViewerText {
 			addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.of.ResidenceTime.successful.lower")+"/"+Language.tr("SimStatistic.overall")+": Std[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getSD(),3)+" / "+NumberTools.formatNumber(statistics.systemTimeAll.getSD(),3));
 			addLine(Language.tr("Distribution.CV")+" "+Language.tr("SimStatistic.ResidenceTime.successful.lower")+"/"+Language.tr("SimStatistic.overall")+": CV[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getCV(),3)+" / "+NumberTools.formatNumber(statistics.systemTimeAll.getCV(),3));
 		}
+		addModeLink(Mode.MODE_SYSTEMTIMES);
 		endParagraph();
 
 		addHeading(2,Language.tr("SimStatistic.Queue"));
@@ -175,6 +196,7 @@ public class ViewerText extends StatisticViewerText {
 		if (statistics.callRejected.getSuccess()>0) {
 			addLine(Language.tr("SimStatistic.Queue.Reject")+": "+NumberTools.formatPercent(statistics.callRejected.getSuccessPart())+" ("+NumberTools.formatLong(statistics.callRejected.getSuccess())+" "+Language.tr("SimStatistic.of")+" "+NumberTools.formatLong(statistics.callRejected.getAll())+" "+Language.tr("SimStatistic.of.Calls")+")");
 		}
+		addModeLink(Mode.MODE_QUEUE);
 		endParagraph();
 
 		if (statistics.editModel.waitingRoomSize>=0) {
@@ -189,6 +211,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("Statistics.ClientsInSystem.of")+": Std[N]="+NumberTools.formatNumber(statistics.systemLength.getTimeSD(),3));
 		addLine(Language.tr("Statistics.ClientsInSystem.EmptyPart")+": P(N=0)="+NumberTools.formatPercent(statistics.systemLength.getTimePartForState(0),3));
 		addLine(Language.tr("SimStatistic.deMaximale")+" "+Language.tr("Statistics.NumberOfClientsInTheSystem.lower")+": "+NumberTools.formatNumber(statistics.systemLength.getTimeMax()));
+		addModeLink(Mode.MODE_WIP);
 		endParagraph();
 
 		addHeading(2,Language.tr("SimStatistic.WorkLoad"));
@@ -199,10 +222,19 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.NumberOfBusyAgents.lower")+": "+NumberTools.formatNumber(statistics.busyAgents.getTimeMean(),3)+" (rho="+NumberTools.formatPercent(statistics.busyAgents.getTimeMean()/statistics.editModel.agents,3)+")");
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.NumberOfBusyAgents.of")+": "+NumberTools.formatNumber(statistics.busyAgents.getTimeSD(),3));
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.NumberOfIdleAgents.lower")+": "+NumberTools.formatNumber(statistics.freeAgents.getTimeMean(),3));
+		addModeLink(Mode.MODE_WORKLOAD);
 		endParagraph();
 
 		/* Infotext  */
 		addDescription("Overview");
+	}
+
+	@Override
+	protected void processLinkClick(final String link) {
+		for (Mode mode: Mode.values()) if (mode.toString().equals(link)) {
+			if (modeClick!=null) modeClick.accept(mode);
+			break;
+		}
 	}
 
 	private void buildCallerCount() {
@@ -650,6 +682,15 @@ public class ViewerText extends StatisticViewerText {
 		beginParagraph();
 		addLines(Language.tr("SimStatistic.SystemData.MultiThreadInfo"));
 		endParagraph();
+	}
+
+	/**
+	 * Liefert den im Konstruktor angegebenen Modus, welche Daten ausgegeben werden sollen.
+	 * @return	Anzeige-Modus
+	 * @see Mode
+	 */
+	public Mode getMode() {
+		return mode;
 	}
 
 	@Override

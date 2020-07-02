@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-01 21:43+0200\n"
+"POT-Creation-Date: 2020-07-02 13:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3044,6 +3044,9 @@ msgstr "Zeitanteil, in dem das System leer war"
 
 msgid "Statistics.ClientsInSystem.of"
 msgstr "der Anzahl an Kunden im System"
+
+msgid "Statistics.Details"
+msgstr "Details"
 
 msgid "Statistics.Distance"
 msgstr "Abstand"
