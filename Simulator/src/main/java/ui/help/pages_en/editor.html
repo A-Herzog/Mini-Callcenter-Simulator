@@ -111,6 +111,14 @@ The input field <b>Number of agents</b> can be used to define how many agents wo
 </p>
 
 <p>
+The <b>Queueing discipline</b> defines which of the waiting clients is to be served next.
+The service can be carried out in arrival order (FIFO) or in reverse arrival order (LIFO).
+A FIFO operation corresponds to the principle of a queue.
+LIFO operation always occurs when the waiting workpieces are stacked and the stack can only
+be filled from above and workpieces can be removed again only from the top.
+</p>
+
+<p>
 In the call center area, each agent usually processes one client at a time; in the context of more general service systems
 (usually in an industrial environment), however, one operator may be able to process several requests at the same time.
 If an operator should always handle several requests simultaneously, this can be defined by a value greater than 1 in the field

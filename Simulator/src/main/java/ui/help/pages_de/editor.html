@@ -113,6 +113,14 @@ Auf der Seite "Bedienungen" können alle für den Bedienprozess relevanten Param
 </p>
 
 <p>
+Die <b>Bedienreihenfolge</b> gibt an, welcher der wartenden Kunden jeweils als nächstes bedient werden soll.
+Die Bedienung kann in Ankunftsreihenfolge (FIFO) oder in umgekehrter Ankunftsreihenfolge (LIFO) erfolgen.
+Eine FIFO-Bedienung entspricht dem Prinzip einer Warteschlange. Eine LIFO-Bedienung tritt immer dann auf,
+wenn die wartenden Werkstücke gestapelt werden und der Stapel nur von oben befüllt und Werkstücke wieder
+entnommen werden können.
+</p>
+
+<p>
 Im Callcenter-Bereich bearbeitet jeder Agent jeweils einen Kunden; im Kontext allgemeinerer Bediensysteme (meist im industriellen Umfeld)
 kann ein Bediener jedoch evtl. mehrere Anfragen gleichzeitig bearbeiten. Wenn ein Bediener stets mehrere Anfragen gleichzeitig
 bedienen soll, so kann dies durch einen Wert größer als 1 im Feld <b>Kunden pro Bedienung</b> festgelegt werden. Ist hier ein Wert
