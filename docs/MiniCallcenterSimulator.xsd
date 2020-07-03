@@ -21,6 +21,7 @@
     <xs:element name="ModellWiederholwahrscheinlichkeit" type="xs:string"/>
     <xs:element name="ModellSimulierteKunden" type="xs:string"/>
     <xs:element name="ModellWarteramgroesse" type="xs:string"/>
+	<xs:element name="ModellAutokorrelation" type="xs:string"/>
   </xs:sequence>
 </xs:complexType></xs:element>
 
@@ -258,6 +259,7 @@
     <xs:element name="ModelRetryProbability" type="xs:string"/>
     <xs:element name="ModelClientsToSimulate" type="xs:string"/>
     <xs:element name="ModelWaitingRoomSize" type="xs:string"/>
+	<xs:element name="ModelAutocorrelation" type="xs:string"/>	
   </xs:sequence>
 </xs:complexType></xs:element>
 

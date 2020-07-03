@@ -1,6 +1,6 @@
 <!-- Beschreibung der Modell-Dateien -->
 
-<!ELEMENT Modell (ModellVersion, ModellName, ModellBeschreibung, ModellZwischenankunftszeiten, ModellBatchAnkuenfte*, ModellWartezeittoleranzen, ModellBedienzeiten, ModellNachbearbeitungszeiten*, ModellBatchBedienungen*, ModellWiederholabstaende, ModellAgentenanzahl, ModellWeiterleitungswahrscheinlichkeit, ModellWiederholwahrscheinlichkeit, ModellSimulierteKunden, ModellWarteramgroesse)>
+<!ELEMENT Modell (ModellVersion, ModellName, ModellBeschreibung, ModellZwischenankunftszeiten, ModellBatchAnkuenfte*, ModellWartezeittoleranzen, ModellBedienzeiten, ModellNachbearbeitungszeiten*, ModellBatchBedienungen*, ModellWiederholabstaende, ModellAgentenanzahl, ModellWeiterleitungswahrscheinlichkeit, ModellWiederholwahrscheinlichkeit, ModellSimulierteKunden, ModellWarteramgroesse, ModellAutokorrelation)>
 
 <!ELEMENT ModellVersion (#PCDATA)>
 <!ELEMENT ModellName (#PCDATA)>
@@ -18,6 +18,7 @@
 <!ELEMENT ModellWiederholwahrscheinlichkeit (#PCDATA)>
 <!ELEMENT ModellSimulierteKunden (#PCDATA)>
 <!ELEMENT ModellWarteramgroesse (#PCDATA)>
+<!ELEMENT ModellAutokorrelation (#PCDATA)>
 
 <!-- Beschreibung der Statistik-Dateien -->
 
@@ -211,7 +212,7 @@
 
 <!-- Description of the model files -->
 
-<!ELEMENT Model (ModelVersion, ModelName, ModelDescription, ModelInterArrivalTimes, ModelBatchArrival*, ModelWaitingTimeTolerances, ModelServiceTimes, ModelPostProcessingTimes*, ModelBatchService*, ModelRetryDistances, ModelNumberOfAgents, ModelForwardingProbability, ModelRetryProbability, ModelClientsToSimulate, ModelWaitingRoomSize)>
+<!ELEMENT Model (ModelVersion, ModelName, ModelDescription, ModelInterArrivalTimes, ModelBatchArrival*, ModelWaitingTimeTolerances, ModelServiceTimes, ModelPostProcessingTimes*, ModelBatchService*, ModelRetryDistances, ModelNumberOfAgents, ModelForwardingProbability, ModelRetryProbability, ModelClientsToSimulate, ModelWaitingRoomSize, ModelAutocorrelation)>
 
 <!ELEMENT ModelVersion (#PCDATA)>
 <!ELEMENT ModelName (#PCDATA)>
@@ -229,6 +230,7 @@
 <!ELEMENT ModelRetryProbability (#PCDATA)>
 <!ELEMENT ModelClientsToSimulate (#PCDATA)>
 <!ELEMENT ModelWaitingRoomSize (#PCDATA)>
+<!ELEMENT ModelAutocorrelation (#PCDATA)>
 
 <!-- Description of the statistics files -->
 
