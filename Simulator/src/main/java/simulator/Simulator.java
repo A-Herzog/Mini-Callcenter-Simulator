@@ -101,7 +101,7 @@ public class Simulator extends SimulatorBase {
 	 * @return	Statistik-Objekt, welches alle Daten des Simulationslaufs enthält
 	 */
 	protected Statistics collectStatistics() {
-		Statistics statistics=new Statistics();
+		Statistics statistics=new Statistics(runModel.collectCorrelation);
 
 		/* Basisdaten zum Modell und zum Simulationslauf festhalten */
 		statistics.editModel=editModel.clone();

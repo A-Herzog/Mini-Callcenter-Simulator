@@ -113,6 +113,11 @@ public class RunModel {
 	public int warmUpPeriod;
 
 	/**
+	 * Erfassung der Autokorrelation der Wartezeiten
+	 */
+	public boolean collectCorrelation;
+
+	/**
 	 * Ein <code>RunModel</code> kann nicht direkt erzeugt werden, sondern es kann nur ein <code>EditModel</code>
 	 * mittels der Funktion <code>getRunModel</code> in ein <code>RunModel</code> umgeformt werden. Dabei wird das
 	 * Modell auf Konsistenz geprüft und alle notwendigen Verknüpfungen werden hergestellt.
@@ -157,6 +162,7 @@ public class RunModel {
 		runModel.warmUpPeriod=(int)Math.round(Math.ceil((runModel.callsToSimulate)*warmUpPeriodPart));
 		runModel.callsToSimulate+=runModel.warmUpPeriod;
 		runModel.waitingRoomSize=editModel.waitingRoomSize;
+		runModel.collectCorrelation=editModel.collectCorrelation;
 
 		return runModel;
 	}

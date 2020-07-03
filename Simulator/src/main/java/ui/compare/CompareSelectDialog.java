@@ -157,7 +157,7 @@ public class CompareSelectDialog extends BaseDialog  {
 		File file=XMLTools.showLoadDialog(getParent(),Language.tr("Compare.LoadStatisticData"),initialFolder);
 		if (file==null) return null;
 
-		Statistics newData=new Statistics();
+		final Statistics newData=new Statistics(false);
 		String s=newData.loadFromFile(file); if (s!=null) {
 			MsgBox.error(this,Language.tr("Compare.InvalidStatisticFile.Title"),String.format(Language.tr("Compare.InvalidStatisticFile.Info"),file.toString()));
 			return null;
@@ -193,7 +193,7 @@ public class CompareSelectDialog extends BaseDialog  {
 	private final boolean dropFile(File file) {
 		if (!file.exists()) return false;
 
-		Statistics newData=new Statistics();
+		final Statistics newData=new Statistics(false);
 		String s=newData.loadFromFile(file); if (s!=null) {
 			MsgBox.error(this,Language.tr("Compare.InvalidStatisticFile.Title"),String.format(Language.tr("Compare.InvalidStatisticFile.Info"),file.toString()));
 			return false;

@@ -65,7 +65,7 @@ public abstract class AbstractSimulationCommand extends AbstractCommand {
 		Element root=loadXMLFile(file);
 		if (root==null) return false;
 
-		for (String test: new Statistics().getRootNodeNames()) if (root.getNodeName().equalsIgnoreCase(test)) return true;
+		for (String test: new Statistics(false).getRootNodeNames()) if (root.getNodeName().equalsIgnoreCase(test)) return true;
 
 		return false;
 	}

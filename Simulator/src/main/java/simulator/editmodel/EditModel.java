@@ -172,6 +172,11 @@ public class EditModel extends EditModelBase implements Cloneable {
 	 */
 	public int waitingRoomSize;
 
+	/**
+	 * Erfassung der Autokorrelation der Wartezeiten
+	 */
+	public boolean collectCorrelation;
+
 	@Override
 	protected void resetData() {
 		version=systemVersion;
@@ -192,6 +197,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		retryProbability=0;
 		callsToSimulate=100000;
 		waitingRoomSize=-1;
+		collectCorrelation=false;
 	}
 
 	/**
@@ -219,6 +225,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		clone.retryProbability=retryProbability;
 		clone.callsToSimulate=callsToSimulate;
 		clone.waitingRoomSize=waitingRoomSize;
+		clone.collectCorrelation=collectCorrelation;
 
 		return clone;
 	}
@@ -248,6 +255,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		if (retryProbability!=otherModel.retryProbability) return false;
 		if (callsToSimulate!=otherModel.callsToSimulate) return false;
 		if (waitingRoomSize!=otherModel.waitingRoomSize) return false;
+		if (collectCorrelation!=otherModel.collectCorrelation) return false;
 
 		return true;
 	}
@@ -360,6 +368,11 @@ public class EditModel extends EditModelBase implements Cloneable {
 			return null;
 		}
 
+		if (language.Language.trAll("Model.XML.CollectCorrelation",name)) {
+			collectCorrelation=(text.equals("1"));
+			return null;
+		}
+
 		return null;
 	}
 
@@ -384,5 +397,6 @@ public class EditModel extends EditModelBase implements Cloneable {
 		addTextToXML(doc,node,Language.tr("Model.XML.RetryProbability"),retryProbability);
 		addTextToXML(doc,node,Language.tr("Model.XML.ClientCount"),callsToSimulate);
 		addTextToXML(doc,node,Language.tr("Model.XML.WaitingRoomSize"),waitingRoomSize);
+		if (collectCorrelation) addTextToXML(doc,node,Language.tr("Model.XML.CollectCorrelation"),"1");
 	}
 }

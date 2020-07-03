@@ -460,7 +460,7 @@ public class MainPanel extends MainPanelBase {
 		for (String test: new EditModel().getRootNodeNames()) if (name.equalsIgnoreCase(test)) {
 			return commandFileModelLoad(root,file);
 		}
-		for (String test: new Statistics().getRootNodeNames()) if (name.equalsIgnoreCase(test)) {
+		for (String test: new Statistics(false).getRootNodeNames()) if (name.equalsIgnoreCase(test)) {
 			return commandFileStatisticsLoad(root,file);
 		}
 
@@ -524,7 +524,7 @@ public class MainPanel extends MainPanelBase {
 		final String name=root.getNodeName();
 
 		for (String test: new EditModel().getRootNodeNames()) if (name.equalsIgnoreCase(test)) return commandFileModelLoad(root,file);
-		for (String test: new Statistics().getRootNodeNames()) if (name.equalsIgnoreCase(test)) return commandFileStatisticsLoad(root,file);
+		for (String test: new Statistics(false).getRootNodeNames()) if (name.equalsIgnoreCase(test)) return commandFileStatisticsLoad(root,file);
 
 		if (errorMessageOnFail) MsgBox.error(getOwnerWindow(),Language.tr("XML.LoadErrorTitle"),Language.tr("XML.UnknownFileFormat"));
 

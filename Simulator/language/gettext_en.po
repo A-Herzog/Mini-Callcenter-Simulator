@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-02 13:58+0200\n"
+"POT-Creation-Date: 2020-07-03 20:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1086,6 +1086,9 @@ msgstr "Clients per arrival (batch arrivals)"
 msgid "Editor.Arrivals.InterArrivalTimes"
 msgstr "Inter-arrival times"
 
+msgid "Editor.CollectCorrelation"
+msgstr "Record autocorrelation of the waiting times"
+
 msgid "Editor.General"
 msgstr "General"
 
@@ -1904,6 +1907,9 @@ msgstr "ModelClientsToSimulate"
 msgid "Model.XML.ClientCount.Error"
 msgstr "The value \"%s\" for the number of clients to be simulated is invalid. A positive integer number has to be specified."
 
+msgid "Model.XML.CollectCorrelation"
+msgstr ""
+
 msgid "Model.XML.Description"
 msgstr "ModelDescription"
 
@@ -2326,6 +2332,9 @@ msgstr "busy agents"
 
 msgid "SimStatistic.AllCallTypes"
 msgstr "Calls (including forwarding and retryer)"
+
+msgid "SimStatistic.AutoCorrelation"
+msgstr "Autocorrelation"
 
 msgid "SimStatistic.BatchService"
 msgstr "Number of clients that are served simultaneously by one agent (batch processing)"
@@ -3029,6 +3038,29 @@ msgstr "Erlang-C models"
 
 msgid "Statistics.AnalyticModelCompare.SimulationResults"
 msgstr "Simulation results for comparison"
+
+msgid "Statistics.AutoCorrelation"
+msgstr "Autocorrelation"
+
+msgid "Statistics.AutoCorrelation.Distance"
+msgstr "Distance"
+
+msgid "Statistics.AutoCorrelation.Line"
+msgstr "min{k|rho(k)<%s} = %s"
+
+msgid "Statistics.AutoCorrelation.LineMoreThan"
+msgstr "min{k|rho(k)<%s} > %s"
+
+msgid "Statistics.AutoCorrelation.NoData"
+msgstr "No autocorrelation data were recorded during the simulation."
+
+msgid "Statistics.AutoCorrelation.Step"
+msgstr ""
+"The autocorrelation is recorded only for 10s intervals.\n"
+"Therefore, the above values always end in a full 10's value."
+
+msgid "Statistics.AutoCorrelation.WaitingTimes"
+msgstr "Autocorrelation of waiting times"
 
 msgid "Statistics.Average"
 msgstr "Average"

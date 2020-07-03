@@ -17,11 +17,13 @@ package ui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.io.IOException;
 import java.net.URL;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
@@ -60,6 +62,7 @@ public final class EditorPanel extends EditorPanelBase {
 	private JTextField waitingRoomSize;
 	private JRadioButton[] waitingTimeSelect;
 	private JDistributionPanel waitingTimeDist;
+	private JCheckBox collectCorrelation;
 
 	/* Bedienungen */
 	private JTextField agents;
@@ -126,6 +129,22 @@ public final class EditorPanel extends EditorPanelBase {
 		return combo;
 	}
 
+	/**
+	 * Fügt eine Checkbox zu einem Panel hinzu
+	 * @param parent	Übergeordnetes Panel
+	 * @param title	Beschriftung der Checkbox
+	 * @return	Neu eingefügte Checkbox
+	 */
+	public static final JCheckBox addCheckBox(final JPanel parent, final String title) {
+		final JPanel p;
+		final JCheckBox checkBox;
+
+		parent.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
+		p.add(checkBox=new JCheckBox(title));
+
+		return checkBox;
+	}
+
 	@Override
 	protected void buildGUI() {
 		JPanel p;
@@ -157,7 +176,7 @@ public final class EditorPanel extends EditorPanelBase {
 		addCheckInput(waitingRoomSize,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(waitingRoomSize,true);}});
 		waitingTimeSelect=addOptions(p,null,new String[]{Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit"),Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.Limit")+":"});
 		waitingTimeDist=addDistribution(p,null,3600,readOnly);
-		p.add(Box.createVerticalStrut(5));
+		collectCorrelation=addCheckBox(p,Language.tr("Editor.CollectCorrelation"));
 
 		/* Bedienungen */
 		p=addTab(Language.tr("Editor.Service"),Images.MODEL_EDITOR_SERVICE.getIcon());
@@ -213,6 +232,7 @@ public final class EditorPanel extends EditorPanelBase {
 			L=NumberTools.getPositiveLong(waitingRoomSize,true); if (L!=null) model.waitingRoomSize=(int)((long)L);
 		}
 		if (waitingTimeSelect[0].isSelected()) model.waitingTimeDist=new NeverDistributionImpl(); else model.waitingTimeDist=waitingTimeDist.getDistribution();
+		model.collectCorrelation=collectCorrelation.isSelected();
 
 		/* Bedienungen */
 		L=NumberTools.getPositiveLong(agents,true); if (L!=null) model.agents=(int)((long)L);
@@ -254,6 +274,7 @@ public final class EditorPanel extends EditorPanelBase {
 			waitingTimeSelect[1].setSelected(true);
 			waitingTimeDist.setDistribution(model.waitingTimeDist);
 		}
+		collectCorrelation.setSelected(model.collectCorrelation);
 
 		/* Bedienungen */
 		agents.setText(""+model.agents);

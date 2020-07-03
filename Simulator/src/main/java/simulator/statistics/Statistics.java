@@ -145,9 +145,12 @@ public class Statistics extends StatisticsBase {
 	public StatisticsTimePerformanceIndicator systemLength;
 
 	/**
-	 * Konstruktor der Klasse <code>Statistics</code>
+	 * Konstruktor der Klasse
+	 * @param collectCorrelation	Erfassung der Autokorrelation der Wartezeiten der Kunden
 	 */
-	public Statistics() {
+	public Statistics(final boolean collectCorrelation) {
+		int correlationRange=collectCorrelation?1000:-1;
+
 		editModel=new EditModel();
 
 		addPerformanceIndicator(simulationData=new StatisticsSimulationBaseData(Language.trAll("Statistics.XML.BaseData")));
@@ -162,7 +165,7 @@ public class Statistics extends StatisticsBase {
 
 		addPerformanceIndicator(interarrivalTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.InterArrivalTimes"),7200,7200));
 		addPerformanceIndicator(interleaveTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.InterLeaveTimes"),7200,7200));
-		addPerformanceIndicator(waitingTimeAll=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesAll"),7200,7200));
+		addPerformanceIndicator(waitingTimeAll=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesAll"),7200,7200,correlationRange,-1));
 		addPerformanceIndicator(waitingTimeSuccess=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesSuccess"),7200,7200));
 		addPerformanceIndicator(waitingTimeCancel=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesCancel"),7200,7200));
 		addPerformanceIndicator(workingTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WorkingTimes"),7200,7200));

@@ -17,8 +17,11 @@ package ui.statistics;
 
 import java.awt.Color;
 
+import org.jfree.data.xy.XYSeries;
+
 import language.Language;
 import simulator.statistics.Statistics;
+import statistics.StatisticsDataPerformanceIndicator;
 import systemtools.statistics.StatisticViewerLineChart;
 
 /**
@@ -53,7 +56,9 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		/** Verteilung der Verweilzeiten der erfolgreichen Kunden */
 		MODE_SYSTEMTIMES_SUCCESS,
 		/** Verteilung der Verweilzeiten über alle Kunden */
-		MODE_SYSTEMTIMES_ALL
+		MODE_SYSTEMTIMES_ALL,
+		/** Autokorrelation der Wartezeiten */
+		MODE_AUTOCORRELATION
 	}
 
 	/**
@@ -139,6 +144,26 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	private void addAutoCorrelationSeries(final StatisticsDataPerformanceIndicator indicator, final String name, final Color color) {
+		if (!indicator.isCorrelationAvailable()) return;
+
+		final XYSeries series=addSeries(name,color);
+
+		final double[] data=indicator.getCorrelationData();
+		for (int i=0;i<data.length;i++) {
+			series.add(i*StatisticsDataPerformanceIndicator.CORRELATION_RANGE_STEPPING,Math.abs(data[i]),false);
+		}
+		series.fireSeriesChanged();
+	}
+
+	private void buildAutoCorrelation() {
+		initLineChart(Language.tr("Statistics.AutoCorrelation.WaitingTimes"));
+		setupChartValuePercent(Language.tr("Statistics.AutoCorrelation.WaitingTimes"),Language.tr("Statistics.AutoCorrelation.Distance"),Language.tr("Statistics.AutoCorrelation"));
+		addAutoCorrelationSeries(statistics.waitingTimeAll,Language.tr("Statistics.AutoCorrelation.WaitingTimes"),Color.RED);
+		smartZoom(1);
+		initTooltips();
+	}
+
 	@Override
 	protected void firstChartRequest() {
 		switch (mode) {
@@ -151,6 +176,7 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		case MODE_POSTPROCESSINGTIMES: buildPostProcessingTimes(); break;
 		case MODE_SYSTEMTIMES_SUCCESS: buildSystemTimesSuccess(); break;
 		case MODE_SYSTEMTIMES_ALL: buildSystemTimesAll(); break;
+		case MODE_AUTOCORRELATION: buildAutoCorrelation(); break;
 		}
 	}
 }

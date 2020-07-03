@@ -15,6 +15,11 @@
  */
 package ui.statistics;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import language.Language;
 import mathtools.NumberTools;
 import mathtools.Table;
@@ -64,7 +69,9 @@ public class ViewerTable extends StatisticViewerTable {
 		/** Tabelle "Verteilung der Verweilzeiten aller Kunden" */
 		MODE_SYSTEMTIMES_ALL,
 		/** Tabelle "Auslastung" */
-		MODE_WORKLOAD
+		MODE_WORKLOAD,
+		/** Autokorrelation der Wartezeiten */
+		MODE_AUTOCORRELATION
 	}
 
 	/**
@@ -161,6 +168,24 @@ public class ViewerTable extends StatisticViewerTable {
 		setData(table,new String[]{Language.tr("Statistic.NumberOfSeconds"),Language.tr("Statistic.Viewer.Chart.Number"),Language.tr("Statistic.Viewer.Chart.Part")});
 	}
 
+	private void buildAutoCorrelationTable() {
+		final Table table=new Table();
+		final List<String> cols=new ArrayList<>();
+
+		cols.add(Language.tr("Statistics.AutoCorrelation.Distance"));
+		final List<String> line=new ArrayList<>();
+		if (statistics.waitingTimeAll.isCorrelationAvailable()) {
+			final int length=statistics.waitingTimeAll.getCorrelationData().length;
+			for (int i=0;i<length;i++) line.add(NumberTools.formatLong(i*StatisticsDataPerformanceIndicator.CORRELATION_RANGE_STEPPING));
+		}
+		table.addLine(line);
+
+		cols.add(Language.tr("Statistics.AutoCorrelation.WaitingTimes"));
+		table.addLine(Arrays.stream(statistics.waitingTimeAll.getCorrelationData()).mapToObj(d->NumberTools.formatPercent(d,3)).collect(Collectors.toList()));
+
+		setData(table.transpose(),cols);
+	}
+
 	@Override
 	protected void buildTable() {
 		switch (mode) {
@@ -182,6 +207,9 @@ public class ViewerTable extends StatisticViewerTable {
 		case MODE_SYSTEMTIMES_SUCCESS:
 		case MODE_SYSTEMTIMES_ALL:
 			buildTimesTable(mode);
+			break;
+		case MODE_AUTOCORRELATION:
+			buildAutoCorrelationTable();
 			break;
 		}
 	}

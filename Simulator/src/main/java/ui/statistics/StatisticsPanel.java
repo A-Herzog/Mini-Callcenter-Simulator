@@ -184,7 +184,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 			if (file==null) return null;
 		}
 
-		Statistics newStatistics=new Statistics();
+		Statistics newStatistics=new Statistics(false);
 		String error=newStatistics.loadFromFile(file);
 		if (error!=null) return error;
 
@@ -199,7 +199,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 	 * @return	Gibt im Erfolgsfall <code>null</code> zurück, sonst eine Fehlermeldung.
 	 */
 	public String loadStatisticsFromXML(final Element root) {
-		Statistics newStatistics=new Statistics();
+		Statistics newStatistics=new Statistics(false);
 		String error=newStatistics.loadFromXML(root);
 		if (error!=null) return error;
 
@@ -238,6 +238,13 @@ public class StatisticsPanel extends StatisticsBasePanel {
 			modelName=statistics[0].editModel.name;
 		}
 		setData(root,modelName);
+	}
+
+	private boolean hasAutocorrelation() {
+		for(Statistics statistic : statistics) {
+			if (statistic.waitingTimeAll.isCorrelationAvailable()) return true;
+		}
+		return false;
 	}
 
 	private void addNodesToTree(final StatisticNode root) {
@@ -367,6 +374,20 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		viewer=new ArrayList<>();
 		for(Statistics statistic : statistics) viewer.add(new ViewerLineChart(statistic,ViewerLineChart.Mode.MODE_WAITINGTIMES_ALL));
 		group.addChild(new StatisticNode(Language.tr("SimStatistic.WaitingTimes.Distribution.All"),viewer));
+
+		if (hasAutocorrelation()) {
+			viewer=new ArrayList<>();
+			for(Statistics statistic : statistics) viewer.add(new ViewerText(statistic,ViewerText.Mode.MODE_AUTOCORRELATION));
+			group.addChild(new StatisticNode(Language.tr("SimStatistic.AutoCorrelation"),viewer));
+
+			viewer=new ArrayList<>();
+			for(Statistics statistic : statistics) viewer.add(new ViewerTable(statistic,ViewerTable.Mode.MODE_AUTOCORRELATION));
+			group.addChild(new StatisticNode(Language.tr("SimStatistic.AutoCorrelation"),viewer));
+
+			viewer=new ArrayList<>();
+			for(Statistics statistic : statistics) viewer.add(new ViewerLineChart(statistic,ViewerLineChart.Mode.MODE_AUTOCORRELATION));
+			group.addChild(new StatisticNode(Language.tr("SimStatistic.AutoCorrelation"),viewer));
+		}
 
 		/* Bedienzeiten */
 

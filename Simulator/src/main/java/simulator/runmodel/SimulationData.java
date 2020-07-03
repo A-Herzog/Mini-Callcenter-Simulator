@@ -67,8 +67,8 @@ public class SimulationData extends SimData {
 		super(new PriorityQueueEventManager(),new HashMapEventCache(),threadNr,threadCount);
 		this.runModel=runModel;
 		this.runData=new RunData(runModel);
-		statistics=new Statistics();
-		collectStatistics=new Statistics();
+		statistics=new Statistics(runModel.collectCorrelation);
+		collectStatistics=new Statistics(runModel.collectCorrelation);
 
 		simDaysByOtherThreads=0;
 		for (int i=0;i<threadNr;i++) {

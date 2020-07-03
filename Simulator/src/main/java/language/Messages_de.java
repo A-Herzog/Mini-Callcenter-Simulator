@@ -280,6 +280,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[627] = "Druckt die Ergebnisse von dieser Seite aus.";
     t[628] = "Editor.NewerVersion.Title";
     t[629] = "Modelldatei wurde mit neuerer Version erstellt";
+    t[634] = "Statistics.AutoCorrelation.LineMoreThan";
+    t[635] = "min{k|rho(k)<%s} > %s";
     t[640] = "Simulator.Log.CallDone2Event.WaitingClient";
     t[641] = "Ein wartender Anrufer wird einem Agenten zugeordnet.";
     t[644] = "XML.ErrorOpeningFile";
@@ -296,6 +298,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[671] = "Modell festgehalten";
     t[674] = "Wait.Status.Start";
     t[675] = "Simulation gestartet";
+    t[680] = "Statistics.AutoCorrelation.Line";
+    t[681] = "min{k|rho(k)<%s} = %s";
     t[692] = "Window.Info.NoInternetConnection";
     t[693] = "Keine Internet-Verbindung m\u00f6glich";
     t[696] = "Statistics.XML.QueueLength";
@@ -990,8 +994,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2429] = "Verteilung";
     t[2430] = "Statistics.XML.EmergencyShutDown";
     t[2431] = "StatistikInternerAbbruch";
-    t[2432] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchArrival";
-    t[2433] = "In den analytischen Modellen werden keine Gruppenank\u00fcnfte ber\u00fccksichtigt.";
+    t[2432] = "SimStatistic.AutoCorrelation";
+    t[2433] = "Autokorrelation";
     t[2436] = "LoadCalculator.WorkingRateCV";
     t[2437] = "Variationskoeffizient der Bedienrate";
     t[2442] = "Statistics.WaitingTime.lower.AnalyticWithCancelationAndForwardingApproximation";
@@ -1192,6 +1196,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3009] = "Kopiert das aktuelle Ergebnis in die Zwischenablage";
     t[3010] = "Statistics.XML.AutocorrelationData.Error";
     t[3011] = "Das \"Autokorrelation\"-Attribut im \"%s\"-Element muss die Autokorrelationswerte beinhalten.";
+    t[3012] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchArrival";
+    t[3013] = "In den analytischen Modellen werden keine Gruppenank\u00fcnfte ber\u00fccksichtigt.";
     t[3020] = "Color.D3D3D3";
     t[3021] = "Hellgrau";
     t[3024] = "Color.FFFFE0";
@@ -1480,6 +1486,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3669] = "Royal Blau";
     t[3670] = "Statistic.Viewer.Toolbar.OpenTable";
     t[3671] = "\u00d6ffnen";
+    t[3672] = "Statistics.AutoCorrelation.WaitingTimes";
+    t[3673] = "Autokorrelation der Wartezeiten";
     t[3680] = "SimStatistic.Service";
     t[3681] = "Bedienungen";
     t[3684] = "Color.0000CD";
@@ -1952,6 +1960,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4755] = "Minimum";
     t[4756] = "FileType.SciLabScript";
     t[4757] = "SciLab-Skript";
+    t[4760] = "Editor.CollectCorrelation";
+    t[4761] = "Autokorrelation der Wartezeiten aufzeichnen";
     t[4762] = "Color.1E90FF";
     t[4763] = "Dodger Blau";
     t[4764] = "Compare.ReplaceKeptModel.Info";
@@ -1994,6 +2004,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4881] = "Ankunfts-Batch-Gr\u00f6\u00dfe";
     t[4892] = "Statistics.XML.Maximum.Error";
     t[4893] = "Das \"Maximum\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4906] = "Color.BA55D3";
     t[4907] = "Mittleres Orchid";
     t[4910] = "CommandLine.ReportBase.Help";
@@ -2004,12 +2016,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4919] = "ModellKunden";
     t[4922] = "Color.EE82EE";
     t[4923] = "Violett";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4926] = "CommandLine.Error.UnableToSaveStatistic";
     t[4927] = "Die Statistikdaten konnten nicht gespeichert werden.";
     t[4940] = "Statistics.XML.Numerator.Error";
     t[4941] = "Das Zaehler-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
+    t[4946] = "Statistics.AutoCorrelation.NoData";
+    t[4947] = "Es wurden w\u00e4hrend der Simulation keine Autokorrelationsdaten erfasst.";
     t[4954] = "Dialog.Button.Forward";
     t[4955] = "Weiter";
     t[4960] = "Statistic.Viewer.SaveImage.Error.Info";
@@ -2186,6 +2198,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5393] = "Variationskoeffizient";
     t[5400] = "Help.Content.Info";
     t[5401] = "Zeigt die Abschnitts\u00fcberschriften dieser Seite an";
+    t[5404] = "Statistics.AutoCorrelation";
+    t[5405] = "Autokorrelation";
     t[5410] = "Main.Toolbar.ShowStatistics";
     t[5411] = "Simulationsergebnisse";
     t[5422] = "Main.Menu.File";
@@ -2222,6 +2236,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5497] = "Einstellungen...";
     t[5498] = "Table.LoadErrorCellRangeInvalid";
     t[5499] = "Der durch %s und %s eingegrenzte Bereich muss entweder eine Zeile oder eine Spalte sein.";
+    t[5506] = "Statistics.AutoCorrelation.Step";
+    t[5507] = "Die Autokorrelation wird nur f\u00fcr 10er Abst\u00e4nde erfasst.\nDaher enden die obigen Werte stets auf einen ganzen 10er Wert.";
     t[5508] = "Main.Menu.Extras.KeepModel";
     t[5509] = "Aktuelles Modell f\u00fcr sp\u00e4teren Vergleich festhalten";
     t[5516] = "CalculatorDialog.Plotter.Toolbar.Save";
@@ -2356,6 +2372,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5821] = "Simulation starten";
     t[5822] = "CommandLine.Report.Description.Short";
     t[5823] = "Exportiert einen Teil oder die gesamten Simulationsergebnisse f\u00fcr ein Modell.";
+    t[5824] = "Statistics.AutoCorrelation.Distance";
+    t[5825] = "Abstand";
     t[5830] = "Statistic.Viewer.Chart.Mode";
     t[5831] = "Art";
     t[5832] = "Dialog.Button.Close";

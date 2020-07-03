@@ -29,6 +29,7 @@ import mathtools.distribution.NeverDistributionImpl;
 import mathtools.distribution.OnePointDistributionImpl;
 import mathtools.distribution.tools.DistributionTools;
 import simulator.statistics.Statistics;
+import statistics.StatisticsDataPerformanceIndicator;
 import systemtools.statistics.StatisticViewerText;
 import ui.help.Help;
 
@@ -73,7 +74,9 @@ public class ViewerText extends StatisticViewerText {
 		/** Textseite "Vergleich mit analytischen Modellen" */
 		MODE_COMPARE,
 		/** Textseite "Systemdaten" */
-		MODE_SYSTEM_INFO
+		MODE_SYSTEM_INFO,
+		/** Autokorrelation der Wartezeiten */
+		MODE_AUTOCORRELATION
 	}
 
 	/**
@@ -685,6 +688,56 @@ public class ViewerText extends StatisticViewerText {
 	}
 
 	/**
+	 * Korrelationslevels zu denen angegeben werden soll, ab welchem
+	 * Abstand dieser Wert erreicht bzw. unterschritten wird.
+	 */
+	public final static double[] AUTOCORRELATION_LEVELS=new double[]{0.1,0.05,0.01,0.005,0.001};
+
+	private void outputAutocorrelationData(final StatisticsDataPerformanceIndicator indicator, final int[] maxDistance) {
+		beginParagraph();
+		final int maxSize=(indicator.getCorrelationData().length-1)*StatisticsDataPerformanceIndicator.CORRELATION_RANGE_STEPPING;
+		for (int i=0;i<AUTOCORRELATION_LEVELS.length;i++) {
+			final double level=AUTOCORRELATION_LEVELS[i];
+			final int distance=indicator.getCorrelationLevelDistance(level);
+			maxDistance[i]=Math.max(maxDistance[i],distance);
+			if (distance>maxSize) {
+				addLine(String.format(Language.tr("Statistics.AutoCorrelation.LineMoreThan"),NumberTools.formatPercent(level),NumberTools.formatLong(maxSize)));
+			} else {
+				addLine(String.format(Language.tr("Statistics.AutoCorrelation.Line"),NumberTools.formatPercent(level),NumberTools.formatLong(distance)));
+			}
+		}
+		endParagraph();
+	}
+
+	private void buildAutoCorrelation() {
+		addHeading(1,Language.tr("Statistics.AutoCorrelation.WaitingTimes"));
+
+		int[] maxDistance=new int[AUTOCORRELATION_LEVELS.length];
+
+		/* Keine Daten vorhanden? */
+
+		if (!statistics.waitingTimeAll.isCorrelationAvailable()) {
+			beginParagraph();
+			addLine(Language.tr("Statistics.AutoCorrelation.NoData"));
+			endParagraph();
+			return;
+		}
+
+		/* Autokorrelation über die Wartezeit über alle Kunden */
+
+		outputAutocorrelationData(statistics.waitingTimeAll,maxDistance);
+
+		/* Allgemeine Informationen zu den Autokorrelationsdaten */
+
+		beginParagraph();
+		addLines(Language.tr("Statistics.AutoCorrelation.Step"));
+		endParagraph();
+
+		/* Infotext  */
+		addDescription("Autocorrleation"); // XXX
+	}
+
+	/**
 	 * Liefert den im Konstruktor angegebenen Modus, welche Daten ausgegeben werden sollen.
 	 * @return	Anzeige-Modus
 	 * @see Mode
@@ -708,6 +761,7 @@ public class ViewerText extends StatisticViewerText {
 		case MODE_WORKLOAD: buildWorkLoad(); break;
 		case MODE_COMPARE: buildCompare(); break;
 		case MODE_SYSTEM_INFO: buildSystemInfo(); break;
+		case MODE_AUTOCORRELATION: buildAutoCorrelation(); break;
 		}
 	}
 }

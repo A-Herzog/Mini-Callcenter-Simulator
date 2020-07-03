@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-02 13:58+0200\n"
+"POT-Creation-Date: 2020-07-03 20:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1086,6 +1086,9 @@ msgstr "Kunden pro Ankunft (Batch-Ankünfte)"
 msgid "Editor.Arrivals.InterArrivalTimes"
 msgstr "Zwischenankunftszeiten"
 
+msgid "Editor.CollectCorrelation"
+msgstr "Autokorrelation der Wartezeiten aufzeichnen"
+
 msgid "Editor.General"
 msgstr "Allgemeines"
 
@@ -1904,6 +1907,9 @@ msgstr "ModellSimulierteKunden"
 msgid "Model.XML.ClientCount.Error"
 msgstr "Der angegebene Wert \"%s\" für die Anzahl an simulierten Kunden ist ungültig. Es muss eine positive Ganzzahl angegeben werden."
 
+msgid "Model.XML.CollectCorrelation"
+msgstr ""
+
 msgid "Model.XML.Description"
 msgstr "ModellBeschreibung"
 
@@ -2327,6 +2333,9 @@ msgstr "Agenten belegt"
 
 msgid "SimStatistic.AllCallTypes"
 msgstr "Anrufe (inkl. Weiterleitungen und Wiederholungen)"
+
+msgid "SimStatistic.AutoCorrelation"
+msgstr "Autokorrelation"
 
 msgid "SimStatistic.BatchService"
 msgstr "Anzahl an Kunden die jeweils durch einen Agenten gleichzeitig bedient werden (Batch-Verarbeitung)"
@@ -3032,6 +3041,29 @@ msgstr "Erlang-C-Modelle"
 
 msgid "Statistics.AnalyticModelCompare.SimulationResults"
 msgstr "Simulationsergebnisse zum Vergleich"
+
+msgid "Statistics.AutoCorrelation"
+msgstr "Autokorrelation"
+
+msgid "Statistics.AutoCorrelation.Distance"
+msgstr "Abstand"
+
+msgid "Statistics.AutoCorrelation.Line"
+msgstr "min{k|rho(k)<%s} = %s"
+
+msgid "Statistics.AutoCorrelation.LineMoreThan"
+msgstr "min{k|rho(k)<%s} > %s"
+
+msgid "Statistics.AutoCorrelation.NoData"
+msgstr "Es wurden während der Simulation keine Autokorrelationsdaten erfasst."
+
+msgid "Statistics.AutoCorrelation.Step"
+msgstr ""
+"Die Autokorrelation wird nur für 10er Abstände erfasst.\n"
+"Daher enden die obigen Werte stets auf einen ganzen 10er Wert."
+
+msgid "Statistics.AutoCorrelation.WaitingTimes"
+msgstr "Autokorrelation der Wartezeiten"
 
 msgid "Statistics.Average"
 msgstr "Mittelwert"
