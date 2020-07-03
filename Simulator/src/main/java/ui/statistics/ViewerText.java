@@ -734,7 +734,7 @@ public class ViewerText extends StatisticViewerText {
 		endParagraph();
 
 		/* Infotext  */
-		addDescription("Autocorrleation"); // XXX
+		addDescription("Autocorrleation");
 	}
 
 	/**
