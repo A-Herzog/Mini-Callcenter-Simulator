@@ -64,6 +64,9 @@ public class ExportQSModel {
 
 		result.append("<"+Language.tr("QSExport.xml.ModelClients")+" "+Language.tr("QSExport.xml.Active")+"=\"1\">"+arrivalCount+"</"+Language.tr("QSExport.xml.ModelClients")+">\n");
 		result.append("<"+Language.tr("QSExport.xml.ModelWarmUpPhase")+">0.01</"+Language.tr("QSExport.xml.ModelWarmUpPhase")+">\n");
+		if (model.collectCorrelation) {
+			result.append("<"+Language.tr("QSExport.xml.ModelAutocorrelation")+">1000</"+Language.tr("QSExport.xml.ModelAutocorrelation")+">\n");
+		}
 		result.append("<"+Language.tr("QSExport.xml.ModelElements")+">\n");
 	}
 
@@ -114,7 +117,7 @@ public class ExportQSModel {
 		}
 
 		/* Bedienstation */
-		final StationProcess process=new StationProcess(new Point(x,100),nextId++,hasLimitedWaitingTimes?model.waitingTimeDist:null,model.workingTimeDist,hasPostProcessing?model.postProcessingTimeDist:null,model.batchWorking);
+		final StationProcess process=new StationProcess(new Point(x,100),nextId++,model.queueMode==EditModel.QueueMode.LIFO,hasLimitedWaitingTimes?model.waitingTimeDist:null,model.workingTimeDist,hasPostProcessing?model.postProcessingTimeDist:null,model.batchWorking);
 		stations.add(process);
 
 		/* Wiederholung ? */
@@ -429,9 +432,11 @@ public class ExportQSModel {
 		private final AbstractRealDistribution dist;
 		private final AbstractRealDistribution postProcessDist;
 		private final int batch;
+		private final boolean LIFO;
 
-		public StationProcess(final Point pos, final int id, final AbstractRealDistribution cancelDist, final AbstractRealDistribution dist, final AbstractRealDistribution postProcessDist, final int batch) {
+		public StationProcess(final Point pos, final int id, final boolean LIFO, final AbstractRealDistribution cancelDist, final AbstractRealDistribution dist, final AbstractRealDistribution postProcessDist, final int batch) {
 			super(pos,Language.tr("QSExport.xml.Element.Process"),id,Language.tr("QSExport.Name.CallCenter"));
+			this.LIFO=LIFO;
 			this.cancelDist=cancelDist;
 			this.dist=dist;
 			this.postProcessDist=postProcessDist;
@@ -449,7 +454,9 @@ public class ExportQSModel {
 			if (cancelDist!=null) {
 				result.append("    <"+Language.tr("QSExport.xml.ModelElementDistribution")+" "+Language.tr("QSExport.xml.Type")+"=\""+Language.tr("QSExport.xml.Type.CancelationTime")+"\">"+DistributionTools.distributionToString(cancelDist)+"</"+Language.tr("QSExport.xml.ModelElementDistribution")+">\n");
 			}
-			result.append("    <"+Language.tr("QSExport.xml.ModellElementPrioritaet")+" "+Language.tr("QSExport.xml.ModellElementPrioritaet.ClientType")+"=\""+Language.tr("QSExport.Name.Caller")+"\">w</"+Language.tr("QSExport.xml.ModellElementPrioritaet")+">\n");
+			final String priority;
+			if (LIFO) priority="-w"; else priority="w";
+			result.append("    <"+Language.tr("QSExport.xml.ModellElementPrioritaet")+" "+Language.tr("QSExport.xml.ModellElementPrioritaet.ClientType")+"=\""+Language.tr("QSExport.Name.Caller")+"\">"+priority+"</"+Language.tr("QSExport.xml.ModellElementPrioritaet")+">\n");
 			result.append("    <"+Language.tr("QSExport.xml.ModelElementOperators")+" "+Language.tr("QSExport.xml.ModelElementOperators.Alternative")+"=\"1\" "+Language.tr("QSExport.xml.ModelElementOperators.Count")+"=\"1\" "+Language.tr("QSExport.xml.ModelElementOperators.Group")+"=\""+Language.tr("QSExport.Name.Agents")+"\"/>\n");
 			result.append("    <"+Language.tr("QSExport.xml.ModelElementOperatorsPriority")+">1</"+Language.tr("QSExport.xml.ModelElementOperatorsPriority")+">\n");
 		}

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-03 20:44+0200\n"
+"POT-Creation-Date: 2020-07-04 01:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1908,7 +1908,7 @@ msgid "Model.XML.ClientCount.Error"
 msgstr "The value \"%s\" for the number of clients to be simulated is invalid. A positive integer number has to be specified."
 
 msgid "Model.XML.CollectCorrelation"
-msgstr ""
+msgstr "ModelAutocorrelation"
 
 msgid "Model.XML.Description"
 msgstr "ModelDescription"
@@ -2155,6 +2155,9 @@ msgstr "Retry?"
 
 msgid "QSExport.xml.Model"
 msgstr "Model"
+
+msgid "QSExport.xml.ModelAutocorrelation"
+msgstr "ModelAutocorrelation"
 
 msgid "QSExport.xml.ModelClients"
 msgstr "ModelClients"

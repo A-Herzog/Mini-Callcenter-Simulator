@@ -64,6 +64,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[111] = "Rasengr\u00fcn";
     t[112] = "Editor.WaitingRoomAndWaitingTimeTolerance";
     t[113] = "Warteraum und Wartezeittoleranz";
+    t[116] = "Model.XML.CollectCorrelation";
+    t[117] = "ModellAutokorrelation";
     t[122] = "Statistic.Viewer.MailError.Info";
     t[123] = "Der angegeben E-Mail-Link\n%s\nkonnte nicht aufgerufen werden.";
     t[124] = "Statistics.SystemData.EventsPerSecond";
@@ -514,8 +516,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1225] = "Simulationsergebnisse";
     t[1228] = "Color.F08080";
     t[1229] = "Helles Coral";
-    t[1232] = "Statistic.Viewer.Report.Hint";
-    t[1233] = "Erstellt einen Bericht \u00fcber eine selbst zusammenstellbare Teilmenge der Ergebnisse";
+    t[1232] = "QSExport.xml.ModelAutocorrelation";
+    t[1233] = "ModellAutokorrelation";
     t[1236] = "Color.FF8C00";
     t[1237] = "Dunkelorange";
     t[1240] = "Window.Info.NoEMailProgram.Title";
@@ -1018,6 +1020,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2479] = "unendlich";
     t[2484] = "Distribution.Range";
     t[2485] = "Bereich";
+    t[2486] = "Statistic.Viewer.Report.Hint";
+    t[2487] = "Erstellt einen Bericht \u00fcber eine selbst zusammenstellbare Teilmenge der Ergebnisse";
     t[2488] = "Statistics.SystemData.CountedClients";
     t[2489] = "Simulierte und f\u00fcr die Statistik gez\u00e4hlte Kunden";
     t[2490] = "Color.FF4500";
@@ -2000,12 +2004,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4873] = "Standardabweichung";
     t[4874] = "Main.Toolbar.Help";
     t[4875] = "Hilfe";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4880] = "LoadCalculator.ArrivalBatchSize";
     t[4881] = "Ankunfts-Batch-Gr\u00f6\u00dfe";
     t[4892] = "Statistics.XML.Maximum.Error";
     t[4893] = "Das \"Maximum\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4906] = "Color.BA55D3";
     t[4907] = "Mittleres Orchid";
     t[4910] = "CommandLine.ReportBase.Help";

@@ -64,6 +64,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[111] = "Lawn green";
     t[112] = "Editor.WaitingRoomAndWaitingTimeTolerance";
     t[113] = "Waiting room and waiting time tolerance";
+    t[116] = "Model.XML.CollectCorrelation";
+    t[117] = "ModelAutocorrelation";
     t[122] = "Statistic.Viewer.MailError.Info";
     t[123] = "The e-mail link\n%s\ncould not be opened.";
     t[124] = "Statistics.SystemData.EventsPerSecond";
@@ -514,8 +516,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1225] = "Simulation results";
     t[1228] = "Color.F08080";
     t[1229] = "Light coral";
-    t[1232] = "Statistic.Viewer.Report.Hint";
-    t[1233] = "Creates a report about a user-defined subset of the results";
+    t[1232] = "QSExport.xml.ModelAutocorrelation";
+    t[1233] = "ModelAutocorrelation";
     t[1236] = "Color.FF8C00";
     t[1237] = "Dark orange";
     t[1240] = "Window.Info.NoEMailProgram.Title";
@@ -1018,6 +1020,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2479] = "infinite";
     t[2484] = "Distribution.Range";
     t[2485] = "range";
+    t[2486] = "Statistic.Viewer.Report.Hint";
+    t[2487] = "Creates a report about a user-defined subset of the results";
     t[2488] = "Statistics.SystemData.CountedClients";
     t[2489] = "Clients simulated and counted for statistics";
     t[2490] = "Color.FF4500";
@@ -2000,12 +2004,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4873] = "Standard deviation";
     t[4874] = "Main.Toolbar.Help";
     t[4875] = "Help";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4880] = "LoadCalculator.ArrivalBatchSize";
     t[4881] = "Arrival batch size";
     t[4892] = "Statistics.XML.Maximum.Error";
     t[4893] = "The \"maximum\" attribute in the \"%s\" element has to be a number but is \"%s\".";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4906] = "Color.BA55D3";
     t[4907] = "Medium orchid";
     t[4910] = "CommandLine.ReportBase.Help";

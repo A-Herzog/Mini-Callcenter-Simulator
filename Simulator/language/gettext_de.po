@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-03 20:44+0200\n"
+"POT-Creation-Date: 2020-07-04 01:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1908,7 +1908,7 @@ msgid "Model.XML.ClientCount.Error"
 msgstr "Der angegebene Wert \"%s\" für die Anzahl an simulierten Kunden ist ungültig. Es muss eine positive Ganzzahl angegeben werden."
 
 msgid "Model.XML.CollectCorrelation"
-msgstr ""
+msgstr "ModellAutokorrelation"
 
 msgid "Model.XML.Description"
 msgstr "ModellBeschreibung"
@@ -2155,6 +2155,9 @@ msgstr "Wiederholung?"
 
 msgid "QSExport.xml.Model"
 msgstr "Modell"
+
+msgid "QSExport.xml.ModelAutocorrelation"
+msgstr "ModellAutokorrelation"
 
 msgid "QSExport.xml.ModelClients"
 msgstr "ModellKunden"
