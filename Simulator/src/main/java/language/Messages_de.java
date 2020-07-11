@@ -1906,6 +1906,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4621] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
     t[4622] = "CommandLine.Error.PreparationOfModel";
     t[4623] = "Beim Vorbereiten des Modells ist folgender Fehler aufgetreten";
+    t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
+    t[4625] = "Liste leeren";
     t[4626] = "QSExport.xml.Type";
     t[4627] = "Typ";
     t[4628] = "QSExport.xml.Element.Connection.Status.WaitingCancelation";
@@ -2002,10 +2004,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4869] = "Das Modell wurde mit einer neueren Version des Simulators erstellt.\nIn dem Modell sind evtl. Eigenschaften enthalten, die diese Version des Simulators nicht ber\u00fccksichtigen kann.";
     t[4872] = "Distribution.StdDev";
     t[4873] = "Standardabweichung";
-    t[4874] = "Main.Toolbar.Help";
-    t[4875] = "Hilfe";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4874] = "Main.Toolbar.Help";
+    t[4875] = "Hilfe";
     t[4880] = "LoadCalculator.ArrivalBatchSize";
     t[4881] = "Ankunfts-Batch-Gr\u00f6\u00dfe";
     t[4892] = "Statistics.XML.Maximum.Error";

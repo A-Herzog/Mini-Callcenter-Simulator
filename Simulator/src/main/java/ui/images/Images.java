@@ -39,6 +39,9 @@ public enum Images {
 	/** Symbol "Abbruch" */
 	GENERAL_CANCEL("cancel.png"),
 
+	/** Symbol "Aus" */
+	GENERAL_OFF("cross.png"),
+
 	/** Symbol "Dialog-Button 'Ok'" */
 	MSGBOX_OK("accept.png"),
 

@@ -118,7 +118,7 @@ public class MainPanel extends MainPanelBase {
 	private List<AbstractButton> selectOnStatisticsPanel;
 	private List<AbstractButton> enabledOnStatisticsAvailable;
 
-	private JMenuItem menuFileModelRecentlyUsed;
+	private JMenu menuFileModelRecentlyUsed;
 	private JMenuItem menuExtrasCompareKept;
 	private JMenuItem menuModelCompareReturn;
 
@@ -399,8 +399,20 @@ public class MainPanel extends MainPanelBase {
 		if (!menuFileModelRecentlyUsed.isEnabled()) return;
 
 		for (int i=0;i<setup.lastFiles.length; i++) {
-			JMenuItem sub=new JMenuItem(setup.lastFiles[i]);
+			final JMenuItem sub=new JMenuItem(setup.lastFiles[i]);
 			sub.addActionListener(actionListener);
+			menuFileModelRecentlyUsed.add(sub);
+		}
+
+		if (setup.lastFiles.length>0) {
+			menuFileModelRecentlyUsed.addSeparator();
+			final JMenuItem sub=new JMenuItem(Language.tr("Main.Menu.File.RecentlyUsed.Delete"));
+			sub.setIcon(Images.GENERAL_OFF.getIcon());
+			sub.addActionListener(e->{
+				setup.lastFiles=new String[0];
+				setup.saveSetup();
+				updateRecentlyUsedList();
+			});
 			menuFileModelRecentlyUsed.add(sub);
 		}
 	}
@@ -955,7 +967,7 @@ public class MainPanel extends MainPanelBase {
 	@Override
 	protected void action(final Object sender) {
 		/* Datei - Letzte Dokumente */
-		final Component[] sub=((JMenu)menuFileModelRecentlyUsed).getMenuComponents();
+		final Component[] sub=menuFileModelRecentlyUsed.getMenuComponents();
 		for (int i=0;i<sub.length;i++) if (sender==sub[i]) {commandFileModelLoad(null,new File(setup.lastFiles[i])); return;}
 	}
 

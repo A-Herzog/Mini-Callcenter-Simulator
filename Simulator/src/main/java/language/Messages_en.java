@@ -1906,6 +1906,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4621] = "Extended Allen-Cunneen approximate formula for queuing systems";
     t[4622] = "CommandLine.Error.PreparationOfModel";
     t[4623] = "The following error occured while preparating the model";
+    t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
+    t[4625] = "Clear list";
     t[4626] = "QSExport.xml.Type";
     t[4627] = "Type";
     t[4628] = "QSExport.xml.Element.Connection.Status.WaitingCancelation";
@@ -2002,10 +2004,10 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4869] = "The model was created with a newer version of the simulator.\nThe model may contain properties that this version of the simulator can not take into account.";
     t[4872] = "Distribution.StdDev";
     t[4873] = "Standard deviation";
-    t[4874] = "Main.Toolbar.Help";
-    t[4875] = "Help";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4874] = "Main.Toolbar.Help";
+    t[4875] = "Help";
     t[4880] = "LoadCalculator.ArrivalBatchSize";
     t[4881] = "Arrival batch size";
     t[4892] = "Statistics.XML.Maximum.Error";
