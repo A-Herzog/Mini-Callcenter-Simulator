@@ -416,6 +416,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[957] = "Resolution on saving";
     t[958] = "SettingsDialog.ImageResolution.Invalid.Info";
     t[959] = "The size for saving images has to be an interger number between 50 and 5000.";
+    t[960] = "Statistic.Viewer.Context.Width.Default";
+    t[961] = "Default column width";
     t[962] = "Statistic.PreviousRemove";
     t[963] = "Remove";
     t[964] = "Statistics.NumberOfClientsInServiceProcess.lower";
@@ -530,6 +532,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1255] = "All supported file formats";
     t[1260] = "CommandLine.Benchmark.Description.Long";
     t[1261] = "The command expected zero or one additional parameters.\nIf a parameter is passed, this is either the maximum number of threads\nto be used, or the file name of the model to be used.";
+    t[1264] = "Statistic.Viewer.Context.Width.This";
+    t[1265] = "Column width - this column";
     t[1266] = "Model.XML.InterArrivalTimes.Error";
     t[1267] = "The specified distribution of the inter-arrival times is not valid.";
     t[1270] = "Compare.DoubleFile.Title";
@@ -868,6 +872,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2103] = "Shows the model editor";
     t[2112] = "Statistics.WaitingTime";
     t[2113] = "Waiting time";
+    t[2114] = "Statistic.Viewer.Context.Width.All";
+    t[2115] = "Column width - all columns";
     t[2126] = "Main.Toolbar.ShowStatistics.Hint";
     t[2127] = "Shows the simulation results";
     t[2128] = "Color.E6E6FA";
@@ -1190,6 +1196,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2977] = "Distribution of the inter-arrival times";
     t[2982] = "Color.6B8E23";
     t[2983] = "Olive drab";
+    t[2990] = "Statistic.Viewer.Context.Width.ByContent";
+    t[2991] = "Adjust by content";
     t[2992] = "LoadCalculator.AverageQueueLength";
     t[2993] = "Average queue length";
     t[2998] = "Color.00008B";
@@ -1996,6 +2004,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4851] = "Version";
     t[4854] = "Main.Toolbar.StartSimulation.Hint";
     t[4855] = "Start simulation of the model";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4862] = "QSExport.xml.ModelElementDistribution";
     t[4863] = "ModelElementDistribution";
     t[4864] = "JDataLoader.ImportErrorNoArea";
@@ -2004,8 +2014,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4869] = "The model was created with a newer version of the simulator.\nThe model may contain properties that this version of the simulator can not take into account.";
     t[4872] = "Distribution.StdDev";
     t[4873] = "Standard deviation";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4874] = "Main.Toolbar.Help";
     t[4875] = "Help";
     t[4880] = "LoadCalculator.ArrivalBatchSize";
@@ -2326,6 +2334,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5691] = "StatisticsSystem";
     t[5694] = "Statistics.DistributionOfTheInterLeaveTimes";
     t[5695] = "Distribution of the inter-leaving times";
+    t[5702] = "Statistic.Viewer.Context.Width.ByContentAndHeader";
+    t[5703] = "Adjust by content and header";
     t[5704] = "Main.Menu.RecordSimulation";
     t[5705] = "Record simulation to log file...";
     t[5706] = "Color.FF6347";
@@ -2354,6 +2364,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5741] = "Information about Erlang C formula";
     t[5750] = "Statistic.Tree.Parameter";
     t[5751] = "Copy parameter for this data to clipboard";
+    t[5754] = "Statistic.Viewer.Context.Width.ByWindowWidth";
+    t[5755] = "Adjust by window width";
     t[5760] = "Main.Statistic.ErrorSaving";
     t[5761] = "An error occurred while saving the data.";
     t[5764] = "Statistics.WaitingTimes";

@@ -416,6 +416,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[957] = "Aufl\u00f6sung beim Speichern";
     t[958] = "SettingsDialog.ImageResolution.Invalid.Info";
     t[959] = "Die Bildgr\u00f6\u00dfe beim Speichern muss eine Ganzzahl zwischen 50 und 5000 sein.";
+    t[960] = "Statistic.Viewer.Context.Width.Default";
+    t[961] = "Standardbreite";
     t[962] = "Statistic.PreviousRemove";
     t[963] = "Ausblenden";
     t[964] = "Statistics.NumberOfClientsInServiceProcess.lower";
@@ -530,6 +532,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1255] = "Alle unterst\u00fctzten Dateiformate";
     t[1260] = "CommandLine.Benchmark.Description.Long";
     t[1261] = "Dieser Befehl erwartet einen oder keine weiteren Parameter.\nWird ein Parameter \u00fcbergeben, so gibt dieser entweder die maximale Thread-Anzahl an,\ndie verwendet werden sollen, oder den Dateinamen des zu verwendenden Modells.";
+    t[1264] = "Statistic.Viewer.Context.Width.This";
+    t[1265] = "Spaltenbreite - diese Spalte";
     t[1266] = "Model.XML.InterArrivalTimes.Error";
     t[1267] = "Die angegebene Verteilung f\u00fcr die Zwischenankunftszeiten ist ung\u00fcltig.";
     t[1270] = "Compare.DoubleFile.Title";
@@ -868,6 +872,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2103] = "Zeigt den Modell-Editor an";
     t[2112] = "Statistics.WaitingTime";
     t[2113] = "Wartezeit";
+    t[2114] = "Statistic.Viewer.Context.Width.All";
+    t[2115] = "Spaltenbreite - alle Spalten";
     t[2126] = "Main.Toolbar.ShowStatistics.Hint";
     t[2127] = "Zeigt die Simulationsergebnisse an";
     t[2128] = "Color.E6E6FA";
@@ -1190,6 +1196,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2977] = "Verteilung der Zwischenankunftszeiten";
     t[2982] = "Color.6B8E23";
     t[2983] = "Olive Drab";
+    t[2990] = "Statistic.Viewer.Context.Width.ByContent";
+    t[2991] = "Anpassen gem\u00e4\u00df Inhalt";
     t[2992] = "LoadCalculator.AverageQueueLength";
     t[2993] = "Mittlere Warteschlangenl\u00e4nge";
     t[2998] = "Color.00008B";
@@ -1996,6 +2004,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4851] = "Version";
     t[4854] = "Main.Toolbar.StartSimulation.Hint";
     t[4855] = "Startet einen Simulationslauf";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4862] = "QSExport.xml.ModelElementDistribution";
     t[4863] = "ModellElementVerteilung";
     t[4864] = "JDataLoader.ImportErrorNoArea";
@@ -2004,8 +2014,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4869] = "Das Modell wurde mit einer neueren Version des Simulators erstellt.\nIn dem Modell sind evtl. Eigenschaften enthalten, die diese Version des Simulators nicht ber\u00fccksichtigen kann.";
     t[4872] = "Distribution.StdDev";
     t[4873] = "Standardabweichung";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4874] = "Main.Toolbar.Help";
     t[4875] = "Hilfe";
     t[4880] = "LoadCalculator.ArrivalBatchSize";
@@ -2326,6 +2334,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5691] = "StatistikSystem";
     t[5694] = "Statistics.DistributionOfTheInterLeaveTimes";
     t[5695] = "Verteilung der Zwischenabgangszeiten";
+    t[5702] = "Statistic.Viewer.Context.Width.ByContentAndHeader";
+    t[5703] = "Anpassen gem\u00e4\u00df Inhalt und \u00dcberschrift";
     t[5704] = "Main.Menu.RecordSimulation";
     t[5705] = "Simulation in Logdatei aufzeichnen...";
     t[5706] = "Color.FF6347";
@@ -2354,6 +2364,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5741] = "Informationen zur Erlang C Formel";
     t[5750] = "Statistic.Tree.Parameter";
     t[5751] = "Parameter f\u00fcr Daten in die Zwischenablage kopieren";
+    t[5754] = "Statistic.Viewer.Context.Width.ByWindowWidth";
+    t[5755] = "Auf Fensterbreite anpassen";
     t[5760] = "Main.Statistic.ErrorSaving";
     t[5761] = "Beim Speichern der Daten ist ein Fehler aufgetreten.";
     t[5764] = "Statistics.WaitingTimes";
