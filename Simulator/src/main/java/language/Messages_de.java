@@ -262,6 +262,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[569] = "StatistikAnrufeWiederholung";
     t[570] = "Window.ErrorNoGraphics";
     t[571] = "Da keine grafische Oberfl\u00e4che zur Verf\u00fcgung steht, kann der Simulator nur im Konsolen-Modus betrieben werden. Rufen Sie den Simulator mit dem Parameter \"Hilfe\" auf, um eine \u00dcbersicht \u00fcber die verf\u00fcgbaren Konsolen-Befehle zu erhalten.";
+    t[572] = "SetupFailure.Title";
+    t[573] = "Einstellungen speichern fehlgeschlagen";
     t[576] = "Statistics.ProcessTimes";
     t[577] = "Bedienzeiten";
     t[584] = "Color.008080";
@@ -576,6 +578,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1373] = "Farbe ausw\u00e4hlen";
     t[1374] = "Compare.SelectStatisticFile";
     t[1375] = "Statistikdatei ausw\u00e4hlen";
+    t[1382] = "SetupFailure.Retry";
+    t[1383] = "Speichern erneut versuchen.";
     t[1384] = "Model.XML.RetryProbability";
     t[1385] = "ModellWiederholwahrscheinlichkeit";
     t[1386] = "Editor.Service.QueueMode.FIFO";
@@ -1210,6 +1214,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3011] = "Das \"Autokorrelation\"-Attribut im \"%s\"-Element muss die Autokorrelationswerte beinhalten.";
     t[3012] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchArrival";
     t[3013] = "In den analytischen Modellen werden keine Gruppenank\u00fcnfte ber\u00fccksichtigt.";
+    t[3016] = "SetupFailure.Info";
+    t[3017] = "Das Speichern der Programmeinstellungen in der Datei\n%s\nist fehlgeschlagen. Soll erneut versucht werden, die Einstellungen zu speichern?";
     t[3020] = "Color.D3D3D3";
     t[3021] = "Hellgrau";
     t[3024] = "Color.FFFFE0";
@@ -1618,6 +1624,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3935] = "Bitte w\u00e4hlen Sie den zu importierenden Bereich.";
     t[3938] = "Statistic.Viewer.Report.NoTablesSelected.Info";
     t[3939] = "Es sind keine Tabellen ausgew\u00e4hlt, die in einer gemeinsamen Arbeitsmappe gespeichert werden k\u00f6nnten.";
+    t[3942] = "SetupFailure.Discard";
+    t[3943] = "Ge\u00e4nderte Einstellungen verwerfen, Programm beenden.";
     t[3944] = "Compare.ErrorAtLeastTwoModels";
     t[3945] = "Sie m\u00fcssen mindestens 2 Statistikdateien zum Vergleichen angeben.";
     t[3946] = "Statistic.Viewer.MailError.Title";
@@ -1996,6 +2004,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4803] = "Anteil";
     t[4816] = "ModelInfo.Title";
     t[4817] = "Simuliertes Warteschlangenmodell";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4824] = "Model.XML.BatchService";
     t[4825] = "ModellBatchBedienungen";
     t[4844] = "SimStatistic.WaitingTime";
@@ -2004,8 +2014,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4851] = "Version";
     t[4854] = "Main.Toolbar.StartSimulation.Hint";
     t[4855] = "Startet einen Simulationslauf";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4862] = "QSExport.xml.ModelElementDistribution";
     t[4863] = "ModellElementVerteilung";
     t[4864] = "JDataLoader.ImportErrorNoArea";

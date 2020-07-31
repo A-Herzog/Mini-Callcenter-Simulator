@@ -262,6 +262,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[569] = "StatisticsCallsRetry";
     t[570] = "Window.ErrorNoGraphics";
     t[571] = "Since no graphical user interface is available, the simulator can only be operate in console mode. Start simulator with  \"Help\" as parameter to get an overview of the available command line commands.";
+    t[572] = "SetupFailure.Title";
+    t[573] = "Saving settings failed";
     t[576] = "Statistics.ProcessTimes";
     t[577] = "Process times";
     t[584] = "Color.008080";
@@ -576,6 +578,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1373] = "Select color";
     t[1374] = "Compare.SelectStatisticFile";
     t[1375] = "Select statistic file";
+    t[1382] = "SetupFailure.Retry";
+    t[1383] = "Retry saving.";
     t[1384] = "Model.XML.RetryProbability";
     t[1385] = "ModelRetryProbability";
     t[1386] = "Editor.Service.QueueMode.FIFO";
@@ -1210,6 +1214,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3011] = "The \"Autocorrelation\" attribute in the \"%s\" element has to contain the autocorrelation values.";
     t[3012] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchArrival";
     t[3013] = "Group arrivals are not considered in the analytical models.";
+    t[3016] = "SetupFailure.Info";
+    t[3017] = "Saving the changed program settings in\n%s\nfailed. Do you want to retry saving?";
     t[3020] = "Color.D3D3D3";
     t[3021] = "Light gray";
     t[3024] = "Color.FFFFE0";
@@ -1618,6 +1624,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3935] = "Please select the area to be imported.";
     t[3938] = "Statistic.Viewer.Report.NoTablesSelected.Info";
     t[3939] = "No tables have been selected for saving in a workbook.";
+    t[3942] = "SetupFailure.Discard";
+    t[3943] = "Discard changed settings, quit program.";
     t[3944] = "Compare.ErrorAtLeastTwoModels";
     t[3945] = "You need to select at least two models to be compared.";
     t[3946] = "Statistic.Viewer.MailError.Title";
@@ -1996,6 +2004,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4803] = "Part";
     t[4816] = "ModelInfo.Title";
     t[4817] = "Simulated queueing model";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4824] = "Model.XML.BatchService";
     t[4825] = "ModelBatchService";
     t[4844] = "SimStatistic.WaitingTime";
@@ -2004,8 +2014,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4851] = "Version";
     t[4854] = "Main.Toolbar.StartSimulation.Hint";
     t[4855] = "Start simulation of the model";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4862] = "QSExport.xml.ModelElementDistribution";
     t[4863] = "ModelElementDistribution";
     t[4864] = "JDataLoader.ImportErrorNoArea";

@@ -277,9 +277,14 @@ public class SetupData extends SetupBase {
 		return folder;
 	}
 
+	/**
+	 * Dateiname der Setup-Datei
+	 */
+	public static final String SETUP_FILE_NAME="MiniCallcenterSimulator.cfg";
+
 	@Override
 	protected File getSetupFile() {
-		return new File(getSetupFolder(),"MiniCallcenterSimulator.cfg");
+		return new File(getSetupFolder(),SETUP_FILE_NAME);
 	}
 
 	@Override
