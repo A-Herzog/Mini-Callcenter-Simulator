@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package simulator.statistics;
+package statistics;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import statistics.StatisticsPerformanceIndicator;
 import xml.XMLData;
 
 /**
@@ -61,7 +61,7 @@ public abstract class StatisticsBase extends XMLData {
 	 * Fügt die Daten eines weiteren Simulations-Threads zu den Statistik-Ergebnissen hinzu.
 	 * @param moreStatistics	Anderes <code>Statistics</code>-Objekt, dessen Daten diesem Objekt hinzugefügt werden sollen
 	 */
-	public void addData(final Statistics moreStatistics) {
+	public void addData(final StatisticsBase moreStatistics) {
 		for (int i=0;i<Math.min(performanceIndicators.size(),moreStatistics.performanceIndicators.size());i++)
 			performanceIndicators.get(i).add(moreStatistics.performanceIndicators.get(i));
 	}
@@ -95,5 +95,16 @@ public abstract class StatisticsBase extends XMLData {
 	protected void addDataToXML(final Document doc, final Element node, final boolean isPartOfOtherFile, final File file) {
 		final StringBuilder sb=new StringBuilder();
 		for (StatisticsPerformanceIndicator performanceIndicator : performanceIndicators) performanceIndicator.addToXML(doc,node,sb);
+	}
+
+	/**
+	 * Prüft, ob der angegebene Indikator in einem {@link StatisticsMultiPerformanceIndicator} enthalten ist und
+	 * liefert im Erfolgsfall diesen zurück.
+	 * @param indicator	Indikator für den ein Elternobjekt gesucht werden soll.
+	 * @return	Liefert im Erfolgsfall das Elternobjekt, sonst <code>null</code>
+	 */
+	public StatisticsMultiPerformanceIndicator getParent(final StatisticsPerformanceIndicator indicator) {
+		final Optional<StatisticsMultiPerformanceIndicator> result=performanceIndicators.stream().filter(i->i instanceof StatisticsMultiPerformanceIndicator).map(i->(StatisticsMultiPerformanceIndicator)i).filter(i->i.contains(indicator)).findFirst();
+		return result.orElse(null);
 	}
 }
