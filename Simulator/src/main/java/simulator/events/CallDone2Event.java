@@ -29,7 +29,7 @@ public class CallDone2Event extends Event {
 	@Override
 	public final void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
-		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone2Event"),"  "+Language.tr("Simulator.Log.CallDone2Event.Info"));
+		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone2Event"),-1,"  "+Language.tr("Simulator.Log.CallDone2Event.Info"));
 
 		/* Agent ist wieder frei */
 		simData.runData.freeAgents++;
@@ -39,7 +39,7 @@ public class CallDone2Event extends Event {
 			long workingTime=simData.runModel.getWorkingTime();
 
 			for (int i=0;i<simData.runModel.batchWorking;i++) {
-				if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallDone2Event"),"  "+Language.tr("Simulator.Log.CallDone2Event.WaitingClient"));
+				if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallDone2Event"),-1,"  "+Language.tr("Simulator.Log.CallDone2Event.WaitingClient"));
 				final CallCancelEvent cancelEvent=simData.getNextFromQueue();
 				simData.logWaitingTime((double)(time-cancelEvent.waitingStartTime)/1000,((double)workingTime)/1000);
 			}

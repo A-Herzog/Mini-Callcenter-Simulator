@@ -31,7 +31,7 @@ public class StopTestEvent extends Event {
 	@Override
 	public void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
-		if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.StopTestEvent"),"  "+Language.tr("Simulator.Log.StopTestEvent.Info"));
+		if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.StopTestEvent"),-1,"  "+Language.tr("Simulator.Log.StopTestEvent.Info"));
 
 		/* Keiner mehr da? - Um so besser. Nichts tun, Simulation endet. */
 		if (simData.runData.waitingCalls.size()==0) return;

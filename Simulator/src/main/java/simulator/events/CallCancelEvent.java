@@ -43,7 +43,7 @@ public final class CallCancelEvent extends Event {
 	@Override
 	public final void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
-		if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallCancelEvent"),"  "+String.format(Language.tr("Simulator.Log.CallCancelEvent.Info"),SimData.formatSimTime(time-waitingStartTime)));
+		if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallCancelEvent"),-1,"  "+String.format(Language.tr("Simulator.Log.CallCancelEvent.Info"),SimData.formatSimTime(time-waitingStartTime)));
 
 		/* Erfassung von Daten in der Statistik */
 		simData.logWaitingTime((double)(time-waitingStartTime)/1000);

@@ -107,7 +107,7 @@ public class SimulationData extends SimData {
 		eventManager.addEvent(callEvent);
 		if (loggingActive) {
 			final String s=(newCall)?String.format(Language.tr("Simulator.Log.ScheduleCall.Info.New"),runModel.batchArrival):Language.tr("Simulator.Log.ScheduleCall.Info.Retry");
-			logEventExecution(Language.tr("Simulator.Log.ScheduleCall"),"  "+String.format(Language.tr("Simulator.Log.ScheduleCall.Info"),s,formatSimTime(currentTime+timeFromNow)));
+			logEventExecution(Language.tr("Simulator.Log.ScheduleCall"),-1,"  "+String.format(Language.tr("Simulator.Log.ScheduleCall.Info"),s,formatSimTime(currentTime+timeFromNow)));
 		}
 	}
 
@@ -121,7 +121,7 @@ public class SimulationData extends SimData {
 		cancelEvent.init(currentTime,currentTime+timeFromNow);
 		runData.waitingCalls.add(cancelEvent);
 		eventManager.addEvent(cancelEvent);
-		if (loggingActive) logEventExecution(Language.tr("Simulator.Log.ScheduleCallCancel"),"  "+String.format(Language.tr("Simulator.Log.ScheduleCallCancel.Info"),formatSimTime(currentTime+timeFromNow)));
+		if (loggingActive) logEventExecution(Language.tr("Simulator.Log.ScheduleCallCancel"),-1,"  "+String.format(Language.tr("Simulator.Log.ScheduleCallCancel.Info"),formatSimTime(currentTime+timeFromNow)));
 	}
 
 	/**
@@ -132,10 +132,10 @@ public class SimulationData extends SimData {
 			statistics.callRetry.add(true);
 			long retryTime=runModel.getRetryTime();
 			scheduleCall(retryTime,false);
-			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TestAndScheduleCallRetry"),"  "+String.format(Language.tr("Simulator.Log.TestAndScheduleCallRetry.Retry"),formatSimTime(currentTime+retryTime)));
+			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TestAndScheduleCallRetry"),-1,"  "+String.format(Language.tr("Simulator.Log.TestAndScheduleCallRetry.Retry"),formatSimTime(currentTime+retryTime)));
 		} else {
 			statistics.callRetry.add(false);
-			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TestAndScheduleCallRetry"),"  "+Language.tr("Simulator.Log.TestAndScheduleCallRetry.FinalCancelation"));
+			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TestAndScheduleCallRetry"),-1,"  "+Language.tr("Simulator.Log.TestAndScheduleCallRetry.FinalCancelation"));
 		}
 	}
 
@@ -159,7 +159,7 @@ public class SimulationData extends SimData {
 			runData.lastArrival=currentTime;
 		}
 
-		if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),"  "+String.format(Language.tr("Simulator.Log.TryStartCall.Info"),runData.waitingCalls.size(),newCalls,runData.freeAgents));
+		if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),-1,"  "+String.format(Language.tr("Simulator.Log.TryStartCall.Info"),runData.waitingCalls.size(),newCalls,runData.freeAgents));
 
 		while (runData.freeAgents>0) {
 			int availableClients=runData.waitingCalls.size()+newCalls;
@@ -170,11 +170,11 @@ public class SimulationData extends SimData {
 
 			for (int i=0;i<runModel.batchWorking;i++) {
 				if (runData.waitingCalls.size()>0) {
-					if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),"  "+Language.tr("Simulator.Log.TryStartCall.StartWaiting"));
+					if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),-1,"  "+Language.tr("Simulator.Log.TryStartCall.StartWaiting"));
 					final CallCancelEvent cancelEvent=getNextFromQueue();
 					waitingStartTime=cancelEvent.waitingStartTime;
 				} else {
-					if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),"  "+Language.tr("Simulator.Log.TryStartCall.StartNew"));
+					if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),-1,"  "+Language.tr("Simulator.Log.TryStartCall.StartNew"));
 					newCalls--;
 					waitingStartTime=currentTime;
 				}
@@ -196,14 +196,14 @@ public class SimulationData extends SimData {
 	 */
 	public final void trySendCallToQueue() {
 		if (runModel.waitingRoomSize>=0 && runData.waitingCalls.size()>=runModel.waitingRoomSize) {
-			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),"  "+Language.tr("Simulator.Log.TryStartCall.WaitingRoomFull"));
+			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),-1,"  "+Language.tr("Simulator.Log.TryStartCall.WaitingRoomFull"));
 			statistics.interleaveTime.add(((double)(currentTime-runData.lastLeave))/1000);
 			runData.lastLeave=currentTime;
 			logWaitingTime(0.0);
 			statistics.callRejected.add(true);
 			testAndScheduleCallRetry();
 		} else {
-			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),"  "+Language.tr("Simulator.Log.TryStartCall.QueueingClient"));
+			if (loggingActive) logEventExecution(Language.tr("Simulator.Log.TryStartCall"),-1,"  "+Language.tr("Simulator.Log.TryStartCall.QueueingClient"));
 			statistics.callRejected.add(false);
 			long waitingTimeTolerance=runModel.getWaitingToleranceTime();
 			scheduleCallCancel(waitingTimeTolerance);
@@ -216,7 +216,7 @@ public class SimulationData extends SimData {
 	 * @param workingTime	Bedienzeit
 	 */
 	public final void startTalk(final long workingTime) {
-		if (loggingActive) logEventExecution(Language.tr("Simulator.Log.StartTalk"),"  "+String.format(Language.tr("Simulator.Log.StartTalk.Info"),SimData.formatSimTime(currentTime+workingTime)));
+		if (loggingActive) logEventExecution(Language.tr("Simulator.Log.StartTalk"),-1,"  "+String.format(Language.tr("Simulator.Log.StartTalk.Info"),SimData.formatSimTime(currentTime+workingTime)));
 
 		statistics.workingTime.add(((double)workingTime)/1000);
 
@@ -294,7 +294,7 @@ public class SimulationData extends SimData {
 	public void doEmergencyShutDown(final String message) {
 		statistics.simulationData.emergencyShutDown=true;
 		statistics.simulationData.addWarning(message);
-		logEventExecution(Language.tr("Simulation.Log.Abort"),message);
+		logEventExecution(Language.tr("Simulation.Log.Abort"),-1,message);
 		if (eventManager!=null) eventManager.deleteAllEvents();
 	}
 

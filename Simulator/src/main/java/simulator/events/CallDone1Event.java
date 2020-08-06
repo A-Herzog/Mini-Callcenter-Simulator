@@ -30,13 +30,13 @@ public final class CallDone1Event extends Event {
 	@Override
 	public final void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
-		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone1Event"),"  "+String.format(Language.tr("Simulator.Log.CallDone1Event.Info"),simData.runModel.batchWorking));
+		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone1Event"),-1,"  "+String.format(Language.tr("Simulator.Log.CallDone1Event.Info"),simData.runModel.batchWorking));
 
 		/* Weiterleitungen ?*/
 		for (int i=0;i<simData.runModel.batchWorking;i++) {
 			if (ThreadLocalRandom.current().nextDouble()<simData.runModel.callContinueProbability) {
 				simData.statistics.callContinued.add(true);
-				if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone1Event"),"  "+Language.tr("Simulator.Log.CallDone1Event.Forwarding"));
+				if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone1Event"),-1,"  "+Language.tr("Simulator.Log.CallDone1Event.Forwarding"));
 				simData.scheduleCall(0,false);
 			} else {
 				simData.statistics.callContinued.add(false);
@@ -52,7 +52,7 @@ public final class CallDone1Event extends Event {
 
 		/* Nachbearbeitungszeit planen */
 		long postProcessingTime=simData.runModel.getPostProcessingTime();
-		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone1Event"),"  "+String.format(Language.tr("Simulator.Log.CallDone1Event.PostProcessing"),SimData.formatSimTime(time+postProcessingTime)));
+		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone1Event"),-1,"  "+String.format(Language.tr("Simulator.Log.CallDone1Event.PostProcessing"),SimData.formatSimTime(time+postProcessingTime)));
 
 		simData.statistics.postProcessingTime.add(((double)postProcessingTime)/1000);
 

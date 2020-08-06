@@ -42,7 +42,7 @@ public final class CallEvent extends Event {
 
 		/* Einschwingphase zu Ende? */
 		if (simData.runData.isWarmUpPeriod && simData.runData.calls>simData.runModel.warmUpPeriod) {
-			if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallEvent"),"  "+Language.tr("Simulator.Log.CallEvent.EndOfWarmUp"));
+			if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallEvent"),-1,"  "+Language.tr("Simulator.Log.CallEvent.EndOfWarmUp"));
 			simData.runData.isWarmUpPeriod=false;
 			simData.statistics.resetData();
 			simData.initDistDataChange();
@@ -59,7 +59,7 @@ public final class CallEvent extends Event {
 	@Override
 	public final void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
-		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallEvent"),"  "+(isNewCall?Language.tr("Simulator.Log.CallEvent.FreshCall"):Language.tr("Simulator.Log.CallEvent.Retryer")));
+		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallEvent"),-1,"  "+(isNewCall?Language.tr("Simulator.Log.CallEvent.FreshCall"):Language.tr("Simulator.Log.CallEvent.Retryer")));
 
 		int newCallCount=(isNewCall)?simData.runModel.batchArrival:1;
 
