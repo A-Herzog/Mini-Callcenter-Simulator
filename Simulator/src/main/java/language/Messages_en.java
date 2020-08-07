@@ -2031,7 +2031,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4906] = "Color.BA55D3";
     t[4907] = "Medium orchid";
     t[4910] = "CommandLine.ReportBase.Help";
-    t[4911] = "This command expects exactly three additionall parameters:\n1. \"Inline\", \"SingleFiles\", \"List\", \"Text\", \"PDF\", \"LaTeX\" or a list entry, depending if\na) a html report with inline images,\nb) a html teport with separate images,\nc) an overview of all available individual documents,\nd) a docx report,\ne) a pdf report,\nf) a LaTeX report or\ng) an individual document is to be reported.\n2. File name of the input file\n3. File name of the output file";
+    t[4911] = "This command expects exactly three additionall parameters:\n1. \"Inline\", \"SingleFiles\", \"List\", \"Text\", \"PDF\", \"LaTeX\", \"HTMLApp\" or a list entry, depending if\na) a html report with inline images,\nb) a html teport with separate images,\nc) an overview of all available individual documents,\nd) a docx report,\ne) a pdf report,\nf) a LaTeX report\ng) a html web app report or\nh) an individual document is to be reported.\n2. File name of the input file\n3. File name of the output file";
     t[4912] = "Statistics.WaitingTimes.All";
     t[4913] = "Waiting time over all callers";
     t[4918] = "QSExport.xml.ModelClients";

@@ -217,7 +217,12 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		if (statistics==null || statistics.length==0 || statistics[0]==null) return Language.tr("Main.Statistic.NoStatisticsAvailable");
 
 		if (file==null) {
-			file=XMLTools.showSaveDialog(getParent(),Language.tr("Main.Toolbar.SaveStatistics"));
+			file=XMLTools.showSaveDialog(
+					getParent(),Language.tr("Main.Toolbar.SaveStatistics"),
+					null,
+					new String[] {StatisticsBasePanel.fileTypeHTMLJS+" (*.html)"},
+					new String[] {"html"},
+					XMLTools.DefaultSaveFormat.XML);
 			if (file==null) return null;
 		}
 
@@ -225,7 +230,12 @@ public class StatisticsPanel extends StatisticsBasePanel {
 			if (!MsgBox.confirmOverwrite(getTopLevelAncestor(),file)) return null;
 		}
 
-		if (!statistics[0].saveToFile(file)) return Language.tr("Main.Statistic.ErrorSaving");
+		final String fileString=file.toString().toUpperCase();
+		if (fileString.endsWith(".HTML") || fileString.endsWith(".HTM")) {
+			if (!runReportGeneratorHTMLApp(file,true)) return Language.tr("Main.Statistic.ErrorSaving");
+		} else {
+			if (!statistics[0].saveToFile(file)) return Language.tr("Main.Statistic.ErrorSaving");
+		}
 
 		return null;
 	}
