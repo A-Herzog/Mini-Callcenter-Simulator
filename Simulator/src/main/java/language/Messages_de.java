@@ -656,6 +656,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1555] = "\u00d6ffnet den Dialog zum Bearbeiten der Verteilung";
     t[1556] = "Statistics.Number.Cancelation";
     t[1557] = "Anzahl an Abbrechern";
+    t[1558] = "Dialog.OpenURL.InfoNo";
+    t[1559] = "Webseite nicht aufrufen.";
     t[1560] = "CalculatorDialog.Plotter.ClearPlot";
     t[1561] = "Funktion l\u00f6schen";
     t[1566] = "LoadCalculator.AverageWaitingTime";
@@ -2002,10 +2004,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4799] = "Die Verweilzeiten der nicht-erfolgreichen Anrufer sind genau die Abbruchzeiten.\nDaher werden diese Zeiten hier nicht explizit aufgef\u00fchrt.";
     t[4802] = "Statistic.Viewer.Chart.Part";
     t[4803] = "Anteil";
-    t[4816] = "ModelInfo.Title";
-    t[4817] = "Simuliertes Warteschlangenmodell";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4816] = "ModelInfo.Title";
+    t[4817] = "Simuliertes Warteschlangenmodell";
+    t[4818] = "Main.Toolbar.ShowStatistics";
+    t[4819] = "Simulationsergebnisse";
     t[4824] = "Model.XML.BatchService";
     t[4825] = "ModellBatchBedienungen";
     t[4844] = "SimStatistic.WaitingTime";
@@ -2222,8 +2226,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5401] = "Zeigt die Abschnitts\u00fcberschriften dieser Seite an";
     t[5404] = "Statistics.AutoCorrelation";
     t[5405] = "Autokorrelation";
-    t[5410] = "Main.Toolbar.ShowStatistics";
-    t[5411] = "Simulationsergebnisse";
+    t[5410] = "Dialog.OpenURL.Info";
+    t[5411] = "M\u00f6chten Sie jetzt die externe Webseite\n%s\naufrufen?";
     t[5422] = "Main.Menu.File";
     t[5423] = "Datei";
     t[5428] = "Model.XML.RetryProbability.Error";
@@ -2374,6 +2378,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5751] = "Parameter f\u00fcr Daten in die Zwischenablage kopieren";
     t[5754] = "Statistic.Viewer.Context.Width.ByWindowWidth";
     t[5755] = "Auf Fensterbreite anpassen";
+    t[5756] = "Dialog.OpenURL.InfoYes";
+    t[5757] = "Webseite im Standard-Browser \u00f6ffnen.";
     t[5760] = "Main.Statistic.ErrorSaving";
     t[5761] = "Beim Speichern der Daten ist ein Fehler aufgetreten.";
     t[5764] = "Statistics.WaitingTimes";

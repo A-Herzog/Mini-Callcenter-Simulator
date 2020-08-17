@@ -927,7 +927,9 @@ public class MainPanel extends MainPanelBase {
 
 	private void commandHelpBook() {
 		try {
-			Desktop.getDesktop().browse(new URI("https://www.springer.com/de/book/9783658183080"));
+			final URI uri=new URI("https://www.springer.com/de/book/9783658183080");
+			if (!MsgBox.confirmOpenURL(this,uri)) return;
+			Desktop.getDesktop().browse(uri);
 		} catch (IOException | URISyntaxException e) {
 			MsgBox.error(this,Language.tr("Window.Info.NoInternetConnection"),String.format(Language.tr("Window.Info.NoInternetConnection.Address"),"https://www.springer.com/de/book/9783658183080"));
 		}
@@ -945,7 +947,9 @@ public class MainPanel extends MainPanelBase {
 
 	private void commandHelpHomepage() {
 		try {
-			Desktop.getDesktop().browse(new URI("https://github.com/A-Herzog/Mini-Callcenter-Simulator"));
+			final URI uri=new URI("https://github.com/A-Herzog/Mini-Callcenter-Simulator");
+			if (!MsgBox.confirmOpenURL(this,uri)) return;
+			Desktop.getDesktop().browse(uri);
 		} catch (IOException | URISyntaxException e) {
 			MsgBox.error(this,Language.tr("Window.Info.NoInternetConnection"),String.format(Language.tr("Window.Info.NoInternetConnection.Address"),"https://github.com/A-Herzog/Mini-Callcenter-Simulator"));
 		}

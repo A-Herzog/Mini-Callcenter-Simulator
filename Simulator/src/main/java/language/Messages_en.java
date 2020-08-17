@@ -656,6 +656,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1555] = "Shows a dialog for editing the distribution";
     t[1556] = "Statistics.Number.Cancelation";
     t[1557] = "Number of cancelers";
+    t[1558] = "Dialog.OpenURL.InfoNo";
+    t[1559] = "Do not open web page.";
     t[1560] = "CalculatorDialog.Plotter.ClearPlot";
     t[1561] = "Clear plot";
     t[1566] = "LoadCalculator.AverageWaitingTime";
@@ -2002,10 +2004,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4799] = "The residence times of the unsuccessful callers are exactly the cancelation times.\nTherefore, these times are not listed explicitly here.";
     t[4802] = "Statistic.Viewer.Chart.Part";
     t[4803] = "Part";
-    t[4816] = "ModelInfo.Title";
-    t[4817] = "Simulated queueing model";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4816] = "ModelInfo.Title";
+    t[4817] = "Simulated queueing model";
+    t[4818] = "Main.Toolbar.ShowStatistics";
+    t[4819] = "Simulation results";
     t[4824] = "Model.XML.BatchService";
     t[4825] = "ModelBatchService";
     t[4844] = "SimStatistic.WaitingTime";
@@ -2222,8 +2226,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5401] = "Shows a list of the section captions from this help page";
     t[5404] = "Statistics.AutoCorrelation";
     t[5405] = "Autocorrelation";
-    t[5410] = "Main.Toolbar.ShowStatistics";
-    t[5411] = "Simulation results";
+    t[5410] = "Dialog.OpenURL.Info";
+    t[5411] = "Do you want to open the external web page\n%s\nnow?";
     t[5422] = "Main.Menu.File";
     t[5423] = "File";
     t[5428] = "Model.XML.RetryProbability.Error";
@@ -2374,6 +2378,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5751] = "Copy parameter for this data to clipboard";
     t[5754] = "Statistic.Viewer.Context.Width.ByWindowWidth";
     t[5755] = "Adjust by window width";
+    t[5756] = "Dialog.OpenURL.InfoYes";
+    t[5757] = "Open web page in default browser.";
     t[5760] = "Main.Statistic.ErrorSaving";
     t[5761] = "An error occurred while saving the data.";
     t[5764] = "Statistics.WaitingTimes";
