@@ -1474,6 +1474,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3611] = "P-Value of Anderson Darling test";
     t[3612] = "ModelInfo.WaitingRoomSize";
     t[3613] = "Waiting room of size K";
+    t[3616] = "Statistics.XML.RunThreads.DynamicBalance";
+    t[3617] = "DynamicThreadBalance";
     t[3618] = "Color.F5F5F5";
     t[3619] = "White smoke";
     t[3620] = "Statistics.WaitingTimes.Successful";
@@ -2002,10 +2004,10 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4789] = "Average holding and post processing time or service rate";
     t[4798] = "Statistics.ResidenceTimes.notsuccessful.info";
     t[4799] = "The residence times of the unsuccessful callers are exactly the cancelation times.\nTherefore, these times are not listed explicitly here.";
-    t[4802] = "Statistic.Viewer.Chart.Part";
-    t[4803] = "Part";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4802] = "Statistic.Viewer.Chart.Part";
+    t[4803] = "Part";
     t[4816] = "ModelInfo.Title";
     t[4817] = "Simulated queueing model";
     t[4818] = "Main.Toolbar.ShowStatistics";

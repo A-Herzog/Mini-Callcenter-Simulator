@@ -1474,6 +1474,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3611] = "Anderson-Darling-Anpassungstest p-Wert";
     t[3612] = "ModelInfo.WaitingRoomSize";
     t[3613] = "Warteraum der Gr\u00f6\u00dfe K";
+    t[3616] = "Statistics.XML.RunThreads.DynamicBalance";
+    t[3617] = "DynamischeThreadBalance";
     t[3618] = "Color.F5F5F5";
     t[3619] = "Rauchwei\u00df";
     t[3620] = "Statistics.WaitingTimes.Successful";
@@ -2002,10 +2004,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4789] = "Durchschnittliche Bedien+Nachberarbeitungszeit oder Bedienrate";
     t[4798] = "Statistics.ResidenceTimes.notsuccessful.info";
     t[4799] = "Die Verweilzeiten der nicht-erfolgreichen Anrufer sind genau die Abbruchzeiten.\nDaher werden diese Zeiten hier nicht explizit aufgef\u00fchrt.";
-    t[4802] = "Statistic.Viewer.Chart.Part";
-    t[4803] = "Anteil";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4802] = "Statistic.Viewer.Chart.Part";
+    t[4803] = "Anteil";
     t[4816] = "ModelInfo.Title";
     t[4817] = "Simuliertes Warteschlangenmodell";
     t[4818] = "Main.Toolbar.ShowStatistics";
