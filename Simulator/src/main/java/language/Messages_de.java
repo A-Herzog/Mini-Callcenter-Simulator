@@ -1552,6 +1552,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3779] = "Dunkegrau";
     t[3780] = "Statistics.Maximum";
     t[3781] = "Maximum";
+    t[3786] = "Statistic.Viewer.Report.HTMLApp.JSError";
+    t[3787] = "Zur Anzeige der interaktiven Statistik wird Javascript ben\u00f6tigt.";
     t[3792] = "Color.8B4513";
     t[3793] = "Saddle Braun";
     t[3794] = "JDataLoader.ImportErrorInvalidValue";
@@ -2002,10 +2004,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4781] = "Export fehlgeschlagen";
     t[4788] = "LoadCalculator.AverageHoldingAndPostProcessingTime";
     t[4789] = "Durchschnittliche Bedien+Nachberarbeitungszeit oder Bedienrate";
-    t[4798] = "Statistics.ResidenceTimes.notsuccessful.info";
-    t[4799] = "Die Verweilzeiten der nicht-erfolgreichen Anrufer sind genau die Abbruchzeiten.\nDaher werden diese Zeiten hier nicht explizit aufgef\u00fchrt.";
   }
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4798] = "Statistics.ResidenceTimes.notsuccessful.info";
+    t[4799] = "Die Verweilzeiten der nicht-erfolgreichen Anrufer sind genau die Abbruchzeiten.\nDaher werden diese Zeiten hier nicht explizit aufgef\u00fchrt.";
     t[4802] = "Statistic.Viewer.Chart.Part";
     t[4803] = "Anteil";
     t[4816] = "ModelInfo.Title";
