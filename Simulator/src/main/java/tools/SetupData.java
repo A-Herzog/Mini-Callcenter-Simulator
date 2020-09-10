@@ -33,6 +33,7 @@ import language.Language;
 import language.LanguageStaticLoader;
 import language.Messages_Java11;
 import mathtools.NumberTools;
+import systemtools.GUITools;
 import systemtools.SetupBase;
 
 /**
@@ -82,6 +83,12 @@ public class SetupData extends SetupBase {
 	 * Ist startSizeMode=START_MODE_LASTSIZE gewählt, so wird hier die letzte Größe des Fensters gespeichert
 	 */
 	public Dimension lastSize;
+
+	/**
+	 * Zu verwendendes Theme
+	 * @see GUITools#listLookAndFeels()
+	 */
+	public String lookAndFeel;
 
 	/**
 	 * Gibt die Größe von Bildern beim Speichern an
@@ -152,6 +159,7 @@ public class SetupData extends SetupBase {
 		lastSizeMode=Frame.NORMAL;
 		lastPosition=new Point(0,0);
 		lastSize=new Dimension(0,0);
+		lookAndFeel="";
 		imageSize=1000;
 		imagesInline=true;
 		reportSettings="";
@@ -325,6 +333,11 @@ public class SetupData extends SetupBase {
 				if (j!=null) lastSize.height=j;
 			}
 
+			if (s.equalsIgnoreCase("LookAndFeel")) {
+				lookAndFeel=e.getTextContent();
+				continue;
+			}
+
 			if (s.equalsIgnoreCase("Images")) {
 				Integer j=NumberTools.getInteger(e.getTextContent());
 				if (j!=null) imageSize=Math.min(5000,Math.max(50,j));
@@ -378,6 +391,11 @@ public class SetupData extends SetupBase {
 			node.setAttribute("Y",""+lastPosition.y);
 			node.setAttribute("Width",""+lastSize.width);
 			node.setAttribute("Height",""+lastSize.height);
+		}
+
+		if (lookAndFeel!=null && !lookAndFeel.trim().isEmpty()) {
+			root.appendChild(node=doc.createElement("LookAndFeel"));
+			node.setTextContent(lookAndFeel);
 		}
 
 		if (imageSize!=1000 || !imagesInline) {

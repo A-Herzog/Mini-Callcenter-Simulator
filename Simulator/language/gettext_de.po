@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-06 20:54+0200\n"
+"POT-Creation-Date: 2020-09-10 16:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2318,6 +2318,15 @@ msgstr "Texte mit OpenOffice/LibreOffice öffnen"
 
 msgid "SettingsDialog.Tabs.Statistics.OpenWord"
 msgstr "Texte mit Word öffnen"
+
+msgid "SettingsDialog.Theme"
+msgstr "Thema"
+
+msgid "SettingsDialog.Theme.Info"
+msgstr "Wird erst nach einem Neustart des Programms aktiv."
+
+msgid "SettingsDialog.Theme.System"
+msgstr "Systemvorgabe"
 
 msgid "SettingsDialog.Title"
 msgstr "Einstellungen"

@@ -1104,6 +1104,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2697] = "X";
     t[2698] = "SimStatistic.SystemData.SimulationTime";
     t[2699] = "Used calculation time";
+    t[2700] = "SettingsDialog.Theme.System";
+    t[2701] = "System default";
     t[2710] = "Model.XML.NumberOfAgents";
     t[2711] = "ModelNumberOfAgents";
     t[2716] = "DistributionFitter.PValue";
@@ -1680,6 +1682,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4025] = "Results";
     t[4026] = "Simulator.Log.TestAndScheduleCallRetry";
     t[4027] = "TestAndScheduleCallRetry";
+    t[4032] = "Statistics.XML.Value";
+    t[4033] = "Value";
     t[4034] = "Distribution.Gumbel";
     t[4035] = "Gumbel distribution";
     t[4038] = "Editor.Service.QueueMode.LIFO";
@@ -2000,12 +2004,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4773] = "The ValuesSum attribute in the \"%s\" element has to be a non-negative number but is \"%s\".";
     t[4778] = "XML.UnknownFileFormat";
     t[4779] = "The file format is unknown respectively is not matching to any of the file formats of this program.";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4780] = "QSExport.Error.Title";
     t[4781] = "Exporting failed";
     t[4788] = "LoadCalculator.AverageHoldingAndPostProcessingTime";
     t[4789] = "Average holding and post processing time or service rate";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4798] = "Statistics.ResidenceTimes.notsuccessful.info";
     t[4799] = "The residence times of the unsuccessful callers are exactly the cancelation times.\nTherefore, these times are not listed explicitly here.";
     t[4802] = "Statistic.Viewer.Chart.Part";
@@ -2316,8 +2320,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5615] = "In";
     t[5622] = "Statistics.SystemData.RunUser";
     t[5623] = "User (simulation run)";
-    t[5624] = "Statistics.XML.Value";
-    t[5625] = "Value";
+    t[5624] = "SettingsDialog.Theme.Info";
+    t[5625] = "Will be used after program restart.";
     t[5626] = "Color.98FB98";
     t[5627] = "Pale green";
     t[5628] = "FileType.DIF";
@@ -2442,6 +2446,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5905] = "Information";
     t[5908] = "Window.Compare.NotAValidStatisticsFile.Info";
     t[5909] = "The %sth selected file\n%s\nis not a valid statistics file.";
+    t[5910] = "SettingsDialog.Theme";
+    t[5911] = "Theme";
     t[5912] = "QSExport.xml.Element.Dispose";
     t[5913] = "ModelElementDispose";
   }

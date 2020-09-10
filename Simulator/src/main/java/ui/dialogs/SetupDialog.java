@@ -20,6 +20,9 @@ import java.awt.Component;
 import java.awt.FlowLayout;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.swing.BoxLayout;
 import javax.swing.JCheckBox;
@@ -32,6 +35,7 @@ import javax.swing.JTextField;
 import language.Language;
 import mathtools.NumberTools;
 import systemtools.BaseDialog;
+import systemtools.GUITools;
 import systemtools.MsgBox;
 import tools.IconListCellRenderer;
 import tools.SetupData;
@@ -51,6 +55,7 @@ public class SetupDialog extends BaseDialog {
 
 	private final JComboBox<String> languages;
 	private final JComboBox<String> programStartWindow;
+	private final JComboBox<String> lookAndFeel;
 
 	private final JTextField imageSize;
 
@@ -103,6 +108,16 @@ public class SetupDialog extends BaseDialog {
 				Images.SETUP_WINDOW_SIZE_FULL,
 				Images.SETUP_WINDOW_SIZE_LAST
 		}));
+
+		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
+		p.add(label=new JLabel(Language.tr("SettingsDialog.Theme")+":"));
+		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
+		final List<String> lookAndFeels=new ArrayList<>();
+		lookAndFeels.add(Language.tr("SettingsDialog.Theme.System"));
+		lookAndFeels.addAll(Arrays.asList(GUITools.listLookAndFeels()));
+		p.add(lookAndFeel=new JComboBox<String>(lookAndFeels.toArray(new String[0])));
+		label.setLabelFor(programStartWindow);
+		lookAndFeel.setToolTipText(Language.tr("SettingsDialog.Theme.Info"));
 
 		/* Tab "Grafik" */
 		tabs.add(Language.tr("SettingsDialog.Tabs.GUI.Graphics"),tab=new JPanel(new FlowLayout(FlowLayout.LEFT))); tab.add(mainarea=new JPanel());
@@ -160,6 +175,13 @@ public class SetupDialog extends BaseDialog {
 		case START_MODE_LASTSIZE: programStartWindow.setSelectedIndex(2); break;
 		}
 
+		final String[] lookAndFeels2=GUITools.listLookAndFeels();
+		lookAndFeel.setSelectedIndex(0);
+		for (int i=0;i<lookAndFeels2.length;i++) if (lookAndFeels2[i].equalsIgnoreCase(setup.lookAndFeel)) {
+			lookAndFeel.setSelectedIndex(i+1);
+			break;
+		}
+
 		imageSize.setText(""+Math.min(5000,Math.max(50,setup.imageSize)));
 
 		useMultiCore.setSelected(setup.useMultiCore);
@@ -198,6 +220,8 @@ public class SetupDialog extends BaseDialog {
 		case 1: setup.startSizeMode=StartMode.START_MODE_FULLSCREEN; break;
 		case 2: setup.startSizeMode=StartMode.START_MODE_LASTSIZE; break;
 		}
+
+		if (lookAndFeel.getSelectedIndex()==0) setup.lookAndFeel=""; else setup.lookAndFeel=(String)lookAndFeel.getSelectedItem();
 
 		Long L=NumberTools.getPositiveLong(imageSize,true);
 		if (L!=null) setup.imageSize=(int)((long)L);

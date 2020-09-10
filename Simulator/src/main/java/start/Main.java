@@ -99,7 +99,7 @@ public class Main {
 	private static final class RunSimulator implements Runnable {
 		@Override
 		public void run() {
-			GUITools.setupUI();
+			GUITools.setupUI(SetupData.getSetup().lookAndFeel);
 			MsgBox.setBackend(new MsgBoxBackendTaskDialog());
 			new MainFrame(loadFile);
 		}
