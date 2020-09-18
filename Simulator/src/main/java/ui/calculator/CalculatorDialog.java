@@ -65,13 +65,19 @@ import ui.images.Images;
 public class CalculatorDialog extends BaseDialog {
 	private static final long serialVersionUID = -3883480454772212675L;
 
+	/** Eingabezeile */
 	private final JTextField inputEdit;
+	/** Ergebnisausgabezeile */
 	private final JTextField outputEdit;
 
+	/** Funktionsplotter */
 	private final PlotterPanel plotter;
+	/** Eingabefelder für den Funktionsplotter */
 	private final List<JTextField> plotterField;
 
+	/** Wahrscheinlichkeitsverteilungsplotter */
 	private final JDistributionPanel distributionPlotter;
+	/** Eingabefelder für den Wahrscheinlichkeitsverteilungsplotter */
 	private final JDistributionEditorPanel distributionEditor;
 
 	/**

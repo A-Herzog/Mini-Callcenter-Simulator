@@ -43,12 +43,19 @@ import ui.tools.SpecialPanel;
 public class ComparePanel extends SpecialPanel {
 	private static final long serialVersionUID = 1696555531378569922L;
 
+	/** Übergeordnetes Fenster */
 	private final Window owner;
+	/** Gibt an, ob angeboten werden soll, die zugehörigen Modelle in den Editor zu laden */
 	private final boolean allowLoadToEditor;
+	/** Anzuzeigende Statistikdateien */
 	private final Statistics[] statistic;
+	/** Titel für die einzelnen Viewer */
 	private final String[] titleArray;
+	/** Schaltfläche "Modell und Statistikdaten anzeigen" */
 	private final JButton showModelButton;
+	/** "Hilfe" Schaltfläche */
 	private final JButton helpButton;
+	/** Wird hier ein Modell eingetragen, so steht dieses über {@link #getModelForEditor()} nach dem Schließen des Panels zum Laden in den Editor bereit */
 	private EditModel loadModelIntoEditor=null;
 
 	/**

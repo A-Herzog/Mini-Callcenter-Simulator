@@ -30,6 +30,7 @@ import language.Language;
 public class CallcenterModellPanel extends JPanel {
 	private static final long serialVersionUID = 8045548555129632452L;
 
+	/** Versionskennung die unten im Modell angezeigt wird */
 	private final String version;
 
 	/**

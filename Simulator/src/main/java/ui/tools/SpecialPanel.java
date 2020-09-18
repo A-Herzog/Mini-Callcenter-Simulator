@@ -49,10 +49,15 @@ public class SpecialPanel extends JPanel {
 	/** Tooltip für die "Schließen"-Schaltfläche */
 	public static String buttonCloseHint="Schließt die aktuelle Ansicht";
 
+	/** Objekt vom Typ <code>Runnable</code> welches aktiviert wird, wenn das Panel seine Arbeit beendet hat und sich schließen möchte (was es durch den Aufruf von <code>close</code> kenntlich macht) */
 	private final Runnable closePanel;
+	/** Toolbar des Panels */
 	private JToolBar toolbar=null;
+	/** "Schließen"-Schaltfläche */
 	private JButton closeButton=null;
+	/** Benutzerdefinierte Schaltflächen auf dem Toolbar */
 	private List<JButton> userButtons=new ArrayList<>();
+	/** Listener, der benachrichtigt wird, wenn eine Schaltflächen auf dem Toolbar angeklickt wird */
 	private ButtonListener buttonListener=new ButtonListener();
 
 	/**

@@ -88,22 +88,36 @@ import ui.images.Images;
 public class PlotterPanel extends JPanel {
 	private static final long serialVersionUID = -8604825152023324546L;
 
+	/** Liste der Graphen */
 	private final List<Graph> graphs;
 
+	/** Eingabefeld für den minimalen X-Wert */
 	private final JTextField inputMinX;
+	/** Eingabefeld für den maximalen X-Wert */
 	private final JTextField inputMaxX;
+	/** Eingabefeld für den minimalen Y-Wert */
 	private final JTextField inputMinY;
+	/** Eingabefeld für den maximalen Y-Wert */
 	private final JTextField inputMaxY;
 
+	/** Diagramm */
 	private final JFreeChart chart;
+	/** Panel für das Diagramm */
 	private final ChartPanel chartPanel;
+	/** X-Y-Darstellung innerhalb des Diagramms */
 	private final XYPlot plot;
+	/** Datenmenge für die X-Y-Darstellung */
 	private final XYSeriesCollection data;
 
+	/** Vom Nutzer festgelegter minimaler X-Wert (der beim Klicken auf "Standardzoom" wieder eingestellt wird) */
 	private double currentUnzoomMinX=-10;
+	/** Vom Nutzer festgelegter maximaler X-Wert (der beim Klicken auf "Standardzoom" wieder eingestellt wird) */
 	private double currentUnzoomMaxX=10;
+	/** Vom Nutzer festgelegter minimaler Y-Wert (der beim Klicken auf "Standardzoom" wieder eingestellt wird) */
 	private double currentUnzoomMinY=-10;
+	/** Vom Nutzer festgelegter maximaler Y-Wert (der beim Klicken auf "Standardzoom" wieder eingestellt wird) */
 	private double currentUnzoomMaxY=10;
+	/** Wird von {@link #unzoom()}, {@link #inputXChanged()} und {@link #inputYChanged()} temporär auf <code>true</code> gesetzt, um Benachrichtigungsschleifen zu verhindern */
 	private boolean justChangingZoom=false;
 
 	/**
@@ -439,8 +453,17 @@ public class PlotterPanel extends JPanel {
 		inputXChanged();
 	}
 
+	/**
+	 * Listener die nach dem Neuzeichnen benachrichtigt werden sollen
+	 * @see #fireRedrawDone()
+	 */
 	private Set<Runnable> redrawDoneListeners=new HashSet<>();
 
+	/**
+	 * Benachrichtigt die Listener die nach dem Neuzeichnen benachrichtigt werden sollen
+	 * @see #addRedrawDoneListener(Runnable)
+	 * @see #removeRedrawDoneListener(Runnable)
+	 */
 	private void fireRedrawDone() {
 		for (Runnable listener: redrawDoneListeners) listener.run();
 	}
@@ -459,7 +482,7 @@ public class PlotterPanel extends JPanel {
 	 * @param redrawDoneListener	Listener, der nach einem Neuzeichnen nicht mehr benachrichtigt werden soll
 	 * @return	Gibt an, ob der Listener aus der Liste der Callbacks, die nach einem Neuzeichnen benachrichtigt werden sollen, entfernt werden konnte.
 	 */
-	public boolean reoveRedrawDoneListener(final Runnable redrawDoneListener) {
+	public boolean removeRedrawDoneListener(final Runnable redrawDoneListener) {
 		return redrawDoneListeners.remove(redrawDoneListener);
 	}
 

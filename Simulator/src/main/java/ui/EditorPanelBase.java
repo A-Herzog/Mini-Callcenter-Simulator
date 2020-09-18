@@ -93,7 +93,16 @@ public abstract class EditorPanelBase extends JPanel {
 	 * Inhalt der Warnmeldung, dass in der Modelldatei unbekannte Elemente enthalten waren.
 	 */
 	public static String UNKNOWN_ELEMENTS_INFO="Die Modelldatei enthielt unbekannte Elemente, die beim Laden übersprungen wurden. Das Modell ist daher nicht vollständig.";
+
+	/**
+	 * Wird nach {@link #buildGUI()} auf <code>true</code> gesetzt, damit {@link #setModel(EditModel)} passend reagieren kann.
+	 */
 	private boolean isGUIReady;
+
+	/**
+	 * Tabs-Objekt, sofern mehrere Tabs verwendet werden
+	 * @see #addTab(String, Icon)
+	 */
 	private JTabbedPane tabs=null;
 
 	/**
@@ -106,11 +115,41 @@ public abstract class EditorPanelBase extends JPanel {
 	 */
 	protected final boolean readOnly;
 
+	/**
+	 * Ausgangsmodell (zum Vergleichen, ob es Änderungen gab)
+	 * @see #isModelChanged()
+	 * @see #setModelChanged(boolean)
+	 */
 	private EditModel modelOriginal;
+
+	/**
+	 * Soll das Modell als "geändert" angesehen werden?
+	 * @see #isModelChanged()
+	 * @see #setModelChanged(boolean)
+	 */
 	private boolean modelChanged;
+
+	/**
+	 * Dateiname des zuletzt geladenen oder gespeicherten Modells
+	 * @see #saveModel(File)
+	 * @see #getLastFile()
+	 * @see #setLastFile(File)
+	 */
 	private File lastFile=null;
+
+	/**
+	 * Stellt sicher, dass nicht parallel lesend und schreibend
+	 * auf das Modell zugegriffen wird.
+	 * @see #getModel()
+	 * @see #setModel(EditModel)
+	 * @see #isModelChanged()
+	 */
 	private final Semaphore mutexGetSetModel=new Semaphore(1);
 
+	/**
+	 * Listener die benachrichtigen werden sollen, wenn sich der Geändert-Status des Modells geändert hat.
+	 * @see #fireChangedStateListeners()
+	 */
 	private final Set<Runnable> changedStateListeners=new HashSet<>();
 
 	/**
@@ -314,6 +353,10 @@ public abstract class EditorPanelBase extends JPanel {
 		return null;
 	}
 
+	/**
+	 * Zeitdauer, die zum Laden des letzten Modells notwendig war
+	 * @see #getLastLoadTime()
+	 */
 	private long lastLoadTime=0;
 
 	/**
@@ -536,8 +579,18 @@ public abstract class EditorPanelBase extends JPanel {
 		});
 	}
 
-	private final Semaphore fireChangedStateListenersRunning = new Semaphore(1);
+	/**
+	 * Stellt sicher, dass kein zweiter {@link #fireChangedStateListeners()}-Aufruf
+	 * erfolgt, solange der vorherige noch nicht abgearbeitet ist.
+	 * @see #fireChangedStateListeners()
+	 */
+	private final Semaphore fireChangedStateListenersRunning=new Semaphore(1);
 
+	/**
+	 * Listener benachrichtigen, dass sich der Geändert-Status des Modells geändert hat.
+	 * @see #addChangedStateListeners(Runnable)
+	 * @see #removeChangedStateListeners(Runnable)
+	 */
 	private void fireChangedStateListeners() {
 		if (!fireChangedStateListenersRunning.tryAcquire()) return;
 		try {

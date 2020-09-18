@@ -35,6 +35,7 @@ public final class CallEvent extends Event {
 	 * Zählt den Anruf aus Simulationssicht, d.h. beendet ggf. die Einschwingphase (und setzt dabei die Statistik zurück)
 	 * und plant entweder den nächsten Anruf ein oder ab fügt das "Simulationsende"-Ereignis in die Ereignisliste ein.
 	 * @param simData	<code>SimulationData</code>-Objekt
+	 * @param count	Anzahl der Ankünfte (bei Batch &gt;1)
 	 */
 	private final void simCallCount(final SimulationData simData, final int count) {
 		/* Zählung des Anrufs in Bezug zu dem <code>simData.runModel.callsToSimulate</code>-Wert */

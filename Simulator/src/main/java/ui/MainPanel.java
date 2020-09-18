@@ -113,26 +113,56 @@ public class MainPanel extends MainPanelBase {
 	 */
 	public static String UNSAVED_MODEL="ungespeichertes Modell";
 
+	/** Menüpunkte, die nur bei Anzeige des Modell-Editors aktiviert werden sollen */
 	private List<JMenuItem> enabledOnEditorPanel;
+	/** Schaltflächen, die nur bei Anzeige des Modell-Editors sichtbar sein sollen */
 	private List<JButton> visibleOnEditorPanel;
+	/** Schaltflächen, die nur bei Anzeige des Statistik-Viewers sichtbar sein sollen */
 	private List<JButton> visibleOnStatisticsPanel;
+	/** Schaltflächen/Menüpunkte, die bei Anzeige des Modell-Editors markiert dargestellt werden sollen */
 	private List<AbstractButton> selectOnEditorPanel;
+	/** Schaltflächen/Menüpunkte, die bei Anzeige des Statistik-Viewers markiert dargestellt werden sollen */
 	private List<AbstractButton> selectOnStatisticsPanel;
+	/** Schaltflächen/Menüpunkte, die bei aktiviert dargestellt werden sollen, wenn Statistikdaten verfügbar sind */
 	private List<AbstractButton> enabledOnStatisticsAvailable;
 
+	/** Menüpunkt "Zuletzt verwendet" */
 	private JMenu menuFileModelRecentlyUsed;
+
+	/** Menüpunkt "Aktuelles und festgehaltenes Modell vergleichen" */
 	private JMenuItem menuExtrasCompareKept;
+
+	/** Menüpunkt "Zu festgehaltenem Modell zurückkehren" */
 	private JMenuItem menuModelCompareReturn;
 
+	/**
+	 * Button zum Ein- und Ausblenden der Erklärungen zu den Modell-Editor-Seiten
+	 */
 	private JButton buttonPageInfo;
 
+	/**
+	 * Programmeinstellungen-Singleton
+	 */
 	private final SetupData setup;
+
+	/**
+	 * Callback, welches ein Neuladen des Fensters veranlasst.
+	 */
 	private Runnable reloadWindow;
 
+	/** Aktuell angezeigtes Panel */
 	private JPanel currentPanel;
+
+	/** Modell-Editor-Panel */
 	private final EditorPanel editorPanel;
+
+	/** Warte-Panel zum Anzeigen während der Simulation */
 	private final WaitPanel waitPanel;
+
+	/** Statistik-Panel */
 	private final StatisticsPanel statisticsPanel;
+
+	/** Panel für weitere besondere Einstellungen */
 	private SpecialPanel specialPanel;
 
 	/**
@@ -140,6 +170,7 @@ public class MainPanel extends MainPanelBase {
 	 */
 	private EditModel pinnedModel;
 
+	/** Statistikdaten, die sich beim Modellvergleich ergeben haben */
 	private Statistics[] compareStatistics=new Statistics[2];
 
 	/**

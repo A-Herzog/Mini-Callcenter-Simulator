@@ -53,17 +53,26 @@ import ui.images.Images;
 public class SetupDialog extends BaseDialog {
 	private static final long serialVersionUID = 8167759839522880144L;
 
+	/** Sprache für die Benutzeroberfläche */
 	private final JComboBox<String> languages;
+	/** Fenstergröße beim Start des Programms */
 	private final JComboBox<String> programStartWindow;
+	/** Zu verwendendes Theme */
 	private final JComboBox<String> lookAndFeel;
 
+	/** Bildgröße beim Exportieren von Bildern */
 	private final JTextField imageSize;
 
+	/** Mehrkern-Unterstützung verwenden? */
 	private final JCheckBox useMultiCore;
 
+	/** Anbieten, Statistik-Texte in Word zu öffnen? */
 	private final JCheckBox openWord;
+	/** Anbieten, Statistik-Texte in Open/LibreOffice zu öffnen? */
 	private final JCheckBox openODT;
+	/** Anbieten, Statistik-Tabellen in Excel zu öffnen? */
 	private final JCheckBox openExcel;
+	/** Anbieten, Statistik-Tabellen in Open/LibreOffice zu öffnen? */
 	private final JCheckBox openODS;
 
 	/**

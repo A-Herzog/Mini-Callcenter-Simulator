@@ -48,8 +48,21 @@ import xml.XMLTools;
 public class CompareSelectDialog extends BaseDialog  {
 	private static final long serialVersionUID = -5204836029062935247L;
 
+	/**
+	 * Textfelder zur Eingabe der Dateinamen
+	 */
 	private final JTextField[] statisticTextFields;
+
+	/**
+	 * Schaltflächen zur Auswahl der Dateien über Dialoge
+	 */
 	private final JButton[] statisticButton;
+
+	/**
+	 * Gewählte Dateien
+	 * @see #storeData()
+	 * @see #getSelectedFiles()
+	 */
 	private File[] statisticFiles;
 
 	/**
@@ -188,8 +201,17 @@ public class CompareSelectDialog extends BaseDialog  {
 		}
 	}
 
+	/**
+	 * Index der Eingabezeile in die die letzte Drag&amp;Drop-Operation erfolgte
+	 * @see #dropFile(File)
+	 */
 	private int lastDrop=-1;
 
+	/**
+	 * Reagiert auf Drag&amp;Drop einer Datei auf den Dialog
+	 * @param file	Datei, die übermittelt wirde
+	 * @return	Gibt an, ob die Datei erfolgreich in die Liste der zu vergleichenden Statistikdateien aufgenommen werden konnte
+	 */
 	private final boolean dropFile(File file) {
 		if (!file.exists()) return false;
 

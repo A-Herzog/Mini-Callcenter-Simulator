@@ -49,37 +49,64 @@ public final class EditorPanel extends EditorPanelBase {
 	private static final long serialVersionUID = 871808238984135272L;
 
 	/* Allgemeines */
+
+	/** Name des Modells */
 	private JTextField name;
+	/** Beschreibung für das Modell */
 	private JTextArea description;
+	/** Zu simulierende Ankünfte */
 	private JTextField callsToSimulate;
 
 	/* Ankünfte */
+
+	/** Batch-Größen für Ankünfte */
 	private JTextField batchArrival;
+	/** Zwischenankunftszeiten */
 	private JDistributionPanel interArrivalTimeDist;
 
 	/* Warteraum und Wartezeittoleranz */
+
+	/** Warteraumgröße begrenzen? */
 	private JRadioButton[] waitingRoomSizeSelect;
+	/** Warteraumgröße */
 	private JTextField waitingRoomSize;
+	/** Begrenzte Wartezeittoleranz? */
 	private JRadioButton[] waitingTimeSelect;
+	/** Wartezeittoleranz */
 	private JDistributionPanel waitingTimeDist;
+	/** Autokorrelation der Wartezeiten aufzeichnen? */
 	private JCheckBox collectCorrelation;
 
 	/* Bedienungen */
+
+	/** Anzahl an Bedienern */
 	private JTextField agents;
+
+	/** Bedienstrategie */
 	private JComboBox<String> queueMode;
+	/** Batch-Größe für Bedienungen */
 	private JTextField batchWorking;
+	/** Bedienzeitenverteilung */
 	private JDistributionPanel workingTimeDist;
+	/** Weiterleitungswahrscheinlichkeit */
 	private JTextField callContinueProbability;
 
 	/* Nachbearbeitungszeiten */
+
+	/** Nachbearbeitungszeitenverteilung */
 	private JDistributionPanel postProcessingTimeDist;
 
 	/* Wiederholungen */
+
+	/** Wiederholwahrscheinlichkeit */
 	private JTextField retryProbability;
+	/** Wiederholabständeverteilung */
 	private JDistributionPanel retryTimeDist;
 
-	/* Info-Panel */
+	/** Info-Panel */
 	private JPanel infoParent;
+
+	/** Textfeld im Info-Panel */
 	private JTextPane infoPanel;
 
 	/**
