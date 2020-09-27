@@ -74,6 +74,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[127] = "Print";
     t[128] = "Statistics.WaitingTimes.All.of";
     t[129] = "of the waiting times of all callers";
+    t[130] = "Table.LoadErrorCellNotInTable";
+    t[131] = "The cell %s is not inside the table. The table ends at %s.";
     t[132] = "Statistics.XML.BatchMeans.Error";
     t[133] = "The BatchVariance attribute in the \"%s\" element has to be a non-negative number but is %s\".";
     t[136] = "FileType.cs";
@@ -334,6 +336,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[759] = "Numerator";
     t[762] = "Statistics.Distance";
     t[763] = "Distance";
+    t[768] = "Statistic.Viewer.Toolbar.Search";
+    t[769] = "Search";
     t[772] = "Statistics.ProcessTime.lower";
     t[773] = "process time";
     t[774] = "LoadCalculator.Tab.ErlangB";
@@ -624,6 +628,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1483] = "Exporting graphics";
     t[1488] = "Statistics.XML.Disribution.ElementError";
     t[1489] = "The distribution specified in element \"%s\" is invalid.";
+    t[1498] = "Statistic.Viewer.Toolbar.Search.NotFound";
+    t[1499] = "The text \"%s\" could not be found.";
     t[1502] = "Statistics.XML.CountSuccess";
     t[1503] = "CountSuccess";
     t[1504] = "Statistic.Viewer.Toolbar.Excel.Prefix";
@@ -1700,8 +1706,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4057] = "Distribution of the process times";
     t[4058] = "Color.00FA9A";
     t[4059] = "Medium spring green";
-    t[4062] = "Table.LoadErrorCellNotInTable";
-    t[4063] = "The cell %s is not inside the table. The table ends at %s.";
+    t[4062] = "Statistic.Viewer.Toolbar.Search.DialogTitle";
+    t[4063] = "Search text";
     t[4070] = "Color.B22222";
     t[4071] = "Fire brick";
     t[4076] = "XML.EnterPassword";
@@ -1888,6 +1894,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4489] = "No distribution selected";
     t[4504] = "Distribution.Uniform";
     t[4505] = "Uniform distribution";
+    t[4518] = "XML.Comment";
+    t[4519] = "This file was created using %s. Download address: %s";
     t[4520] = "Statistic.Viewer.NoHTMLApplication.Info";
     t[4521] = "There is no application registered for direct printing of html files. The report file is now opened in the standard browser. Please start printing manually.";
     t[4524] = "Statistics.AnalyticModelCompare.Analysis.Analytic";
@@ -1996,6 +2004,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4761] = "Record autocorrelation of the waiting times";
     t[4762] = "Color.1E90FF";
     t[4763] = "Dodger blue";
+  }
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4764] = "Compare.ReplaceKeptModel.Info";
     t[4765] = "There is already a model which is kept for comparison. Do you want to replace the kept model by the current model?";
     t[4768] = "DistributionFitter.ValueRange";
@@ -2004,8 +2014,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4773] = "The ValuesSum attribute in the \"%s\" element has to be a non-negative number but is \"%s\".";
     t[4778] = "XML.UnknownFileFormat";
     t[4779] = "The file format is unknown respectively is not matching to any of the file formats of this program.";
-  }
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4780] = "QSExport.Error.Title";
     t[4781] = "Exporting failed";
     t[4788] = "LoadCalculator.AverageHoldingAndPostProcessingTime";
@@ -2082,6 +2090,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5009] = "Light salmon";
     t[5010] = "Color.6A5ACD";
     t[5011] = "Slate blue";
+    t[5022] = "Statistic.Viewer.Toolbar.Search.Hint";
+    t[5023] = "Searches for text on the current page";
     t[5024] = "LoadCalculator.WorkLoad";
     t[5025] = "Work load";
     t[5028] = "LoadCalculator.Tab.ErlangC.Link";

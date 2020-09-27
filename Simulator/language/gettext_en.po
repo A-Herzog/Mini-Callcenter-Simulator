@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:22+0200\n"
+"POT-Creation-Date: 2020-09-27 18:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3013,6 +3013,18 @@ msgstr "Save tables"
 msgid "Statistic.Viewer.Toolbar.SaveTables.Hint"
 msgstr "Save the selected tables in a workbook only."
 
+msgid "Statistic.Viewer.Toolbar.Search"
+msgstr "Search"
+
+msgid "Statistic.Viewer.Toolbar.Search.DialogTitle"
+msgstr "Search text"
+
+msgid "Statistic.Viewer.Toolbar.Search.Hint"
+msgstr "Searches for text on the current page"
+
+msgid "Statistic.Viewer.Toolbar.Search.NotFound"
+msgstr "The text \"%s\" could not be found."
+
 msgid "Statistic.Viewer.Toolbar.SelectAll"
 msgstr "All"
 
@@ -3717,6 +3729,9 @@ msgstr "Model is invalid"
 
 msgid "Window.UnsavedFile"
 msgstr "unsaved model file"
+
+msgid "XML.Comment"
+msgstr "This file was created using %s. Download address: %s"
 
 msgid "XML.EnterPassword"
 msgstr "Plase enter password:"

@@ -94,6 +94,11 @@ public class MainPanel extends MainPanelBase {
 	private static final long serialVersionUID = 7636118203704616559L;
 
 	/**
+	 * Homepage-Adresse für Webbrowseraufrufe
+	 */
+	public static final String WEB_URL="github.com/A-Herzog/Mini-Callcenter-Simulator";
+
+	/**
 	 * Autor des Programms
 	 */
 	public static final String AUTHOR="Alexander Herzog";
@@ -978,7 +983,7 @@ public class MainPanel extends MainPanelBase {
 
 	private void commandHelpHomepage() {
 		try {
-			final URI uri=new URI("https://github.com/A-Herzog/Mini-Callcenter-Simulator");
+			final URI uri=new URI("https://"+WEB_URL);
 			if (!MsgBox.confirmOpenURL(this,uri)) return;
 			Desktop.getDesktop().browse(uri);
 		} catch (IOException | URISyntaxException e) {
