@@ -20,6 +20,7 @@ import java.awt.Frame;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.io.File;
+import java.io.Serializable;
 
 import language.Language;
 import language.LanguageStaticLoader;
@@ -36,6 +37,10 @@ import tools.SetupData.StartMode;
  * @author Alexander Herzog
  */
 public class MainFrame extends MainFrameBase {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = -2208131980436341851L;
 
 	/**
@@ -113,6 +118,10 @@ public class MainFrame extends MainFrameBase {
 		setup.saveSetup();
 	}
 
+	/**
+	 * Wird über {@link MainPanel#setReloadWindow(Runnable)} aufgerufen, wenn
+	 * das Fenster als solches neu geladen werden muss.
+	 */
 	private class ReloadWindow implements Runnable {
 		@Override
 		public void run() {

@@ -25,6 +25,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.File;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -57,6 +58,10 @@ import xml.XMLTools;
  * @author Alexander Herzog
  */
 public abstract class EditorPanelBase extends JPanel {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = -2225095205646314638L;
 
 	/**

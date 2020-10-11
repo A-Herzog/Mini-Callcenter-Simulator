@@ -35,8 +35,11 @@ import systemtools.commandline.BaseCommandLineSystem;
  * @see CommandLineSystem
  */
 public final class CommandBenchmark extends AbstractSimulationCommand {
+	/** Maximalanzahl an Threads (wird durch die Hardware weiter limitiert) */
 	private int maxThreads=Integer.MAX_VALUE;
+	/** Benchmark-Modus */
 	private int speedTestMode=0;
+	/** Zu simulierende Modelldatei */
 	private File modelFile;
 
 	@Override

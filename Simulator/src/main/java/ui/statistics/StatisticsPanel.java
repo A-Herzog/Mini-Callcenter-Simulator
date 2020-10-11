@@ -16,6 +16,7 @@
 package ui.statistics;
 
 import java.io.File;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,6 +39,10 @@ import xml.XMLTools;
  * @author Alexander Herzog
  */
 public class StatisticsPanel extends StatisticsBasePanel {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = 6515474808784376450L;
 
 	/** Statistikdatensätze, deren Daten angezeigt werden sollen */
@@ -241,6 +246,12 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		return null;
 	}
 
+	/**
+	 * Aktualisiert die gesamte Darstellung (Baumstruktur und Inhalte).
+	 * @see #setStatistics(Statistics)
+	 * @see #setStatistics(Statistics[], String[])
+	 * @see #setStatisticsGroup(Statistics[])
+	 */
 	private void updateViewer() {
 		StatisticNode root=new StatisticNode();
 		String modelName=null;
@@ -251,6 +262,10 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		setData(root,modelName);
 	}
 
+	/**
+	 * Sind in den Statistikdaten Autokorrelationsdaten enthalten?
+	 * @return	Autokorrelationsdaten vorhanden?
+	 */
 	private boolean hasAutocorrelation() {
 		for(Statistics statistic : statistics) {
 			if (statistic.waitingTimeAll.isCorrelationAvailable()) return true;
@@ -258,6 +273,11 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		return false;
 	}
 
+	/**
+	 * Wandelt die Statistikknoten in Baumeinträge um.
+	 * @param root	Wurzelelement der Statistikknoten
+	 * @see #updateViewer()
+	 */
 	private void addNodesToTree(final StatisticNode root) {
 		List<StatisticViewer> viewer;
 		StatisticNode group;
@@ -475,6 +495,10 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		root.addChild(new StatisticNode(Language.tr("Statistics.SystemData"),viewer));
 	}
 
+	/**
+	 * Wird aufgerufen, wenn ein "Details"-Link auf einer Textseite angeklickt wurde.
+	 * @param mode	Anzuzeigende Textseite
+	 */
 	private void modeClick(final ViewerText.Mode mode) {
 		selectNode(node->{
 			if (node.viewer.length<1) return false;

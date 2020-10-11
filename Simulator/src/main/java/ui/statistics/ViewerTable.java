@@ -35,7 +35,9 @@ import systemtools.statistics.StatisticViewerTable;
  * @author Alexander Herzog
  */
 public class ViewerTable extends StatisticViewerTable {
+	/** Statistikobjekt, aus dem die anzuzeigenden Daten entnommen werden sollen */
 	private final Statistics statistics;
+	/** Gibt an, welche Daten genau ausgegeben werden sollen */
 	private final Mode mode;
 
 	/**
@@ -85,6 +87,11 @@ public class ViewerTable extends StatisticViewerTable {
 		this.mode=mode;
 	}
 
+	/**
+	 * Tabelle "Anruferanzahl"
+	 * @see Mode#MODE_CALLER
+	 * @see #buildTable()
+	 */
 	private void buildCallerCount() {
 		Table table=new Table();
 		table.addLine(new String[]{Language.tr("SimStatistic.FreshCalls"),""+statistics.freshCalls.get()});
@@ -94,6 +101,14 @@ public class ViewerTable extends StatisticViewerTable {
 		setData(table,new String[]{Language.tr("Statistic.Viewer.Chart.Mode"),Language.tr("Statistic.Viewer.Chart.Number")});
 	}
 
+	/**
+	 * Gibt "Kunden im System", "Verteilung der Zwischenankunftszeiten" oder "Auslastung" aus.
+	 * @param mode	Auswahl der auszugebenden Daten
+	 * @see Mode#MODE_QUEUE
+	 * @see Mode#MODE_WIP
+	 * @see Mode#MODE_WORKLOAD
+	 * @see #buildTable()
+	 */
 	private void buildLengthTable(final Mode mode) {
 		Table table=new Table();
 
@@ -134,6 +149,24 @@ public class ViewerTable extends StatisticViewerTable {
 		setData(table,headings);
 	}
 
+	/**
+	 * Gibt "Verteilung der Zwischenankunftszeiten", "Verteilung der Zwischenabgangszeiten",
+	 * "Verteilung der Wartezeiten der erfolgreichen Kunden", "Verteilung der Abbruchzeiten",
+	 * "Verteilung der Wartezeiten über alle Kunden", "Verteilung der Bedienzeiten",
+	 * "Verteilung der Nachbearbeitungszeiten", "Verteilung der Verweilzeiten der erfolgreichen Kunden"
+	 * oder "Verteilung der Verweilzeiten aller Kunden" aus.
+	 * @param mode	Auswahl der auszugebenden Daten
+	 * @see Mode#MODE_INTERARRIVALTIMES
+	 * @see Mode#MODE_INTERLEAVETIMES
+	 * @see Mode#MODE_WAITINGTIMES_SUCCESS
+	 * @see Mode#MODE_WAITINGTIMES_CANCEL
+	 * @see Mode#MODE_WAITINGTIMES_ALL
+	 * @see Mode#MODE_WORKINGTIMES
+	 * @see Mode#MODE_POSTPROCESSINGTIMES
+	 * @see Mode#MODE_SYSTEMTIMES_SUCCESS
+	 * @see Mode#MODE_SYSTEMTIMES_ALL
+	 * @see #buildTable()
+	 */
 	private void buildTimesTable(final Mode mode) {
 		Table table=new Table();
 
@@ -168,6 +201,11 @@ public class ViewerTable extends StatisticViewerTable {
 		setData(table,new String[]{Language.tr("Statistic.NumberOfSeconds"),Language.tr("Statistic.Viewer.Chart.Number"),Language.tr("Statistic.Viewer.Chart.Part")});
 	}
 
+	/**
+	 * Autokorrelation der Wartezeiten
+	 * @see Mode#MODE_AUTOCORRELATION
+	 * @see #buildTable()
+	 */
 	private void buildAutoCorrelationTable() {
 		final Table table=new Table();
 		final List<String> cols=new ArrayList<>();

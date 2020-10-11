@@ -39,10 +39,14 @@ import ui.help.Help;
  * @author Alexander Herzog
  */
 public class ViewerText extends StatisticViewerText {
+	/** Levels für die anzuzeigenden Quantile */
 	private static double[] DISPLAY_QUANTILS=new double[] {0.1,0.25,0.5,0.75,0.9};
 
+	/** Statistikobjekt, aus dem die anzuzeigenden Daten entnommen werden sollen */
 	private final Statistics statistics;
+	/** Gibt an, welche Daten genau ausgegeben werden sollen */
 	private final Mode mode;
+	/** Callback, das aufgerufen wird, wenn ein "Details"-Link angeklickt wurde */
 	private final Consumer<Mode> modeClick;
 
 	/**
@@ -59,13 +63,13 @@ public class ViewerText extends StatisticViewerText {
 		MODE_QUEUE,
 		/** Textseite "Kunden im System" */
 		MODE_WIP,
-		/** Textseite  */
-		MODE_INTERARRIVALTIMES,
 		/** Textseite "Zwischenankunftszeiten" */
-		MODE_INTERLEAVETIMES,
+		MODE_INTERARRIVALTIMES,
 		/** Textseite "Zwischenabgangszeiten" */
-		MODE_WAITINGTIMES,
+		MODE_INTERLEAVETIMES,
 		/** Textseite "Wartezeiten" */
+		MODE_WAITINGTIMES,
+		/** Textseite "Bedienzeiten" */
 		MODE_WORKINGTIMES,
 		/** Textseite "Verweilzeiten" */
 		MODE_SYSTEMTIMES,
@@ -75,7 +79,7 @@ public class ViewerText extends StatisticViewerText {
 		MODE_COMPARE,
 		/** Textseite "Systemdaten" */
 		MODE_SYSTEM_INFO,
-		/** Autokorrelation der Wartezeiten */
+		/** Textseite "Autokorrelation der Wartezeiten" */
 		MODE_AUTOCORRELATION
 	}
 
@@ -102,15 +106,28 @@ public class ViewerText extends StatisticViewerText {
 		this(statistics,mode,null);
 	}
 
+	/**
+	 * Fügt einen Link auf eine andere Statistikseite als "Details"-Link in die Ausgabe ein.
+	 * @param mode	Zielseite für den "Details"-Link
+	 */
 	private void addModeLink(final Mode mode) {
 		addLink(mode.toString(),Language.tr("Statistics.Details"));
 	}
 
+	/**
+	 * Aktiviert eine Beschreibungs-Seite zu der aktuellen Textausgabe.
+	 * @param topic	Hilfeseite, die im Beschreibungsbereich angezeigt werden soll
+	 */
 	private void addDescription(final String topic) {
 		final URL url=ViewerText.class.getResource("description_"+Language.getCurrentLanguage()+"/"+topic+".html");
 		addDescription(url,helpTopic->Help.topic(getViewer(false),helpTopic));
 	}
 
+	/**
+	 * Übersicht
+	 * @see Mode#MODE_OVERVIEW
+	 * @see #buildText()
+	 */
 	private void buildOverview() {
 		addHeading(1,Language.tr("Statistics.ResultsOverview"));
 
@@ -240,6 +257,11 @@ public class ViewerText extends StatisticViewerText {
 		}
 	}
 
+	/**
+	 * Anruferanzahl
+	 * @see Mode#MODE_CALLER
+	 * @see #buildText()
+	 */
 	private void buildCallerCount() {
 		addHeading(1,Language.tr("SimStatistic.NumberOfCallers"));
 
@@ -289,6 +311,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("CallerCount");
 	}
 
+	/**
+	 * Warteschlange
+	 * @see Mode#MODE_QUEUE
+	 * {@link #buildText()}
+	 */
 	private void buildQueue() {
 		addHeading(1,Language.tr("SimStatistic.Queue"));
 		beginParagraph();
@@ -315,6 +342,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("Queue");
 	}
 
+	/**
+	 * Kunden im System
+	 * @see Mode#MODE_WIP
+	 * @see #buildText()
+	 */
 	private void buildWIP() {
 		addHeading(1,Language.tr("Statistics.ClientsInSystem"));
 		beginParagraph();
@@ -336,6 +368,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("WIP");
 	}
 
+	/**
+	 * Zwischenankunftszeiten
+	 * @see Mode#MODE_INTERARRIVALTIMES
+	 * @see #buildText()
+	 */
 	private void buildInterArrivalTimes() {
 		addHeading(1,Language.tr("Statistics.InterArrivalTimes"));
 		beginParagraph();
@@ -356,6 +393,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("InterArrivalTimes");
 	}
 
+	/**
+	 * Zwischenabgangszeiten
+	 * @see Mode#MODE_INTERLEAVETIMES
+	 * @see #buildText()
+	 */
 	private void buildInterLeaveTimes() {
 		addHeading(1,"Statistics.InterLeaveTimes");
 		beginParagraph();
@@ -370,6 +412,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("InterLeaveTimes");
 	}
 
+	/**
+	 * Wartezeiten
+	 * @see Mode#MODE_WAITINGTIMES
+	 * @see #buildText()
+	 */
 	private void buildWaitingTimes() {
 		addHeading(1,Language.tr("Statistics.WaitingTimes"));
 
@@ -417,6 +464,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("WaitingTimes");
 	}
 
+	/**
+	 * Bedienzeiten
+	 * @see Mode#MODE_WORKINGTIMES
+	 * @see #buildText()
+	 */
 	private void buildWorkingTimes() {
 		addHeading(1,Language.tr("SimStatistic.ServiceAndPostProcessingTimes"));
 
@@ -448,6 +500,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("WorkingTimes");
 	}
 
+	/**
+	 * Verweilzeiten
+	 * @see Mode#MODE_SYSTEMTIMES
+	 * @see #buildText()
+	 */
 	private void buildSystemTimes() {
 		addHeading(1,Language.tr("Statistics.ResidenceTimes"));
 
@@ -487,6 +544,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("SystemTimes");
 	}
 
+	/**
+	 * Auslastung
+	 * @see Mode#MODE_WORKLOAD
+	 * @see #buildText()
+	 */
 	private void buildWorkLoad() {
 		addHeading(1,Language.tr("SimStatistic.WorkLoad"));
 
@@ -516,6 +578,13 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("WorkLoad");
 	}
 
+	/**
+	 * Berechnet a^c/c!
+	 * @param a	Parameter a
+	 * @param c	Parameter c
+	 * @return	Ergebnis von a^c/c!
+	 * @see #buildCompare()
+	 */
 	private double powerFactorial(double a, long c) {
 		/* a^c/c! */
 		double result=1;
@@ -523,6 +592,11 @@ public class ViewerText extends StatisticViewerText {
 		return result;
 	}
 
+	/**
+	 * Vergleich mit analytischen Modellen
+	 * @see Mode#MODE_COMPARE
+	 * @see #buildText()
+	 */
 	private void buildCompare() {
 		addHeading(1,Language.tr("Statistics.AnalyticModelCompare"));
 
@@ -661,6 +735,11 @@ public class ViewerText extends StatisticViewerText {
 		addDescription("Compare");
 	}
 
+	/**
+	 * Systemdaten
+	 * @see Mode#MODE_SYSTEM_INFO
+	 * @see #buildText()
+	 */
 	private void buildSystemInfo() {
 		addHeading(1,Language.tr("Statistics.SystemData"));
 		beginParagraph();
@@ -693,6 +772,12 @@ public class ViewerText extends StatisticViewerText {
 	 */
 	public final static double[] AUTOCORRELATION_LEVELS=new double[]{0.1,0.05,0.01,0.005,0.001};
 
+	/**
+	 * Gibt die Autokorrelation für eine Datenreihe aus
+	 * @param indicator	Datenreihe
+	 * @param maxDistance	Autokorrelations-Levels
+	 * @see #buildAutoCorrelation()
+	 */
 	private void outputAutocorrelationData(final StatisticsDataPerformanceIndicator indicator, final int[] maxDistance) {
 		beginParagraph();
 		final int maxSize=(indicator.getCorrelationData().length-1)*StatisticsDataPerformanceIndicator.CORRELATION_RANGE_STEPPING;
@@ -709,6 +794,11 @@ public class ViewerText extends StatisticViewerText {
 		endParagraph();
 	}
 
+	/**
+	 * Autokorrelation der Wartezeiten
+	 * @see Mode#MODE_AUTOCORRELATION
+	 * @see #buildText()
+	 */
 	private void buildAutoCorrelation() {
 		addHeading(1,Language.tr("Statistics.AutoCorrelation.WaitingTimes"));
 

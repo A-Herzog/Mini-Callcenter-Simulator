@@ -141,9 +141,27 @@ public class SetupData extends SetupBase {
 	 */
 	public String lastError;
 
+	/**
+	 * Singleton-Instanz des Setup-Objektes
+	 * @see #getSetup()
+	 */
 	private static volatile SetupData setup=null;
+
+	/**
+	 * Mutex zum das mehrfache parallele Initialisieren
+	 * von {@link #setup} zu verhindern.
+	 * @see #setup
+	 * @see #getSetup(boolean)
+	 */
 	private static final Lock mutex=new ReentrantLock(true);
 
+	/**
+	 * Konstruktor der Klasse<br>
+	 * Diese Klasse ist ein Singleton und kann nicht direkt instanziert werden.
+	 * Es muss stattdessen {@link #getSetup()} verwendet werden.
+	 * @param loadSetupFile	Zu ladende Setup-Datei
+	 * @see #getSetup()
+	 */
 	private SetupData(final boolean loadSetupFile) {
 		super();
 		if (loadSetupFile) {
@@ -172,6 +190,13 @@ public class SetupData extends SetupBase {
 		lastError=null;
 	}
 
+	/**
+	 * Gibt an, ob die Programmsprache beim Programmstart gemäß der Systemsprache automatisch
+	 * eingestellt wurde (oder ob die Programmsprache aus dem Setup geladen wurde).
+	 * @see #languageWasAutomaticallySet()
+	 * @see #resetLanguageWasAutomatically()
+	 * @see #autoSetLanguage()
+	 */
 	private boolean autoSetLanguageActive=false;
 
 	/**
@@ -190,6 +215,9 @@ public class SetupData extends SetupBase {
 		autoSetLanguageActive=false;
 	}
 
+	/**
+	 * Stellt die Sprache, wenn nötig, automatisch ein.
+	 */
 	private void autoSetLanguage() {
 		if (!language.isEmpty()) return;
 		final String userLanguage=System.getProperty("user.language");

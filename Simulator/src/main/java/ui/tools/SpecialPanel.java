@@ -18,6 +18,7 @@ package ui.tools;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +42,10 @@ import ui.images.Images;
  * @author Alexander Herzog
  */
 public class SpecialPanel extends JPanel {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = 399014899599365120L;
 
 	/** Name der "Schließen"-Schaltfläche */
@@ -98,12 +103,23 @@ public class SpecialPanel extends JPanel {
 		close();
 	}
 
+	/**
+	 * Richtet {@link #toolbar} ein, sofern dieser
+	 * noch <code>null</code> ist.
+	 */
 	private void initToolbar() {
 		if (toolbar!=null) return;
 		add(toolbar=new JToolBar(),BorderLayout.NORTH);
 		toolbar.setFloatable(false);
 	}
 
+	/**
+	 * Fügt eine Schaltfläche auf dem Toolbar hinzu
+	 * @param title	Beschriftung der Schaltfläche
+	 * @param hint	Optionaler Tooltip (kann <code>null</code> sein)
+	 * @param icon	Optionales Icon (kann <code>null</code> sein)
+	 * @return	Liefert das neue (bereits hinzugefügte) Button
+	 */
 	private JButton addButtonInt(final String title, final String hint, final URL icon) {
 		initToolbar();
 		JButton button=new JButton(title);
@@ -155,6 +171,9 @@ public class SpecialPanel extends JPanel {
 	 */
 	protected void userButtonClick(int index, JButton button) {}
 
+	/**
+	 * Auf das Anklicken einer Schaltfläche im Toolbar reagieren.
+	 */
 	private class ButtonListener implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {

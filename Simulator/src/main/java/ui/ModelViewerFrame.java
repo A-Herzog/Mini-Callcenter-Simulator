@@ -21,6 +21,7 @@ import java.awt.Dimension;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 
 import javax.swing.AbstractAction;
 import javax.swing.InputMap;
@@ -43,6 +44,10 @@ import ui.statistics.StatisticsPanel;
  * @author Alexander Herzog
  */
 public class ModelViewerFrame extends JDialog {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = 7004585654111284032L;
 
 	/** Anzuzeigendes Modell */
@@ -174,6 +179,13 @@ public class ModelViewerFrame extends JDialog {
 		return rootPane;
 	}
 
+	/**
+	 * Reagiert auf Klicks auf die Symbolleisten-Schaltflächen
+	 * @see ModelViewerFrame#buttonClose
+	 * @see ModelViewerFrame#buttonViewEditor
+	 * @see ModelViewerFrame#buttonViewStatistics
+	 * @see ModelViewerFrame#buttonLoad
+	 */
 	private class ButtonListener implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {

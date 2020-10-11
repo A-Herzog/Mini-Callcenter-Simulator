@@ -17,6 +17,7 @@ package ui;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.io.Serializable;
 
 import javax.swing.JPanel;
 
@@ -28,6 +29,10 @@ import language.Language;
  * @version 1.0
  */
 public class CallcenterModellPanel extends JPanel {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = 8045548555129632452L;
 
 	/** Versionskennung die unten im Modell angezeigt wird */
@@ -42,6 +47,15 @@ public class CallcenterModellPanel extends JPanel {
 		this.version=version;
 	}
 
+	/**
+	 * Zeichnet einen horizontalen Pfeil
+	 * @param g	Ausgabe-Grafik-Objekt
+	 * @param x	x-Startposition
+	 * @param y	y-Startposition
+	 * @param width	Länge des Pfeils
+	 * @param s1	Beschriftung über dem Pfeil
+	 * @param s2	Beschriftung unter dem Pfeil
+	 */
 	private void pfeil(Graphics g, int x, int y, int width, String s1, String s2) {
 		g.drawLine(x,y,x+width,y);
 		g.drawLine(x+width,y,x+width-width/4,y-width/4);

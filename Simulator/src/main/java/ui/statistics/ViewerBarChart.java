@@ -30,9 +30,10 @@ import systemtools.statistics.StatisticViewerBarChart;
  * @author Alexander Herzog
  */
 public class ViewerBarChart extends StatisticViewerBarChart {
+	/** Statistikobjekt, aus dem die anzuzeigenden Daten entnommen werden sollen */
 	private final Statistics statistics;
+	/** Gibt an, welche Daten genau ausgegeben werden sollen */
 	private final Mode mode;
-
 
 	/**
 	 * Wählt die von {@link ViewerBarChart} auszugebende Information aus.
@@ -59,6 +60,11 @@ public class ViewerBarChart extends StatisticViewerBarChart {
 		this.mode=mode;
 	}
 
+	/**
+	 * Zeitdauern in denen sich das System in Bezug auf die Warteschlangenlängen in den verschiedenen Zuständen befunden hat
+	 * @see Mode#MODE_QUEUE
+	 * @see #firstChartRequest()
+	 */
 	private void buildQueue() {
 		initBarChart(Language.tr("SimStatistic.Queue.Distribution"));
 		setupBarChart(Language.tr("SimStatistic.Queue.Distribution"),Language.tr("Statistic.QueueLength"),Language.tr("Statistic.TimeShareInThisState"),true);
@@ -76,6 +82,11 @@ public class ViewerBarChart extends StatisticViewerBarChart {
 		initTooltips();
 	}
 
+	/**
+	 * Zeitdauern in denen sich das System in Bezug auf die Anzahlen an Kunden im System in den verschiedenen Zuständen befunden hat
+	 * @see Mode#MODE_WIP
+	 * @see #firstChartRequest()
+	 */
 	private void buildWIP() {
 		initBarChart(Language.tr("Statistics.NumberOfClientsInTheSystem.Distribution"));
 		setupBarChart(Language.tr("Statistics.NumberOfClientsInTheSystem.Distribution"),Language.tr("Statistics.NumberOfClientsInTheSystem"),Language.tr("Statistic.TimeShareInThisState"),true);
@@ -93,6 +104,11 @@ public class ViewerBarChart extends StatisticViewerBarChart {
 		initTooltips();
 	}
 
+	/**
+	 * Zeitdauern in denen sich das System in Bezug auf die Auslastung in den verschiedenen Zuständen befunden hat
+	 * @see Mode#MODE_WORKLOAD
+	 * @see #firstChartRequest()
+	 */
 	private void buildWorkLoad() {
 		initBarChart(Language.tr("Statistic.NumberOfWorkingAgents"));
 		setupBarChart(Language.tr("Statistic.NumberOfWorkingAgents"),Language.tr("Statistic.NumberOfWorkingAgents"),Language.tr("Statistic.TimeShareInThisState"),true);

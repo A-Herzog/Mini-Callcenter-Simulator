@@ -18,6 +18,7 @@ package ui.tools;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+import java.io.Serializable;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -45,6 +46,10 @@ import ui.images.Images;
  * @author Alexander Herzog
  */
 public class WaitPanel extends JPanel {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = 3524929788005334671L;
 
 	/**
@@ -182,6 +187,12 @@ public class WaitPanel extends JPanel {
 		}
 	}
 
+	/**
+	 * Wird aufgerufen, wenn die Simulation abgeschlossen wurde.
+	 * @param successful	War die Simulation erfolgreich?
+	 * @see #setSimulator(Simulator, Runnable)
+	 * @see UpdateInfoTask
+	 */
 	private void finalizeSimulation(final boolean successful) {
 		if (timer!=null) timer.cancel();
 		simulationSuccessful=successful;
@@ -189,6 +200,10 @@ public class WaitPanel extends JPanel {
 		if (simulationDone!=null) SwingUtilities.invokeLater(simulationDone);
 	}
 
+	/**
+	 * Aktualisiert in regelm‰ﬂigen Abst‰nden die Anzeige
+	 * @see WaitPanel#setSimulator(Simulator, Runnable)
+	 */
 	private class UpdateInfoTask extends TimerTask {
 		@Override
 		public void run() {

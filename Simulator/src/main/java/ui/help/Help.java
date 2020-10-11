@@ -40,6 +40,12 @@ public class Help extends HelpBase {
 	/** Hilfeseite "Modelle vergleichen" */
 	public static final String pageCompare="compare";
 
+	/**
+	 * Konstruktor der Klasse
+	 * @param parent	Übergeordnetes Element
+	 * @param topic	Anzuzeigende Hilfeseite
+	 * @param modal	Modeler Dialog (<code>true</code>) oder normales Fenster (<code>false</code>)
+	 */
 	private Help(final Container parent, final String topic, final boolean modal) {
 		super(parent,topic,modal);
 	}
@@ -68,6 +74,7 @@ public class Help extends HelpBase {
 		new Help(parent,topic,true);
 	}
 
+	/** Listener, der aufgerufen wird, wenn ein spezieller Link (beginnend mit "special:") angeklickt wird */
 	private SpecialLinkListener specialLinkListener;
 
 	/**

@@ -21,6 +21,7 @@ import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +47,10 @@ import xml.XMLTools;
  * @author Alexander Herzog
  */
 public class CompareSelectDialog extends BaseDialog  {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = -5204836029062935247L;
 
 	/**
@@ -166,6 +171,11 @@ public class CompareSelectDialog extends BaseDialog  {
 		statisticFiles=files.toArray(new File[0]);
 	}
 
+	/**
+	 * Ruft den Dialog zur Auswahl einer Statistikdatei auf
+	 * @param initialFolder	Anfänglich zu selektierender Ordner
+	 * @return	Dateiname oder <code>null</code>, wenn die Auswahl abgebrochen wurde
+	 */
 	private final File selectFile(File initialFolder) {
 		File file=XMLTools.showLoadDialog(getParent(),Language.tr("Compare.LoadStatisticData"),initialFolder);
 		if (file==null) return null;
@@ -179,6 +189,9 @@ public class CompareSelectDialog extends BaseDialog  {
 		return file;
 	}
 
+	/**
+	 * Reagiert auf Auswahl-Schaltflächen-Klicks und auf Drag&amp;drop-Operationen
+	 */
 	private final class ButtonListener implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {

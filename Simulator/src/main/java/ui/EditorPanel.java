@@ -19,6 +19,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.URL;
 
 import javax.swing.Box;
@@ -46,6 +47,10 @@ import ui.images.Images;
  * @author Alexander Herzog
  */
 public final class EditorPanel extends EditorPanelBase {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = 871808238984135272L;
 
 	/* Allgemeines */
@@ -330,6 +335,10 @@ public final class EditorPanel extends EditorPanelBase {
 		infoParent.setVisible(visible);
 	}
 
+	/**
+	 * Aktualisiert den Text im rechten Info-Panel
+	 * gem‰ﬂ der gew‰hlten Dialogseite.
+	 */
 	private void updateInfoPanelText() {
 		String page=null;
 

@@ -20,6 +20,7 @@ import java.awt.Component;
 import java.awt.FlowLayout;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,6 +52,10 @@ import ui.images.Images;
  * @author Alexander Herzog
  */
 public class SetupDialog extends BaseDialog {
+	/**
+	 * Serialisierungs-ID der Klasse
+	 * @see Serializable
+	 */
 	private static final long serialVersionUID = 8167759839522880144L;
 
 	/** Sprache für die Benutzeroberfläche */

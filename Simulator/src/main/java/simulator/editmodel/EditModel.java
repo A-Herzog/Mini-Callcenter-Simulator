@@ -54,6 +54,10 @@ public class EditModel extends EditModelBase implements Cloneable {
 		/** Name der Bedienreihenfolge zum Laden/Speichern in xml-Dateien */
 		public final String xmlName;
 
+		/**
+		 * Konstruktor des Enum
+		 * @param xmlName	Name der Bedienreihenfolge zum Laden/Speichern in xml-Dateien
+		 */
 		QueueMode(final String xmlName) {
 			this.xmlName=xmlName;
 		}

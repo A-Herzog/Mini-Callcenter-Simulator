@@ -27,7 +27,9 @@ import systemtools.statistics.StatisticViewerPieChart;
  * @author Alexander Herzog
  */
 public class ViewerPieChart extends StatisticViewerPieChart {
+	/** Statistikobjekt, aus dem die anzuzeigenden Daten entnommen werden sollen */
 	private final Statistics statistics;
+	/** Gibt an, welche Daten genau ausgegeben werden sollen */
 	private final Mode mode;
 
 	/**
@@ -53,6 +55,11 @@ public class ViewerPieChart extends StatisticViewerPieChart {
 		this.mode=mode;
 	}
 
+	/**
+	 * Anzeige der Anruf-Anteile (Erstanrufer, Wiederholer, Weiterleitungen)
+	 * @see Mode#MODE_CALLER
+	 * @see #firstChartRequest()
+	 */
 	private void buildCallerCount() {
 		initPieChart("Anruferanteile");
 		addPieSegment(String.format("%s "+Language.tr("SimStatistic.FreshCalls"),NumberTools.formatLong(statistics.freshCalls.get())),statistics.freshCalls.get());
@@ -60,6 +67,11 @@ public class ViewerPieChart extends StatisticViewerPieChart {
 		addPieSegment(String.format("%s "+Language.tr("SimStatistic.Retryer"),NumberTools.formatLong(statistics.callRetry.getSuccess())),statistics.callRetry.getSuccess());
 	}
 
+	/**
+	 * Anzeige der Aufteilung der Zeit für die Agenten (Leerlauf, Teillast, Volllast)
+	 * @see Mode#MODE_WORKLOAD
+	 * @see #firstChartRequest()
+	 */
 	private void buildWorkLoad() {
 		initPieChart("Lastanteile");
 		DataDistributionImpl dist=statistics.busyAgents.getDistribution();

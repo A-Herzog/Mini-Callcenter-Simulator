@@ -30,7 +30,9 @@ import systemtools.statistics.StatisticViewerLineChart;
  * @author Alexander Herzog
  */
 public class ViewerLineChart extends StatisticViewerLineChart {
+	/** Statistikobjekt, aus dem die anzuzeigenden Daten entnommen werden sollen */
 	private final Statistics statistics;
+	/** Gibt an, welche Daten genau ausgegeben werden sollen */
 	private final Mode mode;
 
 	/**
@@ -72,6 +74,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		this.mode=mode;
 	}
 
+	/**
+	 * Verteilung der Zwischenankunftszeiten
+	 * @see Mode#MODE_INTERARRIVALTIMES
+	 * @see #firstChartRequest()
+	 */
 	private void buildInterArrivalTimes() {
 		initLineChart(Language.tr("Statistics.DistributionOfTheInterArrivalTimes"));
 		setupChartTimePercent(Language.tr("Statistics.DistributionOfTheInterArrivalTimes"),Language.tr("Statistics.Distance"),Language.tr("Statistics.Part"));
@@ -80,6 +87,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Zwischenabgangszeiten
+	 * @see Mode#MODE_INTERLEAVETIMES
+	 * @see #firstChartRequest()
+	 */
 	private void buildInterLeaveTimes() {
 		initLineChart(Language.tr("Statistics.DistributionOfTheInterLeaveTimes"));
 		setupChartTimePercent(Language.tr("Statistics.DistributionOfTheInterLeaveTimes"),Language.tr("Statistics.Distance"),Language.tr("Statistics.Part"));
@@ -88,6 +100,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Wartezeiten der erfolgreichen Kunden
+	 * @see Mode#MODE_WAITINGTIMES_SUCCESS
+	 * @see #firstChartRequest()
+	 */
 	private void buildWaitingTimesSuccess() {
 		initLineChart(Language.tr("SimStatistic.WaitingTimes.Distribution.Successful"));
 		setupChartTimePercent(Language.tr("SimStatistic.WaitingTimes.Distribution.Successful"),Language.tr("SimStatistic.WaitingTime"),Language.tr("Statistics.Part"));
@@ -96,6 +113,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Abbruchzeiten
+	 * @see Mode#MODE_WAITINGTIMES_CANCEL
+	 * @see #firstChartRequest()
+	 */
 	private void buildWaitingTimesCancel() {
 		initLineChart(Language.tr("SimStatistic.CancelationTimes.Distribution"));
 		setupChartTimePercent(Language.tr("SimStatistic.CancelationTimes.Distribution"),Language.tr("SimStatistic.CancelTime"),Language.tr("Statistics.Part"));
@@ -104,6 +126,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Wartezeiten über alle Kunden
+	 * @see Mode#MODE_WAITINGTIMES_ALL
+	 * @see #firstChartRequest()
+	 */
 	private void buildWaitingTimesAll() {
 		initLineChart(Language.tr("SimStatistic.WaitingCancelationTimes.Distribution"));
 		setupChartTimePercent(Language.tr("SimStatistic.WaitingCancelationTimes.Distribution"),Language.tr("SimStatistic.WaitingCancelationTimes"),Language.tr("Statistics.Part"));
@@ -112,6 +139,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Bedienzeiten
+	 * @see Mode#MODE_WORKINGTIMES
+	 * @see #firstChartRequest()
+	 */
 	private void buildWorkingTimes() {
 		initLineChart(Language.tr("Statistics.DistributionOfTheProcessTimes"));
 		setupChartTimePercent(Language.tr("Statistics.DistributionOfTheProcessTimes"),Language.tr("Statistics.ProcessTime"),Language.tr("Statistics.Part"));
@@ -120,6 +152,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Nachbearbeitungszeiten
+	 * @see Mode#MODE_POSTPROCESSINGTIMES
+	 * @see #firstChartRequest()
+	 */
 	private void buildPostProcessingTimes() {
 		initLineChart(Language.tr("Statistics.DistributionOfThePostProcessTimes"));
 		setupChartTimePercent(Language.tr("Statistics.DistributionOfThePostProcessTimes"),Language.tr("SimStatistic.PostProcessingTime"),Language.tr("Statistics.Part"));
@@ -128,6 +165,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Verweilzeiten der erfolgreichen Kunden
+	 * @see Mode#MODE_SYSTEMTIMES_SUCCESS
+	 * @see #firstChartRequest()
+	 */
 	private void buildSystemTimesSuccess() {
 		initLineChart(Language.tr("Statistics.ResidenceTimes.Distribution.Successful"));
 		setupChartTimePercent(Language.tr("Statistics.ResidenceTimes.Distribution.Successful"),Language.tr("SimStatistic.ResidenceTime"),Language.tr("Statistics.Part"));
@@ -136,6 +178,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Verteilung der Verweilzeiten über alle Kunden
+	 * @see Mode#MODE_SYSTEMTIMES_ALL
+	 * @see #firstChartRequest()
+	 */
 	private void buildSystemTimesAll() {
 		initLineChart(Language.tr("Statistics.ResidenceTimes.Distribution.All"));
 		setupChartTimePercent(Language.tr("Statistics.ResidenceTimes.Distribution.All"),Language.tr("SimStatistic.ResidenceTime"),Language.tr("Statistics.Part"));
@@ -144,6 +191,13 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		initTooltips();
 	}
 
+	/**
+	 * Fügt eine Autokorrelations-Reihe zu einem Diagramm hinzu
+	 * @param indicator	Datenreihe
+	 * @param name	Name der Datenreihe
+	 * @param color	Farbe für die Datenreihe
+	 * @see #buildAutoCorrelation()
+	 */
 	private void addAutoCorrelationSeries(final StatisticsDataPerformanceIndicator indicator, final String name, final Color color) {
 		if (!indicator.isCorrelationAvailable()) return;
 
@@ -156,6 +210,11 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 		series.fireSeriesChanged();
 	}
 
+	/**
+	 * Autokorrelation der Wartezeiten
+	 * @see Mode#MODE_AUTOCORRELATION
+	 * @see #firstChartRequest()
+	 */
 	private void buildAutoCorrelation() {
 		initLineChart(Language.tr("Statistics.AutoCorrelation.WaitingTimes"));
 		setupChartValuePercent(Language.tr("Statistics.AutoCorrelation.WaitingTimes"),Language.tr("Statistics.AutoCorrelation.Distance"),Language.tr("Statistics.AutoCorrelation"));
