@@ -541,6 +541,13 @@ public class MainPanel extends MainPanelBase {
 		return isDiscardModelOk();
 	}
 
+	/**
+	 * Versucht das Modell oder Statistikdaten aus einem Stream zu laden
+	 * @param file	Datei der die Daten entstammen
+	 * @param stream	Input-Stream aus dem die Daten geladen werden sollen
+	 * @return	Liefert <code>true</code>, wenn der Ladevorgang erfolgreich war
+	 * @see #processBase64ModelData(File, String)
+	 */
 	private boolean loadFromStream(final File file, final InputStream stream) {
 		if (!isDiscardModelOk()) return true;
 
@@ -564,6 +571,13 @@ public class MainPanel extends MainPanelBase {
 		return false;
 	}
 
+	/**
+	 * Versucht das Modell oder Statistikdaten aus base64 encodierten Daten zu laden
+	 * @param file	Datei der die Daten entstammen
+	 * @param base64data	base64 codierte Daten
+	 * @return	Liefert <code>true</code>, wenn der Ladevorgang erfolgreich war
+	 * @see #tryLoadHTML(File)
+	 */
 	private boolean processBase64ModelData(final File file, final String base64data) {
 		try {
 			final ByteArrayInputStream in=new ByteArrayInputStream(Base64.getDecoder().decode(base64data));
@@ -571,6 +585,11 @@ public class MainPanel extends MainPanelBase {
 		} catch (IllegalArgumentException e) {return false;}
 	}
 
+	/**
+	 * Versucht das Modell oder Statistikdaten aus HTML-Daten zu laden
+	 * @param file	Zu ladende Datei
+	 * @return	Liefert <code>true</code>, wenn der Ladevorgang erfolgreich war
+	 */
 	private boolean tryLoadHTML(final File file) {
 		boolean firstLine=true;
 		boolean modelDataFollow=false;
@@ -586,7 +605,7 @@ public class MainPanel extends MainPanelBase {
 					if (!line.trim().startsWith("data:application/xml;base64,")) return false;
 					return processBase64ModelData(file,line.trim().substring("data:application/xml;base64,".length()));
 				} else {
-					if (line.trim().equalsIgnoreCase("CSModel")) modelDataFollow=true;
+					if (line.trim().equalsIgnoreCase("QSModel")) modelDataFollow=true;
 				}
 			}
 			firstLine=false;

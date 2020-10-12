@@ -320,7 +320,9 @@ public class ExportQSModel {
 	private static class EdgeData {
 		/** ID der Zielstation */
 		public final int destinationStationID;
+		/** Zusätzliche Daten die bei der xml-Ausgabe in den Verbindungskante-Knoten geschrieben werden */
 		public final String info;
+		/** ID der Verbindungskante */
 		public int edgeId;
 
 		/**
@@ -336,6 +338,7 @@ public class ExportQSModel {
 		/**
 		 * Konstruktor der Klasse
 		 * @param destinationStationID	ID der Zielstation
+		 * @param info	Zusätzliche Daten die bei der xml-Ausgabe in den Verbindungskante-Knoten geschrieben werden
 		 */
 		public EdgeData(final int destinationStationID, final String info) {
 			this.destinationStationID=destinationStationID;
@@ -384,6 +387,13 @@ public class ExportQSModel {
 			this(pos,new Point(100,50),type,id);
 		}
 
+		/**
+		 * Schreibt die Daten zu der Station in ein xml-Modell
+		 * @param result	Hält das xml-Modell als Zeichenkette vor
+		 * @param nextId	Aktuell nächste freie ID
+		 * @param allStations	Liste mit allen Stationen des Modells (zur Verbindung mit einlaufenden Kanten)
+		 * @return	Nächste freie ID nach Verarbeitung durch diese Methode
+		 */
 		public final int write(final StringBuilder result, int nextId, final List<StationBase> allStations) {
 			result.append("  <"+type+" "+Language.tr("QSExport.xml.id")+"=\""+id+"\">\n");
 			result.append("    <"+Language.tr("QSExport.xml.Size")+" h=\""+size.y+"\" w=\""+size.x+"\" x=\""+pos.x+"\" y=\""+pos.y+"\"/>\n");
@@ -412,25 +422,55 @@ public class ExportQSModel {
 			return nextId;
 		}
 
+		/**
+		 * Kann in abgeleiteten Klassen überschrieben werden, um weitere Inhalte als
+		 * Unterelemente in den xml-Knoten für die Station zu schreiben.
+		 * @param result	Hält das xml-Modell als Zeichenkette vor
+		 */
 		protected void writeData(final StringBuilder result) {
 		}
 
+		/**
+		 * Fügt eine neue Verbindungskante zu der Liste der aus der Station auslaufenden Kanten hinzu
+		 * @param station	Zielstation
+		 * @param info	Zusätzliche Daten die bei der xml-Ausgabe in den Verbindungskante-Knoten geschrieben werden
+		 */
 		public void addEdgeTo(final StationBase station, final String info) {
 			edgesTo.add(new EdgeData(station.id,info));
 		}
 
+		/**
+		 * Fügt eine neue Verbindungskante zu der Liste der aus der Station auslaufenden Kanten hinzu
+		 * @param station	Zielstation
+		 */
 		public void addEdgeTo(final StationBase station) {
 			edgesTo.add(new EdgeData(station.id));
 		}
 
+		/**
+		 * Fügt eine neue Verbindungskante zu der Liste der aus der Station auslaufenden Kanten hinzu
+		 * @param stationId	ID der Zielstation
+		 * @param info	Zusätzliche Daten die bei der xml-Ausgabe in den Verbindungskante-Knoten geschrieben werden
+		 */
 		public void addEdgeTo(final int stationId, final String info) {
 			edgesTo.add(new EdgeData(stationId,info));
 		}
 	}
 
+	/**
+	 * Datensatz für eine Textausgabe
+	 * @see StationBase
+	 */
 	private static class StationTitle extends StationBase {
+		/** Anzuzeigender Text */
 		private final String text;
 
+		/**
+		 * Konstruktor der Klasse
+		 * @param pos	Position auf der Zeichenfläche
+		 * @param id	ID der Station
+		 * @param text	Anzuzeigender Text
+		 */
 		public StationTitle(final Point pos, final int id, final String text) {
 			super(pos,new Point(119,19),Language.tr("QSExport.xml.Element.Text"),id);
 			this.text=text;
@@ -479,9 +519,18 @@ public class ExportQSModel {
 	 * @see StationWithName
 	 */
 	private static class StationSource extends StationWithName {
+		/** Verteilung der Zwischenankunftszeiten */
 		private final AbstractRealDistribution dist;
+		/** Ankunfts-Batch-Größe */
 		private final int batch;
 
+		/**
+		 * Konstruktor der Klasse
+		 * @param pos	Position auf der Zeichenfläche
+		 * @param id	ID der Station
+		 * @param dist	Verteilung der Zwischenankunftszeiten
+		 * @param batch	Ankunfts-Batch-Größe
+		 */
 		public StationSource(final Point pos, final int id, final AbstractRealDistribution dist, final int batch) {
 			super(pos,Language.tr("QSExport.xml.Element.Source"),id,Language.tr("QSExport.Name.Caller"));
 			this.dist=dist;
@@ -516,12 +565,27 @@ public class ExportQSModel {
 	 * @see StationWithName
 	 */
 	private static class StationProcess extends StationWithName {
+		/** Wartezeittoleranzverteilung (kann <code>null</code> sein) */
 		private final AbstractRealDistribution cancelDist;
+		/** Bedienzeitenverteilung */
 		private final AbstractRealDistribution dist;
+		/** Nachbearbeitungszeizenverteilung (kann <code>null</code> sein) */
 		private final AbstractRealDistribution postProcessDist;
+		/** Bedien-Batch-Größe */
 		private final int batch;
+		/** LIFO (<code>true</code>) statt normalem FIFO (<code>false</code>) Modus? */
 		private final boolean LIFO;
 
+		/**
+		 * Konstruktor der Klasse
+		 * @param pos	Position auf der Zeichenfläche
+		 * @param id	ID der Station
+		 * @param LIFO	LIFO (<code>true</code>) statt normalem FIFO (<code>false</code>) Modus?
+		 * @param cancelDist	Wartezeittoleranzverteilung (kann <code>null</code> sein)
+		 * @param dist	Bedienzeitenverteilung
+		 * @param postProcessDist	Nachbearbeitungszeizenverteilung (kann <code>null</code> sein)
+		 * @param batch	Bedien-Batch-Größe
+		 */
 		public StationProcess(final Point pos, final int id, final boolean LIFO, final AbstractRealDistribution cancelDist, final AbstractRealDistribution dist, final AbstractRealDistribution postProcessDist, final int batch) {
 			super(pos,Language.tr("QSExport.xml.Element.Process"),id,Language.tr("QSExport.Name.CallCenter"));
 			this.LIFO=LIFO;
@@ -569,6 +633,13 @@ public class ExportQSModel {
 		 */
 		private Mode mode;
 
+		/**
+		 * Konstruktor der Klasse
+		 * @param pos	Position auf der Zeichenfläche
+		 * @param id	ID der Station
+		 * @param name	Name der Station
+		 * @param mode	Verzweigemodus
+		 */
 		public StationDecide(final Point pos, final int id, final String name, final Mode mode) {
 			super(pos,Language.tr("QSExport.xml.Element.Decide"),id,name);
 			this.mode=mode;
@@ -593,6 +664,11 @@ public class ExportQSModel {
 	 * @see StationBase
 	 */
 	private static class StationVertex extends StationBase {
+		/**
+		 * Konstruktor der Klasse
+		 * @param pos	Position auf der Zeichenfläche
+		 * @param id	ID der Station
+		 */
 		public StationVertex(final Point pos, final int id) {
 			super(pos,new Point(10,10),Language.tr("QSExport.xml.Element.Vertex"),id);
 		}
@@ -603,8 +679,16 @@ public class ExportQSModel {
 	 * @see StationWithName
 	 */
 	private static class StationDelay extends StationWithName {
+		/** Verzögerungszeitenverteilung */
 		private final AbstractRealDistribution dist;
 
+		/**
+		 * Konstruktor der Klasse
+		 * @param pos	Position auf der Zeichenfläche
+		 * @param id	ID der Station
+		 * @param name	Name der Station
+		 * @param dist	Verzögerungszeitenverteilung
+		 */
 		public StationDelay(final Point pos, final int id, final String name, final AbstractRealDistribution dist) {
 			super(pos,Language.tr("QSExport.xml.Element.Delay"),id,name);
 			this.dist=dist;
@@ -622,8 +706,16 @@ public class ExportQSModel {
 	 * @see StationWithName
 	 */
 	private static class StationCounter extends StationWithName {
+		/** Name der Zählergruppe */
 		private final String group;
 
+		/**
+		 * Konstruktor der Klasse
+		 * @param pos	Position auf der Zeichenfläche
+		 * @param id	ID der Station
+		 * @param name	Name der Station
+		 * @param group	Name der Zählergruppe
+		 */
 		public StationCounter(final Point pos, final int id, final String name, final String group) {
 			super(pos,Language.tr("QSExport.xml.Element.Counter"),id,name);
 			this.group=group;
