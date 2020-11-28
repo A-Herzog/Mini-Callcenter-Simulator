@@ -680,6 +680,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1577] = "calls";
     t[1578] = "Color.FFD700";
     t[1579] = "Gold";
+    t[1582] = "SettingsDialog.Tabs.Statistics.OpenPDF";
+    t[1583] = "Open results as pdf files";
     t[1584] = "Simulator.Log.CallDone1Event.Info";
     t[1585] = "Serving of %d clients finished.";
     t[1590] = "Compare.Kept.Info";
@@ -2008,14 +2010,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4757] = "SciLab script";
     t[4760] = "Editor.CollectCorrelation";
     t[4761] = "Record autocorrelation of the waiting times";
-    t[4762] = "Color.1E90FF";
-    t[4763] = "Dodger blue";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4762] = "Color.1E90FF";
+    t[4763] = "Dodger blue";
     t[4764] = "Compare.ReplaceKeptModel.Info";
     t[4765] = "There is already a model which is kept for comparison. Do you want to replace the kept model by the current model?";
     t[4768] = "DistributionFitter.ValueRange";

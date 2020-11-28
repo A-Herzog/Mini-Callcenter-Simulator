@@ -79,6 +79,8 @@ public class SetupDialog extends BaseDialog {
 	private final JCheckBox openExcel;
 	/** Anbieten, Statistik-Tabellen in Open/LibreOffice zu öffnen? */
 	private final JCheckBox openODS;
+	/** Anbieten, Statistik-Ergebnisse als PDF zu öffnen? */
+	private final JCheckBox openPDF;
 
 	/**
 	 * Konstruktor der Klasse
@@ -170,6 +172,9 @@ public class SetupDialog extends BaseDialog {
 		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
 		p.add(openODS=new JCheckBox(Language.tr("SettingsDialog.Tabs.Statistics.OpenODS")));
 
+		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
+		p.add(openPDF=new JCheckBox(Language.tr("SettingsDialog.Tabs.Statistics.OpenPDF")));
+
 		/* Icons auf den Tabreitern einfügen */
 
 		tabs.setIconAt(0,Images.SETUP_PAGE_APPLICATION.getIcon());
@@ -204,6 +209,7 @@ public class SetupDialog extends BaseDialog {
 		openODT.setSelected(setup.openODT);
 		openExcel.setSelected(setup.openExcel);
 		openODS.setSelected(setup.openODS);
+		openPDF.setSelected(setup.openPDF);
 
 		/* Dialog anzeigen */
 
@@ -246,6 +252,7 @@ public class SetupDialog extends BaseDialog {
 		setup.openODT=openODT.isSelected();
 		setup.openExcel=openExcel.isSelected();
 		setup.openODS=openODS.isSelected();
+		setup.openPDF=openPDF.isSelected();
 
 		setup.saveSetupWithWarning(this);
 	}

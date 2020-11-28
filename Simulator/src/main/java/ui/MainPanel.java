@@ -1209,6 +1209,7 @@ public class MainPanel extends MainPanelBase {
 		if (setup.openODT) StatisticsBasePanel.viewerPrograms.add(StatisticsBasePanel.ViewerPrograms.ODT);
 		if (setup.openExcel) StatisticsBasePanel.viewerPrograms.add(StatisticsBasePanel.ViewerPrograms.EXCEL);
 		if (setup.openODS) StatisticsBasePanel.viewerPrograms.add(StatisticsBasePanel.ViewerPrograms.ODS);
+		if (setup.openPDF) StatisticsBasePanel.viewerPrograms.add(StatisticsBasePanel.ViewerPrograms.PDF);
 	}
 
 	/**
