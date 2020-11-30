@@ -1,8 +1,12 @@
+###################################################
+# Library for calculating Erlang C formula values #
+###################################################
+
 #
-# Allgemeine Hilfsfunktionen
+# General helper function
 #
 
-# Berechnet x^n/n!
+# Calculates x^n/n!
 PotenzFakultaet <- function(x, n) {
   if (n==0) return(1);
   return(prod(x/(1:n)));
@@ -11,10 +15,10 @@ PotenzFakultaet <- function(x, n) {
 
 
 #
-# M/M/c-System
+# M/M/c system
 #
 
-# Berechnet p0 für ein M/M/c-System
+# Calculates p0 for a M/M/c system
 MMcZustandsP0 <- function(a, c) {
   Ergebnis=0;
   for (K in 0:(c-1)) {
@@ -24,47 +28,47 @@ MMcZustandsP0 <- function(a, c) {
   if (Ergebnis>0) return(1/Ergebnis) else return(0);
 }
 
-# Berechnet pn für ein M/M/c-System
+# Calculates pn for a M/M/c system
 MMcZustandsP <- function(a, c, n) {
   if (n==0) return(MMcZustandsP0(a,c));
   if (n<=c) return(PotenzFakultaet(a,n)*MMcZustandsP0(a,c));
   return(PotenzFakultaet(a,c)*(a/c)^(n-c)*MMcZustandsP0(a,c));
 }
 
-# Berechnet P1 für ein M/M/c-System
+# Calculates P1 for a M/M/c system
 ErlangC_P1 <- function(a, c) {
   return(PotenzFakultaet(a,c)*c/(c-a)*MMcZustandsP0(a,c));
 }
 
-# Berechnet P(W<=t) für ein M/M/c-System (also die Erlang-C-Formel)
+# Calculates P(W<=t) for a M/M/c system (this means this is the Erlang C formula)
 ErlangC <- function(lambda, mu, c, t) {
   a=lambda/mu;
   if (a>=c) return(0);
   return(1-ErlangC_P1(a,c)*exp(-(c-a)*mu*t));
 }
 
-# Berechnet E[NQ] für ein M/M/c/-System
+# Calculates E[NQ] for a M/M/c system
 ErlangC_ENQ <- function(lambda, mu, c) {
   a=lambda/mu;
   if (a>=c) return(0);
   return(ErlangC_P1(a,c)*a/(c-a));
 }
 
-# Berechnet E[N] für ein M/M/c/-System
+# Calculates E[N] for a M/M/c system
 ErlangC_EN <- function(lambda, mu, c) {
   a=lambda/mu;
   if (a>=c) return(0);
   return(ErlangC_P1(a,c)*a/(c-a)+a);
 }
 
-# Berechnet E[W] für ein M/M/c/-System
+# Calculates E[W] for a M/M/c system
 ErlangC_EW <- function(lambda, mu, c) {
   a=lambda/mu;
   if (a>=c) return(0);
   return(ErlangC_P1(a,c)/(c*mu-lambda));
 }
 
-# Berechnet E[V] für ein M/M/c/-System
+# Calculates E[V] for a M/M/c system
 ErlangC_EV <- function(lambda, mu, c) {
   a=lambda/mu;
   if (a>=c) return(0);
@@ -74,10 +78,10 @@ ErlangC_EV <- function(lambda, mu, c) {
 
 
 #
-# M/M/c/c - System
+# M/M/c/c system
 #
 
-# Berechnung von P1 für ein M/M/c/c-System (d.h. Berechnung der Erlang-B-Formel)
+# Calculation of P1 for a M/M/c/c system (this means this is the Erlang B formula)
 ErlangB <- function(a, c) {
   Summe = 0
   for (n in 0:c) {
@@ -89,10 +93,10 @@ ErlangB <- function(a, c) {
 
 
 #
-# M/M/c/K + M - System
+# M/M/c/K + M system
 #
 
-# Berechnung von Cn für ein M/M/c/K+M-System
+# Calculation of Cn for a M/M/c/K+M system
 MMcKMCn <- function(lambda, mu, nu, c, n) {
   if (n<=c) return(PotenzFakultaet(lambda/mu,n));
   
@@ -103,7 +107,7 @@ MMcKMCn <- function(lambda, mu, nu, c, n) {
   return(Ergebnis);
 }
 
-# Berechnet pn für ein M/M/c/K+M-System
+# Calculates pn for a M/M/c/K+M system
 MMcKMZustandsP <- function (lambda, mu, nu, c, K, n) {
   p0=0
   for (i in 0:K) {
@@ -116,7 +120,7 @@ MMcKMZustandsP <- function (lambda, mu, nu, c, K, n) {
   return(MMcKMCn(lambda,mu,nu,c,n)*p0);
 }
 
-# Berechnet P(A) für ein M/M/c/K+M-System
+# Calculates P(A) for a M/M/c/K+M system
 ErwErlangC_PA <- function(lambda, mu, nu, c, K) {
   p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
   Summe=0;
@@ -126,7 +130,7 @@ ErwErlangC_PA <- function(lambda, mu, nu, c, K) {
   return(Summe);
 }
 
-# Berechnung von P(W<=t) für ein M/M/c/K+M-System (also die erweiterte Erlang-C-Formel)
+# Calculation of P(W<=t) for a M/M/c/K+M system (this means this is the extended Erlang C formula)
 ErwErlangC <- function (lambda, mu, nu, c, K, t) {
   p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
 
@@ -142,7 +146,7 @@ ErwErlangC <- function (lambda, mu, nu, c, K, t) {
   return(p);
 }
 
-# Berechnet E[NQ] für ein M/M/c/K+M-System
+# Calculates E[NQ] for a M/M/c/K+M system
 ErwErlangC_ENQ <- function(lambda, mu, nu, c, K) {
   p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
   Summe=0;
@@ -152,7 +156,7 @@ ErwErlangC_ENQ <- function(lambda, mu, nu, c, K) {
   return(Summe);
 }
 
-# Berechnet E[N] für ein M/M/c/K+M-System
+# Calculates E[N] for a M/M/c/K+M system
 ErwErlangC_EN <- function(lambda, mu, nu, c, K) {
   p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
   Summe=0;
@@ -162,12 +166,12 @@ ErwErlangC_EN <- function(lambda, mu, nu, c, K) {
   return(Summe);
 }
 
-# Berechnet E[W] für ein M/M/c/K+M-System
+# Calculates E[W] for a M/M/c/K+M system
 ErwErlangC_EW <- function(lambda, mu, nu, c, K) {
   return(ErwErlangC_ENQ(lambda,mu,nu,c,K)/lambda);
 }
 
-# Berechnet E[V] für ein M/M/c/K+M-System
+# Calculates E[V] for a M/M/c/K+M system
 ErwErlangC_EV <- function(lambda, mu, nu, c, K) {
   return(ErwErlangC_EN(lambda,mu,nu,c,K)/lambda);
 }

@@ -1,3 +1,7 @@
+/*
+ * Library for calculating Erlang C formula values
+ */
+
 'use strict';
 
 var jStat=require('./jstat.min.js'); /* https://github.com/jstat/jstat */
@@ -5,10 +9,10 @@ var jStat=require('./jstat.min.js'); /* https://github.com/jstat/jstat */
 
 
 /*
- * Allgemeine Hilfsfunktionen
+ * General helper function
  */
 
-/* Berechnet x^n/n! */
+/* Calculates x^n/n! */
 function PotenzFakultaet(x,n) {
   if (n==0) return 1;
   let prod=1;
@@ -19,10 +23,10 @@ function PotenzFakultaet(x,n) {
 
 
 /*
- * M/M/c-System
+ * M/M/c system
  */
 
-/* Berechnet p0 für ein M/M/c-System */
+/* Calculates p0 for a M/M/c system */
 function MMcZustandsP0(a,c) {
   let sum=0;
   for (let K=0;K<c;K++) sum+=PotenzFakultaet(a,K);
@@ -32,47 +36,47 @@ function MMcZustandsP0(a,c) {
   return 0
 }
 
-/* Berechnet pn für ein M/M/c-System */
+/* Calculates pn for a M/M/c system */
 function MMcZustandsP(a,c,n) {
   if (n==0) return MMcZustandsP0(a,c);
   if (n<=c) return PotenzFakultaet(a,n)*MMcZustandsP0(a,c);
   return PotenzFakultaet(a,c)*Math.pow(a/c,n-c)*MMcZustandsP0(a,c);
 }
 
-/* Berechnet P1 für ein M/M/c-System */
+/* Calculates P1 for a M/M/c system */
 function ErlangC_P1(a,c) {
     return PotenzFakultaet(a,c)*c/(c-a)*MMcZustandsP0(a,c);
 }
 
-/* Berechnet P(W<=t) für ein M/M/c-System (also die Erlang-C-Formel) */
+/* Calculates P(W<=t) for a M/M/c system (this means this is the Erlang C formula) */
 function ErlangC(lambda,mu,c,t) {
   const a=lambda/mu;
   if (a>=c) return 0;
   return 1-ErlangC_P1(a,c)*Math.exp(-(c-a)*mu*t);
 }
 
-/* Berechnet E[NQ] für ein M/M/c/-System */
+/* Calculates E[NQ] for a M/M/c system */
 function ErlangC_ENQ(lambda,mu,c) {
   const a=lambda/mu;
   if (a>=c) return 0;
   return ErlangC_P1(a,c)*a/(c-a);
 }
 
-/* Berechnet E[N] für ein M/M/c/-System */
+/* Calculates E[N] for a M/M/c system */
 function ErlangC_EN(lambda,mu,c) {
   const a=lambda/mu;
   if (a>=c) return 0;
   return ErlangC_P1(a,c)*a/(c-a)+a;
 }
 
-/* Berechnet E[W] für ein M/M/c/-System */
+/* Calculates E[W] for a M/M/c system */
 function ErlangC_EW(lambda,mu,c) {
   const a=lambda/mu;
   if (a>=c) return 0;
   return ErlangC_P1(a,c)/(c*mu-lambda);
 }
 
-/* Berechnet E[V] für ein M/M/c/-System */
+/* Calculates E[V] for a M/M/c system */
 function ErlangC_EV(lambda,mu,c) {
   const a=lambda/mu;
   if (a>=c) return 0;
@@ -82,10 +86,10 @@ function ErlangC_EV(lambda,mu,c) {
 
 
 /*
- * M/M/c/c - System
+ * M/M/c/c system
  */
 
-/* Berechnung von P1 für ein M/M/c/c-System (d.h. Berechnung der Erlang-B-Formel) */
+/* Calculation of P1 for a M/M/c/c system (this means this is the Erlang B formula) */
 function ErlangB(a,c) {
   let sum=0;
   for (let n=0;n<=c;n++) sum+=PotenzFakultaet(a,n);
@@ -95,10 +99,10 @@ function ErlangB(a,c) {
 
 
 /*
- * M/M/c/K + M - System
+ * M/M/c/K + M system
  */
 
-/* Berechnung von Cn für ein M/M/c/K+M-System */
+/* Calculation of Cn for a M/M/c/K+M system */
 function MMcKMCn(lambda,mu,nu,c,n) {
   const a=lambda/mu;
   if (n<=c) return PotenzFakultaet(a,n);
@@ -107,7 +111,7 @@ function MMcKMCn(lambda,mu,nu,c,n) {
   return prod;
 }
 
-/* Berechnet pn für ein M/M/c/K+M-System */
+/* Calculates pn for a M/M/c/K+M system */
 function MMcKMZustandsP(lambda,mu,nu,c,K,n) {
   let p0=0;
   for (let i=0;i<=K;i++) p0+=MMcKMCn(lambda,mu,nu,c,i);
@@ -118,7 +122,7 @@ function MMcKMZustandsP(lambda,mu,nu,c,K,n) {
   return MMcKMCn(lambda,mu,nu,c,n)*p0;
 }
 
-/* Berechnet P(A) für ein M/M/c/K+M-System */
+/* Calculates P(A) for a M/M/c/K+M system */
 function ErwErlangC_PA(lambda,mu,nu,c,K) {
   const p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
   let sum=0;
@@ -126,7 +130,7 @@ function ErwErlangC_PA(lambda,mu,nu,c,K) {
   return sum;
 }
 
-/* Berechnung von P(W<=t) für ein M/M/c/K+M-System (also die erweiterte Erlang-C-Formel) */
+/* Calculation of P(W<=t) for a M/M/c/K+M system (this means this is the extended Erlang C formula) */
 function ErwErlangC(lambda,mu,nu,c,K,t) {
   const p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
 
@@ -136,10 +140,7 @@ function ErwErlangC(lambda,mu,nu,c,K,t) {
   for (let n=c;n<K;n++) {
     const a=n-c+1;
     const x=(c*mu+nu)*t;
-    //const g=1-gammainc(a,x);
-    //g=jStat.regularizedGammaQ(a,x);
     const g=jStat.lowRegGamma(a,x);
-    //g=regularizedGammaQ(n-c+1,(c*1.0/muInv+1.0/nuInv)*t/60);
 
     p-=p0*MMcKMCn(lambda,mu,nu,c,n)*g;
   }
@@ -147,7 +148,7 @@ function ErwErlangC(lambda,mu,nu,c,K,t) {
   return p;
 }
 
-/* Berechnet E[NQ] für ein M/M/c/K+M-System */
+/* Calculates E[NQ] for a M/M/c/K+M system */
 function ErwErlangC_ENQ(lambda,mu,nu,c,K) {
     const p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
     let sum=0;
@@ -155,7 +156,7 @@ function ErwErlangC_ENQ(lambda,mu,nu,c,K) {
     return sum;
 }
 
-/* Berechnet E[N] für ein M/M/c/K+M-System */
+/* Calculates E[N] for a M/M/c/K+M system */
 function ErwErlangC_EN(lambda,mu,nu,c,K) {
   const p0=MMcKMZustandsP(lambda,mu,nu,c,K,0);
   let sum=0;
@@ -163,12 +164,12 @@ function ErwErlangC_EN(lambda,mu,nu,c,K) {
   return sum;
 }
 
-/* Berechnet E[W] für ein M/M/c/K+M-System */
+/* Calculates E[W] for a M/M/c/K+M system */
 function ErwErlangC_EW(lambda,mu,nu,c,K) {
   return ErwErlangC_ENQ(lambda,mu,nu,c,K)/lambda;
 }
 
-/* Berechnet E[V] für ein M/M/c/K+M-System */
+/* Calculates E[V] for a M/M/c/K+M system */
 function  ErwErlangC_EV(lambda,mu,nu,c,K) {
   return ErwErlangC_EN(lambda,mu,nu,c,K)/lambda;
 }

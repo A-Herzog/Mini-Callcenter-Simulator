@@ -1,14 +1,18 @@
-from math import prod,exp
+###################################################
+# Library for calculating Erlang C formula values #
+###################################################
+
+from math import prod, exp
 from scipy.special import gammainc
 
 
 
 #
-# Allgemeine Hilfsfunktionen
+# General helper function
 #
 
-# Berechnet x^n/n!
-def PotenzFakultaet(x,n):
+# Calculates x^n/n!
+def PowerFactorial(x, n):
     if n==0:
         return 1
     return prod([x/i for i in range(1,n+1)])
@@ -16,59 +20,59 @@ def PotenzFakultaet(x,n):
 
 
 #
-# M/M/c-System
+# M/M/c system
 #
 
-# Berechnet p0 für ein M/M/c-System
-def MMcZustandsP0(a, c):
-    Ergebnis=sum([PotenzFakultaet(a,K) for K in range(0,c)])
-    Ergebnis=Ergebnis+PotenzFakultaet(a,c)*c/(c-a)
+# Calculates p0 for a M/M/c system
+def MMcStateP0(a, c):
+    Result=sum([PowerFactorial(a,K) for K in range(0,c)])
+    Result+=PowerFactorial(a,c)*c/(c-a)
 
-    if Ergebnis>0:
-        return 1/Ergebnis
+    if Result>0:
+        return 1/Result
     return 0
 
-# Berechnet pn für ein M/M/c-System
-def MMcZustandsP(a, c, n):
+# Calculates pn for a M/M/c system
+def MMcStateP(a, c, n):
     if n==0:
-        return MMcZustandsP0(a,c)
+        return MMcStateP0(a,c)
     if n<=c:
-        return PotenzFakultaet(a,n)*MMcZustandsP0(a,c)
-    return PotenzFakultaet(a,c)*(a/c)^(n-c)*MMcZustandsP0(a,c)
+        return PowerFactorial(a,n)*MMcStateP0(a,c)
+    return PowerFactorial(a,c)*(a/c)^(n-c)*MMcStateP0(a,c)
 
-# Berechnet P1 für ein M/M/c-System
+# Calculates P1 for a M/M/c system
 def ErlangC_P1(a, c):
-    return PotenzFakultaet(a,c)*c/(c-a)*MMcZustandsP0(a,c)
+    return PowerFactorial(a,c)*c/(c-a)*MMcStateP0(a,c)
 
-# Berechnet P(W<=t) für ein M/M/c-System (also die Erlang-C-Formel)
+# Calculates P(W<=t) for a M/M/c system (this means this is the Erlang C formula)
 def ErlangC(l, mu, c, t):
     a=l/mu
     if a>=c:
         return 0
     return 1-ErlangC_P1(a,c)*exp(-(c-a)*mu*t)
 
-# Berechnet E[NQ] für ein M/M/c/-System
+# Calculates E[NQ] for a M/M/c system
 def ErlangC_ENQ(l, mu, c):
     a=l/mu
     if a>=c:
         return 0
     return ErlangC_P1(a,c)*a/(c-a)
 
-# Berechnet E[N] für ein M/M/c/-System
+# Calculates E[N] for a M/M/c system
 def ErlangC_EN(l, mu, c):
     a=l/mu
     if a>=c:
         return 0
     return ErlangC_P1(a,c)*a/(c-a)+a
 
-# Berechnet E[W] für ein M/M/c/-System
+# Calculates E[W] for a M/M/c system
 def ErlangC_EW(l, mu, c):
     a=l/mu
     if a>=c:
         return 0
     return ErlangC_P1(a,c)/(c*mu-l)
 
-# Berechnet E[V] für ein M/M/c/-System
+# Calculates E[V] for a M/M/c system
 def ErlangC_EV(l, mu, c):
     a=l/mu
     if a>=c:
@@ -78,33 +82,33 @@ def ErlangC_EV(l, mu, c):
 
 
 #
-# M/M/c/c - System
+# M/M/c/c system
 #
 
-# Berechnung von P1 für ein M/M/c/c-System (d.h. Berechnung der Erlang-B-Formel)
+# Calculation of P1 for a M/M/c/c system (this means this is the Erlang B formula)
 def ErlangB(a, c):
-    Summe=sum([PotenzFakultaet(a,n) for n in range(0,c+1)])
-    return PotenzFakultaet(a,c)/Summe
+    partialSum=sum([PowerFactorial(a,n) for n in range(0,c+1)])
+    return PowerFactorial(a,c)/partialSum
 
 
 
 #
-# M/M/c/K + M - System
+# M/M/c/K + M system
 #
 
-# Berechnung von Cn für ein M/M/c/K+M-System
+# Calculation of Cn for a M/M/c/K+M system
 def MMcKMCn(l, mu, nu, c, n):
     if n<=c:
-        return PotenzFakultaet(l/mu,n)
+        return PowerFactorial(l/mu,n)
 
-    Ergebnis=PotenzFakultaet(l/mu,c)
+    Result=PowerFactorial(l/mu,c)
     for i in range(1,n-c+1):
-        Ergebnis=Ergebnis*l/(c*mu+i*nu)
+        Result=Result*l/(c*mu+i*nu)
 
-    return Ergebnis
+    return Result
 
-# Berechnet pn für ein M/M/c/K+M-System
-def MMcKMZustandsP(l, mu, nu, c, K, n):
+# Calculates pn for a M/M/c/K+M system
+def MMcKMStateP(l, mu, nu, c, K, n):
     p0=sum([MMcKMCn(l,mu,nu,c,i) for i in range(0,K+1)])
     p0=1/p0
 
@@ -115,14 +119,14 @@ def MMcKMZustandsP(l, mu, nu, c, K, n):
 
     return MMcKMCn(l,mu,nu,c,n)*p0
 
-# Berechnet P(A) für ein M/M/c/K+M-System
+# Calculates P(A) for a M/M/c/K+M system
 def ErwErlangC_PA(l, mu, nu, c, K):
-    p0=MMcKMZustandsP(l,mu,nu,c,K,0)
+    p0=MMcKMStateP(l,mu,nu,c,K,0)
     return sum([nu/l*(n-c)*p0*MMcKMCn(l,mu,nu,c,n) for n in range(c+1,K+1)])
 
-# Berechnung von P(W<=t) für ein M/M/c/K+M-System (also die erweiterte Erlang-C-Formel)
+# Calculation of P(W<=t) for a M/M/c/K+M system (this means this is the extended Erlang C formula)
 def ErwErlangC(l, mu, nu, c, K, t):
-    p0=MMcKMZustandsP(l,mu,nu,c,K,0)
+    p0=MMcKMStateP(l,mu,nu,c,K,0)
 
     if p0==0:
         p=1
@@ -137,20 +141,20 @@ def ErwErlangC(l, mu, nu, c, K, t):
 
     return p
 
-# Berechnet E[NQ] für ein M/M/c/K+M-System
+# Calculates E[NQ] for a M/M/c/K+M system
 def ErwErlangC_ENQ(l, mu, nu, c, K):
-    p0=MMcKMZustandsP(l,mu,nu,c,K,0)
+    p0=MMcKMStateP(l,mu,nu,c,K,0)
     return sum([p0*(n-c)*MMcKMCn(l,mu,nu,c,n) for n in range(c+1,K+1)])
 
-# Berechnet E[N] für ein M/M/c/K+M-System
+# Calculates E[N] for a M/M/c/K+M system
 def ErwErlangC_EN(l, mu, nu, c, K):
-    p0=MMcKMZustandsP(l,mu,nu,c,K,0)
+    p0=MMcKMStateP(l,mu,nu,c,K,0)
     return sum([p0*n*MMcKMCn(l,mu,nu,c,n) for n in range(1,K+1)])
 
-# Berechnet E[W] für ein M/M/c/K+M-System
+# Calculates E[W] for a M/M/c/K+M system
 def ErwErlangC_EW(l, mu, nu, c, K):
     return ErwErlangC_ENQ(l,mu,nu,c,K)/l
 
-# Berechnet E[V] für ein M/M/c/K+M-System
+# Calculates E[V] for a M/M/c/K+M system
 def ErwErlangC_EV(l, mu, nu, c, K):
     return ErwErlangC_EN(l,mu,nu,c,K)/l
