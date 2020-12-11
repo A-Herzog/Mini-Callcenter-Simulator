@@ -484,6 +484,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1097] = "Nenner";
     t[1106] = "SimStatistic.Info.MoreCallerThanFreshCalls";
     t[1107] = "Da die Anruferz\u00e4hlung erst nach der Einschwingphase, also zu einem Zeitpunkt,\nan dem die Warteschlange nicht leer sein muss, beginnt, k\u00f6nnen in der Statistik\nmehr bediente Anrufer als Erstanrufer auftreten.";
+    t[1108] = "CommandLine.Interactive.Name";
+    t[1109] = "Interaktiv";
     t[1110] = "Statistics.InterLeaveTime.lower";
     t[1111] = "Zwischenabgangszeit";
     t[1122] = "Editor.Retry";
@@ -924,6 +926,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2183] = "Warteraumgr\u00f6\u00dfe begrenzen auf";
     t[2184] = "Statistic.TimeShare";
     t[2185] = "Zeitanteil";
+    t[2188] = "CommandLine.Interactive.Ready";
+    t[2189] = "Bereit.";
     t[2196] = "Model.XML.WaitingRoomSize.Error";
     t[2197] = "Der angegebene Wert \"%s\" f\u00fcr die Gr\u00f6\u00dfe des Warteraums ist ung\u00fcltig. Es muss eine Ganzzahl angegeben werden.";
     t[2198] = "Statistics.XML.Count";
@@ -946,8 +950,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2235] = "Ung\u00fcltige Bildgr\u00f6\u00dfe angegeben";
     t[2246] = "Model.XML.RetryDistances.Error";
     t[2247] = "Die angegebene Verteilung der Wiederholabst\u00e4nde ist ung\u00fcltig.";
-    t[2248] = "SimStatistic.BatchService";
-    t[2249] = "Anzahl an Kunden die jeweils durch einen Agenten gleichzeitig bedient werden (Batch-Verarbeitung)";
+    t[2248] = "CommandLine.Interactive.Description.Short";
+    t[2249] = "Startet den interaktiven Modus.";
     t[2252] = "SimStatistic.ResidenceTime";
     t[2253] = "Verweilzeit";
     t[2268] = "Dialog.Title.Error";
@@ -1630,6 +1634,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3893] = "Warteschlangenl\u00e4nge";
     t[3896] = "QSExport.xml.Element.Decide.Mode";
     t[3897] = "ModellElementVerzweigungsmodus";
+    t[3900] = "SimStatistic.BatchService";
+    t[3901] = "Anzahl an Kunden die jeweils durch einen Agenten gleichzeitig bedient werden (Batch-Verarbeitung)";
     t[3912] = "Statistics.InterLeaveTimes";
     t[3913] = "Zwischenabgangszeiten";
     t[3914] = "Statistics.XML.Distribution";
@@ -1900,6 +1906,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4487] = "Ende der Einschwingphase; Statistik wird zur\u00fcckgesetzt.";
     t[4488] = "Distribution.NoDistribution";
     t[4489] = "Keine Verteilung angegeben";
+    t[4498] = "CommandLine.Interactive.Stop";
+    t[4499] = "Interaktiver Modus wird beendet.";
     t[4504] = "Distribution.Uniform";
     t[4505] = "Gleichverteilung";
     t[4518] = "XML.Comment";
@@ -2002,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4733] = "Standardzoom";
     t[4738] = "CommandLine.Dialog.StopCommand";
     t[4739] = "Anhalten";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4752] = "XML.ErrorDecryptingFile";
     t[4753] = "Es ist ein Fehler beim Entschl\u00fcsseln der Datei\n%s\naufgetreten.";
     t[4754] = "Statistics.XML.Minimum";
@@ -2010,12 +2024,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4757] = "SciLab-Skript";
     t[4760] = "Editor.CollectCorrelation";
     t[4761] = "Autokorrelation der Wartezeiten aufzeichnen";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4762] = "Color.1E90FF";
     t[4763] = "Dodger Blau";
     t[4764] = "Compare.ReplaceKeptModel.Info";
@@ -2348,6 +2356,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5627] = "Schwaches Gr\u00fcn";
     t[5628] = "FileType.DIF";
     t[5629] = "dif-Dateien";
+    t[5636] = "CommandLine.Interactive.Start";
+    t[5637] = "Interaktiver Modus gestartet. Zum Beenden \"exit\" eingeben.";
     t[5638] = "Main.Menu.File.RecentlyUsed";
     t[5639] = "Zuletzt verwendet";
     t[5640] = "LoadCalculator.ExpAssumption";
@@ -2364,6 +2374,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5659] = "jpeg-Dateien";
     t[5662] = "Color.FFF8DC";
     t[5663] = "Cornsilk";
+    t[5672] = "CommandLine.Interactive.Description.Long";
+    t[5673] = "Dieser Befehl erwartet keine weiteren Parameter.";
     t[5674] = "Statistics.XML.RunThreads";
     t[5675] = "StatistikThreads";
     t[5676] = "Statistic.Viewer.Toolbar.Excel.Error.Title";

@@ -484,6 +484,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1097] = "Denominator";
     t[1106] = "SimStatistic.Info.MoreCallerThanFreshCalls";
     t[1107] = "Since caller counting only starts after the warm-up phase,\ni.e. at a time when the queue does not have to be empty,\nmore served callers may appear in the statistics than fresh calls.";
+    t[1108] = "CommandLine.Interactive.Name";
+    t[1109] = "Interactive";
     t[1110] = "Statistics.InterLeaveTime.lower";
     t[1111] = "inter-leave time";
     t[1122] = "Editor.Retry";
@@ -924,6 +926,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2183] = "Limit waiting room size to";
     t[2184] = "Statistic.TimeShare";
     t[2185] = "Time share";
+    t[2188] = "CommandLine.Interactive.Ready";
+    t[2189] = "Ready.";
     t[2196] = "Model.XML.WaitingRoomSize.Error";
     t[2197] = "The value \"%s\" for the waiting room size is invalid. A positive integer number has to be specified.";
     t[2198] = "Statistics.XML.Count";
@@ -946,8 +950,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2235] = "Invalid image size entered";
     t[2246] = "Model.XML.RetryDistances.Error";
     t[2247] = "The specified distribution of the retry distances is not valid.";
-    t[2248] = "SimStatistic.BatchService";
-    t[2249] = "Number of clients that are served simultaneously by one agent (batch processing)";
+    t[2248] = "CommandLine.Interactive.Description.Short";
+    t[2249] = "Starts the interactive mode.";
     t[2252] = "SimStatistic.ResidenceTime";
     t[2253] = "Residence time";
     t[2268] = "Dialog.Title.Error";
@@ -1630,6 +1634,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3893] = "Queue length";
     t[3896] = "QSExport.xml.Element.Decide.Mode";
     t[3897] = "ModelElementDecideMode";
+    t[3900] = "SimStatistic.BatchService";
+    t[3901] = "Number of clients that are served simultaneously by one agent (batch processing)";
     t[3912] = "Statistics.InterLeaveTimes";
     t[3913] = "Inter-leaving times";
     t[3914] = "Statistics.XML.Distribution";
@@ -1900,6 +1906,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4487] = "End of warm-up phasis; statistics will be reset.";
     t[4488] = "Distribution.NoDistribution";
     t[4489] = "No distribution selected";
+    t[4498] = "CommandLine.Interactive.Stop";
+    t[4499] = "Interactive mode is terminated.";
     t[4504] = "Distribution.Uniform";
     t[4505] = "Uniform distribution";
     t[4518] = "XML.Comment";
@@ -2002,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4733] = "Default zoom";
     t[4738] = "CommandLine.Dialog.StopCommand";
     t[4739] = "Quit";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4752] = "XML.ErrorDecryptingFile";
     t[4753] = "An error occurred while decrypting file %s.";
     t[4754] = "Statistics.XML.Minimum";
@@ -2010,12 +2024,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4757] = "SciLab script";
     t[4760] = "Editor.CollectCorrelation";
     t[4761] = "Record autocorrelation of the waiting times";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4762] = "Color.1E90FF";
     t[4763] = "Dodger blue";
     t[4764] = "Compare.ReplaceKeptModel.Info";
@@ -2348,6 +2356,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5627] = "Pale green";
     t[5628] = "FileType.DIF";
     t[5629] = "dif files";
+    t[5636] = "CommandLine.Interactive.Start";
+    t[5637] = "Interactive mode started. To exit, type \"exit\".";
     t[5638] = "Main.Menu.File.RecentlyUsed";
     t[5639] = "Recently used";
     t[5640] = "LoadCalculator.ExpAssumption";
@@ -2364,6 +2374,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5659] = "jpeg files";
     t[5662] = "Color.FFF8DC";
     t[5663] = "Cornsilk";
+    t[5672] = "CommandLine.Interactive.Description.Long";
+    t[5673] = "This command expects no additional parameters.";
     t[5674] = "Statistics.XML.RunThreads";
     t[5675] = "StatisticsThreads";
     t[5676] = "Statistic.Viewer.Toolbar.Excel.Error.Title";
