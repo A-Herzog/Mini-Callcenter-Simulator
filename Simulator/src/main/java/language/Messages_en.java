@@ -30,6 +30,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[29] = "Goes forward to the next help page.";
     t[32] = "Distribution.AverageSomething";
     t[33] = "Average";
+    t[34] = "Statistic.Viewer.DiagramSettings.LegendFont";
+    t[35] = "Legend";
     t[36] = "QSExport.xml.Resources";
     t[37] = "Resources";
     t[38] = "Dialog.Title.Confirmation";
@@ -54,6 +56,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[77] = "The \"Distribution\" attribute in the \"%s\" element has to be a probability distribution.";
     t[80] = "CommandLine.Simulation.Description.Short";
     t[81] = "Start a simulation run.";
+    t[84] = "Statistic.Viewer.DiagramSettings.Surface";
+    t[85] = "Surface";
     t[88] = "Color.008000";
     t[89] = "Gren";
     t[90] = "Statistic.Previous";
@@ -204,6 +208,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[399] = "C";
     t[402] = "XML.SaveErrorTitle";
     t[403] = "Error saving file";
+    t[404] = "Window.Info.FolderError.Location";
+    t[405] = "The folder\n%s\ncould not be opened.";
     t[406] = "Window.Help";
     t[407] = "Help";
     t[410] = "CommandLine.Benchmark.SimulaionFailed";
@@ -420,6 +426,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[937] = "Medium slate blue";
     t[938] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.NonExponentialInterArrival";
     t[939] = "In the analytical models the inter-arrival times are always assumed to be exponentially distributed.";
+    t[940] = "Statistic.Viewer.DiagramSettings.Background.Gradient";
+    t[941] = "Background gradient";
     t[946] = "XML.ErrorEncryptingFile";
     t[947] = "An error occurred while encrypting file %s.";
     t[950] = "Simulator.Log.ScheduleCall.Info.New";
@@ -506,6 +514,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1163] = "The report could not be created.";
     t[1168] = "Statistics.AnalyticModelCompare.ErlangC";
     t[1169] = "Erlang-C models";
+    t[1174] = "Statistic.Viewer.DiagramSettings.Outline.Color";
+    t[1175] = "Outline";
     t[1180] = "Dialog.Button.Ok";
     t[1181] = "Ok";
     t[1184] = "Dialog.Button.Back";
@@ -794,8 +804,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1877] = "without consideration of cancalation";
     t[1884] = "Statistic.Description.Hide.Hint";
     t[1885] = "Hides the description.";
-    t[1888] = "Statistics.ResidenceTimes.notsuccessful";
-    t[1889] = "Residence times of the not successful callers";
+    t[1888] = "Statistic.Viewer.DiagramSettings.Font.Bold";
+    t[1889] = "bold";
     t[1890] = "Dialog.Button.PasteDoNotScale.Tooltip";
     t[1891] = "By default the data are scaled on pasting. But alternatively the data can be filled with zeros.";
     t[1892] = "Model.XML.QueueMode";
@@ -824,6 +834,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1921] = "in seconds";
     t[1922] = "QSExport.xml.Element.Text";
     t[1923] = "ModelElementText";
+    t[1924] = "Statistic.Viewer.DiagramSettings.Axis";
+    t[1925] = "Axis labeling";
     t[1930] = "Statistic.Viewer.Report.HTMLApp.Info";
     t[1931] = "Please select the category to be displayed from the tree structure on the left.";
     t[1932] = "CalculatorDialog.Plotter.Toolbar.Print.Hint";
@@ -1000,6 +1012,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2361] = "StatisticsCallsServiceLevel";
     t[2370] = "SettingsDialog.Tabs.Simulation";
     t[2371] = "Simulation";
+    t[2374] = "Statistic.Viewer.DiagramSettings.Background.Gradient.Active";
+    t[2375] = "Gradient active?";
     t[2382] = "Distribution.DistJohnsonSU";
     t[2383] = "Johnson SU distribution";
     t[2394] = "Editor.NewerVersion.Info";
@@ -1014,6 +1028,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2409] = "The denominator attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[2410] = "CalculatorDialog.Plotter.Toolbar.Save.Hint";
     t[2411] = "Saves the graphics as a file.";
+    t[2414] = "Statistic.Viewer.DiagramSettings.Background.Color";
+    t[2415] = "Background color";
     t[2416] = "QSExport.xml.TimeBase";
     t[2417] = "TimeBase";
     t[2418] = "Statistics.XML.RunThreads.Error";
@@ -1038,6 +1054,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2455] = "OpenOffice/LibreOffice tables";
     t[2456] = "FileType.FileTypeODT";
     t[2457] = "OpenOffice/LibreOffice texts";
+    t[2458] = "Statistic.Viewer.DiagramSettings.Defaults.AllPages";
+    t[2459] = "All pages";
     t[2462] = "InfoDialog.Version.Lower";
     t[2463] = "version";
     t[2464] = "SimStatistic.WaitingCancelationTimes";
@@ -1166,6 +1184,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2825] = "Retry distances";
     t[2836] = "Statistics.EmergencyShutDown";
     t[2837] = "The simulation was terminated prematurely. The statistics results may not be valid therefore.";
+    t[2850] = "Statistic.Viewer.DiagramSettings.Axis.LabelsFont";
+    t[2851] = "Axis labels";
     t[2854] = "Statistics.WaitingTime.lower";
     t[2855] = "waiting time";
     t[2860] = "Simulator.Log.CallDone2Event.Info";
@@ -1320,10 +1340,18 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3165] = "Call center model";
     t[3166] = "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit";
     t[3167] = "No waiting time tolerance limit.";
+    t[3174] = "Statistic.Viewer.DiagramSettings.Outline.Width";
+    t[3175] = "Outline width";
+    t[3176] = "Statistics.ResidenceTimes.notsuccessful";
+    t[3177] = "Residence times of the not successful callers";
     t[3182] = "Model.XML.Version";
     t[3183] = "ModelVersion";
     t[3188] = "LoadCalculator.SystemLoad";
     t[3189] = "System load";
+    t[3190] = "Statistic.Viewer.DiagramSettings.Defaults";
+    t[3191] = "Default values";
+    t[3194] = "Statistic.Viewer.DiagramSettings.DiagramTitle";
+    t[3195] = "Diagram titel";
     t[3202] = "DistributionFitter.ComparedDistributions";
     t[3203] = "Compared distributions";
     t[3210] = "Main.Toolbar.LoadModel";
@@ -1430,6 +1458,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3473] = "Mistyrose";
     t[3476] = "CalculatorDialog.Result";
     t[3477] = "Result";
+    t[3480] = "Statistic.Viewer.DiagramSettings.Defaults.Hint";
+    t[3481] = "Restore default settings";
     t[3482] = "Dialog.SaveNow.Yes";
     t[3483] = "Save now";
     t[3484] = "Main.Menu.File.LoadStatistics.Mnemonic";
@@ -1692,6 +1722,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3991] = "Mean squared error";
     t[3996] = "Color.C0C0C0";
     t[3997] = "Silver";
+    t[4000] = "Statistic.Viewer.DiagramSettings.Font.Italic";
+    t[4001] = "italic";
     t[4004] = "Statistic.Viewer.Toolbar.Settings.Hint";
     t[4005] = "Change settings for the selected statistics page.";
     t[4010] = "Compare.TooFewModels.InfoTwo";
@@ -1860,6 +1892,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4365] = "over all clients";
     t[4370] = "Statistic.WriteError.Info";
     t[4371] = "The file\n%s\ncould not be created.";
+    t[4374] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
+    t[4375] = "Axis values";
     t[4382] = "Distribution.Power";
     t[4383] = "Power distribution";
     t[4388] = "QSExport.xml.Edge";
@@ -1976,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4661] = "Due to the following properties the model cannot be described completely analytically:";
     t[4668] = "QSExport.xml.ModellElementPrioritaet";
     t[4669] = "ModelElementPriority";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4670] = "JDistributionEditor.Edit.Disabled";
     t[4671] = "Show data";
     t[4682] = "Statistics.ClientsInSystem.EmptyPart";
@@ -2010,12 +2050,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4733] = "Default zoom";
     t[4738] = "CommandLine.Dialog.StopCommand";
     t[4739] = "Quit";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4752] = "XML.ErrorDecryptingFile";
     t[4753] = "An error occurred while decrypting file %s.";
     t[4754] = "Statistics.XML.Minimum";
@@ -2132,8 +2166,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5063] = "StatisticsSimulation";
     t[5068] = "Statistic.Type.Table";
     t[5069] = "Table";
-    t[5070] = "Window.Info.FolderError.Location";
-    t[5071] = "The folder\n%s\ncould not be opened.";
+    t[5070] = "Statistic.Viewer.DiagramSettings.Font.Size";
+    t[5071] = "Font size";
     t[5096] = "Main.Menu.Help.Help.Mnemonic";
     t[5097] = "H";
     t[5102] = "Main.Menu.Extras.Calculator.Mnemonic";
@@ -2332,6 +2366,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5577] = "<p>There are currently no statistics available.</p>\n<p>Please press the <b>F5 key</b> or select <b>\"Start simulation\"</b> on the \"Model editor\" page.</p>";
     t[5578] = "Statistics.ClientsInSystem";
     t[5579] = "Clients in system";
+    t[5580] = "Statistic.Viewer.DiagramSettings.Defaults.ThisPage";
+    t[5581] = "This page";
     t[5584] = "Color.7FFF00";
     t[5585] = "Chartreuse";
     t[5594] = "ModelInfo.ArrivalStream.Line2";
@@ -2432,6 +2468,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5781] = "Description";
     t[5794] = "Model.XML.Description";
     t[5795] = "ModelDescription";
+    t[5800] = "Statistic.Viewer.DiagramSettings.Title";
+    t[5801] = "Diagram settings";
     t[5806] = "CalculatorDialog.Tab.Calculator";
     t[5807] = "Calculator";
     t[5808] = "Model.XML.ServiceTimes.Error";

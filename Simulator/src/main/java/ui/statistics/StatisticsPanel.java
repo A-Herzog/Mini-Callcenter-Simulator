@@ -26,6 +26,7 @@ import org.w3c.dom.Element;
 import language.Language;
 import simulator.statistics.Statistics;
 import systemtools.MsgBox;
+import systemtools.statistics.ChartSetup;
 import systemtools.statistics.StatisticNode;
 import systemtools.statistics.StatisticViewer;
 import systemtools.statistics.StatisticsBasePanel;
@@ -516,6 +517,18 @@ public class StatisticsPanel extends StatisticsBasePanel {
 	protected void setImageSize(int newSize) {
 		final SetupData setup=SetupData.getSetup();
 		setup.imageSize=newSize;
+		setup.saveSetupWithWarning(this);
+	}
+
+	@Override
+	protected ChartSetup getChartSetup() {
+		return SetupData.getSetup().chartSetup;
+	}
+
+	@Override
+	protected void setChartSetup(final ChartSetup chartSetup) {
+		final SetupData setup=SetupData.getSetup();
+		setup.chartSetup.copyFrom(chartSetup);
 		setup.saveSetupWithWarning(this);
 	}
 }

@@ -35,6 +35,7 @@ import language.Messages_Java11;
 import mathtools.NumberTools;
 import systemtools.GUITools;
 import systemtools.SetupBase;
+import systemtools.statistics.ChartSetup;
 
 /**
  * Diese Klasse kapselt alle Setup-Daten des Programms und automatisiert das Laden und Speichern der Daten
@@ -141,6 +142,11 @@ public class SetupData extends SetupBase {
 	public boolean useMultiCore;
 
 	/**
+	 * Schriftarten- und Farbeneinstellungen für die Statistikdiagramme
+	 */
+	public ChartSetup chartSetup;
+
+	/**
 	 * Letzter Fehler
 	 * (Hier wird die Setup-Datei als Logdatei für solche Ereignisse verwendet.)
 	 */
@@ -193,6 +199,8 @@ public class SetupData extends SetupBase {
 		openODS=false;
 		openPDF=false;
 		useMultiCore=true;
+		if (chartSetup==null) chartSetup=new ChartSetup();
+		chartSetup.reset();
 		lastError=null;
 	}
 
@@ -401,6 +409,11 @@ public class SetupData extends SetupBase {
 			if (s.equalsIgnoreCase("MultiCore")) {
 				useMultiCore=loadBoolean(e.getTextContent(),true);
 			}
+
+			if (s.equalsIgnoreCase("ChartSetup")) {
+				chartSetup.loadFromXML(e);
+				continue;
+			}
 		}
 
 		lastFiles=addToArray(lastFiles,files);
@@ -462,6 +475,9 @@ public class SetupData extends SetupBase {
 			root.appendChild(node=doc.createElement("MultiCore"));
 			node.setTextContent("0");
 		}
+
+		root.appendChild(node=doc.createElement("ChartSetup"));
+		chartSetup.saveToXML(node);
 
 		if (lastError!=null && !lastError.isEmpty()) {
 			root.appendChild(node=doc.createElement("LastError"));

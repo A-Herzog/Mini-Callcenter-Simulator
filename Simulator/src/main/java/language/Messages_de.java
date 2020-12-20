@@ -30,6 +30,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[29] = "Weiter zur n\u00e4chsten Hilfeseite.";
     t[32] = "Distribution.AverageSomething";
     t[33] = "Mittlere";
+    t[34] = "Statistic.Viewer.DiagramSettings.LegendFont";
+    t[35] = "Legende";
     t[36] = "QSExport.xml.Resources";
     t[37] = "Ressourcen";
     t[38] = "Dialog.Title.Confirmation";
@@ -54,6 +56,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[77] = "Das \"Verteilung\"-Attribut im \"%s\"-Element muss eine H\u00e4ufigkeitsverteilung enthalten.";
     t[80] = "CommandLine.Simulation.Description.Short";
     t[81] = "F\u00fchrt einen einzelnen Simulationslauf durch.";
+    t[84] = "Statistic.Viewer.DiagramSettings.Surface";
+    t[85] = "Zeichenfl\u00e4che";
     t[88] = "Color.008000";
     t[89] = "Gr\u00fcn";
     t[90] = "Statistic.Previous";
@@ -204,6 +208,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[399] = "I";
     t[402] = "XML.SaveErrorTitle";
     t[403] = "Fehler beim Speichern";
+    t[404] = "Window.Info.FolderError.Location";
+    t[405] = "Der Inhalt des Ordners\n%s\nkonnte nicht angezeigt werden.";
     t[406] = "Window.Help";
     t[407] = "Hilfe";
     t[410] = "CommandLine.Benchmark.SimulaionFailed";
@@ -420,6 +426,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[937] = "Mittleres Slate Blau";
     t[938] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.NonExponentialInterArrival";
     t[939] = "In den analytischen Modellen werden die Zwischenankunftszeiten stets als exponentiell verteilt angenommen.";
+    t[940] = "Statistic.Viewer.DiagramSettings.Background.Gradient";
+    t[941] = "Hintergrundfarbverlauf";
     t[946] = "XML.ErrorEncryptingFile";
     t[947] = "Es ist ein Fehler beim Vertschl\u00fcsseln der Datei\n%s\naufgetreten.";
     t[950] = "Simulator.Log.ScheduleCall.Info.New";
@@ -506,6 +514,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1163] = "Der Report konnte nicht erstellt werden.";
     t[1168] = "Statistics.AnalyticModelCompare.ErlangC";
     t[1169] = "Erlang-C-Modelle";
+    t[1174] = "Statistic.Viewer.DiagramSettings.Outline.Color";
+    t[1175] = "Rahmen";
     t[1180] = "Dialog.Button.Ok";
     t[1181] = "Ok";
     t[1184] = "Dialog.Button.Back";
@@ -794,8 +804,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1877] = "ohne Ber\u00fccksichtigung der Abbrecher";
     t[1884] = "Statistic.Description.Hide.Hint";
     t[1885] = "Blendet die Erkl\u00e4rungen wieder aus.";
-    t[1888] = "Statistics.ResidenceTimes.notsuccessful";
-    t[1889] = "Verweilzeiten \u00fcber die nicht-erfolgreichen Anrufer";
+    t[1888] = "Statistic.Viewer.DiagramSettings.Font.Bold";
+    t[1889] = "fett";
     t[1890] = "Dialog.Button.PasteDoNotScale.Tooltip";
     t[1891] = "Normalerweise werden die Daten beim Einf\u00fcgen skaliert. Es k\u00f6nnen aber auch Nullen angef\u00fcgt werden.";
     t[1892] = "Model.XML.QueueMode";
@@ -824,6 +834,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1921] = "in Sekunden";
     t[1922] = "QSExport.xml.Element.Text";
     t[1923] = "ModellElementText";
+    t[1924] = "Statistic.Viewer.DiagramSettings.Axis";
+    t[1925] = "Achsenbeschriftung";
     t[1930] = "Statistic.Viewer.Report.HTMLApp.Info";
     t[1931] = "W\u00e4hlen Sie in der Baumstruktur links die anzuzeigende Rubrik aus.";
     t[1932] = "CalculatorDialog.Plotter.Toolbar.Print.Hint";
@@ -1000,6 +1012,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2361] = "StatistikAnrufeServiceLevel";
     t[2370] = "SettingsDialog.Tabs.Simulation";
     t[2371] = "Simulation";
+    t[2374] = "Statistic.Viewer.DiagramSettings.Background.Gradient.Active";
+    t[2375] = "Farbverlauf aktiv?";
     t[2382] = "Distribution.DistJohnsonSU";
     t[2383] = "Johnson-SU-Verteilung";
     t[2394] = "Editor.NewerVersion.Info";
@@ -1014,6 +1028,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2409] = "Das Nenner-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[2410] = "CalculatorDialog.Plotter.Toolbar.Save.Hint";
     t[2411] = "Speichert die Darstellung in einer Datei.";
+    t[2414] = "Statistic.Viewer.DiagramSettings.Background.Color";
+    t[2415] = "Hintergrundfarbe";
     t[2416] = "QSExport.xml.TimeBase";
     t[2417] = "Zeitbasis";
     t[2418] = "Statistics.XML.RunThreads.Error";
@@ -1038,6 +1054,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2455] = "OpenOffice/LibreOffice-Tabellen";
     t[2456] = "FileType.FileTypeODT";
     t[2457] = "OpenOffice/LibreOffice-Texte";
+    t[2458] = "Statistic.Viewer.DiagramSettings.Defaults.AllPages";
+    t[2459] = "Alle Dialogseiten";
     t[2462] = "InfoDialog.Version.Lower";
     t[2463] = "Version";
     t[2464] = "SimStatistic.WaitingCancelationTimes";
@@ -1166,6 +1184,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2825] = "Wiederholabst\u00e4nde";
     t[2836] = "Statistics.EmergencyShutDown";
     t[2837] = "Die Simulation wurde vorzeitig abgebrochen. Die Statistik-Ergebnisse sind daher evtl. nicht valide.";
+    t[2850] = "Statistic.Viewer.DiagramSettings.Axis.LabelsFont";
+    t[2851] = "Achsennamen";
     t[2854] = "Statistics.WaitingTime.lower";
     t[2855] = "Wartezeit";
     t[2860] = "Simulator.Log.CallDone2Event.Info";
@@ -1320,10 +1340,18 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3165] = "Callcenter-Modell";
     t[3166] = "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit";
     t[3167] = "Die Kunden sind bereit, beliebig lange zu warten.";
+    t[3174] = "Statistic.Viewer.DiagramSettings.Outline.Width";
+    t[3175] = "Rahmenbreite";
+    t[3176] = "Statistics.ResidenceTimes.notsuccessful";
+    t[3177] = "Verweilzeiten \u00fcber die nicht-erfolgreichen Anrufer";
     t[3182] = "Model.XML.Version";
     t[3183] = "ModellVersion";
     t[3188] = "LoadCalculator.SystemLoad";
     t[3189] = "Auslastung des Systems";
+    t[3190] = "Statistic.Viewer.DiagramSettings.Defaults";
+    t[3191] = "Standardwerte";
+    t[3194] = "Statistic.Viewer.DiagramSettings.DiagramTitle";
+    t[3195] = "Diagrammtitel";
     t[3202] = "DistributionFitter.ComparedDistributions";
     t[3203] = "Gepr\u00fcfte Verteilungen";
     t[3210] = "Main.Toolbar.LoadModel";
@@ -1430,6 +1458,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3473] = "Nebelige Rose";
     t[3476] = "CalculatorDialog.Result";
     t[3477] = "Ergebnis";
+    t[3480] = "Statistic.Viewer.DiagramSettings.Defaults.Hint";
+    t[3481] = "Standardeinstellungen wiederherstellen";
     t[3482] = "Dialog.SaveNow.Yes";
     t[3483] = "Jetzt speichern";
     t[3484] = "Main.Menu.File.LoadStatistics.Mnemonic";
@@ -1692,6 +1722,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3991] = "Mittlere quadratische Abweichung";
     t[3996] = "Color.C0C0C0";
     t[3997] = "Silber";
+    t[4000] = "Statistic.Viewer.DiagramSettings.Font.Italic";
+    t[4001] = "kursiv";
     t[4004] = "Statistic.Viewer.Toolbar.Settings.Hint";
     t[4005] = "Einstellungen zu der gew\u00e4hlten Statistik-Anzeige vornehmen";
     t[4010] = "Compare.TooFewModels.InfoTwo";
@@ -1860,6 +1892,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4365] = "\u00fcber alle Kunden";
     t[4370] = "Statistic.WriteError.Info";
     t[4371] = "Die Datei\n%s\nkonnte nicht erstellt werden.";
+    t[4374] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
+    t[4375] = "Achsenwerte";
     t[4382] = "Distribution.Power";
     t[4383] = "Potenzverteilung";
     t[4388] = "QSExport.xml.Edge";
@@ -1976,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4661] = "Aufgrund folgender Eigenschaften kann das Modell nicht vollst\u00e4ndig analytisch beschrieben werden:";
     t[4668] = "QSExport.xml.ModellElementPrioritaet";
     t[4669] = "ModellElementPrioritaet";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4670] = "JDistributionEditor.Edit.Disabled";
     t[4671] = "Daten anzeigen";
     t[4682] = "Statistics.ClientsInSystem.EmptyPart";
@@ -2010,12 +2050,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4733] = "Standardzoom";
     t[4738] = "CommandLine.Dialog.StopCommand";
     t[4739] = "Anhalten";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4752] = "XML.ErrorDecryptingFile";
     t[4753] = "Es ist ein Fehler beim Entschl\u00fcsseln der Datei\n%s\naufgetreten.";
     t[4754] = "Statistics.XML.Minimum";
@@ -2132,8 +2166,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5063] = "StatistikSimulation";
     t[5068] = "Statistic.Type.Table";
     t[5069] = "Tabelle";
-    t[5070] = "Window.Info.FolderError.Location";
-    t[5071] = "Der Inhalt des Ordners\n%s\nkonnte nicht angezeigt werden.";
+    t[5070] = "Statistic.Viewer.DiagramSettings.Font.Size";
+    t[5071] = "Schriftgr\u00f6\u00dfe";
     t[5096] = "Main.Menu.Help.Help.Mnemonic";
     t[5097] = "H";
     t[5102] = "Main.Menu.Extras.Calculator.Mnemonic";
@@ -2332,6 +2366,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5577] = "<p>Momentan stehen noch keine Statistik-Daten zur Verf\u00fcgung.</p>\n<p>Dr\u00fccken Sie die <b>F5-Taste</b> oder w\u00e4hlen Sie auf der Seite \"Modell-Editor\" die Funktion <b>\"Simulation starten\"</b>.</p>";
     t[5578] = "Statistics.ClientsInSystem";
     t[5579] = "Kunden im System";
+    t[5580] = "Statistic.Viewer.DiagramSettings.Defaults.ThisPage";
+    t[5581] = "Diese Dialogseite";
     t[5584] = "Color.7FFF00";
     t[5585] = "Chartreuse";
     t[5594] = "ModelInfo.ArrivalStream.Line2";
@@ -2432,6 +2468,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5781] = "Beschreibung";
     t[5794] = "Model.XML.Description";
     t[5795] = "ModellBeschreibung";
+    t[5800] = "Statistic.Viewer.DiagramSettings.Title";
+    t[5801] = "Diagrammeinstellungen";
     t[5806] = "CalculatorDialog.Tab.Calculator";
     t[5807] = "Rechner";
     t[5808] = "Model.XML.ServiceTimes.Error";
