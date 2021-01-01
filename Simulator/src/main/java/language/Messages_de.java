@@ -358,6 +358,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[777] = "Erlang C";
     t[780] = "QSExport.xml.Element.Text.Line";
     t[781] = "ModellElementTextzeile";
+    t[782] = "Statistics.XML.Type";
+    t[783] = "Typ";
     t[784] = "SimStatistic.ResidenceTime.successful.lower";
     t[785] = "Verweilzeit erfolgreiche Anrufe";
     t[788] = "JDistributionEditor.Paste.Info";
@@ -532,6 +534,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1203] = "Besch\u00e4ftigte Agenten";
     t[1206] = "LoadCalculator.PartOfLoadForTheCallcenter";
     t[1207] = "Lastanteil des Callcenters";
+    t[1212] = "Statistic.Viewer.Toolbar.OpenPDF.Hint";
+    t[1213] = "PDF anzeigen";
     t[1214] = "Simulator.Log.TryStartCall.QueueingClient";
     t[1215] = "Ein Kunde wird an die Warteschlange angestellt.";
     t[1220] = "Main.Toolbar.LoadModel.Hint";
@@ -651,7 +655,7 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1502] = "Statistics.XML.CountSuccess";
     t[1503] = "AnzahlErfolg";
     t[1504] = "Statistic.Viewer.Toolbar.Excel.Prefix";
-    t[1505] = "CS_Temp";
+    t[1505] = "QS_Temp";
     t[1508] = "Statistics.UtilizationAndFailures.FullUtilization";
     t[1509] = "Volllast";
     t[1514] = "Distribution.DegreesOfFreedom.Numerator";
@@ -712,6 +716,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1629] = "Text in externer Anwendung anzeigen.";
     t[1636] = "LoadCalculator.AllenCunneenInvalidWorkLoad";
     t[1637] = "ung\u00fcltige Auslastung";
+    t[1638] = "Statistic.Viewer.Toolbar.NewWindow.Hint";
+    t[1639] = "Zeigt die Daten in einem neuen Fenster an.";
     t[1644] = "Main.Menu.File.Load";
     t[1645] = "Laden...";
     t[1658] = "CommandLine.Count.ThenAtLeast1";
@@ -730,6 +736,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1693] = "Ein-Punkt-Verteilung";
     t[1694] = "SimStatistic.PostProcessingTime.of";
     t[1695] = "der Nachbearbeitungszeiten";
+    t[1700] = "Statistic.Viewer.Toolbar.Save.DefaultSize";
+    t[1701] = "In Standardgr\u00f6\u00dfe (%dx%d Pixel) speichern";
     t[1702] = "SimStatistic.WaitingTimes.Distribution.All";
     t[1703] = "Verteilung der Wartezeiten \u00fcber alle Kunden";
     t[1706] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.NonExponentialService";
@@ -938,6 +946,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2183] = "Warteraumgr\u00f6\u00dfe begrenzen auf";
     t[2184] = "Statistic.TimeShare";
     t[2185] = "Zeitanteil";
+    t[2186] = "Statistic.Viewer.Toolbar.Save.WindowSize";
+    t[2187] = "In Fenstergr\u00f6\u00dfe (%dx%d Pixel) speichern";
     t[2188] = "CommandLine.Interactive.Ready";
     t[2189] = "Bereit.";
     t[2196] = "Model.XML.WaitingRoomSize.Error";
@@ -982,6 +992,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2295] = "Text in OpenOffice/LibreOffice anzeigen";
     t[2296] = "QSExport.xml.Element.Counter";
     t[2297] = "ModellElementZaehler";
+    t[2298] = "Statistic.Viewer.Toolbar.NewWindow.Fullscreen.Hint";
+    t[2299] = "Vergr\u00f6\u00dfert den Dialog, so dass er den Bildschirm ausf\u00fcllt.";
     t[2300] = "Compare.Error.IdenticalModels.Title";
     t[2301] = "Modelle sind identisch";
     t[2304] = "Table.LoadErrorFirstCellInvalid";
@@ -1268,8 +1280,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3029] = "Als verkn\u00fcpfte Grafikdateien (mehrere Grafikdateien neben der html-Ausgabedatei)";
     t[3032] = "Help.StartPage.Info";
     t[3033] = "Zeigt die Startseite der Hilfe an.";
-    t[3042] = "Statistics.ResidenceTimes.all.of";
-    t[3043] = "der Verweilzeiten \u00fcber alle Anrufer";
+    t[3042] = "Statistic.Viewer.Toolbar.OpenPDF";
+    t[3043] = "PDF";
     t[3044] = "Color.9370DB";
     t[3045] = "Mittleres Purpur";
     t[3048] = "Compare.Error.ModelError.CannotKeep";
@@ -1352,6 +1364,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3191] = "Standardwerte";
     t[3194] = "Statistic.Viewer.DiagramSettings.DiagramTitle";
     t[3195] = "Diagrammtitel";
+    t[3198] = "Statistics.XML.BusyAgents";
+    t[3199] = "StatistikAgentenAusgelastet";
     t[3202] = "DistributionFitter.ComparedDistributions";
     t[3203] = "Gepr\u00fcfte Verteilungen";
     t[3210] = "Main.Toolbar.LoadModel";
@@ -1418,6 +1432,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3359] = "Das \"Summe2\"-Attribut im \"%s\"-Element muss eine nicht-negative Zahl sein, ist aber \"%s\".";
     t[3366] = "Simulation.Started";
     t[3367] = "Die Simulation wurde gestartet.";
+    t[3368] = "Statistic.Viewer.Toolbar.NewWindow.Size.Hint";
+    t[3369] = "Ver\u00e4ndert die Fenstergr\u00f6\u00dfe.";
     t[3372] = "Color.ADFF2F";
     t[3373] = "Gr\u00fcngelb";
     t[3388] = "XML.ErrorClosingStream";
@@ -1676,6 +1692,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3923] = "E";
     t[3926] = "Main.Menu.File.New";
     t[3927] = "Neu";
+    t[3928] = "Statistic.Viewer.Toolbar.NewWindow.Title";
+    t[3929] = "Statistikdaten";
     t[3930] = "Statistic.Description.Show";
     t[3931] = "Erkl\u00e4rung einblenden";
     t[3934] = "JDataLoader.SelectArea";
@@ -1826,6 +1844,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4229] = "Rate";
     t[4234] = "CommandLine.Dialog.Command";
     t[4235] = "Gew\u00e4hlter Befehl";
+    t[4238] = "Statistic.Viewer.Toolbar.NewWindow.Fullscreen";
+    t[4239] = "Vollbild";
     t[4240] = "QSExport.xml.ModelElementOperators.Count";
     t[4241] = "Anzahl";
     t[4242] = "Dialog.Overwrite.No.Info";
@@ -1990,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4621] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
     t[4622] = "CommandLine.Error.PreparationOfModel";
     t[4623] = "Beim Vorbereiten des Modells ist folgender Fehler aufgetreten";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
     t[4625] = "Liste leeren";
     t[4626] = "QSExport.xml.Type";
@@ -2010,12 +2036,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4661] = "Aufgrund folgender Eigenschaften kann das Modell nicht vollst\u00e4ndig analytisch beschrieben werden:";
     t[4668] = "QSExport.xml.ModellElementPrioritaet";
     t[4669] = "ModellElementPrioritaet";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4670] = "JDistributionEditor.Edit.Disabled";
     t[4671] = "Daten anzeigen";
     t[4682] = "Statistics.ClientsInSystem.EmptyPart";
@@ -2110,6 +2130,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4913] = "Wartezeit \u00fcber alle Anrufer";
     t[4918] = "QSExport.xml.ModelClients";
     t[4919] = "ModellKunden";
+    t[4920] = "Statistic.Viewer.Toolbar.Copy.DefaultSize";
+    t[4921] = "In Standardgr\u00f6\u00dfe (%dx%d Pixel) kopieren";
     t[4922] = "Color.EE82EE";
     t[4923] = "Violett";
     t[4926] = "CommandLine.Error.UnableToSaveStatistic";
@@ -2168,6 +2190,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5069] = "Tabelle";
     t[5070] = "Statistic.Viewer.DiagramSettings.Font.Size";
     t[5071] = "Schriftgr\u00f6\u00dfe";
+    t[5094] = "Statistic.Viewer.Toolbar.NewWindow";
+    t[5095] = "Fenster";
     t[5096] = "Main.Menu.Help.Help.Mnemonic";
     t[5097] = "H";
     t[5102] = "Main.Menu.Extras.Calculator.Mnemonic";
@@ -2270,8 +2294,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5339] = "Schnee";
     t[5348] = "Color.D2691E";
     t[5349] = "Schokolade";
-    t[5352] = "Statistics.XML.BusyAgents";
-    t[5353] = "StatistikAgentenAusgelastet";
+    t[5352] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
+    t[5353] = "In Fenstergr\u00f6\u00dfe (%dx%d Pixel) kopieren";
     t[5358] = "LicenseViewer.Part.Components.Simulator";
     t[5359] = "Lizenzen der von dem Simulator genutzten Komponenten";
     t[5362] = "Distribution.Data";
@@ -2398,8 +2422,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5639] = "Zuletzt verwendet";
     t[5640] = "LoadCalculator.ExpAssumption";
     t[5641] = "Annahme: Wartezeittoleranz ist exp-verteilt";
-    t[5644] = "Statistics.XML.Type";
-    t[5645] = "Typ";
+    t[5644] = "Statistics.ResidenceTimes.all.of";
+    t[5645] = "der Verweilzeiten \u00fcber alle Anrufer";
     t[5646] = "Color.008B8B";
     t[5647] = "Dunkelzyan";
     t[5654] = "FileType.ExcelOld";
@@ -2466,6 +2490,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5775] = "Lizenzinformationen";
     t[5780] = "Editor.General.Description";
     t[5781] = "Beschreibung";
+    t[5782] = "Statistic.Viewer.Toolbar.NewWindow.Size";
+    t[5783] = "Fenstergr\u00f6\u00dfe";
     t[5794] = "Model.XML.Description";
     t[5795] = "ModellBeschreibung";
     t[5800] = "Statistic.Viewer.DiagramSettings.Title";

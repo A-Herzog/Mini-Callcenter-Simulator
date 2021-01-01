@@ -358,6 +358,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[777] = "Erlang C";
     t[780] = "QSExport.xml.Element.Text.Line";
     t[781] = "ModelElementTextLine";
+    t[782] = "Statistics.XML.Type";
+    t[783] = "Type";
     t[784] = "SimStatistic.ResidenceTime.successful.lower";
     t[785] = "residence time successful calls";
     t[788] = "JDistributionEditor.Paste.Info";
@@ -532,6 +534,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1203] = "Number of working agents";
     t[1206] = "LoadCalculator.PartOfLoadForTheCallcenter";
     t[1207] = "Part of the complete load for this call center";
+    t[1212] = "Statistic.Viewer.Toolbar.OpenPDF.Hint";
+    t[1213] = "Show as PDF";
     t[1214] = "Simulator.Log.TryStartCall.QueueingClient";
     t[1215] = "A client is placed in the queue.";
     t[1220] = "Main.Toolbar.LoadModel.Hint";
@@ -651,7 +655,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1502] = "Statistics.XML.CountSuccess";
     t[1503] = "CountSuccess";
     t[1504] = "Statistic.Viewer.Toolbar.Excel.Prefix";
-    t[1505] = "CS_Temp";
+    t[1505] = "QS_Temp";
     t[1508] = "Statistics.UtilizationAndFailures.FullUtilization";
     t[1509] = "Full utilization";
     t[1514] = "Distribution.DegreesOfFreedom.Numerator";
@@ -712,6 +716,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1629] = "Open text in external application.";
     t[1636] = "LoadCalculator.AllenCunneenInvalidWorkLoad";
     t[1637] = "invalid work load";
+    t[1638] = "Statistic.Viewer.Toolbar.NewWindow.Hint";
+    t[1639] = "Shows the data in a new window.";
     t[1644] = "Main.Menu.File.Load";
     t[1645] = "Load...";
     t[1658] = "CommandLine.Count.ThenAtLeast1";
@@ -730,6 +736,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1693] = "One point distribution";
     t[1694] = "SimStatistic.PostProcessingTime.of";
     t[1695] = "of the post processing time";
+    t[1700] = "Statistic.Viewer.Toolbar.Save.DefaultSize";
+    t[1701] = "Save using default size (%dx%d pixels)";
     t[1702] = "SimStatistic.WaitingTimes.Distribution.All";
     t[1703] = "Distribution of the waiting times of all clients";
     t[1706] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.NonExponentialService";
@@ -938,6 +946,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2183] = "Limit waiting room size to";
     t[2184] = "Statistic.TimeShare";
     t[2185] = "Time share";
+    t[2186] = "Statistic.Viewer.Toolbar.Save.WindowSize";
+    t[2187] = "Save using window size (%dx%d pixels)";
     t[2188] = "CommandLine.Interactive.Ready";
     t[2189] = "Ready.";
     t[2196] = "Model.XML.WaitingRoomSize.Error";
@@ -982,6 +992,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2295] = "Show text in OpenOffice/LibreOffice";
     t[2296] = "QSExport.xml.Element.Counter";
     t[2297] = "ModelElementCounter";
+    t[2298] = "Statistic.Viewer.Toolbar.NewWindow.Fullscreen.Hint";
+    t[2299] = "Increases the size of the dialog so that it fills the screen.";
     t[2300] = "Compare.Error.IdenticalModels.Title";
     t[2301] = "Models are identical";
     t[2304] = "Table.LoadErrorFirstCellInvalid";
@@ -1268,8 +1280,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3029] = "As linked image files (multiple image files next to the html output file)";
     t[3032] = "Help.StartPage.Info";
     t[3033] = "Shows the start page of the help information.";
-    t[3042] = "Statistics.ResidenceTimes.all.of";
-    t[3043] = "of the residence times over all callers";
+    t[3042] = "Statistic.Viewer.Toolbar.OpenPDF";
+    t[3043] = "PDF";
     t[3044] = "Color.9370DB";
     t[3045] = "Medium purple";
     t[3048] = "Compare.Error.ModelError.CannotKeep";
@@ -1352,6 +1364,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3191] = "Default values";
     t[3194] = "Statistic.Viewer.DiagramSettings.DiagramTitle";
     t[3195] = "Diagram titel";
+    t[3198] = "Statistics.XML.BusyAgents";
+    t[3199] = "StatisticsAgentsBusy";
     t[3202] = "DistributionFitter.ComparedDistributions";
     t[3203] = "Compared distributions";
     t[3210] = "Main.Toolbar.LoadModel";
@@ -1418,6 +1432,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3359] = "The \"sum2\" attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[3366] = "Simulation.Started";
     t[3367] = "The simulation was started.";
+    t[3368] = "Statistic.Viewer.Toolbar.NewWindow.Size.Hint";
+    t[3369] = "Changes the window size.";
     t[3372] = "Color.ADFF2F";
     t[3373] = "Green yellow";
     t[3388] = "XML.ErrorClosingStream";
@@ -1676,6 +1692,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3923] = "E";
     t[3926] = "Main.Menu.File.New";
     t[3927] = "New";
+    t[3928] = "Statistic.Viewer.Toolbar.NewWindow.Title";
+    t[3929] = "Statistic data";
     t[3930] = "Statistic.Description.Show";
     t[3931] = "Show description";
     t[3934] = "JDataLoader.SelectArea";
@@ -1826,6 +1844,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4229] = "Rate";
     t[4234] = "CommandLine.Dialog.Command";
     t[4235] = "Selected command";
+    t[4238] = "Statistic.Viewer.Toolbar.NewWindow.Fullscreen";
+    t[4239] = "Fullscreen";
     t[4240] = "QSExport.xml.ModelElementOperators.Count";
     t[4241] = "Count";
     t[4242] = "Dialog.Overwrite.No.Info";
@@ -1990,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4621] = "Extended Allen-Cunneen approximate formula for queuing systems";
     t[4622] = "CommandLine.Error.PreparationOfModel";
     t[4623] = "The following error occured while preparating the model";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
     t[4625] = "Clear list";
     t[4626] = "QSExport.xml.Type";
@@ -2010,12 +2036,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4661] = "Due to the following properties the model cannot be described completely analytically:";
     t[4668] = "QSExport.xml.ModellElementPrioritaet";
     t[4669] = "ModelElementPriority";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4670] = "JDistributionEditor.Edit.Disabled";
     t[4671] = "Show data";
     t[4682] = "Statistics.ClientsInSystem.EmptyPart";
@@ -2110,6 +2130,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4913] = "Waiting time over all callers";
     t[4918] = "QSExport.xml.ModelClients";
     t[4919] = "ModelClients";
+    t[4920] = "Statistic.Viewer.Toolbar.Copy.DefaultSize";
+    t[4921] = "Copy using default size (%dx%d pixels)";
     t[4922] = "Color.EE82EE";
     t[4923] = "Violet";
     t[4926] = "CommandLine.Error.UnableToSaveStatistic";
@@ -2168,6 +2190,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5069] = "Table";
     t[5070] = "Statistic.Viewer.DiagramSettings.Font.Size";
     t[5071] = "Font size";
+    t[5094] = "Statistic.Viewer.Toolbar.NewWindow";
+    t[5095] = "Window";
     t[5096] = "Main.Menu.Help.Help.Mnemonic";
     t[5097] = "H";
     t[5102] = "Main.Menu.Extras.Calculator.Mnemonic";
@@ -2270,8 +2294,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5339] = "Snow";
     t[5348] = "Color.D2691E";
     t[5349] = "Chocolate";
-    t[5352] = "Statistics.XML.BusyAgents";
-    t[5353] = "StatisticsAgentsBusy";
+    t[5352] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
+    t[5353] = "Copy using window size (%dx%d pixels)";
     t[5358] = "LicenseViewer.Part.Components.Simulator";
     t[5359] = "Lizenzen der von dem Simulator genutzten Komponenten";
     t[5362] = "Distribution.Data";
@@ -2398,8 +2422,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5639] = "Recently used";
     t[5640] = "LoadCalculator.ExpAssumption";
     t[5641] = "Assumption: waiting time tolerance is exp distributed";
-    t[5644] = "Statistics.XML.Type";
-    t[5645] = "Type";
+    t[5644] = "Statistics.ResidenceTimes.all.of";
+    t[5645] = "of the residence times over all callers";
     t[5646] = "Color.008B8B";
     t[5647] = "Dark cyan";
     t[5654] = "FileType.ExcelOld";
@@ -2466,6 +2490,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5775] = "Lizenzinformationen";
     t[5780] = "Editor.General.Description";
     t[5781] = "Description";
+    t[5782] = "Statistic.Viewer.Toolbar.NewWindow.Size";
+    t[5783] = "Window size";
     t[5794] = "Model.XML.Description";
     t[5795] = "ModelDescription";
     t[5800] = "Statistic.Viewer.DiagramSettings.Title";

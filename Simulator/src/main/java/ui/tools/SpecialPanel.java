@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.InputMap;
 import javax.swing.JButton;
@@ -131,12 +132,30 @@ public class SpecialPanel extends JPanel {
 	}
 
 	/**
+	 * Fügt eine Schaltfläche auf dem Toolbar hinzu
+	 * @param title	Beschriftung der Schaltfläche
+	 * @param hint	Optionaler Tooltip (kann <code>null</code> sein)
+	 * @param icon	Optionales Icon (kann <code>null</code> sein)
+	 * @return	Liefert das neue (bereits hinzugefügte) Button
+	 */
+	private JButton addButtonInt(final String title, final String hint, final Icon icon) {
+		initToolbar();
+		JButton button=new JButton(title);
+		toolbar.add(button);
+		if (hint!=null && !hint.isEmpty()) button.setToolTipText(hint);
+		button.addActionListener(buttonListener);
+		if (icon!=null) button.setIcon(icon);
+		return button;
+	}
+
+
+	/**
 	 * Fügt eine "Schließen"-Schaltfläche zu der Symbolleiste des Panels hinzu.
 	 * (Im Bedarfsfalle wird die Symbolleiste dafür zunächst angelegt.)
 	 */
 	protected final void addCloseButton() {
 		if (closeButton!=null) return;
-		closeButton=addButtonInt(buttonClose,buttonCloseHint,Images.GENERAL_EXIT.getURL());
+		closeButton=addButtonInt(buttonClose,buttonCloseHint,Images.GENERAL_EXIT.getIcon());
 	}
 
 	/**
@@ -158,6 +177,21 @@ public class SpecialPanel extends JPanel {
 	 * @see #userButtonClick(int, JButton)
 	 */
 	protected final JButton addUserButton(final String title, final String hint, final URL icon) {
+		JButton button=addButtonInt(title,hint,icon);
+		userButtons.add(button);
+		return button;
+	}
+
+	/**
+	 * Fügt eine benutzerdefinierte Schaltfläche zu der Symbolleiste des Panels hinzu.
+	 * (Im Bedarfsfalle wird die Symbolleiste dafür zunächst angelegt.)
+	 * @param title	Titel der Schaltfläche
+	 * @param hint	Optionaler Tooltip-Text für die Schaltfläche (wird <code>null</code> übergeben, so wird kein Tooltip angezeigt)
+	 * @param icon	Icon, das auf der Schaltfläche angezeigt werden soll (wird <code>null</code> übergeben, so wird kein Icon angezeigt)
+	 * @return	Liefert die Schaltfläche zurück
+	 * @see #userButtonClick(int, JButton)
+	 */
+	protected final JButton addUserButton(final String title, final String hint, final Icon icon) {
 		JButton button=addButtonInt(title,hint,icon);
 		userButtons.add(button);
 		return button;
