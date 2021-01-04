@@ -142,7 +142,7 @@ public enum Images {
 	SIMULATION("action_go.gif"),
 
 	/** Symbol "Simulation - in Logfile aufzeichnen" */
-	SIMULATION_LOG("Text.gif"),
+	SIMULATION_LOG("Text.png"),
 
 	/* Extras */
 
