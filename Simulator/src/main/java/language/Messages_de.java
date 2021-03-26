@@ -1406,8 +1406,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3301] = "Azure";
     t[3304] = "CalculatorDialog.Expression.CalcError";
     t[3305] = "Der angegebene Ausdruck konnte nicht berechnet werden.";
-    t[3310] = "Main.Toolbar.SaveModel.Hint";
-    t[3311] = "Speichert das aktuelle Simulationsmodell in einer Datei";
+    t[3310] = "Dialog.OpenURL.CopyURLInfo";
+    t[3311] = "Adresse nur in Zwischenablage kopieren, Webseite nicht aufrufen.";
     t[3320] = "LicenseViewer.Part.Components.SimSystem";
     t[3321] = "Lizenzen der von Simulationskern genutzten Komponenten";
     t[3326] = "Table.TableFileTableName";
@@ -1430,6 +1430,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3357] = "Verweilzeiten der erfolgreichen Anrufer";
     t[3358] = "Statistics.XML.Sum2.Error";
     t[3359] = "Das \"Summe2\"-Attribut im \"%s\"-Element muss eine nicht-negative Zahl sein, ist aber \"%s\".";
+    t[3364] = "Main.Toolbar.SaveModel.Hint";
+    t[3365] = "Speichert das aktuelle Simulationsmodell in einer Datei";
     t[3366] = "Simulation.Started";
     t[3367] = "Die Simulation wurde gestartet.";
     t[3368] = "Statistic.Viewer.Toolbar.NewWindow.Size.Hint";
@@ -1696,8 +1698,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3929] = "Statistikdaten";
     t[3930] = "Statistic.Description.Show";
     t[3931] = "Erkl\u00e4rung einblenden";
-    t[3934] = "JDataLoader.SelectArea";
-    t[3935] = "Bitte w\u00e4hlen Sie den zu importierenden Bereich.";
+    t[3934] = "Dialog.OpenURL.CopyURL";
+    t[3935] = "Adresse kopieren";
     t[3938] = "Statistic.Viewer.Report.NoTablesSelected.Info";
     t[3939] = "Es sind keine Tabellen ausgew\u00e4hlt, die in einer gemeinsamen Arbeitsmappe gespeichert werden k\u00f6nnten.";
     t[3942] = "SetupFailure.Discard";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4609] = "Leinen";
     t[4620] = "LoadCalculator.Tab.AllenCunneen";
     t[4621] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
-    t[4622] = "CommandLine.Error.PreparationOfModel";
-    t[4623] = "Beim Vorbereiten des Modells ist folgender Fehler aufgetreten";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4622] = "CommandLine.Error.PreparationOfModel";
+    t[4623] = "Beim Vorbereiten des Modells ist folgender Fehler aufgetreten";
     t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
     t[4625] = "Liste leeren";
     t[4626] = "QSExport.xml.Type";
@@ -2324,6 +2326,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5405] = "Autokorrelation";
     t[5410] = "Dialog.OpenURL.Info";
     t[5411] = "M\u00f6chten Sie jetzt die externe Webseite\n%s\naufrufen?";
+    t[5418] = "JDataLoader.SelectArea";
+    t[5419] = "Bitte w\u00e4hlen Sie den zu importierenden Bereich.";
     t[5422] = "Main.Menu.File";
     t[5423] = "Datei";
     t[5428] = "Model.XML.RetryProbability.Error";

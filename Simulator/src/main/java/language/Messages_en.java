@@ -1406,8 +1406,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3301] = "Azure";
     t[3304] = "CalculatorDialog.Expression.CalcError";
     t[3305] = "The entered expression could not be calculated.";
-    t[3310] = "Main.Toolbar.SaveModel.Hint";
-    t[3311] = "Save simulation model to file";
+    t[3310] = "Dialog.OpenURL.CopyURLInfo";
+    t[3311] = "Copy address to clipboard only, do not open web page.";
     t[3320] = "LicenseViewer.Part.Components.SimSystem";
     t[3321] = "Lizenzen der von Simulationskern genutzten Komponenten";
     t[3326] = "Table.TableFileTableName";
@@ -1430,6 +1430,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3357] = "Residence times of the successful callers";
     t[3358] = "Statistics.XML.Sum2.Error";
     t[3359] = "The \"sum2\" attribute in the \"%s\" element has to be a number but is \"%s\".";
+    t[3364] = "Main.Toolbar.SaveModel.Hint";
+    t[3365] = "Save simulation model to file";
     t[3366] = "Simulation.Started";
     t[3367] = "The simulation was started.";
     t[3368] = "Statistic.Viewer.Toolbar.NewWindow.Size.Hint";
@@ -1696,8 +1698,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3929] = "Statistic data";
     t[3930] = "Statistic.Description.Show";
     t[3931] = "Show description";
-    t[3934] = "JDataLoader.SelectArea";
-    t[3935] = "Please select the area to be imported.";
+    t[3934] = "Dialog.OpenURL.CopyURL";
+    t[3935] = "Copy address";
     t[3938] = "Statistic.Viewer.Report.NoTablesSelected.Info";
     t[3939] = "No tables have been selected for saving in a workbook.";
     t[3942] = "SetupFailure.Discard";
@@ -2008,14 +2010,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4609] = "Linen";
     t[4620] = "LoadCalculator.Tab.AllenCunneen";
     t[4621] = "Extended Allen-Cunneen approximate formula for queuing systems";
-    t[4622] = "CommandLine.Error.PreparationOfModel";
-    t[4623] = "The following error occured while preparating the model";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4622] = "CommandLine.Error.PreparationOfModel";
+    t[4623] = "The following error occured while preparating the model";
     t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
     t[4625] = "Clear list";
     t[4626] = "QSExport.xml.Type";
@@ -2324,6 +2326,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5405] = "Autocorrelation";
     t[5410] = "Dialog.OpenURL.Info";
     t[5411] = "Do you want to open the external web page\n%s\nnow?";
+    t[5418] = "JDataLoader.SelectArea";
+    t[5419] = "Please select the area to be imported.";
     t[5422] = "Main.Menu.File";
     t[5423] = "File";
     t[5428] = "Model.XML.RetryProbability.Error";
