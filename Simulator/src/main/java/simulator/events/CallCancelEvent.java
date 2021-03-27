@@ -35,13 +35,13 @@ public final class CallCancelEvent extends Event {
 	 * @param now	Aktuelle Systemzeit
 	 * @param time	Zeitpunkt, zu dem der Warteabbruch erfolgen soll
 	 */
-	public final void init(long now, long time) {
+	public void init(long now, long time) {
 		super.init(time);
 		waitingStartTime=now;
 	}
 
 	@Override
-	public final void run(SimData data) {
+	public void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
 		if (simData.loggingActive) simData.logEventExecution(Language.tr("Simulator.Log.CallCancelEvent"),-1,"  "+String.format(Language.tr("Simulator.Log.CallCancelEvent.Info"),SimData.formatSimTime(time-waitingStartTime)));
 

@@ -69,6 +69,7 @@ import systemtools.BaseDialog;
 import systemtools.MainPanelBase;
 import systemtools.MsgBox;
 import systemtools.commandline.CommandLineDialog;
+import systemtools.help.HelpBase;
 import systemtools.statistics.StatisticsBasePanel;
 import tools.ExportQSModel;
 import tools.SetupData;
@@ -1196,7 +1197,7 @@ public class MainPanel extends MainPanelBase {
 		/* Sprache neu laden? */
 		if (!setup.language.equals(Language.getCurrentLanguage())) {
 			setup.resetLanguageWasAutomatically();
-			Help.hideHelpFrame();
+			HelpBase.hideHelpFrame();
 			if (reloadWindow!=null) SwingUtilities.invokeLater(reloadWindow);
 		} else {
 			invalidate();

@@ -625,7 +625,7 @@ public class ExportQSModel {
 			CONDITION,
 			/** Zufällig verzweigen */
 			CHANCE
-		};
+		}
 
 		/**
 		 * Verzweigemodus

@@ -37,7 +37,7 @@ public final class CallEvent extends Event {
 	 * @param simData	<code>SimulationData</code>-Objekt
 	 * @param count	Anzahl der Ankünfte (bei Batch &gt;1)
 	 */
-	private final void simCallCount(final SimulationData simData, final int count) {
+	private void simCallCount(final SimulationData simData, final int count) {
 		/* Zählung des Anrufs in Bezug zu dem <code>simData.runModel.callsToSimulate</code>-Wert */
 		simData.runData.calls+=count;
 
@@ -58,7 +58,7 @@ public final class CallEvent extends Event {
 	}
 
 	@Override
-	public final void run(SimData data) {
+	public void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
 		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallEvent"),-1,"  "+(isNewCall?Language.tr("Simulator.Log.CallEvent.FreshCall"):Language.tr("Simulator.Log.CallEvent.Retryer")));
 

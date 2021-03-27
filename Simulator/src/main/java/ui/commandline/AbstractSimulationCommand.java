@@ -24,6 +24,7 @@ import language.Language;
 import mathtools.NumberTools;
 import simulator.Simulator;
 import simulator.editmodel.EditModel;
+import simulator.editmodel.EditModelBase;
 import simulator.statistics.Statistics;
 import systemtools.commandline.AbstractCommand;
 import systemtools.commandline.BaseCommandLineSystem;
@@ -121,7 +122,7 @@ public abstract class AbstractSimulationCommand extends AbstractCommand {
 	 */
 	protected final Statistics singleSimulation(EditModel editModel, boolean minimalOutput, int maxThreads, PrintStream out) {
 		/* Modell vorbereiten */
-		if (EditModel.isNewerVersionSystem(editModel.version,EditModel.systemVersion)) {
+		if (EditModelBase.isNewerVersionSystem(editModel.version,EditModel.systemVersion)) {
 			out.println(Language.tr("Dialog.Title.Warning").toUpperCase()+": "+Language.tr("Editor.NewerVersion.Info.Short"));
 		}
 		simulator=new Simulator(editModel,null);

@@ -28,7 +28,7 @@ import simulator.runmodel.SimulationData;
  */
 public final class CallDone1Event extends Event {
 	@Override
-	public final void run(SimData data) {
+	public void run(SimData data) {
 		SimulationData simData=(SimulationData)data;
 		if (data.loggingActive) data.logEventExecution(Language.tr("Simulator.Log.CallDone1Event"),-1,"  "+String.format(Language.tr("Simulator.Log.CallDone1Event.Info"),simData.runModel.batchWorking));
 

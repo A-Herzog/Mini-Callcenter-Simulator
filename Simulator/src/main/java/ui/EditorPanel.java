@@ -139,7 +139,7 @@ public final class EditorPanel extends EditorPanelBase {
 	 * @param readOnly	Gibt an, ob die Auswahl in der Auswahlbox geändert werden darf
 	 * @return	Neu eingefügte Auswahlbox
 	 */
-	public static final JComboBox<String> addComboBoxLine(final JPanel parent, final String title, final String[] values, final boolean readOnly) {
+	public static JComboBox<String> addComboBoxLine(final JPanel parent, final String title, final String[] values, final boolean readOnly) {
 		addLabel(parent,title);
 
 		JPanel p,p2;
@@ -167,7 +167,7 @@ public final class EditorPanel extends EditorPanelBase {
 	 * @param title	Beschriftung der Checkbox
 	 * @return	Neu eingefügte Checkbox
 	 */
-	public static final JCheckBox addCheckBox(final JPanel parent, final String title) {
+	public static JCheckBox addCheckBox(final JPanel parent, final String title) {
 		final JPanel p;
 		final JCheckBox checkBox;
 

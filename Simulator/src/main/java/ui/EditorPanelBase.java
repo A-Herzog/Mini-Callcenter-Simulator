@@ -48,6 +48,7 @@ import org.w3c.dom.Element;
 
 import mathtools.distribution.swing.JDistributionPanel;
 import simulator.editmodel.EditModel;
+import simulator.editmodel.EditModelBase;
 import systemtools.MsgBox;
 import xml.XMLTools;
 
@@ -305,7 +306,7 @@ public abstract class EditorPanelBase extends JPanel {
 		String s=newModel.loadFromFile(file);
 		lastLoadTime=System.currentTimeMillis()-loadStart;
 		if (s!=null) return s;
-		if (EditModel.isNewerVersionSystem(newModel.version,EditModel.systemVersion)) {
+		if (EditModelBase.isNewerVersionSystem(newModel.version,EditModel.systemVersion)) {
 			MsgBox.warning(getOwnerWindow(),NEWER_VERSION_TITLE,String.format(NEWER_VERSION_INFO,newModel.version));
 		}
 
@@ -328,7 +329,7 @@ public abstract class EditorPanelBase extends JPanel {
 		String s=newModel.loadFromStream(stream);
 		lastLoadTime=System.currentTimeMillis()-loadStart;
 		if (s!=null) return s;
-		if (EditModel.isNewerVersionSystem(newModel.version,EditModel.systemVersion)) {
+		if (EditModelBase.isNewerVersionSystem(newModel.version,EditModel.systemVersion)) {
 			MsgBox.warning(getOwnerWindow(),NEWER_VERSION_TITLE,String.format(NEWER_VERSION_INFO,newModel.version));
 		}
 
@@ -349,7 +350,7 @@ public abstract class EditorPanelBase extends JPanel {
 		String s=newModel.loadFromXML(root);
 		lastLoadTime=System.currentTimeMillis()-loadStart;
 		if (s!=null) return s;
-		if (EditModel.isNewerVersionSystem(newModel.version,EditModel.systemVersion)) {
+		if (EditModelBase.isNewerVersionSystem(newModel.version,EditModel.systemVersion)) {
 			MsgBox.warning(getOwnerWindow(),NEWER_VERSION_TITLE,String.format(NEWER_VERSION_INFO,newModel.version));
 		}
 
