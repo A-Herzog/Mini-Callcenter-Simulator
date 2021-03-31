@@ -44,6 +44,7 @@
 			<arg value="Launcher.nsi" />
 		</exec>
 		<move file="${BuildTools.location}/MiniCallcenterSimulator.exe" tofile="${Release.location}/MiniCallcenterSimulator.exe" />
+		<copy file="${BuildTools.location}/MiniCallcenterSimulator.sh" tofile="${Release.location}/MiniCallcenterSimulator.sh" />
 
 		<echo message="Generate installer" />
 		<exec executable="${NSIS.location}\makensis.exe" dir="${BuildTools.location}">
@@ -52,12 +53,13 @@
 						
 		<echo message="Generate zip package" />
 		<zip destfile="${Release.location}/MiniCallcenterSimulator.zip">
-			<zipfileset dir="${Release.location}" includes="MiniCallcenterSimulator.jar,MiniCallcenterSimulator.exe,docs/**,libs/**,tools/**"/>
+			<zipfileset dir="${Release.location}" includes="MiniCallcenterSimulator.jar,MiniCallcenterSimulator.exe,MiniCallcenterSimulator.sh,docs/**,libs/**,tools/**"/>
 		</zip>
 		
 		<echo message="Clean up" />
 		<delete file="${Release.location}/MiniCallcenterSimulator.exe" />
 		<delete file="${Release.location}/MiniCallcenterSimulator.jar" />
+		<delete file="${Release.location}/MiniCallcenterSimulator.sh" />
 		<delete dir="${Release.location}/docs" />
 		<delete dir="${Release.location}/libs" />
 		<delete dir="${Release.location}/tools" />

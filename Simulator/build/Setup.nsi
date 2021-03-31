@@ -184,6 +184,7 @@ Section "Install" Inst
   
   File "..\..\Release\MiniCallcenterSimulator.jar"
   File "..\..\Release\MiniCallcenterSimulator.exe"
+  File "..\..\Release\MiniCallcenterSimulator.sh"
   WriteUninstaller "Uninstall.exe"
   
   SetOutPath "$INSTDIR\docs"
@@ -226,6 +227,7 @@ Section "un.Uninstall" uninst
 
   Delete "$INSTDIR\MiniCallcenterSimulator.exe"
   Delete "$INSTDIR\MiniCallcenterSimulator.jar"
+  Delete "$INSTDIR\MiniCallcenterSimulator.sh"
   Delete "$INSTDIR\MiniCallcenterSimulator.dtd"
   Delete "$INSTDIR\MiniCallcenterSimulator.xsd"
   Delete "$INSTDIR\MiniCallcenterSimulator.cfg"
