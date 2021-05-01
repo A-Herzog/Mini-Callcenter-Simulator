@@ -845,7 +845,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1924] = "Statistic.Viewer.DiagramSettings.Axis";
     t[1925] = "Axis labeling";
     t[1930] = "Statistic.Viewer.Report.HTMLApp.Info";
-    t[1931] = "Please select the category to be displayed from the tree structure on the left.";
+    t[1931] = "Please select the category to be displayed from the tree structure.";
     t[1932] = "CalculatorDialog.Plotter.Toolbar.Print.Hint";
     t[1933] = "Prints the graphics.";
     t[1936] = "FileType.HTMLApp";
