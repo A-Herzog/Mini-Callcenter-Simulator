@@ -64,6 +64,8 @@ public class SetupDialog extends BaseDialog {
 	private final JComboBox<String> programStartWindow;
 	/** Zu verwendendes Theme */
 	private final JComboBox<String> lookAndFeel;
+	/** Menü in Titelzeile kombinieren? (Für Flat-Look&amp;Feels unter Windows) */
+	private final JCheckBox lookAndFeelCombinedMenu;
 
 	/** Bildgröße beim Exportieren von Bildern */
 	private final JTextField imageSize;
@@ -132,8 +134,10 @@ public class SetupDialog extends BaseDialog {
 		lookAndFeels.add(Language.tr("SettingsDialog.Theme.System"));
 		lookAndFeels.addAll(Arrays.asList(GUITools.listLookAndFeels()));
 		p.add(lookAndFeel=new JComboBox<String>(lookAndFeels.toArray(new String[0])));
-		label.setLabelFor(programStartWindow);
+		label.setLabelFor(lookAndFeel);
 		lookAndFeel.setToolTipText(Language.tr("SettingsDialog.Theme.Info"));
+		p.add(lookAndFeelCombinedMenu=new JCheckBox(Language.tr("SettingsDialog.LookAndFeel.MenuInWindowTitle")));
+		lookAndFeelCombinedMenu.setToolTipText(Language.tr("SettingsDialog.LookAndFeel.MenuInWindowTitle.Tooltip"));
 
 		/* Tab "Grafik" */
 		tabs.add(Language.tr("SettingsDialog.Tabs.GUI.Graphics"),tab=new JPanel(new FlowLayout(FlowLayout.LEFT))); tab.add(mainarea=new JPanel());
@@ -200,6 +204,7 @@ public class SetupDialog extends BaseDialog {
 			lookAndFeel.setSelectedIndex(i+1);
 			break;
 		}
+		lookAndFeelCombinedMenu.setSelected(setup.lookAndFeelCombinedMenu);
 
 		imageSize.setText(""+Math.min(5000,Math.max(50,setup.imageSize)));
 
@@ -242,6 +247,7 @@ public class SetupDialog extends BaseDialog {
 		}
 
 		if (lookAndFeel.getSelectedIndex()==0) setup.lookAndFeel=""; else setup.lookAndFeel=(String)lookAndFeel.getSelectedItem();
+		setup.lookAndFeelCombinedMenu=lookAndFeelCombinedMenu.isSelected();
 
 		Long L=NumberTools.getPositiveLong(imageSize,true);
 		if (L!=null) setup.imageSize=(int)((long)L);

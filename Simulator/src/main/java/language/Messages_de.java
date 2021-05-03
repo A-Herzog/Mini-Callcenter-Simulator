@@ -634,6 +634,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1429] = "Zusammenfassung";
     t[1434] = "Color.20B2AA";
     t[1435] = "Helles Seegr\u00fcn";
+    t[1440] = "SettingsDialog.LookAndFeel.MenuInWindowTitle";
+    t[1441] = "Men\u00fc in Titelzeile";
     t[1444] = "Editor.General";
     t[1445] = "Allgemeines";
     t[1448] = "FileType.LaTeX";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4605] = "Anzahl an Kunden im System";
     t[4608] = "Color.FAF0E6";
     t[4609] = "Leinen";
-    t[4620] = "LoadCalculator.Tab.AllenCunneen";
-    t[4621] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4620] = "LoadCalculator.Tab.AllenCunneen";
+    t[4621] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
     t[4622] = "CommandLine.Error.PreparationOfModel";
     t[4623] = "Beim Vorbereiten des Modells ist folgender Fehler aufgetreten";
     t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
@@ -2266,8 +2268,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5257] = "Anzahl an Agenten";
     t[5258] = "QSExport.xml.TimeBase.Seconds";
     t[5259] = "Sekunden";
-    t[5266] = "SimStatistic.PostProcessingTime";
-    t[5267] = "Nachbearbeitungszeit";
+    t[5266] = "SettingsDialog.LookAndFeel.MenuInWindowTitle.Tooltip";
+    t[5267] = "Nur f\u00fcr die Flat-Themen und nur unter Windows verf\u00fcgbar";
     t[5272] = "SimStatistic.WorkLoad.LoadShares";
     t[5273] = "Lastanteile";
     t[5280] = "CommandLine.Simulation.Done";
@@ -2438,6 +2440,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5659] = "jpeg-Dateien";
     t[5662] = "Color.FFF8DC";
     t[5663] = "Cornsilk";
+    t[5668] = "SimStatistic.PostProcessingTime";
+    t[5669] = "Nachbearbeitungszeit";
     t[5672] = "CommandLine.Interactive.Description.Long";
     t[5673] = "Dieser Befehl erwartet keine weiteren Parameter.";
     t[5674] = "Statistics.XML.RunThreads";

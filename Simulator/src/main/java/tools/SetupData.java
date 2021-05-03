@@ -92,6 +92,11 @@ public class SetupData extends SetupBase {
 	public String lookAndFeel;
 
 	/**
+	 * Soll die Menüzeile wenn möglich in die Titelzeile integriert werden?
+	 */
+	public boolean lookAndFeelCombinedMenu;
+
+	/**
 	 * Gibt die Größe von Bildern beim Speichern an
 	 */
 	public int imageSize;
@@ -189,6 +194,7 @@ public class SetupData extends SetupBase {
 		lastPosition=new Point(0,0);
 		lastSize=new Dimension(0,0);
 		lookAndFeel="";
+		lookAndFeelCombinedMenu=true;
 		imageSize=1000;
 		imagesInline=true;
 		reportSettings="";
@@ -377,6 +383,7 @@ public class SetupData extends SetupBase {
 
 			if (s.equalsIgnoreCase("LookAndFeel")) {
 				lookAndFeel=e.getTextContent();
+				lookAndFeelCombinedMenu=loadBoolean(e.getAttribute("combinedMenu"),true);
 				continue;
 			}
 
@@ -441,9 +448,10 @@ public class SetupData extends SetupBase {
 			node.setAttribute("Height",""+lastSize.height);
 		}
 
-		if (lookAndFeel!=null && !lookAndFeel.trim().isEmpty()) {
+		if ((lookAndFeel!=null && !lookAndFeel.trim().isEmpty()) || !lookAndFeelCombinedMenu) {
 			root.appendChild(node=doc.createElement("LookAndFeel"));
-			node.setTextContent(lookAndFeel);
+			if (lookAndFeel!=null) node.setTextContent(lookAndFeel);
+			if (!lookAndFeelCombinedMenu) node.setAttribute("combinedMenu","0");
 		}
 
 		if (imageSize!=1000 || !imagesInline) {

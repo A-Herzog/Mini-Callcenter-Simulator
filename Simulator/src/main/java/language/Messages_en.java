@@ -634,6 +634,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1429] = "Report";
     t[1434] = "Color.20B2AA";
     t[1435] = "Light sea green";
+    t[1440] = "SettingsDialog.LookAndFeel.MenuInWindowTitle";
+    t[1441] = "Menu in window title";
     t[1444] = "Editor.General";
     t[1445] = "General";
     t[1448] = "FileType.LaTeX";
@@ -2008,14 +2010,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4605] = "number of clients in the system";
     t[4608] = "Color.FAF0E6";
     t[4609] = "Linen";
-    t[4620] = "LoadCalculator.Tab.AllenCunneen";
-    t[4621] = "Extended Allen-Cunneen approximate formula for queuing systems";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4620] = "LoadCalculator.Tab.AllenCunneen";
+    t[4621] = "Extended Allen-Cunneen approximate formula for queuing systems";
     t[4622] = "CommandLine.Error.PreparationOfModel";
     t[4623] = "The following error occured while preparating the model";
     t[4624] = "Main.Menu.File.RecentlyUsed.Delete";
@@ -2266,8 +2268,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5257] = "Number of agents";
     t[5258] = "QSExport.xml.TimeBase.Seconds";
     t[5259] = "Seconds";
-    t[5266] = "SimStatistic.PostProcessingTime";
-    t[5267] = "Post processing time";
+    t[5266] = "SettingsDialog.LookAndFeel.MenuInWindowTitle.Tooltip";
+    t[5267] = "Only available when using a flat theme and using Windows";
     t[5272] = "SimStatistic.WorkLoad.LoadShares";
     t[5273] = "Load shares";
     t[5280] = "CommandLine.Simulation.Done";
@@ -2438,6 +2440,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5659] = "jpeg files";
     t[5662] = "Color.FFF8DC";
     t[5663] = "Cornsilk";
+    t[5668] = "SimStatistic.PostProcessingTime";
+    t[5669] = "Post processing time";
     t[5672] = "CommandLine.Interactive.Description.Long";
     t[5673] = "This command expects no additional parameters.";
     t[5674] = "Statistics.XML.RunThreads";

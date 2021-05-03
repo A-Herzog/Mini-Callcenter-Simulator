@@ -48,6 +48,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JToolBar;
 import javax.swing.SwingConstants;
+import javax.swing.UIManager;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
@@ -56,6 +57,7 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.xy.XYItemRenderer;
@@ -220,7 +222,7 @@ public class PlotterPanel extends JPanel {
 	 * @param chart	Anzuzeigendes Diagramm
 	 * @return	Panel das das Diagramm enthält
 	 */
-	private ChartPanel initChartPanel(JFreeChart chart) {
+	private ChartPanel initChartPanel(final JFreeChart chart) {
 		final ChartPanel chartPanel=new ChartPanel(
 				chart,
 				ChartPanel.DEFAULT_WIDTH,
@@ -230,18 +232,37 @@ public class PlotterPanel extends JPanel {
 				ChartPanel.DEFAULT_MAXIMUM_DRAW_WIDTH,
 				ChartPanel.DEFAULT_MAXIMUM_DRAW_HEIGHT,
 				ChartPanel.DEFAULT_BUFFER_USED,
-				true,  // properties
-				false,  // save
-				true,  // print
-				true,  // zoom
-				true   // tooltips
+				true,  /* properties */
+				false,  /* save */
+				true,  /* print */
+				true,  /* zoom */
+				true   /* tooltips */
 				);
 		chartPanel.setPopupMenu(null);
+
 		chart.setBackgroundPaint(null);
-		//chart.getPlot().setBackgroundPaint(Color.WHITE);
+
 		chart.getPlot().setBackgroundPaint(new GradientPaint(1,0,new Color(0xFA,0xFA,0xFF),1,150,new Color(0xEA,0xEA,0xFF)));
+
+		final Color textBackground=UIManager.getColor("TextField.background");
+		final boolean isDark=(textBackground!=null && !textBackground.equals(Color.WHITE));
+		if (isDark) {
+			ValueAxis axis;
+			axis=((XYPlot)chart.getPlot()).getDomainAxis();
+			axis.setAxisLinePaint(Color.LIGHT_GRAY);
+			axis.setLabelPaint(Color.LIGHT_GRAY);
+			axis.setTickLabelPaint(Color.LIGHT_GRAY);
+			axis.setTickMarkPaint(Color.LIGHT_GRAY);
+			axis=((XYPlot)chart.getPlot()).getRangeAxis();
+			axis.setAxisLinePaint(Color.LIGHT_GRAY);
+			axis.setLabelPaint(Color.LIGHT_GRAY);
+			axis.setTickLabelPaint(Color.LIGHT_GRAY);
+			axis.setTickMarkPaint(Color.LIGHT_GRAY);
+		}
+
 		TextTitle t=chart.getTitle();
 		if (t!=null) {Font f=t.getFont(); t.setFont(new Font(f.getFontName(),Font.PLAIN,f.getSize()-4));}
+
 		return chartPanel;
 	}
 
@@ -361,8 +382,8 @@ public class PlotterPanel extends JPanel {
 		if (s.equals("docx")) {
 			try (XWPFDocument doc=new XWPFDocument()) {
 				try (ByteArrayOutputStream streamOut=new ByteArrayOutputStream()) {
-					try {if (!ImageIO.write(image,"jpg",streamOut)) return false;} catch (IOException e) {return false;}
-					if (!XWPFDocumentPictureTools.addPicture(doc,streamOut,Document.PICTURE_TYPE_JPEG,image.getWidth(),image.getHeight())) return false;
+					try {if (!ImageIO.write(image,"png",streamOut)) return false;} catch (IOException e) {return false;}
+					if (!XWPFDocumentPictureTools.addPicture(doc,streamOut,Document.PICTURE_TYPE_PNG,image.getWidth(),image.getHeight())) return false;
 				}
 				try (FileOutputStream out=new FileOutputStream(file)) {doc.write(out);} catch (IOException e) {return false;}
 				return true;

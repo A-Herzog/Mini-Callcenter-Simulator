@@ -30,6 +30,7 @@ import systemtools.statistics.StatisticsBasePanel;
 import tools.SetupData;
 import ui.MainFrame;
 import ui.commandline.CommandLineSystem;
+import ui.tools.FlatLaFHelper;
 import xml.XMLTools;
 
 /**
@@ -99,7 +100,11 @@ public class Main {
 	private static final class RunSimulator implements Runnable {
 		@Override
 		public void run() {
-			GUITools.setupUI(SetupData.getSetup().lookAndFeel);
+			SetupData setup=SetupData.getSetup();
+			FlatLaFHelper.init();
+			FlatLaFHelper.setCombinedMenuBar(setup.lookAndFeelCombinedMenu);
+			GUITools.setupUI(setup.lookAndFeel);
+			FlatLaFHelper.setup();
 			MsgBox.setBackend(new MsgBoxBackendTaskDialog());
 			new MainFrame(loadFile);
 		}
