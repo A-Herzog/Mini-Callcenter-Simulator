@@ -162,6 +162,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[289] = "Steel blue";
     t[290] = "Editor.Arrivals.InterArrivalTimes";
     t[291] = "Inter-arrival times";
+    t[292] = "Statistics.XML.Quotient";
+    t[293] = "Quotient";
     t[296] = "ModelInfo.ServedClients.Line1";
     t[297] = "Served clients";
     t[298] = "ModelInfo.ServedClients.Line2";
@@ -924,8 +926,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2129] = "Lavender";
     t[2134] = "Color.66CDAA";
     t[2135] = "Medium aquamarine";
-    t[2138] = "Statistics.XML.Quotient";
-    t[2139] = "Quotient";
+    t[2138] = "Distribution.SawtoothRight";
+    t[2139] = "Right sawtooth distribution";
     t[2146] = "Statistics.ResidenceTimes.Distribution.All";
     t[2147] = "Distribution of the residence times of all clients";
     t[2152] = "Simulator.Log.TryStartCall.Info";
@@ -2008,14 +2010,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4603] = "Salmon";
     t[4604] = "Statistics.NumberOfClientsInTheSystem.lower";
     t[4605] = "number of clients in the system";
-    t[4608] = "Color.FAF0E6";
-    t[4609] = "Linen";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4608] = "Color.FAF0E6";
+    t[4609] = "Linen";
     t[4620] = "LoadCalculator.Tab.AllenCunneen";
     t[4621] = "Extended Allen-Cunneen approximate formula for queuing systems";
     t[4622] = "CommandLine.Error.PreparationOfModel";
@@ -2170,6 +2172,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5009] = "Light salmon";
     t[5010] = "Color.6A5ACD";
     t[5011] = "Slate blue";
+    t[5020] = "Distribution.SawtoothLeft";
+    t[5021] = "Left sawtooth distribution";
     t[5022] = "Statistic.Viewer.Toolbar.Search.Hint";
     t[5023] = "Searches for text on the current page";
     t[5024] = "LoadCalculator.WorkLoad";

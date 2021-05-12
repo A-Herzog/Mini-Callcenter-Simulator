@@ -162,6 +162,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[289] = "Stahlblau";
     t[290] = "Editor.Arrivals.InterArrivalTimes";
     t[291] = "Zwischenankunftszeiten";
+    t[292] = "Statistics.XML.Quotient";
+    t[293] = "Quotient";
     t[296] = "ModelInfo.ServedClients.Line1";
     t[297] = "Bediente Kunden";
     t[298] = "ModelInfo.ServedClients.Line2";
@@ -924,8 +926,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2129] = "Lavendell";
     t[2134] = "Color.66CDAA";
     t[2135] = "Mitteleres Aquamarine";
-    t[2138] = "Statistics.XML.Quotient";
-    t[2139] = "Quotient";
+    t[2138] = "Distribution.SawtoothRight";
+    t[2139] = "Rechte S\u00e4gezahnverteilung";
     t[2146] = "Statistics.ResidenceTimes.Distribution.All";
     t[2147] = "Verteilung der Verweilzeiten aller Kunden";
     t[2152] = "Simulator.Log.TryStartCall.Info";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4603] = "Salmon";
     t[4604] = "Statistics.NumberOfClientsInTheSystem.lower";
     t[4605] = "Anzahl an Kunden im System";
-    t[4608] = "Color.FAF0E6";
-    t[4609] = "Leinen";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4608] = "Color.FAF0E6";
+    t[4609] = "Leinen";
     t[4620] = "LoadCalculator.Tab.AllenCunneen";
     t[4621] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
     t[4622] = "CommandLine.Error.PreparationOfModel";
@@ -2170,6 +2172,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5009] = "Helles Salmon";
     t[5010] = "Color.6A5ACD";
     t[5011] = "Slate Blau";
+    t[5020] = "Distribution.SawtoothLeft";
+    t[5021] = "Linke S\u00e4gezahnverteilung";
     t[5022] = "Statistic.Viewer.Toolbar.Search.Hint";
     t[5023] = "Sucht nach einem Text auf der aktuellen Seite";
     t[5024] = "LoadCalculator.WorkLoad";
