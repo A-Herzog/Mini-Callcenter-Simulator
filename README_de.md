@@ -27,4 +27,15 @@ Die Windows-Version kann sowohl mit als auch ohne Admin-Rechte installiert werde
 
 ## Literatur
 
-* [A. Herzog: "Callcenter – Analyse und Management"](https://www.springer.com/de/book/9783658183080)
+[<img src="CoverHerzogCallcenterAnalyseUndManagement-small.png" style="float: right; max-width: 30%; padding-left: 5px">](https://www.springer.com/de/book/9783658183080)
+
+[A. Herzog: "Callcenter – Analyse und Management"](https://www.springer.com/de/book/9783658183080)
+
+"Callcenter – Analyse und Management" mit BibTeX zitieren:
+
+    @book{herzog2017callcenter,
+      title={Callcenter--Analyse und Management},
+      author={Herzog, Alexander},
+      year={2017},
+      publisher={Springer}
+    }

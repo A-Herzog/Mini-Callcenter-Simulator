@@ -25,6 +25,17 @@ The Windows version can be installed with or without admin rights. The zip file 
 * System requirements: [Java 8 or higher](https://adoptopenjdk.net/ "Download Java from adoptopenjdk.net")
 * License: [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) (for Mini Callcenter Simulator, the used libraries are partly subject to different open source licenses)
 
-## Literature
+## Literature (in German)
 
-* [A. Herzog: "Callcenter – Analyse und Management"](https://www.springer.com/de/book/9783658183080) (in German)
+[<img src="CoverHerzogCallcenterAnalyseUndManagement-small.png" style="float: right; max-width: 30%; padding-left: 5px">](https://www.springer.com/de/book/9783658183080)
+
+[A. Herzog: "Callcenter – Analyse und Management"](https://www.springer.com/de/book/9783658183080)  (in German)
+
+Citing "Callcenter – Analyse und Management" using BibTeX:
+
+    @book{herzog2017callcenter,
+      title={Callcenter--Analyse und Management},
+      author={Herzog, Alexander},
+      year={2017},
+      publisher={Springer}
+    }
