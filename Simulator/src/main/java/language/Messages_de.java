@@ -302,6 +302,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[629] = "Modelldatei wurde mit neuerer Version erstellt";
     t[634] = "Statistics.AutoCorrelation.LineMoreThan";
     t[635] = "min{k|rho(k)<%s} > %s";
+    t[636] = "Help.Search.ResultSelect";
+    t[637] = "Passende Seiten zu dem Suchtreffer:";
     t[640] = "Simulator.Log.CallDone2Event.WaitingClient";
     t[641] = "Ein wartender Anrufer wird einem Agenten zugeordnet.";
     t[644] = "XML.ErrorOpeningFile";
@@ -458,6 +460,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[977] = "Mitternachtsblau";
     t[978] = "Color.006400";
     t[979] = "Dunkel gr\u00fcn";
+    t[982] = "Help.Search.Type.Index";
+    t[983] = "Seiteninhalt";
     t[984] = "Color.228B22";
     t[985] = "Waldgr\u00fcn";
     t[986] = "QSExport.xml.Element.Connection.Element1";
@@ -796,6 +800,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1835] = "id";
     t[1838] = "Numbers.Language";
     t[1839] = "de";
+    t[1840] = "Help.Search.ResultOnPage";
+    t[1841] = "auf Seite \"%s\" gefunden";
     t[1842] = "Statistics.ResidenceTimes.Distribution.Successful";
     t[1843] = "Verteilung der Verweilzeiten der erfolgreichen Kunden";
     t[1850] = "Color.DC143C";
@@ -1020,12 +1026,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2339] = "StatistikWiederholungen";
     t[2344] = "Main.Statistic.NoStatisticsAvailable";
     t[2345] = "Es sind momentan keine Statistikdaten vorhanden, die gespeichert werden k\u00f6nnten.";
+    t[2350] = "Help.Search.NoHitSelected";
+    t[2351] = "Es wurde kein Suchtreffer ausgew\u00e4hlt.";
     t[2352] = "JDistributionEditor.Save.Title";
     t[2353] = "Verteilung speichern";
     t[2358] = "QSExport.xml.ModelElementDistribution.Status";
     t[2359] = "Status";
-    t[2360] = "Statistics.XML.ServiceLevel";
-    t[2361] = "StatistikAnrufeServiceLevel";
+    t[2360] = "QSExport.xml.ModelElementOperators";
+    t[2361] = "ModellElementBediener";
     t[2370] = "SettingsDialog.Tabs.Simulation";
     t[2371] = "Simulation";
     t[2374] = "Statistic.Viewer.DiagramSettings.Background.Gradient.Active";
@@ -1094,6 +1102,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2497] = "ModellElementBatch";
     t[2502] = "Distribution.FatigueLife";
     t[2503] = "Fatigue-Life-Verteilung";
+    t[2510] = "Help.Search.SearchString";
+    t[2511] = "Suchbegriff";
     t[2522] = "Compare.Error.NoModelKept.Info";
     t[2523] = "Bisher wurde kein Modell festgehalten, mit dem das aktuelle Modell verglichen werden k\u00f6nnte.";
     t[2524] = "Color.F4A460";
@@ -1320,8 +1330,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3091] = "H";
     t[3100] = "SimStatistic.Longest";
     t[3101] = "L\u00e4ngste";
-    t[3104] = "QSExport.xml.ModelElementOperators";
-    t[3105] = "ModellElementBediener";
+    t[3104] = "Help.Search.Type.Page";
+    t[3105] = "Seite";
     t[3106] = "LoadCalculator.Tab.ErlangCext";
     t[3107] = "Erlang C (erweitert)";
     t[3112] = "SimStatistic.WorkLoad.FullPart.Info";
@@ -1688,6 +1698,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3897] = "ModellElementVerzweigungsmodus";
     t[3900] = "SimStatistic.BatchService";
     t[3901] = "Anzahl an Kunden die jeweils durch einen Agenten gleichzeitig bedient werden (Batch-Verarbeitung)";
+    t[3906] = "Statistics.XML.ServiceLevel";
+    t[3907] = "StatistikAnrufeServiceLevel";
     t[3912] = "Statistics.InterLeaveTimes";
     t[3913] = "Zwischenabgangszeiten";
     t[3914] = "Statistics.XML.Distribution";
@@ -1750,6 +1762,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4001] = "kursiv";
     t[4004] = "Statistic.Viewer.Toolbar.Settings.Hint";
     t[4005] = "Einstellungen zu der gew\u00e4hlten Statistik-Anzeige vornehmen";
+    t[4006] = "Help.Search.Info";
+    t[4007] = "Erm\u00f6glicht die Suche in der gesamten Hilfe";
+    t[4008] = "Help.Search.ResultCountSingular";
+    t[4009] = "auf %d Seite gefunden";
     t[4010] = "Compare.TooFewModels.InfoTwo";
     t[4011] = "Es m\u00fcssen zwei Statistikdateien zum Vergleichen angegeben werden.";
     t[4020] = "Statistic.Viewer.SpecialText.SubCategory";
@@ -1994,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4555] = "Hilfe";
     t[4558] = "JDistributionEditor.Wikipedia.Info";
     t[4559] = "\u00d6ffnet ein Browserfenster mit weiteren Informationen zu dem gew\u00e4hlten Verteilungstyp";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4566] = "Statistic.Viewer.Toolbar.Settings";
     t[4567] = "Einstellungen";
     t[4568] = "CalculatorDialog.Expression.ParseError";
@@ -2010,12 +2032,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4603] = "Salmon";
     t[4604] = "Statistics.NumberOfClientsInTheSystem.lower";
     t[4605] = "Anzahl an Kunden im System";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4608] = "Color.FAF0E6";
     t[4609] = "Leinen";
     t[4620] = "LoadCalculator.Tab.AllenCunneen";
@@ -2114,6 +2130,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4851] = "Version";
     t[4854] = "Main.Toolbar.StartSimulation.Hint";
     t[4855] = "Startet einen Simulationslauf";
+    t[4860] = "Help.Search.ResultCountPlural";
+    t[4861] = "auf %d Seiten gefunden";
     t[4862] = "QSExport.xml.ModelElementDistribution";
     t[4863] = "ModellElementVerteilung";
     t[4864] = "JDataLoader.ImportErrorNoArea";
@@ -2304,6 +2322,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5349] = "Schokolade";
     t[5352] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
     t[5353] = "In Fenstergr\u00f6\u00dfe (%dx%d Pixel) kopieren";
+    t[5356] = "Help.Search";
+    t[5357] = "Suchen";
     t[5358] = "LicenseViewer.Part.Components.Simulator";
     t[5359] = "Lizenzen der von dem Simulator genutzten Komponenten";
     t[5362] = "Distribution.Data";

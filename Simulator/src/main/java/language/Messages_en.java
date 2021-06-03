@@ -302,6 +302,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[629] = "Model file was created with a newer version";
     t[634] = "Statistics.AutoCorrelation.LineMoreThan";
     t[635] = "min{k|rho(k)<%s} > %s";
+    t[636] = "Help.Search.ResultSelect";
+    t[637] = "Matching pages for the search hit:";
     t[640] = "Simulator.Log.CallDone2Event.WaitingClient";
     t[641] = "A waiting client is assigned to an agent.";
     t[644] = "XML.ErrorOpeningFile";
@@ -458,6 +460,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[977] = "Midnight blue";
     t[978] = "Color.006400";
     t[979] = "Dark green";
+    t[982] = "Help.Search.Type.Index";
+    t[983] = "Page content";
     t[984] = "Color.228B22";
     t[985] = "Forest green";
     t[986] = "QSExport.xml.Element.Connection.Element1";
@@ -796,6 +800,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1835] = "id";
     t[1838] = "Numbers.Language";
     t[1839] = "en";
+    t[1840] = "Help.Search.ResultOnPage";
+    t[1841] = "found on page \"%s\"";
     t[1842] = "Statistics.ResidenceTimes.Distribution.Successful";
     t[1843] = "Distribution of the residence times of the successful clients";
     t[1850] = "Color.DC143C";
@@ -1020,12 +1026,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2339] = "StatisticsRepeats";
     t[2344] = "Main.Statistic.NoStatisticsAvailable";
     t[2345] = "There are no statistics data available at this time that could be saved.";
+    t[2350] = "Help.Search.NoHitSelected";
+    t[2351] = "No search hit was selected.";
     t[2352] = "JDistributionEditor.Save.Title";
     t[2353] = "Save distribution";
     t[2358] = "QSExport.xml.ModelElementDistribution.Status";
     t[2359] = "Status";
-    t[2360] = "Statistics.XML.ServiceLevel";
-    t[2361] = "StatisticsCallsServiceLevel";
+    t[2360] = "QSExport.xml.ModelElementOperators";
+    t[2361] = "ModelElementOperators";
     t[2370] = "SettingsDialog.Tabs.Simulation";
     t[2371] = "Simulation";
     t[2374] = "Statistic.Viewer.DiagramSettings.Background.Gradient.Active";
@@ -1094,6 +1102,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2497] = "ModelElementBatchData";
     t[2502] = "Distribution.FatigueLife";
     t[2503] = "Fatigue life distribution";
+    t[2510] = "Help.Search.SearchString";
+    t[2511] = "Search keyword";
     t[2522] = "Compare.Error.NoModelKept.Info";
     t[2523] = "There is no kept model which the current model could be compared to.";
     t[2524] = "Color.F4A460";
@@ -1320,8 +1330,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3091] = "H";
     t[3100] = "SimStatistic.Longest";
     t[3101] = "Longest";
-    t[3104] = "QSExport.xml.ModelElementOperators";
-    t[3105] = "ModelElementOperators";
+    t[3104] = "Help.Search.Type.Page";
+    t[3105] = "Page";
     t[3106] = "LoadCalculator.Tab.ErlangCext";
     t[3107] = "Erlang C (extended)";
     t[3112] = "SimStatistic.WorkLoad.FullPart.Info";
@@ -1688,6 +1698,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3897] = "ModelElementDecideMode";
     t[3900] = "SimStatistic.BatchService";
     t[3901] = "Number of clients that are served simultaneously by one agent (batch processing)";
+    t[3906] = "Statistics.XML.ServiceLevel";
+    t[3907] = "StatisticsCallsServiceLevel";
     t[3912] = "Statistics.InterLeaveTimes";
     t[3913] = "Inter-leaving times";
     t[3914] = "Statistics.XML.Distribution";
@@ -1750,6 +1762,10 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4001] = "italic";
     t[4004] = "Statistic.Viewer.Toolbar.Settings.Hint";
     t[4005] = "Change settings for the selected statistics page.";
+    t[4006] = "Help.Search.Info";
+    t[4007] = "Allows you to search the complete help";
+    t[4008] = "Help.Search.ResultCountSingular";
+    t[4009] = "found on %d page";
     t[4010] = "Compare.TooFewModels.InfoTwo";
     t[4011] = "Two statistic files have to be selected to be compared.";
     t[4020] = "Statistic.Viewer.SpecialText.SubCategory";
@@ -1994,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4555] = "Help";
     t[4558] = "JDistributionEditor.Wikipedia.Info";
     t[4559] = "Opens a browser window with additional information about the selected distribution type";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4566] = "Statistic.Viewer.Toolbar.Settings";
     t[4567] = "Settings";
     t[4568] = "CalculatorDialog.Expression.ParseError";
@@ -2010,12 +2032,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4603] = "Salmon";
     t[4604] = "Statistics.NumberOfClientsInTheSystem.lower";
     t[4605] = "number of clients in the system";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4608] = "Color.FAF0E6";
     t[4609] = "Linen";
     t[4620] = "LoadCalculator.Tab.AllenCunneen";
@@ -2114,6 +2130,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4851] = "Version";
     t[4854] = "Main.Toolbar.StartSimulation.Hint";
     t[4855] = "Start simulation of the model";
+    t[4860] = "Help.Search.ResultCountPlural";
+    t[4861] = "found on %d pages";
     t[4862] = "QSExport.xml.ModelElementDistribution";
     t[4863] = "ModelElementDistribution";
     t[4864] = "JDataLoader.ImportErrorNoArea";
@@ -2304,6 +2322,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5349] = "Chocolate";
     t[5352] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
     t[5353] = "Copy using window size (%dx%d pixels)";
+    t[5356] = "Help.Search";
+    t[5357] = "Search";
     t[5358] = "LicenseViewer.Part.Components.Simulator";
     t[5359] = "Lizenzen der von dem Simulator genutzten Komponenten";
     t[5362] = "Distribution.Data";

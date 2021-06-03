@@ -70,6 +70,7 @@ import systemtools.MainPanelBase;
 import systemtools.MsgBox;
 import systemtools.commandline.CommandLineDialog;
 import systemtools.help.HelpBase;
+import systemtools.help.IndexSystem;
 import systemtools.statistics.StatisticsBasePanel;
 import tools.ExportQSModel;
 import tools.SetupData;
@@ -207,6 +208,12 @@ public class MainPanel extends MainPanelBase {
 			setCurrentPanel(editorPanel);
 			commandFileModelNew(0);
 			if (!isReload) languageInfo();
+
+			final IndexSystem indexSystem=IndexSystem.getInstance();
+			indexSystem.addLanguage("de","pages_de");
+			indexSystem.addLanguage("en","pages_en");
+			indexSystem.init(Help.class);
+			IndexSystem.getInstance().setLanguage(Language.getCurrentLanguage());
 		});
 
 		setup.addChangeNotifyListener(()->reloadSetup());
