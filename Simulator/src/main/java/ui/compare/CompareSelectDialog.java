@@ -129,8 +129,8 @@ public class CompareSelectDialog extends BaseDialog  {
 
 	@Override
 	protected boolean checkData() {
-		List<File> files=new ArrayList<File>();
-		List<Integer> nr=new ArrayList<Integer>();
+		List<File> files=new ArrayList<>();
+		List<Integer> nr=new ArrayList<>();
 
 		for (int i=0;i<statisticTextFields.length;i++) {
 			String s=statisticTextFields[i].getText().trim();
@@ -162,7 +162,7 @@ public class CompareSelectDialog extends BaseDialog  {
 	 */
 	@Override
 	protected void storeData() {
-		List<File> files=new ArrayList<File>();
+		List<File> files=new ArrayList<>();
 		for (int i=0;i<statisticTextFields.length;i++) {
 			String s=statisticTextFields[i].getText().trim();
 			if (s.isEmpty()) continue;

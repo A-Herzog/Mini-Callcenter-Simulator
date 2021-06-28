@@ -191,13 +191,13 @@ public final class EditorPanel extends EditorPanelBase {
 		name=addInputLine(p,Language.tr("Editor.General.Name"),readOnly);
 		description=addInputArea(p,Language.tr("Editor.General.Description"),readOnly);
 		callsToSimulate=addInputLine(p,Language.tr("Editor.General.CallsToSimulate"),readOnly);
-		addCheckInput(callsToSimulate,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(callsToSimulate,true);}});
+		addCheckInput(callsToSimulate,()->NumberTools.getPositiveLong(callsToSimulate,true));
 		p.add(Box.createVerticalStrut(5));
 
 		/* Ankünfte */
 		p=addTab(Language.tr("Editor.Arrivals"),Images.MODEL_EDITOR_ARRIVALS.getIcon());
 		batchArrival=addInputLine(p,Language.tr("Editor.Arrivals.ClientsPerArrival"),readOnly);
-		addCheckInput(batchArrival,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(batchArrival,true);}});
+		addCheckInput(batchArrival,()->NumberTools.getPositiveLong(batchArrival,true));
 		interArrivalTimeDist=addDistribution(p,Language.tr("Editor.Arrivals.InterArrivalTimes"),3600,readOnly);
 		p.add(Box.createVerticalStrut(5));
 
@@ -205,7 +205,7 @@ public final class EditorPanel extends EditorPanelBase {
 		p=addTab(Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance"),Images.MODEL_EDITOR_WAITING.getIcon());
 		waitingRoomSizeSelect=addOptions(p,null,new String[]{Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingRoom.NoLimit"),Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingRoom.Limit")+":"});
 		waitingRoomSize=addInputLine(p,null,readOnly);
-		addCheckInput(waitingRoomSize,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(waitingRoomSize,true);}});
+		addCheckInput(waitingRoomSize,()->NumberTools.getPositiveLong(waitingRoomSize,true));
 		waitingTimeSelect=addOptions(p,null,new String[]{Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit"),Language.tr("Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.Limit")+":"});
 		waitingTimeDist=addDistribution(p,null,3600,readOnly);
 		collectCorrelation=addCheckBox(p,Language.tr("Editor.CollectCorrelation"));
@@ -213,13 +213,13 @@ public final class EditorPanel extends EditorPanelBase {
 		/* Bedienungen */
 		p=addTab(Language.tr("Editor.Service"),Images.MODEL_EDITOR_SERVICE.getIcon());
 		agents=addInputLine(p,Language.tr("Editor.Service.NumberOfAgents"),readOnly);
-		addCheckInput(agents,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(agents,true);}});
+		addCheckInput(agents,()->NumberTools.getPositiveLong(agents,true));
 		queueMode=addComboBoxLine(p,Language.tr("Editor.Service.QueueMode"),new String[] {Language.tr("Editor.Service.QueueMode.FIFO"),Language.tr("Editor.Service.QueueMode.LIFO")},readOnly);
 		batchWorking=addInputLine(p,Language.tr("Editor.Service.ClientsPerServiceBatch"),readOnly);
-		addCheckInput(batchWorking,new Runnable() {@Override public void run() {NumberTools.getPositiveLong(batchWorking,true);}});
+		addCheckInput(batchWorking,()->NumberTools.getPositiveLong(batchWorking,true));
 		workingTimeDist=addDistribution(p,Language.tr("Editor.Service.ServiceTimes"),3600,readOnly);
 		callContinueProbability=addInputLine(p,Language.tr("Editor.Service.ForwardingProbability"),readOnly);
-		addCheckInput(callContinueProbability,new Runnable() {@Override public void run() {NumberTools.getProbability(callContinueProbability,true);}});
+		addCheckInput(callContinueProbability,()->NumberTools.getProbability(callContinueProbability,true));
 		p.add(Box.createVerticalStrut(5));
 
 		/* Nachbearbeitungszeiten */
@@ -229,7 +229,7 @@ public final class EditorPanel extends EditorPanelBase {
 		/* Wiederholungen */
 		p=addTab(Language.tr("Editor.Retry"),Images.MODEL_EDITOR_RETRY.getIcon());
 		retryProbability=addInputLine(p,Language.tr("Editor.Retry.RetryProbability"),readOnly);
-		addCheckInput(retryProbability,new Runnable() {@Override public void run() {NumberTools.getProbability(retryProbability,true);}});
+		addCheckInput(retryProbability,()->NumberTools.getProbability(retryProbability,true));
 		retryTimeDist=addDistribution(p,Language.tr("Editor.Retry.RetryDistances"),3600,readOnly);
 		p.add(Box.createVerticalStrut(5));
 

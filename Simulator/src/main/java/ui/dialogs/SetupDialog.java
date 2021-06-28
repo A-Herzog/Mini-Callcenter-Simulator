@@ -108,7 +108,7 @@ public class SetupDialog extends BaseDialog {
 		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
 		p.add(label=new JLabel(Language.tr("SettingsDialog.Languages")+":"));
 		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
-		p.add(languages=new JComboBox<String>(new String[]{Language.tr("SettingsDialog.Languages.English"),Language.tr("SettingsDialog.Languages.German")}));
+		p.add(languages=new JComboBox<>(new String[]{Language.tr("SettingsDialog.Languages.English"),Language.tr("SettingsDialog.Languages.German")}));
 		languages.setRenderer(new IconListCellRenderer(new Images[]{Images.LANGUAGE_EN,Images.LANGUAGE_DE}));
 		languages.setToolTipText(Language.tr("SettingsDialog.Languages.Info"));
 		label.setLabelFor(languages);
@@ -116,7 +116,7 @@ public class SetupDialog extends BaseDialog {
 		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
 		p.add(new JLabel(Language.tr("SettingsDialog.WindowSizeProgrmStart")+":"));
 		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
-		p.add(programStartWindow=new JComboBox<String>(new String[]{
+		p.add(programStartWindow=new JComboBox<>(new String[]{
 				Language.tr("SettingsDialog.WindowSizeProgrmStart.Normal"),
 				Language.tr("SettingsDialog.WindowSizeProgrmStart.FullScreen"),
 				Language.tr("SettingsDialog.WindowSizeProgrmStart.LastSize")
@@ -133,7 +133,7 @@ public class SetupDialog extends BaseDialog {
 		final List<String> lookAndFeels=new ArrayList<>();
 		lookAndFeels.add(Language.tr("SettingsDialog.Theme.System"));
 		lookAndFeels.addAll(Arrays.asList(GUITools.listLookAndFeels()));
-		p.add(lookAndFeel=new JComboBox<String>(lookAndFeels.toArray(new String[0])));
+		p.add(lookAndFeel=new JComboBox<>(lookAndFeels.toArray(new String[0])));
 		label.setLabelFor(lookAndFeel);
 		lookAndFeel.setToolTipText(Language.tr("SettingsDialog.Theme.Info"));
 		p.add(lookAndFeelCombinedMenu=new JCheckBox(Language.tr("SettingsDialog.LookAndFeel.MenuInWindowTitle")));

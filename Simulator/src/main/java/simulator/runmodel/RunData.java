@@ -74,7 +74,7 @@ public class RunData {
 	 */
 	public RunData(final RunModel runModel) {
 		freeAgents=runModel.agents;
-		waitingCalls=new ArrayDeque<CallCancelEvent>(10000);
+		waitingCalls=new ArrayDeque<>(10000);
 	}
 
 	/**

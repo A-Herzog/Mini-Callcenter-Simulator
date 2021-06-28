@@ -507,7 +507,7 @@ public class MainPanel extends MainPanelBase {
 	 * @param fileName	Dateiname, der zu der Liste hinzugefügt werden soll (wenn er nicht bereits enthalten ist)
 	 */
 	private void addFileToRecentlyUsedList(String fileName) {
-		final ArrayList<String> files=(setup.lastFiles==null)?new ArrayList<String>():new ArrayList<String>(Arrays.asList(setup.lastFiles));
+		final ArrayList<String> files=(setup.lastFiles==null)?new ArrayList<>():new ArrayList<>(Arrays.asList(setup.lastFiles));
 
 		int index=files.indexOf(fileName);
 		if (index==0) return; /* Eintrag ist bereits ganz oben in der Liste, nichts zu tun */
