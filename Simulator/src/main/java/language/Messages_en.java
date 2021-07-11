@@ -686,6 +686,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1539] = "Dark khaki";
     t[1542] = "Window.LanguageAutomatic";
     t[1543] = "The program language was set to <b>English</b>. You can change this via <b>File|Preferences</b>.";
+    t[1544] = "Statistics.XML.RunThreads.DynamicBalanceData";
+    t[1545] = "DynamicThreadBalanceData";
     t[1552] = "Statistics.XML.RunEvents.Error";
     t[1553] = "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[1554] = "JDistributionEditor.Edit.Info";
@@ -2008,14 +2010,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4545] = "Q";
     t[4554] = "Main.Menu.Help";
     t[4555] = "Help";
-    t[4558] = "JDistributionEditor.Wikipedia.Info";
-    t[4559] = "Opens a browser window with additional information about the selected distribution type";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4558] = "JDistributionEditor.Wikipedia.Info";
+    t[4559] = "Opens a browser window with additional information about the selected distribution type";
     t[4566] = "Statistic.Viewer.Toolbar.Settings";
     t[4567] = "Settings";
     t[4568] = "CalculatorDialog.Expression.ParseError";

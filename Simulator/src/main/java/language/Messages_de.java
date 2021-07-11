@@ -686,6 +686,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1539] = "Dunkelkhaki";
     t[1542] = "Window.LanguageAutomatic";
     t[1543] = "Die Programmsprache wurde passend zur Betriebssystemsprache auf <b>Deutsch</b> eingestellt. Sie k\u00f6nnen dies \u00fcber <b>Datei|Einstellungen</b> ver\u00e4ndern.";
+    t[1544] = "Statistics.XML.RunThreads.DynamicBalanceData";
+    t[1545] = "DynamischeThreadBalanceDaten";
     t[1552] = "Statistics.XML.RunEvents.Error";
     t[1553] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[1554] = "JDistributionEditor.Edit.Info";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4545] = "W";
     t[4554] = "Main.Menu.Help";
     t[4555] = "Hilfe";
-    t[4558] = "JDistributionEditor.Wikipedia.Info";
-    t[4559] = "\u00d6ffnet ein Browserfenster mit weiteren Informationen zu dem gew\u00e4hlten Verteilungstyp";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4558] = "JDistributionEditor.Wikipedia.Info";
+    t[4559] = "\u00d6ffnet ein Browserfenster mit weiteren Informationen zu dem gew\u00e4hlten Verteilungstyp";
     t[4566] = "Statistic.Viewer.Toolbar.Settings";
     t[4567] = "Einstellungen";
     t[4568] = "CalculatorDialog.Expression.ParseError";
