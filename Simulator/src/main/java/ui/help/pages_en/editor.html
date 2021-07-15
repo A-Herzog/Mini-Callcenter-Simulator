@@ -71,6 +71,13 @@ inserted before counting the calls and collecting statistical results. The trans
 the later actual simulation.
 </p>
 
+<p>
+In the <b>Additional calls for warm-up phase</b> field, a number of calls can be specified that are
+to be additionally simulated in advance. Only after the completion of the simulation of these callers,
+the statistics recording starts and the actually specified number of callers is simulated. In this way,
+effects caused by the fact that the simulation starts with an empty system, can be avoided.
+</p>
+
 <h2>Arrivals <img src="../images/user.png"></h2>
 
 <p>

@@ -157,10 +157,8 @@ public class RunModel {
 			split*=2;
 			runModel.callsToSimulate=(int)Math.round(Math.ceil(((double)editModel.callsToSimulate)/split));
 		}
-
 		runModel.repeatCount=split;
-		runModel.warmUpPeriod=(int)Math.round(Math.ceil((runModel.callsToSimulate)*warmUpPeriodPart));
-		runModel.callsToSimulate+=runModel.warmUpPeriod;
+		runModel.warmUpPeriod=editModel.callsToSimulateWarmUp;
 		runModel.waitingRoomSize=editModel.waitingRoomSize;
 		runModel.collectCorrelation=editModel.collectCorrelation;
 

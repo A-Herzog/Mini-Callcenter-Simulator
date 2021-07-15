@@ -51,7 +51,12 @@ public class RunData {
 	/**
 	 * Gibt an, ob sich das System noch in der Einschwingphase befindet.
 	 */
-	public boolean isWarmUpPeriod=true;
+	public boolean isWarmUpPeriod;
+
+	/**
+	 * Anzahl an zu simulierenden Ankünften im aktuellen Lauf
+	 */
+	public long callsToSimulate;
 
 	/**
 	 * Letzte Kundenankunftszeit (für Berechnung der Zwischenankunftszeiten)
@@ -86,6 +91,9 @@ public class RunData {
 		freeAgents=simData.runModel.agents;
 		calls=0;
 		waitingCalls.clear();
+
+		callsToSimulate=simData.runModel.callsToSimulate+simData.runModel.warmUpPeriod;
+		isWarmUpPeriod=(simData.runModel.warmUpPeriod>0);
 
 		/* Ersten Anruf(-batch) einplanen */
 		simData.scheduleCall(simData.runModel.getInterArrivalTime(),true);

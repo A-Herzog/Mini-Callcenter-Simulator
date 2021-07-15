@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 11:25+0200\n"
+"POT-Creation-Date: 2021-06-29 13:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1138,6 +1138,9 @@ msgstr "General"
 msgid "Editor.General.CallsToSimulate"
 msgstr "Calls to simulate"
 
+msgid "Editor.General.CallsToSimulateWarmUp"
+msgstr "Additional calls for warm-up phase"
+
 msgid "Editor.General.Description"
 msgstr "Description"
 
@@ -1982,6 +1985,12 @@ msgstr "ModelClientsToSimulate"
 
 msgid "Model.XML.ClientCount.Error"
 msgstr "The value \"%s\" for the number of clients to be simulated is invalid. A positive integer number has to be specified."
+
+msgid "Model.XML.ClientCountWarmUp"
+msgstr "AdditionalWarmUp"
+
+msgid "Model.XML.ClientCountWarmUp.Error"
+msgstr "The specified number of warm-up calls \"%s\" is invalid. A non-negative integer number has to be specified."
 
 msgid "Model.XML.CollectCorrelation"
 msgstr "ModelAutocorrelation"

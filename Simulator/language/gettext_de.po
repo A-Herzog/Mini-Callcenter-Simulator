@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 11:25+0200\n"
+"POT-Creation-Date: 2021-06-29 13:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1138,6 +1138,9 @@ msgstr "Allgemeines"
 msgid "Editor.General.CallsToSimulate"
 msgstr "Zu simulierende Anrufe"
 
+msgid "Editor.General.CallsToSimulateWarmUp"
+msgstr "Zusätzliche Ankünfte für Einschwingphase"
+
 msgid "Editor.General.Description"
 msgstr "Beschreibung"
 
@@ -1982,6 +1985,12 @@ msgstr "ModellSimulierteKunden"
 
 msgid "Model.XML.ClientCount.Error"
 msgstr "Der angegebene Wert \"%s\" für die Anzahl an simulierten Kunden ist ungültig. Es muss eine positive Ganzzahl angegeben werden."
+
+msgid "Model.XML.ClientCountWarmUp"
+msgstr "ZusaetzlicheEinschwingphase"
+
+msgid "Model.XML.ClientCountWarmUp.Error"
+msgstr "Die angegebene Anzahl an Anrufen in der Einschwingphase \"%s\" ist ungültig. Es muss eine nichtnegative Ganzzahl angegeben werden."
 
 msgid "Model.XML.CollectCorrelation"
 msgstr "ModellAutokorrelation"

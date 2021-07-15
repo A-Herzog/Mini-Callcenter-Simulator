@@ -50,7 +50,7 @@ public final class CallEvent extends Event {
 		}
 
 		/* Simulation zu Ende oder aber nächsten Anruf einplanen? */
-		if (simData.runData.calls>=simData.runModel.callsToSimulate) {
+		if (simData.runData.calls>=simData.runData.callsToSimulate) {
 			simData.scheduleStopTest();
 		} else {
 			simData.scheduleCall(simData.runModel.getInterArrivalTime(),true);

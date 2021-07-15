@@ -172,6 +172,11 @@ public class EditModel extends EditModelBase implements Cloneable {
 	public int callsToSimulate;
 
 	/**
+	 * Zusätzliche Anrufe die als Einschwingphase simuliert werden sollen
+	 */
+	public int callsToSimulateWarmUp;
+
+	/**
 	 * Größe des Warteraums (ein in Bedienung befindlicher Anrufer belegt keinen Warteraum mehr)
 	 */
 	public int waitingRoomSize;
@@ -200,6 +205,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		callContinueProbability=0;
 		retryProbability=0;
 		callsToSimulate=100000;
+		callsToSimulateWarmUp=10000;
 		waitingRoomSize=-1;
 		collectCorrelation=false;
 	}
@@ -228,6 +234,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		clone.callContinueProbability=callContinueProbability;
 		clone.retryProbability=retryProbability;
 		clone.callsToSimulate=callsToSimulate;
+		clone.callsToSimulateWarmUp=callsToSimulateWarmUp;
 		clone.waitingRoomSize=waitingRoomSize;
 		clone.collectCorrelation=collectCorrelation;
 
@@ -258,6 +265,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 		if (callContinueProbability!=otherModel.callContinueProbability) return false;
 		if (retryProbability!=otherModel.retryProbability) return false;
 		if (callsToSimulate!=otherModel.callsToSimulate) return false;
+		if (callsToSimulateWarmUp!=otherModel.callsToSimulateWarmUp) return false;
 		if (waitingRoomSize!=otherModel.waitingRoomSize) return false;
 		if (collectCorrelation!=otherModel.collectCorrelation) return false;
 
@@ -362,6 +370,13 @@ public class EditModel extends EditModelBase implements Cloneable {
 			final Integer J=NumberTools.getNotNegativeInteger(text);
 			if (J==null || J==0) return String.format(Language.tr("Model.XML.ClientCount.Error"),text);
 			callsToSimulate=J;
+
+			final String warmUpString=Language.trAllAttribute("Model.XML.ClientCountWarmUp",node);
+			if (warmUpString!=null && !warmUpString.trim().isEmpty()) {
+				final Integer I=NumberTools.getNotNegativeInteger(warmUpString);
+				if (I==null) return String.format(Language.tr("Model.XML.ClientCountWarmUp.Error"),warmUpString);
+				callsToSimulateWarmUp=I;
+			}
 			return null;
 		}
 
@@ -382,6 +397,8 @@ public class EditModel extends EditModelBase implements Cloneable {
 
 	@Override
 	protected void addDataToXML(final Document doc, final Element node, final boolean isPartOfOtherFile, final File file) {
+		Element sub;
+
 		if (!isPartOfOtherFile) version=systemVersion; /* Versionskennung aktualisieren, sofern das Modell direkt gespeichert wird und nicht nur Teil einer Statistikdatei ist. */
 		addTextToXML(doc,node,Language.tr("Model.XML.Version"),version);
 
@@ -399,7 +416,8 @@ public class EditModel extends EditModelBase implements Cloneable {
 		addTextToXML(doc,node,Language.tr("Model.XML.NumberOfAgents"),agents);
 		addTextToXML(doc,node,Language.tr("Model.XML.ForwardingProbability"),callContinueProbability);
 		addTextToXML(doc,node,Language.tr("Model.XML.RetryProbability"),retryProbability);
-		addTextToXML(doc,node,Language.tr("Model.XML.ClientCount"),callsToSimulate);
+		sub=addTextToXML(doc,node,Language.tr("Model.XML.ClientCount"),callsToSimulate);
+		sub.setAttribute(Language.tr("Model.XML.ClientCountWarmUp"),""+callsToSimulateWarmUp);
 		addTextToXML(doc,node,Language.tr("Model.XML.WaitingRoomSize"),waitingRoomSize);
 		if (collectCorrelation) addTextToXML(doc,node,Language.tr("Model.XML.CollectCorrelation"),"1");
 	}

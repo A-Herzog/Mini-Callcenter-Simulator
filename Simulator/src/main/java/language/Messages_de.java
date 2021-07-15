@@ -220,6 +220,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[421] = "Daten importieren";
     t[428] = "Dialog.Button.PasteDoNotScale";
     t[429] = "Einf\u00fcgen (und auff\u00fcllen)";
+    t[434] = "Model.XML.ClientCountWarmUp";
+    t[435] = "ZusaetzlicheEinschwingphase";
     t[438] = "Statistic.Viewer.Toolbar.OpenTable.Hint";
     t[439] = "Tabelle in externer Anwendung anzeigen.";
     t[440] = "Simulation.Log.Abort";
@@ -1264,6 +1266,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2963] = "Navy";
     t[2964] = "SettingsDialog.Languages.English";
     t[2965] = "Englisch (English)";
+    t[2970] = "Model.XML.ClientCountWarmUp.Error";
+    t[2971] = "Die angegebene Anzahl an Anrufen in der Einschwingphase \"%s\" ist ung\u00fcltig. Es muss eine nichtnegative Ganzzahl angegeben werden.";
     t[2972] = "QSExport.xml.Name";
     t[2973] = "Name";
     t[2976] = "Statistics.DistributionOfTheInterArrivalTimes";
@@ -1900,6 +1904,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4291] = "Beim Laden des Modells ist folgender Fehler aufgetreten:";
     t[4292] = "QSExport.xml.Element.Connection.Rate";
     t[4293] = "Rate";
+    t[4298] = "Editor.General.CallsToSimulateWarmUp";
+    t[4299] = "Zus\u00e4tzliche Ank\u00fcnfte f\u00fcr Einschwingphase";
     t[4300] = "Statistic.NumberOfClientsInSystem";
     t[4301] = "Anzahl an Kunden im System";
     t[4302] = "Window.Info.NoEMailProgram.Info";
@@ -2004,18 +2010,18 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4535] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[4536] = "Editor.SaveModel.Error";
     t[4537] = "Beim Speichern der Daten ist ein Fehler aufgetreten.";
-    t[4538] = "LicenseViewer.FileError";
-    t[4539] = "Die Datei %s konnte nicht geladen werden.";
-    t[4544] = "Main.Menu.Extras.QueueingCalculator.Mnemonic";
-    t[4545] = "W";
-    t[4554] = "Main.Menu.Help";
-    t[4555] = "Hilfe";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4538] = "LicenseViewer.FileError";
+    t[4539] = "Die Datei %s konnte nicht geladen werden.";
+    t[4544] = "Main.Menu.Extras.QueueingCalculator.Mnemonic";
+    t[4545] = "W";
+    t[4554] = "Main.Menu.Help";
+    t[4555] = "Hilfe";
     t[4558] = "JDistributionEditor.Wikipedia.Info";
     t[4559] = "\u00d6ffnet ein Browserfenster mit weiteren Informationen zu dem gew\u00e4hlten Verteilungstyp";
     t[4566] = "Statistic.Viewer.Toolbar.Settings";

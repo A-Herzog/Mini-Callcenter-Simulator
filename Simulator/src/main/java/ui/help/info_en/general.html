@@ -19,5 +19,12 @@ For the number of <b>call to simulate</b>, a higher number leads to statisticall
 more stable results, but also extends the simulation time.
 </p>
 
+<p>
+As <b>additional calls for warm-up phase</b> optionally a number of calls can be specified that are
+to be additionally simulated in advance. Only after the completion of the simulation of these callers,
+the statistics recording starts and the actually specified number of callers is simulated. In this way,
+effects caused by the fact that the simulation starts with an empty system, can be avoided.
+</p>
+
 </body>
 </html>

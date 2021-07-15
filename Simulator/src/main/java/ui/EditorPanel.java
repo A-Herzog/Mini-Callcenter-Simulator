@@ -61,6 +61,8 @@ public final class EditorPanel extends EditorPanelBase {
 	private JTextArea description;
 	/** Zu simulierende Ankünfte */
 	private JTextField callsToSimulate;
+	/** Zusätzlich als Einschwingphase zu simulierende Ankünfte */
+	private JTextField callsToSimulateWarmUp;
 
 	/* Ankünfte */
 
@@ -192,6 +194,8 @@ public final class EditorPanel extends EditorPanelBase {
 		description=addInputArea(p,Language.tr("Editor.General.Description"),readOnly);
 		callsToSimulate=addInputLine(p,Language.tr("Editor.General.CallsToSimulate"),readOnly);
 		addCheckInput(callsToSimulate,()->NumberTools.getPositiveLong(callsToSimulate,true));
+		callsToSimulateWarmUp=addInputLine(p,Language.tr("Editor.General.CallsToSimulateWarmUp"),readOnly);
+		addCheckInput(callsToSimulateWarmUp,()->NumberTools.getNotNegativeInteger(callsToSimulateWarmUp,true));
 		p.add(Box.createVerticalStrut(5));
 
 		/* Ankünfte */
@@ -246,6 +250,7 @@ public final class EditorPanel extends EditorPanelBase {
 
 	@Override
 	protected void writeGUIDataToModel() {
+		Integer I;
 		Long L;
 		Double D;
 
@@ -253,6 +258,7 @@ public final class EditorPanel extends EditorPanelBase {
 		model.name=name.getText();
 		model.description=description.getText();
 		L=NumberTools.getPositiveLong(callsToSimulate,true); if (L!=null) model.callsToSimulate=(int)((long)L);
+		I=NumberTools.getNotNegativeInteger(callsToSimulateWarmUp,true); if (L!=null) model.callsToSimulateWarmUp=I;
 
 		/* Ankünfte */
 		L=NumberTools.getPositiveLong(batchArrival,true); if (L!=null) model.batchArrival=(int)((long)L);
@@ -290,6 +296,7 @@ public final class EditorPanel extends EditorPanelBase {
 		name.setText(model.name);
 		description.setText(model.description);
 		callsToSimulate.setText(""+model.callsToSimulate);
+		callsToSimulateWarmUp.setText(""+model.callsToSimulateWarmUp);
 
 		/* Ankünfte */
 		batchArrival.setText(""+model.batchArrival);

@@ -220,6 +220,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[421] = "Import data";
     t[428] = "Dialog.Button.PasteDoNotScale";
     t[429] = "Paste (and fill with zeros)";
+    t[434] = "Model.XML.ClientCountWarmUp";
+    t[435] = "AdditionalWarmUp";
     t[438] = "Statistic.Viewer.Toolbar.OpenTable.Hint";
     t[439] = "Open table in external application.";
     t[440] = "Simulation.Log.Abort";
@@ -1264,6 +1266,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2963] = "Navy";
     t[2964] = "SettingsDialog.Languages.English";
     t[2965] = "English";
+    t[2970] = "Model.XML.ClientCountWarmUp.Error";
+    t[2971] = "The specified number of warm-up calls \"%s\" is invalid. A non-negative integer number has to be specified.";
     t[2972] = "QSExport.xml.Name";
     t[2973] = "Name";
     t[2976] = "Statistics.DistributionOfTheInterArrivalTimes";
@@ -1900,6 +1904,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4291] = "The following error occured while loading the model:";
     t[4292] = "QSExport.xml.Element.Connection.Rate";
     t[4293] = "Rate";
+    t[4298] = "Editor.General.CallsToSimulateWarmUp";
+    t[4299] = "Additional calls for warm-up phase";
     t[4300] = "Statistic.NumberOfClientsInSystem";
     t[4301] = "Number of clients in the system";
     t[4302] = "Window.Info.NoEMailProgram.Info";
@@ -2004,18 +2010,18 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4535] = "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[4536] = "Editor.SaveModel.Error";
     t[4537] = "An error occured while trying to store the data.";
-    t[4538] = "LicenseViewer.FileError";
-    t[4539] = "Die Datei %s konnte nicht geladen werden.";
-    t[4544] = "Main.Menu.Extras.QueueingCalculator.Mnemonic";
-    t[4545] = "Q";
-    t[4554] = "Main.Menu.Help";
-    t[4555] = "Help";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4538] = "LicenseViewer.FileError";
+    t[4539] = "Die Datei %s konnte nicht geladen werden.";
+    t[4544] = "Main.Menu.Extras.QueueingCalculator.Mnemonic";
+    t[4545] = "Q";
+    t[4554] = "Main.Menu.Help";
+    t[4555] = "Help";
     t[4558] = "JDistributionEditor.Wikipedia.Info";
     t[4559] = "Opens a browser window with additional information about the selected distribution type";
     t[4566] = "Statistic.Viewer.Toolbar.Settings";
