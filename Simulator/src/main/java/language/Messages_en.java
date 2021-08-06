@@ -14,6 +14,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1] = "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nLanguage: en\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n";
     t[2] = "Statistic.Type.NoData";
     t[3] = "no data selected";
+    t[4] = "Statistics.XML.RunCount";
+    t[5] = "RunCount";
     t[6] = "Help.Close.Info";
     t[7] = "Closes the help window.";
     t[8] = "Color.CD5C5C";
@@ -518,6 +520,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1139] = "Support";
     t[1142] = "SettingsDialog.Languages.German";
     t[1143] = "German (Deutsch)";
+    t[1156] = "Statistics.XML.Run";
+    t[1157] = "RunVariance";
     t[1160] = "SimStatistic.CancelationRate";
     t[1161] = "Cancelation rate";
     t[1162] = "CommandLine.ReportBase.Error";
@@ -582,6 +586,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1287] = "Model editor";
     t[1288] = "Distribution.Triangular";
     t[1289] = "Triangular distribution";
+    t[1300] = "Statistics.XML.RunHalfWide";
+    t[1301] = "RunMeanConfidenceRadius";
     t[1302] = "Color.2E8B57";
     t[1303] = "Sea green";
     t[1304] = "JDataLoader.ImportErrorFileError";
@@ -1476,6 +1482,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3423] = "Compare current and kept model";
     t[3424] = "Table.LoadErrorCellValueNaN";
     t[3425] = "The value of the cell %s (\"%s\") is no valid number.";
+    t[3426] = "Statistics.XML.RunCount.Error";
+    t[3427] = "The RunCount attribute in the \"%s\" element has to be a positive integer number but is \"%s\".";
     t[3444] = "SimStatistic.ServiceLevel.20Seconds";
     t[3445] = "Service level at the 20-second threshold";
     t[3446] = "SimStatistic.ServiceTime.lower";
@@ -2002,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4525] = "The model can be described completely analytically.";
     t[4526] = "SimStatistic.of";
     t[4527] = "of";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4530] = "Simulator.Log.CallEvent.FreshCall";
     t[4531] = "Fresh call arrives";
     t[4532] = "QSExport.xml.ModelElementName";
@@ -2010,12 +2024,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4535] = "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[4536] = "Editor.SaveModel.Error";
     t[4537] = "An error occured while trying to store the data.";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4538] = "LicenseViewer.FileError";
     t[4539] = "Die Datei %s konnte nicht geladen werden.";
     t[4544] = "Main.Menu.Extras.QueueingCalculator.Mnemonic";
@@ -2126,6 +2134,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4799] = "The residence times of the unsuccessful callers are exactly the cancelation times.\nTherefore, these times are not listed explicitly here.";
     t[4802] = "Statistic.Viewer.Chart.Part";
     t[4803] = "Part";
+    t[4812] = "Statistics.XML.Run.Error";
+    t[4813] = "The RunVariance attribute in the \"%s\" element has to be a non-negative number but is \"%s\".";
     t[4816] = "ModelInfo.Title";
     t[4817] = "Simulated queueing model";
     t[4818] = "Main.Toolbar.ShowStatistics";
@@ -2188,6 +2198,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4989] = "Programmlizenz";
     t[4992] = "QSExport.xml.ModellElementPrioritaet.ClientType";
     t[4993] = "ClientType";
+    t[4994] = "Statistic.Viewer.Toolbar.Zoom.HintPanel";
+    t[4995] = "Zoom frames can be drawn in the diagram by holding down the left mouse button. In addition, the mouse wheel can be used to zoom. If the ctrl key is held down, the area to be displayed can be moved by holding down the left mouse button.";
     t[4996] = "Statistics.ResidenceTimes.all";
     t[4997] = "Residence times over all callers";
     t[5000] = "Statistics.XML.BatchMeans";

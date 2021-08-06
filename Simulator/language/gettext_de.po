@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 13:29+0200\n"
+"POT-Creation-Date: 2021-07-26 09:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3226,6 +3226,9 @@ msgstr "Standardzoom"
 msgid "Statistic.Viewer.Toolbar.Zoom.Hint"
 msgstr "Stellt den Zoomfaktor so ein, dass das gesamte Diagramm sichtbar ist."
 
+msgid "Statistic.Viewer.Toolbar.Zoom.HintPanel"
+msgstr "In dem Diagramm können mit gedrückter linker Maustaste Zoom-Rahmen aufgezogen werden. Außerdem kann mit dem Mausrad gezoomt werden. Wird die Strg-Taste gedrückt gehalten, so kann der darzustellende Bereich mit gedrückter linker Maustaste verschoben werden."
+
 msgid "Statistic.Viewer.Tools.HideAll"
 msgstr "Alle Kategorien einklappen"
 
@@ -3660,6 +3663,18 @@ msgstr "StatistikAnrufeWiederholung"
 msgid "Statistics.XML.Root"
 msgstr "Statistik"
 
+msgid "Statistics.XML.Run"
+msgstr "LaufVarianz"
+
+msgid "Statistics.XML.Run.Error"
+msgstr "Das LaufVarianz-Attribut im \"%s\"-Element musseine nicht-negative Zahl sein, ist aber \"%s\"."
+
+msgid "Statistics.XML.RunCount"
+msgstr "LaufAnzahl"
+
+msgid "Statistics.XML.RunCount.Error"
+msgstr "Das LaufAnzahl-Attribut im \"%s\"-Element muss eine positive Ganzzahl sein, ist aber \"%s\"."
+
 msgid "Statistics.XML.RunDate"
 msgstr "StatistikLaufdatum"
 
@@ -3668,6 +3683,9 @@ msgstr "StatistikEreignisse"
 
 msgid "Statistics.XML.RunEvents.Error"
 msgstr "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\"."
+
+msgid "Statistics.XML.RunHalfWide"
+msgstr "LaufMittelwertKonfidenzRadius"
 
 msgid "Statistics.XML.RunOS"
 msgstr "StatistikSystem"

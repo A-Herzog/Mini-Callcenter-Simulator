@@ -14,6 +14,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1] = "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n";
     t[2] = "Statistic.Type.NoData";
     t[3] = "keine Daten ausgew\u00e4hlt";
+    t[4] = "Statistics.XML.RunCount";
+    t[5] = "LaufAnzahl";
     t[6] = "Help.Close.Info";
     t[7] = "Schlie\u00dft dieses Hilfefenster.";
     t[8] = "Color.CD5C5C";
@@ -518,6 +520,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1139] = "Unterst\u00fctzung & Support";
     t[1142] = "SettingsDialog.Languages.German";
     t[1143] = "Deutsch (German)";
+    t[1156] = "Statistics.XML.Run";
+    t[1157] = "LaufVarianz";
     t[1160] = "SimStatistic.CancelationRate";
     t[1161] = "Abbrecherquote";
     t[1162] = "CommandLine.ReportBase.Error";
@@ -582,6 +586,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1287] = "Modell-Editor";
     t[1288] = "Distribution.Triangular";
     t[1289] = "Dreiecksverteilung";
+    t[1300] = "Statistics.XML.RunHalfWide";
+    t[1301] = "LaufMittelwertKonfidenzRadius";
     t[1302] = "Color.2E8B57";
     t[1303] = "Seegr\u00fcn";
     t[1304] = "JDataLoader.ImportErrorFileError";
@@ -1476,6 +1482,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3423] = "Aktuelles und festgehaltenes Modell vergleichen";
     t[3424] = "Table.LoadErrorCellValueNaN";
     t[3425] = "Der Wert der Zelle %s \"%s\" ist keine g\u00fcltige Zahl.";
+    t[3426] = "Statistics.XML.RunCount.Error";
+    t[3427] = "Das LaufAnzahl-Attribut im \"%s\"-Element muss eine positive Ganzzahl sein, ist aber \"%s\".";
     t[3444] = "SimStatistic.ServiceLevel.20Seconds";
     t[3445] = "Service-Level an der 20-Sekunden-Schwelle";
     t[3446] = "SimStatistic.ServiceTime.lower";
@@ -2002,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4525] = "Das Modell kann vollst\u00e4ndig analytisch beschrieben werden.";
     t[4526] = "SimStatistic.of";
     t[4527] = "von";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4530] = "Simulator.Log.CallEvent.FreshCall";
     t[4531] = "Erstanrufer trifft ein";
     t[4532] = "QSExport.xml.ModelElementName";
@@ -2010,12 +2024,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4535] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[4536] = "Editor.SaveModel.Error";
     t[4537] = "Beim Speichern der Daten ist ein Fehler aufgetreten.";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4538] = "LicenseViewer.FileError";
     t[4539] = "Die Datei %s konnte nicht geladen werden.";
     t[4544] = "Main.Menu.Extras.QueueingCalculator.Mnemonic";
@@ -2126,6 +2134,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4799] = "Die Verweilzeiten der nicht-erfolgreichen Anrufer sind genau die Abbruchzeiten.\nDaher werden diese Zeiten hier nicht explizit aufgef\u00fchrt.";
     t[4802] = "Statistic.Viewer.Chart.Part";
     t[4803] = "Anteil";
+    t[4812] = "Statistics.XML.Run.Error";
+    t[4813] = "Das LaufVarianz-Attribut im \"%s\"-Element musseine nicht-negative Zahl sein, ist aber \"%s\".";
     t[4816] = "ModelInfo.Title";
     t[4817] = "Simuliertes Warteschlangenmodell";
     t[4818] = "Main.Toolbar.ShowStatistics";
@@ -2188,6 +2198,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4989] = "Programmlizenz";
     t[4992] = "QSExport.xml.ModellElementPrioritaet.ClientType";
     t[4993] = "Kundentyp";
+    t[4994] = "Statistic.Viewer.Toolbar.Zoom.HintPanel";
+    t[4995] = "In dem Diagramm k\u00f6nnen mit gedr\u00fcckter linker Maustaste Zoom-Rahmen aufgezogen werden. Au\u00dferdem kann mit dem Mausrad gezoomt werden. Wird die Strg-Taste gedr\u00fcckt gehalten, so kann der darzustellende Bereich mit gedr\u00fcckter linker Maustaste verschoben werden.";
     t[4996] = "Statistics.ResidenceTimes.all";
     t[4997] = "Verweilzeiten \u00fcber alle Anrufer";
     t[5000] = "Statistics.XML.BatchMeans";

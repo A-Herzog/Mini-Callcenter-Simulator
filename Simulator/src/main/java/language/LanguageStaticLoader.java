@@ -558,6 +558,7 @@ public class LanguageStaticLoader {
 		StatisticsBasePanel.viewersReportSaveHTMLAppJSError=Language.tr("Statistic.Viewer.Report.HTMLApp.JSError");
 		StatisticsBasePanel.viewersToolbarZoom=Language.tr("Statistic.Viewer.Toolbar.Zoom");
 		StatisticsBasePanel.viewersToolbarZoomHint=Language.tr("Statistic.Viewer.Toolbar.Zoom.Hint");
+		StatisticsBasePanel.viewersToolbarZoomHintPanel=Language.tr("Statistic.Viewer.Toolbar.Zoom.HintPanel");
 		StatisticsBasePanel.viewersToolbarCopy=Language.tr("Statistic.Viewer.Toolbar.Copy");
 		StatisticsBasePanel.viewersToolbarCopyHint=Language.tr("Statistic.Viewer.Toolbar.Copy.Hint");
 		StatisticsBasePanel.viewersToolbarCopyDefaultSize=Language.tr("Statistic.Viewer.Toolbar.Copy.DefaultSize");
@@ -731,6 +732,11 @@ public class LanguageStaticLoader {
 		StatisticsDataPerformanceIndicator.xmlNameBatchMeansVar=Language.trAll("Statistics.XML.BatchMeans");
 		StatisticsDataPerformanceIndicator.xmlNameBatchMeansVarError=Language.tr("Statistics.XML.BatchMeans.Error");
 		StatisticsDataPerformanceIndicator.xmlNameMeanBatchHalfWide=Language.trAll("Statistics.XML.MeanBatchHalfWide");
+		StatisticsDataPerformanceIndicator.xmlNameRunCount=Language.trAll("Statistics.XML.RunCount");
+		StatisticsDataPerformanceIndicator.xmlNameRunCountError=Language.tr("Statistics.XML.RunCount.Error");
+		StatisticsDataPerformanceIndicator.xmlNameRunVar=Language.trAll("Statistics.XML.Run");
+		StatisticsDataPerformanceIndicator.xmlNameRunVarError=Language.tr("Statistics.XML.Run.Error");
+		StatisticsDataPerformanceIndicator.xmlNameRunHalfWide=Language.trAll("Statistics.XML.RunHalfWide");
 		StatisticsDataPerformanceIndicator.xmlNameQuantil=Language.tr("Statistics.XML.Quantil");
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameCount=Language.trAll("Statistics.XML.Count");
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameCountError=Language.tr("Statistics.XML.Count.Error");

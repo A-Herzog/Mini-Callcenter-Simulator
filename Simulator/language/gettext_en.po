@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 13:29+0200\n"
+"POT-Creation-Date: 2021-07-26 09:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3223,6 +3223,9 @@ msgstr "Default zoom"
 msgid "Statistic.Viewer.Toolbar.Zoom.Hint"
 msgstr "Sets the zoom factor so that the entire chart is visible."
 
+msgid "Statistic.Viewer.Toolbar.Zoom.HintPanel"
+msgstr "Zoom frames can be drawn in the diagram by holding down the left mouse button. In addition, the mouse wheel can be used to zoom. If the ctrl key is held down, the area to be displayed can be moved by holding down the left mouse button."
+
 msgid "Statistic.Viewer.Tools.HideAll"
 msgstr "Close all categories"
 
@@ -3656,6 +3659,18 @@ msgstr "StatisticsCallsRetry"
 msgid "Statistics.XML.Root"
 msgstr "Statistics"
 
+msgid "Statistics.XML.Run"
+msgstr "RunVariance"
+
+msgid "Statistics.XML.Run.Error"
+msgstr "The RunVariance attribute in the \"%s\" element has to be a non-negative number but is \"%s\"."
+
+msgid "Statistics.XML.RunCount"
+msgstr "RunCount"
+
+msgid "Statistics.XML.RunCount.Error"
+msgstr "The RunCount attribute in the \"%s\" element has to be a positive integer number but is \"%s\"."
+
 msgid "Statistics.XML.RunDate"
 msgstr "StatisticsRunDate"
 
@@ -3664,6 +3679,9 @@ msgstr "StatisticsEvents"
 
 msgid "Statistics.XML.RunEvents.Error"
 msgstr "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\"."
+
+msgid "Statistics.XML.RunHalfWide"
+msgstr "RunMeanConfidenceRadius"
 
 msgid "Statistics.XML.RunOS"
 msgstr "StatisticsSystem"
