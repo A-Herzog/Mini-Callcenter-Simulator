@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 09:54+0200\n"
+"POT-Creation-Date: 2021-08-08 01:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1062,6 +1062,9 @@ msgstr "Right sawtooth distribution"
 
 msgid "Distribution.Scale"
 msgstr "Scale"
+
+msgid "Distribution.Skewness"
+msgstr "Skewness"
 
 msgid "Distribution.StdDev"
 msgstr "Standard deviation"
@@ -3719,6 +3722,9 @@ msgstr "StatisticsUser"
 msgid "Statistics.XML.ServiceLevel"
 msgstr "StatisticsCallsServiceLevel"
 
+msgid "Statistics.XML.Sk"
+msgstr "Skewness"
+
 msgid "Statistics.XML.StateTime"
 msgstr "StatisticsStatusTimeStatus"
 
@@ -3742,6 +3748,12 @@ msgstr "Sum2"
 
 msgid "Statistics.XML.Sum2.Error"
 msgstr "The \"sum2\" attribute in the \"%s\" element has to be a number but is \"%s\"."
+
+msgid "Statistics.XML.Sum3"
+msgstr "Sum3"
+
+msgid "Statistics.XML.Sum3.Error"
+msgstr "The \"Sum2\" attribute in the \"%s\" element has to be a number but is \"%s\"."
 
 msgid "Statistics.XML.SystemLength"
 msgstr "StatisticsClientsInSystem"

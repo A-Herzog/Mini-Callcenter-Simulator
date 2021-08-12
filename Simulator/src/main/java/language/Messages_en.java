@@ -248,6 +248,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[497] = "LaTeX tables";
     t[500] = "QSExport.xml.ModelElementBatchData.Minimum";
     t[501] = "Minimum";
+    t[502] = "Statistics.XML.Sum3.Error";
+    t[503] = "The \"Sum2\" attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[504] = "QSExport.xml.Element.Connection.Out";
     t[505] = "Out";
     t[506] = "LoadCalculator.Units.ClientsPerDay";
@@ -1136,6 +1138,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2571] = "Save table";
     t[2572] = "Compare.Error.ModelError.CannotCompare";
     t[2573] = "The current model cannot be simulated and therefore cannot be compared with the kept model.";
+    t[2574] = "Distribution.Skewness";
+    t[2575] = "Skewness";
     t[2590] = "Help.StartPage";
     t[2591] = "Start page";
     t[2594] = "Statistics.AnalyticModelCompare.AllenCunnen";
@@ -1360,6 +1364,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3135] = "Clients per arrival (batch arrivals)";
     t[3140] = "Statistics.XML.Sum2";
     t[3141] = "Sum2";
+    t[3142] = "Statistics.XML.Sum3";
+    t[3143] = "Sum3";
     t[3144] = "Window.Info.FolderError";
     t[3145] = "Browsing folder failed";
     t[3146] = "Compare.ReplaceKeptModel.NoInfo";
@@ -1774,6 +1780,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3997] = "Silver";
     t[4000] = "Statistic.Viewer.DiagramSettings.Font.Italic";
     t[4001] = "italic";
+    t[4002] = "Statistics.XML.ValuesError";
+    t[4003] = "The ValuesSum attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[4004] = "Statistic.Viewer.Toolbar.Settings.Hint";
     t[4005] = "Change settings for the selected statistics page.";
     t[4006] = "Help.Search.Info";
@@ -2002,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4499] = "Interactive mode is terminated.";
     t[4504] = "Distribution.Uniform";
     t[4505] = "Uniform distribution";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4518] = "XML.Comment";
     t[4519] = "This file was created using %s. Download address: %s";
     t[4520] = "Statistic.Viewer.NoHTMLApplication.Info";
@@ -2010,12 +2024,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4525] = "The model can be described completely analytically.";
     t[4526] = "SimStatistic.of";
     t[4527] = "of";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4530] = "Simulator.Log.CallEvent.FreshCall";
     t[4531] = "Fresh call arrives";
     t[4532] = "QSExport.xml.ModelElementName";
@@ -2078,8 +2086,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4671] = "Show data";
     t[4682] = "Statistics.ClientsInSystem.EmptyPart";
     t[4683] = "Percentage of time when the system was empty";
-    t[4688] = "Statistics.XML.ValuesError";
-    t[4689] = "The ValuesSum attribute in the \"%s\" element has to be a number but is \"%s\".";
+    t[4688] = "Statistics.XML.Sk";
+    t[4689] = "Skewness";
     t[4692] = "SimStatistic.Accessibility";
     t[4693] = "Accessibility";
     t[4694] = "LoadCalculator.AverageWaitingTimeTolerance";

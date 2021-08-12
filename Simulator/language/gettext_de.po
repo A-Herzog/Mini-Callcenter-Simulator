@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 09:54+0200\n"
+"POT-Creation-Date: 2021-08-08 01:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1062,6 +1062,9 @@ msgstr "Rechte Sägezahnverteilung"
 
 msgid "Distribution.Scale"
 msgstr "Skalierung"
+
+msgid "Distribution.Skewness"
+msgstr "Schiefe"
 
 msgid "Distribution.StdDev"
 msgstr "Standardabweichung"
@@ -3723,6 +3726,9 @@ msgstr "StatistikNutzer"
 msgid "Statistics.XML.ServiceLevel"
 msgstr "StatistikAnrufeServiceLevel"
 
+msgid "Statistics.XML.Sk"
+msgstr "Schiefe"
+
 msgid "Statistics.XML.StateTime"
 msgstr "StatistikStatusZeitStatus"
 
@@ -3746,6 +3752,12 @@ msgstr "Summe2"
 
 msgid "Statistics.XML.Sum2.Error"
 msgstr "Das \"Summe2\"-Attribut im \"%s\"-Element muss eine nicht-negative Zahl sein, ist aber \"%s\"."
+
+msgid "Statistics.XML.Sum3"
+msgstr "Summe3"
+
+msgid "Statistics.XML.Sum3.Error"
+msgstr "Das \"Summe3\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\"."
 
 msgid "Statistics.XML.SystemLength"
 msgstr "StatistikKundenImSystem"
