@@ -28,6 +28,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[19] = "Palet urquoise";
     t[20] = "Simulator.Log.ScheduleCall";
     t[21] = "ScheduleCall";
+    t[22] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.DetermineCharacteristics";
+    t[23] = "Determine characteristics...";
     t[28] = "Help.Forward.Info";
     t[29] = "Goes forward to the next help page.";
     t[32] = "Distribution.AverageSomething";
@@ -358,6 +360,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[759] = "Numerator";
     t[762] = "Statistics.Distance";
     t[763] = "Distance";
+    t[764] = "Color.D2691E";
+    t[765] = "Chocolate";
     t[768] = "Statistic.Viewer.Toolbar.Search";
     t[769] = "Search";
     t[772] = "Statistics.ProcessTime.lower";
@@ -664,6 +668,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1467] = "Cancelation";
     t[1472] = "Color.D2B48C";
     t[1473] = "Tan";
+    t[1480] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.DetermineCharacteristics.Title";
+    t[1481] = "Generate random numbers";
     t[1482] = "Statistic.Viewer.SaveImage.Size.Title";
     t[1483] = "Exporting graphics";
     t[1488] = "Statistics.XML.Disribution.ElementError";
@@ -708,6 +714,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1559] = "Do not open web page.";
     t[1560] = "CalculatorDialog.Plotter.ClearPlot";
     t[1561] = "Clear plot";
+    t[1562] = "Statistic.TimeShareInThisState";
+    t[1563] = "Time share in this state";
     t[1566] = "LoadCalculator.AverageWaitingTime";
     t[1567] = "Average waiting time";
     t[1568] = "QSExport.xml.Count";
@@ -750,8 +758,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1677] = "Log-logistic distribution";
     t[1680] = "Main.Toolbar.ShowModelForTheseResults2";
     t[1681] = "Show model and statistics data";
-    t[1684] = "Statistic.Viewer.Toolbar.Zoom.Hint";
-    t[1685] = "Sets the zoom factor so that the entire chart is visible.";
+    t[1684] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save.Title";
+    t[1685] = "Save random numbers";
     t[1692] = "Distribution.Point";
     t[1693] = "One point distribution";
     t[1694] = "SimStatistic.PostProcessingTime.of";
@@ -1190,6 +1198,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2719] = "Help";
     t[2730] = "Color.A0522D";
     t[2731] = "Sienna";
+    t[2738] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers";
+    t[2739] = "Generate random numbers";
     t[2746] = "Statistic.Description.Show.Hint";
     t[2747] = "Shows additional descriptions for the current statistics page.";
     t[2750] = "Statistics.XML.Minimum.Error";
@@ -1560,6 +1570,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3567] = "Speedtest";
     t[3578] = "Statistics.XML.Sum.Error";
     t[3579] = "The \"sum\" attribute in the \"%s\" element has to be a number but is \"%s\".";
+    t[3586] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save";
+    t[3587] = "Save...";
     t[3588] = "Simulator.Log.ScheduleCall.Info.Retry";
     t[3589] = "Retryer or forwarding";
     t[3590] = "XML.NoInputObjectSelected";
@@ -1906,8 +1918,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4273] = "StatisticsStatusTimeStatus";
     t[4274] = "Simulator.Log.ScheduleCall.Info";
     t[4275] = "%s scheduled for %s";
-    t[4276] = "Statistic.TimeShareInThisState";
-    t[4277] = "Time share in this state";
+    t[4276] = "Distribution.SawtoothLeft";
+    t[4277] = "Left sawtooth distribution";
     t[4280] = "XML.LoadErrorTitle";
     t[4281] = "Error loading file";
     t[4282] = "Main.Toolbar.ShowEditor";
@@ -1958,6 +1970,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4365] = "over all clients";
     t[4370] = "Statistic.WriteError.Info";
     t[4371] = "The file\n%s\ncould not be created.";
+    t[4372] = "Statistic.Viewer.Toolbar.Zoom.Hint";
+    t[4373] = "Sets the zoom factor so that the entire chart is visible.";
     t[4374] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
     t[4375] = "Axis values";
     t[4382] = "Distribution.Power";
@@ -1996,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4467] = "Increases the value of the parameter by %s";
     t[4468] = "CommandLine.Count.ThenN";
     t[4469] = "exactly %d additional parameters have to be entered";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4474] = "Statistics.XML.FreeAgents";
     t[4475] = "StatisticsAgentsIdle";
     t[4476] = "Color.9932CC";
@@ -2010,12 +2030,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4499] = "Interactive mode is terminated.";
     t[4504] = "Distribution.Uniform";
     t[4505] = "Uniform distribution";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4518] = "XML.Comment";
     t[4519] = "This file was created using %s. Download address: %s";
     t[4520] = "Statistic.Viewer.NoHTMLApplication.Info";
@@ -2080,6 +2094,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4655] = "CallDone1Event";
     t[4660] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic";
     t[4661] = "Due to the following properties the model cannot be described completely analytically:";
+    t[4664] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Generated";
+    t[4665] = "Generated random numbers";
     t[4668] = "QSExport.xml.ModellElementPrioritaet";
     t[4669] = "ModelElementPriority";
     t[4670] = "JDistributionEditor.Edit.Disabled";
@@ -2218,8 +2234,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5009] = "Light salmon";
     t[5010] = "Color.6A5ACD";
     t[5011] = "Slate blue";
-    t[5020] = "Distribution.SawtoothLeft";
-    t[5021] = "Left sawtooth distribution";
+    t[5020] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Count";
+    t[5021] = "Number of random numbers to be generated";
     t[5022] = "Statistic.Viewer.Toolbar.Search.Hint";
     t[5023] = "Searches for text on the current page";
     t[5024] = "LoadCalculator.WorkLoad";
@@ -2346,8 +2362,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5337] = "The \"time\" attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[5338] = "Color.FFFAFA";
     t[5339] = "Snow";
-    t[5348] = "Color.D2691E";
-    t[5349] = "Chocolate";
+    t[5348] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Copy";
+    t[5349] = "Copy";
     t[5352] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
     t[5353] = "Copy using window size (%dx%d pixels)";
     t[5356] = "Help.Search";
@@ -2548,6 +2564,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5765] = "Waiting times";
     t[5774] = "LicenseViewer.Title";
     t[5775] = "Lizenzinformationen";
+    t[5778] = "Statistics.Variance";
+    t[5779] = "Variance";
     t[5780] = "Editor.General.Description";
     t[5781] = "Description";
     t[5782] = "Statistic.Viewer.Toolbar.NewWindow.Size";

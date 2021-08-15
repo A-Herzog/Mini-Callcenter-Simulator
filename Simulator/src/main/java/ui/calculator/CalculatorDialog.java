@@ -25,8 +25,16 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.Serializable;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,23 +43,36 @@ import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
+import javax.swing.JToolBar;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
+import org.apache.commons.math3.distribution.AbstractRealDistribution;
 import org.apache.commons.math3.distribution.ExponentialDistribution;
 
 import language.Language;
 import mathtools.NumberTools;
+import mathtools.Table;
+import mathtools.distribution.swing.CommonVariables;
 import mathtools.distribution.swing.JDistributionEditorPanel;
 import mathtools.distribution.swing.JDistributionPanel;
+import mathtools.distribution.tools.DistributionRandomNumber;
 import parser.CalcSystem;
 import parser.MathCalcError;
+import statistics.StatisticsDataPerformanceIndicatorWithNegativeValues;
 import systemtools.BaseDialog;
+import systemtools.MsgBox;
 import systemtools.SmallColorChooser;
+import systemtools.images.SimToolsImages;
 import tools.SetupData;
 import ui.calculator.PlotterPanel.Graph;
 import ui.help.Help;
@@ -80,6 +101,14 @@ public class CalculatorDialog extends BaseDialog {
 	/** Eingabefelder für den Funktionsplotter */
 	private final List<JTextField> plotterField;
 
+	/**
+	 * Anzahl an zu erzeugenden Zufallszahlen
+	 * @see #showGenerateRandomNumbersPopup(Component)
+	 * @see #randomNumbersIndicators()
+	 * @see #randomNumbersCopy()
+	 * @see #randomNumbersSave()
+	 */
+	private long randomNumberCount;
 	/** Wahrscheinlichkeitsverteilungsplotter */
 	private final JDistributionPanel distributionPlotter;
 	/** Eingabefelder für den Wahrscheinlichkeitsverteilungsplotter */
@@ -111,6 +140,7 @@ public class CalculatorDialog extends BaseDialog {
 		JPanel tab, line;
 		Object[] data;
 		Dimension size;
+		JButton button;
 
 		/* Tab "Rechner" */
 		tabs.addTab(Language.tr("CalculatorDialog.Tab.Calculator"),tab=new JPanel(new BorderLayout()));
@@ -136,7 +166,7 @@ public class CalculatorDialog extends BaseDialog {
 			SwingUtilities.invokeLater(()->outputEdit.setText(calc(inputEdit.getText())));
 		}
 
-		final JButton button=new JButton("");
+		button=new JButton("");
 		button.setIcon(Images.COPY.getIcon());
 		button.setToolTipText(Language.tr("CalculatorDialog.Result.Copy"));
 		size=button.getPreferredSize();
@@ -167,7 +197,14 @@ public class CalculatorDialog extends BaseDialog {
 		plotter.reload();
 
 		/* Tab "Wahrscheinlichkeitsverteilungen" */
+		randomNumberCount=1_000_000;
 		tabs.addTab(Language.tr("CalculatorDialog.Tab.Distributions"),tab=new JPanel(new BorderLayout()));
+		final JToolBar toolbar=new JToolBar(SwingConstants.HORIZONTAL);
+		tab.add(toolbar,BorderLayout.NORTH);
+		toolbar.setFloatable(false);
+		toolbar.add(button=new JButton(Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers"),Images.EXTRAS_CALCULATOR.getIcon()));
+		final JButton randomNumbersButton=button;
+		button.addActionListener(e->showGenerateRandomNumbersPopup(randomNumbersButton));
 		tab.add(distributionPlotter=new JDistributionPanel(new ExponentialDistribution(100),100,false),BorderLayout.CENTER);
 		distributionPlotter.setImageSaveSize(SetupData.getSetup().imageSize);
 		distributionPlotter.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
@@ -332,5 +369,128 @@ public class CalculatorDialog extends BaseDialog {
 		});
 		popupMenu.add(colorChooser);
 		popupMenu.show(colorButton,0,colorButton.getHeight());
+	}
+
+	/**
+	 * Zeigt ein Popupmenü mit Befehlen zur Erzeugung von Zufallszahlen gemäß der gewählten Verteilung an.
+	 * @param invoker	Aufrufer (zur Ausrichtung des Menüs)
+	 */
+	private void showGenerateRandomNumbersPopup(final Component invoker) {
+		final JPopupMenu popup=new JPopupMenu();
+
+		JMenuItem item;
+
+		final JPanel editorPanel=new JPanel();
+		editorPanel.setLayout(new BoxLayout(editorPanel,BoxLayout.PAGE_AXIS));
+		final JLabel label=new JLabel(Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Count")+":");
+		editorPanel.add(label);
+		final JPanel line=new JPanel(new FlowLayout(FlowLayout.LEFT));
+		line.setBorder(BorderFactory.createEmptyBorder(0,25,0,0));
+		final JTextField editor=new JTextField(""+randomNumberCount,10);
+		line.add(editor);
+		editorPanel.add(line);
+		label.setLabelFor(editor);
+		editor.addKeyListener(new KeyListener() {
+			@Override public void keyTyped(KeyEvent e) {processInput(editor);}
+			@Override public void keyReleased(KeyEvent e) {processInput(editor);}
+			@Override public void keyPressed(KeyEvent e) {processInput(editor);}
+		});
+		popup.add(editorPanel);
+
+		popup.addSeparator();
+
+		popup.add(item=new JMenuItem(Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.DetermineCharacteristics"),Images.EXTRAS_CALCULATOR.getIcon()));
+		item.addActionListener(e->randomNumbersIndicators());
+
+		popup.add(item=new JMenuItem(Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Copy"),Images.COPY.getIcon()));
+		item.addActionListener(e->randomNumbersCopy());
+
+		popup.add(item=new JMenuItem(Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save"),SimToolsImages.SAVE.getIcon()));
+		item.addActionListener(e->randomNumbersSave());
+
+		popup.show(invoker,0,invoker.getHeight());
+	}
+
+	/**
+	 * Verarbeitet die Eingaben in dem Eingabefeld zur Festlegung der Anzahl an zu erzeugenden Zufallszahlen
+	 * @param input	Eingabefeld zur Festlegung der Anzahl an zu erzeugenden Zufallszahlen
+	 * @see #showGenerateRandomNumbersPopup(Component)
+	 */
+	private void processInput(final JTextField input) {
+		final Long L=NumberTools.getPositiveLong(input,true);
+		if (L!=null) randomNumberCount=L.longValue();
+	}
+
+	/**
+	 * Erzeugt eine Reihe von Zufallszahlen, ermittelt die Kenngrößen der Messreihe und zeigt diese an.
+	 */
+	private void randomNumbersIndicators() {
+		final AbstractRealDistribution distribution=distributionEditor.getDistribution();
+
+		final StatisticsDataPerformanceIndicatorWithNegativeValues indicator=new StatisticsDataPerformanceIndicatorWithNegativeValues(null,-1,-1);
+		for (int i=0;i<randomNumberCount;i++) {
+			indicator.add(DistributionRandomNumber.random(distribution));
+		}
+
+		final StringBuilder info=new StringBuilder();
+		info.append(String.format(Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Generated")+": %s",NumberTools.formatLong(indicator.getCount()))+"\n");
+		info.append(String.format(Language.tr("Distribution.Mean")+": E=%s",NumberTools.formatNumber(indicator.getMean(),3))+"\n");
+		info.append(String.format(Language.tr("Statistics.Variance")+": Var=%s",NumberTools.formatNumber(indicator.getVar(),3))+"\n");
+		info.append(String.format(Language.tr("Distribution.StdDev")+": Std=%s",NumberTools.formatNumber(indicator.getSD(),3))+"\n");
+		info.append(String.format(Language.tr("Distribution.CV")+": CV=%s",NumberTools.formatNumber(indicator.getCV(),3))+"\n");
+		info.append(String.format(Language.tr("Distribution.Skewness")+": Sk=%s",NumberTools.formatNumber(indicator.getSk(),3))+"\n");
+
+		MsgBox.info(this,Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.DetermineCharacteristics.Title"),info.toString());
+	}
+
+	/**
+	 * Erzeugt eine Reihe von Zufallszahlen und kopiert diese in die Zwischenablage.
+	 */
+	private void randomNumbersCopy() {
+		final AbstractRealDistribution distribution=distributionEditor.getDistribution();
+
+		final StringBuilder result=new StringBuilder();
+		for (int i=0;i<randomNumberCount;i++) {
+			result.append(NumberTools.formatNumberMax(DistributionRandomNumber.random(distribution)));
+		}
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(result.toString()),null);
+	}
+
+	/**
+	 * Erzeugt eine Reihe von Zufallszahlen und speichert die als Datei.
+	 * @return	Liefert <code>true</code>, wenn die Zufallszahlen gespeichert werden konnten
+	 */
+	private boolean randomNumbersSave() {
+		final JFileChooser fc=new JFileChooser();
+		CommonVariables.initialDirectoryToJFileChooser(fc);
+		fc.setDialogTitle(Language.tr("CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save.Title"));
+		final FileFilter txt=new FileNameExtensionFilter(Table.FileTypeText+" (*.txt, *.tsv)","txt","tsv");
+		fc.addChoosableFileFilter(txt);
+		fc.setFileFilter(txt);
+		fc.setAcceptAllFileFilterUsed(false);
+		if (fc.showSaveDialog(getOwner())!=JFileChooser.APPROVE_OPTION) return false;
+		CommonVariables.initialDirectoryFromJFileChooser(fc);
+		File file=fc.getSelectedFile();
+		if (file.getName().indexOf('.')<0) {
+			if (fc.getFileFilter()==txt) file=new File(file.getAbsoluteFile()+".txt");
+		}
+
+		final AbstractRealDistribution distribution=distributionEditor.getDistribution();
+		final String lineSeparator=System.lineSeparator();
+
+		try(OutputStream stream=new FileOutputStream(file)) {
+			try (OutputStreamWriter writer=new OutputStreamWriter(stream,StandardCharsets.UTF_8)) {
+				try (BufferedWriter bufferedWriter=new BufferedWriter(writer)) {
+					for (int i=0;i<randomNumberCount;i++) {
+						bufferedWriter.write(NumberTools.formatNumberMax(DistributionRandomNumber.random(distribution)));
+						bufferedWriter.write(lineSeparator);
+					}
+					return true;
+				}
+			}
+		} catch (IOException e) {
+			return false;
+		}
 	}
 }
