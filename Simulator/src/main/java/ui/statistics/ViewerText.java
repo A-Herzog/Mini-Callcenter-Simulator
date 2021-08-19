@@ -163,6 +163,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.InterArrivalTime.lower")+": E[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+": Std[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getSk(),3));
 		endParagraph();
 		 */
 
@@ -175,11 +176,13 @@ public class ViewerText extends StatisticViewerText {
 			addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.WaitingTime.lower")+": E[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getMean(),3));
 			addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("Statistics.WaitingTime")+": Std[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getSD(),3));
 			addLine(Language.tr("Distribution.CV")+" "+Language.tr("Statistics.WaitingTime")+": CV[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getCV(),3));
+			addLine(Language.tr("Distribution.Skewness")+" "+Language.tr("Statistics.WaitingTime")+": Sk[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getSk(),3));
 
 		} else {
 			addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.WaitingTime.lower")+"/"+Language.tr("SimStatistic.CancelTime")+"/"+Language.tr("SimStatistic.overall")+": E[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getMean(),3)+" / E[A]="+NumberTools.formatNumber(statistics.waitingTimeCancel.getMean(),3)+" / "+NumberTools.formatNumber(statistics.waitingTimeAll.getMean(),3));
 			addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("Statistics.WaitingTime.lower")+"/"+Language.tr("SimStatistic.CancelTime.lower")+"/"+Language.tr("SimStatistic.overall")+": Std[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getSD(),3)+" / Std[A]="+NumberTools.formatNumber(statistics.waitingTimeCancel.getSD(),3)+" / "+NumberTools.formatNumber(statistics.waitingTimeAll.getSD(),3));
 			addLine(Language.tr("Distribution.CV")+" "+Language.tr("Statistics.WaitingTime")+"/"+Language.tr("SimStatistic.CancelTime.lower")+": CV[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getCV(),3)+" / "+NumberTools.formatNumber(statistics.waitingTimeAll.getCV(),3));
+			addLine(Language.tr("Distribution.Skewness")+" "+Language.tr("Statistics.WaitingTime")+"/"+Language.tr("SimStatistic.CancelTime.lower")+": Sk[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getSk(),3)+" / "+NumberTools.formatNumber(statistics.waitingTimeAll.getSk(),3));
 		}
 		addModeLink(Mode.MODE_WAITINGTIMES);
 		endParagraph();
@@ -190,6 +193,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" Bediendauer: E[S]="+NumberTools.formatNumber(statistics.workingTime.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" der Bedienzeiten: Std[S]="+NumberTools.formatNumber(statistics.workingTime.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[S]="+NumberTools.formatNumber(statistics.workingTime.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[S]="+NumberTools.formatNumber(statistics.workingTime.getSk(),3));
 		endParagraph();
 		 */
 
@@ -199,10 +203,12 @@ public class ViewerText extends StatisticViewerText {
 			addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.ResidenceTime.lower")+": E[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getMean(),3));
 			addLine(Language.tr("Distribution.StdDev")+Language.tr("SimStatistic.of.ResidenceTimes")+": Std[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getSD(),3));
 			addLine(Language.tr("Distribution.CV")+": CV[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getCV(),3));
+			addLine(Language.tr("Distribution.Skewness")+": Sk[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getSk(),3));
 		} else {
 			addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.ResidenceTime.successful.lower")+"/"+Language.tr("SimStatistic.overall")+": E[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getMean(),3)+" / "+NumberTools.formatNumber(statistics.systemTimeAll.getMean(),3));
 			addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.of.ResidenceTime.successful.lower")+"/"+Language.tr("SimStatistic.overall")+": Std[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getSD(),3)+" / "+NumberTools.formatNumber(statistics.systemTimeAll.getSD(),3));
 			addLine(Language.tr("Distribution.CV")+" "+Language.tr("SimStatistic.ResidenceTime.successful.lower")+"/"+Language.tr("SimStatistic.overall")+": CV[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getCV(),3)+" / "+NumberTools.formatNumber(statistics.systemTimeAll.getCV(),3));
+			addLine(Language.tr("Distribution.Skewness")+" "+Language.tr("SimStatistic.ResidenceTime.successful.lower")+"/"+Language.tr("SimStatistic.overall")+": Sk[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getSk(),3)+" / "+NumberTools.formatNumber(statistics.systemTimeAll.getSk(),3));
 		}
 		addModeLink(Mode.MODE_SYSTEMTIMES);
 		endParagraph();
@@ -322,6 +328,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistic.QueueLength.lower")+": E[NQ]="+NumberTools.formatNumber(statistics.queueLength.getTimeMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("Statistic.QueueLength.of")+": Std[NQ]="+NumberTools.formatNumber(statistics.queueLength.getTimeSD(),3));
 		addLine(Language.tr("Distribution.CV")+" "+Language.tr("Statistic.QueueLength.of")+": CV[NQ]="+NumberTools.formatNumber(statistics.queueLength.getTimeCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+" "+Language.tr("Statistic.QueueLength.of")+": Sk[NQ]="+NumberTools.formatNumber(statistics.queueLength.getTimeSk(),3));
 		endParagraph();
 
 		beginParagraph();
@@ -353,6 +360,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.NumberOfClientsInTheSystem.lower")+": E[N]="+NumberTools.formatNumber(statistics.systemLength.getTimeMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("Statistics.ClientsInSystem.of")+": Std[N]="+NumberTools.formatNumber(statistics.systemLength.getTimeSD(),3));
 		addLine(Language.tr("Distribution.CV")+" "+Language.tr("Statistics.ClientsInSystem.of")+": CV[N]="+NumberTools.formatNumber(statistics.systemLength.getTimeCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+" "+Language.tr("Statistics.ClientsInSystem.of")+": Sk[N]="+NumberTools.formatNumber(statistics.systemLength.getTimeSk(),3));
 		endParagraph();
 
 		beginParagraph();
@@ -379,6 +387,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.InterArrivalTime.lower")+": E[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+": Std[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[I]="+NumberTools.formatNumber(statistics.interarrivalTime.getSk(),3));
 		addLine(Language.tr("SimStatistic.deMinimale")+" "+Language.tr("Statistics.InterArrivalTime")+": "+NumberTools.formatNumber(statistics.interarrivalTime.getMin(),3));
 		addLine(Language.tr("SimStatistic.deMaximale")+" "+Language.tr("Statistics.InterArrivalTime")+": "+NumberTools.formatNumber(statistics.interarrivalTime.getMax(),3));
 		endParagraph();
@@ -404,6 +413,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.InterLeaveTime.lower")+": E[L]="+NumberTools.formatNumber(statistics.interleaveTime.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+": Std[L]="+NumberTools.formatNumber(statistics.interleaveTime.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[L]="+NumberTools.formatNumber(statistics.interleaveTime.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[L]="+NumberTools.formatNumber(statistics.interleaveTime.getSk(),3));
 		addLine(Language.tr("SimStatistic.deMinimale")+" "+Language.tr("Statistics.InterLeaveTime.lower")+": "+NumberTools.formatNumber(statistics.interleaveTime.getMin(),3));
 		addLine(Language.tr("SimStatistic.deMaximale")+" "+Language.tr("Statistics.InterLeaveTime.lower")+": "+NumberTools.formatNumber(statistics.interleaveTime.getMax(),3));
 		endParagraph();
@@ -430,6 +440,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.WaitingTime.lower")+": E[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+": Std[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getCV()));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[W]="+NumberTools.formatNumber(statistics.waitingTimeSuccess.getSk()));
 		addLine(Language.tr("SimStatistic.deMaximale")+" "+Language.tr("SimStatistic.WaitingTime.lower")+": "+NumberTools.formatNumber(statistics.waitingTimeSuccess.getMax()));
 		endParagraph();
 
@@ -439,6 +450,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.CancelTime.lower")+": E[A]="+NumberTools.formatNumber(statistics.waitingTimeCancel.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+": Std[A]="+NumberTools.formatNumber(statistics.waitingTimeCancel.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[A]="+NumberTools.formatNumber(statistics.waitingTimeCancel.getCV()));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[A]="+NumberTools.formatNumber(statistics.waitingTimeCancel.getSk()));
 		addLine(Language.tr("SimStatistic.deMaximale")+" "+Language.tr("SimStatistic.CancelTime")+": "+NumberTools.formatNumber(statistics.waitingTimeCancel.getMax()));
 		endParagraph();
 
@@ -448,6 +460,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.WaitingTimes.All.lower")+": "+NumberTools.formatNumber(statistics.waitingTimeAll.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+": "+NumberTools.formatNumber(statistics.waitingTimeAll.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": "+NumberTools.formatNumber(statistics.waitingTimeAll.getCV()));
+		addLine(Language.tr("Distribution.Skewness")+": "+NumberTools.formatNumber(statistics.waitingTimeAll.getSk()));
 		addLine(Language.tr("SimStatistic.deMaximale")+" "+Language.tr("Statistics.WaitingTimes.All.lower")+": "+NumberTools.formatNumber(statistics.waitingTimeAll.getMax()));
 		endParagraph();
 
@@ -476,6 +489,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.ServiceTime.lower")+": E[S]="+NumberTools.formatNumber(statistics.workingTime.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.ServiceTime.of")+": Std[S]="+NumberTools.formatNumber(statistics.workingTime.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[S]="+NumberTools.formatNumber(statistics.workingTime.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[S]="+NumberTools.formatNumber(statistics.workingTime.getSk(),3));
 		addLine(Language.tr("SimStatistic.Shortest")+" "+Language.tr("SimStatistic.ServiceTime.lower")+": "+NumberTools.formatNumber(statistics.workingTime.getMin(),3));
 		addLine(Language.tr("SimStatistic.Longest")+" "+Language.tr("SimStatistic.ServiceTime.lower")+": "+NumberTools.formatNumber(statistics.workingTime.getMax(),3));
 		endParagraph();
@@ -484,6 +498,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.PostProcessingTime.lower")+": E[S2]="+NumberTools.formatNumber(statistics.postProcessingTime.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.PostProcessingTime.of")+": Std[S2]="+NumberTools.formatNumber(statistics.postProcessingTime.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[S2]="+NumberTools.formatNumber(statistics.postProcessingTime.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[S2]="+NumberTools.formatNumber(statistics.postProcessingTime.getSk(),3));
 		addLine(Language.tr("SimStatistic.Shortest")+" "+Language.tr("SimStatistic.PostProcessingTime")+": "+NumberTools.formatNumber(statistics.postProcessingTime.getMin(),3));
 		addLine(Language.tr("SimStatistic.Longest")+" "+Language.tr("SimStatistic.PostProcessingTime")+": "+NumberTools.formatNumber(statistics.postProcessingTime.getMax(),3));
 		endParagraph();
@@ -513,6 +528,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.ResidenceTime.lower")+": E[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.ResidenceTime.of")+": Std[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[V]="+NumberTools.formatNumber(statistics.systemTimeSuccess.getSk(),3));
 		addLine(Language.tr("SimStatistic.Shortest")+" "+Language.tr("Statistics.ResidenceTimes.successful.lower")+": "+NumberTools.formatNumber(statistics.systemTimeSuccess.getMin(),3));
 		addLine(Language.tr("SimStatistic.Longest")+" "+Language.tr("Statistics.ResidenceTimes.successful.lower")+": "+NumberTools.formatNumber(statistics.systemTimeSuccess.getMax(),3));
 		endParagraph();
@@ -527,6 +543,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.ResidenceTime.lower")+": E[V]="+NumberTools.formatNumber(statistics.systemTimeAll.getMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.ResidenceTime.of")+": Std[V]="+NumberTools.formatNumber(statistics.systemTimeAll.getSD(),3));
 		addLine(Language.tr("Distribution.CV")+": CV[V]="+NumberTools.formatNumber(statistics.systemTimeAll.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[V]="+NumberTools.formatNumber(statistics.systemTimeAll.getSk(),3));
 		addLine(Language.tr("SimStatistic.Shortest")+" "+Language.tr("SimStatistic.ResidenceTime.lower")+": "+NumberTools.formatNumber(statistics.systemTimeAll.getMin(),3));
 		addLine(Language.tr("SimStatistic.Longest")+" "+Language.tr("SimStatistic.ResidenceTime.lower")+": "+NumberTools.formatNumber(statistics.systemTimeAll.getMax(),3));
 		endParagraph();
@@ -565,6 +582,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.NumberOfBusyAgents.lower")+": "+NumberTools.formatNumber(statistics.busyAgents.getTimeMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.NumberOfBusyAgents.of")+": "+NumberTools.formatNumber(statistics.busyAgents.getTimeSD(),3));
 		addLine(Language.tr("Distribution.CV")+" "+Language.tr("SimStatistic.NumberOfBusyAgents.of")+": "+NumberTools.formatNumber(statistics.busyAgents.getTimeCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+" "+Language.tr("SimStatistic.NumberOfBusyAgents.of")+": "+NumberTools.formatNumber(statistics.busyAgents.getTimeSk(),3));
 		endParagraph();
 
 		addHeading(2,Language.tr("SimStatistic.WorkLoad.IdleAgents"));
@@ -572,6 +590,7 @@ public class ViewerText extends StatisticViewerText {
 		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("SimStatistic.NumberOfIdleAgents.lower")+": "+NumberTools.formatNumber(statistics.freeAgents.getTimeMean(),3));
 		addLine(Language.tr("Distribution.StdDev")+" "+Language.tr("SimStatistic.NumberOfIdleAgents.of")+": "+NumberTools.formatNumber(statistics.freeAgents.getTimeSD(),3));
 		addLine(Language.tr("Distribution.CV")+" "+Language.tr("SimStatistic.NumberOfIdleAgents.of")+": "+NumberTools.formatNumber(statistics.freeAgents.getTimeCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+" "+Language.tr("SimStatistic.NumberOfIdleAgents.of")+": "+NumberTools.formatNumber(statistics.freeAgents.getTimeSk(),3));
 		endParagraph();
 
 		/* Infotext  */
