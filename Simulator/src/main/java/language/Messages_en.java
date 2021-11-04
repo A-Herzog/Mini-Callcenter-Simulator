@@ -513,7 +513,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1108] = "CommandLine.Interactive.Name";
     t[1109] = "Interactive";
     t[1110] = "Statistics.InterLeaveTime.lower";
-    t[1111] = "inter-leave time";
+    t[1111] = "inter-departure time";
     t[1122] = "Editor.Retry";
     t[1123] = "Retry";
     t[1126] = "Dialog.Button.No";
@@ -1733,7 +1733,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3906] = "Statistics.XML.ServiceLevel";
     t[3907] = "StatisticsCallsServiceLevel";
     t[3912] = "Statistics.InterLeaveTimes";
-    t[3913] = "Inter-leaving times";
+    t[3913] = "Inter-departure times";
     t[3914] = "Statistics.XML.Distribution";
     t[3915] = "Distribution";
     t[3916] = "Editor.Service";
@@ -2523,7 +2523,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5690] = "Statistics.XML.RunOS";
     t[5691] = "StatisticsSystem";
     t[5694] = "Statistics.DistributionOfTheInterLeaveTimes";
-    t[5695] = "Distribution of the inter-leaving times";
+    t[5695] = "Distribution of the inter-departure times";
     t[5702] = "Statistic.Viewer.Context.Width.ByContentAndHeader";
     t[5703] = "Adjust by content and header";
     t[5704] = "Main.Menu.RecordSimulation";

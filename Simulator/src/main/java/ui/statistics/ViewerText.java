@@ -410,10 +410,10 @@ public class ViewerText extends StatisticViewerText {
 	private void buildInterLeaveTimes() {
 		addHeading(1,"Statistics.InterLeaveTimes");
 		beginParagraph();
-		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.InterLeaveTime.lower")+": E[L]="+NumberTools.formatNumber(statistics.interleaveTime.getMean(),3));
-		addLine(Language.tr("Distribution.StdDev")+": Std[L]="+NumberTools.formatNumber(statistics.interleaveTime.getSD(),3));
-		addLine(Language.tr("Distribution.CV")+": CV[L]="+NumberTools.formatNumber(statistics.interleaveTime.getCV(),3));
-		addLine(Language.tr("Distribution.Skewness")+": Sk[L]="+NumberTools.formatNumber(statistics.interleaveTime.getSk(),3));
+		addLine(Language.tr("Distribution.AverageSomething")+" "+Language.tr("Statistics.InterLeaveTime.lower")+": E[ID]="+NumberTools.formatNumber(statistics.interleaveTime.getMean(),3));
+		addLine(Language.tr("Distribution.StdDev")+": Std[ID]="+NumberTools.formatNumber(statistics.interleaveTime.getSD(),3));
+		addLine(Language.tr("Distribution.CV")+": CVIDL]="+NumberTools.formatNumber(statistics.interleaveTime.getCV(),3));
+		addLine(Language.tr("Distribution.Skewness")+": Sk[ID]="+NumberTools.formatNumber(statistics.interleaveTime.getSk(),3));
 		addLine(Language.tr("SimStatistic.deMinimale")+" "+Language.tr("Statistics.InterLeaveTime.lower")+": "+NumberTools.formatNumber(statistics.interleaveTime.getMin(),3));
 		addLine(Language.tr("SimStatistic.deMaximale")+" "+Language.tr("Statistics.InterLeaveTime.lower")+": "+NumberTools.formatNumber(statistics.interleaveTime.getMax(),3));
 		endParagraph();
