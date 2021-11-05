@@ -511,7 +511,7 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1106] = "SimStatistic.Info.MoreCallerThanFreshCalls";
     t[1107] = "Da die Anruferz\u00e4hlung erst nach der Einschwingphase, also zu einem Zeitpunkt,\nan dem die Warteschlange nicht leer sein muss, beginnt, k\u00f6nnen in der Statistik\nmehr bediente Anrufer als Erstanrufer auftreten.";
     t[1108] = "CommandLine.Interactive.Name";
-    t[1109] = "Interaktiv";
+    t[1109] = "Interaktiv;Konsole";
     t[1110] = "Statistics.InterLeaveTime.lower";
     t[1111] = "Zwischenabgangszeit";
     t[1122] = "Editor.Retry";
@@ -1172,6 +1172,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2657] = "Zyan";
     t[2658] = "Distribution.Normal";
     t[2659] = "Normalverteilung";
+    t[2660] = "Statistics.XML.Start";
+    t[2661] = "Start";
     t[2666] = "QSExport.Name.Caller";
     t[2667] = "Anrufer";
     t[2674] = "Statistics.Minimum";
@@ -1398,6 +1400,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3175] = "Rahmenbreite";
     t[3176] = "Statistics.ResidenceTimes.notsuccessful";
     t[3177] = "Verweilzeiten \u00fcber die nicht-erfolgreichen Anrufer";
+    t[3180] = "Statistics.XML.StartError";
+    t[3181] = "Das \"Start\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[3182] = "Model.XML.Version";
     t[3183] = "ModellVersion";
     t[3188] = "LoadCalculator.SystemLoad";
@@ -2006,16 +2010,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4461] = "Fehler beim Initialisieren der Simulation";
     t[4464] = "LoadCalculator.Tab.ErlangB.Link.Info";
     t[4465] = "Informationen zur Erlang B Formel";
-    t[4466] = "JDistributionEditor.ValueUp";
-    t[4467] = "Erh\u00f6ht den Wert des Parameters um %s";
-    t[4468] = "CommandLine.Count.ThenN";
-    t[4469] = "m\u00fcssen genau %d weitere Parameter folgen";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4466] = "JDistributionEditor.ValueUp";
+    t[4467] = "Erh\u00f6ht den Wert des Parameters um %s";
+    t[4468] = "CommandLine.Count.ThenN";
+    t[4469] = "m\u00fcssen genau %d weitere Parameter folgen";
     t[4474] = "Statistics.XML.FreeAgents";
     t[4475] = "StatistikAgentenLeerlauf";
     t[4476] = "Color.9932CC";

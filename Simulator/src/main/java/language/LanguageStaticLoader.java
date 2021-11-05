@@ -678,7 +678,7 @@ public class LanguageStaticLoader {
 		BaseCommandLineSystem.commandHelpInfo1=Language.tr("CommandLine.Help.Info1");
 		BaseCommandLineSystem.commandHelpInfo2=Language.tr("CommandLine.Help.Info2");
 		BaseCommandLineSystem.commandHelpError=Language.tr("CommandLine.Help.Error");
-		BaseCommandLineSystem.commandInteractiveName=Language.tr("CommandLine.Interactive.Name");
+		BaseCommandLineSystem.commandInteractiveName=Language.trAll("CommandLine.Interactive.Name");
 		BaseCommandLineSystem.commandInteractiveNamesOtherLanguages=Language.trOther("CommandLine.Interactive.Name").toArray(new String[0]);
 		BaseCommandLineSystem.commandHelpInteractiveShort=Language.tr("CommandLine.Interactive.Description.Short");
 		BaseCommandLineSystem.commandHelpInteractiveLong=Language.tr("CommandLine.Interactive.Description.Long");
@@ -781,6 +781,8 @@ public class LanguageStaticLoader {
 		StatisticsSimulationBaseData.xmlNameEmergencyShutDown=Language.trAll("Statistics.XML.EmergencyShutDown");
 		StatisticsSimulationBaseData.xmlNameWarning=Language.trAll("Statistics.XML.Warning");
 		StatisticsTimePerformanceIndicator.xmlLoadError=Language.tr("Statistics.XML.Disribution.ElementError");
+		StatisticsTimePerformanceIndicator.xmlNameStart=Language.trAll("Statistics.XML.Start");
+		StatisticsTimePerformanceIndicator.xmlNameStartError=Language.tr("Statistics.XML.StartError");
 		StatisticsTimePerformanceIndicator.xmlNameSum=Language.tr("Statistics.XML.Sum");
 		StatisticsTimePerformanceIndicator.xmlNameValues=Language.trAll("Statistics.XML.Values");
 		StatisticsTimePerformanceIndicator.xmlNameValuesError=Language.tr("Statistics.XML.ValuesError");

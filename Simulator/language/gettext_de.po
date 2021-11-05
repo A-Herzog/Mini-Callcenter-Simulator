@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-25 10:44+0200\n"
+"POT-Creation-Date: 2021-11-04 09:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -650,7 +650,7 @@ msgid "CommandLine.Interactive.Description.Short"
 msgstr "Startet den interaktiven Modus."
 
 msgid "CommandLine.Interactive.Name"
-msgstr "Interaktiv"
+msgstr "Interaktiv;Konsole"
 
 msgid "CommandLine.Interactive.Ready"
 msgstr "Bereit."
@@ -3755,6 +3755,12 @@ msgstr "StatistikAnrufeServiceLevel"
 
 msgid "Statistics.XML.Sk"
 msgstr "Schiefe"
+
+msgid "Statistics.XML.Start"
+msgstr "Start"
+
+msgid "Statistics.XML.StartError"
+msgstr "Das \"Start\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\"."
 
 msgid "Statistics.XML.StateTime"
 msgstr "StatistikStatusZeitStatus"

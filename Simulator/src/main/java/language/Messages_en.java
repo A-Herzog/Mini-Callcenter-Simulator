@@ -511,7 +511,7 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1106] = "SimStatistic.Info.MoreCallerThanFreshCalls";
     t[1107] = "Since caller counting only starts after the warm-up phase,\ni.e. at a time when the queue does not have to be empty,\nmore served callers may appear in the statistics than fresh calls.";
     t[1108] = "CommandLine.Interactive.Name";
-    t[1109] = "Interactive";
+    t[1109] = "Interactive;Console";
     t[1110] = "Statistics.InterLeaveTime.lower";
     t[1111] = "inter-departure time";
     t[1122] = "Editor.Retry";
@@ -1172,6 +1172,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2657] = "Cyan";
     t[2658] = "Distribution.Normal";
     t[2659] = "Normal distribution";
+    t[2660] = "Statistics.XML.Start";
+    t[2661] = "Start";
     t[2666] = "QSExport.Name.Caller";
     t[2667] = "Caller";
     t[2674] = "Statistics.Minimum";
@@ -1398,6 +1400,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3175] = "Outline width";
     t[3176] = "Statistics.ResidenceTimes.notsuccessful";
     t[3177] = "Residence times of the not successful callers";
+    t[3180] = "Statistics.XML.StartError";
+    t[3181] = "The \"Start\" attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[3182] = "Model.XML.Version";
     t[3183] = "ModelVersion";
     t[3188] = "LoadCalculator.SystemLoad";
@@ -2006,16 +2010,16 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4461] = "Error initializing the simulation";
     t[4464] = "LoadCalculator.Tab.ErlangB.Link.Info";
     t[4465] = "Information about Erlang B formula";
-    t[4466] = "JDistributionEditor.ValueUp";
-    t[4467] = "Increases the value of the parameter by %s";
-    t[4468] = "CommandLine.Count.ThenN";
-    t[4469] = "exactly %d additional parameters have to be entered";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4466] = "JDistributionEditor.ValueUp";
+    t[4467] = "Increases the value of the parameter by %s";
+    t[4468] = "CommandLine.Count.ThenN";
+    t[4469] = "exactly %d additional parameters have to be entered";
     t[4474] = "Statistics.XML.FreeAgents";
     t[4475] = "StatisticsAgentsIdle";
     t[4476] = "Color.9932CC";

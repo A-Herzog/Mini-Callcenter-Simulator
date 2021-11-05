@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-25 10:44+0200\n"
+"POT-Creation-Date: 2021-11-04 09:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -650,7 +650,7 @@ msgid "CommandLine.Interactive.Description.Short"
 msgstr "Starts the interactive mode."
 
 msgid "CommandLine.Interactive.Name"
-msgstr "Interactive"
+msgstr "Interactive;Console"
 
 msgid "CommandLine.Interactive.Ready"
 msgstr "Ready."
@@ -3751,6 +3751,12 @@ msgstr "StatisticsCallsServiceLevel"
 
 msgid "Statistics.XML.Sk"
 msgstr "Skewness"
+
+msgid "Statistics.XML.Start"
+msgstr "Start"
+
+msgid "Statistics.XML.StartError"
+msgstr "The \"Start\" attribute in the \"%s\" element has to be a number but is \"%s\"."
 
 msgid "Statistics.XML.StateTime"
 msgstr "StatisticsStatusTimeStatus"
