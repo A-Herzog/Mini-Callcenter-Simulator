@@ -38,7 +38,7 @@ def MMcStateP(a, c, n):
         return MMcStateP0(a,c)
     if n<=c:
         return PowerFactorial(a,n)*MMcStateP0(a,c)
-    return PowerFactorial(a,c)*(a/c)^(n-c)*MMcStateP0(a,c)
+    return PowerFactorial(a,c)*(a/c)**(n-c)*MMcStateP0(a,c)
 
 # Calculates P1 for a M/M/c system
 def ErlangC_P1(a, c):
