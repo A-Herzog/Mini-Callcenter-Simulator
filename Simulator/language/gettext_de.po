@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 09:13+0100\n"
+"POT-Creation-Date: 2021-12-01 17:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3642,6 +3642,9 @@ msgstr "StatistikZwischenabgangszeiten"
 msgid "Statistics.XML.InternalError"
 msgstr "Interner Fehler"
 
+msgid "Statistics.XML.Kurt"
+msgstr "Kurt"
+
 msgid "Statistics.XML.Maximum"
 msgstr "Maximum"
 
@@ -3791,6 +3794,12 @@ msgstr "Summe3"
 
 msgid "Statistics.XML.Sum3.Error"
 msgstr "Das \"Summe3\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\"."
+
+msgid "Statistics.XML.Sum4"
+msgstr "Summe4"
+
+msgid "Statistics.XML.Sum4.Error"
+msgstr "Das \"Summe4\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\"."
 
 msgid "Statistics.XML.SystemLength"
 msgstr "StatistikKundenImSystem"

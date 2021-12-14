@@ -42,6 +42,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[39] = "Frage";
     t[40] = "Statistic.Description.Hide";
     t[41] = "Erkl\u00e4rung ausblenden";
+    t[46] = "Statistics.XML.Kurt";
+    t[47] = "Kurt";
     t[48] = "Color.F0F8FF";
     t[49] = "Alice Blau";
     t[60] = "Statistic.Viewer.Toolbar.OpenODS";
@@ -840,6 +842,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1871] = "Bedienzeiten";
     t[1876] = "Statistics.WaitingTime.lower.AnalyticNoCancelation";
     t[1877] = "ohne Ber\u00fccksichtigung der Abbrecher";
+    t[1882] = "Statistics.XML.Sum4.Error";
+    t[1883] = "Das \"Summe4\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[1884] = "Statistic.Description.Hide.Hint";
     t[1885] = "Blendet die Erkl\u00e4rungen wieder aus.";
     t[1888] = "Statistic.Viewer.DiagramSettings.Font.Bold";
@@ -1378,8 +1382,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3141] = "Summe2";
     t[3142] = "Statistics.XML.Sum3";
     t[3143] = "Summe3";
-    t[3144] = "Window.Info.FolderError";
-    t[3145] = "Ordner anzeigen fehlgeschlagen";
+    t[3144] = "Statistics.XML.Sum4";
+    t[3145] = "Summe4";
     t[3146] = "Compare.ReplaceKeptModel.NoInfo";
     t[3147] = "Das bisher festgehaltene Modell wird weiterhin behalten. Es werden keine Ver\u00e4nderungen vorgenommen.";
     t[3148] = "LoadCalculator.Title";
@@ -1752,6 +1756,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3931] = "Erkl\u00e4rung einblenden";
     t[3934] = "Dialog.OpenURL.CopyURL";
     t[3935] = "Adresse kopieren";
+    t[3936] = "Window.Info.FolderError";
+    t[3937] = "Ordner anzeigen fehlgeschlagen";
     t[3938] = "Statistic.Viewer.Report.NoTablesSelected.Info";
     t[3939] = "Es sind keine Tabellen ausgew\u00e4hlt, die in einer gemeinsamen Arbeitsmappe gespeichert werden k\u00f6nnten.";
     t[3942] = "SetupFailure.Discard";
@@ -2004,18 +2010,18 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4445] = "Bedienreihenfolge";
     t[4448] = "Statistics.XML.Disribution.StepWide";
     t[4449] = "Schrittweite";
-    t[4454] = "CommandLine.Dialog.StopCommand.Hint";
-    t[4455] = "Bricht die Verarbeitung des Befehls ab.";
-    t[4460] = "Window.Simulation.ErrorInitializatingSimulation";
-    t[4461] = "Fehler beim Initialisieren der Simulation";
-    t[4464] = "LoadCalculator.Tab.ErlangB.Link.Info";
-    t[4465] = "Informationen zur Erlang B Formel";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4454] = "CommandLine.Dialog.StopCommand.Hint";
+    t[4455] = "Bricht die Verarbeitung des Befehls ab.";
+    t[4460] = "Window.Simulation.ErrorInitializatingSimulation";
+    t[4461] = "Fehler beim Initialisieren der Simulation";
+    t[4464] = "LoadCalculator.Tab.ErlangB.Link.Info";
+    t[4465] = "Informationen zur Erlang B Formel";
     t[4466] = "JDistributionEditor.ValueUp";
     t[4467] = "Erh\u00f6ht den Wert des Parameters um %s";
     t[4468] = "CommandLine.Count.ThenN";
