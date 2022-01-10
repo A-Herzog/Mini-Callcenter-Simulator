@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 package start;
+import java.awt.GraphicsEnvironment;
 import java.io.File;
 
+import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 import language.Language;
@@ -67,9 +69,19 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		/* Sprache */
-		Language.init(SetupData.getSetup().language);
-		LanguageStaticLoader.setLanguage();
-		if (Messages_Java11.isFixNeeded()) Messages_Java11.setupMissingSwingMessages();
+		try {
+			Language.init(SetupData.getSetup().language);
+			LanguageStaticLoader.setLanguage();
+			if (Messages_Java11.isFixNeeded()) Messages_Java11.setupMissingSwingMessages();
+		} catch (NoClassDefFoundError e) {
+			if (GraphicsEnvironment.isHeadless()) {
+				System.out.println("The required libraries in the \"libs\" subfolder are missing.");
+				System.out.println("Therefore, the program cannot be executed.");
+			} else {
+				JOptionPane.showMessageDialog(null,"The required libraries in the \"libs\" subfolder are missing.\nTherefore, the program cannot be executed.","Missing libraries",JOptionPane.ERROR_MESSAGE);
+			}
+			return;
+		}
 
 		/* Basiseinstellungen zu den xml-Dateiformaten */
 		XMLTools.homeURL="a-herzog.github.io";
