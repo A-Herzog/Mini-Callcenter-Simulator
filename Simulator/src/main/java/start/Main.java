@@ -16,6 +16,7 @@
 package start;
 import java.awt.GraphicsEnvironment;
 import java.io.File;
+import java.util.Properties;
 
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -68,6 +69,11 @@ public class Main {
 	 * @param args	Kommandozeilen-Parameter
 	 */
 	public static void main(String[] args) {
+		/* Jede Art der Log4J-Erfassung deaktivieren. */
+		final Properties systemProperties=System.getProperties();
+		systemProperties.setProperty("org.apache.logging.log4j.level","OFF"); /* wird von org.apache.logging.log4j.core.config.AbstractConfiguration.setToDefault() gelesen */
+		systemProperties.setProperty("log4j2.formatMsgNoLookups","true"); /* wird von org.apache.logging.log4j.core.util.Constants gelesen */
+
 		/* Sprache */
 		try {
 			Language.init(SetupData.getSetup().language);
