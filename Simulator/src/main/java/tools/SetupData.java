@@ -152,6 +152,16 @@ public class SetupData extends SetupBase {
 	public ChartSetup chartSetup;
 
 	/**
+	 * Liste und Reihenfolge der in der Verteilungsliste hervorgehoben darzustellenden Verteilungen
+	 */
+	public String distributionListFilter;
+
+	/**
+	 * Bookmarks im Statistikbaum
+	 */
+	public List<String> statisticTreeBookmarks;
+
+	/**
 	 * Letzter Fehler
 	 * (Hier wird die Setup-Datei als Logdatei für solche Ereignisse verwendet.)
 	 */
@@ -207,6 +217,9 @@ public class SetupData extends SetupBase {
 		useMultiCore=true;
 		if (chartSetup==null) chartSetup=new ChartSetup();
 		chartSetup.reset();
+		distributionListFilter="";
+		if (statisticTreeBookmarks==null) statisticTreeBookmarks=new ArrayList<>();
+		statisticTreeBookmarks.clear();
 		lastError=null;
 	}
 
@@ -421,6 +434,17 @@ public class SetupData extends SetupBase {
 				chartSetup.loadFromXML(e);
 				continue;
 			}
+
+			if (s.equalsIgnoreCase("DistributionListFilter")) {
+				distributionListFilter=e.getTextContent();
+				continue;
+			}
+
+			if (s.equalsIgnoreCase("StatisticTreeBookmarks")) {
+				statisticTreeBookmarks.add(e.getTextContent());
+				continue;
+			}
+
 		}
 
 		lastFiles=addToArray(lastFiles,files);
@@ -486,6 +510,16 @@ public class SetupData extends SetupBase {
 
 		root.appendChild(node=doc.createElement("ChartSetup"));
 		chartSetup.saveToXML(node);
+
+		if (distributionListFilter!=null && !distributionListFilter.trim().isEmpty()) {
+			root.appendChild(node=doc.createElement("DistributionListFilter"));
+			node.setTextContent(distributionListFilter.trim());
+		}
+
+		if (statisticTreeBookmarks.size()>0) for (String bookmark: statisticTreeBookmarks) {
+			root.appendChild(node=doc.createElement("StatisticTreeBookmarks"));
+			node.setTextContent(bookmark);
+		}
 
 		if (lastError!=null && !lastError.isEmpty()) {
 			root.appendChild(node=doc.createElement("LastError"));

@@ -52,6 +52,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[63] = "OpenOffice/LibreOffice";
     t[64] = "Distribution.Cauchy";
     t[65] = "Cauchy-Verteilung";
+    t[66] = "Statistic.Tree.Parameter.BookmarkOff.Hint";
+    t[67] = "Hebt die Markierung des aktuellen Baumeintrags auf";
     t[68] = "Table.BoolFalse";
     t[69] = "FALSCH";
     t[72] = "Editor.Model";
@@ -292,6 +294,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[573] = "Einstellungen speichern fehlgeschlagen";
     t[576] = "Statistics.ProcessTimes";
     t[577] = "Bedienzeiten";
+    t[582] = "Distribution.HyperGeom";
+    t[583] = "Hypergeometrische Verteilung";
     t[584] = "Color.008080";
     t[585] = "Teal";
     t[588] = "LoadCalculator.Results";
@@ -404,8 +408,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[837] = "S";
     t[842] = "SimStatistic.deMinimale";
     t[843] = "Minimale";
-    t[844] = "Main.Menu.Extras.CompareModels";
-    t[845] = "Simulationsergebnisse verschiedener Modelle vergleichen...";
+    t[844] = "Distribution.SetupList.Title";
+    t[845] = "Liste der hervorgehobene Verteilungen bearbeiten";
     t[848] = "Main.Menu.Extras.ExecuteCommand";
     t[849] = "Kommandozeilenbefehl ausf\u00fchren...";
     t[850] = "Simulator.Log.ScheduleCallCancel";
@@ -1054,6 +1058,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2351] = "Es wurde kein Suchtreffer ausgew\u00e4hlt.";
     t[2352] = "JDistributionEditor.Save.Title";
     t[2353] = "Verteilung speichern";
+    t[2356] = "Statistic.Tree.Parameter.BookmarkOn";
+    t[2357] = "Als Bookmark markieren";
     t[2358] = "QSExport.xml.ModelElementDistribution.Status";
     t[2359] = "Status";
     t[2360] = "QSExport.xml.ModelElementOperators";
@@ -1476,8 +1482,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3353] = "Warteschlangenl\u00e4nge";
     t[3354] = "Color.FFE4C4";
     t[3355] = "Bisque";
-    t[3356] = "Statistics.ResidenceTimes.successful";
-    t[3357] = "Verweilzeiten der erfolgreichen Anrufer";
+    t[3356] = "Statistic.Tree.Parameter.BookmarkJump.Hint";
+    t[3357] = "Wechselt zum n\u00e4chsten markierten Baumeintrag";
     t[3358] = "Statistics.XML.Sum2.Error";
     t[3359] = "Das \"Summe2\"-Attribut im \"%s\"-Element muss eine nicht-negative Zahl sein, ist aber \"%s\".";
     t[3364] = "Main.Toolbar.SaveModel.Hint";
@@ -1514,8 +1520,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3447] = "Bedienzeit";
     t[3448] = "JDistributionEditor.Title";
     t[3449] = "Verteilungseditor";
-    t[3452] = "XML.ErrorProcessingStream";
-    t[3453] = "Es ist ein Fehler beim Verarbeiten des Datenstroms aufgetreten.";
+    t[3452] = "Statistic.Tree.Parameter.BookmarkOn.Hint";
+    t[3453] = "Markiert den aktuellen Baumeintrag";
     t[3454] = "Simulator.Log.StopTestEvent";
     t[3455] = "StopTestEvent";
     t[3458] = "Color.8FBC8F";
@@ -1616,8 +1622,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3641] = "Aktiv";
     t[3648] = "FileType.RTF";
     t[3649] = "Richtextdateien";
+    t[3650] = "Distribution.SetupList.Info";
+    t[3651] = "<html><body>Die jeweils ausgew\u00e4hlte Verteilung kann per Strg+Hoch<br>und Strg+Runter verschoben werden.</body></html>";
     t[3654] = "Statistics.XML.CV";
     t[3655] = "Variationskoeffizient";
+    t[3656] = "Distribution.NegativeBinomial";
+    t[3657] = "Negative Binomialverteilung";
     t[3660] = "Statistic.Viewer.Toolbar.SaveTables";
     t[3661] = "Tabellen speichern";
     t[3662] = "QSExport.xml.Element.Decide";
@@ -1744,8 +1754,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3913] = "Zwischenabgangszeiten";
     t[3914] = "Statistics.XML.Distribution";
     t[3915] = "Verteilung";
-    t[3916] = "Editor.Service";
-    t[3917] = "Bedienungen";
+    t[3916] = "Distribution.Binomial";
+    t[3917] = "Binomialverteilung";
     t[3922] = "MainMenu.Help.ErlangScripts.Mnemonic";
     t[3923] = "E";
     t[3926] = "Main.Menu.File.New";
@@ -1840,6 +1850,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4063] = "Text suchen";
     t[4070] = "Color.B22222";
     t[4071] = "Fire Brick";
+    t[4074] = "Main.Menu.Extras.CompareModels";
+    t[4075] = "Simulationsergebnisse verschiedener Modelle vergleichen...";
     t[4076] = "XML.EnterPassword";
     t[4077] = "Bitte Passwort eingeben:";
     t[4082] = "JDistributionEditor.Save.Graphics";
@@ -1998,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4407] = "Alle Tabellendateien";
     t[4408] = "CommandLine.Count.Then0";
     t[4409] = "darf kein weiterer Parameter folgen";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4410] = "CommandLine.Count.Then1";
     t[4411] = "muss genau ein weiterer Parameter folgen";
     t[4414] = "LoadCalculator.CancelRate";
@@ -2010,12 +2028,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4445] = "Bedienreihenfolge";
     t[4448] = "Statistics.XML.Disribution.StepWide";
     t[4449] = "Schrittweite";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4454] = "CommandLine.Dialog.StopCommand.Hint";
     t[4455] = "Bricht die Verarbeitung des Befehls ab.";
     t[4460] = "Window.Simulation.ErrorInitializatingSimulation";
@@ -2142,6 +2154,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4733] = "Standardzoom";
     t[4738] = "CommandLine.Dialog.StopCommand";
     t[4739] = "Anhalten";
+    t[4742] = "Editor.Service";
+    t[4743] = "Bedienungen";
     t[4752] = "XML.ErrorDecryptingFile";
     t[4753] = "Es ist ein Fehler beim Entschl\u00fcsseln der Datei\n%s\naufgetreten.";
     t[4754] = "Statistics.XML.Minimum";
@@ -2158,6 +2172,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4769] = "Wertebereich";
     t[4772] = "Statistics.XML.ValuesSquaredError";
     t[4773] = "Das WerteSumme2-Attribut im \"%s\"-Element muss eine nicht-negative Zahl sein, ist aber \"%s\".";
+    t[4774] = "Distribution.Poisson";
+    t[4775] = "Poisson-Verteilung";
     t[4778] = "XML.UnknownFileFormat";
     t[4779] = "Das Dateiformat wurde nicht erkannt bzw. passt zu keinem Dateiformat dieses Programms.";
     t[4780] = "QSExport.Error.Title";
@@ -2212,6 +2228,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4923] = "Violett";
     t[4926] = "CommandLine.Error.UnableToSaveStatistic";
     t[4927] = "Die Statistikdaten konnten nicht gespeichert werden.";
+    t[4930] = "Distribution.Levy";
+    t[4931] = "Levy-Verteilung";
     t[4940] = "Statistics.XML.Numerator.Error";
     t[4941] = "Das Zaehler-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[4946] = "Statistics.AutoCorrelation.NoData";
@@ -2252,6 +2270,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5025] = "Auslastung";
     t[5028] = "LoadCalculator.Tab.ErlangC.Link";
     t[5029] = "http://de.wikipedia.org/wiki/Erlang_C";
+    t[5032] = "Distribution.Zeta";
+    t[5033] = "Zeta-Verteilung";
     t[5034] = "Example.ModelWithRetry";
     t[5035] = "Dies ist komplex Warteschlangenmodell mit Wiederholern und Weiterleitungen, welches analytisch nicht mehr vollst\u00e4ndig beschrieben werden kann.";
     t[5036] = "LoadCalculator.Units.Hours";
@@ -2270,6 +2290,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5069] = "Tabelle";
     t[5070] = "Statistic.Viewer.DiagramSettings.Font.Size";
     t[5071] = "Schriftgr\u00f6\u00dfe";
+    t[5092] = "Statistic.Tree.Parameter.BookmarkJump";
+    t[5093] = "Zum n\u00e4chsten markierten Eintrag springen";
     t[5094] = "Statistic.Viewer.Toolbar.NewWindow";
     t[5095] = "Fenster";
     t[5096] = "Main.Menu.Help.Help.Mnemonic";
@@ -2310,6 +2332,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5179] = "Anzahl";
     t[5182] = "DistributionFitter.FitError";
     t[5183] = "Abweichung";
+    t[5186] = "Main.Menu.Extras.KeepModel";
+    t[5187] = "Aktuelles Modell f\u00fcr sp\u00e4teren Vergleich festhalten";
     t[5188] = "Statistic.WriteError.Title";
     t[5189] = "Fehler beim Speichern der Datei";
     t[5194] = "FileType.DBF";
@@ -2356,6 +2380,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5289] = "Wartezeit";
     t[5294] = "LoadCalculator.ArrivalRate";
     t[5295] = "Zwischenankunftszeit oder Ankunftsrate";
+    t[5296] = "Statistic.Tree.Parameter.BookmarkOff";
+    t[5297] = "Als Bookmark abw\u00e4hlen";
     t[5304] = "Color.FFFAF0";
     t[5305] = "Bl\u00fctenwei\u00df";
     t[5312] = "Main.Menu.File.Quit.Mnemonic";
@@ -2390,8 +2416,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5369] = "Geplante Nachbearbeitungszeit: %s";
     t[5370] = "SettingsDialog.Title";
     t[5371] = "Einstellungen";
-    t[5380] = "Window.Info.NoInternetConnection.ModelOverview";
-    t[5381] = "Die Modell-\u00dcbersicht\n%s\nkonnte nicht aufgerufen werden.";
     t[5382] = "Statistic.Viewer.Toolbar.SelectAll";
     t[5383] = "Alle";
     t[5384] = "SimStatistic.of.ResidenceTimes";
@@ -2414,6 +2438,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5429] = "Der angegebene Wert \"%s\" f\u00fcr die Wiederholwahrscheinlichkeit ist ung\u00fcltig. Es muss eine Wahrscheinlichkeit angegeben werden.";
     t[5432] = "Compare.InvalidStatisticFile.Title";
     t[5433] = "Ung\u00fcltige Statistikdatei";
+    t[5440] = "Statistics.ResidenceTimes.successful";
+    t[5441] = "Verweilzeiten der erfolgreichen Anrufer";
     t[5442] = "SimStatistic.CancelTime.lower";
     t[5443] = "Abbruchzeit";
     t[5444] = "Window.CannotShowModel.Info";
@@ -2444,8 +2470,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5499] = "Der durch %s und %s eingegrenzte Bereich muss entweder eine Zeile oder eine Spalte sein.";
     t[5506] = "Statistics.AutoCorrelation.Step";
     t[5507] = "Die Autokorrelation wird nur f\u00fcr 10er Abst\u00e4nde erfasst.\nDaher enden die obigen Werte stets auf einen ganzen 10er Wert.";
-    t[5508] = "Main.Menu.Extras.KeepModel";
-    t[5509] = "Aktuelles Modell f\u00fcr sp\u00e4teren Vergleich festhalten";
+    t[5508] = "Distribution.SetupList.Divider";
+    t[5509] = "<html><body>Oben: hervorgehobene Verteilungen (angegebene Reihenfolge)<br>Unten: Normale Verteilungen (werden alphabetisch sortiert)</body></html>";
     t[5516] = "CalculatorDialog.Plotter.Toolbar.Save";
     t[5517] = "Speichern";
     t[5520] = "QSExport.xml.SecondaryResourcePriority";
@@ -2580,6 +2606,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5781] = "Beschreibung";
     t[5782] = "Statistic.Viewer.Toolbar.NewWindow.Size";
     t[5783] = "Fenstergr\u00f6\u00dfe";
+    t[5786] = "XML.ErrorProcessingStream";
+    t[5787] = "Es ist ein Fehler beim Verarbeiten des Datenstroms aufgetreten.";
     t[5794] = "Model.XML.Description";
     t[5795] = "ModellBeschreibung";
     t[5800] = "Statistic.Viewer.DiagramSettings.Title";

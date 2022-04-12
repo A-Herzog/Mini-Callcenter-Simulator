@@ -15,6 +15,7 @@
  */
 package ui.statistics;
 
+import java.awt.Color;
 import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -33,6 +34,7 @@ import systemtools.statistics.StatisticsBasePanel;
 import tools.SetupData;
 import ui.help.Help;
 import ui.images.Images;
+import ui.tools.FlatLaFHelper;
 import xml.XMLTools;
 
 /**
@@ -74,6 +76,30 @@ public class StatisticsPanel extends StatisticsBasePanel {
 	 */
 	public StatisticsPanel(final Runnable startSimulation) {
 		this(1,startSimulation);
+	}
+
+	/**
+	 * Textfarbe für Bookmark-Einträge im Falle des dunklen Layouts (mit dunklem Hintergrund für den Baum)
+	 * @see #getBookmarkColor()
+	 */
+	private static final Color flatLafDarkBookmarkColor=new Color(128,128,255);
+
+	@Override
+	protected Color getBookmarkColor() {
+		return FlatLaFHelper.isDark()?flatLafDarkBookmarkColor:Color.BLUE;
+	}
+
+	@Override
+	protected List<String> getBookmarks() {
+		return SetupData.getSetup().statisticTreeBookmarks;
+	}
+
+	@Override
+	protected void setBookmarks(final List<String> newBookmarks) {
+		final SetupData setup=SetupData.getSetup();
+		setup.statisticTreeBookmarks.clear();
+		if (newBookmarks!=null) setup.statisticTreeBookmarks.addAll(newBookmarks);
+		setup.saveSetup();
 	}
 
 	/**

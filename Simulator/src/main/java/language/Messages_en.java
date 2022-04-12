@@ -52,6 +52,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[63] = "OpenOffice/LibreOffice";
     t[64] = "Distribution.Cauchy";
     t[65] = "Cauchy distribution";
+    t[66] = "Statistic.Tree.Parameter.BookmarkOff.Hint";
+    t[67] = "Removed the current tree entry from the bookmarks list";
     t[68] = "Table.BoolFalse";
     t[69] = "FALSE";
     t[72] = "Editor.Model";
@@ -292,6 +294,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[573] = "Saving settings failed";
     t[576] = "Statistics.ProcessTimes";
     t[577] = "Process times";
+    t[582] = "Distribution.HyperGeom";
+    t[583] = "Hypergeometric distribution";
     t[584] = "Color.008080";
     t[585] = "Teal";
     t[588] = "LoadCalculator.Results";
@@ -404,8 +408,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[837] = "S";
     t[842] = "SimStatistic.deMinimale";
     t[843] = "Minimum";
-    t[844] = "Main.Menu.Extras.CompareModels";
-    t[845] = "Compare results of different models...";
+    t[844] = "Distribution.SetupList.Title";
+    t[845] = "Edit list of highlighted distributions";
     t[848] = "Main.Menu.Extras.ExecuteCommand";
     t[849] = "Execute command-line command...";
     t[850] = "Simulator.Log.ScheduleCallCancel";
@@ -1054,6 +1058,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2351] = "No search hit was selected.";
     t[2352] = "JDistributionEditor.Save.Title";
     t[2353] = "Save distribution";
+    t[2356] = "Statistic.Tree.Parameter.BookmarkOn";
+    t[2357] = "Mark as bookmark";
     t[2358] = "QSExport.xml.ModelElementDistribution.Status";
     t[2359] = "Status";
     t[2360] = "QSExport.xml.ModelElementOperators";
@@ -1476,8 +1482,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3353] = "queue length";
     t[3354] = "Color.FFE4C4";
     t[3355] = "Bisque";
-    t[3356] = "Statistics.ResidenceTimes.successful";
-    t[3357] = "Residence times of the successful callers";
+    t[3356] = "Statistic.Tree.Parameter.BookmarkJump.Hint";
+    t[3357] = "Jumps the the next tree entry marked as bookmark";
     t[3358] = "Statistics.XML.Sum2.Error";
     t[3359] = "The \"sum2\" attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[3364] = "Main.Toolbar.SaveModel.Hint";
@@ -1514,8 +1520,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3447] = "service time";
     t[3448] = "JDistributionEditor.Title";
     t[3449] = "Distribution editor";
-    t[3452] = "XML.ErrorProcessingStream";
-    t[3453] = "An error occurred while processing the stream.";
+    t[3452] = "Statistic.Tree.Parameter.BookmarkOn.Hint";
+    t[3453] = "Adds a bookmark for the current tree entry";
     t[3454] = "Simulator.Log.StopTestEvent";
     t[3455] = "StopTestEvent";
     t[3458] = "Color.8FBC8F";
@@ -1616,8 +1622,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3641] = "Active";
     t[3648] = "FileType.RTF";
     t[3649] = "Rich text files";
+    t[3650] = "Distribution.SetupList.Info";
+    t[3651] = "<html><body>The selected distribution can be moved up or down by Ctrl+Up and Ctrl+Down.</body></html>";
     t[3654] = "Statistics.XML.CV";
     t[3655] = "CoefficientOfVariation";
+    t[3656] = "Distribution.NegativeBinomial";
+    t[3657] = "Negative binomial distribution";
     t[3660] = "Statistic.Viewer.Toolbar.SaveTables";
     t[3661] = "Save tables";
     t[3662] = "QSExport.xml.Element.Decide";
@@ -1744,8 +1754,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3913] = "Inter-departure times";
     t[3914] = "Statistics.XML.Distribution";
     t[3915] = "Distribution";
-    t[3916] = "Editor.Service";
-    t[3917] = "Service";
+    t[3916] = "Distribution.Binomial";
+    t[3917] = "Binomial distribution";
     t[3922] = "MainMenu.Help.ErlangScripts.Mnemonic";
     t[3923] = "E";
     t[3926] = "Main.Menu.File.New";
@@ -1840,6 +1850,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4063] = "Search text";
     t[4070] = "Color.B22222";
     t[4071] = "Fire brick";
+    t[4074] = "Main.Menu.Extras.CompareModels";
+    t[4075] = "Compare results of different models...";
     t[4076] = "XML.EnterPassword";
     t[4077] = "Plase enter password:";
     t[4082] = "JDistributionEditor.Save.Graphics";
@@ -1998,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4407] = "All table files";
     t[4408] = "CommandLine.Count.Then0";
     t[4409] = "no further parameters are allowed";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4410] = "CommandLine.Count.Then1";
     t[4411] = "exactly one more parameter has to be entered";
     t[4414] = "LoadCalculator.CancelRate";
@@ -2010,12 +2028,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4445] = "Queueing discipline";
     t[4448] = "Statistics.XML.Disribution.StepWide";
     t[4449] = "StepWide";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4454] = "CommandLine.Dialog.StopCommand.Hint";
     t[4455] = "Cancels execution of the current command.";
     t[4460] = "Window.Simulation.ErrorInitializatingSimulation";
@@ -2142,6 +2154,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4733] = "Default zoom";
     t[4738] = "CommandLine.Dialog.StopCommand";
     t[4739] = "Quit";
+    t[4742] = "Editor.Service";
+    t[4743] = "Service";
     t[4752] = "XML.ErrorDecryptingFile";
     t[4753] = "An error occurred while decrypting file %s.";
     t[4754] = "Statistics.XML.Minimum";
@@ -2158,6 +2172,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4769] = "Range";
     t[4772] = "Statistics.XML.ValuesSquaredError";
     t[4773] = "The ValuesSum attribute in the \"%s\" element has to be a non-negative number but is \"%s\".";
+    t[4774] = "Distribution.Poisson";
+    t[4775] = "Poisson distribution";
     t[4778] = "XML.UnknownFileFormat";
     t[4779] = "The file format is unknown respectively is not matching to any of the file formats of this program.";
     t[4780] = "QSExport.Error.Title";
@@ -2212,6 +2228,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4923] = "Violet";
     t[4926] = "CommandLine.Error.UnableToSaveStatistic";
     t[4927] = "The statistic data could not be saved.";
+    t[4930] = "Distribution.Levy";
+    t[4931] = "Levy distribution";
     t[4940] = "Statistics.XML.Numerator.Error";
     t[4941] = "The numerator attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[4946] = "Statistics.AutoCorrelation.NoData";
@@ -2252,6 +2270,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5025] = "Work load";
     t[5028] = "LoadCalculator.Tab.ErlangC.Link";
     t[5029] = "http://en.wikipedia.org/wiki/Erlang_(unit)#Erlang_C_formula";
+    t[5032] = "Distribution.Zeta";
+    t[5033] = "Zeta distribution";
     t[5034] = "Example.ModelWithRetry";
     t[5035] = "This is a complex queue model with retriers and forwarding, which cannot be described analytically completely.";
     t[5036] = "LoadCalculator.Units.Hours";
@@ -2270,6 +2290,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5069] = "Table";
     t[5070] = "Statistic.Viewer.DiagramSettings.Font.Size";
     t[5071] = "Font size";
+    t[5092] = "Statistic.Tree.Parameter.BookmarkJump";
+    t[5093] = "Jump to next bookmark";
     t[5094] = "Statistic.Viewer.Toolbar.NewWindow";
     t[5095] = "Window";
     t[5096] = "Main.Menu.Help.Help.Mnemonic";
@@ -2310,6 +2332,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5179] = "Number";
     t[5182] = "DistributionFitter.FitError";
     t[5183] = "Error";
+    t[5186] = "Main.Menu.Extras.KeepModel";
+    t[5187] = "Keep current model for later comparison";
     t[5188] = "Statistic.WriteError.Title";
     t[5189] = "Error saving file";
     t[5194] = "FileType.DBF";
@@ -2356,6 +2380,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5289] = "Waiting time";
     t[5294] = "LoadCalculator.ArrivalRate";
     t[5295] = "Average inter-arrival time or Arrival rate";
+    t[5296] = "Statistic.Tree.Parameter.BookmarkOff";
+    t[5297] = "Remove bookmark";
     t[5304] = "Color.FFFAF0";
     t[5305] = "Floralwhite";
     t[5312] = "Main.Menu.File.Quit.Mnemonic";
@@ -2390,8 +2416,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5369] = "Scheduled post-processing time: %s";
     t[5370] = "SettingsDialog.Title";
     t[5371] = "Settings";
-    t[5380] = "Window.Info.NoInternetConnection.ModelOverview";
-    t[5381] = "Unable to open the model overview\n%s.";
     t[5382] = "Statistic.Viewer.Toolbar.SelectAll";
     t[5383] = "All";
     t[5384] = "SimStatistic.of.ResidenceTimes";
@@ -2414,6 +2438,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5429] = "The value \"%s\" for the retry probability is invalid. A probability has to be specified.";
     t[5432] = "Compare.InvalidStatisticFile.Title";
     t[5433] = "Invalid statistic file";
+    t[5440] = "Statistics.ResidenceTimes.successful";
+    t[5441] = "Residence times of the successful callers";
     t[5442] = "SimStatistic.CancelTime.lower";
     t[5443] = "cancel time";
     t[5444] = "Window.CannotShowModel.Info";
@@ -2444,8 +2470,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5499] = "The range selected by %s and %s has to be either a row or a column.";
     t[5506] = "Statistics.AutoCorrelation.Step";
     t[5507] = "The autocorrelation is recorded only for 10s intervals.\nTherefore, the above values always end in a full 10's value.";
-    t[5508] = "Main.Menu.Extras.KeepModel";
-    t[5509] = "Keep current model for later comparison";
+    t[5508] = "Distribution.SetupList.Divider";
+    t[5509] = "<html><body>Above: Highlighted distributions (given order)<br>Below: Non-highlighted distributions (will be sorted alhpabetically)</body></html>";
     t[5516] = "CalculatorDialog.Plotter.Toolbar.Save";
     t[5517] = "Save";
     t[5520] = "QSExport.xml.SecondaryResourcePriority";
@@ -2580,6 +2606,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5781] = "Description";
     t[5782] = "Statistic.Viewer.Toolbar.NewWindow.Size";
     t[5783] = "Window size";
+    t[5786] = "XML.ErrorProcessingStream";
+    t[5787] = "An error occurred while processing the stream.";
     t[5794] = "Model.XML.Description";
     t[5795] = "ModelDescription";
     t[5800] = "Statistic.Viewer.DiagramSettings.Title";
