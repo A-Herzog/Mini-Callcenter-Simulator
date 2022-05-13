@@ -1258,6 +1258,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2869] = "Statistik";
     t[2870] = "SimStatistic.AgentsBusy";
     t[2871] = "Agenten belegt";
+    t[2876] = "Model.XML.InterArrivalTimes";
+    t[2877] = "ModellZwischenankunftszeiten";
     t[2880] = "Compare.Models.Changed";
     t[2881] = "Ver\u00e4ndertes Modell";
     t[2890] = "Color.40E0D0";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4403] = "Zwischenankunftszeit";
     t[4406] = "FileType.AllTables";
     t[4407] = "Alle Tabellendateien";
-    t[4408] = "CommandLine.Count.Then0";
-    t[4409] = "darf kein weiterer Parameter folgen";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4408] = "CommandLine.Count.Then0";
+    t[4409] = "darf kein weiterer Parameter folgen";
     t[4410] = "CommandLine.Count.Then1";
     t[4411] = "muss genau ein weiterer Parameter folgen";
     t[4414] = "LoadCalculator.CancelRate";
@@ -2136,8 +2138,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4703] = "Das \"Anzahl\"-Attribut im \"%s\"-Element muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[4706] = "Color.8B008B";
     t[4707] = "Dunkelmagenta";
-    t[4710] = "Model.XML.InterArrivalTimes";
-    t[4711] = "ModellZwischenankunftszeiten";
+    t[4710] = "LoadCalculator.FlowFactor";
+    t[4711] = "Flussgrad";
     t[4714] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchService";
     t[4715] = "In den analytischen Modellen werden keine Gruppenbedienungen ber\u00fccksichtigt.";
     t[4716] = "Window.Compare.NotAValidStatisticsFile.Title";

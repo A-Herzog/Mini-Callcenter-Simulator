@@ -1258,6 +1258,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2869] = "Statistics";
     t[2870] = "SimStatistic.AgentsBusy";
     t[2871] = "busy agents";
+    t[2876] = "Model.XML.InterArrivalTimes";
+    t[2877] = "ModelInterArrivalTimes";
     t[2880] = "Compare.Models.Changed";
     t[2881] = "Changed model";
     t[2890] = "Color.40E0D0";
@@ -2008,14 +2010,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4403] = "Inter-arrival time";
     t[4406] = "FileType.AllTables";
     t[4407] = "All table files";
-    t[4408] = "CommandLine.Count.Then0";
-    t[4409] = "no further parameters are allowed";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4408] = "CommandLine.Count.Then0";
+    t[4409] = "no further parameters are allowed";
     t[4410] = "CommandLine.Count.Then1";
     t[4411] = "exactly one more parameter has to be entered";
     t[4414] = "LoadCalculator.CancelRate";
@@ -2136,8 +2138,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4703] = "The \"count\" attribute in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[4706] = "Color.8B008B";
     t[4707] = "Dark magenta";
-    t[4710] = "Model.XML.InterArrivalTimes";
-    t[4711] = "ModelInterArrivalTimes";
+    t[4710] = "LoadCalculator.FlowFactor";
+    t[4711] = "Flow factor";
     t[4714] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchService";
     t[4715] = "Group service is not considered in the analytical models.";
     t[4716] = "Window.Compare.NotAValidStatisticsFile.Title";
