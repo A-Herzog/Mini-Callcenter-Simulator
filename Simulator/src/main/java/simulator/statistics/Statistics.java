@@ -150,7 +150,8 @@ public class Statistics extends StatisticsBase {
 	 * @param collectCorrelation	Erfassung der Autokorrelation der Wartezeiten der Kunden
 	 */
 	public Statistics(final boolean collectCorrelation) {
-		int correlationRange=collectCorrelation?1000:-1;
+		final int correlationRange=collectCorrelation?1000:-1;
+		final boolean useWelford=false;
 
 		editModel=new EditModel();
 
@@ -164,15 +165,15 @@ public class Statistics extends StatisticsBase {
 		addPerformanceIndicator(callRetry=new StatisticsCountPerformanceIndicator(Language.trAll("Statistics.XML.Retry")));
 		addPerformanceIndicator(callServiceLevel=new StatisticsCountPerformanceIndicator(Language.trAll("Statistics.XML.ServiceLevel")));
 
-		addPerformanceIndicator(interarrivalTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.InterArrivalTimes"),7200,7200));
-		addPerformanceIndicator(interleaveTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.InterLeaveTimes"),7200,7200));
-		addPerformanceIndicator(waitingTimeAll=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesAll"),7200,7200,correlationRange,-1));
-		addPerformanceIndicator(waitingTimeSuccess=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesSuccess"),7200,7200));
-		addPerformanceIndicator(waitingTimeCancel=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesCancel"),7200,7200));
-		addPerformanceIndicator(workingTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WorkingTimes"),7200,7200));
-		addPerformanceIndicator(postProcessingTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.PostProcessingTime"),7200,7200));
-		addPerformanceIndicator(systemTimeAll=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.SystemTimeAll"),7200,7200));
-		addPerformanceIndicator(systemTimeSuccess=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.SystemTimeSuccess"),7200,7200));
+		addPerformanceIndicator(interarrivalTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.InterArrivalTimes"),7200,7200,-1,1,useWelford));
+		addPerformanceIndicator(interleaveTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.InterLeaveTimes"),7200,7200,-1,1,useWelford));
+		addPerformanceIndicator(waitingTimeAll=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesAll"),7200,7200,correlationRange,1,useWelford));
+		addPerformanceIndicator(waitingTimeSuccess=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesSuccess"),7200,7200,-1,1,useWelford));
+		addPerformanceIndicator(waitingTimeCancel=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WaitingTimesCancel"),7200,7200,-1,1,useWelford));
+		addPerformanceIndicator(workingTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.WorkingTimes"),7200,7200,-1,1,useWelford));
+		addPerformanceIndicator(postProcessingTime=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.PostProcessingTime"),7200,7200,-1,1,useWelford));
+		addPerformanceIndicator(systemTimeAll=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.SystemTimeAll"),7200,7200,-1,1,useWelford));
+		addPerformanceIndicator(systemTimeSuccess=new StatisticsDataPerformanceIndicator(Language.trAll("Statistics.XML.SystemTimeSuccess"),7200,7200,-1,1,useWelford));
 
 		addPerformanceIndicator(freeAgents=new StatisticsTimePerformanceIndicator(Language.trAll("Statistics.XML.FreeAgents")));
 		addPerformanceIndicator(busyAgents=new StatisticsTimePerformanceIndicator(Language.trAll("Statistics.XML.BusyAgents")));

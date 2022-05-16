@@ -72,6 +72,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[91] = "Vorherige";
     t[92] = "Main.Menu.Extras.QueueingCalculator";
     t[93] = "Warteschlangenrechner...";
+    t[94] = "Statistics.XML.WelfordM2";
+    t[95] = "WelfordM2";
     t[102] = "QSExport.Error.Info";
     t[103] = "Das Speichern des Modells in der Datei\n%s\nist fehlgeschlagen.";
     t[106] = "SimStatistic.SystemData.MultiThreadInfo";
@@ -298,6 +300,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[583] = "Hypergeometrische Verteilung";
     t[584] = "Color.008080";
     t[585] = "Teal";
+    t[586] = "Statistics.XML.WelfordM2.Error";
+    t[587] = "Das WelfordM2-Attribut im \"%s\"-Element muss eine nicht-negative Zahl sein, ist aber \"%s\".";
     t[588] = "LoadCalculator.Results";
     t[589] = "Ergebnisse";
     t[590] = "Distribution.Frechet";
@@ -2006,16 +2010,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4393] = "ModellWartezeittoleranzen";
     t[4396] = "Statistics.XML.RunTime";
     t[4397] = "StatistikLaufzeit";
-    t[4402] = "Statistics.InterArrivalTime";
-    t[4403] = "Zwischenankunftszeit";
-    t[4406] = "FileType.AllTables";
-    t[4407] = "Alle Tabellendateien";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4402] = "Statistics.InterArrivalTime";
+    t[4403] = "Zwischenankunftszeit";
+    t[4406] = "FileType.AllTables";
+    t[4407] = "Alle Tabellendateien";
     t[4408] = "CommandLine.Count.Then0";
     t[4409] = "darf kein weiterer Parameter folgen";
     t[4410] = "CommandLine.Count.Then1";
