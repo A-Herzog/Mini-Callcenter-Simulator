@@ -109,7 +109,7 @@ public class ComparePanel extends SpecialPanel {
 		Statistics[] statistic=new Statistics[statisticFiles.length];
 		Arrays.fill(statistic,null);
 		for (int i=0;i<statisticFiles.length;i++) {
-			final Statistics data=new Statistics(false);
+			final Statistics data=new Statistics(false,false);
 			String s=data.loadFromFile(statisticFiles[i]); if (s!=null) break;
 			statistic[i]=data;
 		}

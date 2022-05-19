@@ -652,6 +652,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1401] = "Bedienzeiten und Nachbearbeitungszeiten";
     t[1402] = "QSExport.xml.Element.Text.FontBold";
     t[1403] = "fett";
+    t[1406] = "Statistics.DistributionOfTheProcessTimes";
+    t[1407] = "Verteilung der Bedienzeiten";
     t[1408] = "Compare.ReturnConfirm.InfoNo";
     t[1409] = "Aktuelles Modell beibehalten.";
     t[1414] = "Statistic.Viewer.Toolbar.Save.Hint";
@@ -1438,6 +1440,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3219] = "Antique Wei\u00df";
     t[3240] = "Statistic.PreviousRemove.Hint";
     t[3241] = "Vergleich mit vorherigen Ergebnissen wieder ausblenden";
+    t[3242] = "Statistics.AutoCorrelation.Step";
+    t[3243] = "Die Autokorrelation wird nur f\u00fcr 10er Abst\u00e4nde erfasst.\nDaher enden die obigen Werte stets auf einen ganzen 10er Wert.";
     t[3250] = "LoadCalculator.Units.Part";
     t[3251] = "Anteil";
     t[3256] = "Color.F0FFF0";
@@ -1848,8 +1852,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4053] = "Simulationsrechner";
     t[4054] = "Main.Menu.Extras.CompareWithKeptModel.Mnemonic";
     t[4055] = "F";
-    t[4056] = "Statistics.DistributionOfTheProcessTimes";
-    t[4057] = "Verteilung der Bedienzeiten";
+    t[4056] = "SettingsDialog.Tabs.Statistics.Welford";
+    t[4057] = "Varianzen mittels Welfords online Algorithmus erfassen";
     t[4058] = "Color.00FA9A";
     t[4059] = "Mittleres Fr\u00fchlingsgr\u00fcn";
     t[4062] = "Statistic.Viewer.Toolbar.Search.DialogTitle";
@@ -2006,16 +2010,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4383] = "Potenzverteilung";
     t[4388] = "QSExport.xml.Edge";
     t[4389] = "Kante";
-    t[4392] = "Model.XML.WaitingTimeTolerances";
-    t[4393] = "ModellWartezeittoleranzen";
-    t[4396] = "Statistics.XML.RunTime";
-    t[4397] = "StatistikLaufzeit";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4392] = "Model.XML.WaitingTimeTolerances";
+    t[4393] = "ModellWartezeittoleranzen";
+    t[4396] = "Statistics.XML.RunTime";
+    t[4397] = "StatistikLaufzeit";
     t[4402] = "Statistics.InterArrivalTime";
     t[4403] = "Zwischenankunftszeit";
     t[4406] = "FileType.AllTables";
@@ -2474,8 +2478,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5497] = "Einstellungen...";
     t[5498] = "Table.LoadErrorCellRangeInvalid";
     t[5499] = "Der durch %s und %s eingegrenzte Bereich muss entweder eine Zeile oder eine Spalte sein.";
-    t[5506] = "Statistics.AutoCorrelation.Step";
-    t[5507] = "Die Autokorrelation wird nur f\u00fcr 10er Abst\u00e4nde erfasst.\nDaher enden die obigen Werte stets auf einen ganzen 10er Wert.";
+    t[5506] = "SettingsDialog.Tabs.Statistics.Welford.Info";
+    t[5507] = "Der Welford-Algorithmus ist deutlich langsamer aber liefert bei sehr kleinen Variationskoeffizienten eine bessere Pr\u00e4zision.";
     t[5508] = "Distribution.SetupList.Divider";
     t[5509] = "<html><body>Oben: hervorgehobene Verteilungen (angegebene Reihenfolge)<br>Unten: Normale Verteilungen (werden alphabetisch sortiert)</body></html>";
     t[5516] = "CalculatorDialog.Plotter.Toolbar.Save";

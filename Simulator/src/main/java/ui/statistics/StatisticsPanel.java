@@ -217,7 +217,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 			if (file==null) return null;
 		}
 
-		Statistics newStatistics=new Statistics(false);
+		Statistics newStatistics=new Statistics(false,false);
 		String error=newStatistics.loadFromFile(file);
 		if (error!=null) return error;
 
@@ -232,7 +232,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 	 * @return	Gibt im Erfolgsfall <code>null</code> zurück, sonst eine Fehlermeldung.
 	 */
 	public String loadStatisticsFromXML(final Element root) {
-		Statistics newStatistics=new Statistics(false);
+		Statistics newStatistics=new Statistics(false,false);
 		String error=newStatistics.loadFromXML(root);
 		if (error!=null) return error;
 

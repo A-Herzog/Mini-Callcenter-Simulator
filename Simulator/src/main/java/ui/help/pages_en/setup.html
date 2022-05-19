@@ -83,6 +83,17 @@ offered for transferring the data from the statistics text and table pages.
 <br>(As default Word and Excel are selected.)
 </p>
 
+<h3>Record variances using Welfords online algorithm</h3>
+
+<p>
+The variances of performance indicators can be recorded in two different ways during a simulation.
+The default method of recording the moments of the measurement series is very fast and provides
+numerically precise results in most cases relevant in queueing theory. Only for probability
+distributions with a coefficient of variation of 0.01 and smaller numerical instabilities may occur,
+reducing the output precision. The Welford online algorithm does not have these problems and always
+delivers numerically precise results. However, significantly more computing time is required for
+statistics collection during the simulation.
+</p>
 
 </body>
 </html>

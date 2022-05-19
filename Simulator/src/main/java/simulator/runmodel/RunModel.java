@@ -20,6 +20,7 @@ import mathtools.distribution.NeverDistributionImpl;
 import mathtools.distribution.tools.DistributionRandomNumber;
 import mathtools.distribution.tools.DistributionTools;
 import simulator.editmodel.EditModel;
+import tools.SetupData;
 
 /**
  * Laufzeit-Modell
@@ -118,6 +119,11 @@ public class RunModel {
 	public boolean collectCorrelation;
 
 	/**
+	 * Soll für die Erfassung der Varianzen der (langsamere, aber bei kleinen Variationskoeffizienten exaktere) Welford-Algorithmus verwendet werden?
+	 */
+	public boolean useWelford;
+
+	/**
 	 * Ein <code>RunModel</code> kann nicht direkt erzeugt werden, sondern es kann nur ein <code>EditModel</code>
 	 * mittels der Funktion <code>getRunModel</code> in ein <code>RunModel</code> umgeformt werden. Dabei wird das
 	 * Modell auf Konsistenz geprüft und alle notwendigen Verknüpfungen werden hergestellt.
@@ -161,6 +167,7 @@ public class RunModel {
 		runModel.warmUpPeriod=editModel.callsToSimulateWarmUp;
 		runModel.waitingRoomSize=editModel.waitingRoomSize;
 		runModel.collectCorrelation=editModel.collectCorrelation;
+		runModel.useWelford=SetupData.getSetup().useWelford;
 
 		return runModel;
 	}

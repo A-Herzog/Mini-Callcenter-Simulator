@@ -148,10 +148,10 @@ public class Statistics extends StatisticsBase {
 	/**
 	 * Konstruktor der Klasse
 	 * @param collectCorrelation	Erfassung der Autokorrelation der Wartezeiten der Kunden
+	 * @param useWelford	Soll für die Erfassung der Varianzen der (langsamere, aber bei kleinen Variationskoeffizienten exaktere) Welford-Algorithmus verwendet werden?
 	 */
-	public Statistics(final boolean collectCorrelation) {
+	public Statistics(final boolean collectCorrelation, final boolean useWelford) {
 		final int correlationRange=collectCorrelation?1000:-1;
-		final boolean useWelford=false;
 
 		editModel=new EditModel();
 

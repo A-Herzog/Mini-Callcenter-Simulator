@@ -83,6 +83,8 @@ public class SetupDialog extends BaseDialog {
 	private final JCheckBox openODS;
 	/** Anbieten, Statistik-Ergebnisse als PDF zu öffnen? */
 	private final JCheckBox openPDF;
+	/** Soll für die Erfassung der Varianzen der Welford-Algorithmus verwendet werden? */
+	private final JCheckBox useWelford;
 
 	/**
 	 * Konstruktor der Klasse
@@ -179,6 +181,10 @@ public class SetupDialog extends BaseDialog {
 		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
 		p.add(openPDF=new JCheckBox(Language.tr("SettingsDialog.Tabs.Statistics.OpenPDF")));
 
+		mainarea.add(p=new JPanel(new FlowLayout(FlowLayout.LEFT)));
+		p.add(useWelford=new JCheckBox(Language.tr("SettingsDialog.Tabs.Statistics.Welford")));
+		useWelford.setToolTipText(Language.tr("SettingsDialog.Tabs.Statistics.Welford.Info"));
+
 		/* Icons auf den Tabreitern einfügen */
 
 		tabs.setIconAt(0,Images.SETUP_PAGE_APPLICATION.getIcon());
@@ -215,6 +221,7 @@ public class SetupDialog extends BaseDialog {
 		openExcel.setSelected(setup.openExcel);
 		openODS.setSelected(setup.openODS);
 		openPDF.setSelected(setup.openPDF);
+		useWelford.setSelected(setup.useWelford);
 
 		/* Dialog anzeigen */
 
@@ -259,6 +266,7 @@ public class SetupDialog extends BaseDialog {
 		setup.openExcel=openExcel.isSelected();
 		setup.openODS=openODS.isSelected();
 		setup.openPDF=openPDF.isSelected();
+		setup.useWelford=useWelford.isSelected();
 
 		setup.saveSetupWithWarning(this);
 	}

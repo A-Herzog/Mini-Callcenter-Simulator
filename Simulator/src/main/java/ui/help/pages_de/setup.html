@@ -89,5 +89,17 @@ Statistik-Text- und -Tabellen-Seiten zur Übernahme der Daten angeboten werden s
 <br>(Als Vorgabe sind Word und Excel ausgewählt.)
 </p>
 
+<h3>Varianzen mittels Welfords online Algorithmus erfassen</h3>
+
+<p>
+Die Varianzen von Kenngrößen können während einer Simulation auf zwei verschiedene Arten erfasst werden.
+Die standardmäßig aktive Erfassung über die Momente der Messreihe ist sehr schnell und liefert in den
+meisten in der Warteschlangentheorie relevanten Fällen numerisch präzise Ergebnisse. Lediglich bei
+Wahrscheinlichkeitsverteilungen mit einem Variationskoeffizienten von 0,01 und kleiner kann es zu
+numerischen Instabilitäten kommen, die die ausgegebene Präzision verringern. Der Welford online Algorithmus
+besitzt diese Probleme nicht und liefert stets numerisch präzise Ergebnisse. Dafür aber wird für die
+Statistikerfassung während der Simulation deutlich mehr Rechenzeit benötigt.
+</p>
+
 </body>
 </html>

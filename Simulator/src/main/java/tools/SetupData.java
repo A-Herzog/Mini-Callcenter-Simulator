@@ -147,6 +147,11 @@ public class SetupData extends SetupBase {
 	public boolean useMultiCore;
 
 	/**
+	 * Soll für die Erfassung der Varianzen der (langsamere, aber bei kleinen Variationskoeffizienten exaktere) Welford-Algorithmus verwendet werden?
+	 */
+	public boolean useWelford;
+
+	/**
 	 * Schriftarten- und Farbeneinstellungen für die Statistikdiagramme
 	 */
 	public ChartSetup chartSetup;
@@ -215,6 +220,7 @@ public class SetupData extends SetupBase {
 		openODS=false;
 		openPDF=false;
 		useMultiCore=true;
+		useWelford=false;
 		if (chartSetup==null) chartSetup=new ChartSetup();
 		chartSetup.reset();
 		distributionListFilter="";
@@ -430,6 +436,10 @@ public class SetupData extends SetupBase {
 				useMultiCore=loadBoolean(e.getTextContent(),true);
 			}
 
+			if (s.equalsIgnoreCase("Welford")) {
+				useWelford=loadBoolean(e.getTextContent(),false);
+			}
+
 			if (s.equalsIgnoreCase("ChartSetup")) {
 				chartSetup.loadFromXML(e);
 				continue;
@@ -506,6 +516,11 @@ public class SetupData extends SetupBase {
 		if (!useMultiCore) {
 			root.appendChild(node=doc.createElement("MultiCore"));
 			node.setTextContent("0");
+		}
+
+		if (useWelford) {
+			root.appendChild(node=doc.createElement("Welford"));
+			node.setTextContent("1");
 		}
 
 		root.appendChild(node=doc.createElement("ChartSetup"));
