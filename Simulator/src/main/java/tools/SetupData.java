@@ -44,6 +44,7 @@ import systemtools.statistics.ChartSetup;
  */
 public class SetupData extends SetupBase {
 	/**
+	 * Fenstergröße beim Programmstart
 	 * @see SetupData#startSizeMode
 	 */
 	public enum StartMode {

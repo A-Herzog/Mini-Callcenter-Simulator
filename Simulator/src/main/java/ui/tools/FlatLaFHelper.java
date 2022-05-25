@@ -41,6 +41,16 @@ import com.formdev.flatlaf.FlatLightLaf;
  */
 public class FlatLaFHelper {
 	/**
+	 * Konstruktor der Klasse
+	 */
+	public FlatLaFHelper() {
+		/*
+		 * Wird nur benötigt, um einen JavaDoc-Kommentar für diesen (impliziten) Konstruktor
+		 * setzen zu können, damit der JavaDoc-Compiler keine Warnung mehr ausgibt.
+		 */
+	}
+
+	/**
 	 * Liste der verfügbaren Flat Look &amp; Feel Klassen
 	 */
 	private static List<Class<? extends FlatLaf>> lafs=Arrays.asList(
@@ -148,6 +158,16 @@ public class FlatLaFHelper {
 	 * @see FlatLaFHelper#setup()
 	 */
 	public static class TaskDialogWindowsDarkDesign extends WindowsContentDesign {
+		/**
+		 * Konstruktor der Klasse
+		 */
+		public TaskDialogWindowsDarkDesign() {
+			/*
+			 * Wird nur benötigt, um einen JavaDoc-Kommentar für diesen (impliziten) Konstruktor
+			 * setzen zu können, damit der JavaDoc-Compiler keine Warnung mehr ausgibt.
+			 */
+		}
+
 		@Override
 		public ICommandLinkPainter getCommandLinkPainter() {
 			if (commandButtonPainter==null) commandButtonPainter=new TaskDialogWindowsDarkCommandLinkPainter();
@@ -167,6 +187,16 @@ public class FlatLaFHelper {
 		private LinkChrome armedChrome=new LinkChrome(Color.LIGHT_GRAY,Color.GRAY,new Color(0xB9D7FC),1,7);
 		/** {@link WindowsCommandLinkPainter} */
 		private LinkChrome rolloverChrome=new LinkChrome(Color.LIGHT_GRAY,Color.GRAY,new Color(0xB9D7FC),1,7);
+
+		/**
+		 * Konstruktor der Klasse
+		 */
+		public TaskDialogWindowsDarkCommandLinkPainter() {
+			/*
+			 * Wird nur benötigt, um einen JavaDoc-Kommentar für diesen (impliziten) Konstruktor
+			 * setzen zu können, damit der JavaDoc-Compiler keine Warnung mehr ausgibt.
+			 */
+		}
 
 		@Override
 		protected LinkChrome getLinkChrome(LinkState linkState) {

@@ -26,6 +26,16 @@ import simulator.runmodel.SimulationData;
  * @author Alexander Herzog
  */
 public class CallDone2Event extends Event {
+	/**
+	 * Konstruktor der Klasse
+	 */
+	public CallDone2Event() {
+		/*
+		 * Wird nur benötigt, um einen JavaDoc-Kommentar für diesen (impliziten) Konstruktor
+		 * setzen zu können, damit der JavaDoc-Compiler keine Warnung mehr ausgibt.
+		 */
+	}
+
 	@Override
 	public final void run(SimData data) {
 		SimulationData simData=(SimulationData)data;

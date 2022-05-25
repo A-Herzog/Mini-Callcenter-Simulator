@@ -205,6 +205,16 @@ public class WaitPanel extends JPanel {
 	 * @see WaitPanel#setSimulator(Simulator, Runnable)
 	 */
 	private class UpdateInfoTask extends TimerTask {
+		/**
+		 * Konstruktor der Klasse
+		 */
+		public UpdateInfoTask() {
+			/*
+			 * Wird nur benötigt, um einen JavaDoc-Kommentar für diesen (impliziten) Konstruktor
+			 * setzen zu können, damit der JavaDoc-Compiler keine Warnung mehr ausgibt.
+			 */
+		}
+
 		@Override
 		public void run() {
 			if (abortRun) simulator.cancel();

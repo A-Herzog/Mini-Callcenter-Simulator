@@ -31,6 +31,16 @@ public final class CallCancelEvent extends Event {
 	public long waitingStartTime;
 
 	/**
+	 * Konstruktor der Klasse
+	 */
+	public CallCancelEvent() {
+		/*
+		 * Wird nur benötigt, um einen JavaDoc-Kommentar für diesen (impliziten) Konstruktor
+		 * setzen zu können, damit der JavaDoc-Compiler keine Warnung mehr ausgibt.
+		 */
+	}
+
+	/**
 	 * (Re-)Initialisierung des Warteabbruch-Ereignisses
 	 * @param now	Aktuelle Systemzeit
 	 * @param time	Zeitpunkt, zu dem der Warteabbruch erfolgen soll

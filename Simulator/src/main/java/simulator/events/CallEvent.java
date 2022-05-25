@@ -32,6 +32,16 @@ public final class CallEvent extends Event {
 	public boolean isNewCall;
 
 	/**
+	 * Konstruktor der Klasse
+	 */
+	public CallEvent() {
+		/*
+		 * Wird nur benötigt, um einen JavaDoc-Kommentar für diesen (impliziten) Konstruktor
+		 * setzen zu können, damit der JavaDoc-Compiler keine Warnung mehr ausgibt.
+		 */
+	}
+
+	/**
 	 * Zählt den Anruf aus Simulationssicht, d.h. beendet ggf. die Einschwingphase (und setzt dabei die Statistik zurück)
 	 * und plant entweder den nächsten Anruf ein oder ab fügt das "Simulationsende"-Ereignis in die Ereignisliste ein.
 	 * @param simData	<code>SimulationData</code>-Objekt
