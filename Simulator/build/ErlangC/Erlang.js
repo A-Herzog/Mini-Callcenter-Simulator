@@ -140,7 +140,7 @@ function ErwErlangC(lambda,mu,nu,c,K,t) {
   for (let n=c;n<K;n++) {
     const a=n-c+1;
     const x=(c*mu+nu)*t;
-    const g=jStat.lowRegGamma(a,x);
+    const g=1-jStat.lowRegGamma(a,x);
 
     p-=p0*MMcKMCn(lambda,mu,nu,c,n)*g;
   }
