@@ -240,6 +240,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[463] = "%s von %s Wiederholungen simuliert / %sK Ereignisse / %sK Ereignisse pro Sekunde";
     t[464] = "XML.ErrorNoEmbeddedData";
     t[465] = "Es sind keine eingebetteten xml-Daten vorhanden.";
+    t[470] = "Distribution.SetupList.Info.Plural";
+    t[471] = "%d von %d Verteilungen sind hervorgehoben.";
     t[472] = "CommandLine.Simulation.Name";
     t[473] = "Simulation";
     t[476] = "Statistics.XML.RunRepeatCount.Error";
@@ -1122,6 +1124,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2465] = "Warte- bzw. Abbruchzeit";
     t[2466] = "Color.000000";
     t[2467] = "Schwarz";
+    t[2472] = "Distribution.SetupList.Info.Singular";
+    t[2473] = "%d von %d Verteilungen ist hervorgehoben.";
     t[2474] = "QSExport.xml.Type.PostProcessingTime";
     t[2475] = "Nachbearbeitungszeiten";
     t[2478] = "Distribution.Infinite";
@@ -1558,6 +1562,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3499] = "Zur\u00fcck zur zuletzt angezeigten Hilfeseite.";
     t[3500] = "LoadCalculator.Units.InterarrivalTime";
     t[3501] = "Zwischenankunftszeit";
+    t[3506] = "Statistics.DistributionOfTheInterLeaveTimes";
+    t[3507] = "Verteilung der Zwischenabgangszeiten";
     t[3512] = "Dialog.Button.Paste";
     t[3513] = "Einf\u00fcgen";
     t[3514] = "Viewer.LoadModel";
@@ -2000,8 +2006,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4359] = "csv-Dateien";
     t[4364] = "Statistics.WaitingTime.lower.all";
     t[4365] = "\u00fcber alle Kunden";
+    t[4366] = "Distribution.DiscreteUniform";
+    t[4367] = "Diskrete Gleichverteilung";
     t[4370] = "Statistic.WriteError.Info";
     t[4371] = "Die Datei\n%s\nkonnte nicht erstellt werden.";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4372] = "Statistic.Viewer.Toolbar.Zoom.Hint";
     t[4373] = "Stellt den Zoomfaktor so ein, dass das gesamte Diagramm sichtbar ist.";
     t[4374] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
@@ -2010,12 +2024,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4383] = "Potenzverteilung";
     t[4388] = "QSExport.xml.Edge";
     t[4389] = "Kante";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4392] = "Model.XML.WaitingTimeTolerances";
     t[4393] = "ModellWartezeittoleranzen";
     t[4396] = "Statistics.XML.RunTime";
@@ -2568,8 +2576,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5689] = "In den analytischen Modellen werden die Wartezeittoleranzen stets als exponentiell verteilt angenommen.";
     t[5690] = "Statistics.XML.RunOS";
     t[5691] = "StatistikSystem";
-    t[5694] = "Statistics.DistributionOfTheInterLeaveTimes";
-    t[5695] = "Verteilung der Zwischenabgangszeiten";
+    t[5694] = "Distribution.Mode";
+    t[5695] = "Modus";
     t[5702] = "Statistic.Viewer.Context.Width.ByContentAndHeader";
     t[5703] = "Anpassen gem\u00e4\u00df Inhalt und \u00dcberschrift";
     t[5704] = "Main.Menu.RecordSimulation";

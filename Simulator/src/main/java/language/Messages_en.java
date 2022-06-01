@@ -240,6 +240,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[463] = "%s of %s repeats simulated / %sK events / %sK events per second";
     t[464] = "XML.ErrorNoEmbeddedData";
     t[465] = "There are no embedded xml data.";
+    t[470] = "Distribution.SetupList.Info.Plural";
+    t[471] = "%d of %d distributions are highlighted.";
     t[472] = "CommandLine.Simulation.Name";
     t[473] = "Simulation";
     t[476] = "Statistics.XML.RunRepeatCount.Error";
@@ -1122,6 +1124,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2465] = "Waiting or cancelation time";
     t[2466] = "Color.000000";
     t[2467] = "Balck";
+    t[2472] = "Distribution.SetupList.Info.Singular";
+    t[2473] = "%d of %d distributions is highlighted.";
     t[2474] = "QSExport.xml.Type.PostProcessingTime";
     t[2475] = "PostProcessingTime";
     t[2478] = "Distribution.Infinite";
@@ -1558,6 +1562,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3499] = "Goes back to the last shown help page.";
     t[3500] = "LoadCalculator.Units.InterarrivalTime";
     t[3501] = "Inter-arrival time";
+    t[3506] = "Statistics.DistributionOfTheInterLeaveTimes";
+    t[3507] = "Distribution of the inter-departure times";
     t[3512] = "Dialog.Button.Paste";
     t[3513] = "Paste";
     t[3514] = "Viewer.LoadModel";
@@ -2000,8 +2006,16 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4359] = "csv files";
     t[4364] = "Statistics.WaitingTime.lower.all";
     t[4365] = "over all clients";
+    t[4366] = "Distribution.DiscreteUniform";
+    t[4367] = "Discrete uniform distribution";
     t[4370] = "Statistic.WriteError.Info";
     t[4371] = "The file\n%s\ncould not be created.";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4372] = "Statistic.Viewer.Toolbar.Zoom.Hint";
     t[4373] = "Sets the zoom factor so that the entire chart is visible.";
     t[4374] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
@@ -2010,12 +2024,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4383] = "Power distribution";
     t[4388] = "QSExport.xml.Edge";
     t[4389] = "Edge";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4392] = "Model.XML.WaitingTimeTolerances";
     t[4393] = "ModelWaitingTimeTolerances";
     t[4396] = "Statistics.XML.RunTime";
@@ -2568,8 +2576,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5689] = "In the analytical models the waiting time tolerances are always assumed to be exponentially distributed.";
     t[5690] = "Statistics.XML.RunOS";
     t[5691] = "StatisticsSystem";
-    t[5694] = "Statistics.DistributionOfTheInterLeaveTimes";
-    t[5695] = "Distribution of the inter-departure times";
+    t[5694] = "Distribution.Mode";
+    t[5695] = "Mode";
     t[5702] = "Statistic.Viewer.Context.Width.ByContentAndHeader";
     t[5703] = "Adjust by content and header";
     t[5704] = "Main.Menu.RecordSimulation";
