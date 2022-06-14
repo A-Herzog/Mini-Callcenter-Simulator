@@ -33,6 +33,12 @@
 		<copy todir="${Release.location}/tools">
 			<fileset dir="${BuildTools.location}/ErlangC"/>
 		</copy>
+		<copy file="${Simulator.location}/target/bom.json" tofile="${Release.location}/docs/bom-Simulator.json"/>
+		<copy file="${Simulator.location}/target/bom.xml" tofile="${Release.location}/docs/bom-Simulator.xml"/>
+		<copy file="${SimTools.location}/target/bom.json" tofile="${Release.location}/docs/bom-SimTools.json"/>
+		<copy file="${SimTools.location}/target/bom.xml" tofile="${Release.location}/docs/bom-SimTools.xml"/>
+		<copy file="${SimSystem.location}/target/bom.json" tofile="${Release.location}/docs/bom-SimSystem.json"/>
+		<copy file="${SimSystem.location}/target/bom.xml" tofile="${Release.location}/docs/bom-SimSystem.xml"/>
 		
 		<copy todir="${Release.location}/libs">
 			<fileset dir="${Simulator.location}/target/libs"/>
