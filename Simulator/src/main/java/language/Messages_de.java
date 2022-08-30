@@ -1442,6 +1442,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3213] = "Geisterwei\u00df";
     t[3218] = "Color.FAEBD7";
     t[3219] = "Antique Wei\u00df";
+    t[3222] = "Distribution.Parameter";
+    t[3223] = "Parameter";
     t[3240] = "Statistic.PreviousRemove.Hint";
     t[3241] = "Vergleich mit vorherigen Ergebnissen wieder ausblenden";
     t[3242] = "Statistics.AutoCorrelation.Step";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4365] = "\u00fcber alle Kunden";
     t[4366] = "Distribution.DiscreteUniform";
     t[4367] = "Diskrete Gleichverteilung";
-    t[4370] = "Statistic.WriteError.Info";
-    t[4371] = "Die Datei\n%s\nkonnte nicht erstellt werden.";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4370] = "Statistic.WriteError.Info";
+    t[4371] = "Die Datei\n%s\nkonnte nicht erstellt werden.";
     t[4372] = "Statistic.Viewer.Toolbar.Zoom.Hint";
     t[4373] = "Stellt den Zoomfaktor so ein, dass das gesamte Diagramm sichtbar ist.";
     t[4374] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
@@ -2042,6 +2044,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4431] = "Mindestens ben\u00f6tigte Agenten: %s";
     t[4434] = "SettingsDialog.WindowSizeProgrmStart.Normal";
     t[4435] = "Standard Fenstergr\u00f6\u00dfe";
+    t[4442] = "Distribution.MaxwellBoltzmann";
+    t[4443] = "Maxwell-Boltzmann-Verteilung";
     t[4444] = "Editor.Service.QueueMode";
     t[4445] = "Bedienreihenfolge";
     t[4448] = "Statistics.XML.Disribution.StepWide";
@@ -2612,6 +2616,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5755] = "Auf Fensterbreite anpassen";
     t[5756] = "Dialog.OpenURL.InfoYes";
     t[5757] = "Webseite im Standard-Browser \u00f6ffnen.";
+    t[5758] = "Statistics.XML.QuantilLimit";
+    t[5759] = "QuantilLimit";
     t[5760] = "Main.Statistic.ErrorSaving";
     t[5761] = "Beim Speichern der Daten ist ein Fehler aufgetreten.";
     t[5764] = "Statistics.WaitingTimes";

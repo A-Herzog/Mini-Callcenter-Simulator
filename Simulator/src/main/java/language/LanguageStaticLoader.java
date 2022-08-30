@@ -144,6 +144,7 @@ public class LanguageStaticLoader {
 		DistributionTools.DistSawtoothLeft=Language.trAll("Distribution.SawtoothLeft");
 		DistributionTools.DistSawtoothRight=Language.trAll("Distribution.SawtoothRight");
 		DistributionTools.DistLevy=Language.trAll("Distribution.Levy");
+		DistributionTools.DistMaxwellBoltzmann=Language.trAll("Distribution.MaxwellBoltzmann");
 		DistributionTools.DistHyperGeom=Language.trAll("Distribution.HyperGeom");
 		DistributionTools.DistBinomial=Language.trAll("Distribution.Binomial");
 		DistributionTools.DistPoisson=Language.trAll("Distribution.Poisson");
@@ -163,6 +164,7 @@ public class LanguageStaticLoader {
 		DistributionTools.DistCV=Language.tr("Distribution.CV");
 		DistributionTools.DistSkewness=Language.tr("Distribution.Skewness");
 		DistributionTools.DistMode=Language.tr("Distribution.Mode");
+		DistributionTools.DistParameter=Language.tr("Distribution.Parameter");
 		JDataDistributionPanel.errorString=Language.tr("Distribution.NoDistribution");
 
 		/* DistributionFitter */
@@ -764,6 +766,7 @@ public class LanguageStaticLoader {
 		StatisticsDataPerformanceIndicator.xmlNameRunVarError=Language.tr("Statistics.XML.Run.Error");
 		StatisticsDataPerformanceIndicator.xmlNameRunHalfWide=Language.trAll("Statistics.XML.RunHalfWide");
 		StatisticsDataPerformanceIndicator.xmlNameQuantil=Language.tr("Statistics.XML.Quantil");
+		StatisticsDataPerformanceIndicator.xmlNameQuantilLimit=Language.trAll("Statistics.XML.QuantilLimit");
 		StatisticsDataPerformanceIndicator.xmlNameWelfordM2=Language.trAll("Statistics.XML.WelfordM2");
 		StatisticsDataPerformanceIndicator.xmlNameWelfordM2Error=Language.tr("Statistics.XML.WelfordM2.Error");
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameCount=Language.trAll("Statistics.XML.Count");
@@ -788,6 +791,7 @@ public class LanguageStaticLoader {
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameDistribution=Language.trAll("Statistics.XML.Distribution");
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameDistributionError=Language.tr("Statistics.XML.Distribution.Error");
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameQuantil=Language.tr("Statistics.XML.Quantil");
+		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameQuantilLimit=Language.trAll("Statistics.XML.QuantilLimit");
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameWelfordM2=Language.trAll("Statistics.XML.WelfordM2");
 		StatisticsDataPerformanceIndicatorWithNegativeValues.xmlNameWelfordM2Error=Language.tr("Statistics.XML.WelfordM2.Error");
 		StatisticsMultiPerformanceIndicator.xmlTypeName=Language.trAll("Statistics.XML.Type");

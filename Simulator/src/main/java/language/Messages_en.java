@@ -1442,6 +1442,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3213] = "Ghost white";
     t[3218] = "Color.FAEBD7";
     t[3219] = "Antique white";
+    t[3222] = "Distribution.Parameter";
+    t[3223] = "Parameter";
     t[3240] = "Statistic.PreviousRemove.Hint";
     t[3241] = "Remove comparison with previous results";
     t[3242] = "Statistics.AutoCorrelation.Step";
@@ -2008,14 +2010,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4365] = "over all clients";
     t[4366] = "Distribution.DiscreteUniform";
     t[4367] = "Discrete uniform distribution";
-    t[4370] = "Statistic.WriteError.Info";
-    t[4371] = "The file\n%s\ncould not be created.";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4370] = "Statistic.WriteError.Info";
+    t[4371] = "The file\n%s\ncould not be created.";
     t[4372] = "Statistic.Viewer.Toolbar.Zoom.Hint";
     t[4373] = "Sets the zoom factor so that the entire chart is visible.";
     t[4374] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
@@ -2042,6 +2044,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4431] = "Minimum number of agents: %s";
     t[4434] = "SettingsDialog.WindowSizeProgrmStart.Normal";
     t[4435] = "Default window size";
+    t[4442] = "Distribution.MaxwellBoltzmann";
+    t[4443] = "Maxwell Boltzmann distribution";
     t[4444] = "Editor.Service.QueueMode";
     t[4445] = "Queueing discipline";
     t[4448] = "Statistics.XML.Disribution.StepWide";
@@ -2612,6 +2616,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5755] = "Adjust by window width";
     t[5756] = "Dialog.OpenURL.InfoYes";
     t[5757] = "Open web page in default browser.";
+    t[5758] = "Statistics.XML.QuantilLimit";
+    t[5759] = "QuantilLimit";
     t[5760] = "Main.Statistic.ErrorSaving";
     t[5761] = "An error occurred while saving the data.";
     t[5764] = "Statistics.WaitingTimes";
