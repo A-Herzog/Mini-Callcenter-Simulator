@@ -74,6 +74,7 @@ import parser.MathCalcError;
 import systemtools.ImageTools;
 import systemtools.MsgBox;
 import systemtools.statistics.PDFWriter;
+import systemtools.statistics.ReportStyle;
 import systemtools.statistics.StatisticsBasePanel;
 import systemtools.statistics.XWPFDocumentPictureTools;
 import tools.SetupData;
@@ -391,9 +392,9 @@ public class PlotterPanel extends JPanel {
 		}
 
 		if (s.equals("pdf")) {
-			final PDFWriter pdf=new PDFWriter(this,15,10);
-			if (!pdf.systemOK) return false;
-			if (!pdf.writeImage(image,25)) return false;
+			final PDFWriter pdf=new PDFWriter(this,new ReportStyle());
+			if (!pdf.isSystemOk()) return false;
+			if (!pdf.writeImageFullWidth(image,25)) return false;
 			return pdf.save(file);
 		}
 

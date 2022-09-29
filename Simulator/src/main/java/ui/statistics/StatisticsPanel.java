@@ -28,6 +28,7 @@ import language.Language;
 import simulator.statistics.Statistics;
 import systemtools.MsgBox;
 import systemtools.statistics.ChartSetup;
+import systemtools.statistics.ReportStyle;
 import systemtools.statistics.StatisticNode;
 import systemtools.statistics.StatisticViewer;
 import systemtools.statistics.StatisticsBasePanel;
@@ -556,6 +557,18 @@ public class StatisticsPanel extends StatisticsBasePanel {
 		super.setChartSetup(chartSetup);
 		final SetupData setup=SetupData.getSetup();
 		setup.chartSetup.copyFrom(chartSetup);
+		setup.saveSetupWithWarning(this);
+	}
+
+	@Override
+	protected ReportStyle getReportStyle() {
+		return SetupData.getSetup().reportStyle;
+	}
+
+	@Override
+	protected void setReportStyle(final ReportStyle reportStyle) {
+		final SetupData setup=SetupData.getSetup();
+		setup.reportStyle=reportStyle;
 		setup.saveSetupWithWarning(this);
 	}
 }

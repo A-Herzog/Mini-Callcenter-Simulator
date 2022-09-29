@@ -36,6 +36,7 @@ import mathtools.NumberTools;
 import systemtools.GUITools;
 import systemtools.SetupBase;
 import systemtools.statistics.ChartSetup;
+import systemtools.statistics.ReportStyle;
 
 /**
  * Diese Klasse kapselt alle Setup-Daten des Programms und automatisiert das Laden und Speichern der Daten
@@ -168,6 +169,12 @@ public class SetupData extends SetupBase {
 	public List<String> statisticTreeBookmarks;
 
 	/**
+	 * Formatierungseinstellungen für den pdf- und docx-Export im Reportgenerator
+	 * @see ReportStyle
+	 */
+	public ReportStyle reportStyle;
+
+	/**
 	 * Letzter Fehler
 	 * (Hier wird die Setup-Datei als Logdatei für solche Ereignisse verwendet.)
 	 */
@@ -227,6 +234,7 @@ public class SetupData extends SetupBase {
 		distributionListFilter="";
 		if (statisticTreeBookmarks==null) statisticTreeBookmarks=new ArrayList<>();
 		statisticTreeBookmarks.clear();
+		reportStyle=new ReportStyle();
 		lastError=null;
 	}
 
@@ -456,6 +464,11 @@ public class SetupData extends SetupBase {
 				continue;
 			}
 
+			if (s.equalsIgnoreCase(ReportStyle.XML_NODE_NAME)) {
+				reportStyle.load(e);
+				continue;
+			}
+
 		}
 
 		lastFiles=addToArray(lastFiles,files);
@@ -536,6 +549,8 @@ public class SetupData extends SetupBase {
 			root.appendChild(node=doc.createElement("StatisticTreeBookmarks"));
 			node.setTextContent(bookmark);
 		}
+
+		reportStyle.save(root);
 
 		if (lastError!=null && !lastError.isEmpty()) {
 			root.appendChild(node=doc.createElement("LastError"));
