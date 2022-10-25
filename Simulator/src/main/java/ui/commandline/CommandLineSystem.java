@@ -52,10 +52,10 @@ public class CommandLineSystem extends BaseCommandLineSystem {
 	protected List<AbstractCommand> getCommands() {
 		List<AbstractCommand> list=super.getCommands();
 
-		list.add(new CommandSimulation());
-		list.add(new CommandBenchmark());
-		list.add(new CommandReport());
-		list.add(new CommandReset());
+		list.add(new CommandSimulation(this));
+		list.add(new CommandBenchmark(this));
+		list.add(new CommandReport(this));
+		list.add(new CommandReset(this));
 
 		return list;
 	}
