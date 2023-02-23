@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." default="build" name="Release services">
+<project basedir="." default="build" name="Release services" xmlns:if="ant:if">
 
 	<property name="Simulator.location" location=".." />
 	<property name="SimTools.location" location="../../SimTools" />
 	<property name="SimSystem.location" location="../../SimSystem" />
 	<property name="BuildTools.location" location="." />
 	<property name="NSIS.location" location="C:\Program Files (x86)\NSIS" />
+	<property name="Signer.location" location="C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64" /> 
 	<property name="sed.location" location="../language/sed/bin" />
 	<property name="Homepage.location" location="../../docs" />
 	<property name="Release.location" location="../../Release" />
@@ -45,16 +46,40 @@
 		</copy>
 		<echo file="${Release.location}/libs/LICENSES" append="false">The licenses of the libraries stored in this directory can be found in detail in ../docs/license_components_*.md</echo>
 
+		<available file="${NSIS.location}\makensis.exe" property="NSIS.present"/>
+		<condition property="Signer.present">
+			<and>
+				<available file="${NSIS.location}\makensis.exe" />
+				<available file="${Signer.location}\SignTool.exe" />
+			</and>
+		</condition>		
+		
 		<echo message="Generate exe wrapper" />
-		<exec executable="${NSIS.location}\makensis.exe" dir="${BuildTools.location}">
+		<exec executable="${NSIS.location}\makensis.exe" dir="${BuildTools.location}" if:set="NSIS.present">
 			<arg value="Launcher.nsi" />
 		</exec>
+		<exec executable="${Signer.location}\SignTool.exe" dir="${BuildTools.location}" if:set="Signer.present">
+			<arg value="sign"/>
+			<arg value="/n"/>
+			<arg value="Clausthal"/>
+			<arg value="/fd"/>
+			<arg value="SHA256"/>
+			<arg value="MiniCallcenterSimulator.exe"/>
+		</exec>		
 		<move file="${BuildTools.location}/MiniCallcenterSimulator.exe" tofile="${Release.location}/MiniCallcenterSimulator.exe" />
 		<copy file="${BuildTools.location}/MiniCallcenterSimulator.sh" tofile="${Release.location}/MiniCallcenterSimulator.sh" />
 
 		<echo message="Generate installer" />
-		<exec executable="${NSIS.location}\makensis.exe" dir="${BuildTools.location}">
+		<exec executable="${NSIS.location}\makensis.exe" dir="${BuildTools.location}" if:set="NSIS.present">
 			<arg value="Setup.nsi" />
+		</exec>
+		<exec executable="${Signer.location}\SignTool.exe" dir="${Release.location}" if:set="Signer.present">
+			<arg value="sign"/>
+			<arg value="/n"/>
+			<arg value="Clausthal"/>
+			<arg value="/fd"/>
+			<arg value="SHA256"/>
+			<arg value="MiniCallcenterSimulatorSetup.exe"/>
 		</exec>
 						
 		<echo message="Generate zip package" />
