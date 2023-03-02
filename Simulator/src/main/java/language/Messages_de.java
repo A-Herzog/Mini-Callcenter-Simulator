@@ -322,6 +322,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[601] = "C";
     t[602] = "Statistics.XML.ValuesSquared";
     t[603] = "WerteSumme2";
+    t[608] = "LoadCalculator.AverageDownTime";
+    t[609] = "Mittlere Ausfallzeit";
     t[610] = "XML.InterpreterCouldNotProcessData";
     t[611] = "Der XML-Interpreter konnte die Datei nicht verarbeiten.";
     t[624] = "LoadCalculator.ProbabilityOfBlocking";
@@ -1650,6 +1652,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3565] = "Benchmark";
     t[3566] = "CommandLine.Benchmark.Name2";
     t[3567] = "Speedtest";
+    t[3572] = "LoadCalculator.Uptime";
+    t[3573] = "Verf\u00fcgbarkeit";
     t[3578] = "Statistics.XML.Sum.Error";
     t[3579] = "Das \"Summe\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[3586] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save";
@@ -1834,8 +1838,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3923] = "E";
     t[3926] = "Main.Menu.File.New";
     t[3927] = "Neu";
-    t[3928] = "Statistic.Viewer.Toolbar.NewWindow.Title";
-    t[3929] = "Statistikdaten";
+    t[3928] = "LoadCalculator.DownTimeCV";
+    t[3929] = "Variationskoeffizient der Ausfallzeiten";
     t[3930] = "Statistic.Description.Show";
     t[3931] = "Erkl\u00e4rung einblenden";
     t[3934] = "Dialog.OpenURL.CopyURL";
@@ -2006,16 +2010,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4235] = "Gew\u00e4hlter Befehl";
     t[4238] = "Statistic.Viewer.Toolbar.NewWindow.Fullscreen";
     t[4239] = "Vollbild";
-    t[4240] = "QSExport.xml.ModelElementOperators.Count";
-    t[4241] = "Anzahl";
-    t[4242] = "Dialog.Overwrite.No.Info";
-    t[4243] = "Beh\u00e4lt die bestehende Datei unver\u00e4ndert bei. Die neuen Daten werden nicht gespeichert.";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4240] = "QSExport.xml.ModelElementOperators.Count";
+    t[4241] = "Anzahl";
+    t[4242] = "Dialog.Overwrite.No.Info";
+    t[4243] = "Beh\u00e4lt die bestehende Datei unver\u00e4ndert bei. Die neuen Daten werden nicht gespeichert.";
     t[4248] = "Statistic.Viewer.SpecialText.StartSimulation";
     t[4249] = "Simulation jetzt starten";
     t[4254] = "CommandLine.Simulation.Status.Short";
@@ -2176,6 +2180,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4567] = "Einstellungen";
     t[4568] = "CalculatorDialog.Expression.ParseError";
     t[4569] = "Der angegebene Ausdruck ist ab Zeichen %d fehlerhaft.";
+    t[4578] = "Statistic.Viewer.Toolbar.NewWindow.Title";
+    t[4579] = "Statistikdaten";
     t[4580] = "LoadCalculator.Tab.WaitingTimeTolerance";
     t[4581] = "Wartezeittoleranz";
     t[4592] = "SimStatistic.WaitingCancelationTimes.Distribution";
