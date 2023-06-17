@@ -124,8 +124,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[281] = "Service";
     t[282] = "Main.Menu.Extras.ReturnToKeptModel.Mnemonic";
     t[283] = "R";
-    t[290] = "Simulator.Log.TryStartCall";
-    t[291] = "TryStartCall";
+    t[290] = "LoadCalculator.Tab.PollaczekChintschin.Link";
+    t[291] = "https://en.wikipedia.org/wiki/Pollaczek%E2%80%93Khinchine_formula";
     t[294] = "XML.NoOutputObjectSelected";
     t[295] = "Internal error: No output object has been selected.";
     t[298] = "CommandLine.UnknownCommand";
@@ -580,6 +580,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1395] = "The simulation is running.";
     t[1406] = "LicenseViewer.Part.Components.Simulator";
     t[1407] = "Lizenzen der von dem Simulator genutzten Komponenten";
+    t[1408] = "Distribution.AverageSomething";
+    t[1409] = "Average";
     t[1412] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save.Title";
     t[1413] = "Save random numbers";
     t[1420] = "Distribution.StudentT";
@@ -756,6 +758,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1835] = "Dark blue";
     t[1838] = "CommandLine.Dialog.Command";
     t[1839] = "Selected command";
+    t[1840] = "LoadCalculator.PollaczekChintschinInvalidWorkLoad";
+    t[1841] = "invalid work load";
     t[1844] = "Model.XML.RetryProbability";
     t[1845] = "ModelRetryProbability";
     t[1852] = "Statistics.WaitingTime.lower.all";
@@ -1394,6 +1398,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3437] = "Plum";
     t[3438] = "QSExport.xml.Element.Process";
     t[3439] = "ModelElementProcessStation";
+    t[3450] = "LoadCalculator.Tab.PollaczekChintschinShort";
+    t[3451] = "Pollaczek\u2013Khinchine";
     t[3462] = "Statistics.XML.Value";
     t[3463] = "Value";
     t[3464] = "Color.008000";
@@ -1700,6 +1706,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4241] = "ModelElementCounter";
     t[4242] = "SettingsDialog.Tabs.Statistics.OpenWord";
     t[4243] = "Open texts using Word";
+    t[4250] = "LoadCalculator.Tab.PollaczekChintschin";
+    t[4251] = "Pollaczek\u2013Khinchine formula";
     t[4254] = "Statistic.Viewer.SaveImage.Size.Prompt";
     t[4255] = "Resolution on saving";
     t[4258] = "CommandLine.Dialog.StopCommand.Hint";
@@ -1802,6 +1810,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4553] = "The report was successfully created.";
     t[4560] = "Statistics.DistributionOfTheInterLeaveTimes";
     t[4561] = "Distribution of the inter-departure times";
+    t[4564] = "LoadCalculator.Tab.PollaczekChintschin.Link.Info";
+    t[4565] = "Information about Pollaczek\u2013Khinchine formula";
     t[4566] = "Statistic.Viewer.Toolbar.NewWindow.Fullscreen";
     t[4567] = "Fullscreen";
     t[4568] = "Statistic.Viewer.Toolbar.Search.DialogRegEx";
@@ -2000,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5029] = "Axis labeling";
     t[5030] = "Distribution.HyperGeom";
     t[5031] = "Hypergeometric distribution";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[5032] = "XML.ErrorNoEmbeddedData";
     t[5033] = "There are no embedded xml data.";
     t[5042] = "CommandLine.Simulation.Done";
@@ -2010,12 +2026,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5051] = "Open results as pdf files";
     t[5052] = "Color.696969";
     t[5053] = "dimgray";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5056] = "Dialog.Button.Yes";
     t[5057] = "Yes";
     t[5058] = "Example.ErlangC";
@@ -2356,6 +2366,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5819] = "Load statistics";
     t[5824] = "Model.XML.BatchArrival.Error";
     t[5825] = "The value \"%s\" for the arrival batch size is invalid. A positive integer number has to be specified.";
+    t[5826] = "Simulator.Log.TryStartCall";
+    t[5827] = "TryStartCall";
     t[5832] = "LoadCalculator.ErlangCNotCalculateable";
     t[5833] = "not calculateable (to few agents)";
     t[5850] = "ModelInfo.ServedClients.Line1";

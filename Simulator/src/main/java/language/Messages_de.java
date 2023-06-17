@@ -124,8 +124,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[281] = "Bedienungen";
     t[282] = "Main.Menu.Extras.ReturnToKeptModel.Mnemonic";
     t[283] = "Z";
-    t[290] = "Simulator.Log.TryStartCall";
-    t[291] = "TryStartCall";
+    t[290] = "LoadCalculator.Tab.PollaczekChintschin.Link";
+    t[291] = "https://de.wikipedia.org/wiki/Pollaczek-Chintschin-Formel";
     t[294] = "XML.NoOutputObjectSelected";
     t[295] = "Interner Fehler: Es wurde kein Ausgabeobjekt angegeben.";
     t[298] = "CommandLine.UnknownCommand";
@@ -758,6 +758,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1835] = "Dunkelblau";
     t[1838] = "CommandLine.Dialog.Command";
     t[1839] = "Gew\u00e4hlter Befehl";
+    t[1840] = "LoadCalculator.PollaczekChintschinInvalidWorkLoad";
+    t[1841] = "ung\u00fcltige Auslastung";
     t[1844] = "Model.XML.RetryProbability";
     t[1845] = "ModellWiederholwahrscheinlichkeit";
     t[1852] = "Statistics.WaitingTime.lower.all";
@@ -1396,6 +1398,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3437] = "Plum";
     t[3438] = "QSExport.xml.Element.Process";
     t[3439] = "ModellElementBedienstation";
+    t[3450] = "LoadCalculator.Tab.PollaczekChintschinShort";
+    t[3451] = "Pollaczek-Chintschin";
     t[3462] = "Statistics.XML.Value";
     t[3463] = "Wert";
     t[3464] = "Color.008000";
@@ -1702,6 +1706,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4241] = "ModellElementZaehler";
     t[4242] = "SettingsDialog.Tabs.Statistics.OpenWord";
     t[4243] = "Texte mit Word \u00f6ffnen";
+    t[4250] = "LoadCalculator.Tab.PollaczekChintschin";
+    t[4251] = "Pollaczek-Chintschin-Formel";
     t[4254] = "Statistic.Viewer.SaveImage.Size.Prompt";
     t[4255] = "Aufl\u00f6sung beim Speichern";
     t[4258] = "CommandLine.Dialog.StopCommand.Hint";
@@ -1804,6 +1810,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4553] = "Der Report wurde erfolgreich erstellt.";
     t[4560] = "Statistics.DistributionOfTheInterLeaveTimes";
     t[4561] = "Verteilung der Zwischenabgangszeiten";
+    t[4564] = "LoadCalculator.Tab.PollaczekChintschin.Link.Info";
+    t[4565] = "Informationen zur Pollaczek-Chintschin-Formel";
     t[4566] = "Statistic.Viewer.Toolbar.NewWindow.Fullscreen";
     t[4567] = "Vollbild";
     t[4568] = "Statistic.Viewer.Toolbar.Search.DialogRegEx";
@@ -2002,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5029] = "Achsenbeschriftung";
     t[5030] = "Distribution.HyperGeom";
     t[5031] = "Hypergeometrische Verteilung";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[5032] = "XML.ErrorNoEmbeddedData";
     t[5033] = "Es sind keine eingebetteten xml-Daten vorhanden.";
     t[5042] = "CommandLine.Simulation.Done";
@@ -2010,12 +2024,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5049] = "https://de.wikipedia.org/wiki/Maxwell-Boltzmann-Verteilung";
     t[5050] = "SettingsDialog.Tabs.Statistics.OpenPDF";
     t[5051] = "Ergebnisse als pdf \u00f6ffnen";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5052] = "Color.696969";
     t[5053] = "Schwaches Grau";
     t[5056] = "Dialog.Button.Yes";
@@ -2358,6 +2366,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5819] = "Statistik laden";
     t[5824] = "Model.XML.BatchArrival.Error";
     t[5825] = "Der angegebene Wert \"%s\" f\u00fcr die Ankunfts-Batch-Gr\u00f6\u00dfe ist ung\u00fcltig. Es muss eine positive Ganzzahl angegeben werden.";
+    t[5826] = "Simulator.Log.TryStartCall";
+    t[5827] = "TryStartCall";
     t[5832] = "LoadCalculator.ErlangCNotCalculateable";
     t[5833] = "nicht berechenbar (zu wenig Agenten)";
     t[5850] = "ModelInfo.ServedClients.Line1";
