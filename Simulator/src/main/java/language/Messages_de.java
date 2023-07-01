@@ -112,8 +112,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[257] = "Entfernt das Logo.";
     t[262] = "Simulator.Log.TryStartCall.WaitingRoomFull";
     t[263] = "Da der Warteraum voll ist, wird ein Anrufer abgewiesen.";
-    t[270] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchService";
-    t[271] = "In den analytischen Modellen werden keine Gruppenbedienungen ber\u00fccksichtigt.";
+    t[270] = "Statistic.Viewer.Context.Sort.Ascending";
+    t[271] = "Aufsteigend nach dieser Spalte";
     t[272] = "Window.ErrorNoGraphics";
     t[273] = "Da keine grafische Oberfl\u00e4che zur Verf\u00fcgung steht, kann der Simulator nur im Konsolen-Modus betrieben werden. Rufen Sie den Simulator mit dem Parameter \"Hilfe\" auf, um eine \u00dcbersicht \u00fcber die verf\u00fcgbaren Konsolen-Befehle zu erhalten.";
     t[276] = "JDataLoader.SelectArea";
@@ -134,6 +134,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[307] = "Laden";
     t[312] = "Statistics.InterArrivalTimes.Distribution.byModel";
     t[313] = "Zwischenankunftszeitenverteilung laut Modell";
+    t[314] = "Statistic.Viewer.Toolbar.SaveTables.Hint";
+    t[315] = "Speichert nur die ausgew\u00e4hlten Tabellen in einer gemeinsamen Arbeitsmappe.";
     t[320] = "SimStatistic.NumberOfCallers.byModel.Info";
     t[321] = "Bedingt durch die Aufteilung der Simulation auf mehrere CPU-Kerne kann die Anzahl an\ntats\u00e4chlich simulierten Erstanrufern h\u00f6her ausfallen als eingestellt.";
     t[340] = "Statistics.XML.ValuesSquared";
@@ -214,8 +216,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[493] = "Typ";
     t[496] = "LoadCalculator.Units.Number";
     t[497] = "Anzahl";
-    t[498] = "Statistic.Viewer.Toolbar.Search";
-    t[499] = "Suchen";
+    t[498] = "Statistic.Viewer.Toolbar.Save.DefaultSize";
+    t[499] = "In Standardgr\u00f6\u00dfe (%dx%d Pixel) speichern";
     t[500] = "Color.FF69B4";
     t[501] = "Hei\u00dfes Pink";
     t[502] = "LoadCalculator.Tab.ErlangC.Link.Info";
@@ -410,6 +412,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[969] = "Schwachtes GoldenRod";
     t[970] = "SimStatistic.WaitingTimes.Distribution";
     t[971] = "Verteilung der Wartezeiten";
+    t[976] = "Statistic.Viewer.Context.Sort";
+    t[977] = "Sortieren";
     t[978] = "FileType.bmp";
     t[979] = "bmp-Dateien";
     t[980] = "Color.F8F8FF";
@@ -582,6 +586,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1407] = "Lizenzen der von dem Simulator genutzten Komponenten";
     t[1408] = "Distribution.AverageSomething";
     t[1409] = "Mittlere";
+    t[1410] = "Statistic.Viewer.Context.Sort.Descending";
+    t[1411] = "Absteigend nach dieser Spalte";
     t[1412] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save.Title";
     t[1413] = "Zufallszahlen speichern";
     t[1420] = "Distribution.StudentT";
@@ -610,6 +616,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1473] = "Geplantes Bedienzeitende: %s";
     t[1480] = "Compare.ReturnConfirm.Info";
     t[1481] = "Soll das aktuelle Modell wirklich verworfen werden und zu\ndem festgehaltenen Modell zur\u00fcckgekehrt werden?";
+    t[1486] = "Statistic.Viewer.Context.Filter.SelectNone";
+    t[1487] = "Keine";
     t[1490] = "Statistic.Viewer.Report.Settings.Fonts.ParSkip";
     t[1491] = "Absatzabstand (in pt)";
     t[1492] = "Distribution.MostLikely";
@@ -694,6 +702,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1713] = "Weiterleitung?";
     t[1718] = "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit";
     t[1719] = "Die Kunden sind bereit, beliebig lange zu warten.";
+    t[1720] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchService";
+    t[1721] = "In den analytischen Modellen werden keine Gruppenbedienungen ber\u00fccksichtigt.";
     t[1722] = "Color.FFFFF0";
     t[1723] = "Ivory";
     t[1724] = "Help.Back.Info";
@@ -724,8 +734,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1767] = "Wei\u00df";
     t[1772] = "LoadCalculator.Units.Seconds";
     t[1773] = "Sekunden";
-    t[1780] = "Statistic.Viewer.Toolbar.SaveTables.Hint";
-    t[1781] = "Speichert nur die ausgew\u00e4hlten Tabellen in einer gemeinsamen Arbeitsmappe.";
+    t[1780] = "Statistic.Viewer.Context.Filter";
+    t[1781] = "Filtern";
     t[1786] = "Window.UnsavedFile";
     t[1787] = "ungespeichertes Modell";
     t[1790] = "Statistic.Viewer.Toolbar.Search.Hint";
@@ -848,6 +858,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2069] = "Tabelleninhalt";
     t[2076] = "CommandLine.Dialog.Title";
     t[2077] = "Kommandozeilenbefehl ausf\u00fchren";
+    t[2078] = "Statistic.Viewer.Context.Filter.SelectAll";
+    t[2079] = "Alle";
     t[2094] = "QSExport.xml.ModelElementBatchData.Size";
     t[2095] = "Groesse";
     t[2100] = "CommandLine.Benchmark.SimulaionFailed";
@@ -1386,6 +1398,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3407] = "Seegr\u00fcn";
     t[3410] = "CommandLine.Benchmark.UsedModel";
     t[3411] = "Verwendetes Simulationsmodell";
+    t[3412] = "Statistic.Viewer.Context.Filter.All";
+    t[3413] = "Alle anzeigen";
     t[3416] = "Editor.Service.ServiceTimes";
     t[3417] = "Bedienzeiten";
     t[3418] = "Distribution.LogNormalWikipedia";
@@ -1996,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4999] = "LaTeX-Tabellen";
     t[5002] = "LoadCalculator.WaitingTime";
     t[5003] = "Wartezeit";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[5016] = "QSExport.xml.Size";
     t[5017] = "ModellElementGroesse";
     t[5018] = "Statistic.Viewer.DiagramSettings.Defaults.ThisPage";
@@ -2010,12 +2030,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5029] = "Achsenbeschriftung";
     t[5030] = "Distribution.HyperGeom";
     t[5031] = "Hypergeometrische Verteilung";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5032] = "XML.ErrorNoEmbeddedData";
     t[5033] = "Es sind keine eingebetteten xml-Daten vorhanden.";
     t[5042] = "CommandLine.Simulation.Done";
@@ -2218,6 +2232,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5473] = "Rate";
     t[5474] = "Statistics.AnalyticModelCompare.Analysis";
     t[5475] = "Analyse des Modells";
+    t[5480] = "Statistic.Viewer.Context.Filter.SelectTitle";
+    t[5481] = "Werte f\u00fcr anzuzeigende Zeilen ausw\u00e4hlen";
     t[5490] = "Statistics.XML.Part";
     t[5491] = "Anteil";
     t[5492] = "QSExport.xml.ModelElementOperators.Count";
@@ -2600,6 +2616,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6407] = "Alle CPU-Kerne verwenden";
     t[6412] = "Statistic.Viewer.NoInternet.Info";
     t[6413] = "Die angegebene Adresse\n%s\nkonnte nicht aufgerufen werden.";
+    t[6420] = "Statistic.Viewer.Context.Sort.Reset";
+    t[6421] = "Urspr\u00fcngliche Reihenfolge";
     t[6422] = "CommandLine.Count.ThenN";
     t[6423] = "m\u00fcssen genau %d weitere Parameter folgen";
     t[6424] = "Example.Model";
@@ -2746,6 +2764,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6731] = "Dies ist ein Warteschlangenmodell mit Warteabbrechern, welches zwar nicht durch die Erlang-C-Formal aber durch die erweiterte Erlang-C-Formel vollst\u00e4ndig beschrieben werden kann.";
     t[6732] = "Statistic.Viewer.NoHTMLApplication.Info";
     t[6733] = "Es ist keine Anwendung f\u00fcr den direkten Druck von html-Dateien registriert. Die Reportdatei wird nun im Standardbrowser ge\u00f6ffnet. Bitte starten Sie den Druck von dort aus manuell.";
+    t[6734] = "Statistic.Viewer.Toolbar.Search";
+    t[6735] = "Suchen";
     t[6736] = "Compare.Title";
     t[6737] = "Ergebnisse vergleichen";
     t[6740] = "Statistics.Distance";
@@ -2796,8 +2816,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6831] = "Besetztzeichenquote";
     t[6836] = "JDataLoader.ImportErrorFileError";
     t[6837] = "Die Datei %s konnte nicht geladen werden.";
-    t[6844] = "Statistic.Viewer.Toolbar.Save.DefaultSize";
-    t[6845] = "In Standardgr\u00f6\u00dfe (%dx%d Pixel) speichern";
+    t[6844] = "Statistic.Viewer.Context.Filter.Select";
+    t[6845] = "Werte ausw\u00e4hlen...";
     t[6852] = "Distribution.DiscreteUniform";
     t[6853] = "Diskrete Gleichverteilung";
     t[6856] = "QSExport.xml.SecondaryResourcePriority";

@@ -21,6 +21,9 @@ import java.util.Properties;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.simple.SimpleLoggerContextFactory;
+
 import language.Language;
 import language.LanguageStaticLoader;
 import language.Messages_Java11;
@@ -87,6 +90,7 @@ public class Main {
 		final Properties systemProperties=System.getProperties();
 		systemProperties.setProperty("org.apache.logging.log4j.level","OFF"); /* wird von org.apache.logging.log4j.core.config.AbstractConfiguration.setToDefault() gelesen */
 		systemProperties.setProperty("log4j2.formatMsgNoLookups","true"); /* wird von org.apache.logging.log4j.core.util.Constants gelesen */
+		LogManager.setFactory(new SimpleLoggerContextFactory());
 
 		/* Sprache */
 		try {

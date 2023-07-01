@@ -112,8 +112,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[257] = "Removes the images.";
     t[262] = "Simulator.Log.TryStartCall.WaitingRoomFull";
     t[263] = "Since the waiting room is full, a caller is rejected.";
-    t[270] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchService";
-    t[271] = "Group service is not considered in the analytical models.";
+    t[270] = "Statistic.Viewer.Context.Sort.Ascending";
+    t[271] = "Ascending by this column";
     t[272] = "Window.ErrorNoGraphics";
     t[273] = "Since no graphical user interface is available, the simulator can only be operate in console mode. Start simulator with  \"Help\" as parameter to get an overview of the available command line commands.";
     t[276] = "JDataLoader.SelectArea";
@@ -134,6 +134,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[307] = "Load";
     t[312] = "Statistics.InterArrivalTimes.Distribution.byModel";
     t[313] = "Inter-arrival times distribution by model";
+    t[314] = "Statistic.Viewer.Toolbar.SaveTables.Hint";
+    t[315] = "Save the selected tables in a workbook only.";
     t[320] = "SimStatistic.NumberOfCallers.byModel.Info";
     t[321] = "Due to the splitting of the simulation over several CPU cores, the number of\nactually simulated first callers may be higher than specified.";
     t[340] = "Statistics.XML.ValuesSquared";
@@ -214,8 +216,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[493] = "Type";
     t[496] = "LoadCalculator.Units.Number";
     t[497] = "Count";
-    t[498] = "Statistic.Viewer.Toolbar.Search";
-    t[499] = "Search";
+    t[498] = "Statistic.Viewer.Toolbar.Save.DefaultSize";
+    t[499] = "Save using default size (%dx%d pixels)";
     t[500] = "Color.FF69B4";
     t[501] = "Hot pink";
     t[502] = "LoadCalculator.Tab.ErlangC.Link.Info";
@@ -410,6 +412,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[969] = "Pale golden rod";
     t[970] = "SimStatistic.WaitingTimes.Distribution";
     t[971] = "Distribution of the waiting times";
+    t[976] = "Statistic.Viewer.Context.Sort";
+    t[977] = "Sort";
     t[978] = "FileType.bmp";
     t[979] = "bmp files";
     t[980] = "Color.F8F8FF";
@@ -582,6 +586,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1407] = "Lizenzen der von dem Simulator genutzten Komponenten";
     t[1408] = "Distribution.AverageSomething";
     t[1409] = "Average";
+    t[1410] = "Statistic.Viewer.Context.Sort.Descending";
+    t[1411] = "Descending by this column";
     t[1412] = "CalculatorDialog.Tab.Distributions.GenerateRandomNumbers.Save.Title";
     t[1413] = "Save random numbers";
     t[1420] = "Distribution.StudentT";
@@ -610,6 +616,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1473] = "Scheduled end of service time: %s";
     t[1480] = "Compare.ReturnConfirm.Info";
     t[1481] = "Do you really want to discard the current model and return\nto the previous kept model?";
+    t[1486] = "Statistic.Viewer.Context.Filter.SelectNone";
+    t[1487] = "None";
     t[1490] = "Statistic.Viewer.Report.Settings.Fonts.ParSkip";
     t[1491] = "Paragraph spacing (in pt)";
     t[1492] = "Distribution.MostLikely";
@@ -694,6 +702,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1713] = "Forward?";
     t[1718] = "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.NoLimit";
     t[1719] = "No waiting time tolerance limit.";
+    t[1720] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.BatchService";
+    t[1721] = "Group service is not considered in the analytical models.";
     t[1722] = "Color.FFFFF0";
     t[1723] = "Ivory";
     t[1724] = "Help.Back.Info";
@@ -724,8 +734,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1767] = "White";
     t[1772] = "LoadCalculator.Units.Seconds";
     t[1773] = "Seconds";
-    t[1780] = "Statistic.Viewer.Toolbar.SaveTables.Hint";
-    t[1781] = "Save the selected tables in a workbook only.";
+    t[1780] = "Statistic.Viewer.Context.Filter";
+    t[1781] = "Filter";
     t[1786] = "Window.UnsavedFile";
     t[1787] = "unsaved model file";
     t[1790] = "Statistic.Viewer.Toolbar.Search.Hint";
@@ -848,6 +858,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2069] = "Table content";
     t[2076] = "CommandLine.Dialog.Title";
     t[2077] = "Execute command-line command";
+    t[2078] = "Statistic.Viewer.Context.Filter.SelectAll";
+    t[2079] = "All";
     t[2094] = "QSExport.xml.ModelElementBatchData.Size";
     t[2095] = "Size";
     t[2100] = "CommandLine.Benchmark.SimulaionFailed";
@@ -1386,6 +1398,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3407] = "Sea green";
     t[3410] = "CommandLine.Benchmark.UsedModel";
     t[3411] = "Used simulation model";
+    t[3412] = "Statistic.Viewer.Context.Filter.All";
+    t[3413] = "Show all";
     t[3416] = "Editor.Service.ServiceTimes";
     t[3417] = "Service times";
     t[3418] = "Distribution.LogNormalWikipedia";
@@ -1996,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4999] = "LaTeX tables";
     t[5002] = "LoadCalculator.WaitingTime";
     t[5003] = "Waiting time";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[5016] = "QSExport.xml.Size";
     t[5017] = "ModelElementSize";
     t[5018] = "Statistic.Viewer.DiagramSettings.Defaults.ThisPage";
@@ -2010,12 +2030,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5029] = "Axis labeling";
     t[5030] = "Distribution.HyperGeom";
     t[5031] = "Hypergeometric distribution";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5032] = "XML.ErrorNoEmbeddedData";
     t[5033] = "There are no embedded xml data.";
     t[5042] = "CommandLine.Simulation.Done";
@@ -2218,6 +2232,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5473] = "Rate";
     t[5474] = "Statistics.AnalyticModelCompare.Analysis";
     t[5475] = "Analysis of the model";
+    t[5480] = "Statistic.Viewer.Context.Filter.SelectTitle";
+    t[5481] = "Select values for lines to be displayed";
     t[5490] = "Statistics.XML.Part";
     t[5491] = "Part";
     t[5492] = "QSExport.xml.ModelElementOperators.Count";
@@ -2600,6 +2616,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6407] = "Use all CPU cores";
     t[6412] = "Statistic.Viewer.NoInternet.Info";
     t[6413] = "The specified address\n%s\ncould not be opened.";
+    t[6420] = "Statistic.Viewer.Context.Sort.Reset";
+    t[6421] = "Reset order";
     t[6422] = "CommandLine.Count.ThenN";
     t[6423] = "exactly %d additional parameters have to be entered";
     t[6424] = "Example.Model";
@@ -2746,6 +2764,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6731] = "This is a queueing model with waiting cancellers, which cannot be described completely by the Erlang C formula but by the extended Erlang C formula.";
     t[6732] = "Statistic.Viewer.NoHTMLApplication.Info";
     t[6733] = "There is no application registered for direct printing of html files. The report file is now opened in the standard browser. Please start printing manually.";
+    t[6734] = "Statistic.Viewer.Toolbar.Search";
+    t[6735] = "Search";
     t[6736] = "Compare.Title";
     t[6737] = "Compare results";
     t[6740] = "Statistics.Distance";
@@ -2796,8 +2816,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6831] = "Busy signal quota";
     t[6836] = "JDataLoader.ImportErrorFileError";
     t[6837] = "The file %s could not be loaded.";
-    t[6844] = "Statistic.Viewer.Toolbar.Save.DefaultSize";
-    t[6845] = "Save using default size (%dx%d pixels)";
+    t[6844] = "Statistic.Viewer.Context.Filter.Select";
+    t[6845] = "Select values...";
     t[6852] = "Distribution.DiscreteUniform";
     t[6853] = "Discrete uniform distribution";
     t[6856] = "QSExport.xml.SecondaryResourcePriority";
