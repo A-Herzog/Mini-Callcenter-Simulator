@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-18 18:52+0200\n"
+"POT-Creation-Date: 2023-07-14 23:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1623,6 +1623,9 @@ msgstr "Sheet"
 msgid "JDataLoader.Title"
 msgstr "Import data"
 
+msgid "JDistributionEditor.ChangeDistributionTypeHighlightList"
+msgstr "Only the highlighted distributions are shown here. A complete list is available for selection in the Edit dialog."
+
 msgid "JDistributionEditor.Copy.Graphics"
 msgstr "Graphics"
 
@@ -2582,6 +2585,15 @@ msgstr "Value"
 
 msgid "QSExport.xml.id"
 msgstr "id"
+
+msgid "RegExWikipdiaLink.Title"
+msgstr "Help on regular expressions"
+
+msgid "RegExWikipdiaLink.Tooltip"
+msgstr "Wikipedia page on topic \"Regular expressions\""
+
+msgid "RegExWikipdiaLink.URL"
+msgstr "https://en.wikipedia.org/wiki/Regular_expression"
 
 msgid "SettingsDialog.ImageResolution"
 msgstr "Resolution when saving images"

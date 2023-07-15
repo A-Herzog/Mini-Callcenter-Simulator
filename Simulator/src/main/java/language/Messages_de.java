@@ -138,6 +138,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[315] = "Speichert nur die ausgew\u00e4hlten Tabellen in einer gemeinsamen Arbeitsmappe.";
     t[320] = "SimStatistic.NumberOfCallers.byModel.Info";
     t[321] = "Bedingt durch die Aufteilung der Simulation auf mehrere CPU-Kerne kann die Anzahl an\ntats\u00e4chlich simulierten Erstanrufern h\u00f6her ausfallen als eingestellt.";
+    t[322] = "RegExWikipdiaLink.Title";
+    t[323] = "Hilfe zu regul\u00e4ren Ausdr\u00fccken";
     t[340] = "Statistics.XML.ValuesSquared";
     t[341] = "WerteSumme2";
     t[356] = "Distribution.Erlang";
@@ -262,8 +264,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[619] = "Adresse kopieren";
     t[620] = "SimStatistic.overall";
     t[621] = "\u00fcber alle";
-    t[624] = "QSExport.xml.ModelElementDistribution.Status.ProcessTime";
-    t[625] = "Bedienzeit";
+    t[624] = "JDistributionEditor.ChangeDistributionTypeHighlightList";
+    t[625] = "Hier werden nur die hervorgehobenen Verteilungen dargestellt. Eine vollst\u00e4ndige Liste steht im Bearbeiten-Dialog zur Auswahl zur Verf\u00fcgung.";
     t[628] = "Simulator.Log.ScheduleCall.Info.New";
     t[629] = "Neuer Anruf (Batch-Gr\u00f6\u00dfe %d)";
     t[636] = "Statistics.AnalyticModelCompare.ErlangC";
@@ -340,6 +342,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[829] = "Parameter und Ausgabe";
     t[830] = "Model.XML.ClientCountWarmUp";
     t[831] = "ZusaetzlicheEinschwingphase";
+    t[834] = "RegExWikipdiaLink.Tooltip";
+    t[835] = "Wikipedia-Seite zum Thema \"Regul\u00e4re Ausdr\u00fccke\"";
     t[838] = "SimStatistic.of";
     t[839] = "von";
     t[842] = "Dialog.Overwrite.Yes";
@@ -786,6 +790,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1877] = "Text speichern";
     t[1878] = "XML.SaveErrorTitle";
     t[1879] = "Fehler beim Speichern";
+    t[1884] = "QSExport.xml.ModelElementDistribution.Status.ProcessTime";
+    t[1885] = "Bedienzeit";
     t[1886] = "CommandLine.Count.ThenAtLeastN";
     t[1887] = "m\u00fcssen mindestens %d weitere Parameter folgen";
     t[1888] = "Statistic.Viewer.Toolbar.Print.Hint";
@@ -1412,6 +1418,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3437] = "Plum";
     t[3438] = "QSExport.xml.Element.Process";
     t[3439] = "ModellElementBedienstation";
+    t[3448] = "SettingsDialog.Tabs.Statistics.Welford";
+    t[3449] = "Varianzen mittels Welfords online Algorithmus erfassen";
     t[3450] = "LoadCalculator.Tab.PollaczekChintschinShort";
     t[3451] = "Pollaczek-Chintschin";
     t[3462] = "Statistics.XML.Value";
@@ -1592,8 +1600,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3913] = "Geplante Nachbearbeitungszeit: %s";
     t[3914] = "Main.Menu.File.Save.Mnemonic";
     t[3915] = "S";
-    t[3916] = "SettingsDialog.Tabs.Statistics.Welford";
-    t[3917] = "Varianzen mittels Welfords online Algorithmus erfassen";
+    t[3916] = "RegExWikipdiaLink.URL";
+    t[3917] = "https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck";
     t[3922] = "SimStatistic.Overview";
     t[3923] = "\u00dcbersicht";
     t[3932] = "SimStatistic.NumberOfIdleAgents.lower";
@@ -2002,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4983] = "Modell in Editor laden";
     t[4986] = "Statistic.Viewer.Report.Settings.Fonts.Text";
     t[4987] = "Text";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4988] = "SimStatistic.NumberOfBusyAgents.lower";
     t[4989] = "Anzahl an besch\u00e4ftigten Agenten";
     t[4994] = "SimStatistic.AllCallTypes";
@@ -2010,12 +2024,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4999] = "LaTeX-Tabellen";
     t[5002] = "LoadCalculator.WaitingTime";
     t[5003] = "Wartezeit";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5016] = "QSExport.xml.Size";
     t[5017] = "ModellElementGroesse";
     t[5018] = "Statistic.Viewer.DiagramSettings.Defaults.ThisPage";

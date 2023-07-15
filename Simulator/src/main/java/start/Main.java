@@ -154,6 +154,9 @@ public class Main {
 			GUITools.setupUI(setup.lookAndFeel);
 			FlatLaFHelper.setup();
 
+			/* Skalierung */
+			GUITools.setupFontSizeFixSystemScaling();
+
 			/* Meldungsdialoge */
 			MsgBox.setBackend(new MsgBoxBackendTaskDialog());
 

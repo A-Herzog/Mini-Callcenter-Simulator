@@ -138,6 +138,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[315] = "Save the selected tables in a workbook only.";
     t[320] = "SimStatistic.NumberOfCallers.byModel.Info";
     t[321] = "Due to the splitting of the simulation over several CPU cores, the number of\nactually simulated first callers may be higher than specified.";
+    t[322] = "RegExWikipdiaLink.Title";
+    t[323] = "Help on regular expressions";
     t[340] = "Statistics.XML.ValuesSquared";
     t[341] = "ValuesSum2";
     t[356] = "Distribution.Erlang";
@@ -262,8 +264,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[619] = "Copy address";
     t[620] = "SimStatistic.overall";
     t[621] = "over all";
-    t[624] = "QSExport.xml.ModelElementDistribution.Status.ProcessTime";
-    t[625] = "ProcessTime";
+    t[624] = "JDistributionEditor.ChangeDistributionTypeHighlightList";
+    t[625] = "Only the highlighted distributions are shown here. A complete list is available for selection in the Edit dialog.";
     t[628] = "Simulator.Log.ScheduleCall.Info.New";
     t[629] = "New call (batch size %d)";
     t[636] = "Statistics.AnalyticModelCompare.ErlangC";
@@ -340,6 +342,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[829] = "Parameters and results";
     t[830] = "Model.XML.ClientCountWarmUp";
     t[831] = "AdditionalWarmUp";
+    t[834] = "RegExWikipdiaLink.Tooltip";
+    t[835] = "Wikipedia page on topic \"Regular expressions\"";
     t[838] = "SimStatistic.of";
     t[839] = "of";
     t[842] = "Dialog.Overwrite.Yes";
@@ -786,6 +790,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1877] = "Save text";
     t[1878] = "XML.SaveErrorTitle";
     t[1879] = "Error saving file";
+    t[1884] = "QSExport.xml.ModelElementDistribution.Status.ProcessTime";
+    t[1885] = "ProcessTime";
     t[1886] = "CommandLine.Count.ThenAtLeastN";
     t[1887] = "at least %d additional parameters has to be entered";
     t[1888] = "Statistic.Viewer.Toolbar.Print.Hint";
@@ -1412,6 +1418,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3437] = "Plum";
     t[3438] = "QSExport.xml.Element.Process";
     t[3439] = "ModelElementProcessStation";
+    t[3448] = "SettingsDialog.Tabs.Statistics.Welford";
+    t[3449] = "Record variances using Welfords online algorithm";
     t[3450] = "LoadCalculator.Tab.PollaczekChintschinShort";
     t[3451] = "Pollaczek\u2013Khinchine";
     t[3462] = "Statistics.XML.Value";
@@ -1592,8 +1600,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3913] = "Scheduled post-processing time: %s";
     t[3914] = "Main.Menu.File.Save.Mnemonic";
     t[3915] = "S";
-    t[3916] = "SettingsDialog.Tabs.Statistics.Welford";
-    t[3917] = "Record variances using Welfords online algorithm";
+    t[3916] = "RegExWikipdiaLink.URL";
+    t[3917] = "https://en.wikipedia.org/wiki/Regular_expression";
     t[3922] = "SimStatistic.Overview";
     t[3923] = "Overview";
     t[3932] = "SimStatistic.NumberOfIdleAgents.lower";
@@ -2002,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4983] = "Load model to editor";
     t[4986] = "Statistic.Viewer.Report.Settings.Fonts.Text";
     t[4987] = "Text";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4988] = "SimStatistic.NumberOfBusyAgents.lower";
     t[4989] = "number of busy agents";
     t[4994] = "SimStatistic.AllCallTypes";
@@ -2010,12 +2024,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4999] = "LaTeX tables";
     t[5002] = "LoadCalculator.WaitingTime";
     t[5003] = "Waiting time";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[5016] = "QSExport.xml.Size";
     t[5017] = "ModelElementSize";
     t[5018] = "Statistic.Viewer.DiagramSettings.Defaults.ThisPage";
