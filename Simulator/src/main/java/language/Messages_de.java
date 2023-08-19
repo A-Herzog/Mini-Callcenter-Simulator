@@ -432,6 +432,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[999] = "Parameter, um diese Daten per Kommandozeile abzurufen, in die Zwischenablage kopieren";
     t[1012] = "LoadCalculator.Tab.AllenCunneen";
     t[1013] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
+    t[1018] = "Statistic.Viewer.Toolbar.Copy.HintPlain";
+    t[1019] = "<html><body>Kopiert die Ergebnisse von dieser Seite in die Zwischenablage.<br>(Umschalt+Klick = ohne Tabellenrahmen kopieren)</body></html>";
     t[1022] = "Color.B0C4DE";
     t[1023] = "Helles Stahlblau";
     t[1024] = "Statistic.Viewer.DiagramSettings.Axis.ValuesFont";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4979] = "Abbrechen";
     t[4982] = "Viewer.LoadModel";
     t[4983] = "Modell in Editor laden";
-    t[4986] = "Statistic.Viewer.Report.Settings.Fonts.Text";
-    t[4987] = "Text";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4986] = "Statistic.Viewer.Report.Settings.Fonts.Text";
+    t[4987] = "Text";
     t[4988] = "SimStatistic.NumberOfBusyAgents.lower";
     t[4989] = "Anzahl an besch\u00e4ftigten Agenten";
     t[4994] = "SimStatistic.AllCallTypes";
