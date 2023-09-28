@@ -1,4 +1,7 @@
 target/
 language/gettext/
 language/sed/
+build/Checksum_SimSystem.nsi
+build/Checksum_SimTools.nsi
+build/Checksum_MiniCallcenterSimulator.nsi
 MiniCallcenterSimulator.cfg
