@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 19:25+0200\n"
+"POT-Creation-Date: 2023-11-02 14:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -858,6 +858,12 @@ msgstr "Schließt die aktuelle Ansicht"
 msgid "Dialog.Button.Copy"
 msgstr "Kopieren"
 
+msgid "Dialog.Button.Copy.Image"
+msgstr "Bild kopieren"
+
+msgid "Dialog.Button.Copy.Table"
+msgstr "Wertetabelle kopieren"
+
 msgid "Dialog.Button.Edit"
 msgstr "Bearbeiten"
 
@@ -884,6 +890,12 @@ msgstr "Normalerweise werden die Daten beim Einfügen skaliert. Es können aber 
 
 msgid "Dialog.Button.Save"
 msgstr "Speichern"
+
+msgid "Dialog.Button.Save.Image"
+msgstr "Bild speichern"
+
+msgid "Dialog.Button.Save.Table"
+msgstr "Wertetabelle speichern"
 
 msgid "Dialog.Button.Yes"
 msgstr "Ja"
@@ -1623,14 +1635,8 @@ msgstr "Tabellenblatt"
 msgid "JDataLoader.Title"
 msgstr "Daten importieren"
 
-msgid "JDistributionEditor.ChangeDistributionTypeHighlightList"
-msgstr "Hier werden nur die hervorgehobenen Verteilungen dargestellt. Eine vollständige Liste steht im Bearbeiten-Dialog zur Auswahl zur Verfügung."
-
 msgid "JDistributionEditor.Copy.Graphics"
 msgstr "Grafik"
-
-msgid "JDistributionEditor.Copy.Graphics.Info"
-msgstr "Kopiert die Darstellung als Grafik in die Zwischenablage"
 
 msgid "JDistributionEditor.Copy.Info"
 msgstr "Kopiert die Werte der Zähldichte oder die grafische Darstellung in die Zwischenablage"
@@ -1671,14 +1677,17 @@ msgstr "Keine Verteilung angegeben"
 msgid "JDistributionEditor.Paste.Info"
 msgstr "Lädt die Zähldichte aus der Zwischenablage"
 
+msgid "JDistributionEditor.QuickSelect"
+msgstr "Verteilungstyp"
+
+msgid "JDistributionEditor.QuickSelectInfo"
+msgstr "Hier werden nur die hervorgehobenen Verteilungen dargestellt. Eine vollständige Liste steht im Bearbeiten-Dialog zur Auswahl zur Verfügung."
+
 msgid "JDistributionEditor.Save"
 msgstr "Speichern"
 
 msgid "JDistributionEditor.Save.Graphics"
 msgstr "Grafik speichern"
-
-msgid "JDistributionEditor.Save.Graphics.Info"
-msgstr "Speichert die Grafik als Bilddatei"
 
 msgid "JDistributionEditor.Save.Info"
 msgstr "Speichert die Werte der Zähldichte oder die grafische Darstellung in einer Datei"
@@ -4519,6 +4528,15 @@ msgstr "Das Dateiformat wurde nicht erkannt bzw. passt zu keinem Dateiformat die
 #~ "verwendete Dialog-Bibliothek: Oxbow (code.google.com/p/oxbow/)\n"
 #~ "verwendete Sprach-Bibliothek: Gettext (github.com/jgettext/gettext-commons/releases)\n"
 #~ "verwendete Icon-Sammung: famfamfam (www.famfamfam.com)"
+
+#~ msgid "JDistributionEditor.ChangeDistributionTypeHighlightList"
+#~ msgstr "Hier werden nur die hervorgehobenen Verteilungen dargestellt. Eine vollständige Liste steht im Bearbeiten-Dialog zur Auswahl zur Verfügung."
+
+#~ msgid "JDistributionEditor.Copy.Graphics.Info"
+#~ msgstr "Kopiert die Darstellung als Grafik in die Zwischenablage"
+
+#~ msgid "JDistributionEditor.Save.Graphics.Info"
+#~ msgstr "Speichert die Grafik als Bilddatei"
 
 #~ msgid "JDistributionEditor.Wikipedia.Link"
 #~ msgstr "https://de.wikipedia.org/wiki/"

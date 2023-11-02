@@ -264,8 +264,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[619] = "Adresse kopieren";
     t[620] = "SimStatistic.overall";
     t[621] = "\u00fcber alle";
-    t[624] = "JDistributionEditor.ChangeDistributionTypeHighlightList";
-    t[625] = "Hier werden nur die hervorgehobenen Verteilungen dargestellt. Eine vollst\u00e4ndige Liste steht im Bearbeiten-Dialog zur Auswahl zur Verf\u00fcgung.";
+    t[624] = "QSExport.xml.ModelElementDistribution.Status.ProcessTime";
+    t[625] = "Bedienzeit";
     t[628] = "Simulator.Log.ScheduleCall.Info.New";
     t[629] = "Neuer Anruf (Batch-Gr\u00f6\u00dfe %d)";
     t[636] = "Statistics.AnalyticModelCompare.ErlangC";
@@ -774,8 +774,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1835] = "Dunkelblau";
     t[1838] = "CommandLine.Dialog.Command";
     t[1839] = "Gew\u00e4hlter Befehl";
-    t[1840] = "LoadCalculator.PollaczekChintschinInvalidWorkLoad";
-    t[1841] = "ung\u00fcltige Auslastung";
     t[1844] = "Model.XML.RetryProbability";
     t[1845] = "ModellWiederholwahrscheinlichkeit";
     t[1852] = "Statistics.WaitingTime.lower.all";
@@ -792,8 +790,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1877] = "Text speichern";
     t[1878] = "XML.SaveErrorTitle";
     t[1879] = "Fehler beim Speichern";
-    t[1884] = "QSExport.xml.ModelElementDistribution.Status.ProcessTime";
-    t[1885] = "Bedienzeit";
     t[1886] = "CommandLine.Count.ThenAtLeastN";
     t[1887] = "m\u00fcssen mindestens %d weitere Parameter folgen";
     t[1888] = "Statistic.Viewer.Toolbar.Print.Hint";
@@ -852,6 +848,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2019] = "Royal Blau";
     t[2026] = "Statistic.Viewer.Report.Hint";
     t[2027] = "Erstellt einen Bericht \u00fcber eine selbst zusammenstellbare Teilmenge der Ergebnisse";
+    t[2028] = "SettingsDialog.Tabs.GUI.Statistics";
+    t[2029] = "Statistik";
     t[2034] = "Statistics.XML.Kurt";
     t[2035] = "Kurt";
     t[2040] = "Main.Menu.Help.LicenseInformation";
@@ -1292,6 +1290,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3115] = "ModellZwischenankunftszeiten";
     t[3118] = "QSExport.xml.Condition";
     t[3119] = "Bedingung";
+    t[3122] = "Dialog.Button.Save.Image";
+    t[3123] = "Bild speichern";
     t[3126] = "Statistic.Viewer.Report.Settings.Header.Logo.MaxHeight";
     t[3127] = "Maximale H\u00f6he des Logos (in mm)";
     t[3136] = "Color.00FFFF";
@@ -1520,8 +1520,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3675] = "Agenten";
     t[3684] = "Statistics.ResidenceTimes.info.title";
     t[3685] = "Hinweis";
-    t[3690] = "SettingsDialog.Tabs.GUI.Statistics";
-    t[3691] = "Statistik";
+    t[3690] = "JDistributionEditor.QuickSelect";
+    t[3691] = "Verteilungstyp";
     t[3692] = "Help.Search.Type.Page";
     t[3693] = "Seite";
     t[3694] = "Main.Menu.File.Quit";
@@ -1572,6 +1572,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3793] = "Modell ist fehlerhaft";
     t[3798] = "Statistics.XML.RunThreads.Error";
     t[3799] = "Der Wert in dem Element \"%s\" muss eine positive Ganzzahl sein, ist aber \"%s\".";
+    t[3806] = "JDistributionEditor.QuickSelectInfo";
+    t[3807] = "Hier werden nur die hervorgehobenen Verteilungen dargestellt. Eine vollst\u00e4ndige Liste steht im Bearbeiten-Dialog zur Auswahl zur Verf\u00fcgung.";
     t[3808] = "Statistics.XML.Start";
     t[3809] = "Start";
     t[3812] = "Statistic.Viewer.DiagramSettings.Outline.Color";
@@ -1910,8 +1912,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4753] = "Kopieren";
     t[4756] = "Distribution.Normal";
     t[4757] = "Normalverteilung";
-    t[4758] = "JDistributionEditor.Save.Graphics.Info";
-    t[4759] = "Speichert die Grafik als Bilddatei";
+    t[4758] = "Statistics.Number.All";
+    t[4759] = "Anzahl an Anrufen insgesamt";
     t[4760] = "Statistic.Viewer.Report.Settings.Type.PDFonly";
     t[4761] = "Diese Einstellungen werden nur f\u00fcr pdf-Zusammenfassungen verwendet.";
     t[4766] = "Distribution.PoissonWikipedia";
@@ -1944,12 +1946,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4819] = "Reset";
     t[4820] = "Statistics.XML.WorkingTimes";
     t[4821] = "StatistikBedienzeiten";
-    t[4826] = "Statistics.Number.All";
-    t[4827] = "Anzahl an Anrufen insgesamt";
     t[4844] = "QSExport.xml.Resources";
     t[4845] = "Ressourcen";
     t[4854] = "LoadCalculator.Units.Minutes";
     t[4855] = "Minuten";
+    t[4856] = "Dialog.Button.Save.Table";
+    t[4857] = "Wertetabelle speichern";
     t[4860] = "Statistic.Viewer.Report.Settings.MenuItem";
     t[4861] = "Formateinstellungen f\u00fcr die Zusammenfassung...";
     t[4864] = "CalculatorDialog.Plotter.Toolbar.Save.Hint";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4975] = "\u00d6ffnen";
     t[4978] = "Dialog.Button.Cancel";
     t[4979] = "Abbrechen";
-    t[4982] = "Viewer.LoadModel";
-    t[4983] = "Modell in Editor laden";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4982] = "Viewer.LoadModel";
+    t[4983] = "Modell in Editor laden";
     t[4986] = "Statistic.Viewer.Report.Settings.Fonts.Text";
     t[4987] = "Text";
     t[4988] = "SimStatistic.NumberOfBusyAgents.lower";
@@ -2120,6 +2122,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5229] = "Maximale";
     t[5238] = "FileType.SciLabScript";
     t[5239] = "SciLab-Skript";
+    t[5242] = "Dialog.Button.Copy.Image";
+    t[5243] = "Bild kopieren";
     t[5246] = "Statistic.Viewer.Report.Settings.Header.Logo.Alignment";
     t[5247] = "Ausrichtung";
     t[5254] = "QSExport.xml.ModelElementDistribution";
@@ -2582,8 +2586,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6321] = "Druckt die Darstellung aus.";
     t[6322] = "Statistics.ProcessTimes";
     t[6323] = "Bedienzeiten";
-    t[6324] = "JDistributionEditor.Copy.Graphics.Info";
-    t[6325] = "Kopiert die Darstellung als Grafik in die Zwischenablage";
+    t[6324] = "LoadCalculator.PollaczekChintschinInvalidWorkLoad";
+    t[6325] = "ung\u00fcltige Auslastung";
     t[6326] = "Statistic.Viewer.SaveImage";
     t[6327] = "Bild speichern";
     t[6330] = "QSExport.xml.ModelElementBatchData.Maximum";
@@ -2872,6 +2876,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6947] = "Ausgang";
     t[6958] = "Help.Content.Info";
     t[6959] = "Zeigt die Abschnitts\u00fcberschriften dieser Seite an";
+    t[6976] = "Dialog.Button.Copy.Table";
+    t[6977] = "Wertetabelle kopieren";
     t[6978] = "Color.4B0082";
     t[6979] = "Indigo";
     t[6980] = "Main.Toolbar.Help";
