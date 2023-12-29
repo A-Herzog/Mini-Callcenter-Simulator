@@ -64,7 +64,7 @@ public class SimulationData extends SimData {
 	 * @param runModel	Laufzeit-Modell, welches die Basis der Simulation darstellt
 	 */
 	public SimulationData(final int threadNr, final int threadCount, final RunModel runModel) {
-		super(new PriorityQueueEventManager(),new HashMapEventCache(),threadNr,threadCount);
+		super(new PriorityQueueEventManager(),new HashMapEventCache(),threadNr,threadCount,1000);
 		this.runModel=runModel;
 		this.runData=new RunData(runModel);
 		statistics=new Statistics(runModel.collectCorrelation,runModel.useWelford);

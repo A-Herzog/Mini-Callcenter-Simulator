@@ -496,6 +496,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1153] = "Loads a simulation model from file";
     t[1156] = "SetupFailure.Retry";
     t[1157] = "Retry saving.";
+    t[1166] = "FileType.tiff";
+    t[1167] = "tiff files";
     t[1174] = "QSExport.xml.Model";
     t[1175] = "Model";
     t[1176] = "Model.XML.WaitingTimeTolerances";
@@ -1334,6 +1336,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3221] = "c operators";
     t[3224] = "Statistic.Viewer.Report.Settings.Margins.Right";
     t[3225] = "Right (in mm)";
+    t[3226] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
+    t[3227] = "Copy using window size (%dx%d pixels)";
     t[3234] = "SettingsDialog.WindowSizeProgrmStart.Normal";
     t[3235] = "Default window size";
     t[3238] = "FileType.gif";
@@ -1348,6 +1352,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3253] = "Calculator...";
     t[3266] = "Table.BoolFalse";
     t[3267] = "FALSE";
+    t[3272] = "Statistic.Viewer.Context.Filter.All";
+    t[3273] = "Show all";
     t[3284] = "Statistics.WaitingTimes.All.lower";
     t[3285] = "waiting or cancelation time over all callers";
     t[3288] = "CommandLine.Simulation.Status.Long";
@@ -1406,8 +1412,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3407] = "Sea green";
     t[3410] = "CommandLine.Benchmark.UsedModel";
     t[3411] = "Used simulation model";
-    t[3412] = "Statistic.Viewer.Context.Filter.All";
-    t[3413] = "Show all";
+    t[3412] = "Dialog.Button.Copy.RandomNumbers";
+    t[3413] = "Generate and copy random numbers";
     t[3416] = "Editor.Service.ServiceTimes";
     t[3417] = "Service times";
     t[3418] = "Distribution.LogNormalWikipedia";
@@ -1438,6 +1444,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3485] = "Clear list";
     t[3486] = "SimStatistic.CancelTime.lower";
     t[3487] = "cancel time";
+    t[3488] = "Dialog.RandomNumbers.Count";
+    t[3489] = "Number of random numbers to be generated";
     t[3498] = "Compare.SelectStatisticFile";
     t[3499] = "Select statistic file";
     t[3502] = "Statistic.Viewer.Information";
@@ -1584,6 +1592,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3835] = "Medium turquoise";
     t[3836] = "Statistics.AutoCorrelation";
     t[3837] = "Autocorrelation";
+    t[3838] = "Dialog.RandomNumbers.Error";
+    t[3839] = "The number of random numbers must be a positive integer number.";
     t[3848] = "Main.Toolbar.LoadStatistics.Hint";
     t[3849] = "Load statistics data from file";
     t[3854] = "Statistic.Viewer.Chart.InHours";
@@ -2000,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4963] = "The input file %s does not exist.";
     t[4964] = "Distribution.CV";
     t[4965] = "Coefficient of variation";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4966] = "QSExport.xml.Info.Counter.Cancel";
     t[4967] = "Cancelation";
     t[4968] = "SimStatistic.ForwardingRate.byModel";
@@ -2010,12 +2026,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4975] = "Open";
     t[4978] = "Dialog.Button.Cancel";
     t[4979] = "Cancel";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4982] = "Viewer.LoadModel";
     t[4983] = "Load model to editor";
     t[4986] = "Statistic.Viewer.Report.Settings.Fonts.Text";
@@ -2128,8 +2138,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5247] = "Alignment";
     t[5254] = "QSExport.xml.ModelElementDistribution";
     t[5255] = "ModelElementDistribution";
-    t[5258] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
-    t[5259] = "Copy using window size (%dx%d pixels)";
+    t[5258] = "Dialog.Button.Save.RandomNumbers";
+    t[5259] = "Generate and save random numbers";
     t[5262] = "QSExport.xml.Element.Dispose";
     t[5263] = "ModelElementDispose";
     t[5266] = "SettingsDialog.WindowSizeProgrmStart.LastSize";

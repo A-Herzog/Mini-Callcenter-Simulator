@@ -496,6 +496,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1153] = "L\u00e4dt ein Simulationsmodell aus einer Datei";
     t[1156] = "SetupFailure.Retry";
     t[1157] = "Speichern erneut versuchen.";
+    t[1166] = "FileType.tiff";
+    t[1167] = "tiff-Dateien";
     t[1174] = "QSExport.xml.Model";
     t[1175] = "Modell";
     t[1176] = "Model.XML.WaitingTimeTolerances";
@@ -1334,6 +1336,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3221] = "c Bediener";
     t[3224] = "Statistic.Viewer.Report.Settings.Margins.Right";
     t[3225] = "Rechts (in mm)";
+    t[3226] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
+    t[3227] = "In Fenstergr\u00f6\u00dfe (%dx%d Pixel) kopieren";
     t[3234] = "SettingsDialog.WindowSizeProgrmStart.Normal";
     t[3235] = "Standard Fenstergr\u00f6\u00dfe";
     t[3238] = "FileType.gif";
@@ -1348,6 +1352,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3253] = "Rechner...";
     t[3266] = "Table.BoolFalse";
     t[3267] = "FALSCH";
+    t[3272] = "Statistic.Viewer.Context.Filter.All";
+    t[3273] = "Alle anzeigen";
     t[3284] = "Statistics.WaitingTimes.All.lower";
     t[3285] = "Warte- bzw. Abbruchzeit \u00fcber alle Anrufer";
     t[3288] = "CommandLine.Simulation.Status.Long";
@@ -1406,8 +1412,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3407] = "Seegr\u00fcn";
     t[3410] = "CommandLine.Benchmark.UsedModel";
     t[3411] = "Verwendetes Simulationsmodell";
-    t[3412] = "Statistic.Viewer.Context.Filter.All";
-    t[3413] = "Alle anzeigen";
+    t[3412] = "Dialog.Button.Copy.RandomNumbers";
+    t[3413] = "Zufallszahlen erzeugen und kopieren";
     t[3416] = "Editor.Service.ServiceTimes";
     t[3417] = "Bedienzeiten";
     t[3418] = "Distribution.LogNormalWikipedia";
@@ -1438,6 +1444,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3485] = "Liste leeren";
     t[3486] = "SimStatistic.CancelTime.lower";
     t[3487] = "Abbruchzeit";
+    t[3488] = "Dialog.RandomNumbers.Count";
+    t[3489] = "Anzahl an zu erzeugenden Zufallszahlen";
     t[3498] = "Compare.SelectStatisticFile";
     t[3499] = "Statistikdatei ausw\u00e4hlen";
     t[3502] = "Statistic.Viewer.Information";
@@ -1584,6 +1592,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3835] = "Mittleres Turquoise";
     t[3836] = "Statistics.AutoCorrelation";
     t[3837] = "Autokorrelation";
+    t[3838] = "Dialog.RandomNumbers.Error";
+    t[3839] = "Die Anzahl an Zufallszahlen muss eine positive Ganzzahl sein.";
     t[3848] = "Main.Toolbar.LoadStatistics.Hint";
     t[3849] = "L\u00e4dt die Statistik aus einer Datei";
     t[3854] = "Statistic.Viewer.Chart.InHours";
@@ -2000,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4963] = "Die Eingabedatei %s existiert nicht.";
     t[4964] = "Distribution.CV";
     t[4965] = "Variationskoeffizient";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4966] = "QSExport.xml.Info.Counter.Cancel";
     t[4967] = "Abbruch";
     t[4968] = "SimStatistic.ForwardingRate.byModel";
@@ -2010,12 +2026,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4975] = "\u00d6ffnen";
     t[4978] = "Dialog.Button.Cancel";
     t[4979] = "Abbrechen";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4982] = "Viewer.LoadModel";
     t[4983] = "Modell in Editor laden";
     t[4986] = "Statistic.Viewer.Report.Settings.Fonts.Text";
@@ -2128,8 +2138,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5247] = "Ausrichtung";
     t[5254] = "QSExport.xml.ModelElementDistribution";
     t[5255] = "ModellElementVerteilung";
-    t[5258] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
-    t[5259] = "In Fenstergr\u00f6\u00dfe (%dx%d Pixel) kopieren";
+    t[5258] = "Dialog.Button.Save.RandomNumbers";
+    t[5259] = "Zufallszahlen erzeugen und speichern";
     t[5262] = "QSExport.xml.Element.Dispose";
     t[5263] = "ModellElementEnde";
     t[5266] = "SettingsDialog.WindowSizeProgrmStart.LastSize";
