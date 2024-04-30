@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 20:01+0100\n"
+"POT-Creation-Date: 2024-04-27 14:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1096,6 +1096,12 @@ msgstr "Gumbel-Verteilung"
 msgid "Distribution.GumbelWikipedia"
 msgstr "https://de.wikipedia.org/wiki/Gumbel-Verteilung"
 
+msgid "Distribution.HalfNormal"
+msgstr "Halbe Normalverteilung"
+
+msgid "Distribution.HalfNormalWikipedia"
+msgstr "https://de.wikipedia.org/wiki/Normalverteilung"
+
 msgid "Distribution.HyperGeom"
 msgstr "Hypergeometrische Verteilung"
 
@@ -1264,6 +1270,12 @@ msgstr "Studentsche t-Verteilung"
 msgid "Distribution.StudentTWikipedia"
 msgstr "https://de.wikipedia.org/wiki/Studentsche_t-Verteilung"
 
+msgid "Distribution.Trapezoid"
+msgstr "Trapezverteilung"
+
+msgid "Distribution.TrapezoidWikipedia"
+msgstr "https://de.wikipedia.org/wiki/Trapezverteilung"
+
 msgid "Distribution.Triangular"
 msgstr "Dreiecksverteilung"
 
@@ -1301,7 +1313,7 @@ msgid "DistributionFitter.BestFitFor"
 msgstr "Beste Übereinstimmung für"
 
 msgid "DistributionFitter.ComparedDistributions"
-msgstr "Geprüfte Verteilungen"
+msgstr "Geprüfte Verteilungen (%d Stück)"
 
 msgid "DistributionFitter.ErrorInvalidFormat"
 msgstr "Die Eingangswerte konnten nicht interpretiert werden."
@@ -1314,6 +1326,9 @@ msgstr "Mittelwert der Messwerte"
 
 msgid "DistributionFitter.MeanSquares"
 msgstr "Mittlere quadratische Abweichung"
+
+msgid "DistributionFitter.NotFit"
+msgstr "Keine Anpassung an die aktuellen Messwerte möglich."
 
 msgid "DistributionFitter.PValue"
 msgstr "KS-Anpassungstest p-Wert"
@@ -1517,6 +1532,9 @@ msgstr "SciLab-Skript"
 
 msgid "FileType.Text"
 msgstr "Textdateien"
+
+msgid "FileType.TypstTable"
+msgstr "Typst-Tabellen"
 
 msgid "FileType.Word"
 msgstr "Word-Texte"

@@ -281,7 +281,7 @@ public class Messages_de extends java.util.ResourceBundle {
     t[670] = "SimStatistic.PostProcessingTime.lower";
     t[671] = "Nachbearbeitungszeit";
     t[678] = "DistributionFitter.ComparedDistributions";
-    t[679] = "Gepr\u00fcfte Verteilungen";
+    t[679] = "Gepr\u00fcfte Verteilungen (%d St\u00fcck)";
     t[680] = "Help.Search.Type.Index";
     t[681] = "Seiteninhalt";
     t[682] = "Statistic.Viewer.Toolbar.Excel.Error.Title";
@@ -430,6 +430,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[995] = "Ge\u00e4nderte Einstellungen verwerfen, Programm beenden.";
     t[998] = "Statistic.Tree.Parameter.Hint";
     t[999] = "Parameter, um diese Daten per Kommandozeile abzurufen, in die Zwischenablage kopieren";
+    t[1004] = "Distribution.TrapezoidWikipedia";
+    t[1005] = "https://de.wikipedia.org/wiki/Trapezverteilung";
     t[1012] = "LoadCalculator.Tab.AllenCunneen";
     t[1013] = "Erweiterte Allen-Cunneen N\u00e4herungsformel f\u00fcr Warteschlangensysteme";
     t[1018] = "Statistic.Viewer.Toolbar.Copy.HintPlain";
@@ -872,6 +874,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2095] = "Groesse";
     t[2100] = "CommandLine.Benchmark.SimulaionFailed";
     t[2101] = "Der Simulationslauf wurde nicht korrekt beendet.";
+    t[2104] = "FileType.TypstTable";
+    t[2105] = "Typst-Tabellen";
     t[2112] = "LoadCalculator.Tab.ErlangCext";
     t[2113] = "Erlang C (erweitert)";
     t[2114] = "Statistics.NumberOfClientsInTheSystem";
@@ -1036,6 +1040,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2475] = "png-Dateien";
     t[2478] = "Editor.WaitingRoomAndWaitingTimeTolerance";
     t[2479] = "Warteraum und Wartezeittoleranz";
+    t[2482] = "QSExport.xml.Edge";
+    t[2483] = "Kante";
     t[2484] = "SettingsDialog.LookAndFeel.MenuInWindowTitle";
     t[2485] = "Men\u00fc in Titelzeile";
     t[2490] = "QSExport.xml.Element.Text";
@@ -1116,8 +1122,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2647] = "L";
     t[2656] = "Statistics.WaitingTime.lower.successful";
     t[2657] = "der erfolgreichen Kunden";
-    t[2660] = "QSExport.xml.Edge";
-    t[2661] = "Kante";
+    t[2660] = "Distribution.Trapezoid";
+    t[2661] = "Trapezverteilung";
     t[2662] = "Color.F5DEB3";
     t[2663] = "Weizen";
     t[2664] = "QSExport.xml.Type";
@@ -1196,8 +1202,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2883] = "%d von %d Verteilungen sind hervorgehoben.";
     t[2890] = "CommandLine.Interactive.Start";
     t[2891] = "Interaktiver Modus gestartet. Zum Beenden \"exit\" eingeben.";
-    t[2896] = "Statistics.XML.RunEvents.Error";
-    t[2897] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
+    t[2896] = "DistributionFitter.NotFit";
+    t[2897] = "Keine Anpassung an die aktuellen Messwerte m\u00f6glich.";
     t[2900] = "Statistic.Viewer.SaveImage.Size.Error.Title";
     t[2901] = "Fehler beim Speichern der Grafik";
     t[2902] = "Statistic.Viewer.LoadImage";
@@ -1350,6 +1356,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3251] = "Warteabbruch";
     t[3252] = "Main.Menu.Extras.Calculator";
     t[3253] = "Rechner...";
+    t[3254] = "Statistics.XML.RunEvents.Error";
+    t[3255] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[3266] = "Table.BoolFalse";
     t[3267] = "FALSCH";
     t[3272] = "Statistic.Viewer.Context.Filter.All";
@@ -1586,6 +1594,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3809] = "Start";
     t[3812] = "Statistic.Viewer.DiagramSettings.Outline.Color";
     t[3813] = "Rahmen";
+    t[3814] = "Distribution.HalfNormalWikipedia";
+    t[3815] = "https://de.wikipedia.org/wiki/Normalverteilung";
     t[3830] = "CalculatorDialog.Plotter.Toolbar.Zoom.Hint";
     t[3831] = "Stellt den Standardzoomfaktor wieder her.";
     t[3834] = "Color.48D1CC";
@@ -2000,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4951] = "Kopiert die Werte der Z\u00e4hldichte oder die grafische Darstellung in die Zwischenablage";
     t[4952] = "CommandLine.Help.Info1";
     t[4953] = "Allgemeines Aufrufschema:\n<SimulatorProgrammdatei> <Simulationsmodell>\noder\n<SimulatorProgrammdatei> <Statistikdaten>\noder\n<SimulatorProgrammdatei> <Befehl> <Parameter>\n\nIn den ersten zwei F\u00e4llen wird das angegebene Simulationsmodell bzw. die angegebene Statistikdatei\nin den Simulator geladen.\n\n<Befehl> kann einer der folgenden Begriffe sein:";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4954] = "CommandLine.Help.Info2";
     t[4955] = "(Die Gro\u00df- und Kleinschreibung der als <Befehl> angegebenen Betriebsart wird nicht ber\u00fccksichtigt.)\n\nDie im Bereich <Parameter> anzugebenen zus\u00e4tzlichen Parameter h\u00e4ngen vom <Befehl> ab:";
     t[4956] = "Distribution.Triangular";
@@ -2010,12 +2026,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4963] = "Die Eingabedatei %s existiert nicht.";
     t[4964] = "Distribution.CV";
     t[4965] = "Variationskoeffizient";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4966] = "QSExport.xml.Info.Counter.Cancel";
     t[4967] = "Abbruch";
     t[4968] = "SimStatistic.ForwardingRate.byModel";
@@ -2288,6 +2298,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5545] = "Tabelle speichern";
     t[5546] = "SetupFailure.Info";
     t[5547] = "Das Speichern der Programmeinstellungen in der Datei\n%s\nist fehlgeschlagen. Soll erneut versucht werden, die Einstellungen zu speichern?";
+    t[5550] = "Distribution.HalfNormal";
+    t[5551] = "Halbe Normalverteilung";
     t[5554] = "Statistic.Viewer.Report.Settings.Header";
     t[5555] = "Kopfzeile";
     t[5562] = "JDistributionEditor.CumulativeProbability.Label";
