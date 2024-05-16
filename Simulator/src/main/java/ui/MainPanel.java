@@ -515,7 +515,7 @@ public class MainPanel extends MainPanelBase {
 		files.add(0,fileName); /* Element ganz vorne einfügen */
 		while (files.size()>5) files.remove(files.size()-1); /* Maximal die letzten 5 Dateien merken */
 
-		setup.lastFiles=files.toArray(new String[0]);
+		setup.lastFiles=files.toArray(String[]::new);
 		setup.saveSetup();
 
 		updateRecentlyUsedList();

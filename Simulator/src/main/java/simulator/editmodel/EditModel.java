@@ -372,7 +372,7 @@ public class EditModel extends EditModelBase implements Cloneable {
 			callsToSimulate=J;
 
 			final String warmUpString=Language.trAllAttribute("Model.XML.ClientCountWarmUp",node);
-			if (warmUpString!=null && !warmUpString.trim().isEmpty()) {
+			if (warmUpString!=null && !warmUpString.isBlank()) {
 				final Integer I=NumberTools.getNotNegativeInteger(warmUpString);
 				if (I==null) return String.format(Language.tr("Model.XML.ClientCountWarmUp.Error"),warmUpString);
 				callsToSimulateWarmUp=I;

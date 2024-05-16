@@ -127,7 +127,7 @@ public class ExportQSModel {
 		int x=50;
 
 		/* Title */
-		stations.add(new StationTitle(new Point(50,hasForwarding?25:50),nextId++,(model.name==null || model.name.trim().isEmpty())?Language.tr("QSExport.Name.Title"):model.name));
+		stations.add(new StationTitle(new Point(50,hasForwarding?25:50),nextId++,(model.name==null || model.name.isBlank())?Language.tr("QSExport.Name.Title"):model.name));
 
 		/* Quelle */
 		final StationSource source=new StationSource(new Point(x,100),nextId++,model.interArrivalTimeDist,model.batchArrival);
@@ -402,7 +402,7 @@ public class ExportQSModel {
 			for (EdgeData edge: edgesTo) {
 				if (edge.edgeId<0) {edge.edgeId=nextId; nextId++;}
 				String info=edge.info;
-				if (info==null || info.trim().isEmpty()) {
+				if (info==null || info.isBlank()) {
 					info="";
 				} else {
 					info=" "+info;

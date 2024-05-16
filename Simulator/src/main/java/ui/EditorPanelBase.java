@@ -567,7 +567,7 @@ public abstract class EditorPanelBase extends JPanel {
 			group.add(button);
 			p2.add(button);
 		}
-		return buttons.toArray(new JRadioButton[0]);
+		return buttons.toArray(JRadioButton[]::new);
 	}
 
 	/**

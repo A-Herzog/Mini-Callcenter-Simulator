@@ -496,7 +496,7 @@ public class SetupData extends SetupBase {
 			node.setAttribute("Height",""+lastSize.height);
 		}
 
-		if ((lookAndFeel!=null && !lookAndFeel.trim().isEmpty()) || !lookAndFeelCombinedMenu) {
+		if ((lookAndFeel!=null && !lookAndFeel.isBlank()) || !lookAndFeelCombinedMenu) {
 			root.appendChild(node=doc.createElement("LookAndFeel"));
 			if (lookAndFeel!=null) node.setTextContent(lookAndFeel);
 			if (!lookAndFeelCombinedMenu) node.setAttribute("combinedMenu","0");
@@ -540,7 +540,7 @@ public class SetupData extends SetupBase {
 		root.appendChild(node=doc.createElement("ChartSetup"));
 		chartSetup.saveToXML(node);
 
-		if (distributionListFilter!=null && !distributionListFilter.trim().isEmpty()) {
+		if (distributionListFilter!=null && !distributionListFilter.isBlank()) {
 			root.appendChild(node=doc.createElement("DistributionListFilter"));
 			node.setTextContent(distributionListFilter.trim());
 		}

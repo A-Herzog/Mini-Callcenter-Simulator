@@ -135,7 +135,7 @@ public class SetupDialog extends BaseDialog {
 		final List<String> lookAndFeels=new ArrayList<>();
 		lookAndFeels.add(Language.tr("SettingsDialog.Theme.System"));
 		lookAndFeels.addAll(Arrays.asList(GUITools.listLookAndFeels()));
-		p.add(lookAndFeel=new JComboBox<>(lookAndFeels.toArray(new String[0])));
+		p.add(lookAndFeel=new JComboBox<>(lookAndFeels.toArray(String[]::new)));
 		label.setLabelFor(lookAndFeel);
 		lookAndFeel.setToolTipText(Language.tr("SettingsDialog.Theme.Info"));
 		p.add(lookAndFeelCombinedMenu=new JCheckBox(Language.tr("SettingsDialog.LookAndFeel.MenuInWindowTitle")));
