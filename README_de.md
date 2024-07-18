@@ -22,7 +22,7 @@ Der Mini Callcenter Simulator dient im Wesentlichen zu Lehrzwecken. Im Mini Call
 
 Die Windows-Version kann sowohl mit als auch ohne Admin-Rechte installiert werden. Die zip-Datei-Variante kann auf jeder Plattform ohne Installation verwendet werden.
 
-* Systemvoraussetzung: [Java 8 oder höher](https://adoptopenjdk.net/ "Java von adoptopenjdk.net herunterladen")
+* Systemvoraussetzung: [Java 11 oder höher](https://adoptopenjdk.net/ "Java von adoptopenjdk.net herunterladen")
 * Lizenz: [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) (für den Mini Callcenter Simulator, die verwendeten Bibliotheken unterliegen zum Teil abweichenden Opensource-Lizenzen)
 
 ## Literatur
