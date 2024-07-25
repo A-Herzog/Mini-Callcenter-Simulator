@@ -3,6 +3,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/a-herzog/mini-callcenter-simulator)
 ![GitHub](https://img.shields.io/github/license/a-herzog/mini-callcenter-simulator)
 ![GitHub All Releases](https://img.shields.io/github/downloads/a-herzog/mini-callcenter-simulator/total)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12798331.svg)](https://doi.org/10.5281/zenodo.12798331)
 
 ([Deutsche Version dieser Readme.](README_de.md))
 
