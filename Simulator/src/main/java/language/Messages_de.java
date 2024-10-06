@@ -44,10 +44,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[85] = "Pink";
     t[86] = "Statistics.ResidenceTimes.all.of";
     t[87] = "der Verweilzeiten \u00fcber alle Anrufer";
+    t[94] = "Distribution.IrwinHall";
+    t[95] = "Irwin-Hall-Verteilung";
     t[96] = "CalculatorDialog.Tab.Distributions";
     t[97] = "Wahrscheinlichkeitsverteilungen";
     t[104] = "LoadCalculator.AverageResidenceTime";
     t[105] = "Mittlere Verweilzeit";
+    t[110] = "Help.Search.Search";
+    t[111] = "Suchen";
     t[114] = "Simulation.Log.Abort";
     t[115] = "Abbruch";
     t[126] = "Statistic.Viewer.Toolbar.Zoom";
@@ -610,6 +614,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1435] = "https://de.wikipedia.org/wiki/Chi-Quadrat-Verteilung";
     t[1440] = "Main.Menu.Help.ProgramInformation.Mnemonic";
     t[1441] = "P";
+    t[1444] = "Distribution.UQuadraticWikipedia";
+    t[1445] = "https://en.wikipedia.org/wiki/U-quadratic_distribution";
     t[1448] = "Distribution.NoDistribution";
     t[1449] = "Keine Verteilung angegeben";
     t[1450] = "CommandLine.Benchmark.SimulaionRun";
@@ -706,6 +712,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1685] = "Simulation";
     t[1692] = "Distribution.Poisson";
     t[1693] = "Poisson-Verteilung";
+    t[1702] = "Distribution.Sine";
+    t[1703] = "Sinus-Verteilung";
     t[1710] = "Model.XML.ForwardingProbability.Error";
     t[1711] = "Der angegebene Wert \"%s\" f\u00fcr die Weiterleitungswahrscheinlichkeit ist ung\u00fcltig. Es muss eine Wahrscheinlichkeit angegeben werden.";
     t[1712] = "QSExport.xml.Info.Forward";
@@ -902,6 +910,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2147] = "Version";
     t[2152] = "Statistics.WaitingTime.lower.AnalyticWithCancelationAndForwardingApproximation";
     t[2153] = "Abbrecher+Weiterleitungsapproximation";
+    t[2154] = "Distribution.ReciprocalWikipedia";
+    t[2155] = "https://en.wikipedia.org/wiki/Reciprocal_distribution";
     t[2156] = "SimStatistic.ServiceTime.of";
     t[2157] = "der Bedienzeit";
     t[2158] = "Statistic.QueueLength.lower";
@@ -1078,6 +1088,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2549] = "Dunkelviolett";
     t[2552] = "Statistic.QueueLength";
     t[2553] = "Warteschlangenl\u00e4nge";
+    t[2554] = "Distribution.UQuadratic";
+    t[2555] = "U-quadratische Verteilung";
     t[2556] = "Statistics.XML.InterArrivalTimes";
     t[2557] = "StatistikZwischenankunftszeiten";
     t[2560] = "Distribution.SetupList.Title";
@@ -1226,6 +1238,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2955] = "ModellElemente";
     t[2960] = "QSExport.xml.Element.Counter.Group";
     t[2961] = "ModellElementZaehlerGruppe";
+    t[2962] = "Dialog.ConvertDistributionToExpression";
+    t[2963] = "In Rechenausdruck umwandeln";
     t[2966] = "JDataLoader.ImportErrorInvalidData";
     t[2967] = "Die Daten konnten nicht aufbereitet werden.";
     t[2970] = "Color.191970";
@@ -1302,6 +1316,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3123] = "Bild speichern";
     t[3126] = "Statistic.Viewer.Report.Settings.Header.Logo.MaxHeight";
     t[3127] = "Maximale H\u00f6he des Logos (in mm)";
+    t[3130] = "Distribution.KumaraswamyWikipedia";
+    t[3131] = "https://en.wikipedia.org/wiki/Kumaraswamy_distribution";
     t[3136] = "Color.00FFFF";
     t[3137] = "Zyan";
     t[3138] = "Statistics.XML.RunEvents";
@@ -1314,6 +1330,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3155] = "Tabellen mit OpenOffice/LibreOffice \u00f6ffnen";
     t[3156] = "SettingsDialog.Tabs.Statistics.OpenODT";
     t[3157] = "Texte mit OpenOffice/LibreOffice \u00f6ffnen";
+    t[3158] = "Distribution.IrwinHallWikipedia";
+    t[3159] = "https://de.wikipedia.org/wiki/Irwin-Hall-Verteilung";
     t[3160] = "Statistic.Viewer.Toolbar.OpenWordHint";
     t[3161] = "Text in Word anzeigen";
     t[3168] = "FileType.md";
@@ -1334,6 +1352,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3187] = "Pareto-Verteilung";
     t[3188] = "SimStatistic.deMinimale";
     t[3189] = "Minimale";
+    t[3194] = "Statistic.Viewer.Context.SelectColumn";
+    t[3195] = "Spalte ausw\u00e4hlen";
     t[3198] = "QSExport.xml.Element.Text.FontBold";
     t[3199] = "fett";
     t[3202] = "Color.FF8C00";
@@ -1506,6 +1526,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3615] = "Name des Modells";
     t[3616] = "Statistics.AnalyticModelCompare.Analysis.Analytic";
     t[3617] = "Das Modell kann vollst\u00e4ndig analytisch beschrieben werden.";
+    t[3620] = "Statistic.Viewer.Context.Copy";
+    t[3621] = "Kopieren";
     t[3628] = "Statistic.Viewer.Toolbar.Zoom.HintPanel";
     t[3629] = "In dem Diagramm k\u00f6nnen mit gedr\u00fcckter linker Maustaste Zoom-Rahmen aufgezogen werden. Au\u00dferdem kann mit dem Mausrad gezoomt werden. Wird die Strg-Taste gedr\u00fcckt gehalten, so kann der darzustellende Bereich mit gedr\u00fcckter linker Maustaste verschoben werden.";
     t[3630] = "Color.F5FFFA";
@@ -1520,6 +1542,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3643] = "X";
     t[3648] = "Editor.WaitingRoomAndWaitingTimeTolerance.WaitingTimeTolerance.Limit";
     t[3649] = "Wartezeittoleranz der Kunden gem\u00e4\u00df dieser Verteilung";
+    t[3650] = "Distribution.NegativeHyperGeomWikipedia";
+    t[3651] = "https://de.wikipedia.org/wiki/Negative_hypergeometrische_Verteilung";
     t[3654] = "Dialog.Button.No";
     t[3655] = "Nein";
     t[3658] = "CalculatorDialog.Expression.CalcError";
@@ -1604,6 +1628,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3837] = "Autokorrelation";
     t[3838] = "Dialog.RandomNumbers.Error";
     t[3839] = "Die Anzahl an Zufallszahlen muss eine positive Ganzzahl sein.";
+    t[3844] = "Distribution.NegativeHyperGeom";
+    t[3845] = "Negative hypergeometrische Verteilung";
     t[3848] = "Main.Toolbar.LoadStatistics.Hint";
     t[3849] = "L\u00e4dt die Statistik aus einer Datei";
     t[3854] = "Statistic.Viewer.Chart.InHours";
@@ -1674,6 +1700,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4037] = "In den analytischen Modellen werden die Wartezeittoleranzen stets als exponentiell verteilt angenommen.";
     t[4038] = "QSExport.xml.Element.Source";
     t[4039] = "ModellElementQuelle";
+    t[4042] = "Distribution.Kumaraswamy";
+    t[4043] = "Kumaraswamy-Verteilung";
     t[4048] = "Statistics.XML.FreeAgents";
     t[4049] = "StatistikAgentenLeerlauf";
     t[4050] = "Color.C71585";
@@ -1982,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4871] = "Besch\u00e4ftigte Agenten";
     t[4872] = "Statistic.Viewer.SpecialText.SubCategory";
     t[4873] = "<p>Bitte w\u00e4hlen Sie in der Baumstruktur eine <b>Unterkategorie</b> aus, um die entsprechenden Informationen angezeigt zu bekommen.</p>";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4878] = "JDataLoader.ImportErrorNoArea";
     t[4879] = "Es wurde kein zu importierender Bereich gew\u00e4hlt.";
     t[4880] = "Color.FAEBD7";
@@ -2010,12 +2044,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4951] = "Kopiert die Werte der Z\u00e4hldichte oder die grafische Darstellung in die Zwischenablage";
     t[4952] = "CommandLine.Help.Info1";
     t[4953] = "Allgemeines Aufrufschema:\n<SimulatorProgrammdatei> <Simulationsmodell>\noder\n<SimulatorProgrammdatei> <Statistikdaten>\noder\n<SimulatorProgrammdatei> <Befehl> <Parameter>\n\nIn den ersten zwei F\u00e4llen wird das angegebene Simulationsmodell bzw. die angegebene Statistikdatei\nin den Simulator geladen.\n\n<Befehl> kann einer der folgenden Begriffe sein:";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4954] = "CommandLine.Help.Info2";
     t[4955] = "(Die Gro\u00df- und Kleinschreibung der als <Befehl> angegebenen Betriebsart wird nicht ber\u00fccksichtigt.)\n\nDie im Bereich <Parameter> anzugebenen zus\u00e4tzlichen Parameter h\u00e4ngen vom <Befehl> ab:";
     t[4956] = "Distribution.Triangular";
@@ -2130,6 +2158,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5195] = "Ordner anzeigen fehlgeschlagen";
     t[5196] = "CalculatorDialog.Plotter.Toolbar.Copy.Hint";
     t[5197] = "Kopiert die Darstellung in die Zwischenablage.";
+    t[5198] = "Distribution.Arcsine";
+    t[5199] = "Arcus Sinus-Verteilung";
     t[5200] = "Help.Search.ResultSelect";
     t[5201] = "Passende Seiten zu dem Suchtreffer:";
     t[5208] = "Statistic.Viewer.Report.Settings.Reset";
@@ -2232,6 +2262,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5397] = "Farbe ausw\u00e4hlen";
     t[5398] = "Editor.Service.QueueMode.LIFO";
     t[5399] = "Bedienung in umgekehrter Ankunftsreihenfolge (LIFO - Last in first out)";
+    t[5402] = "Statistic.Viewer.Context.Copy.Column";
+    t[5403] = "Diese Spalte kopieren";
     t[5404] = "Statistic.Viewer.Report.Settings.Fonts";
     t[5405] = "Schriftarten";
     t[5406] = "XML.InterpreterCouldNotProcessData";
@@ -2380,6 +2412,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5729] = "Verwirft die aktuellen Daten ohne sie vorher zu speichern.";
     t[5730] = "Editor.NewerVersion.Info";
     t[5731] = "Das geladene Modell wurde mit der neueren Version %s des Simulators erstellt.\nIn dem Modell sind evtl. Eigenschaften enthalten, die diese Version des Simulators nicht ber\u00fccksichtigen kann.\nWenn Sie das Modell \u00e4ndern und dann speichern, gehen diese zus\u00e4tzlichen Eigenschaften verloren.";
+    t[5736] = "Distribution.Reciprocal";
+    t[5737] = "Reziproke Verteilung";
     t[5746] = "Statistics.AnalyticModelCompare.SimulationResults";
     t[5747] = "Simulationsergebnisse zum Vergleich";
     t[5748] = "LoadCalculator.Units.Hours";
@@ -2438,6 +2472,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5875] = "Helles Golden Rod Gelb";
     t[5884] = "Statistics.XML.Minimum";
     t[5885] = "Minimum";
+    t[5886] = "Help.Search.AllPages";
+    t[5887] = "Alle Seiten";
     t[5888] = "Color.9932CC";
     t[5889] = "Dunkel Orchid";
     t[5892] = "Main.Menu.Help.Help";
@@ -2638,6 +2674,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6365] = "muss genau ein weiterer Parameter folgen";
     t[6372] = "Statistic.Viewer.Toolbar.NewWindow.Title";
     t[6373] = "Statistikdaten";
+    t[6378] = "Statistic.Viewer.Context.Copy.Table";
+    t[6379] = "Tabelle kopieren";
     t[6396] = "Distribution.RayleighWikipedia";
     t[6397] = "https://de.wikipedia.org/wiki/Rayleigh-Verteilung";
     t[6398] = "Model.XML.Description";

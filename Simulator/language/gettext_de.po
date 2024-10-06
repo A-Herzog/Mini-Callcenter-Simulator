@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-27 14:54+0200\n"
+"POT-Creation-Date: 2024-09-30 10:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -906,6 +906,9 @@ msgstr "Wertetabelle speichern"
 msgid "Dialog.Button.Yes"
 msgstr "Ja"
 
+msgid "Dialog.ConvertDistributionToExpression"
+msgstr "In Rechenausdruck umwandeln"
+
 msgid "Dialog.OpenURL.CopyURL"
 msgstr "Adresse kopieren"
 
@@ -981,6 +984,9 @@ msgstr "Information"
 
 msgid "Dialog.Title.Warning"
 msgstr "Warnung"
+
+msgid "Distribution.Arcsine"
+msgstr "Arcus Sinus-Verteilung"
 
 msgid "Distribution.AverageSomething"
 msgstr "Mittlere"
@@ -1123,6 +1129,18 @@ msgstr "Inverse Gauß-Verteilung"
 msgid "Distribution.InverseGaussianWikipedia"
 msgstr "https://de.wikipedia.org/wiki/Inverse_Normalverteilung"
 
+msgid "Distribution.IrwinHall"
+msgstr "Irwin-Hall-Verteilung"
+
+msgid "Distribution.IrwinHallWikipedia"
+msgstr "https://de.wikipedia.org/wiki/Irwin-Hall-Verteilung"
+
+msgid "Distribution.Kumaraswamy"
+msgstr "Kumaraswamy-Verteilung"
+
+msgid "Distribution.KumaraswamyWikipedia"
+msgstr "https://en.wikipedia.org/wiki/Kumaraswamy_distribution"
+
 msgid "Distribution.Laplace"
 msgstr "Laplace-Verteilung"
 
@@ -1177,6 +1195,12 @@ msgstr "Negative Binomialverteilung"
 msgid "Distribution.NegativeBinomialWikipedia"
 msgstr "https://de.wikipedia.org/wiki/Negative_Binomialverteilung"
 
+msgid "Distribution.NegativeHyperGeom"
+msgstr "Negative hypergeometrische Verteilung"
+
+msgid "Distribution.NegativeHyperGeomWikipedia"
+msgstr "https://de.wikipedia.org/wiki/Negative_hypergeometrische_Verteilung"
+
 msgid "Distribution.Never"
 msgstr "Niemals;nie"
 
@@ -1228,6 +1252,12 @@ msgstr "Rayleigh-Verteilung"
 msgid "Distribution.RayleighWikipedia"
 msgstr "https://de.wikipedia.org/wiki/Rayleigh-Verteilung"
 
+msgid "Distribution.Reciprocal"
+msgstr "Reziproke Verteilung"
+
+msgid "Distribution.ReciprocalWikipedia"
+msgstr "https://en.wikipedia.org/wiki/Reciprocal_distribution"
+
 msgid "Distribution.SawtoothLeft"
 msgstr "Linke Sägezahnverteilung"
 
@@ -1258,6 +1288,9 @@ msgstr "%d von %d Verteilungen ist hervorgehoben."
 msgid "Distribution.SetupList.Title"
 msgstr "Liste der hervorgehobene Verteilungen bearbeiten"
 
+msgid "Distribution.Sine"
+msgstr "Sinus-Verteilung"
+
 msgid "Distribution.Skewness"
 msgstr "Schiefe"
 
@@ -1281,6 +1314,12 @@ msgstr "Dreiecksverteilung"
 
 msgid "Distribution.TriangularWikipedia"
 msgstr "https://de.wikipedia.org/wiki/Dreiecksverteilung"
+
+msgid "Distribution.UQuadratic"
+msgstr "U-quadratische Verteilung"
+
+msgid "Distribution.UQuadraticWikipedia"
+msgstr "https://en.wikipedia.org/wiki/U-quadratic_distribution"
 
 msgid "Distribution.Uniform"
 msgstr "Gleichverteilung"
@@ -1596,6 +1635,9 @@ msgstr "Weiter zur nächsten Hilfeseite."
 msgid "Help.Search"
 msgstr "Suchen"
 
+msgid "Help.Search.AllPages"
+msgstr "Alle Seiten"
+
 msgid "Help.Search.Info"
 msgstr "Ermöglicht die Suche in der gesamten Hilfe"
 
@@ -1613,6 +1655,9 @@ msgstr "auf Seite \"%s\" gefunden"
 
 msgid "Help.Search.ResultSelect"
 msgstr "Passende Seiten zu dem Suchtreffer:"
+
+msgid "Help.Search.Search"
+msgstr "Suchen"
 
 msgid "Help.Search.SearchString"
 msgstr "Suchbegriff"
@@ -3212,6 +3257,15 @@ msgstr "Anteil"
 msgid "Statistic.Viewer.Chart.Time"
 msgstr "Zeit"
 
+msgid "Statistic.Viewer.Context.Copy"
+msgstr "Kopieren"
+
+msgid "Statistic.Viewer.Context.Copy.Column"
+msgstr "Diese Spalte kopieren"
+
+msgid "Statistic.Viewer.Context.Copy.Table"
+msgstr "Tabelle kopieren"
+
 msgid "Statistic.Viewer.Context.Filter"
 msgstr "Filtern"
 
@@ -3229,6 +3283,9 @@ msgstr "Keine"
 
 msgid "Statistic.Viewer.Context.Filter.SelectTitle"
 msgstr "Werte für anzuzeigende Zeilen auswählen"
+
+msgid "Statistic.Viewer.Context.SelectColumn"
+msgstr "Spalte auswählen"
 
 msgid "Statistic.Viewer.Context.Sort"
 msgstr "Sortieren"
