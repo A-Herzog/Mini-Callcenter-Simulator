@@ -30,8 +30,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[35] = "D";
     t[46] = "Color.FDF5E6";
     t[47] = "Olive";
-    t[54] = "Statistics.XML.Sk";
-    t[55] = "Schiefe";
+    t[54] = "Distribution.Logarithmic";
+    t[55] = "Logarithmische Verteilung";
     t[56] = "Model.XML.RetryDistances.Error";
     t[57] = "Die angegebene Verteilung der Wiederholabst\u00e4nde ist ung\u00fcltig.";
     t[62] = "Statistics.UtilizationAndFailures.FullUtilization";
@@ -150,6 +150,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[357] = "Erlang-Verteilung";
     t[358] = "Color.FFFF00";
     t[359] = "Gelb";
+    t[360] = "Statistic.Viewer.Toolbar.Settings.Hint";
+    t[361] = "Einstellungen zu der gew\u00e4hlten Statistik-Anzeige vornehmen";
     t[364] = "Viewer.Close.Hint";
     t[365] = "Schlie\u00dft diese Modellansicht";
     t[366] = "Statistic.Viewer.Toolbar.NewWindow.Size";
@@ -164,8 +166,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[383] = "Daten anzeigen";
     t[384] = "Simulator.Log.CallDone1Event";
     t[385] = "CallDone1Event";
-    t[388] = "Statistics.XML.StartError";
-    t[389] = "Das \"Start\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
+    t[388] = "Distribution.LogCauchy";
+    t[389] = "Log-Cauchy-Verteilung";
     t[394] = "Dialog.Title.Warning";
     t[395] = "Warnung";
     t[396] = "Simulator.Log.TestAndScheduleCallRetry.FinalCancelation";
@@ -218,6 +220,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[485] = "Kopiert die Ergebnisse von dieser Seite in die Zwischenablage.";
     t[488] = "Statistics.AnalyticModelCompare.AllenCunnen";
     t[489] = "Allen-Cunnen-N\u00e4herungsforme";
+    t[490] = "Distribution.LogarithmicWikipedia";
+    t[491] = "https://de.wikipedia.org/wiki/Logarithmische_Verteilung";
     t[492] = "Statistics.XML.Type";
     t[493] = "Typ";
     t[496] = "LoadCalculator.Units.Number";
@@ -228,6 +232,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[501] = "Hei\u00dfes Pink";
     t[502] = "LoadCalculator.Tab.ErlangC.Link.Info";
     t[503] = "Informationen zur Erlang C Formel";
+    t[504] = "Statistic.Viewer.Toolbar.Excel.Hint";
+    t[505] = "Tabelle in Excel anzeigen";
     t[512] = "Distribution.StdDev";
     t[513] = "Standardabweichung";
     t[516] = "Color.DCDCDC";
@@ -310,6 +316,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[723] = "Waldgr\u00fcn";
     t[724] = "Color.8B0000";
     t[725] = "Dunkelrot";
+    t[730] = "Statistic.Viewer.Toolbar.NewWindow.Title";
+    t[731] = "Statistikdaten";
     t[742] = "LicenseViewer.FileError";
     t[743] = "Die Datei %s konnte nicht geladen werden.";
     t[756] = "Distribution.Never";
@@ -412,8 +420,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[959] = "Standardbreite";
     t[960] = "Main.Toolbar.StartSimulation.Hint";
     t[961] = "Startet einen Simulationslauf";
-    t[962] = "Statistic.Viewer.Toolbar.Excel.Hint";
-    t[963] = "Tabelle in Excel anzeigen";
+    t[962] = "Statistic.Viewer.SaveTable.Error.Info";
+    t[963] = "Die Tabelle konnte nicht in der Datei\n%s\ngespeichert werden.";
     t[964] = "Main.Toolbar.StartSimulation";
     t[965] = "Simulation starten";
     t[968] = "Color.EEE8AA";
@@ -562,8 +570,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1319] = "Bedienzeiten";
     t[1320] = "CommandLine.Error.PreparationOfModel";
     t[1321] = "Beim Vorbereiten des Modells ist folgender Fehler aufgetreten";
-    t[1324] = "ModelInfo.Cancel.Line1";
-    t[1325] = "Ungeduldige Kunden";
+    t[1324] = "Distribution.Geometric";
+    t[1325] = "Geometrische Verteilung";
     t[1326] = "ModelInfo.Cancel.Line2";
     t[1327] = "geben das Warten vorzeitig auf";
     t[1328] = "ModelInfo.Cancel.Line3";
@@ -932,8 +940,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2203] = "https://en.wikipedia.org/wiki/Johnson%27s_SU-distribution";
     t[2206] = "Color.00FF7F";
     t[2207] = "Fr\u00fchlingsgr\u00fcn";
-    t[2210] = "Table.LoadErrorLastCellInvalid";
-    t[2211] = "Die angegebene Endzelle \"%s\" ist ung\u00fcltig.";
+    t[2210] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
+    t[2211] = "In Fenstergr\u00f6\u00dfe (%dx%d Pixel) kopieren";
     t[2212] = "Main.Toolbar.SaveModel";
     t[2213] = "Modell speichern";
     t[2228] = "Main.Toolbar.SaveStatistics";
@@ -1178,6 +1186,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2785] = "Anzahl";
     t[2798] = "CommandLine.Help.Error";
     t[2799] = "Es existiert kein Kommandozeilen-Befehl \"%s\".";
+    t[2806] = "Distribution.LogCauchyWikipedia";
+    t[2807] = "https://en.wikipedia.org/wiki/Log-Cauchy_distribution";
     t[2808] = "Distribution.UniformWikipedia";
     t[2809] = "https://de.wikipedia.org/wiki/Stetige_Gleichverteilung";
     t[2810] = "QSExport.xml.Count";
@@ -1362,8 +1372,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3221] = "c Bediener";
     t[3224] = "Statistic.Viewer.Report.Settings.Margins.Right";
     t[3225] = "Rechts (in mm)";
-    t[3226] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
-    t[3227] = "In Fenstergr\u00f6\u00dfe (%dx%d Pixel) kopieren";
+    t[3226] = "Distribution.Borel";
+    t[3227] = "Borel-Verteilung";
     t[3234] = "SettingsDialog.WindowSizeProgrmStart.Normal";
     t[3235] = "Standard Fenstergr\u00f6\u00dfe";
     t[3238] = "FileType.gif";
@@ -1382,6 +1392,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3267] = "FALSCH";
     t[3272] = "Statistic.Viewer.Context.Filter.All";
     t[3273] = "Alle anzeigen";
+    t[3280] = "ModelInfo.Cancel.Line1";
+    t[3281] = "Ungeduldige Kunden";
     t[3284] = "Statistics.WaitingTimes.All.lower";
     t[3285] = "Warte- bzw. Abbruchzeit \u00fcber alle Anrufer";
     t[3288] = "CommandLine.Simulation.Status.Long";
@@ -1544,6 +1556,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3649] = "Wartezeittoleranz der Kunden gem\u00e4\u00df dieser Verteilung";
     t[3650] = "Distribution.NegativeHyperGeomWikipedia";
     t[3651] = "https://de.wikipedia.org/wiki/Negative_hypergeometrische_Verteilung";
+    t[3652] = "Distribution.BorelWikipedia";
+    t[3653] = "https://en.wikipedia.org/wiki/Borel_distribution";
     t[3654] = "Dialog.Button.No";
     t[3655] = "Nein";
     t[3658] = "CalculatorDialog.Expression.CalcError";
@@ -1660,6 +1674,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3937] = "Lehrbuch \"Callcenter \u2013 Analyse und Management\"";
     t[3946] = "Statistics.ResidenceTimes.successful.lower";
     t[3947] = "Verweilzeit eines erfolgreichen Anrufers";
+    t[3948] = "Table.LoadErrorLastCellInvalid";
+    t[3949] = "Die angegebene Endzelle \"%s\" ist ung\u00fcltig.";
     t[3960] = "Color.008080";
     t[3961] = "Teal";
     t[3962] = "JDistributionEditor.Load.Error";
@@ -1722,6 +1738,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4105] = "StatistikSystem";
     t[4110] = "Help.Content";
     t[4111] = "Inhalt dieser Seite";
+    t[4112] = "Statistics.XML.StartError";
+    t[4113] = "Das \"Start\"-Attribut im \"%s\"-Element muss eine Zahl sein, ist aber \"%s\".";
     t[4116] = "Color.BDB76B";
     t[4117] = "Dunkelkhaki";
     t[4122] = "Main.Toolbar.ShowModelForTheseResults2.Hint";
@@ -1926,6 +1944,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4677] = "In den analytischen Modellen werden die Bedienzeiten stets als exponentiell verteilt angenommen.";
     t[4682] = "CommandLine.Count.ThenMaximumN";
     t[4683] = "d\u00fcrfen maximal %d weitere Parameter folgen";
+    t[4688] = "Distribution.WignerHalfCircleWikipedia";
+    t[4689] = "https://en.wikipedia.org/wiki/Wigner_semicircle_distribution";
     t[4690] = "Statistic.Viewer.Report.SaveHTMLImages";
     t[4691] = "Bitte w\u00e4hlen Sie aus, wie Bilder in der Zusammenfassung gespeichert werden sollen";
     t[4702] = "CommandLine.Benchmark.EventsPerSecond";
@@ -1990,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4809] = "Export fehlgeschlagen";
     t[4816] = "SimStatistic.Retrys";
     t[4817] = "Wiederholungen";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4818] = "CommandLine.ResetConfig.Name";
     t[4819] = "Reset";
     t[4820] = "Statistics.XML.WorkingTimes";
@@ -2010,12 +2036,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4871] = "Besch\u00e4ftigte Agenten";
     t[4872] = "Statistic.Viewer.SpecialText.SubCategory";
     t[4873] = "<p>Bitte w\u00e4hlen Sie in der Baumstruktur eine <b>Unterkategorie</b> aus, um die entsprechenden Informationen angezeigt zu bekommen.</p>";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4878] = "JDataLoader.ImportErrorNoArea";
     t[4879] = "Es wurde kein zu importierender Bereich gew\u00e4hlt.";
     t[4880] = "Color.FAEBD7";
@@ -2210,6 +2230,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5303] = "Speichern...";
     t[5304] = "Main.Toolbar.ShowModelForTheseResults.Hint";
     t[5305] = "Zeigt das Modell an, welches zu diesen Simulationsergebnissen geh\u00f6rt";
+    t[5306] = "Statistic.Viewer.SaveTable.Error.Title";
+    t[5307] = "Fehler beim Speichern der Tabelle";
     t[5308] = "Distribution.PowerWikipedia";
     t[5309] = "https://en.wikipedia.org/wiki/Pareto_distribution#Inverse-Pareto_Distribution_/_Power_Distribution";
     t[5312] = "Window.Help";
@@ -2532,8 +2554,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6043] = "Simulation";
     t[6048] = "Simulator.Log.CallEvent";
     t[6049] = "CallEvent";
-    t[6054] = "Statistic.Viewer.Toolbar.Settings.Hint";
-    t[6055] = "Einstellungen zu der gew\u00e4hlten Statistik-Anzeige vornehmen";
+    t[6054] = "Distribution.Radius";
+    t[6055] = "Radius";
     t[6062] = "LoadCalculator.AverageWaitingTime";
     t[6063] = "Mittlere Wartezeit";
     t[6066] = "LoadCalculator.AverageNumberOfClientsInTheSystem";
@@ -2562,6 +2584,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6121] = "Die Modelldatei enthielt unbekannte Elemente, die beim Laden \u00fcbersprungen wurden. Das Modell ist daher nicht vollst\u00e4ndig.";
     t[6130] = "Color.FFFACD";
     t[6131] = "Lemon Chiffon";
+    t[6132] = "FileType.Typst";
+    t[6133] = "Typst-Datei";
     t[6138] = "QSExport.xml.Active";
     t[6139] = "Aktiv";
     t[6142] = "DistributionFitter.PValue";
@@ -2638,8 +2662,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6309] = "Kopieren";
     t[6310] = "Color.FFFAFA";
     t[6311] = "Schnee";
-    t[6312] = "Distribution.LevyWikipedia";
-    t[6313] = "https://de.wikipedia.org/wiki/Levy-Verteilung";
+    t[6312] = "Distribution.GeometricWikipedia";
+    t[6313] = "https://de.wikipedia.org/wiki/Geometrische_Verteilung";
     t[6320] = "CalculatorDialog.Plotter.Toolbar.Print.Hint";
     t[6321] = "Druckt die Darstellung aus.";
     t[6322] = "Statistics.ProcessTimes";
@@ -2672,8 +2696,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6363] = "darf kein weiterer Parameter folgen";
     t[6364] = "CommandLine.Count.Then1";
     t[6365] = "muss genau ein weiterer Parameter folgen";
-    t[6372] = "Statistic.Viewer.Toolbar.NewWindow.Title";
-    t[6373] = "Statistikdaten";
+    t[6372] = "Distribution.LevyWikipedia";
+    t[6373] = "https://de.wikipedia.org/wiki/Levy-Verteilung";
     t[6378] = "Statistic.Viewer.Context.Copy.Table";
     t[6379] = "Tabelle kopieren";
     t[6396] = "Distribution.RayleighWikipedia";
@@ -2690,6 +2714,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6407] = "Alle CPU-Kerne verwenden";
     t[6412] = "Statistic.Viewer.NoInternet.Info";
     t[6413] = "Die angegebene Adresse\n%s\nkonnte nicht aufgerufen werden.";
+    t[6416] = "Statistics.XML.Sk";
+    t[6417] = "Schiefe";
     t[6420] = "Statistic.Viewer.Context.Sort.Reset";
     t[6421] = "Urspr\u00fcngliche Reihenfolge";
     t[6422] = "CommandLine.Count.ThenN";
@@ -2724,6 +2750,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6499] = "Der durch %s und %s eingegrenzte Bereich muss entweder eine Zeile oder eine Spalte sein.";
     t[6500] = "Statistics.XML.WaitingTimesCancel";
     t[6501] = "StatistikWartezeitenAbbruch";
+    t[6506] = "Distribution.WignerHalfCircle";
+    t[6507] = "Wigner Halbkreis-Verteilung";
     t[6508] = "Statistic.Viewer.SpecialText.LoadData";
     t[6509] = "Statistikdaten von fr\u00fcherem Simulationslauf laden";
     t[6510] = "Statistic.Viewer.NoInternet.Title";

@@ -30,8 +30,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[35] = "F";
     t[46] = "Color.FDF5E6";
     t[47] = "Old lace";
-    t[54] = "Statistics.XML.Sk";
-    t[55] = "Skewness";
+    t[54] = "Distribution.Logarithmic";
+    t[55] = "Logarithmic distribution";
     t[56] = "Model.XML.RetryDistances.Error";
     t[57] = "The specified distribution of the retry distances is not valid.";
     t[62] = "Statistics.UtilizationAndFailures.FullUtilization";
@@ -150,6 +150,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[357] = "Erlang distribution";
     t[358] = "Color.FFFF00";
     t[359] = "Yellow";
+    t[360] = "Statistic.Viewer.Toolbar.Settings.Hint";
+    t[361] = "Change settings for the selected statistics page.";
     t[364] = "Viewer.Close.Hint";
     t[365] = "Closes the model viewer";
     t[366] = "Statistic.Viewer.Toolbar.NewWindow.Size";
@@ -164,8 +166,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[383] = "Show data";
     t[384] = "Simulator.Log.CallDone1Event";
     t[385] = "CallDone1Event";
-    t[388] = "Statistics.XML.StartError";
-    t[389] = "The \"Start\" attribute in the \"%s\" element has to be a number but is \"%s\".";
+    t[388] = "Distribution.LogCauchy";
+    t[389] = "Log-Cauchy distribution";
     t[394] = "Dialog.Title.Warning";
     t[395] = "Warning";
     t[396] = "Simulator.Log.TestAndScheduleCallRetry.FinalCancelation";
@@ -218,6 +220,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[485] = "Copies the results from this page to the clipboard.";
     t[488] = "Statistics.AnalyticModelCompare.AllenCunnen";
     t[489] = "Allen-Cunnen approximation formula";
+    t[490] = "Distribution.LogarithmicWikipedia";
+    t[491] = "https://en.wikipedia.org/wiki/Logarithmic_distribution";
     t[492] = "Statistics.XML.Type";
     t[493] = "Type";
     t[496] = "LoadCalculator.Units.Number";
@@ -228,6 +232,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[501] = "Hot pink";
     t[502] = "LoadCalculator.Tab.ErlangC.Link.Info";
     t[503] = "Information about Erlang C formula";
+    t[504] = "Statistic.Viewer.Toolbar.Excel.Hint";
+    t[505] = "Show table in Excel";
     t[512] = "Distribution.StdDev";
     t[513] = "Standard deviation";
     t[516] = "Color.DCDCDC";
@@ -310,6 +316,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[723] = "Forest green";
     t[724] = "Color.8B0000";
     t[725] = "Dark red";
+    t[730] = "Statistic.Viewer.Toolbar.NewWindow.Title";
+    t[731] = "Statistic data";
     t[742] = "LicenseViewer.FileError";
     t[743] = "Die Datei %s konnte nicht geladen werden.";
     t[756] = "Distribution.Never";
@@ -412,8 +420,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[959] = "Default column width";
     t[960] = "Main.Toolbar.StartSimulation.Hint";
     t[961] = "Start simulation of the model";
-    t[962] = "Statistic.Viewer.Toolbar.Excel.Hint";
-    t[963] = "Show table in Excel";
+    t[962] = "Statistic.Viewer.SaveTable.Error.Info";
+    t[963] = "The table could not be saved in the file\n%s";
     t[964] = "Main.Toolbar.StartSimulation";
     t[965] = "Start simulation";
     t[968] = "Color.EEE8AA";
@@ -562,8 +570,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1319] = "ProcessingTime";
     t[1320] = "CommandLine.Error.PreparationOfModel";
     t[1321] = "The following error occured while preparating the model";
-    t[1324] = "ModelInfo.Cancel.Line1";
-    t[1325] = "Impatient clients";
+    t[1324] = "Distribution.Geometric";
+    t[1325] = "Geometric distribution";
     t[1326] = "ModelInfo.Cancel.Line2";
     t[1327] = "give up waiting prematurely";
     t[1328] = "ModelInfo.Cancel.Line3";
@@ -932,8 +940,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2203] = "https://en.wikipedia.org/wiki/Johnson%27s_SU-distribution";
     t[2206] = "Color.00FF7F";
     t[2207] = "Spring green";
-    t[2210] = "Table.LoadErrorLastCellInvalid";
-    t[2211] = "The given end cell \"%s\" is invalid.";
+    t[2210] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
+    t[2211] = "Copy using window size (%dx%d pixels)";
     t[2212] = "Main.Toolbar.SaveModel";
     t[2213] = "Save model";
     t[2228] = "Main.Toolbar.SaveStatistics";
@@ -1178,6 +1186,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2785] = "Count";
     t[2798] = "CommandLine.Help.Error";
     t[2799] = "There is no command-line command called \"%s\".";
+    t[2806] = "Distribution.LogCauchyWikipedia";
+    t[2807] = "https://en.wikipedia.org/wiki/Log-Cauchy_distribution";
     t[2808] = "Distribution.UniformWikipedia";
     t[2809] = "https://en.wikipedia.org/wiki/Continuous_uniform_distribution";
     t[2810] = "QSExport.xml.Count";
@@ -1362,8 +1372,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3221] = "c operators";
     t[3224] = "Statistic.Viewer.Report.Settings.Margins.Right";
     t[3225] = "Right (in mm)";
-    t[3226] = "Statistic.Viewer.Toolbar.Copy.WindowSize";
-    t[3227] = "Copy using window size (%dx%d pixels)";
+    t[3226] = "Distribution.Borel";
+    t[3227] = "Borel distribution";
     t[3234] = "SettingsDialog.WindowSizeProgrmStart.Normal";
     t[3235] = "Default window size";
     t[3238] = "FileType.gif";
@@ -1382,6 +1392,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3267] = "FALSE";
     t[3272] = "Statistic.Viewer.Context.Filter.All";
     t[3273] = "Show all";
+    t[3280] = "ModelInfo.Cancel.Line1";
+    t[3281] = "Impatient clients";
     t[3284] = "Statistics.WaitingTimes.All.lower";
     t[3285] = "waiting or cancelation time over all callers";
     t[3288] = "CommandLine.Simulation.Status.Long";
@@ -1544,6 +1556,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3649] = "Waiting time tolerance of the clients by this distribution";
     t[3650] = "Distribution.NegativeHyperGeomWikipedia";
     t[3651] = "https://en.wikipedia.org/wiki/Negative_hypergeometric_distribution";
+    t[3652] = "Distribution.BorelWikipedia";
+    t[3653] = "https://en.wikipedia.org/wiki/Borel_distribution";
     t[3654] = "Dialog.Button.No";
     t[3655] = "No";
     t[3658] = "CalculatorDialog.Expression.CalcError";
@@ -1660,6 +1674,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3937] = "Text book \"Callcenter \u2013 Analyse und Management\" (German)";
     t[3946] = "Statistics.ResidenceTimes.successful.lower";
     t[3947] = "residence time of a successful caller";
+    t[3948] = "Table.LoadErrorLastCellInvalid";
+    t[3949] = "The given end cell \"%s\" is invalid.";
     t[3960] = "Color.008080";
     t[3961] = "Teal";
     t[3962] = "JDistributionEditor.Load.Error";
@@ -1722,6 +1738,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4105] = "StatisticsSystem";
     t[4110] = "Help.Content";
     t[4111] = "Content of this page";
+    t[4112] = "Statistics.XML.StartError";
+    t[4113] = "The \"Start\" attribute in the \"%s\" element has to be a number but is \"%s\".";
     t[4116] = "Color.BDB76B";
     t[4117] = "Dark khaki";
     t[4122] = "Main.Toolbar.ShowModelForTheseResults2.Hint";
@@ -1926,6 +1944,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4677] = "In the analytical models the service times are always assumed to be exponentially distributed.";
     t[4682] = "CommandLine.Count.ThenMaximumN";
     t[4683] = "a maximum of %d additional parameters can be entered";
+    t[4688] = "Distribution.WignerHalfCircleWikipedia";
+    t[4689] = "https://en.wikipedia.org/wiki/Wigner_semicircle_distribution";
     t[4690] = "Statistic.Viewer.Report.SaveHTMLImages";
     t[4691] = "Please choose how images should be saved in the report";
     t[4702] = "CommandLine.Benchmark.EventsPerSecond";
@@ -1990,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4809] = "Exporting failed";
     t[4816] = "SimStatistic.Retrys";
     t[4817] = "Retrys";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4818] = "CommandLine.ResetConfig.Name";
     t[4819] = "Reset";
     t[4820] = "Statistics.XML.WorkingTimes";
@@ -2010,12 +2036,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4871] = "Number of working agents";
     t[4872] = "Statistic.Viewer.SpecialText.SubCategory";
     t[4873] = "<p>Please select a <b>sub category</b> in the tree structure so display the corresponding information.</p>";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4878] = "JDataLoader.ImportErrorNoArea";
     t[4879] = "No area to be imported has been selected.";
     t[4880] = "Color.FAEBD7";
@@ -2210,6 +2230,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5303] = "Save...";
     t[5304] = "Main.Toolbar.ShowModelForTheseResults.Hint";
     t[5305] = "Displays the model that belongs to these simulation results";
+    t[5306] = "Statistic.Viewer.SaveTable.Error.Title";
+    t[5307] = "Error saving the table";
     t[5308] = "Distribution.PowerWikipedia";
     t[5309] = "https://en.wikipedia.org/wiki/Pareto_distribution#Inverse-Pareto_Distribution_/_Power_Distribution";
     t[5312] = "Window.Help";
@@ -2532,8 +2554,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6043] = "Simulation";
     t[6048] = "Simulator.Log.CallEvent";
     t[6049] = "CallEvent";
-    t[6054] = "Statistic.Viewer.Toolbar.Settings.Hint";
-    t[6055] = "Change settings for the selected statistics page.";
+    t[6054] = "Distribution.Radius";
+    t[6055] = "Radius";
     t[6062] = "LoadCalculator.AverageWaitingTime";
     t[6063] = "Average waiting time";
     t[6066] = "LoadCalculator.AverageNumberOfClientsInTheSystem";
@@ -2562,6 +2584,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6121] = "The model file contains unknown elements and therefore could not be loaded completely.";
     t[6130] = "Color.FFFACD";
     t[6131] = "Lemon Chiffon";
+    t[6132] = "FileType.Typst";
+    t[6133] = "Typst files";
     t[6138] = "QSExport.xml.Active";
     t[6139] = "Active";
     t[6142] = "DistributionFitter.PValue";
@@ -2638,8 +2662,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6309] = "Copy";
     t[6310] = "Color.FFFAFA";
     t[6311] = "Snow";
-    t[6312] = "Distribution.LevyWikipedia";
-    t[6313] = "https://en.wikipedia.org/wiki/Levy_distribution";
+    t[6312] = "Distribution.GeometricWikipedia";
+    t[6313] = "https://en.wikipedia.org/wiki/Geometric_distribution";
     t[6320] = "CalculatorDialog.Plotter.Toolbar.Print.Hint";
     t[6321] = "Prints the graphics.";
     t[6322] = "Statistics.ProcessTimes";
@@ -2672,8 +2696,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6363] = "no further parameters are allowed";
     t[6364] = "CommandLine.Count.Then1";
     t[6365] = "exactly one more parameter has to be entered";
-    t[6372] = "Statistic.Viewer.Toolbar.NewWindow.Title";
-    t[6373] = "Statistic data";
+    t[6372] = "Distribution.LevyWikipedia";
+    t[6373] = "https://en.wikipedia.org/wiki/Levy_distribution";
     t[6378] = "Statistic.Viewer.Context.Copy.Table";
     t[6379] = "Copy table";
     t[6396] = "Distribution.RayleighWikipedia";
@@ -2690,6 +2714,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6407] = "Use all CPU cores";
     t[6412] = "Statistic.Viewer.NoInternet.Info";
     t[6413] = "The specified address\n%s\ncould not be opened.";
+    t[6416] = "Statistics.XML.Sk";
+    t[6417] = "Skewness";
     t[6420] = "Statistic.Viewer.Context.Sort.Reset";
     t[6421] = "Reset order";
     t[6422] = "CommandLine.Count.ThenN";
@@ -2724,6 +2750,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6499] = "The range selected by %s and %s has to be either a row or a column.";
     t[6500] = "Statistics.XML.WaitingTimesCancel";
     t[6501] = "StatisticsWaitingTimesCancel";
+    t[6506] = "Distribution.WignerHalfCircle";
+    t[6507] = "Wigner half-circle distribution";
     t[6508] = "Statistic.Viewer.SpecialText.LoadData";
     t[6509] = "Load statistics from previous simulation run";
     t[6510] = "Statistic.Viewer.NoInternet.Title";
