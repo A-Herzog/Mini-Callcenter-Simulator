@@ -48,6 +48,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[95] = "Irwin-Hall distribution";
     t[96] = "CalculatorDialog.Tab.Distributions";
     t[97] = "Probability distributions";
+    t[100] = "Main.Toolbar.Help";
+    t[101] = "Help";
     t[104] = "LoadCalculator.AverageResidenceTime";
     t[105] = "Average residence time";
     t[110] = "Help.Search.Search";
@@ -70,6 +72,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[153] = "Save the results from this page as a file.";
     t[154] = "Statistics.UtilizationAndFailures.Idle";
     t[155] = "Idle";
+    t[158] = "Distribution.CV.Wikipedia";
+    t[159] = "https://en.wikipedia.org/wiki/Coefficient_of_variation";
     t[168] = "Main.Toolbar.LoadModel";
     t[169] = "Load model";
     t[170] = "Compare.DoubleFile.Title";
@@ -268,6 +272,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[599] = "Description";
     t[602] = "SimStatistic.WorkLoad.FullPart.Info";
     t[603] = "all agents busy";
+    t[608] = "JDistributionEditor.InfoWindow.WebApp";
+    t[609] = "Probability distributions plotter webapp";
     t[610] = "Model.XML.ForwardingProbability";
     t[611] = "ModelForwardingProbability";
     t[618] = "Dialog.OpenURL.CopyURL";
@@ -464,6 +470,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1045] = "Range";
     t[1048] = "CalculatorDialog.Result";
     t[1049] = "Result";
+    t[1052] = "Distribution.UniformInfo";
+    t[1053] = "<p>The uniform distribution is parameterized via the minimum possible value and the maximum possible value that it can assume. The expected value is then exactly the midpoint between these two values.</p>\n<p>The uniform distribution assigns the same probability to each value between the minimum and the maximum.</p>\n<p>Even if this seems relatively useful at first glance, <b>almost no real processes</b> are subject to a uniform distribution.</p>\n<p>A further disadvantage is that the otherwise usual parameters of expected value and standard deviation can only be set indirectly via the range of the distribution.</p>";
     t[1054] = "Statistic.Viewer.Toolbar.OpenText";
     t[1055] = "Open";
     t[1058] = "Setup.SaveError.Info";
@@ -538,6 +546,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1243] = "Description for the command";
     t[1246] = "Statistics.InterArrivalTimes";
     t[1247] = "Inter-arrival times";
+    t[1250] = "Distribution.ErlangInfo";
+    t[1251] = "<p>The Erlang distribution is a special case of the <b>Gamma distribution</b>. When modeling, it therefore almost always makes more sense to use the gamma distribution directly.</p>\n<p>From a mathematical point of view, the Erlang distribution represents the successive execution of several exponential distributions and is therefore important in theory.</p>";
     t[1252] = "SettingsDialog.ImageResolution";
     t[1253] = "Resolution when saving images";
     t[1256] = "Color.8B008B";
@@ -1054,6 +1064,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2461] = "Chartreuse";
     t[2466] = "Statistic.Viewer.Report.Settings.Header.Logo.Load.Hint";
     t[2467] = "Loads an image from file.";
+    t[2472] = "Distribution.NormalInfo";
+    t[2473] = "<p>The normal distribution results as a <b>theoretical limit distribution</b> when many independent distributions are executed one after the other.</p>\n<p>The parameters of the normal distribution are both its expected value and its standard deviation. This means that the parameters of the normal distribution can be set very easily (in practically any software).</p>\n<p>The normal distribution can always take on negative values. It is therefore <b>not suitable for modeling durations</b>. Log-normal distribution or gamma distribution are usually much better suited for this purpose. These can also be parameterized directly in Warteschlangensimulator via expected value and standard deviation.</p>";
     t[2474] = "FileType.png";
     t[2475] = "png files";
     t[2478] = "Editor.WaitingRoomAndWaitingTimeTolerance";
@@ -1208,6 +1220,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2861] = "orange red";
     t[2862] = "Statistics.ProcessTime";
     t[2863] = "Process time";
+    t[2866] = "Distribution.StdDev.Wikipedia";
+    t[2867] = "https://en.wikipedia.org/wiki/Standard_deviation";
     t[2868] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.Forwarding";
     t[2869] = "Forwardings can only be covered approximately.";
     t[2872] = "Distribution.Point";
@@ -1240,6 +1254,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2929] = "https://en.wikipedia.org/wiki/PERT_distribution";
     t[2936] = "SimStatistic.Queue.Distribution";
     t[2937] = "Distribution of the queue length";
+    t[2938] = "Distribution.PointInfo";
+    t[2939] = "<p>The one-point distribution is <b>not a probability distribution in the true sense of the word</b>. While normal probability distributions always return a (different) random value, the one-point distribution always returns the one set value.</p>\n<p>This means that the one-point distribution is <b>deterministic</b>.</p>\n<p>The purpose of the one-point distribution is that it can be used to model constant service times etc. without having to deviate from the notation of the probability distributions.</p>";
     t[2948] = "Statistics.ProcessTime.lower";
     t[2949] = "process time";
     t[2950] = "XML.ErrorProcessingFile";
@@ -1352,16 +1368,16 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3173] = "Rebecca Purpur";
     t[3174] = "Distribution.BetaWikipedia";
     t[3175] = "https://en.wikipedia.org/wiki/Beta_distribution";
-    t[3176] = "JDistributionEditor.Copy.Graphics";
-    t[3177] = "Graphics";
+    t[3176] = "Distribution.TriangularInfo";
+    t[3177] = "<p>The triangular distribution is always used when <b>expected value and standard deviation cannot be collected</b>, i.e. when no evaluable historical data is available. With the triangular distribution, the smallest value that has ever occurred (minimum), the most frequently occurring value (mode) and the largest value that has ever occurred (maximum) has to be set instead.</p>\n<p>This procedure, which differs greatly from the usual parameterization of many distributions, makes the triangular distribution interesting for cases in which no historical data is available from which the expected value and standard deviation can be determined.</p>\n<p>The problem with querying the parameters is that the <b>mode</b>, i.e. the value at which the probability density is highest, has to be specified. This usually does not match the mean value of the data.</p>";
     t[3178] = "Compare.InvalidStatisticFile.Title";
     t[3179] = "Invalid statistic file";
     t[3182] = "Color.008B8B";
     t[3183] = "Dark cyan";
     t[3186] = "Distribution.Pareto";
     t[3187] = "Pareto distribution";
-    t[3188] = "SimStatistic.deMinimale";
-    t[3189] = "Minimum";
+    t[3188] = "JDistributionEditor.InfoWindow.Parameters";
+    t[3189] = "Current distribution parameters";
     t[3194] = "Statistic.Viewer.Context.SelectColumn";
     t[3195] = "Select column";
     t[3198] = "QSExport.xml.Element.Text.FontBold";
@@ -1454,6 +1470,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3411] = "Used simulation model";
     t[3412] = "Dialog.Button.Copy.RandomNumbers";
     t[3413] = "Generate and copy random numbers";
+    t[3414] = "Statistics.ClientsInSystem";
+    t[3415] = "Clients in system";
     t[3416] = "Editor.Service.ServiceTimes";
     t[3417] = "Service times";
     t[3418] = "Distribution.LogNormalWikipedia";
@@ -1496,12 +1514,14 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3517] = "Parameter";
     t[3520] = "SimStatistic.NumberOfCallers";
     t[3521] = "Number of callers";
-    t[3522] = "SimStatistic.FreshCalls";
-    t[3523] = "Fresh calls";
+    t[3522] = "JDistributionEditor.Copy.Graphics";
+    t[3523] = "Graphics";
     t[3528] = "Statistics.InterArrivalTime";
     t[3529] = "Inter-arrival time";
     t[3532] = "Distribution.Uniform.Start";
     t[3533] = "Start";
+    t[3534] = "SimStatistic.deMinimale";
+    t[3535] = "Minimum";
     t[3546] = "SimStatistic.Retryer";
     t[3547] = "Repeaters";
     t[3552] = "Simulator.Log.ScheduleCallCancel.Info";
@@ -1530,6 +1550,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3603] = "But no other parameters were passed.";
     t[3604] = "CommandLine.Count.But1";
     t[3605] = "But one additional parameter was passed.";
+    t[3608] = "Distribution.GammaInfo";
+    t[3609] = "<p>The gamma distribution is very suitable for modeling service times and similar durations. In Warteschlangensimulator, the distribution is parameterized using the <b>expected value and standard deviation</b>.</p>\n<p>If these two values can be derived from historical data, the distribution is very suitable for modeling. If such values are not available, the triangular distribution can be used if necessary.</p>\n<p>The gamma distribution is usually also available in <b>spreadsheet programs</b>. However, the parameterization is usually not done via expected value and standard deviation. Manual conversions are necessary here (see documentation of the respective program).</p>";
     t[3610] = "Setup.SaveError.Title";
     t[3611] = "Configuration could not be saved";
     t[3612] = "Statistic.Viewer.SaveImage.Size.Title";
@@ -1642,6 +1664,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3837] = "Autocorrelation";
     t[3838] = "Dialog.RandomNumbers.Error";
     t[3839] = "The number of random numbers must be a positive integer number.";
+    t[3842] = "Distribution.LogNormalInfo";
+    t[3843] = "<p>The log-normal distribution is very suitable for modeling service times and similar durations. In Warteschlangensimulator, the distribution is parameterized using the <b>expected value and standard deviation</b>.</p>\n<p>If these two values can be derived from historical data, the distribution is very suitable for modeling. If such values are not available, the triangular distribution can be used if necessary.</p>\n<p>The log-normal distribution is usually also available in <b>spreadsheet programs</b>. However, the parameterization is usually not done via expected value and standard deviation. Manual conversions are necessary here (see documentation of the respective program).</p>";
     t[3844] = "Distribution.NegativeHyperGeom";
     t[3845] = "Negative hypergeometric distribution";
     t[3848] = "Main.Toolbar.LoadStatistics.Hint";
@@ -1734,6 +1758,10 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4091] = "Dark slate blue";
     t[4092] = "SimStatistic.Longest";
     t[4093] = "Longest";
+    t[4100] = "JDistributionEditor.InfoWindow.MoreInfo";
+    t[4101] = "More information";
+    t[4102] = "JDistributionEditor.Info";
+    t[4103] = "Info";
     t[4104] = "Statistics.XML.RunOS";
     t[4105] = "StatisticsSystem";
     t[4110] = "Help.Content";
@@ -1856,6 +1884,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4397] = "of the residence times";
     t[4398] = "Statistics.XML.CountSuccess.Error";
     t[4399] = "The \"countsuccess\" attribute in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
+    t[4402] = "JDistributionEditor.Info.Tooltip";
+    t[4403] = "Displays further information on the selected distribution type";
     t[4404] = "SimStatistic.WaitingTimes";
     t[4405] = "Waiting times";
     t[4410] = "Distribution.DegreesOfFreedom";
@@ -1980,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4753] = "Copy";
     t[4756] = "Distribution.Normal";
     t[4757] = "Normal distribution";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4758] = "Statistics.Number.All";
     t[4759] = "Total number of callers";
     t[4760] = "Statistic.Viewer.Report.Settings.Type.PDFonly";
@@ -2010,12 +2046,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4809] = "Exporting failed";
     t[4816] = "SimStatistic.Retrys";
     t[4817] = "Retrys";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4818] = "CommandLine.ResetConfig.Name";
     t[4819] = "Reset";
     t[4820] = "Statistics.XML.WorkingTimes";
@@ -2154,6 +2184,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5127] = "Blanched almond";
     t[5138] = "Color.778899";
     t[5139] = "Light slate gray";
+    t[5144] = "Distribution.Mean.Wikipedia";
+    t[5145] = "https://en.wikipedia.org/wiki/Mean";
     t[5146] = "SimStatistic.WorkLoad.IdleAgents";
     t[5147] = "Agents in idle";
     t[5150] = "Distribution.TriangularWikipedia";
@@ -2306,6 +2338,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5445] = "Burly wood";
     t[5446] = "Help.Search.SearchString";
     t[5447] = "Search keyword";
+    t[5452] = "JDistributionEditor.Wikipedia";
+    t[5453] = "Wikipedia";
     t[5456] = "LoadCalculator.OptionKLB.Paper";
     t[5457] = "Paper on the correction formula";
     t[5458] = "Editor.SaveModel.Error";
@@ -2482,6 +2516,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5851] = "Served clients";
     t[5852] = "ModelInfo.ServedClients.Line2";
     t[5853] = "leaving the system";
+    t[5854] = "Distribution.Mode.Wikipedia";
+    t[5855] = "https://en.wikipedia.org/wiki/Mode_(statistics)";
     t[5858] = "SimStatistic.SystemData.SimulatedEvents";
     t[5859] = "Simulated events";
     t[5862] = "CommandLine.Dialog.ParametersForThisCommand";
@@ -2506,8 +2542,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5897] = "Do not open web page.";
     t[5906] = "Statistic.of.QueueLength.lower";
     t[5907] = "of the queue length";
-    t[5920] = "Statistics.ClientsInSystem";
-    t[5921] = "Clients in system";
+    t[5920] = "SimStatistic.FreshCalls";
+    t[5921] = "Fresh calls";
     t[5930] = "CommandLine.Error.File.OutputAlreadyExist";
     t[5931] = "The output file %s already exists.";
     t[5936] = "Main.Menu.View.SimulationResults.Mnemonic";
@@ -2870,6 +2906,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6735] = "Search";
     t[6736] = "Compare.Title";
     t[6737] = "Compare results";
+    t[6738] = "Distribution.ExpInfo";
+    t[6739] = "<p>The exponential distribution has <b>only one parameter</b>, which defines both the expected value and the standard deviation. This has the advantage that only the expected value needs to be collected from the historical data in order to use the exponential distribution for modeling; the disadvantage, however, is that only the expected value can be set.</p>\n<p>With the exponential distribution, the standard deviation always has the same value as the expected value. This always results in a <b>coefficient of variation of 1</b>.</p>\n<p>The special property of the exponential distribution is that the probability that the event under consideration (e.g. a client arrival) will occur within the next minute is independent of whether the last event of this type occurred a minute or an hour ago. This property is also known as <b>memorylessness</b>. This usually applies to the intervals between the arrivals of independent clients. However, it practically never applies to e.g. service times.</p>\n<p>Consequently, the exponential distribution is usually very suitable for modeling <b>inter-arrival times</b>. However, other probability distributions (such as the log-normal distribution, the gamma distribution or the triangular distribution) should be used for modeling service times and similar variables.</p>";
     t[6740] = "Statistics.Distance";
     t[6741] = "Distance";
     t[6744] = "Compare.ReturnConfirm.InfoYes";
@@ -2968,8 +3006,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6977] = "Copy table of values";
     t[6978] = "Color.4B0082";
     t[6979] = "Indigo";
-    t[6980] = "Main.Toolbar.Help";
-    t[6981] = "Help";
+    t[6980] = "Distribution.Skewness.Wikipedia";
+    t[6981] = "https://en.wikipedia.org/wiki/Skewness";
     t[6986] = "Window.DiscardConfirmation.Info";
     t[6987] = "The model has been modified since the last save. Do you want to save it now?";
     t[6988] = "Statistics.XML.WelfordM2.Error";

@@ -48,6 +48,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[95] = "Irwin-Hall-Verteilung";
     t[96] = "CalculatorDialog.Tab.Distributions";
     t[97] = "Wahrscheinlichkeitsverteilungen";
+    t[100] = "Main.Toolbar.Help";
+    t[101] = "Hilfe";
     t[104] = "LoadCalculator.AverageResidenceTime";
     t[105] = "Mittlere Verweilzeit";
     t[110] = "Help.Search.Search";
@@ -70,6 +72,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[153] = "Speichert die auf dieser Seite angezeigten Ergebnisse in einer Datei.";
     t[154] = "Statistics.UtilizationAndFailures.Idle";
     t[155] = "Leerlauf";
+    t[158] = "Distribution.CV.Wikipedia";
+    t[159] = "https://de.wikipedia.org/wiki/Variationskoeffizient";
     t[168] = "Main.Toolbar.LoadModel";
     t[169] = "Modell laden";
     t[170] = "Compare.DoubleFile.Title";
@@ -268,6 +272,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[599] = "Beschreibung";
     t[602] = "SimStatistic.WorkLoad.FullPart.Info";
     t[603] = "alle Agenten belegt";
+    t[608] = "JDistributionEditor.InfoWindow.WebApp";
+    t[609] = "Wahrscheinlichkeitsverteilungsanzeige-WebApp";
     t[610] = "Model.XML.ForwardingProbability";
     t[611] = "ModellWeiterleitungswahrscheinlichkeit";
     t[618] = "Dialog.OpenURL.CopyURL";
@@ -464,6 +470,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1045] = "Wertebereich";
     t[1048] = "CalculatorDialog.Result";
     t[1049] = "Ergebnis";
+    t[1052] = "Distribution.UniformInfo";
+    t[1053] = "<p>Die Gleichverteilung wird \u00fcber den minimal m\u00f6glichen Wert und den maximal m\u00f6glichen Wert, den sie annehmen kann, parametrisiert. Der Erwartungswert ist dann genau der Mittelpunkt zwischen diesen beiden Werten.</p>\n<p>Die Gleichverteilung ordnet jedem Wert zwischen dem Minimum und dem Maximum dieselbe Wahrscheinlichkeit zu.</p>\n<p>Auch wenn dies auf den ersten Blick relativ n\u00fctzlich erscheint, so unterliegen doch <b>fast keine realen Prozesse</b> einer Gleichverteilung.</p>\n<p>Ein weiterer Nachteil besteht darin, dass die ansonsten \u00fcblichen Kenngr\u00f6\u00dfen Erwartungswert und Standardabweichung nur indirekt \u00fcber den Bereich der Verteilung eingestellt werden k\u00f6nnen.</p>";
     t[1054] = "Statistic.Viewer.Toolbar.OpenText";
     t[1055] = "\u00d6ffnen";
     t[1058] = "Setup.SaveError.Info";
@@ -538,6 +546,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1243] = "Beschreibung des Befehls";
     t[1246] = "Statistics.InterArrivalTimes";
     t[1247] = "Zwischenankunftszeiten";
+    t[1250] = "Distribution.ErlangInfo";
+    t[1251] = "<p>Die Erlang-Verteilung stellt einen Spezialfall der <b>Gamma-Verteilung</b> dar. Bei der Modellierung ist es daher fast immer sinnvoller, direkt die Gamma-Verteilung zu verwenden.</p>\n<p>Von mathematischen Standpunkt her stellt die Erlang-Verteilung die Hintereinanderausf\u00fchrung mehrerer Exponentialverteilungen dar und ist daher in der Theorie von Bedeutung.</p>";
     t[1252] = "SettingsDialog.ImageResolution";
     t[1253] = "Aufl\u00f6sung beim Speichern";
     t[1256] = "Color.8B008B";
@@ -1054,6 +1064,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2461] = "Chartreuse";
     t[2466] = "Statistic.Viewer.Report.Settings.Header.Logo.Load.Hint";
     t[2467] = "L\u00e4dt ein Bild aus einer Datei.";
+    t[2472] = "Distribution.NormalInfo";
+    t[2473] = "<p>Die Normalverteilung ergibt sich als <b>theoretische Grenzverteilung</b> bei der Hintereinanderausf\u00fchrung vieler jeweils unabh\u00e4ngiger Verteilungen.</p>\n<p>Die Parameter der Normalverteilung sind zugleich deren Erwartungswert und deren Standardabweichung. Dies hat zur Folge, dass die Kenngr\u00f6\u00dfen der Normalverteilung (in praktisch jeder Software) sehr einfach eingestellt werden k\u00f6nnen.</p>\n<p>Die Normalverteilung kann stets auch negative Werte annehmen. Daher eignet sich diese <b>eher nicht zur Modellierung von Zeitdauern</b>. Lognormalverteilung oder Gamma-Verteilung sind f\u00fcr diesen Zweck meist wesentlich besser geeignet. Auch diese k\u00f6nnen im Warteschlangensimulator direkt \u00fcber Erwartungswert und Standardabweichung parametrisiert werden.</p>";
     t[2474] = "FileType.png";
     t[2475] = "png-Dateien";
     t[2478] = "Editor.WaitingRoomAndWaitingTimeTolerance";
@@ -1208,6 +1220,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2861] = "Orangerot";
     t[2862] = "Statistics.ProcessTime";
     t[2863] = "Bedienzeit";
+    t[2866] = "Distribution.StdDev.Wikipedia";
+    t[2867] = "https://de.wikipedia.org/wiki/Standardabweichung";
     t[2868] = "Statistics.AnalyticModelCompare.Analysis.NotAnalytic.Forwarding";
     t[2869] = "Weiterleitungen k\u00f6nnen nur approximativ erfasst werden.";
     t[2872] = "Distribution.Point";
@@ -1240,6 +1254,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2929] = "https://en.wikipedia.org/wiki/PERT_distribution";
     t[2936] = "SimStatistic.Queue.Distribution";
     t[2937] = "Verteilung der Warteschlangenl\u00e4nge";
+    t[2938] = "Distribution.PointInfo";
+    t[2939] = "<p>Bei der Ein-Punkt-Verteilung handelt es sich um <b>keine Wahrscheinlichkeitsverteilung im eigentlichen Sinne</b>. W\u00e4hrend normale Wahrscheinlichkeitsverteilung stets einen (verschiedenen) zuf\u00e4lligen Wert liefern, liefert die Ein-Punkt-Verteilung stets den einen, eingestellten Wert zur\u00fcck.</p>\n<p>Das bedeutet, die Ein-Punkt-Verteilung ist <b>deterministisch.</p>\n<p>Der Sinn der Ein-Punkt-Verteilung besteht darin, dass mit ihr konstante Bediendauern usw. modelliert werden k\u00f6nnen, ohne dabei von der Notation der Wahrscheinlichkeitsverteilungen abweichen zu m\u00fcssen.</p>";
     t[2948] = "Statistics.ProcessTime.lower";
     t[2949] = "Bedienzeit";
     t[2950] = "XML.ErrorProcessingFile";
@@ -1352,16 +1368,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3173] = "Rebecca Purpur";
     t[3174] = "Distribution.BetaWikipedia";
     t[3175] = "https://de.wikipedia.org/wiki/Beta-Verteilung";
-    t[3176] = "JDistributionEditor.Copy.Graphics";
-    t[3177] = "Grafik";
+    t[3176] = "Distribution.TriangularInfo";
+    t[3177] = "<p>Die Dreiecksverteilung kommt immer dann zum Einsatz, wenn <b>Erwartungswert und Standardabweichung nicht erhoben werden k\u00f6nnen</b>, d.h. wenn keine auswertbaren historischen Daten vorliegen. Bei der Dreiecksverteilung m\u00fcssen stattdessen der kleinste je aufgetretene Wert (Minimum), der am h\u00e4ufigsten auftretende Wert (Modus) und gr\u00f6\u00dfete je aufgetretene Wert (Maximum) eingestellt werden.</p>\n<p>Diese von der sonst bei vielen Verteilungen \u00fcblichen Parametrisierung stark abweichende Vorgehensweise macht die Dreiecksverteilung f\u00fcr F\u00e4lle, in denen keine historischen Daten vorhanden sind, aus denen Erwartungswert und Standardabweichung erhoben werden k\u00f6nnen, interessant.</p>\n<p>Das Problem bei der Abfrage der Parameter besteht darin, dass der <b>Modus</b>, d.h. der Wert an dem die Wahrscheinlichkeitsdichte am h\u00f6chsten ist, angegeben werden muss. Dieser stimmt \u00fcblicherweise nicht mit dem Mittelwert der Daten \u00fcberein.</p>";
     t[3178] = "Compare.InvalidStatisticFile.Title";
     t[3179] = "Ung\u00fcltige Statistikdatei";
     t[3182] = "Color.008B8B";
     t[3183] = "Dunkelzyan";
     t[3186] = "Distribution.Pareto";
     t[3187] = "Pareto-Verteilung";
-    t[3188] = "SimStatistic.deMinimale";
-    t[3189] = "Minimale";
+    t[3188] = "JDistributionEditor.InfoWindow.Parameters";
+    t[3189] = "Aktuell gew\u00e4hlte Parameter";
     t[3194] = "Statistic.Viewer.Context.SelectColumn";
     t[3195] = "Spalte ausw\u00e4hlen";
     t[3198] = "QSExport.xml.Element.Text.FontBold";
@@ -1454,6 +1470,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3411] = "Verwendetes Simulationsmodell";
     t[3412] = "Dialog.Button.Copy.RandomNumbers";
     t[3413] = "Zufallszahlen erzeugen und kopieren";
+    t[3414] = "Statistics.ClientsInSystem";
+    t[3415] = "Kunden im System";
     t[3416] = "Editor.Service.ServiceTimes";
     t[3417] = "Bedienzeiten";
     t[3418] = "Distribution.LogNormalWikipedia";
@@ -1496,12 +1514,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3517] = "Parameter";
     t[3520] = "SimStatistic.NumberOfCallers";
     t[3521] = "Anruferanzahl";
-    t[3522] = "SimStatistic.FreshCalls";
-    t[3523] = "Erstanrufer";
+    t[3522] = "JDistributionEditor.Copy.Graphics";
+    t[3523] = "Grafik";
     t[3528] = "Statistics.InterArrivalTime";
     t[3529] = "Zwischenankunftszeit";
     t[3532] = "Distribution.Uniform.Start";
     t[3533] = "Start";
+    t[3534] = "SimStatistic.deMinimale";
+    t[3535] = "Minimale";
     t[3546] = "SimStatistic.Retryer";
     t[3547] = "Wiederholer";
     t[3552] = "Simulator.Log.ScheduleCallCancel.Info";
@@ -1530,6 +1550,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3603] = "Es wurden jedoch keine weiteren Parameter \u00fcbergeben.";
     t[3604] = "CommandLine.Count.But1";
     t[3605] = "Es wurde jedoch ein weiterer Parameter \u00fcbergeben.";
+    t[3608] = "Distribution.GammaInfo";
+    t[3609] = "<p>Die Gamma-Verteilung eignet sich sehr gut zur Modellierung von Bediendauern und \u00e4hnlichen Zeitdauern. Im Warteschlangensimulator wird die Verteilung \u00fcber <b>Erwartungswert und Standardabweichung</b> parametrisiert.</p>\n<p>K\u00f6nnen diese beiden Werte aus den historischen Daten abgeleitet werden, so eigent sich die Verteilung sehr gut zur Modellierung. Stehen derartige Werte nicht zur Verf\u00fcgung, so kann ggf. auf die Dreiecksverteilung zur\u00fcckgegriffen werden.</p>\n<p>In <b>Tabellenkalkulationen</b> ist \u00fcblicherweise auch die Gamma-Verteilung hinterlegt. Allerdings erfolgt doch die Parametrisierung meist nicht \u00fcber Erwartungswert und Standardabweichung. Manuelle Umrechnungen sind hier n\u00f6tig (siehe Dokumentation des jeweiligen Programms).</p>";
     t[3610] = "Setup.SaveError.Title";
     t[3611] = "Konfiguration konnte nicht gespeichert werden";
     t[3612] = "Statistic.Viewer.SaveImage.Size.Title";
@@ -1642,6 +1664,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3837] = "Autokorrelation";
     t[3838] = "Dialog.RandomNumbers.Error";
     t[3839] = "Die Anzahl an Zufallszahlen muss eine positive Ganzzahl sein.";
+    t[3842] = "Distribution.LogNormalInfo";
+    t[3843] = "<p>Die Lognormalverteilung eignet sich sehr gut zur Modellierung von Bediendauern und \u00e4hnlichen Zeitdauern. Im Warteschlangensimulator wird die Verteilung \u00fcber <b>Erwartungswert und Standardabweichung</b> parametrisiert.</p>\n<p>K\u00f6nnen diese beiden Werte aus den historischen Daten abgeleitet werden, so eigent sich die Verteilung sehr gut zur Modellierung. Stehen derartige Werte nicht zur Verf\u00fcgung, so kann ggf. auf die Dreiecksverteilung zur\u00fcckgegriffen werden.</p>\n<p>In <b>Tabellenkalkulationen</b> ist \u00fcblicherweise auch die Lognrmalverteilung hinterlegt. Allerdings erfolgt doch die Parametrisierung meist nicht \u00fcber Erwartungswert und Standardabweichung. Manuelle Umrechnungen sind hier n\u00f6tig (siehe Dokumentation des jeweiligen Programms).</p>";
     t[3844] = "Distribution.NegativeHyperGeom";
     t[3845] = "Negative hypergeometrische Verteilung";
     t[3848] = "Main.Toolbar.LoadStatistics.Hint";
@@ -1734,6 +1758,10 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4091] = "Dunkel Slateblau";
     t[4092] = "SimStatistic.Longest";
     t[4093] = "L\u00e4ngste";
+    t[4100] = "JDistributionEditor.InfoWindow.MoreInfo";
+    t[4101] = "Weitere Informationen";
+    t[4102] = "JDistributionEditor.Info";
+    t[4103] = "Info";
     t[4104] = "Statistics.XML.RunOS";
     t[4105] = "StatistikSystem";
     t[4110] = "Help.Content";
@@ -1856,6 +1884,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4397] = "der Verweilzeit";
     t[4398] = "Statistics.XML.CountSuccess.Error";
     t[4399] = "Das \"AnzahlErfolg\"-Attribut im \"%s\"-Element muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
+    t[4402] = "JDistributionEditor.Info.Tooltip";
+    t[4403] = "Zeigt weitere Informationen zu dem gew\u00e4hlten Verteilungstyp an";
     t[4404] = "SimStatistic.WaitingTimes";
     t[4405] = "Wartezeiten";
     t[4410] = "Distribution.DegreesOfFreedom";
@@ -1980,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4753] = "Kopieren";
     t[4756] = "Distribution.Normal";
     t[4757] = "Normalverteilung";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4758] = "Statistics.Number.All";
     t[4759] = "Anzahl an Anrufen insgesamt";
     t[4760] = "Statistic.Viewer.Report.Settings.Type.PDFonly";
@@ -2010,12 +2046,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4809] = "Export fehlgeschlagen";
     t[4816] = "SimStatistic.Retrys";
     t[4817] = "Wiederholungen";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4818] = "CommandLine.ResetConfig.Name";
     t[4819] = "Reset";
     t[4820] = "Statistics.XML.WorkingTimes";
@@ -2154,6 +2184,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5127] = "Blanched Almond";
     t[5138] = "Color.778899";
     t[5139] = "Helles Slate Grau";
+    t[5144] = "Distribution.Mean.Wikipedia";
+    t[5145] = "https://de.wikipedia.org/wiki/Mittelwert";
     t[5146] = "SimStatistic.WorkLoad.IdleAgents";
     t[5147] = "Agenten im Leerlauf";
     t[5150] = "Distribution.TriangularWikipedia";
@@ -2306,6 +2338,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5445] = "Burly Wood";
     t[5446] = "Help.Search.SearchString";
     t[5447] = "Suchbegriff";
+    t[5452] = "JDistributionEditor.Wikipedia";
+    t[5453] = "Wikipedia";
     t[5456] = "LoadCalculator.OptionKLB.Paper";
     t[5457] = "Paper zur Korrekturformel";
     t[5458] = "Editor.SaveModel.Error";
@@ -2482,6 +2516,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5851] = "Bediente Kunden";
     t[5852] = "ModelInfo.ServedClients.Line2";
     t[5853] = "verlassen das System";
+    t[5854] = "Distribution.Mode.Wikipedia";
+    t[5855] = "https://de.wikipedia.org/wiki/Modus_(Statistik)";
     t[5858] = "SimStatistic.SystemData.SimulatedEvents";
     t[5859] = "Simulierte Ereignisse";
     t[5862] = "CommandLine.Dialog.ParametersForThisCommand";
@@ -2506,8 +2542,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5897] = "Webseite nicht aufrufen.";
     t[5906] = "Statistic.of.QueueLength.lower";
     t[5907] = "der Warteschlangenl\u00e4nge";
-    t[5920] = "Statistics.ClientsInSystem";
-    t[5921] = "Kunden im System";
+    t[5920] = "SimStatistic.FreshCalls";
+    t[5921] = "Erstanrufer";
     t[5930] = "CommandLine.Error.File.OutputAlreadyExist";
     t[5931] = "Die Ausgabedatei %s existiert bereits.";
     t[5936] = "Main.Menu.View.SimulationResults.Mnemonic";
@@ -2870,6 +2906,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6735] = "Suchen";
     t[6736] = "Compare.Title";
     t[6737] = "Ergebnisse vergleichen";
+    t[6738] = "Distribution.ExpInfo";
+    t[6739] = "<p>Die Exponentialverteilung besitzt <b>nur einen Parameter</b>, der zugleich Erwartungswert und Standardabweichung festlegt. Dies bringt den Vorteil mit sich, dass nur der Erwartungswert aus den historischen Daten erhoben werden muss, um die Exponentialverteilung f\u00fcr die Modellierung verwenden zu k\u00f6nnen; der Nachteil besteht jedoch damit zugleich darin, dass auch nur der Erwartungswert eingestellt werden kann.</p>\n<p>Bei der Exponentialverteilung besitzt die Standardabweichung immer denselben Wert wie der Erwartungswert. Damit ergibt sich <b>stets ein Variationskoeffizient von 1</b>.</p>\n<p>Die Besonderheit der Exponentialverteilung besteht darin, dass die Wahrscheinlichkeit daf\u00fcr, dass das zu betrachtete Ereignis (z.B. eine Kundenankunft) innerhalb der n\u00e4chsten Minute eintritt, unabh\u00e4ngig davon ist, ob das letzte Ereignis dieser Art vor einer Minute oder einer Stunde eingetreten ist. Diese Eigenschaft wird auch <b>Ged\u00e4chtnislosigkeit</b> genannt. F\u00fcr die Abst\u00e4nde der Ank\u00fcnfte von unabh\u00e4ngigen Kunden tritt dies \u00fcblicherweise zu. F\u00fcr z.B. Bediendauern hingegen praktisch nie.</p>\n<p>Folglich ist die Exponentialverteilung f\u00fcr die Modellierung von <b>Zwischenankunftszeiten</b> meist sehr gut geeignet. F\u00fcr die Modellierung von Bediendauern und \u00e4hnlichen Gr\u00f6\u00dfen sollte jedoch auf andere Wahrscheinlichkeitsverteilungen (wie z.B. die Log-Normalverteilung, die Gamma-Verteilung oder die Dreiecksverteilung) zur\u00fcckgegriffen werden.</p>";
     t[6740] = "Statistics.Distance";
     t[6741] = "Abstand";
     t[6744] = "Compare.ReturnConfirm.InfoYes";
@@ -2968,8 +3006,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6977] = "Wertetabelle kopieren";
     t[6978] = "Color.4B0082";
     t[6979] = "Indigo";
-    t[6980] = "Main.Toolbar.Help";
-    t[6981] = "Hilfe";
+    t[6980] = "Distribution.Skewness.Wikipedia";
+    t[6981] = "https://de.wikipedia.org/wiki/Schiefe_(Statistik)";
     t[6986] = "Window.DiscardConfirmation.Info";
     t[6987] = "Das Modell wurde seit dem letzten Speichern ge\u00e4ndert. Soll es jetzt gespeichert werden?";
     t[6988] = "Statistics.XML.WelfordM2.Error";
