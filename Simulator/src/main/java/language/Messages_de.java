@@ -150,6 +150,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[323] = "Hilfe zu regul\u00e4ren Ausdr\u00fccken";
     t[340] = "Statistics.XML.ValuesSquared";
     t[341] = "WerteSumme2";
+    t[344] = "XML.InterpreterError";
+    t[345] = "Der XML-Interpreter konnte nicht initalisiert werden.";
     t[356] = "Distribution.Erlang";
     t[357] = "Erlang-Verteilung";
     t[358] = "Color.FFFF00";
@@ -272,8 +274,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[599] = "Beschreibung";
     t[602] = "SimStatistic.WorkLoad.FullPart.Info";
     t[603] = "alle Agenten belegt";
-    t[608] = "JDistributionEditor.InfoWindow.WebApp";
-    t[609] = "Wahrscheinlichkeitsverteilungsanzeige-WebApp";
+    t[608] = "Distribution.GeneralizedRademacher";
+    t[609] = "Verallgemeinerte Rademacher-Verteilung";
     t[610] = "Model.XML.ForwardingProbability";
     t[611] = "ModellWeiterleitungswahrscheinlichkeit";
     t[618] = "Dialog.OpenURL.CopyURL";
@@ -552,6 +554,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1253] = "Aufl\u00f6sung beim Speichern";
     t[1256] = "Color.8B008B";
     t[1257] = "Dunkelmagenta";
+    t[1260] = "Distribution.CosineWikipedia";
+    t[1261] = "https://en.wikipedia.org/wiki/Raised_cosine_distribution";
     t[1262] = "CommandLine.Benchmark.Name1";
     t[1263] = "Benchmark";
     t[1264] = "CommandLine.Benchmark.Name2";
@@ -1160,6 +1164,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2663] = "Weizen";
     t[2664] = "QSExport.xml.Type";
     t[2665] = "Typ";
+    t[2668] = "Distribution.Boltzmann";
+    t[2669] = "Boltzmann-Verteilung";
     t[2684] = "LoadCalculator.AverageWaitingTimeTolerance";
     t[2685] = "Durchschnittliche Wartezeittoleranz";
     t[2688] = "Statistics.XML.Values.Error";
@@ -1214,8 +1220,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2839] = "Die Ausgabedatei %s existiert bereits.";
     t[2842] = "XML.ErrorCreatingZipFile";
     t[2843] = "Es ist ein Fehler beim Anlegen einer Datei innerhalb der Zip-Datei\n%s\naufgetreten.";
-    t[2846] = "XML.InterpreterError";
-    t[2847] = "Der XML-Interpreter konnte nicht initalisiert werden.";
+    t[2846] = "Distribution.InverseGammaWikipedia";
+    t[2847] = "https://en.wikipedia.org/wiki/Inverse-gamma_distribution";
     t[2860] = "Color.FF4500";
     t[2861] = "Orangerot";
     t[2862] = "Statistics.ProcessTime";
@@ -1378,6 +1384,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3187] = "Pareto-Verteilung";
     t[3188] = "JDistributionEditor.InfoWindow.Parameters";
     t[3189] = "Aktuell gew\u00e4hlte Parameter";
+    t[3190] = "Distribution.Cosine";
+    t[3191] = "Cosinus-Verteilung";
     t[3194] = "Statistic.Viewer.Context.SelectColumn";
     t[3195] = "Spalte ausw\u00e4hlen";
     t[3198] = "QSExport.xml.Element.Text.FontBold";
@@ -1406,6 +1414,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3255] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[3266] = "Table.BoolFalse";
     t[3267] = "FALSCH";
+    t[3270] = "JDistributionEditor.InfoWindow.WebApp";
+    t[3271] = "Wahrscheinlichkeitsverteilungsanzeige-WebApp";
     t[3272] = "Statistic.Viewer.Context.Filter.All";
     t[3273] = "Alle anzeigen";
     t[3280] = "ModelInfo.Cancel.Line1";
@@ -1504,6 +1514,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3487] = "Abbruchzeit";
     t[3488] = "Dialog.RandomNumbers.Count";
     t[3489] = "Anzahl an zu erzeugenden Zufallszahlen";
+    t[3496] = "Statistic.Viewer.Toolbar.OpenTable.Hint";
+    t[3497] = "Tabelle in externer Anwendung anzeigen.";
     t[3498] = "Compare.SelectStatisticFile";
     t[3499] = "Statistikdatei ausw\u00e4hlen";
     t[3502] = "Statistic.Viewer.Information";
@@ -1522,6 +1534,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3533] = "Start";
     t[3534] = "SimStatistic.deMinimale";
     t[3535] = "Minimale";
+    t[3536] = "Distribution.ContinuousBernoulli";
+    t[3537] = "Kontinuierliche Bernoulli-Verteilung";
     t[3546] = "SimStatistic.Retryer";
     t[3547] = "Wiederholer";
     t[3552] = "Simulator.Log.ScheduleCallCancel.Info";
@@ -1640,6 +1654,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3769] = "Vergleich mit analytischen Modellen";
     t[3770] = "Dialog.Button.Help";
     t[3771] = "Hilfe";
+    t[3776] = "Distribution.InverseGamma";
+    t[3777] = "Inverse Gamma-Verteilung";
     t[3778] = "SettingsDialog.Theme.System";
     t[3779] = "Systemvorgabe";
     t[3788] = "Statistics.UtilizationAndFailures.PartialUtilization";
@@ -1676,8 +1692,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3869] = "Diese Einstellungen werden f\u00fcr pdf- und docx-Zusammenfassungen verwendet.";
     t[3870] = "Statistics.WaitingTime.lower";
     t[3871] = "Wartezeit";
-    t[3874] = "Statistic.Viewer.Report.Workbook.Error.Title";
-    t[3875] = "Fehlern beim Speichern der Arbeitsmappe";
+    t[3874] = "Distribution.HalfCauchy";
+    t[3875] = "Halbe Cauchy-Verteilung";
     t[3878] = "Distribution.ChiWikipedia";
     t[3879] = "https://en.wikipedia.org/wiki/Chi_distribution";
     t[3884] = "LoadCalculator.WorkingTimePerDay";
@@ -1840,6 +1856,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4285] = "Anhalten";
     t[4292] = "SettingsDialog.Languages";
     t[4293] = "Anzeigesprache";
+    t[4294] = "Distribution.Planck";
+    t[4295] = "Planck-Verteilung";
     t[4302] = "Dialog.Overwrite.No.Info";
     t[4303] = "Beh\u00e4lt die bestehende Datei unver\u00e4ndert bei. Die neuen Daten werden nicht gespeichert.";
     t[4304] = "Statistic.Viewer.Report.SaveHTMLImages.Files";
@@ -1904,6 +1922,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4445] = "%d von %d Verteilungen ist hervorgehoben.";
     t[4454] = "Color.800080";
     t[4455] = "Purpur";
+    t[4458] = "Distribution.LogGammaWikipedia";
+    t[4459] = "https://de.wikipedia.org/wiki/Logarithmische_Gammaverteilung";
     t[4464] = "Statistic.Tree.Parameter.BookmarkOff.Hint";
     t[4465] = "Hebt die Markierung des aktuellen Baumeintrags auf";
     t[4474] = "Statistics.XML.RunHalfWide";
@@ -1990,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4713] = "Modell festgehalten";
     t[4726] = "SimStatistic.SystemData.MultiThreadInfo";
     t[4727] = "Die mit (*) gekennzeichneten Angaben geben jeweils die reale\nRechenzeit auf einem CPU-Kern an.";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4728] = "Statistics.XML.Quotient";
     t[4729] = "Quotient";
     t[4732] = "Help.Search.ResultCountSingular";
@@ -2010,12 +2036,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4753] = "Kopieren";
     t[4756] = "Distribution.Normal";
     t[4757] = "Normalverteilung";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4758] = "Statistics.Number.All";
     t[4759] = "Anzahl an Anrufen insgesamt";
     t[4760] = "Statistic.Viewer.Report.Settings.Type.PDFonly";
@@ -2194,8 +2214,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5153] = "Der Wert der Zelle %s \"%s\" ist keine g\u00fcltige Zahl.";
     t[5154] = "LoadCalculator.BatchSize";
     t[5155] = "Bedien-Batch-Gr\u00f6\u00dfe";
-    t[5158] = "Statistic.Viewer.Toolbar.OpenTable.Hint";
-    t[5159] = "Tabelle in externer Anwendung anzeigen.";
+    t[5158] = "Distribution.LogLaplaceWikipedia";
+    t[5159] = "https://en.wikipedia.org/wiki/Log-Laplace_distribution";
     t[5162] = "Statistics.XML.QueueLength";
     t[5163] = "StatistikWarteschlange";
     t[5168] = "QSExport.xml.Element.Edge";
@@ -2220,6 +2240,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5219] = "Tabellen\u00fcberschriften";
     t[5220] = "CommandLine.Report.Description.Short";
     t[5221] = "Exportiert einen Teil oder die gesamten Simulationsergebnisse f\u00fcr ein Modell.";
+    t[5222] = "Dialog.RandomNumbers.Generator";
+    t[5223] = "Generator";
     t[5228] = "SimStatistic.deMaximale";
     t[5229] = "Maximale";
     t[5238] = "FileType.SciLabScript";
@@ -2534,6 +2556,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5887] = "Alle Seiten";
     t[5888] = "Color.9932CC";
     t[5889] = "Dunkel Orchid";
+    t[5890] = "Distribution.LogGamma";
+    t[5891] = "Log-Gamma-Verteilung";
     t[5892] = "Main.Menu.Help.Help";
     t[5893] = "Hilfe";
     t[5894] = "Statistics.XML.Count.Error";
@@ -2570,6 +2594,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5999] = "Ereignisse pro Sekunde";
     t[6002] = "Statistics.XML.Numerator";
     t[6003] = "Zaehler";
+    t[6004] = "Distribution.GeneralizedRademacherWikipedia";
+    t[6005] = "https://de.wikipedia.org/wiki/Rademacherverteilung";
     t[6006] = "Dialog.OpenURL.InfoYes";
     t[6007] = "Webseite im Standard-Browser \u00f6ffnen.";
     t[6012] = "Window.CannotShowModel.Info";
@@ -2622,6 +2648,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6131] = "Lemon Chiffon";
     t[6132] = "FileType.Typst";
     t[6133] = "Typst-Datei";
+    t[6134] = "Distribution.LogLaplace";
+    t[6135] = "Log-Laplace-Verteilung";
     t[6138] = "QSExport.xml.Active";
     t[6139] = "Aktiv";
     t[6142] = "DistributionFitter.PValue";
@@ -2840,6 +2868,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6595] = "Fehler beim Speichern der Datei";
     t[6598] = "LoadCalculator.ResultFactorKLB";
     t[6599] = "Kr\u00e4mer, Langenbach-Belz Korrekturfaktor";
+    t[6602] = "Statistic.Viewer.Report.Workbook.Error.Title";
+    t[6603] = "Fehlern beim Speichern der Arbeitsmappe";
     t[6608] = "Distribution.Uniform.End";
     t[6609] = "Ende";
     t[6610] = "Compare.Error.ModelError.CannotKeep";
@@ -3002,6 +3032,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6947] = "Ausgang";
     t[6958] = "Help.Content.Info";
     t[6959] = "Zeigt die Abschnitts\u00fcberschriften dieser Seite an";
+    t[6962] = "Distribution.ContinuousBernoulliWikipedia";
+    t[6963] = "https://en.wikipedia.org/wiki/Continuous_Bernoulli_distribution";
     t[6976] = "Dialog.Button.Copy.Table";
     t[6977] = "Wertetabelle kopieren";
     t[6978] = "Color.4B0082";
