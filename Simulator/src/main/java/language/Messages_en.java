@@ -82,8 +82,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[177] = "Waiting time over all callers";
     t[186] = "QSExport.xml.TimeBase.Seconds";
     t[187] = "Seconds";
-    t[190] = "SetupFailure.Title";
-    t[191] = "Saving settings failed";
+    t[190] = "Distribution.TrapezoidInfo";
+    t[191] = "<p>The trapezoidal distribution is a combination of a triangular distribution and an uniform distribution. While the trapezoidal distribution, like the uniform distribution, has a constant density in the middle over a range, it has an increase and decrease in density at the edges of the carrier range with an adjustable gradient.</p>";
     t[192] = "Statistics.XML.StdDev";
     t[193] = "StandardDeviation";
     t[194] = "Color.FFDAB9";
@@ -390,6 +390,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[889] = "E";
     t[890] = "Distribution.Power";
     t[891] = "Power distribution";
+    t[894] = "Distribution.WeibullInfo";
+    t[895] = "<p>The Weibull distribution is often used to model lifetimes, as it allows you to explicitly set whether the failure rate increases, decreases, or remains constant over time.</p>\n<p>If the form parameter is set to a value less than one, the failure rate decreases over time (teething problems). If a value greater than one is used, the failure rate increases (wear and tear failures).</p>";
     t[896] = "Statistics.SystemData.RunUser";
     t[897] = "User (simulation run)";
     t[900] = "XML.ErrorOpeningFile";
@@ -758,6 +760,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[1737] = "Lime green";
     t[1744] = "LoadCalculator.Units.InSeconds";
     t[1745] = "in seconds";
+    t[1752] = "Distribution.HyperGeomInfo";
+    t[1753] = "<p>The hypergeometric distribution is a discrete probability distribution. It is therefore not suitable for describing durations of time, but rather random processes that can each take on discrete values.</p>\n<p>The hypergeometric distribution describes the probabilities when <b>drawing without replacement</b> from an urn containing balls of two different colors.</p>";
     t[1754] = "Compare.ReturnConfirm.Title";
     t[1755] = "Return to kept model";
     t[1756] = "Color.FFFFFA";
@@ -906,8 +910,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[2101] = "The simulation run was not terminated correctly.";
     t[2104] = "FileType.TypstTable";
     t[2105] = "Typst tables";
-    t[2112] = "LoadCalculator.Tab.ErlangCext";
-    t[2113] = "Erlang C (extended)";
+    t[2112] = "Distribution.BetaInfo";
+    t[2113] = "<p>The beta distribution has a special property in that it has a finite support, i.e., it only takes positive values within a limited range. This makes it particularly suitable for modeling processes that are known to have a finite maximum duration.</p>\n<p>In addition to specifying the support range, the beta distribution has two parameters that allow it to be configured very flexibly. However, this flexibility also makes it difficult to convert specified parameters (expected value and standard deviation) to the parameters of the beta distribution.</p>";
     t[2114] = "Statistics.NumberOfClientsInTheSystem";
     t[2115] = "Number of clients in the system";
     t[2116] = "Statistic.Viewer.SaveImage.Error.Title";
@@ -1410,8 +1414,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[3251] = "WaitingCancelation";
     t[3252] = "Main.Menu.Extras.Calculator";
     t[3253] = "Calculator...";
-    t[3254] = "Statistics.XML.RunEvents.Error";
-    t[3255] = "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
+    t[3254] = "Distribution.ChiSquareInfo";
+    t[3255] = "<p>Similar to the normal distribution, the chi-squared distribution is the additive superposition of several independent individual distributions. While the normal distribution is the limit distribution when superimposing an infinite number of distributions, in the chi-squared distribution, the number of degrees of freedom indicates the number of summands.</p>\n<p>The Chi^2 distribution is calculated as the sum of the squared values of as many standard normally distributed random variables as specified by the degrees of freedom.</p>";
     t[3266] = "Table.BoolFalse";
     t[3267] = "FALSE";
     t[3270] = "JDistributionEditor.InfoWindow.WebApp";
@@ -1766,6 +1770,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4053] = "This file was created using %s. Download address: %s";
     t[4058] = "MainMenu.Help.ErlangScripts";
     t[4059] = "Scripts for Erlang formulas";
+    t[4082] = "Distribution.BinomialInfo";
+    t[4083] = "<p>The binomial distribution is a discrete probability distribution. It is therefore not suitable for describing durations, but rather random processes that can each take on discrete values.</p>\n<p>The binomial distribution describes the probabilities when <b>drawing with replacement</b> from an urn containing balls of two different colors.</p>";
     t[4084] = "Distribution.DiscreteUniformWikipedia";
     t[4085] = "https://en.wikipedia.org/wiki/Discrete_uniform_distribution";
     t[4086] = "Help.Search.Info";
@@ -1802,6 +1808,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4137] = "There is no kept model which the current model could be compared to.";
     t[4146] = "Statistics.SystemData";
     t[4147] = "System data";
+    t[4156] = "Distribution.FInfo";
+    t[4157] = "<p>The F distribution is the quotient of two Chi^2-distributed random variables. The F distribution is mainly used in test theory to determine the significance of differences between different samples in terms of their variances.</p>";
     t[4158] = "Distribution.LogLogisticWikipedia";
     t[4159] = "https://en.wikipedia.org/wiki/Log-logistic_distribution";
     t[4164] = "Statistic.Viewer.DiagramSettings.Defaults.Hint";
@@ -1818,6 +1826,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4183] = "Light coral";
     t[4184] = "Table.BoolTrue";
     t[4185] = "TRUE";
+    t[4186] = "LoadCalculator.Tab.ErlangCext";
+    t[4187] = "Erlang C (extended)";
     t[4200] = "Main.Menu.File.Load.Mnemonic";
     t[4201] = "L";
     t[4208] = "FileType.Excel";
@@ -2000,6 +2010,12 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4691] = "Please choose how images should be saved in the report";
     t[4702] = "CommandLine.Benchmark.EventsPerSecond";
     t[4703] = "Events per second";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4704] = "Statistic.Viewer.DiagramSettings.Outline.Width";
     t[4705] = "Outline width";
     t[4706] = "Statistics.Maximum";
@@ -2010,12 +2026,6 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4713] = "Model kept";
     t[4726] = "SimStatistic.SystemData.MultiThreadInfo";
     t[4727] = "The lines marked with (*) show the real needed calculation\ntime on one CPU core.";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4728] = "Statistics.XML.Quotient";
     t[4729] = "Quotient";
     t[4732] = "Help.Search.ResultCountSingular";
@@ -2064,8 +2074,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4807] = "Scale";
     t[4808] = "QSExport.Error.Title";
     t[4809] = "Exporting failed";
-    t[4816] = "SimStatistic.Retrys";
-    t[4817] = "Retrys";
+    t[4816] = "SetupFailure.Title";
+    t[4817] = "Saving settings failed";
     t[4818] = "CommandLine.ResetConfig.Name";
     t[4819] = "Reset";
     t[4820] = "Statistics.XML.WorkingTimes";
@@ -2188,6 +2198,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5081] = "Dark slate gray";
     t[5082] = "Main.Menu.Extras.ExecuteCommand.Mnemonic";
     t[5083] = "c";
+    t[5092] = "Distribution.SawtoothRightInfo";
+    t[5093] = "<p>The sawtooth distribution is a simplified special case of the triangular distribution. The sawtooth distribution is defined solely by its carrier range.</p>";
     t[5094] = "Window.Info.NoHTMLPrint.Info";
     t[5095] = "No application is registered for direct printing of html files. Therefore the report file will be opened in the default browser. Please start printing from within the browser.";
     t[5098] = "Compare.Error.NoModelKept.Title";
@@ -2760,6 +2772,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6363] = "no further parameters are allowed";
     t[6364] = "CommandLine.Count.Then1";
     t[6365] = "exactly one more parameter has to be entered";
+    t[6370] = "Distribution.SawtoothLeftInfo";
+    t[6371] = "<p>The sawtooth distribution is a simplified special case of the triangular distribution. The sawtooth distribution is defined solely by its carrier range.</p>";
     t[6372] = "Distribution.LevyWikipedia";
     t[6373] = "https://en.wikipedia.org/wiki/Levy_distribution";
     t[6378] = "Statistic.Viewer.Context.Copy.Table";
@@ -2898,6 +2912,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6649] = "StatisticsThreads";
     t[6650] = "SettingsDialog.Title";
     t[6651] = "Settings";
+    t[6654] = "SimStatistic.Retrys";
+    t[6655] = "Retrys";
     t[6656] = "Statistics.XML.RunTime.Error";
     t[6657] = "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[6660] = "Window.Info.NoEMailProgram.Title";
@@ -3034,6 +3050,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[6959] = "Shows a list of the section captions from this help page";
     t[6962] = "Distribution.ContinuousBernoulliWikipedia";
     t[6963] = "https://en.wikipedia.org/wiki/Continuous_Bernoulli_distribution";
+    t[6974] = "Statistics.XML.RunEvents.Error";
+    t[6975] = "The value in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[6976] = "Dialog.Button.Copy.Table";
     t[6977] = "Copy table of values";
     t[6978] = "Color.4B0082";

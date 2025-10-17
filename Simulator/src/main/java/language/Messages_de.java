@@ -82,8 +82,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[177] = "Wartezeit \u00fcber alle Anrufer";
     t[186] = "QSExport.xml.TimeBase.Seconds";
     t[187] = "Sekunden";
-    t[190] = "SetupFailure.Title";
-    t[191] = "Einstellungen speichern fehlgeschlagen";
+    t[190] = "Distribution.TrapezoidInfo";
+    t[191] = "<p>Die Trapezverteilung stellt eine Kombination aus einer Dreiecksverteilung und einer Gleichverteilung dar. W\u00e4hrend die Trapezverteilung genauso wie die Gleichverteilung in der Mitte \u00fcber einen Bereich konstanter Dichte verf\u00fcgt, besitzt sie an den R\u00e4ndern des Tr\u00e4gerbereichs einen Anstieg und einen Abfall der Dichte mit einstellbarer Steigung.</p>";
     t[192] = "Statistics.XML.StdDev";
     t[193] = "Standardabweichung";
     t[194] = "Color.FFDAB9";
@@ -390,6 +390,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[889] = "E";
     t[890] = "Distribution.Power";
     t[891] = "Potenzverteilung";
+    t[894] = "Distribution.WeibullInfo";
+    t[895] = "<p>Die Weibull-Verteilung wird h\u00e4ufig zur Modellierung von Lebensdauern verwendet, da bei ihr explizit eingestellt werden kann, ob die Ausfallrate mit fortschreitender Zeit ansteigt, f\u00e4llt oder konstant bleibt.</p>\n<p>Wird der Formparameter auf einen Wert kleiner als eins eingestellt, so f\u00e4llt die Ausfallrate mit der Zeit (Kinderkrankheiten). Wird ein Wert gr\u00f6\u00dfer als eins verwendet, so steigt die Ausfallrate (Verschlei\u00dfausf\u00e4lle).</p>";
     t[896] = "Statistics.SystemData.RunUser";
     t[897] = "Anwender (Simulationsdurchf\u00fchrung)";
     t[900] = "XML.ErrorOpeningFile";
@@ -758,6 +760,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[1737] = "Limettengr\u00fcn";
     t[1744] = "LoadCalculator.Units.InSeconds";
     t[1745] = "in Sekunden";
+    t[1752] = "Distribution.HyperGeomInfo";
+    t[1753] = "<p>Die hypergeometrische Verteilung ist eine diskrete Wahrscheinlichkeitsverteilung. Sie ist folglich nicht daf\u00fcr geeignet, Zeitdauern zu beschreiben, sondern zuf\u00e4llige Prozesse, die jeweils diskrete Werte annehmen k\u00f6nnen.</p>\n<p>Die hypergeometrische Verteilung beschreibt die Wahrscheinlichkeiten beim <b>Ziehen ohne Zur\u00fccklegen</b> aus einer Urne in der Kugeln mit zwei verschiedenen Farben enthalten sind.</p>";
     t[1754] = "Compare.ReturnConfirm.Title";
     t[1755] = "Zu festgehaltenem Modell zur\u00fcckkehren";
     t[1756] = "Color.FFFFFA";
@@ -906,8 +910,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2101] = "Der Simulationslauf wurde nicht korrekt beendet.";
     t[2104] = "FileType.TypstTable";
     t[2105] = "Typst-Tabellen";
-    t[2112] = "LoadCalculator.Tab.ErlangCext";
-    t[2113] = "Erlang C (erweitert)";
+    t[2112] = "Distribution.BetaInfo";
+    t[2113] = "<p>Die Beta-Verteilung besitzt als besondere Eigenschaft einen abgeschlossenen Tr\u00e4ger, d.h. sie nimmt nur positiv Werte in einem begrenzten Bereich an. Sie eignet sich damit besonders zur Modellierung von Prozessen, bei denen bekannt ist, dass diese eine endliche H\u00f6chstdauer aufweisen.</p>\n<p>Die Beta-Verteilung besitzt neben der Vorgabe des Tr\u00e4gerbereichs zwei Parameter \u00fcber die sie sehr flexibel konfiguriert werden kann. Diese Flexibilit\u00e4t macht die Umrechnung vorgebener Kenngr\u00f6\u00dfen (Erwartungswert und Standardabweichung) auf die Parameter der Beta-Verteilung allerdings auch schwierig.</p>";
     t[2114] = "Statistics.NumberOfClientsInTheSystem";
     t[2115] = "Anzahl an Kunden im System";
     t[2116] = "Statistic.Viewer.SaveImage.Error.Title";
@@ -1410,8 +1414,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[3251] = "Warteabbruch";
     t[3252] = "Main.Menu.Extras.Calculator";
     t[3253] = "Rechner...";
-    t[3254] = "Statistics.XML.RunEvents.Error";
-    t[3255] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
+    t[3254] = "Distribution.ChiSquareInfo";
+    t[3255] = "<p>Bei der Chi^2-Verteilung handelt es sich, \u00e4hnlich wie bei der Normalverteilung, um die additiven \u00dcberlagerung mehrerer unabh\u00e4ngiger Einzelverteilungen. W\u00e4hrend die Normalverteilung die Grenzverteilung bei der \u00dcberlagerung unendlich vieler Verteilung ist, gibt bei der Chi^2-Verteilung die Anzahl an Freiheitsgraden die Anzahl an Summanden an.</p>\n<p>Die Chi^2-Verteilung ergibt sich als Summe der quadrierten Werte von so vielen standardnormalverteilten Zufallsvariablen wie der Werte der Freiheitsgrade angibt.</p>";
     t[3266] = "Table.BoolFalse";
     t[3267] = "FALSCH";
     t[3270] = "JDistributionEditor.InfoWindow.WebApp";
@@ -1766,6 +1770,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4053] = "Diese Datei wurde mit %s erstellt. Download-Adresse: %s";
     t[4058] = "MainMenu.Help.ErlangScripts";
     t[4059] = "Skripte f\u00fcr Erlang-Formeln";
+    t[4082] = "Distribution.BinomialInfo";
+    t[4083] = "<p>Die Binomialverteilung ist eine diskrete Wahrscheinlichkeitsverteilung. Sie ist folglich nicht daf\u00fcr geeignet, Zeitdauern zu beschreiben, sondern zuf\u00e4llige Prozesse, die jeweils diskrete Werte annehmen k\u00f6nnen.</p>\n<p>Die Binomialverteilung beschreibt die Wahrscheinlichkeiten beim <b>Ziehen mit Zur\u00fccklegen</b> aus einer Urne in der Kugeln mit zwei verschiedenen Farben enthalten sind.</p>";
     t[4084] = "Distribution.DiscreteUniformWikipedia";
     t[4085] = "https://de.wikipedia.org/wiki/Diskrete_Gleichverteilung";
     t[4086] = "Help.Search.Info";
@@ -1802,6 +1808,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4137] = "Bisher wurde kein Modell festgehalten, mit dem das aktuelle Modell verglichen werden k\u00f6nnte.";
     t[4146] = "Statistics.SystemData";
     t[4147] = "Systemdaten";
+    t[4156] = "Distribution.FInfo";
+    t[4157] = "<p>Die F-Verteilung ist der Quotient zweier Chi^2-verteilter Zufallsvariablen. Die F-Verteilung wird vor allem in der Testtheorie, zur Ermillung der Signifikanz der Unterschiede zwischen verschiedenen Stichproben in Bezug auf deren Varianzen verwendet.</p>";
     t[4158] = "Distribution.LogLogisticWikipedia";
     t[4159] = "https://en.wikipedia.org/wiki/Log-logistic_distribution";
     t[4164] = "Statistic.Viewer.DiagramSettings.Defaults.Hint";
@@ -1818,6 +1826,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4183] = "Helles Coral";
     t[4184] = "Table.BoolTrue";
     t[4185] = "WAHR";
+    t[4186] = "LoadCalculator.Tab.ErlangCext";
+    t[4187] = "Erlang C (erweitert)";
     t[4200] = "Main.Menu.File.Load.Mnemonic";
     t[4201] = "L";
     t[4208] = "FileType.Excel";
@@ -2000,6 +2010,12 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4691] = "Bitte w\u00e4hlen Sie aus, wie Bilder in der Zusammenfassung gespeichert werden sollen";
     t[4702] = "CommandLine.Benchmark.EventsPerSecond";
     t[4703] = "Ereignisse pro Sekunde";
+  }
+  /**
+   * Part of the language array creation
+   * @param t	Language data array
+   */
+  static void clinit_part_1 (java.lang.String[] t) {
     t[4704] = "Statistic.Viewer.DiagramSettings.Outline.Width";
     t[4705] = "Rahmenbreite";
     t[4706] = "Statistics.Maximum";
@@ -2010,12 +2026,6 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4713] = "Modell festgehalten";
     t[4726] = "SimStatistic.SystemData.MultiThreadInfo";
     t[4727] = "Die mit (*) gekennzeichneten Angaben geben jeweils die reale\nRechenzeit auf einem CPU-Kern an.";
-  }
-  /**
-   * Part of the language array creation
-   * @param t	Language data array
-   */
-  static void clinit_part_1 (java.lang.String[] t) {
     t[4728] = "Statistics.XML.Quotient";
     t[4729] = "Quotient";
     t[4732] = "Help.Search.ResultCountSingular";
@@ -2064,8 +2074,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4807] = "Skalierung";
     t[4808] = "QSExport.Error.Title";
     t[4809] = "Export fehlgeschlagen";
-    t[4816] = "SimStatistic.Retrys";
-    t[4817] = "Wiederholungen";
+    t[4816] = "SetupFailure.Title";
+    t[4817] = "Einstellungen speichern fehlgeschlagen";
     t[4818] = "CommandLine.ResetConfig.Name";
     t[4819] = "Reset";
     t[4820] = "Statistics.XML.WorkingTimes";
@@ -2188,6 +2198,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5081] = "Dunkel Slategrau";
     t[5082] = "Main.Menu.Extras.ExecuteCommand.Mnemonic";
     t[5083] = "K";
+    t[5092] = "Distribution.SawtoothRightInfo";
+    t[5093] = "<p>Die S\u00e4gezahnverteilung stellt einen vereinfachten Spezialfall der Dreiecksverteilung dar. Die S\u00e4gezahnverteilung wird lediglich \u00fcber ihren Tr\u00e4gerbereich definiert.</p>";
     t[5094] = "Window.Info.NoHTMLPrint.Info";
     t[5095] = "Es ist keine Anwendung f\u00fcr den direkten Druck von html-Dateien registriert. Die Reportdatei wird nun im Standardbrowser ge\u00f6ffnet. Bitte starten Sie den Druck von dort aus manuell.";
     t[5098] = "Compare.Error.NoModelKept.Title";
@@ -2760,6 +2772,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6363] = "darf kein weiterer Parameter folgen";
     t[6364] = "CommandLine.Count.Then1";
     t[6365] = "muss genau ein weiterer Parameter folgen";
+    t[6370] = "Distribution.SawtoothLeftInfo";
+    t[6371] = "<p>Die S\u00e4gezahnverteilung stellt einen vereinfachten Spezialfall der Dreiecksverteilung dar. Die S\u00e4gezahnverteilung wird lediglich \u00fcber ihren Tr\u00e4gerbereich definiert.</p>";
     t[6372] = "Distribution.LevyWikipedia";
     t[6373] = "https://de.wikipedia.org/wiki/Levy-Verteilung";
     t[6378] = "Statistic.Viewer.Context.Copy.Table";
@@ -2898,6 +2912,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6649] = "StatistikThreads";
     t[6650] = "SettingsDialog.Title";
     t[6651] = "Einstellungen";
+    t[6654] = "SimStatistic.Retrys";
+    t[6655] = "Wiederholungen";
     t[6656] = "Statistics.XML.RunTime.Error";
     t[6657] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[6660] = "Window.Info.NoEMailProgram.Title";
@@ -3034,6 +3050,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6959] = "Zeigt die Abschnitts\u00fcberschriften dieser Seite an";
     t[6962] = "Distribution.ContinuousBernoulliWikipedia";
     t[6963] = "https://en.wikipedia.org/wiki/Continuous_Bernoulli_distribution";
+    t[6974] = "Statistics.XML.RunEvents.Error";
+    t[6975] = "Der Wert in dem Element \"%s\" muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[6976] = "Dialog.Button.Copy.Table";
     t[6977] = "Wertetabelle kopieren";
     t[6978] = "Color.4B0082";
