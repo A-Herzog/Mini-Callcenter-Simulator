@@ -140,6 +140,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[299] = "Unbekannte Parameter. Rufen Sie den Simulation mit \"Hilfe\" als Parameter auf, um eine Liste der g\u00fcltigen Befehle zu erhalten.";
     t[306] = "JDistributionEditor.Load";
     t[307] = "Laden";
+    t[310] = "JDistributionEditor.Up";
+    t[311] = "Nach oben";
     t[312] = "Statistics.InterArrivalTimes.Distribution.byModel";
     t[313] = "Zwischenankunftszeitenverteilung laut Modell";
     t[314] = "Statistic.Viewer.Toolbar.SaveTables.Hint";
@@ -1994,6 +1996,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4627] = "Keine Anwendung f\u00fcr den Druck von html-Dateien registriert";
     t[4630] = "LoadCalculator.CopyResults.Info";
     t[4631] = "Kopiert die Rechenergebnisse in die Zwischenablage";
+    t[4632] = "JDistributionEditor.Down";
+    t[4633] = "Nach unten";
     t[4640] = "Statistic.Viewer.SpecialText.StartSimulation";
     t[4641] = "Simulation jetzt starten";
     t[4644] = "Main.Toolbar.SaveModel.Hint";
@@ -2006,16 +2010,16 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4683] = "d\u00fcrfen maximal %d weitere Parameter folgen";
     t[4688] = "Distribution.WignerHalfCircleWikipedia";
     t[4689] = "https://en.wikipedia.org/wiki/Wigner_semicircle_distribution";
-    t[4690] = "Statistic.Viewer.Report.SaveHTMLImages";
-    t[4691] = "Bitte w\u00e4hlen Sie aus, wie Bilder in der Zusammenfassung gespeichert werden sollen";
-    t[4702] = "CommandLine.Benchmark.EventsPerSecond";
-    t[4703] = "Ereignisse pro Sekunde";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4690] = "Statistic.Viewer.Report.SaveHTMLImages";
+    t[4691] = "Bitte w\u00e4hlen Sie aus, wie Bilder in der Zusammenfassung gespeichert werden sollen";
+    t[4702] = "CommandLine.Benchmark.EventsPerSecond";
+    t[4703] = "Ereignisse pro Sekunde";
     t[4704] = "Statistic.Viewer.DiagramSettings.Outline.Width";
     t[4705] = "Rahmenbreite";
     t[4706] = "Statistics.Maximum";

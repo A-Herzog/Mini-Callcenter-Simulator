@@ -140,6 +140,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[299] = "Unknown command. Run simulator with parameter \"Help\" to get a list of all available commands.";
     t[306] = "JDistributionEditor.Load";
     t[307] = "Load";
+    t[310] = "JDistributionEditor.Up";
+    t[311] = "Up";
     t[312] = "Statistics.InterArrivalTimes.Distribution.byModel";
     t[313] = "Inter-arrival times distribution by model";
     t[314] = "Statistic.Viewer.Toolbar.SaveTables.Hint";
@@ -1994,6 +1996,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4627] = "No application registered for printing html files";
     t[4630] = "LoadCalculator.CopyResults.Info";
     t[4631] = "Copies the calculation results to clipboard";
+    t[4632] = "JDistributionEditor.Down";
+    t[4633] = "Down";
     t[4640] = "Statistic.Viewer.SpecialText.StartSimulation";
     t[4641] = "Start simulation now";
     t[4644] = "Main.Toolbar.SaveModel.Hint";
@@ -2006,16 +2010,16 @@ public class Messages_en extends java.util.ResourceBundle {
     t[4683] = "a maximum of %d additional parameters can be entered";
     t[4688] = "Distribution.WignerHalfCircleWikipedia";
     t[4689] = "https://en.wikipedia.org/wiki/Wigner_semicircle_distribution";
-    t[4690] = "Statistic.Viewer.Report.SaveHTMLImages";
-    t[4691] = "Please choose how images should be saved in the report";
-    t[4702] = "CommandLine.Benchmark.EventsPerSecond";
-    t[4703] = "Events per second";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4690] = "Statistic.Viewer.Report.SaveHTMLImages";
+    t[4691] = "Please choose how images should be saved in the report";
+    t[4702] = "CommandLine.Benchmark.EventsPerSecond";
+    t[4703] = "Events per second";
     t[4704] = "Statistic.Viewer.DiagramSettings.Outline.Width";
     t[4705] = "Outline width";
     t[4706] = "Statistics.Maximum";
