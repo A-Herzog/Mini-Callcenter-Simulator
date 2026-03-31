@@ -118,7 +118,7 @@ public class MainPanel extends MainPanelBase {
 	/**
 	 * Programmversion
 	 */
-	public static final String systemVersion="6.1.234";
+	public static final String systemVersion="6.2.235";
 
 	/**
 	 * Bezeichnung für "ungespeichertes Modell" in der Titelzeile für ein neues Modell, welches noch keinen Namen besitzt

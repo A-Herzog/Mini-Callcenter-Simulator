@@ -81,6 +81,10 @@
 			<arg value="Clausthal"/>
 			<arg value="/fd"/>
 			<arg value="SHA256"/>
+			<arg value="/tr"/>
+			<arg value="http://timestamp.sectigo.com"/>
+			<arg value="/td"/>
+			<arg value="SHA256"/>			
 			<arg value="MiniCallcenterSimulator.exe"/>
 		</exec>		
 		<move file="${BuildTools.location}/MiniCallcenterSimulator.exe" tofile="${Release.location}/MiniCallcenterSimulator.exe" />
@@ -95,6 +99,10 @@
 			<arg value="/n"/>
 			<arg value="Clausthal"/>
 			<arg value="/fd"/>
+			<arg value="SHA256"/>
+			<arg value="/tr"/>
+			<arg value="http://timestamp.sectigo.com"/>
+			<arg value="/td"/>
 			<arg value="SHA256"/>
 			<arg value="MiniCallcenterSimulatorSetup.exe"/>
 		</exec>
