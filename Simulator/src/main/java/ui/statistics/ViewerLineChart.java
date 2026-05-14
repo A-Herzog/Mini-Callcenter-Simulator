@@ -205,7 +205,7 @@ public class ViewerLineChart extends StatisticViewerLineChart {
 
 		final double[] data=indicator.getCorrelationData();
 		for (int i=0;i<data.length;i++) {
-			series.add(i*StatisticsDataPerformanceIndicator.CORRELATION_RANGE_STEPPING,Math.abs(data[i]),false);
+			series.add(i*indicator.getCorrelationStepping(),Math.abs(data[i]),false);
 		}
 		series.fireSeriesChanged();
 	}

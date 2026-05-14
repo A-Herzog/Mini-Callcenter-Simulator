@@ -1186,6 +1186,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[2729] = "Wiederholabst\u00e4nde";
     t[2736] = "Distribution.NegativeBinomial";
     t[2737] = "Negative Binomialverteilung";
+    t[2738] = "Statistics.XML.AutocorrelationRangeStepping";
+    t[2739] = "AutokorrelationSchrittweite";
     t[2750] = "QSExport.xml.ModellElementPrioritaet";
     t[2751] = "ModellElementPrioritaet";
     t[2754] = "Main.Menu.Help.ProgramInformation";
@@ -2008,14 +2010,14 @@ public class Messages_de extends java.util.ResourceBundle {
     t[4677] = "In den analytischen Modellen werden die Bedienzeiten stets als exponentiell verteilt angenommen.";
     t[4682] = "CommandLine.Count.ThenMaximumN";
     t[4683] = "d\u00fcrfen maximal %d weitere Parameter folgen";
-    t[4688] = "Distribution.WignerHalfCircleWikipedia";
-    t[4689] = "https://en.wikipedia.org/wiki/Wigner_semicircle_distribution";
   }
   /**
    * Part of the language array creation
    * @param t	Language data array
    */
   static void clinit_part_1 (java.lang.String[] t) {
+    t[4688] = "Distribution.WignerHalfCircleWikipedia";
+    t[4689] = "https://en.wikipedia.org/wiki/Wigner_semicircle_distribution";
     t[4690] = "Statistic.Viewer.Report.SaveHTMLImages";
     t[4691] = "Bitte w\u00e4hlen Sie aus, wie Bilder in der Zusammenfassung gespeichert werden sollen";
     t[4702] = "CommandLine.Benchmark.EventsPerSecond";
@@ -2828,6 +2830,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[6487] = "Word-Texte";
     t[6492] = "QSExport.xml.Element.Decide";
     t[6493] = "ModellElementVerzweigen";
+    t[6494] = "Statistics.XML.AutocorrelationRangeStepping.Error";
+    t[6495] = "Das AutokorrelationSchrittweite-Attribut im \"%s\"-Element muss die Schrittweite (eine positive Ganzzahl) beinhalten.";
     t[6498] = "Table.LoadErrorCellRangeInvalid";
     t[6499] = "Der durch %s und %s eingegrenzte Bereich muss entweder eine Zeile oder eine Spalte sein.";
     t[6500] = "Statistics.XML.WaitingTimesCancel";

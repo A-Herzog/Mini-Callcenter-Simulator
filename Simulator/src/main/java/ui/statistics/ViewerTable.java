@@ -214,7 +214,7 @@ public class ViewerTable extends StatisticViewerTable {
 		final List<String> line=new ArrayList<>();
 		if (statistics.waitingTimeAll.isCorrelationAvailable()) {
 			final int length=statistics.waitingTimeAll.getCorrelationData().length;
-			for (int i=0;i<length;i++) line.add(NumberTools.formatLong(i*StatisticsDataPerformanceIndicator.CORRELATION_RANGE_STEPPING));
+			for (int i=0;i<length;i++) line.add(NumberTools.formatLong(i*statistics.waitingTimeAll.getCorrelationStepping()));
 		}
 		table.addLine(line);
 

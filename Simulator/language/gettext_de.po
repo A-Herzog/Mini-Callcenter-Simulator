@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 23:44+0100\n"
+"POT-Creation-Date: 2026-05-13 22:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4291,6 +4291,12 @@ msgstr "Autokorrelation"
 
 msgid "Statistics.XML.AutocorrelationData.Error"
 msgstr "Das \"Autokorrelation\"-Attribut im \"%s\"-Element muss die Autokorrelationswerte beinhalten."
+
+msgid "Statistics.XML.AutocorrelationRangeStepping"
+msgstr "AutokorrelationSchrittweite"
+
+msgid "Statistics.XML.AutocorrelationRangeStepping.Error"
+msgstr "Das AutokorrelationSchrittweite-Attribut im \"%s\"-Element muss die Schrittweite (eine positive Ganzzahl) beinhalten."
 
 msgid "Statistics.XML.BaseData"
 msgstr "StatistikSimulation"
