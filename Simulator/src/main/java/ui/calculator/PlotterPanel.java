@@ -68,7 +68,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 
 import language.Language;
 import mathtools.NumberTools;
-import mathtools.distribution.swing.CommonVariables;
+import mathtools.distribution.swing.PlugableFileChooser;
 import parser.CalcSystem;
 import parser.MathCalcError;
 import systemtools.ImageTools;
@@ -300,8 +300,7 @@ public class PlotterPanel extends JPanel {
 	 * @see #save(File)
 	 */
 	public boolean save() {
-		final JFileChooser fc=new JFileChooser();
-		CommonVariables.initialDirectoryToJFileChooser(fc);
+		final var fc=new PlugableFileChooser(true);
 		fc.setDialogTitle(StatisticsBasePanel.viewersSaveImage);
 		final FileFilter jpg=new FileNameExtensionFilter(StatisticsBasePanel.fileTypeJPG+" (*.jpg, *.jpeg)","jpg","jpeg");
 		final FileFilter gif=new FileNameExtensionFilter(StatisticsBasePanel.fileTypeGIF+" (*.gif)","gif");
@@ -319,7 +318,6 @@ public class PlotterPanel extends JPanel {
 		fc.setAcceptAllFileFilterUsed(false);
 
 		if (fc.showSaveDialog(this)!=JFileChooser.APPROVE_OPTION) return false;
-		CommonVariables.initialDirectoryFromJFileChooser(fc);
 		File file=fc.getSelectedFile();
 
 		if (file.getName().indexOf('.')<0) {
@@ -331,7 +329,7 @@ public class PlotterPanel extends JPanel {
 			if (fc.getFileFilter()==pdf) file=new File(file.getAbsoluteFile()+".pdf");
 		}
 
-		if (file.exists()) {
+		if (file.exists() && !fc.hasOwnOverwritePrompt()) {
 			if (!MsgBox.confirmOverwrite(this,file)) return false;
 		}
 

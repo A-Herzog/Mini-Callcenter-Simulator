@@ -32,7 +32,7 @@ import mathtools.NumberTools;
 import mathtools.Table;
 import mathtools.distribution.NeverDistributionImpl;
 import mathtools.distribution.OnePointDistributionImpl;
-import mathtools.distribution.swing.CommonVariables;
+import mathtools.distribution.swing.PlugableFileChooser;
 import mathtools.distribution.tools.DistributionTools;
 import simulator.editmodel.EditModel;
 import systemtools.MsgBox;
@@ -291,8 +291,7 @@ public class ExportQSModel {
 	 * @return	Gewählte Datei zum Speichern oder <code>null</code>, wenn die Auswahl abgebrochen wrude.
 	 */
 	public static File selectFile(final Component owner) {
-		final JFileChooser fc=new JFileChooser();
-		CommonVariables.initialDirectoryToJFileChooser(fc);
+		final var fc=new PlugableFileChooser(true);
 		fc.setDialogTitle(Language.tr("QSExport.SelectFile"));
 		final FileFilter xml=new FileNameExtensionFilter(XMLTools.fileTypeXML+" (*.xml)","xml");
 		fc.addChoosableFileFilter(xml);
@@ -300,14 +299,13 @@ public class ExportQSModel {
 		fc.setAcceptAllFileFilterUsed(false);
 
 		if (fc.showSaveDialog(owner)!=JFileChooser.APPROVE_OPTION) return null;
-		CommonVariables.initialDirectoryFromJFileChooser(fc);
 		File file=fc.getSelectedFile();
 
 		if (file.getName().indexOf('.')<0) {
 			if (fc.getFileFilter()==xml) file=new File(file.getAbsoluteFile()+".xml");
 		}
 
-		if (file.exists()) {
+		if (file.exists() && !fc.hasOwnOverwritePrompt()) {
 			if (!MsgBox.confirmOverwrite(owner,file)) return null;
 		}
 

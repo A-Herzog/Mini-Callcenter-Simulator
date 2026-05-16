@@ -25,6 +25,7 @@ import java.util.List;
 import org.w3c.dom.Element;
 
 import language.Language;
+import mathtools.distribution.swing.PlugableFileChooser;
 import simulator.statistics.Statistics;
 import systemtools.MsgBox;
 import systemtools.statistics.ChartSetup;
@@ -260,7 +261,7 @@ public class StatisticsPanel extends StatisticsBasePanel {
 			if (file==null) return null;
 		}
 
-		if (file.exists()) {
+		if (file.exists() && !new PlugableFileChooser().hasOwnOverwritePrompt()) {
 			if (!MsgBox.confirmOverwrite(getTopLevelAncestor(),file)) return null;
 		}
 
