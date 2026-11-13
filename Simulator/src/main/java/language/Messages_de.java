@@ -2582,6 +2582,8 @@ public class Messages_de extends java.util.ResourceBundle {
     t[5895] = "Das \"Anzahl\"-Attribut im \"%s\"-Element muss eine nicht-negative Ganzzahl sein, ist aber \"%s\".";
     t[5896] = "Dialog.OpenURL.InfoNo";
     t[5897] = "Webseite nicht aufrufen.";
+    t[5902] = "FileType.MarkdownTable";
+    t[5903] = "Markdown-Dateien";
     t[5906] = "Statistic.of.QueueLength.lower";
     t[5907] = "der Warteschlangenl\u00e4nge";
     t[5920] = "SimStatistic.FreshCalls";

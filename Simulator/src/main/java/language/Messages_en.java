@@ -2582,6 +2582,8 @@ public class Messages_en extends java.util.ResourceBundle {
     t[5895] = "The \"count\" attribute in the \"%s\" element has to be a non-negative integer value but is \"%s\".";
     t[5896] = "Dialog.OpenURL.InfoNo";
     t[5897] = "Do not open web page.";
+    t[5902] = "FileType.MarkdownTable";
+    t[5903] = "Markdown files";
     t[5906] = "Statistic.of.QueueLength.lower";
     t[5907] = "of the queue length";
     t[5920] = "SimStatistic.FreshCalls";
